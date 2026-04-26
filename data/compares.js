@@ -1,0 +1,30 @@
+// data/compares.js — 비교 페이지
+const compares = [
+  { id: 'CP001', slug: 'jeju-hotels-vs-villas', category: 'compare',
+    title: '제주 5성호텔 vs 풀빌라 — 가족·신혼 어디가 좋을까',
+    description: '제주신라·롯데·신라스테이 등 5성호텔 vs 중문·표선·애월 풀빌라 비교 — 가족·신혼·예산·시설·접근성 기준 추천.',
+    summary: '5성호텔 vs 풀빌라 — 가족·신혼·예산 기준 비교.',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['제주','호캉스'] },
+  { id: 'CP002', slug: 'tokyo-5star-hotels', category: 'compare',
+    title: '도쿄 5성호텔 비교 — 만다린·페닌술라·콘래드·파크하얏트',
+    description: '도쿄 1급 5성호텔 5곳 비교 — 만다린오리엔탈·페닌술라·콘래드·파크하얏트·아만. 위치·전망·다이닝·가격대 매트릭스.',
+    summary: '만다린·페닌술라·콘래드·파크하얏트·아만 — 도쿄 5성.',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B', tags: ['도쿄','5성호텔'] },
+  { id: 'CP003', slug: 'danang-resorts', category: 'compare',
+    title: '다낭 리조트 비교 — 인터컨티넨탈·풀만·하얏트·프리미어빌리지',
+    description: '다낭 핵심 5성리조트 4곳 비교 — 인터컨티넨탈·풀만·하얏트리젠시·프리미어빌리지. 비치·풀빌라·키즈프로그램·가격 비교.',
+    summary: '인터컨티넨탈·풀만·하얏트·프리미어빌리지 비교.',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B', tags: ['다낭','리조트'] },
+  { id: 'CP004', slug: 'honeymoon-bali-vs-maldives', category: 'compare',
+    title: '신혼여행 발리 vs 몰디브 — 예산·일정·풀빌라 비교',
+    description: '신혼여행 1·2위 발리(우붓·세미냐크) vs 몰디브 비교 — 직항 여부, 예산 차이, 풀빌라/오버워터빌라, 시즌 추천.',
+    summary: '발리 vs 몰디브 — 예산·풀빌라·시즌 비교.',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['신혼','발리','몰디브'] },
+  { id: 'CP005', slug: 'ryokan-japan-best', category: 'compare',
+    title: '일본 료칸 비교 — 유후인·하코네·구사쓰·벳푸 가이세키',
+    description: '일본 4대 료칸 지역 비교 — 유후인·하코네·구사쓰·벳푸. 노천탕·가이세키 정식·교통·신혼/효도 추천.',
+    summary: '유후인·하코네·구사쓰·벳푸 — 료칸 비교.',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['료칸','일본'] },
+]
+
+module.exports = compares

@@ -1,0 +1,28 @@
+{
+  "name": "travelmoa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-feeds": "node scripts/generate-feeds.js",
+    "generate-favicons": "node scripts/generate-favicons.js",
+    "prebuild": "node scripts/generate-sitemap.js && node scripts/generate-feeds.js",
+    "validate": "for f in posts/**/*.js; do node --check \"$f\" || echo \"FAIL: $f\"; done"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.2",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.19",
+    "to-ico": "^1.1.5"
+  }
+}

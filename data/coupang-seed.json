@@ -1,0 +1,12 @@
+[
+  { "product_name": "여행 캐리어 24인치 하드케이스", "category": "캐리어", "post_slugs": ["travel-luggage"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "여행용 멀티 어댑터 PD", "category": "어댑터", "post_slugs": ["travel-adapter"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "여행 보조배터리 20000mAh", "category": "보조배터리", "post_slugs": ["travel-power-bank"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "RFID 여권지갑", "category": "여권지갑", "post_slugs": ["travel-passport-wallet"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "메모리폼 목베개", "category": "목베개", "post_slugs": ["neck-pillow"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "진공 압축팩 세트", "category": "압축팩", "post_slugs": ["compression-bag"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "여행 비상약 키트", "category": "비상약", "post_slugs": ["travel-medical-kit"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "3D 입체 안대 + 귀마개 세트", "category": "안대", "post_slugs": ["eye-mask-earplug"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "트래블 화장품 케이스 100ml", "category": "화장품케이스", "post_slugs": ["cosmetic-case"], "notes": "쿠팡 어드민에서 URL 입력 대기" },
+  { "product_name": "골프투어 하드케이스 골프백", "category": "골프백", "post_slugs": ["golf-travel-bag"], "notes": "쿠팡 어드민에서 URL 입력 대기" }
+]
