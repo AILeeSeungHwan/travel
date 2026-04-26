@@ -82,7 +82,7 @@ export default function CountryDetail({ meta, postData, regions, hotels, themes,
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
-      <CountryMiniMap country={meta} />
+      <CountryMiniMap country={meta} regions={regions} />
       <PostRenderer
         meta={{ ...meta, category: 'country' }}
         postData={finalPostData}

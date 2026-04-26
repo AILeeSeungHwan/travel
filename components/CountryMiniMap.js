@@ -1,69 +1,147 @@
-// 국가 허브용 mini-map (A안 — react-simple-maps)
-// 해당 국가만 강조, 주변 대륙은 회색
+// 국가 허브용 admin-1 지도 (A안 — react-simple-maps + 국가별 admin-1 GeoJSON)
+// /maps/{country.slug}.geo.json 을 로드 → 모든 도/현/주 폴리곤 표시
+// 우리 콘텐츠가 있는 region 의 adminName 과 일치하는 폴리곤만 teal 강조 + 클릭 → 지역 허브
 
-import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps'
 
-const TOPO_URL = '/world-110m.json'
-
-const SLUG_TO_NUMERIC = {
-  kr: '410', jp: '392', vn: '704', th: '764', tw: '158',
-  ph: '608', my: '458', id: '360', cn: '156',
-  fr: '250', it: '380', gb: '826', de: '276', us: '840',
+const PROJECTION_BY_SLUG = {
+  kr: { rotate: [-128, -36, 0], scale: 4500 },
+  jp: { rotate: [-138, -37, 0], scale: 1400 },
+  vn: { rotate: [-108, -16, 0], scale: 2000 },
+  th: { rotate: [-101, -15, 0], scale: 1900 },
+  tw: { rotate: [-121, -23, 0], scale: 4500 },
+  cn: { rotate: [-104, -35, 0], scale: 700 },
+  ph: { rotate: [-122, -12, 0], scale: 1700 },
+  my: { rotate: [-110, -3, 0],  scale: 1500 },
+  id: { rotate: [-118, 2, 0],   scale: 900 },
+  sg: { rotate: [-104, -1.4, 0], scale: 35000 },
+  hk: { rotate: [-114, -22.4, 0], scale: 25000 },
+  fr: { rotate: [-2, -47, 0],   scale: 2200 },
+  it: { rotate: [-12, -42, 0],  scale: 2000 },
+  gb: { rotate: [4, -54, 0],    scale: 2200 },
+  de: { rotate: [-10, -51, 0],  scale: 2400 },
+  us: { rotate: [97, -38, 0],   scale: 700 },
 }
 
-const PROJECTION_BY_CONTINENT = {
-  asia:     { rotate: [-110, -10, 0], scale: 700 },
-  europe:   { rotate: [-10, -50, 0],  scale: 800 },
-  americas: { rotate: [95,  -20, 0],  scale: 400 },
-  oceania:  { rotate: [-150, 25, 0],  scale: 600 },
-  africa:   { rotate: [-20,  0, 0],   scale: 550 },
-  domestic: { rotate: [-127, -36, 0], scale: 4500 },
+function normalize(s) {
+  if (!s) return ''
+  return String(s).toLowerCase()
+    .replace(/[ōōÔô]/g, 'o').replace(/[īī]/g, 'i').replace(/[ā]/g, 'a').replace(/[ūū]/g, 'u').replace(/[ē]/g, 'e')
+    .replace(/[ạáảãà]/gi, 'a').replace(/[ẵặắằ]/gi, 'a').replace(/[âấầẩẫậ]/gi, 'a')
+    .replace(/[ếềểễệéẹẻẽè]/gi, 'e').replace(/[íìỉĩị]/gi, 'i').replace(/[ốồổỗộóòỏõọơớờởỡợ]/gi, 'o')
+    .replace(/[ứừửữựúùủũụư]/gi, 'u').replace(/[ýỳỷỹỵ]/gi, 'y').replace(/[đ]/gi, 'd')
+    .replace(/[\s\-·]/g, '')
 }
 
-export default function CountryMiniMap({ country }) {
-  const numeric = SLUG_TO_NUMERIC[country.slug]
-  const proj = PROJECTION_BY_CONTINENT[country.continent || 'asia'] || PROJECTION_BY_CONTINENT.asia
+export default function CountryMiniMap({ country, regions = [] }) {
+  const router = useRouter()
+  const [geo, setGeo] = useState(null)
+  const [hover, setHover] = useState(null)
 
-  // 110m 해상도에 폴리곤 없는 국가(SG/HK)는 단순 좌표 안내로 폴백
-  if (!numeric) {
+  useEffect(() => {
+    let cancelled = false
+    fetch(`/maps/${country.slug}.geo.json`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (!cancelled) setGeo(data) })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [country.slug])
+
+  const proj = PROJECTION_BY_SLUG[country.slug] || { rotate: [-110, -30, 0], scale: 800 }
+
+  // adminName → region 매핑 (정규화 비교)
+  const adminToRegion = {}
+  regions.forEach(r => {
+    if (!r.adminName) return
+    adminToRegion[normalize(r.adminName)] = r
+  })
+
+  // adminName 이 없는 (도시·섬 등 admin-1 미일치) 지역은 좌표 마커로 폴백
+  const pointMarkers = regions.filter(r => !r.adminName && r.centerLat && r.centerLng)
+
+  if (!geo) {
     return (
-      <div style={{
-        background:'#F8FAFC', border:'1px solid #E2E8F0', borderRadius:12,
-        padding:'18px', textAlign:'center', fontSize:13, color:'#64748B',
-      }}>
-        📍 {country.countryName} 좌표: {country.centerLat}, {country.centerLng}<br/>
-        <span style={{ fontSize:11, color:'#94A3B8' }}>(작은 영토는 폴리곤 지도 대신 좌표로 표기)</span>
+      <div style={{ height: 280, background:'#F8FAFC', border:'1px solid #E2E8F0', borderRadius:12,
+                    display:'flex', alignItems:'center', justifyContent:'center',
+                    fontSize:13, color:'#64748B', marginBottom:18 }}>
+        🗺️ {country.countryName} 지역 지도 로딩 중…
       </div>
     )
   }
 
   return (
-    <div style={{ background:'#FFFFFF', border:'1px solid #E2E8F0', borderRadius:12, padding:'12px 14px', marginBottom:18 }}>
+    <div style={{ background:'#FFFFFF', border:'1px solid #E2E8F0', borderRadius:12, padding:'12px 14px', marginBottom:18, position:'relative' }}>
       <ComposableMap
-        projection="geoOrthographic"
+        projection="geoMercator"
         projectionConfig={{ rotate: proj.rotate, scale: proj.scale }}
-        width={400} height={260}
+        width={500} height={340}
         style={{ width:'100%', height:'auto' }}
       >
-        <Geographies geography={TOPO_URL}>
-          {({ geographies }) => geographies.map(geo => {
-            const isTarget = geo.id === numeric
+        <Geographies geography={geo}>
+          {({ geographies }) => geographies.map(g => {
+            const adminKey = normalize(g.properties.name)
+            const matched = adminToRegion[adminKey]
+            const has = !!matched
             return (
               <Geography
-                key={geo.rsmKey}
-                geography={geo}
+                key={g.rsmKey}
+                geography={g}
+                onMouseEnter={(e) => setHover({
+                  name: g.properties.name_ko || g.properties.name,
+                  has, region: matched,
+                  x: e.clientX, y: e.clientY,
+                })}
+                onMouseMove={(e) => setHover(h => h && ({ ...h, x: e.clientX, y: e.clientY }))}
+                onMouseLeave={() => setHover(null)}
+                onClick={() => { if (has) router.push(`/countries/${country.slug}/regions/${matched.slug}/`) }}
                 style={{
-                  default: { fill: isTarget ? '#14B8A6' : '#E2E8F0', stroke:'#FFFFFF', strokeWidth: 0.5, outline:'none' },
-                  hover:   { fill: isTarget ? '#0F766E' : '#CBD5E1', outline:'none' },
-                  pressed: { outline:'none' },
+                  default: {
+                    fill: has ? '#14B8A6' : '#F1F5F9',
+                    stroke: '#FFFFFF', strokeWidth: 0.4,
+                    outline: 'none', cursor: has ? 'pointer' : 'default',
+                  },
+                  hover: {
+                    fill: has ? '#0F766E' : '#E2E8F0',
+                    stroke: '#FFFFFF', strokeWidth: 0.6,
+                    outline: 'none', cursor: has ? 'pointer' : 'default',
+                  },
+                  pressed: { fill: '#0F766E', outline:'none' },
                 }}
               />
             )
           })}
         </Geographies>
+
+        {pointMarkers.map(r => (
+          <Marker key={r.slug} coordinates={[r.centerLng, r.centerLat]}
+            onMouseEnter={(e) => setHover({ name: r.regionName, has: true, region: r, x: e.clientX, y: e.clientY })}
+            onMouseLeave={() => setHover(null)}
+            onClick={() => router.push(`/countries/${country.slug}/regions/${r.slug}/`)}
+            style={{ default: { cursor: 'pointer' } }}
+          >
+            <circle r={5} fill="#0EA5E9" stroke="#FFFFFF" strokeWidth={1.5} />
+          </Marker>
+        ))}
       </ComposableMap>
+
+      {hover && (
+        <div style={{
+          position: 'fixed', left: hover.x + 12, top: hover.y + 12, zIndex: 100,
+          background: 'rgba(15, 23, 42, 0.92)', color: '#fff',
+          padding: '8px 12px', borderRadius: 8, fontSize: 12, pointerEvents: 'none',
+          boxShadow: '0 6px 20px rgba(0,0,0,0.2)',
+        }}>
+          <div style={{ fontWeight: 700 }}>{hover.name}</div>
+          <div style={{ fontSize: 11, color: hover.has ? '#5EEAD4' : '#94A3B8', marginTop: 2 }}>
+            {hover.has ? `클릭 → ${hover.region.regionName} 허브` : '준비 중'}
+          </div>
+        </div>
+      )}
+
       <div style={{ fontSize:11, color:'#94A3B8', textAlign:'center', marginTop:6 }}>
-        {country.countryName} · 좌표 {country.centerLat?.toFixed(2)}, {country.centerLng?.toFixed(2)} · 시간대 {country.timeZone}
+        {country.countryName} · admin-1 ({geo.features.length}개 지역) · teal 강조 = 콘텐츠 있음
       </div>
     </div>
   )

@@ -9,6 +9,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "generate-feeds": "node scripts/generate-feeds.js",
     "generate-favicons": "node scripts/generate-favicons.js",
+    "generate-maps": "curl -sSL https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson -o /tmp/admin1_10m.geojson && node scripts/split-admin1.js",
     "prebuild": "node scripts/generate-sitemap.js && node scripts/generate-feeds.js",
     "validate": "for f in posts/**/*.js; do node --check \"$f\" || echo \"FAIL: $f\"; done"
   },
