@@ -31,6 +31,9 @@ export default function Document() {
         {/* Feeds */}
         <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href="/rss.xml" />
         <link rel="alternate" type="application/atom+xml" title={`${SITE_NAME} Atom`} href="/atom.xml" />
+
+        {/* Leaflet CSS (mini-map 전역 — 사용 페이지에서만 실제 렌더) */}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossOrigin="" />
       </Head>
       <body><Main /><NextScript /></body>
     </Html>

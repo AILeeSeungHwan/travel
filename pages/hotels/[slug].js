@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout'
 import PostRenderer from '../../components/PostRenderer'
 import PageTracker from '../../components/PageTracker'
+import LeafletMap from '../../components/MapClient'
 import countries from '../../data/countries'
 import regions from '../../data/regions'
 import spots from '../../data/spots'
@@ -74,9 +75,16 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
 
   const finalPostData = postData || { sections: fallbackSections }
 
+  const hasMap = meta.lat && meta.lng
+  const mapMarkers = [
+    { lat: meta.lat, lng: meta.lng, label: meta.hotelName, subLabel: meta.hotelClass, type: 'hotel' },
+    ...nearbySpots.filter(s => s.lat && s.lng).map(s => ({ lat: s.lat, lng: s.lng, label: s.spotName, subLabel: s.spotType, url: s.url, type: 'spot' })),
+  ]
+
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+      {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={320} />}
       <PostRenderer
         meta={{ ...meta, category: 'hotel', countryName: country.countryName }}
         postData={finalPostData}

@@ -1,6 +1,7 @@
 import Layout from '../../../components/Layout'
 import PostRenderer from '../../../components/PostRenderer'
 import PageTracker from '../../../components/PageTracker'
+import CountryMiniMap from '../../../components/CountryMiniMap'
 import countries from '../../../data/countries'
 import regions from '../../../data/regions'
 import hotels from '../../../data/hotels'
@@ -81,6 +82,7 @@ export default function CountryDetail({ meta, postData, regions, hotels, themes,
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+      <CountryMiniMap country={meta} />
       <PostRenderer
         meta={{ ...meta, category: 'country' }}
         postData={finalPostData}

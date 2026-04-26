@@ -1,6 +1,7 @@
 import Layout from '../../../../../../components/Layout'
 import PostRenderer from '../../../../../../components/PostRenderer'
 import PageTracker from '../../../../../../components/PageTracker'
+import LeafletMap from '../../../../../../components/MapClient'
 import countries from '../../../../../../data/countries'
 import regions from '../../../../../../data/regions'
 import spots from '../../../../../../data/spots'
@@ -70,9 +71,16 @@ export default function SpotDetail({ country, region, meta, postData, nearbyHote
 
   const finalPostData = postData || { sections: fallbackSections }
 
+  const hasMap = meta.lat && meta.lng
+  const mapMarkers = [
+    { lat: meta.lat, lng: meta.lng, label: meta.spotName, subLabel: meta.spotType, type: 'spot' },
+    ...nearbyHotels.filter(h => h.lat && h.lng).map(h => ({ lat: h.lat, lng: h.lng, label: h.hotelName, subLabel: h.hotelClass, url: h.url, type: 'hotel' })),
+  ]
+
   return (
     <Layout title={`${meta.spotName} (${region.regionName}) — ${country.countryName} 여행`} description={meta.description} topAd={false}>
       <PageTracker slug={`${country.slug}-${region.slug}-${meta.slug}`} title={meta.title} />
+      {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={300} />}
       <PostRenderer
         meta={{ ...meta, category: 'spot', countryName: country.countryName, regionName: region.regionName }}
         postData={finalPostData}
