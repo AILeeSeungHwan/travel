@@ -56,7 +56,9 @@ function TOC({ sections }) {
 
 function normalize(s) { return s ? String(s).replace(/[\s\-·・]/g, '').toLowerCase() : '' }
 
-function Section({ section, coupangLinks }) {
+const HOTELS_COMBINED_FALLBACK = process.env.NEXT_PUBLIC_HOTELSCOMBINED_BASE_URL || 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000'
+
+function Section({ section, coupangLinks, meta }) {
   const s = section
   if (s.type === 'intro')   return <div style={{ fontSize:16, lineHeight:1.9, marginBottom:22, color:'#334155' }} dangerouslySetInnerHTML={{ __html: s.html }} />
   if (s.type === 'h2')      return <h2 id={s.id} style={{ fontSize:22, fontWeight:800, margin:'38px 0 14px', lineHeight:1.35, color:'#0F172A', borderLeft:'4px solid #0EA5E9', paddingLeft:12 }}>{s.text}</h2>
@@ -80,11 +82,15 @@ function Section({ section, coupangLinks }) {
   if (s.type === 'ending')  return <div style={{ background:'#F8FAFC', borderRadius:10, padding:'18px 22px', margin:'24px 0' }} dangerouslySetInnerHTML={{ __html: s.html }} />
   if (s.type === 'ad')      return null
   if (s.type === 'hotelsCombinedCTA') {
+    // 우선순위: 섹션의 href → 호텔 meta의 hotelsCombinedDeepLink → 글로벌 fallback
+    const href = s.href && s.href !== '#'
+      ? s.href
+      : (meta && meta.hotelsCombinedDeepLink) || HOTELS_COMBINED_FALLBACK
     return (
       <div style={{ margin:'24px 0', padding:'22px 24px', background:'linear-gradient(135deg, #FEF3C7, #FDE68A)', borderRadius:14, border:'1px solid #F59E0B' }}>
         <div style={{ fontSize:14, fontWeight:800, color:'#92400E', marginBottom:6 }}>🏨 호텔 최저가 비교</div>
         <div style={{ fontSize:13, color:'#78350F', marginBottom:12, lineHeight:1.6 }}>{s.subText || '체크인 / 체크아웃 / 인원 입력으로 호텔스컴바인이 여러 예약 사이트의 가격을 동시에 비교합니다.'}</div>
-        <a href={s.href || '#'} target="_blank" rel="noopener noreferrer nofollow" style={{
+        <a href={href} target="_blank" rel="noopener noreferrer nofollow" style={{
           display:'inline-block', padding:'14px 28px', background:'linear-gradient(135deg,#F59E0B,#D97706)', color:'#fff',
           borderRadius:10, fontWeight:800, textDecoration:'none', fontSize:15
         }}>
@@ -133,7 +139,7 @@ function Section({ section, coupangLinks }) {
   return null
 }
 
-function renderWithAds(sections, coupangLinks) {
+function renderWithAds(sections, coupangLinks, meta) {
   const out = []
   let h2Index = -1
   sections.forEach((s, i) => {
@@ -145,7 +151,7 @@ function renderWithAds(sections, coupangLinks) {
         out.push(<AdUnit key={`ad-h2-${i}`} slot="4000000001" variant="auto" />)
       }
     }
-    out.push(<Section key={i} section={s} coupangLinks={coupangLinks} />)
+    out.push(<Section key={i} section={s} coupangLinks={coupangLinks} meta={meta} />)
   })
   return out
 }
@@ -265,7 +271,7 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
         {sections && (
           <>
             <TOC sections={sections} />
-            {renderWithAds(sections, coupangLinks)}
+            {renderWithAds(sections, coupangLinks, meta)}
           </>
         )}
 

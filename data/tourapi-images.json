@@ -1,0 +1,92 @@
+{
+  "spots": {
+    "kr-hallasan": {
+      "contentId": "1806551",
+      "contentTypeId": "85",
+      "title": "Festival del Gosari Puro del Monte Hallasan (한라산 청정 고사리축제)",
+      "addr": "Hannam-ri 1622-5, Namwon-eup, Seogwipo-si, Jeju-do",
+      "areaCode": "",
+      "mapx": "126.678385",
+      "mapy": "33.331483",
+      "mainImage": "https://tong.visitkorea.or.kr/cms/resource/20/4055420_image2_1.jpg",
+      "mainImageThumb": "https://tong.visitkorea.or.kr/cms/resource/20/4055420_image3_1.jpg",
+      "gallery": [],
+      "overview": "",
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사",
+      "sourceUrl": "https://www.visitkorea.or.kr/cms_NEW2/contentView/1806551"
+    },
+    "kr-seongsan": {
+      "contentId": "334595",
+      "contentTypeId": "76",
+      "title": "Pico Ilchulbong del Monte Seongsan (성산일출봉) [Patrimonio Natural de la Humanidad de la Unesco]",
+      "addr": "Ilchul-ro 284-12, Seongsan-eup, Seogwipo-si, Jeju-do",
+      "areaCode": "39",
+      "mapx": "126.9415156012",
+      "mapy": "33.4581111174",
+      "mainImage": "http://tong.visitkorea.or.kr/cms/resource/87/2653587_image2_1.jpg",
+      "mainImageThumb": "http://tong.visitkorea.or.kr/cms/resource/87/2653587_image3_1.jpg",
+      "gallery": [],
+      "overview": "",
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사",
+      "sourceUrl": "https://www.visitkorea.or.kr/cms_NEW2/contentView/334595"
+    },
+    "kr-udo": {
+      "contentId": "2999582",
+      "contentTypeId": "76",
+      "title": "Isla Biyangdo en la Isla Udo (비양도 (우도))",
+      "addr": "Yeonpyeong-ri, Udo-myeon, Jeju-si, Jeju",
+      "areaCode": "39",
+      "mapx": "126.9684147329",
+      "mapy": "33.5150302638",
+      "mainImage": null,
+      "mainImageThumb": null,
+      "gallery": [],
+      "overview": "",
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사",
+      "sourceUrl": "https://www.visitkorea.or.kr/cms_NEW2/contentView/2999582"
+    }
+  },
+  "regions": {
+    "kr-seoul": {
+      "areaCode": 1,
+      "topSpots": [],
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사"
+    },
+    "kr-busan": {
+      "areaCode": 6,
+      "topSpots": [],
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사"
+    },
+    "kr-jeju": {
+      "areaCode": 39,
+      "topSpots": [],
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사"
+    },
+    "kr-gangwon": {
+      "areaCode": 32,
+      "topSpots": [],
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사"
+    },
+    "kr-gyeongsang-buk": {
+      "areaCode": 35,
+      "topSpots": [],
+      "source": "korea-tour-api",
+      "license": "공공누리 1유형",
+      "credit": "한국관광공사"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import Layout from '../../components/Layout'
 import PostRenderer from '../../components/PostRenderer'
 import PageTracker from '../../components/PageTracker'
+import HeroImage from '../../components/HeroImage'
+import { getThemeImage } from '../../lib/images'
 import themes from '../../data/themes'
 import countries from '../../data/countries'
 
@@ -46,6 +48,7 @@ export default function ThemeDetail({ meta, postData, recommendedCountries }) {
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+      <HeroImage image={getThemeImage(meta.slug)} alt={meta.name} />
       <PostRenderer
         meta={{ ...meta, category: 'theme' }}
         postData={postData || { sections: fallbackSections }}

@@ -1,6 +1,8 @@
 import Layout from '../../components/Layout'
 import PostRenderer from '../../components/PostRenderer'
 import PageTracker from '../../components/PageTracker'
+import HeroImage from '../../components/HeroImage'
+import { getSituationImage } from '../../lib/images'
 import situations from '../../data/situations'
 import countries from '../../data/countries'
 
@@ -46,6 +48,7 @@ export default function SituationDetail({ meta, postData, recommended }) {
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+      <HeroImage image={getSituationImage(meta.slug)} alt={meta.situationName} />
       <PostRenderer
         meta={{ ...meta, category: 'situation' }}
         postData={postData || { sections: fallbackSections }}

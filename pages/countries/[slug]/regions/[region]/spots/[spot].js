@@ -2,6 +2,8 @@ import Layout from '../../../../../../components/Layout'
 import PostRenderer from '../../../../../../components/PostRenderer'
 import PageTracker from '../../../../../../components/PageTracker'
 import LeafletMap from '../../../../../../components/MapClient'
+import HeroImage from '../../../../../../components/HeroImage'
+import { getSpotImage } from '../../../../../../lib/images'
 import countries from '../../../../../../data/countries'
 import regions from '../../../../../../data/regions'
 import spots from '../../../../../../data/spots'
@@ -80,6 +82,7 @@ export default function SpotDetail({ country, region, meta, postData, nearbyHote
   return (
     <Layout title={`${meta.spotName} (${region.regionName}) — ${country.countryName} 여행`} description={meta.description} topAd={false}>
       <PageTracker slug={`${country.slug}-${region.slug}-${meta.slug}`} title={meta.title} />
+      <HeroImage image={getSpotImage(country.slug, meta.slug)} alt={meta.spotName} />
       {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={300} />}
       <PostRenderer
         meta={{ ...meta, category: 'spot', countryName: country.countryName, regionName: region.regionName }}

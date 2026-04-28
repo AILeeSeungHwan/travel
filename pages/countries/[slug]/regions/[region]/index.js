@@ -2,6 +2,8 @@ import Layout from '../../../../../components/Layout'
 import PostRenderer from '../../../../../components/PostRenderer'
 import PageTracker from '../../../../../components/PageTracker'
 import LeafletMap from '../../../../../components/MapClient'
+import HeroImage from '../../../../../components/HeroImage'
+import { getRegionImage } from '../../../../../lib/images'
 import countries from '../../../../../data/countries'
 import regions from '../../../../../data/regions'
 import spots from '../../../../../data/spots'
@@ -73,6 +75,7 @@ export default function RegionDetail({ country, meta, postData, spots, hotels })
   return (
     <Layout title={`${meta.regionName} 여행 — ${country.countryName}`} description={meta.description} topAd={false}>
       <PageTracker slug={`${country.slug}-${meta.slug}`} title={meta.title} />
+      <HeroImage image={getRegionImage(country.slug, meta.slug)} alt={`${meta.regionName} ${country.countryName}`} />
       {hasMapData && (
         <LeafletMap
           center={[meta.centerLat, meta.centerLng]}

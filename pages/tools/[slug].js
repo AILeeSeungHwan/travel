@@ -2,6 +2,7 @@ import Layout from '../../components/Layout'
 import PostRenderer from '../../components/PostRenderer'
 import PageTracker from '../../components/PageTracker'
 import tools from '../../data/tools'
+import { fetchAllRates } from '../../lib/ecos'
 
 export async function getStaticPaths() {
   return { paths: tools.map(t => ({ params: { slug: t.slug } })), fallback: false }
@@ -15,10 +16,24 @@ export async function getStaticProps({ params }) {
   try { postData = require(`../../posts/tools/${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
-  return { props: { meta, postData } }
+  // 환율 도구는 ECOS API 에서 실제 환율 가져오기 (ISR 1시간)
+  let rates = null
+  if (meta.slug === 'currency') {
+    rates = await fetchAllRates(['USD','JPY','EUR','CNY','GBP','HKD','TWD','SGD','THB','VND','IDR','MYR','PHP'])
+  }
+
+  return { props: { meta, postData, rates }, revalidate: 3600 }
 }
 
-export default function ToolDetail({ meta, postData }) {
+function formatRate(rate, currency) {
+  // JPY·VND·IDR 는 100원 단위 표시
+  if (['JPY','VND','IDR'].includes(currency)) {
+    return `100 ${currency} ≈ ${rate.toFixed(2)} 원`
+  }
+  return `1 ${currency} ≈ ${rate.toFixed(2)} 원`
+}
+
+export default function ToolDetail({ meta, postData, rates }) {
   const breadcrumbItems = [
     { name: '계산기', url: '/tools/' },
     { name: meta.toolName || meta.title },
@@ -42,6 +57,29 @@ export default function ToolDetail({ meta, postData }) {
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+
+      {meta.slug === 'currency' && rates && Object.keys(rates).length > 0 && (
+        <section style={{
+          background: 'linear-gradient(135deg, #ECFEFF, #F0FDFA)',
+          border: '1px solid #14B8A6',
+          borderRadius: 14, padding: '20px 22px', marginBottom: 24,
+        }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: '#0F766E', marginBottom: 8 }}>
+            💱 실시간 환율 (한국은행 ECOS, {Object.values(rates)[0]?.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1.$2.$3')} 기준)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
+            {Object.entries(rates).map(([cur, r]) => (
+              <div key={cur} style={{ background: '#fff', padding: '10px 14px', borderRadius: 8, fontSize: 13 }}>
+                <strong style={{ color: '#0F172A' }}>{formatRate(r.rate, cur)}</strong>
+              </div>
+            ))}
+          </div>
+          <div style={{ fontSize: 11, color: '#64748B', marginTop: 10 }}>
+            ※ 한국은행 매매기준율(전일 종가). 실제 환전 시 은행 우대율·트래블카드는 ±1~3% 차이.
+          </div>
+        </section>
+      )}
+
       <PostRenderer
         meta={{ ...meta, category: 'tool' }}
         postData={postData || { sections: fallbackSections }}

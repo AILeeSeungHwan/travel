@@ -6,12 +6,36 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://tripspot.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 28 Apr 2026 04:52:54 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 05:59:37 GMT</lastBuildDate>
     <image>
       <url>https://tripspot.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
       <link>https://tripspot.ambitstock.com/</link>
     </image>
+    <item>
+      <title><![CDATA[제주신라호텔 — 중문관광단지 5성 가족 호캉스 가이드]]></title>
+      <link>https://tripspot.ambitstock.com/hotels/shilla-jeju/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/hotels/shilla-jeju/</guid>
+      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[중문관광단지 대표 5성호텔 제주신라. 야외수영장(인피니티), 키즈클럽, 한식·일식·뷔페 다이닝, 중문해변 위치와 객실 타입·시설 정보.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[롯데호텔 제주 — 야외수영장·돌고래쇼·중문 가족 리조트]]></title>
+      <link>https://tripspot.ambitstock.com/hotels/lotte-jeju/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/hotels/lotte-jeju/</guid>
+      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[중문관광단지 5성호텔 롯데 제주. 야외수영장(가든풀), 돌고래쇼, 카지노, 한식·일식·중식 다이닝과 키즈프로그램 가이드.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[인터컨티넨탈 다낭 선 페닌술라 — 베트남 신혼·럭셔리 리조트]]></title>
+      <link>https://tripspot.ambitstock.com/hotels/intercontinental-danang/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/hotels/intercontinental-danang/</guid>
+      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[다낭 선차반도 절벽에 자리한 럭셔리 5성리조트. 4단 비치 풀, 미슐랭 다이닝(라메종 1888), 빌라형 객실로 신혼·기념일 여행 1순위.]]></description>
+    </item>
     <item>
       <title><![CDATA[한국 여행 — 제주·강원·부산·경주 핵심 지역 가이드]]></title>
       <link>https://tripspot.ambitstock.com/countries/kr/</link>
@@ -227,30 +251,6 @@
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[가족여행·풀빌라 수요 1위 다낭. 미케비치·바나힐·오행산·호이안·후에 등 핵심 스팟과 5성호텔·풀빌라·한식당 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[호치민 여행 — 1군·통일궁·메콩델타 도시 가이드]]></title>
-      <link>https://tripspot.ambitstock.com/countries/vn/regions/hochiminh/</link>
-      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/hochiminh/</guid>
-      <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[지역]]></category>
-      <description><![CDATA[베트남 최대 경제도시 호치민. 1군 시내, 통일궁, 노트르담 성당, 벤타인시장, 메콩델타 당일투어 추천.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[하노이 여행 — 호안끼엠·구시가지·하롱베이 가이드]]></title>
-      <link>https://tripspot.ambitstock.com/countries/vn/regions/hanoi/</link>
-      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/hanoi/</guid>
-      <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[지역]]></category>
-      <description><![CDATA[베트남 수도 하노이. 호안끼엠 호수·구시가지·문묘, 그리고 하롱베이 1박2일 크루즈와 사파 트레킹 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[푸꾸옥 여행 — 사오비치·빈펄·풀빌라 리조트 가이드]]></title>
-      <link>https://tripspot.ambitstock.com/countries/vn/regions/phuquoc/</link>
-      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/phuquoc/</guid>
-      <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[지역]]></category>
-      <description><![CDATA[베트남 최대 휴양섬 푸꾸옥. 사오비치, 빈펄 리조트, 후추농장, 야시장 추천과 풀빌라·5성호텔 가이드.]]></description>
     </item>
   </channel>
 </rss>

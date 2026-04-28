@@ -24,9 +24,9 @@ const hotels = [
     gallery: [
       { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '제주신라 야외수영장' },
     ],
-    hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: false,
+    hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
+    imageVerified: false, affiliateLinkVerified: true,
     tags: ['제주신라','중문','5성','호캉스'],
   },
   {
@@ -45,9 +45,9 @@ const hotels = [
     gallery: [
       { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '롯데호텔 제주 가든풀' },
     ],
-    hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: false,
+    hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
+    imageVerified: false, affiliateLinkVerified: true,
     tags: ['롯데호텔제주','중문','5성','호캉스'],
   },
   {
@@ -66,9 +66,9 @@ const hotels = [
     gallery: [
       { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: 'InterContinental Danang Beach Pool' },
     ],
-    hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: false,
+    hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
+    publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
+    imageVerified: false, affiliateLinkVerified: true,
     tags: ['인터컨티넨탈','다낭','5성','신혼'],
   },
 ]
