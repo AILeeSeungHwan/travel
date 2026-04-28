@@ -15,8 +15,8 @@ import {
   webApplicationSchema, howToSchema
 } from '../lib/jsonld'
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelmoa.ambitstock.com'
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '여행모아'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
 
 const PREFIX = {
   country:   '/countries',

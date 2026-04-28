@@ -1,4 +1,4 @@
-// scripts/generate-sitemap.js — 분할 sitemap + 인덱스 생성 (travelmoa)
+// scripts/generate-sitemap.js — 분할 sitemap + 인덱스 생성 (tripspot)
 const fs = require('fs')
 const path = require('path')
 
@@ -13,7 +13,7 @@ const tools      = require('../data/tools')
 const compares   = require('../data/compares')
 const addons     = require('../data/addons')
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelmoa.ambitstock.com'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
 const now = new Date().toISOString().slice(0, 10)
 
 function url(loc, lastmod, priority, changefreq) {

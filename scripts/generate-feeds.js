@@ -4,8 +4,8 @@ const path = require('path')
 
 const posts = require('../data/posts')
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelmoa.ambitstock.com'
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '여행모아'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
 const FEED_DESC = '국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.'
 
 const recent = [...posts]

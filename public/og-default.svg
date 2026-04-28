@@ -13,8 +13,9 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
   <rect x="80" y="180" width="180" height="180" rx="40" fill="url(#mark)" />
-  <text x="170" y="320" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="900" font-size="120" fill="#FFFFFF">旅</text>
-  <text x="320" y="280" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-weight="900" font-size="84" fill="#0F172A">여행모아</text>
+  <text x="170" y="328" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="900" font-size="140" fill="#FFFFFF" letter-spacing="-6">T</text>
+  <circle cx="219" cy="345" r="14" fill="#FFFFFF" />
+  <text x="320" y="280" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-weight="900" font-size="84" fill="#0F172A">트립스팟</text>
   <text x="320" y="340" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-weight="600" font-size="32" fill="#475569">국가 → 지역 → 스팟 · 호텔·가이드·계산기</text>
   <text x="320" y="395" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-weight="500" font-size="22" fill="#64748B">국내 50% / 해외 50% 균형 · 한국관광공사·외교부 출처 우선</text>
 </svg>

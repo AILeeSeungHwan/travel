@@ -4,7 +4,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps'
+import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps'
 
 // ISO 3166-1 numeric → 우리 사이트 country slug 매핑
 const NUMERIC_TO_SLUG = {
@@ -70,7 +70,26 @@ function MobileGrid({ countries, slugSet }) {
 
 function InteractiveMap({ countries, slugSet, onSelect }) {
   const [hover, setHover] = useState(null) // { name, slug, x, y }
+  const [position, setPosition] = useState({ coordinates: [20, 20], zoom: 1 })
   const slugToCountry = Object.fromEntries(countries.map(c => [c.slug, c]))
+  const z = position.zoom
+
+  const zoomTo = (slug) => {
+    const c = slugToCountry[slug]
+    if (!c) return
+    setPosition({ coordinates: [c.centerLng, c.centerLat], zoom: 6 })
+  }
+  const handleClick = (slug) => {
+    if (z < 3) {
+      zoomTo(slug) // 처음 클릭 → 해당 국가로 줌
+    } else {
+      onSelect && onSelect(slug) // 이미 줌된 상태 → 국가 허브로 이동
+    }
+  }
+
+  const zoomIn  = () => setPosition(p => ({ ...p, zoom: Math.min(p.zoom * 1.5, 12) }))
+  const zoomOut = () => setPosition(p => ({ ...p, zoom: Math.max(p.zoom / 1.5, 0.6) }))
+  const reset   = () => setPosition({ coordinates: [20, 20], zoom: 1 })
 
   return (
     <div style={{ position: 'relative', width: '100%' }}>
@@ -80,57 +99,84 @@ function InteractiveMap({ countries, slugSet, onSelect }) {
         width={980} height={500}
         style={{ width: '100%', height: 'auto' }}
       >
-        <Geographies geography={TOPO_URL}>
-          {({ geographies }) => geographies.map(geo => {
-            const slug = NUMERIC_TO_SLUG[geo.id]
-            const has = slug && slugSet.has(slug)
-            const country = slug ? slugToCountry[slug] : null
-            return (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                onMouseEnter={(e) => setHover({
-                  name: country ? country.countryName : geo.properties.name,
-                  slug: has ? slug : null,
-                  x: e.clientX, y: e.clientY,
-                })}
-                onMouseMove={(e) => setHover(h => h && ({ ...h, x: e.clientX, y: e.clientY }))}
-                onMouseLeave={() => setHover(null)}
-                onClick={() => { if (has && onSelect) onSelect(slug) }}
-                style={{
-                  default: {
-                    fill: has ? '#14B8A6' : '#E2E8F0',
-                    stroke: '#FFFFFF', strokeWidth: 0.5,
-                    outline: 'none',
-                    cursor: has ? 'pointer' : 'default',
-                  },
-                  hover: {
-                    fill: has ? '#0F766E' : '#CBD5E1',
-                    stroke: '#FFFFFF', strokeWidth: 0.7,
-                    outline: 'none',
-                    cursor: has ? 'pointer' : 'default',
-                  },
-                  pressed: { fill: '#0F766E', outline: 'none' },
-                }}
-              />
-            )
-          })}
-        </Geographies>
+        <ZoomableGroup
+          center={position.coordinates}
+          zoom={position.zoom}
+          minZoom={0.6}
+          maxZoom={12}
+          onMoveEnd={setPosition}
+        >
+          <Geographies geography={TOPO_URL}>
+            {({ geographies }) => geographies.map(geo => {
+              const slug = NUMERIC_TO_SLUG[geo.id]
+              const has = slug && slugSet.has(slug)
+              const country = slug ? slugToCountry[slug] : null
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  onMouseEnter={(e) => setHover({
+                    name: country ? country.countryName : geo.properties.name,
+                    slug: has ? slug : null,
+                    x: e.clientX, y: e.clientY,
+                  })}
+                  onMouseMove={(e) => setHover(h => h && ({ ...h, x: e.clientX, y: e.clientY }))}
+                  onMouseLeave={() => setHover(null)}
+                  onClick={() => { if (has) handleClick(slug) }}
+                  style={{
+                    default: {
+                      fill: has ? '#14B8A6' : '#E2E8F0',
+                      stroke: '#FFFFFF', strokeWidth: 0.5 / z,
+                      outline: 'none',
+                      cursor: has ? 'pointer' : 'default',
+                    },
+                    hover: {
+                      fill: has ? '#0F766E' : '#CBD5E1',
+                      stroke: '#FFFFFF', strokeWidth: 0.7 / z,
+                      outline: 'none',
+                      cursor: has ? 'pointer' : 'default',
+                    },
+                    pressed: { fill: '#0F766E', outline: 'none' },
+                  }}
+                />
+              )
+            })}
+          </Geographies>
 
-        {POINT_MARKERS.filter(m => slugSet.has(m.slug)).map(m => {
-          const country = slugToCountry[m.slug]
-          return (
+          {POINT_MARKERS.filter(m => slugSet.has(m.slug)).map(m => (
             <Marker key={m.slug} coordinates={[m.lng, m.lat]}
               onMouseEnter={(e) => setHover({ name: m.name, slug: m.slug, x: e.clientX, y: e.clientY })}
               onMouseLeave={() => setHover(null)}
-              onClick={() => onSelect && onSelect(m.slug)}
+              onClick={() => handleClick(m.slug)}
               style={{ default: { cursor: 'pointer' } }}
             >
-              <circle r={5} fill="#0EA5E9" stroke="#FFFFFF" strokeWidth={1.5} />
+              <circle r={5 / z} fill="#0EA5E9" stroke="#FFFFFF" strokeWidth={1.5 / z} />
             </Marker>
-          )
-        })}
+          ))}
+        </ZoomableGroup>
       </ComposableMap>
+
+      {/* 줌 컨트롤 */}
+      <div style={{
+        position: 'absolute', top: 12, right: 12, display: 'flex', flexDirection: 'column',
+        gap: 4, background: 'rgba(255,255,255,0.92)', borderRadius: 10, padding: 4,
+        boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+      }}>
+        <button onClick={zoomIn}  title="확대" style={zoomBtn}>＋</button>
+        <button onClick={zoomOut} title="축소" style={zoomBtn}>－</button>
+        <button onClick={reset}   title="초기화" style={{ ...zoomBtn, fontSize: 11 }}>⟲</button>
+      </div>
+
+      {/* 줌 안내 */}
+      {position.zoom < 1.2 && (
+        <div style={{
+          position: 'absolute', bottom: 10, left: '50%', transform: 'translateX(-50%)',
+          fontSize: 11, color: '#475569', background: 'rgba(255,255,255,0.85)',
+          padding: '4px 10px', borderRadius: 12, pointerEvents: 'none',
+        }}>
+          마우스 휠로 줌 · 드래그로 이동 · 작은 국가는 ＋ 버튼 또는 작은 점 마커 사용
+        </div>
+      )}
 
       {hover && (
         <div style={{
@@ -141,12 +187,18 @@ function InteractiveMap({ countries, slugSet, onSelect }) {
         }}>
           <div style={{ fontWeight: 700 }}>{hover.name}</div>
           <div style={{ fontSize: 11, color: hover.slug ? '#5EEAD4' : '#94A3B8', marginTop: 2 }}>
-            {hover.slug ? '클릭 → 국가 허브' : '준비 중'}
+            {hover.slug ? (z < 3 ? '클릭 → 줌 인' : '클릭 → 국가 허브') : '준비 중'}
           </div>
         </div>
       )}
     </div>
   )
+}
+
+const zoomBtn = {
+  width: 32, height: 32, border: 'none', borderRadius: 6,
+  background: '#fff', color: '#0F172A', fontSize: 16, fontWeight: 700,
+  cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
 }
 
 export default function WorldMap({ countries, contentSlugs, onSelect }) {

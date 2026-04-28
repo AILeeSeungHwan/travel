@@ -18,11 +18,11 @@ export async function getStaticProps() {
 
 export default function ImageCredits({ items }) {
   return (
-    <Layout title="이미지 출처 / Credits" description="여행모아에 사용된 모든 이미지의 출처·라이선스·작가명 일괄 표기 페이지.">
+    <Layout title="이미지 출처 / Credits" description="트립스팟에 사용된 모든 이미지의 출처·라이선스·작가명 일괄 표기 페이지.">
       <Breadcrumb items={[{ label:'이미지 출처' }]} />
       <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>이미지 출처 / Credits</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#334155' }}>
-        <p>여행모아에 사용된 모든 이미지의 출처와 라이선스를 일괄 표기합니다. DMCA·저작권 문의는 <a href="/contact/" style={{ color:'#0369A1' }}>문의 페이지</a>를 통해 보내주세요.</p>
+        <p>트립스팟에 사용된 모든 이미지의 출처와 라이선스를 일괄 표기합니다. DMCA·저작권 문의는 <a href="/contact/" style={{ color:'#0369A1' }}>문의 페이지</a>를 통해 보내주세요.</p>
 
         <h2 style={{ fontSize:20, fontWeight:800, marginTop:24, marginBottom:8 }}>허용된 이미지 출처</h2>
         <ul style={{ paddingLeft:18, marginBottom:14 }}>

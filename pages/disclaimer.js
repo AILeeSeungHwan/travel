@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb'
 
 export default function Disclaimer() {
   return (
-    <Layout title="여행 면책 안내" description="여행모아의 여행 정보는 일반적 설명이며, 비자·환율·여행경보·호텔 가격은 변동성이 큽니다. 출국 전 외교부·각국 대사관·호텔 공식 채널에서 재확인 필수.">
+    <Layout title="여행 면책 안내" description="트립스팟의 여행 정보는 일반적 설명이며, 비자·환율·여행경보·호텔 가격은 변동성이 큽니다. 출국 전 외교부·각국 대사관·호텔 공식 채널에서 재확인 필수.">
       <Breadcrumb items={[{ label:'여행 면책' }]} />
       <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>여행 면책 안내</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#334155' }}>

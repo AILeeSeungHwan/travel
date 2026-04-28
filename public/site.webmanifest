@@ -1,6 +1,6 @@
 {
-  "name": "여행모아",
-  "short_name": "여행모아",
+  "name": "트립스팟",
+  "short_name": "트립스팟",
   "icons": [
     { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }

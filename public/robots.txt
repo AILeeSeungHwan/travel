@@ -17,4 +17,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://travelmoa.ambitstock.com/sitemap.xml
+Sitemap: https://tripspot.ambitstock.com/sitemap.xml

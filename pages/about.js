@@ -3,12 +3,12 @@ import Breadcrumb from '../components/Breadcrumb'
 
 export default function About() {
   return (
-    <Layout title="소개" description="여행모아는 한국관광공사·외교부·각국 관광청 자료를 기반으로 여행 정보를 정리하는 큐레이터 사이트입니다.">
+    <Layout title="소개" description="트립스팟은 한국관광공사·외교부·각국 관광청 자료를 기반으로 여행 정보를 정리하는 큐레이터 사이트입니다.">
       <Breadcrumb items={[{ label:'소개' }]} />
-      <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>여행모아 소개</h1>
+      <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>트립스팟 소개</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#334155' }}>
         <p style={{ marginBottom:14 }}>
-          <strong>여행모아(travelmoa)</strong>는 국내·해외 여행을 준비하는 분들이 한국관광공사·외교부·각국 관광청·호텔스컴바인 등 공식 출처 자료를 손쉽게 비교·이해할 수 있도록 정리하는 <strong>여행 정보 큐레이터 사이트</strong>입니다.
+          <strong>트립스팟(tripspot)</strong>는 국내·해외 여행을 준비하는 분들이 한국관광공사·외교부·각국 관광청·호텔스컴바인 등 공식 출처 자료를 손쉽게 비교·이해할 수 있도록 정리하는 <strong>여행 정보 큐레이터 사이트</strong>입니다.
           국가 → 지역 → 스팟 3단계 허브 구조로 어떤 여행자든 자신의 여행지·예산·일정에 맞는 정보를 빠르게 찾을 수 있도록 설계했습니다.
         </p>
         <h2 style={{ fontSize:20, fontWeight:800, marginTop:24, marginBottom:8 }}>이 사이트의 포지셔닝</h2>

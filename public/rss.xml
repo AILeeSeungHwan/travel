@@ -1,253 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>여행모아</title>
-    <link>https://travelmoa.ambitstock.com/</link>
+    <title>트립스팟</title>
+    <link>https://tripspot.ambitstock.com/</link>
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
-    <atom:link href="https://travelmoa.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 26 Apr 2026 17:48:26 GMT</lastBuildDate>
+    <atom:link href="https://tripspot.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2026 01:01:09 GMT</lastBuildDate>
     <image>
-      <url>https://travelmoa.ambitstock.com/favicon-96x96.png</url>
-      <title>여행모아</title>
-      <link>https://travelmoa.ambitstock.com/</link>
+      <url>https://tripspot.ambitstock.com/favicon-96x96.png</url>
+      <title>트립스팟</title>
+      <link>https://tripspot.ambitstock.com/</link>
     </image>
     <item>
       <title><![CDATA[한국 여행 — 제주·강원·부산·경주 핵심 지역 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[국내 여행의 모든 것. 제주·강원·부산·경주·전남 등 광역별 추천 일정과 현지 음식·교통까지 한국관광공사 TourAPI 출처로 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[일본 여행 — 비자·교통·도쿄·오사카·후쿠오카·오키나와 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[한국인 최대 해외여행지 일본. 90일 무비자 입국, JR패스, 주요 광역(도쿄·오사카·후쿠오카·오키나와·홋카이도) 핵심 스팟과 료칸·온천 추천을 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[베트남 여행 — 다낭·호치민·하노이·푸꾸옥 가족여행 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/vn/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/vn/</guid>
+      <link>https://tripspot.ambitstock.com/countries/vn/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[가족여행·풀빌라 수요 1위 다낭, 호치민·하노이 도시 여행, 푸꾸옥 리조트 등 베트남 광역별 추천과 비자·환율·교통 정보를 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[태국 여행 — 방콕·푸켓·치앙마이 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/th/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/th/</guid>
+      <link>https://tripspot.ambitstock.com/countries/th/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/th/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[90일 무비자, 6시간 직항. 방콕 도시 여행, 푸켓·끄라비 비치, 치앙마이 한 달 살기 등 태국 광역별 추천을 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[대만 여행 — 타이페이·지우펀·가오슝 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/tw/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/tw/</guid>
+      <link>https://tripspot.ambitstock.com/countries/tw/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/tw/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[90일 무비자, 2.5시간 직항. 타이페이 야시장, 지우펀, 화롄, 가오슝 등 대만 핵심 도시 추천과 교통·통화·음식 가이드를 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[싱가포르 여행 — 마리나베이·센토사·차이나타운 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/sg/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/sg/</guid>
+      <link>https://tripspot.ambitstock.com/countries/sg/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/sg/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[깨끗하고 안전한 도시국가. 마리나베이샌즈·가든스바이더베이·센토사 등 싱가포르 핵심 스팟과 가족여행·미식·쇼핑 추천을 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[홍콩 여행 — 센트럴·침사추이·란콰이퐁 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/hk/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/hk/</guid>
+      <link>https://tripspot.ambitstock.com/countries/hk/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/hk/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[3.5시간 직항, 90일 무비자. 빅토리아피크·심포니오브라이트·딤섬 등 홍콩 핵심 추천과 교통·환율·문화 가이드를 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[필리핀 여행 — 세부·보라카이·팔라완 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/ph/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/ph/</guid>
+      <link>https://tripspot.ambitstock.com/countries/ph/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/ph/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[30일 무비자, 4시간 직항. 세부·보라카이·팔라완 등 비치 리조트 추천과 호핑투어·다이빙·풀빌라 정보를 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[말레이시아 여행 — 쿠알라룸푸르·코타키나발루 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/my/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/my/</guid>
+      <link>https://tripspot.ambitstock.com/countries/my/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/my/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[90일 무비자, 6시간 직항. 페트로나스 트윈타워·코타키나발루 비치 리조트 추천과 다인종 문화·미식 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[인도네시아 여행 — 발리·자카르타 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/id/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/id/</guid>
+      <link>https://tripspot.ambitstock.com/countries/id/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/id/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[발리(우붓·꾸따·세미냐크), 자카르타 등 인도네시아 핵심 지역 추천과 신혼여행·풀빌라·서핑 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[중국 여행 — 베이징·상하이·시안·계림 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/cn/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/cn/</guid>
+      <link>https://tripspot.ambitstock.com/countries/cn/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/cn/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[비자 정책 변동 빈도가 높음. 베이징·상하이·시안·계림 등 중국 핵심 도시 추천과 비자·통화·교통 가이드를 출국 전 재확인 단서와 함께 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[프랑스 여행 — 파리·니스·프로방스 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/fr/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/fr/</guid>
+      <link>https://tripspot.ambitstock.com/countries/fr/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/fr/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[쉥겐 90일 무비자, 12시간 직항. 파리·니스·프로방스·몽생미셸 등 프랑스 핵심 추천과 ETIAS·소매치기 주의 가이드를 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[이탈리아 여행 — 로마·베네치아·피렌체·아말피 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/it/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/it/</guid>
+      <link>https://tripspot.ambitstock.com/countries/it/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/it/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[로마·베네치아·피렌체·밀라노·아말피 해안 등 이탈리아 핵심 도시 추천과 미식·문화유산·교통 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[영국 여행 — 런던·에든버러·코츠월드 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/gb/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/gb/</guid>
+      <link>https://tripspot.ambitstock.com/countries/gb/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/gb/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[6개월 무비자(ETA 시행 예정), 12시간 직항. 런던·에든버러·코츠월드 등 영국 핵심 추천과 ETA·교통·날씨 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[독일 여행 — 베를린·뮌헨·로맨틱가도 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/de/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/de/</guid>
+      <link>https://tripspot.ambitstock.com/countries/de/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/de/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[쉥겐 90일 무비자, 12시간 직항. 베를린·뮌헨·드레스덴·로맨틱가도 등 독일 핵심 추천과 옥토버페스트·크리스마스마켓 시즌 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[미국 여행 — 하와이·뉴욕·LA·라스베이거스 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/us/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/us/</guid>
+      <link>https://tripspot.ambitstock.com/countries/us/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/us/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[ESTA 사전승인 필요. 하와이·뉴욕·LA·샌프란시스코·라스베이거스·플로리다 등 미국 핵심 도시 추천과 ESTA·렌터카·팁 문화 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[제주 여행 — 풀빌라·호캉스·자연 명소 핵심 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/regions/jeju/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/regions/jeju/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/regions/jeju/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/regions/jeju/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[국내 1위 여행지 제주의 동·서·남·북 추천 일정, 한라산·성산일출봉·우도·올레길 핵심 스팟과 풀빌라·5성호텔 추천을 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[강원 여행 — 속초·강릉·평창 동해안 일정 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/regions/gangwon/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/regions/gangwon/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/regions/gangwon/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/regions/gangwon/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[동해안 속초·강릉·평창·정선·양양 등 강원 핵심 지역 추천 일정, 설악산·정동진·서피비치·평창 알펜시아 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[부산 여행 — 해운대·광안리·감천문화마을 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/regions/busan/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/regions/busan/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/regions/busan/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/regions/busan/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[해운대·광안리 비치, 감천문화마을, 자갈치시장 등 부산 핵심 스팟 추천과 KTX·해운대 호텔·돼지국밥 미식 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[경주 여행 — 불국사·석굴암·황리단길 역사 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/regions/gyeongju/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/regions/gyeongju/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/regions/gyeongju/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/regions/gyeongju/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[신라 천년 고도 경주의 불국사·석굴암·첨성대·동궁과월지 야경, 황리단길 카페·한복 체험까지 추천 일정으로 정리합니다.]]></description>
     </item>
     <item>
       <title><![CDATA[서울 여행 — 외국인·국내인 모두를 위한 핵심 스팟]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/kr/regions/seoul/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/kr/regions/seoul/</guid>
+      <link>https://tripspot.ambitstock.com/countries/kr/regions/seoul/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/kr/regions/seoul/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[경복궁·창덕궁·북촌·명동·홍대·강남·이태원 등 서울 권역별 핵심 스팟과 호텔·교통·미식 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[도쿄 여행 — 신주쿠·시부야·아사쿠사 핵심 일정]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/regions/tokyo/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/regions/tokyo/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/regions/tokyo/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/regions/tokyo/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[도쿄 5대 권역(신주쿠·시부야·아사쿠사·긴자·하라주쿠) 추천 일정, 디즈니랜드·도쿄타워·스카이트리, 도쿄메트로 패스 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[오사카 여행 — 도톤보리·우메다·교토 당일치기 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/regions/osaka/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/regions/osaka/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/regions/osaka/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/regions/osaka/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[도톤보리 야시장, 오사카성, 우메다, 유니버설스튜디오, 그리고 교토·고베·나라 당일치기까지 오사카 광역(간사이) 핵심 추천.]]></description>
     </item>
     <item>
       <title><![CDATA[후쿠오카 여행 — 텐진·하카타·유후인 온천 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/regions/fukuoka/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/regions/fukuoka/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/regions/fukuoka/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/regions/fukuoka/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[직항 1시간, 도시 거리 콤팩트. 텐진·하카타 미식, 캐널시티, 다자이후, 유후인·벳푸 온천 당일치기 추천.]]></description>
     </item>
     <item>
       <title><![CDATA[오키나와 여행 — 나하·미야코·이시가키 비치 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/regions/okinawa/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/regions/okinawa/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/regions/okinawa/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/regions/okinawa/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[아열대 비치 휴양지. 나하 시내, 추라우미 수족관, 미야코지마·이시가키 등 오키나와 권역 추천과 렌터카·다이빙 정보.]]></description>
     </item>
     <item>
       <title><![CDATA[홋카이도 여행 — 삿포로·오타루·후라노 사계절 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/jp/regions/hokkaido/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/jp/regions/hokkaido/</guid>
+      <link>https://tripspot.ambitstock.com/countries/jp/regions/hokkaido/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/jp/regions/hokkaido/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[겨울 눈축제·스키, 여름 라벤더(후라노), 봄 벚꽃, 가을 단풍 — 사계절 매력의 홋카이도 광역 일정과 신치토세 공항 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[다낭 여행 — 풀빌라·미케비치·바나힐 가족여행 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/vn/regions/danang/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/vn/regions/danang/</guid>
+      <link>https://tripspot.ambitstock.com/countries/vn/regions/danang/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/danang/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[가족여행·풀빌라 수요 1위 다낭. 미케비치·바나힐·오행산·호이안·후에 등 핵심 스팟과 5성호텔·풀빌라·한식당 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[호치민 여행 — 1군·통일궁·메콩델타 도시 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/vn/regions/hochiminh/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/vn/regions/hochiminh/</guid>
+      <link>https://tripspot.ambitstock.com/countries/vn/regions/hochiminh/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/hochiminh/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[베트남 최대 경제도시 호치민. 1군 시내, 통일궁, 노트르담 성당, 벤타인시장, 메콩델타 당일투어 추천.]]></description>
     </item>
     <item>
       <title><![CDATA[하노이 여행 — 호안끼엠·구시가지·하롱베이 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/vn/regions/hanoi/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/vn/regions/hanoi/</guid>
+      <link>https://tripspot.ambitstock.com/countries/vn/regions/hanoi/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/hanoi/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[베트남 수도 하노이. 호안끼엠 호수·구시가지·문묘, 그리고 하롱베이 1박2일 크루즈와 사파 트레킹 가이드.]]></description>
     </item>
     <item>
       <title><![CDATA[푸꾸옥 여행 — 사오비치·빈펄·풀빌라 리조트 가이드]]></title>
-      <link>https://travelmoa.ambitstock.com/countries/vn/regions/phuquoc/</link>
-      <guid isPermaLink="true">https://travelmoa.ambitstock.com/countries/vn/regions/phuquoc/</guid>
+      <link>https://tripspot.ambitstock.com/countries/vn/regions/phuquoc/</link>
+      <guid isPermaLink="true">https://tripspot.ambitstock.com/countries/vn/regions/phuquoc/</guid>
       <pubDate>Fri, 24 Apr 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[지역]]></category>
       <description><![CDATA[베트남 최대 휴양섬 푸꾸옥. 사오비치, 빈펄 리조트, 후추농장, 야시장 추천과 풀빌라·5성호텔 가이드.]]></description>

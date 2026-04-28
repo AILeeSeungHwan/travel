@@ -1,4 +1,4 @@
-# 여행모아 (travelmoa) — MEMORY.md
+# 트립스팟 (tripspot) — MEMORY.md
 
 > 사이트 현재 상태와 진행 로그. 새 세션 시작 시 가장 먼저 이 파일을 읽고 작업을 이어간다.
 
@@ -163,7 +163,7 @@
 ### J. 배포 / 운영
 
 - Vercel 프로젝트 연결
-- 가비아 도메인 → `travelmoa.ambitstock.com` CNAME → cname.vercel-dns.com
+- 가비아 도메인 → `tripspot.ambitstock.com` CNAME → cname.vercel-dns.com
 - ads.txt 실제 pub-ID 입력
 - `.env.local` 운영값 Vercel 환경변수에 설정
 - 빌드 후 favicon `file public/favicon.ico` 검증
@@ -171,10 +171,10 @@
 
 ### K. 사이트 간 시너지
 
-- insurance ↔ travelmoa: 여행자보험 가이드에서 양방향 링크
-- finance ↔ travelmoa: 환율·트래블카드
-- car ↔ travelmoa: 렌터카 섹션
-- card ↔ travelmoa: 트래블 신용카드
+- insurance ↔ tripspot: 여행자보험 가이드에서 양방향 링크
+- finance ↔ tripspot: 환율·트래블카드
+- car ↔ tripspot: 렌터카 섹션
+- card ↔ tripspot: 트래블 신용카드
 
 ## 진행 로그
 
@@ -192,8 +192,8 @@ npm run dev          # http://localhost:3000
 ## 주요 환경 변수 (.env.local)
 
 ```
-NEXT_PUBLIC_SITE_NAME=여행모아
-NEXT_PUBLIC_SITE_URL=https://travelmoa.ambitstock.com
+NEXT_PUBLIC_SITE_NAME=트립스팟
+NEXT_PUBLIC_SITE_URL=https://tripspot.ambitstock.com
 NEXT_PUBLIC_ADSENSE_ID=ca-pub-XXXXXXXXXXXXXXXX
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_CLARITY_ID=XXXXXXXXXX

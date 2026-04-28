@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb'
 
 export default function Contact() {
   return (
-    <Layout title="문의" description="여행모아 정보 오류 신고·이미지 라이선스 문의·콘텐츠 제휴 문의 안내.">
+    <Layout title="문의" description="트립스팟 정보 오류 신고·이미지 라이선스 문의·콘텐츠 제휴 문의 안내.">
       <Breadcrumb items={[{ label:'문의' }]} />
       <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>문의 / 오류 신고</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#334155' }}>

@@ -4,25 +4,26 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps'
+import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps'
 
+// 각 국가의 (rotate, scale) — 뷰포트 500×360에 admin-1 전체가 들어가도록 설정
 const PROJECTION_BY_SLUG = {
-  kr: { rotate: [-128, -36, 0], scale: 4500 },
-  jp: { rotate: [-138, -37, 0], scale: 1400 },
-  vn: { rotate: [-108, -16, 0], scale: 2000 },
-  th: { rotate: [-101, -15, 0], scale: 1900 },
-  tw: { rotate: [-121, -23, 0], scale: 4500 },
-  cn: { rotate: [-104, -35, 0], scale: 700 },
-  ph: { rotate: [-122, -12, 0], scale: 1700 },
-  my: { rotate: [-110, -3, 0],  scale: 1500 },
-  id: { rotate: [-118, 2, 0],   scale: 900 },
-  sg: { rotate: [-104, -1.4, 0], scale: 35000 },
-  hk: { rotate: [-114, -22.4, 0], scale: 25000 },
-  fr: { rotate: [-2, -47, 0],   scale: 2200 },
-  it: { rotate: [-12, -42, 0],  scale: 2000 },
-  gb: { rotate: [4, -54, 0],    scale: 2200 },
-  de: { rotate: [-10, -51, 0],  scale: 2400 },
-  us: { rotate: [97, -38, 0],   scale: 700 },
+  kr: { rotate: [-127.8, -36, 0], scale: 3200 },   // 제주~한반도 북단 모두 포함
+  jp: { rotate: [-138, -37, 0],   scale: 1300 },
+  vn: { rotate: [-108, -16, 0],   scale: 1800 },
+  th: { rotate: [-101, -15, 0],   scale: 1700 },
+  tw: { rotate: [-121, -23.7, 0], scale: 4200 },
+  cn: { rotate: [-104, -35, 0],   scale: 650 },
+  ph: { rotate: [-122, -12, 0],   scale: 1400 },
+  my: { rotate: [-110, -3, 0],    scale: 1300 },
+  id: { rotate: [-118, 2, 0],     scale: 800 },
+  sg: { rotate: [-103.8, -1.35, 0], scale: 60000 },
+  hk: { rotate: [-114.15, -22.35, 0], scale: 40000 },
+  fr: { rotate: [-2, -47, 0],     scale: 2000 },
+  it: { rotate: [-12, -42, 0],    scale: 1700 },
+  gb: { rotate: [4, -54, 0],      scale: 1900 },
+  de: { rotate: [-10, -51, 0],    scale: 2200 },
+  us: { rotate: [97, -38, 0],     scale: 600 },
 }
 
 function normalize(s) {
@@ -76,9 +77,10 @@ export default function CountryMiniMap({ country, regions = [] }) {
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{ rotate: proj.rotate, scale: proj.scale }}
-        width={500} height={340}
+        width={500} height={360}
         style={{ width:'100%', height:'auto' }}
       >
+       <ZoomableGroup minZoom={0.8} maxZoom={6}>
         <Geographies geography={geo}>
           {({ geographies }) => geographies.map(g => {
             const adminKey = normalize(g.properties.name)
@@ -124,6 +126,7 @@ export default function CountryMiniMap({ country, regions = [] }) {
             <circle r={5} fill="#0EA5E9" stroke="#FFFFFF" strokeWidth={1.5} />
           </Marker>
         ))}
+       </ZoomableGroup>
       </ComposableMap>
 
       {hover && (

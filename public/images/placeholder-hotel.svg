@@ -8,5 +8,5 @@
   </defs>
   <rect width="800" height="450" fill="url(#bg)" />
   <text x="50%" y="48%" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="900" font-size="100" fill="#B45309">🏨</text>
-  <text x="50%" y="62%" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="22" fill="#92400E">여행모아 — 호텔스컴바인 API hot-link 또는 PR 키트로 교체 예정</text>
+  <text x="50%" y="62%" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="22" fill="#92400E">트립스팟 — 호텔스컴바인 API hot-link 또는 PR 키트로 교체 예정</text>
 </svg>

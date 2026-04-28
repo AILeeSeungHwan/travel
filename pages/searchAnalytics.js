@@ -25,7 +25,7 @@ export default function SearchAnalytics() {
   if (!authed) {
     return (
       <div style={{ fontFamily: FONT_FAMILY, padding: 40, maxWidth: 420, margin: '80px auto' }}>
-        <Head><title>여행모아 검색유입 분석</title><meta name="robots" content="noindex,nofollow" /></Head>
+        <Head><title>트립스팟 검색유입 분석</title><meta name="robots" content="noindex,nofollow" /></Head>
         <h1 style={{ fontSize:22, fontWeight:800, marginBottom:16 }}>검색유입 분석</h1>
         <input type="password" value={pwd} onChange={e => setPwd(e.target.value)} placeholder="ADMIN_PASSWORD"
           style={{ width:'100%', padding:'12px 14px', border:'1px solid #E2E8F0', borderRadius:10, fontSize:14, marginBottom:10 }} />
@@ -39,7 +39,7 @@ export default function SearchAnalytics() {
 
   return (
     <div style={{ fontFamily: FONT_FAMILY, padding: 24, maxWidth: 1200, margin: '0 auto' }}>
-      <Head><title>여행모아 검색유입 분석</title><meta name="robots" content="noindex,nofollow" /></Head>
+      <Head><title>트립스팟 검색유입 분석</title><meta name="robots" content="noindex,nofollow" /></Head>
       <h1 style={{ fontSize:22, fontWeight:800, marginBottom:14 }}>검색유입 분석</h1>
       <div style={{ display:'flex', gap:6, marginBottom:18 }}>
         {PRESETS.map(([k, label]) => (

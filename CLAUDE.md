@@ -1,12 +1,12 @@
-# 여행모아 (travelmoa) — CLAUDE.md
+# 트립스팟 (tripspot) — CLAUDE.md
 
-> 세션 역할: travelmoa 전담. 콘텐츠 생성·유지보수·페이지 수정만 수행하며, 다른 사이트(insurance·health·car·card 등)는 절대 건드리지 않는다.
+> 세션 역할: tripspot 전담. 콘텐츠 생성·유지보수·페이지 수정만 수행하며, 다른 사이트(insurance·health·car·card 등)는 절대 건드리지 않는다.
 
 ## 1. 프로젝트 개요
 
-**도메인**: 여행 (TravelMoa)
+**도메인**: 여행 (Tripspot)
 **스택**: Next.js 14 (pages router) + Supabase + Vercel
-**브랜드**: 여행모아 / `travelmoa.ambitstock.com` / 컬러 `#0EA5E9`(sky) → `#14B8A6`(teal)
+**브랜드**: 트립스팟 / `tripspot.ambitstock.com` / 컬러 `#0EA5E9`(sky) → `#14B8A6`(teal)
 **수익 모델**: AdSense (주력) + 호텔스컴바인 어필리에이트(전환 수익) + 쿠팡 파트너스(보조 — 여행용품 카테고리 한정)
 **E-E-A-T 등급**:
 - Level A — 비자·출입국·여행자보험·외교부 여행경보 (가장 엄격)

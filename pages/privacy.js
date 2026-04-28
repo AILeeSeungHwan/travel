@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb'
 
 export default function Privacy() {
   return (
-    <Layout title="개인정보 처리방침" description="보험모아는 사용자 개인정보를 수집하지 않으며 GA·Clarity 등 표준 분석 도구만 사용합니다.">
+    <Layout title="개인정보 처리방침" description="트립스팟은 사용자 개인정보를 수집하지 않으며 GA·Clarity 등 표준 분석 도구만 사용합니다.">
       <Breadcrumb items={[{ label:'개인정보' }]} />
       <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>개인정보 처리방침</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#374151' }}>

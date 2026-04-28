@@ -48,7 +48,7 @@
   url:           '...',
   source:        'korea-tour-api'|'wikimedia'|'unsplash'|'pexels'|'hotelscombined-api'|'self-og',
   license:       '공공누리 1유형'|'CC BY-SA 4.0'|'Unsplash License'|'파트너 약관'|'자체',
-  credit:        '한국관광공사'|'Photo by John Doe'|'via HotelsCombined'|'travelmoa',
+  credit:        '한국관광공사'|'Photo by John Doe'|'via HotelsCombined'|'tripspot',
   sourceUrl:     'https://...',
   alt:           '한라산 백록담 일출',
 }

@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 const BRAND_COLOR = '#0EA5E9'
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '여행모아'
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
 
 export default function Document() {
   return (

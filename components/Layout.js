@@ -7,8 +7,8 @@ import { organizationSchema, websiteSchema } from '../lib/jsonld'
 import { SideAd } from './StickySideAds'
 import TopAdRow from './TopAdRow'
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '여행모아'
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelmoa.ambitstock.com'
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
 const SITE_DESC = '국내 50% / 해외 50% 균형 — 국가 → 지역 → 스팟 3단계 허브와 호텔·여행 가이드·계산기를 한 곳에서. 한국관광공사·외교부 출처를 우선합니다.'
 const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || ''
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || ''
@@ -102,7 +102,7 @@ export default function Layout({ children, title, description, topAd = true, sid
       <header style={{ background:'#fff', borderBottom:'1px solid #e2e8f0', position:'sticky', top:0, zIndex:50 }}>
         <div style={{ maxWidth:1400, margin:'0 auto', padding:'0 20px', display:'flex', alignItems:'center', justifyContent:'space-between', height:62 }}>
           <Link href="/" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:8 }}>
-            <span style={{ width:32, height:32, borderRadius:8, background:'linear-gradient(135deg, #0EA5E9, #14B8A6)', display:'inline-flex', alignItems:'center', justifyContent:'center', color:'#fff', fontWeight:800 }}>旅</span>
+            <span style={{ width:32, height:32, borderRadius:8, background:'linear-gradient(135deg, #0EA5E9, #14B8A6)', display:'inline-flex', alignItems:'center', justifyContent:'center', color:'#fff', fontWeight:900, fontSize:18, letterSpacing:'-1px' }}>T</span>
             <span style={{ fontWeight:800, fontSize:17, color:'#0F172A' }}>{SITE_NAME}</span>
           </Link>
           <nav className="desktop-nav" style={{ display:'flex', gap:18 }}>
@@ -164,7 +164,7 @@ export default function Layout({ children, title, description, topAd = true, sid
           </div>
         </div>
         <div style={{ borderTop:'1px solid #e2e8f0', padding:'14px 20px', textAlign:'center', fontSize:12, color:'#94a3b8' }}>
-          © {new Date().getFullYear()} {SITE_NAME} · travelmoa.ambitstock.com
+          © {new Date().getFullYear()} {SITE_NAME} · tripspot.ambitstock.com
         </div>
       </footer>
 

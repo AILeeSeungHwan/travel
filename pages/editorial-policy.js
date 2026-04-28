@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb'
 
 export default function EditorialPolicy() {
   return (
-    <Layout title="편집 정책" description="여행모아의 정보 출처 기준, 이미지 라이선스 정책, 검증 절차, 업데이트 주기, 광고/제휴 분리 원칙을 안내합니다.">
+    <Layout title="편집 정책" description="트립스팟의 정보 출처 기준, 이미지 라이선스 정책, 검증 절차, 업데이트 주기, 광고/제휴 분리 원칙을 안내합니다.">
       <Breadcrumb items={[{ label:'편집 정책' }]} />
       <h1 style={{ fontSize:26, fontWeight:900, marginBottom:14 }}>편집 정책</h1>
       <div style={{ fontSize:15, lineHeight:1.85, color:'#334155' }}>
