@@ -155,6 +155,17 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
   const slug = meta.slug
   const canonicalUrl = SITE + (canonicalPath || (PREFIX[meta.category] || '/posts') + '/' + slug + '/')
 
+  // 카테고리·슬러그별 자체 OG 이미지 (scripts/generate-og-images.js 가 자동 생성)
+  const PLURAL = { country:'countries', region:'regions', spot:'spots', hotel:'hotels',
+                   theme:'themes', guide:'guides', situation:'situations', tool:'tools',
+                   compare:'compares', addon:'addons' }
+  const ogSlug = (meta.category === 'region')
+    ? `${meta.countrySlug}-${slug}`
+    : (meta.category === 'spot')
+      ? `${meta.countrySlug}-${slug}`
+      : slug
+  const ogImage = `${SITE}/og/${PLURAL[meta.category] || 'posts'}-${ogSlug}.png`
+
   const [coupangLinks, setCoupangLinks] = useState([])
   useEffect(() => {
     if (!slug) return
@@ -171,7 +182,7 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
 
   const ldArticle = articleSchema({
     title: meta.title, description: meta.description, url: canonicalUrl,
-    date: meta.publishedAt, updated: meta.updatedAt, tags: meta.tags,
+    date: meta.publishedAt, updated: meta.updatedAt, tags: meta.tags, image: ogImage,
   })
   const ldBreadcrumb = breadcrumbSchema([{ name: SITE_NAME, url: '/' }, ...crumbItems])
 
@@ -217,6 +228,10 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:image" content={ogImage} />
         <meta property="article:published_time" content={(meta.publishedAt || '') + 'T00:00:00+09:00'} />
         <meta property="article:modified_time" content={(meta.updatedAt || meta.publishedAt || '') + 'T00:00:00+09:00'} />
         <meta property="article:section" content={CAT_LABEL[meta.category] || ''} />

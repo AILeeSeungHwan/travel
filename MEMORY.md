@@ -2,27 +2,29 @@
 
 > 사이트 현재 상태와 진행 로그. 새 세션 시작 시 가장 먼저 이 파일을 읽고 작업을 이어간다.
 
-## 사이트 현황 (2026-04-27 기준)
+## 사이트 현황 (2026-04-28 기준)
 
-- **상태**: 초기 스캐폴드 완료 — 16개국·30개 지역·5개 스팟·3개 호텔·10개 테마·10개 가이드·8개 상황·8개 도구·5개 비교·10개 여행용품의 **메타데이터**를 입력. 본문(섹션 배열)은 폴백 자동 생성 사용 중.
-- **컴포넌트**: Layout / PostRenderer / TravelBoxes / WorldMap / PostCard / Breadcrumb / AdUnit / MultiplexAd / TopAdRow / StickySideAds / Faq / PageTracker
-- **이미지**: 모든 스팟·호텔에 placeholder.svg + 라이선스 메타 입력. 실제 이미지 교체는 어드민 작업 단계에서 수행.
-- **호텔스컴바인 딥링크**: 모든 호텔 빈값 — 어드민에서 입력 필요.
+- **상태**: **모든 93개 포스트 본문 작성 완료** — 외교부·한국관광공사·UNESCO 공식 출처 기반.
+- **이름**: 트립스팟 (tripspot.ambitstock.com) — 브랜드 마크 "T".
+- **지도**: 메인 인터랙티브 세계지도(react-simple-maps) + 국가별 admin-1 mini-map (한국 17시도·일본 47현·중국 31성 등) + 메인 줌 컨트롤. Leaflet mini-map (지역·스팟·호텔).
+- **OG 이미지**: 93개 포스트 자체 OG PNG 1200×630 자동 생성 (`scripts/generate-og-images.js`).
+- **컴포넌트**: Layout / PostRenderer / TravelBoxes / WorldMap / CountryMiniMap / LeafletMap / PostCard / Breadcrumb / AdUnit / MultiplexAd / TopAdRow / StickySideAds / Faq / PageTracker
 
-## 포스트 카운트
+## 포스트 카운트 (2026-04-28 본문 작성 완료)
 
-| 엔티티 | 메타 | 본문(.js) | 비고 |
+| 엔티티 | 메타 | **본문(.js)** | 평균 분량 |
 |---|---|---|---|
-| Country | 16 | 0 | 폴백 본문으로 빌드 가능 |
-| Region | 21 | 0 | 폴백 본문 |
-| Spot | 5 | 0 | 폴백 본문 (TourAPI 동기화 시 추가) |
-| Hotel | 3 | 0 | 호텔스컴바인 hot-link 후 추가 |
-| Theme | 10 | 0 | |
-| Guide | 10 | 0 | 비자 가이드는 Level A — 출처 2개 이상 검증 후 본문 작성 |
-| Situation | 8 | 0 | |
-| Tool | 8 | 0 | 계산기 위젯 추후 구현 |
-| Compare | 5 | 0 | |
-| Addon | 10 | 0 | |
+| Country | 16 | **16 ✓** | 2,500~3,500자 |
+| Region | 18 | **18 ✓** | 1,800~2,500자 |
+| Spot | 5 | **5 ✓** | 1,200~1,800자 |
+| Hotel | 3 | **3 ✓** | 1,500~2,000자 |
+| Theme | 10 | **10 ✓** | 1,500~2,500자 |
+| Guide | 10 | **10 ✓** | 2,000~3,000자 (Level A 출처 2개+) |
+| Situation | 8 | **8 ✓** | 1,500~2,500자 |
+| Tool | 8 | **8 ✓** | 1,500~2,000자 |
+| Compare | 5 | **5 ✓** | 1,800~2,500자 |
+| Addon | 10 | **10 ✓** | 1,000~1,500자 |
+| **합계** | **93** | **93** | 약 18~20만 자 |
 
 ## 앵커 포스트 (트래픽 80% 책임)
 
