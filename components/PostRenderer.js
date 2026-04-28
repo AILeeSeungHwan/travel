@@ -173,13 +173,26 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
   const ogImage = `${SITE}/og/${PLURAL[meta.category] || 'posts'}-${ogSlug}.png`
 
   const [coupangLinks, setCoupangLinks] = useState([])
+  const [hotelLinkOverride, setHotelLinkOverride] = useState(null)
   useEffect(() => {
     if (!slug) return
     fetch(`/api/post-links?slug=${encodeURIComponent(slug)}`)
       .then(r => r.ok ? r.json() : [])
       .then(data => { if (Array.isArray(data) && data.length > 0) setCoupangLinks(data) })
       .catch(() => {})
-  }, [slug])
+    // 호텔 페이지: 어드민 등록 딥링크 우선 적용
+    if (meta.category === 'hotel') {
+      fetch(`/api/hotel-link?slug=${encodeURIComponent(slug)}`)
+        .then(r => r.ok ? r.json() : null)
+        .then(data => { if (data && data.deeplink) setHotelLinkOverride(data.deeplink) })
+        .catch(() => {})
+    }
+  }, [slug, meta.category])
+
+  // hotel meta 에 어드민 override 적용 (있을 때만)
+  const effectiveMeta = hotelLinkOverride
+    ? { ...meta, hotelsCombinedDeepLink: hotelLinkOverride }
+    : meta
 
   const crumbItems = breadcrumbItems || [
     { name: CAT_LABEL[meta.category] || '콘텐츠', url: (PREFIX[meta.category] || '') + '/' },
@@ -271,7 +284,7 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
         {sections && (
           <>
             <TOC sections={sections} />
-            {renderWithAds(sections, coupangLinks, meta)}
+            {renderWithAds(sections, coupangLinks, effectiveMeta)}
           </>
         )}
 

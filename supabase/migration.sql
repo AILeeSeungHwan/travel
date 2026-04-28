@@ -32,6 +32,20 @@ CREATE TABLE IF NOT EXISTS affiliate_clicks (
 CREATE INDEX IF NOT EXISTS idx_aff_hotel ON affiliate_clicks(hotel_slug);
 CREATE INDEX IF NOT EXISTS idx_aff_created ON affiliate_clicks(created_at DESC);
 
+-- 2-1. 호텔별 어필리에이트 딥링크 (어드민 관리)
+CREATE TABLE IF NOT EXISTS hotel_links (
+  id BIGSERIAL PRIMARY KEY,
+  hotel_slug TEXT NOT NULL UNIQUE,
+  hotel_name TEXT,
+  deeplink TEXT,
+  hotelscombined_id TEXT,
+  notes TEXT,
+  verified BOOLEAN DEFAULT false,
+  created_at TIMESTAMPTZ DEFAULT now(),
+  updated_at TIMESTAMPTZ DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS idx_hotellinks_slug ON hotel_links(hotel_slug);
+
 -- 3. 페이지뷰 로그
 CREATE TABLE IF NOT EXISTS pageviews (
   id BIGSERIAL PRIMARY KEY,
@@ -70,10 +84,12 @@ ALTER TABLE coupang_links ENABLE ROW LEVEL SECURITY;
 ALTER TABLE affiliate_clicks ENABLE ROW LEVEL SECURITY;
 ALTER TABLE pageviews ENABLE ROW LEVEL SECURITY;
 ALTER TABLE image_credits ENABLE ROW LEVEL SECURITY;
+ALTER TABLE hotel_links ENABLE ROW LEVEL SECURITY;
 
--- 읽기: 누구나 (post-links / image-credits 공개 API)
+-- 읽기: 누구나 (post-links / image-credits / hotel-link 공개 API)
 CREATE POLICY "public_read_coupang"   ON coupang_links   FOR SELECT USING (true);
 CREATE POLICY "public_read_image"     ON image_credits   FOR SELECT USING (true);
+CREATE POLICY "public_read_hotel"     ON hotel_links     FOR SELECT USING (true);
 -- INSERT: 익명 OK
 CREATE POLICY "anon_insert_pageview"  ON pageviews       FOR INSERT WITH CHECK (true);
 CREATE POLICY "anon_insert_aff_click" ON affiliate_clicks FOR INSERT WITH CHECK (true);
