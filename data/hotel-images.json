@@ -1,0 +1,147 @@
+{
+  "shilla-jeju": {
+    "contentId": "142946",
+    "mainImage": "http://tong.visitkorea.or.kr/cms/resource/93/3538893_image2_1.jpg",
+    "gallery": [
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/81/3538881_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/81/3538881_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (8)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/82/3538882_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/82/3538882_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (1)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/85/3538885_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/85/3538885_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (4)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/87/3538887_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/87/3538887_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (6)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/88/3538888_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/88/3538888_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (7)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/91/3538891_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/91/3538891_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (10)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/96/3538896_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/96/3538896_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (15)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/97/3538897_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/97/3538897_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (16)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/99/3538899_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/99/3538899_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (18)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/84/3538884_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/84/3538884_image3_1.jpg",
+        "caption": "제주_제주신라호텔  (3)"
+      }
+    ],
+    "source": "korea-tour-api",
+    "license": "공공누리 1유형",
+    "credit": "한국관광공사"
+  },
+  "lotte-jeju": {
+    "contentId": "143025",
+    "mainImage": "http://tong.visitkorea.or.kr/cms/resource/46/3538946_image2_1.jpg",
+    "gallery": [
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/44/3538944_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/44/3538944_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (1)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/45/3538945_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/45/3538945_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (2)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/47/3538947_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/47/3538947_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (4)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/50/3538950_image2_1.JPG",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/50/3538950_image3_1.JPG",
+        "caption": "제주_롯데호텔 제주 (6)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/51/3538951_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/51/3538951_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (7)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/52/3538952_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/52/3538952_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (8)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/53/3538953_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/53/3538953_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (9)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/54/3538954_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/54/3538954_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (10)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/56/3538956_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/56/3538956_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (11)"
+      },
+      {
+        "url": "http://tong.visitkorea.or.kr/cms/resource/48/3538948_image2_1.jpg",
+        "urlThumb": "http://tong.visitkorea.or.kr/cms/resource/48/3538948_image3_1.jpg",
+        "caption": "제주_롯데호텔 제주 (5)"
+      }
+    ],
+    "source": "korea-tour-api",
+    "license": "공공누리 1유형",
+    "credit": "한국관광공사"
+  },
+  "intercontinental-danang": {
+    "contentId": null,
+    "mainImage": "https://images.unsplash.com/photo-1732162933717-e87940716e10?crop=entropy&cs=tinysrgb&w=1200&fit=max",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1732162933717-e87940716e10?crop=entropy&cs=tinysrgb&w=1200&fit=max",
+        "caption": "InterContinental Danang 전경",
+        "photographer": "Vivu Vietnam",
+        "photographerUrl": "https://unsplash.com/@vivuvietnam?utm_source=tripspot&utm_medium=referral"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1724218041680-a6b87c3c443e?crop=entropy&cs=tinysrgb&w=1200&fit=max",
+        "caption": "다낭 해변 리조트",
+        "photographer": "Ken Oyama",
+        "photographerUrl": "https://unsplash.com/@kenoyama?utm_source=tripspot&utm_medium=referral"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1565503261152-b42ab6c1a925?crop=entropy&cs=tinysrgb&w=1200&fit=max",
+        "caption": "풀빌라 전경",
+        "photographer": "Jamison Cameron",
+        "photographerUrl": "https://unsplash.com/@jamisoncameron?utm_source=tripspot&utm_medium=referral"
+      }
+    ],
+    "source": "unsplash",
+    "license": "Unsplash License",
+    "credit": "Unsplash"
+  }
+}

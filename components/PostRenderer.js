@@ -74,10 +74,24 @@ function Section({ section, coupangLinks, meta }) {
   if (s.type === 'toc')     return null
   if (s.type === 'image')   return (
     <figure style={{ margin:'20px 0', textAlign:'center' }}>
-      <img src={s.src} alt={s.alt || ''} loading="lazy" style={{ maxWidth:'100%', borderRadius:10 }} />
+      <img src={s.src} alt={s.alt || ''} loading="lazy" style={{ maxWidth:'100%', borderRadius:10, width:'100%', objectFit:'cover', maxHeight:480 }} />
       {s.caption && <figcaption style={{ fontSize:12, color:'#94A3B8', marginTop:8 }}>{s.caption}</figcaption>}
       <ImageCredit source={s.imageSource} license={s.imageLicense} credit={s.imageCredit} link={s.imageSourceUrl} />
     </figure>
+  )
+  if (s.type === 'gallery') return (
+    <div style={{ margin:'20px 0' }}>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(260px,1fr))', gap:10 }}>
+        {(s.images || []).map((img, i) => (
+          <figure key={i} style={{ margin:0 }}>
+            <img src={img.src || img.url} alt={img.alt || img.caption || ''} loading="lazy"
+              style={{ width:'100%', height:200, objectFit:'cover', borderRadius:8, display:'block' }} />
+            {img.caption && <figcaption style={{ fontSize:11, color:'#94A3B8', marginTop:4, textAlign:'center' }}>{img.caption}</figcaption>}
+          </figure>
+        ))}
+      </div>
+      {s.imageSource && <ImageCredit source={s.imageSource} license={s.imageLicense} credit={s.imageCredit} link={s.imageSourceUrl} />}
+    </div>
   )
   if (s.type === 'ending')  return <div style={{ background:'#F8FAFC', borderRadius:10, padding:'18px 22px', margin:'24px 0' }} dangerouslySetInnerHTML={{ __html: s.html }} />
   if (s.type === 'ad')      return null
