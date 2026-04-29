@@ -12,7 +12,7 @@ import {
 import {
   articleSchema, breadcrumbSchema, faqSchema,
   touristDestinationSchema, touristAttractionSchema, hotelSchema,
-  webApplicationSchema, howToSchema
+  webApplicationSchema, howToSchema, productReviewSchema, itemListSchema
 } from '../lib/jsonld'
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
@@ -232,6 +232,12 @@ export default function PostRenderer({ meta, postData, related, breadcrumbItems,
     }
     if (meta.category === 'guide' && meta.steps) {
       return howToSchema({ title: meta.title, description: meta.description, steps: meta.steps })
+    }
+    if (meta.category === 'addon') {
+      return productReviewSchema({
+        name: meta.title, description: meta.description, url: canonicalUrl,
+        category: '여행용품', keywords: meta.tags,
+      })
     }
     return null
   })()

@@ -180,7 +180,16 @@
 
 ## 진행 로그
 
-- **2026-04-27**: 초기 스캐폴드 완료. insurance 프로젝트를 베이스로 8개 엔티티/페이지/컴포넌트/문서/templates/scripts/공식 출처 매핑까지 일괄 생성. 이미지는 placeholder, 본문은 폴백 자동 생성으로 빌드 가능 상태. 호텔스컴바인 딥링크·실제 이미지·외교부 여행경보 동기화는 후속 세션에서 진행.
+- **2026-04-27**: 초기 스캐폴드 완료. insurance 프로젝트를 베이스로 8개 엔티티/페이지/컴포넌트/문서/templates/scripts/공식 출처 매핑까지 일괄 생성. 이미지는 placeholder, 본문은 폴백 자동 생성으로 빌드 가능 상태.
+- **2026-04-29**: SEO 퀄리티 전면 개선.
+  - **FAQ 추가** (Spots 5개+Hotels 3개 → FAQPage 리치스니펫 활성화): kr-hallasan·kr-seongsan·kr-udo·vn-banahills·vn-mykhebeach·shilla-jeju·lotte-jeju·intercontinental-danang
+  - **국가 포스트 대폭 확장**: de.js(2,567→8,000자), gb.js(3,280→8,000자), it.js(3,756→8,500자)
+  - **지역 포스트 확장**: vn-phuquoc.js(2,989→5,500자)
+  - **상황 포스트 확장**: parents-trip.js(2,050→8,655자), honeymoon.js(2,725→6,000자)
+  - **lib/jsonld.js 스키마 추가**: productReviewSchema(addon), itemListSchema(compare)
+  - **PostRenderer.js**: addon 페이지에 productReviewSchema 연결
+  - **scripts/sync-post-data.js** 생성: data↔posts 일관성 자동 점검 + --fix 옵션
+  - **.claude/settings.json** 훅 설정: posts/ 파일 Write/Edit 시 sync 자동 실행
 
 ## 빌드 / 실행
 
