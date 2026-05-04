@@ -597,8 +597,10 @@
           "시티"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-04T09:05:12.463Z"
     },
     {
       "id": "b006",
@@ -625,8 +627,10 @@
           "사쿠라"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-04T09:10:14.417Z"
     },
     {
       "id": "c006",
@@ -653,8 +657,10 @@
           "비행"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-04T09:15:16.522Z"
     },
     {
       "id": "a007",
