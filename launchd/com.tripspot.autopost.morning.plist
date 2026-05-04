@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tripspot.autopost.morning</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/lee/Desktop/Project/travel/travel/scripts/run-autopost.sh</string>
+    <string>morning</string>
+    <string>3</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/lee/Desktop/Project/travel/travel</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>/Users/lee</string>
+    <key>USER</key>
+    <string>lee</string>
+    <key>LOGNAME</key>
+    <string>lee</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/lee/Desktop/Project/travel/travel/logs/launchd-morning.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/lee/Desktop/Project/travel/travel/logs/launchd-morning.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

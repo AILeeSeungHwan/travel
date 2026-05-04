@@ -1,0 +1,3186 @@
+{
+  "_comment": "slot: morning(7시)=호텔+가이드+지역 / noon(12시)=호텔+비교+상황 / evening(18시)=호텔+테마+용품",
+  "posts": [
+    {
+      "id": "a001",
+      "slot": "morning",
+      "priority": 1,
+      "entity": "hotel",
+      "slug": "seoul-shilla",
+      "title": "서울신라호텔 완전 가이드 — 도심 5성 럭셔리·신라멤버스",
+      "keywords": [
+        "서울신라호텔",
+        "서울 5성 호텔",
+        "서울 럭셔리 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "서울신라호텔",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H004",
+        "slug": "seoul-shilla",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "서울신라호텔",
+        "hotelNameEn": "The Shilla Seoul",
+        "hotelClass": "5성",
+        "hotelType": "비즈니스·럭셔리",
+        "starRating": 5,
+        "guestRating": 4.7,
+        "priceRange": "30~80만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "다이닝",
+          "면세점 인접"
+        ],
+        "address": "서울 중구 동호로 249",
+        "lat": 37.557,
+        "lng": 127.007,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "서울신라",
+          "남산",
+          "5성",
+          "비즈니스"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: error: An unknown error occurred (Unexpected)",
+      "errorAt": "2026-05-02T16:33:34.423Z"
+    },
+    {
+      "id": "b001",
+      "slot": "morning",
+      "priority": 1,
+      "entity": "guide",
+      "slug": "japan-visa",
+      "title": "일본 비자 완전 가이드 — 무비자 입국·Visit Japan Web",
+      "keywords": [
+        "일본 비자",
+        "일본 무비자",
+        "Visit Japan Web"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "japan airport travel passport",
+      "meta": null,
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-02T16:39:55.337Z"
+    },
+    {
+      "id": "c001",
+      "slot": "morning",
+      "priority": 1,
+      "entity": "region",
+      "slug": "kr-seoul",
+      "title": "서울 여행 완전 가이드 — 명소·맛집·교통·숙소",
+      "keywords": [
+        "서울 여행",
+        "서울 관광",
+        "서울 명소 추천"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "서울 경복궁",
+      "contentTypeId": "12",
+      "meta": {
+        "id": "R019",
+        "slug": "kr-seoul",
+        "countrySlug": "kr",
+        "regionName": "서울",
+        "regionNameEn": "Seoul",
+        "regionType": "capital",
+        "lat": 37.566,
+        "lng": 126.978,
+        "tags": [
+          "서울",
+          "수도",
+          "명소"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-02T22:05:04.434Z"
+    },
+    {
+      "id": "a002",
+      "slot": "noon",
+      "priority": 1,
+      "entity": "hotel",
+      "slug": "jw-marriott-seoul",
+      "title": "JW 메리어트 서울 완전 가이드 — 강남 5성·스파·다이닝",
+      "keywords": [
+        "JW 메리어트 서울",
+        "강남 5성 호텔",
+        "서울 럭셔리 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "JW 메리어트 서울",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H005",
+        "slug": "jw-marriott-seoul",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "JW 메리어트 서울",
+        "hotelNameEn": "JW Marriott Hotel Seoul",
+        "hotelClass": "5성",
+        "hotelType": "비즈니스",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "25~70만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "이그제큐티브 라운지"
+        ],
+        "address": "서울 서초구 도산대로 176",
+        "lat": 37.497,
+        "lng": 127.028,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "JW메리어트",
+          "강남",
+          "5성"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T03:03:05.561Z"
+    },
+    {
+      "id": "b002",
+      "slot": "noon",
+      "priority": 1,
+      "entity": "compare",
+      "slug": "seoul-5star-compare",
+      "title": "서울 5성 호텔 비교 — 신라vs롯데vs파르나스vs JW 메리어트",
+      "keywords": [
+        "서울 5성 호텔 비교",
+        "서울 럭셔리 호텔 추천",
+        "서울 특급 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "seoul luxury hotel lobby",
+      "meta": {
+        "id": "C006",
+        "slug": "seoul-5star-compare",
+        "title": "서울 5성 호텔 비교",
+        "description": "서울 대표 5성 호텔 4곳 비교",
+        "tags": [
+          "서울",
+          "5성",
+          "비교"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T03:06:00.680Z"
+    },
+    {
+      "id": "c002",
+      "slot": "noon",
+      "priority": 1,
+      "entity": "situation",
+      "slug": "couple-anniversary",
+      "title": "커플 기념일 여행 — 국내외 로맨틱 여행지 & 호텔 추천",
+      "keywords": [
+        "커플 기념일 여행",
+        "기념일 여행지",
+        "로맨틱 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "romantic couple hotel anniversary",
+      "meta": {
+        "id": "SI009",
+        "slug": "couple-anniversary",
+        "title": "커플 기념일 여행",
+        "description": "국내외 로맨틱 여행지와 호텔 추천",
+        "tags": [
+          "커플",
+          "기념일",
+          "로맨틱"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T03:08:52.764Z"
+    },
+    {
+      "id": "a003",
+      "slot": "evening",
+      "priority": 1,
+      "entity": "hotel",
+      "slug": "parnas-gangnam",
+      "title": "파르나스 호텔 강남 완전 가이드 — COEX 인접 5성",
+      "keywords": [
+        "파르나스 호텔 강남",
+        "코엑스 호텔",
+        "강남구 5성 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "파르나스 호텔",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H006",
+        "slug": "parnas-gangnam",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "파르나스 호텔 강남",
+        "hotelNameEn": "Parnas Hotel Gangnam",
+        "hotelClass": "5성",
+        "hotelType": "비즈니스",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "22~60만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "COEX 직결"
+        ],
+        "address": "서울 강남구 테헤란로 521",
+        "lat": 37.513,
+        "lng": 127.06,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "파르나스",
+          "강남",
+          "COEX",
+          "5성"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T09:03:06.065Z"
+    },
+    {
+      "id": "b003",
+      "slot": "evening",
+      "priority": 1,
+      "entity": "theme",
+      "slug": "wellness-spa",
+      "title": "웰니스 스파 여행 — 국내외 스파 특화 호텔·료칸 베스트",
+      "keywords": [
+        "웰니스 여행",
+        "스파 호텔 추천",
+        "국내 스파 리조트"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "spa wellness retreat hotel pool",
+      "meta": {
+        "id": "TH011",
+        "slug": "wellness-spa",
+        "title": "웰니스 스파 여행",
+        "description": "국내외 스파 특화 호텔과 료칸",
+        "tags": [
+          "웰니스",
+          "스파",
+          "힐링"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T09:06:09.462Z"
+    },
+    {
+      "id": "c003",
+      "slot": "evening",
+      "priority": 1,
+      "entity": "addon",
+      "slug": "best-luggage-2026",
+      "title": "2026 여행용 캐리어 추천 — 기내용부터 대형까지 완전 가이드",
+      "keywords": [
+        "여행용 캐리어 추천",
+        "기내 캐리어",
+        "여행 캐리어 비교"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel suitcase luggage airport",
+      "meta": {
+        "id": "AD011",
+        "slug": "best-luggage-2026",
+        "title": "2026 여행용 캐리어 추천",
+        "description": "기내용부터 대형까지 캐리어 완전 가이드",
+        "tags": [
+          "캐리어",
+          "여행용품",
+          "쿠팡"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-03T09:09:07.773Z"
+    },
+    {
+      "id": "a004",
+      "slot": "morning",
+      "priority": 2,
+      "entity": "hotel",
+      "slug": "walkerhill-seoul",
+      "title": "워커힐 서울 완전 가이드 — 한강뷰·카지노·아쿠아월드",
+      "keywords": [
+        "워커힐 호텔",
+        "서울 한강뷰 호텔",
+        "워커힐 아쿠아월드"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "그랜드 워커힐 서울",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H007",
+        "slug": "walkerhill-seoul",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "그랜드 워커힐 서울",
+        "hotelNameEn": "Grand Walkerhill Seoul",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.4,
+        "priceRange": "20~60만 원/박",
+        "amenities": [
+          "야외수영장",
+          "아쿠아월드",
+          "카지노",
+          "한강뷰"
+        ],
+        "address": "서울 광진구 워커힐로 177",
+        "lat": 37.546,
+        "lng": 127.094,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "워커힐",
+          "광진구",
+          "한강뷰",
+          "5성"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-02T22:10:05.127Z"
+    },
+    {
+      "id": "b004",
+      "slot": "morning",
+      "priority": 2,
+      "entity": "guide",
+      "slug": "vietnam-visa",
+      "title": "베트남 비자 완전 가이드 2026 — E-비자·무비자·입국카드",
+      "keywords": [
+        "베트남 비자",
+        "베트남 e비자",
+        "베트남 무비자"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "vietnam ho chi minh travel",
+      "meta": null,
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-02T22:15:07.368Z"
+    },
+    {
+      "id": "c004",
+      "slot": "morning",
+      "priority": 2,
+      "entity": "region",
+      "slug": "kr-busan",
+      "title": "부산 여행 완전 가이드 — 해운대·광안리·감천·맛집",
+      "keywords": [
+        "부산 여행",
+        "부산 관광",
+        "해운대 여행"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "부산 해운대",
+      "contentTypeId": "12",
+      "meta": {
+        "id": "R020",
+        "slug": "kr-busan",
+        "countrySlug": "kr",
+        "regionName": "부산",
+        "regionNameEn": "Busan",
+        "regionType": "city",
+        "lat": 35.179,
+        "lng": 129.075,
+        "tags": [
+          "부산",
+          "해운대",
+          "광안리"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-03T22:05:02.758Z"
+    },
+    {
+      "id": "a005",
+      "slot": "noon",
+      "priority": 2,
+      "entity": "hotel",
+      "slug": "paradise-busan",
+      "title": "파라다이스 호텔 부산 완전 가이드 — 해운대 5성 오션뷰",
+      "keywords": [
+        "파라다이스 호텔 부산",
+        "해운대 5성 호텔",
+        "부산 럭셔리 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "파라다이스 호텔 부산",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H008",
+        "slug": "paradise-busan",
+        "countrySlug": "kr",
+        "regionSlug": "busan",
+        "hotelName": "파라다이스 호텔 부산",
+        "hotelNameEn": "Paradise Hotel Busan",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "20~55만 원/박",
+        "amenities": [
+          "야외수영장",
+          "카지노",
+          "스파",
+          "해운대 해변뷰"
+        ],
+        "address": "부산 해운대구 해운대해변로 296",
+        "lat": 35.159,
+        "lng": 129.16,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "파라다이스",
+          "해운대",
+          "5성"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-04T03:05:05.024Z"
+    },
+    {
+      "id": "b005",
+      "slot": "noon",
+      "priority": 2,
+      "entity": "compare",
+      "slug": "busan-beach-hotels",
+      "title": "부산 해수욕장 호텔 비교 — 해운대 vs 광안리 vs 송정",
+      "keywords": [
+        "부산 해수욕장 호텔",
+        "해운대 호텔 추천",
+        "부산 바다 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "busan haeundae beach hotel",
+      "meta": {
+        "id": "C007",
+        "slug": "busan-beach-hotels",
+        "title": "부산 해수욕장 호텔 비교",
+        "description": "부산 해수욕장별 최고 호텔 비교",
+        "tags": [
+          "부산",
+          "해운대",
+          "호텔비교"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-04T03:08:05.462Z"
+    },
+    {
+      "id": "c005",
+      "slot": "noon",
+      "priority": 2,
+      "entity": "situation",
+      "slug": "solo-travel-asia",
+      "title": "혼자 동남아 여행 — 첫 솔로 트립 완전 가이드",
+      "keywords": [
+        "혼자 동남아 여행",
+        "솔로 여행",
+        "혼자 해외여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "solo travel backpacker asia market",
+      "meta": {
+        "id": "SI010",
+        "slug": "solo-travel-asia",
+        "title": "혼자 동남아 여행",
+        "description": "첫 솔로 동남아 여행 완전 가이드",
+        "tags": [
+          "솔로",
+          "혼자여행",
+          "동남아"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-04T03:11:09.007Z"
+    },
+    {
+      "id": "a006",
+      "slot": "evening",
+      "priority": 2,
+      "entity": "hotel",
+      "slug": "lotte-busan",
+      "title": "롯데호텔 부산 완전 가이드 — 광안리뷰 5성 시티호텔",
+      "keywords": [
+        "롯데호텔 부산",
+        "부산 시티 호텔",
+        "광안리 5성 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "롯데호텔 부산",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H009",
+        "slug": "lotte-busan",
+        "countrySlug": "kr",
+        "regionSlug": "busan",
+        "hotelName": "롯데호텔 부산",
+        "hotelNameEn": "Lotte Hotel Busan",
+        "hotelClass": "5성",
+        "hotelType": "시티",
+        "starRating": 5,
+        "guestRating": 4.4,
+        "priceRange": "18~50만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "다이닝"
+        ],
+        "address": "부산 부산진구 가야대로 772",
+        "lat": 35.155,
+        "lng": 129.063,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "롯데",
+          "부산",
+          "5성",
+          "시티"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b006",
+      "slot": "evening",
+      "priority": 2,
+      "entity": "theme",
+      "slug": "spring-cherry",
+      "title": "벚꽃 여행지 추천 — 국내외 벚꽃 명소 & 숙소 가이드",
+      "keywords": [
+        "벚꽃 여행",
+        "벚꽃 명소",
+        "봄 여행지 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "cherry blossom sakura japan korea",
+      "meta": {
+        "id": "TH012",
+        "slug": "spring-cherry",
+        "title": "벚꽃 여행",
+        "description": "국내외 벚꽃 명소와 숙소 가이드",
+        "tags": [
+          "벚꽃",
+          "봄여행",
+          "사쿠라"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c006",
+      "slot": "evening",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "noise-canceling",
+      "title": "노이즈캔슬링 헤드폰 추천 — 장거리 비행 필수 아이템",
+      "keywords": [
+        "노이즈캔슬링 헤드폰",
+        "여행용 헤드폰",
+        "비행기 헤드폰"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "noise canceling headphone travel airplane",
+      "meta": {
+        "id": "AD012",
+        "slug": "noise-canceling",
+        "title": "노이즈캔슬링 헤드폰 추천",
+        "description": "장거리 비행 필수 노이즈캔슬링 헤드폰",
+        "tags": [
+          "헤드폰",
+          "여행용품",
+          "비행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a007",
+      "slot": "morning",
+      "priority": 3,
+      "entity": "hotel",
+      "slug": "ayana-bali",
+      "title": "발리 아야나 리조트 완전 가이드 — 짐바란 절벽 풀·스파",
+      "keywords": [
+        "발리 아야나 리조트",
+        "발리 럭셔리 호텔",
+        "발리 5성 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "AYANA Resort Bali infinity pool cliff",
+      "meta": {
+        "id": "H010",
+        "slug": "ayana-bali",
+        "countrySlug": "id",
+        "regionSlug": "bali",
+        "hotelName": "아야나 리조트 발리",
+        "hotelNameEn": "AYANA Resort Bali",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.8,
+        "priceRange": "USD 400~1,200/박",
+        "amenities": [
+          "야외수영장",
+          "프라이빗 비치",
+          "스파",
+          "다이닝",
+          "오버워터 바"
+        ],
+        "address": "Jl. Karang Mas Sejahtera, Jimbaran, Bali, Indonesia",
+        "lat": -8.784,
+        "lng": 115.151,
+        "iso2": "ID",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "아야나",
+          "발리",
+          "짐바란",
+          "5성",
+          "럭셔리"
+        ]
+      },
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-03T22:10:05.004Z"
+    },
+    {
+      "id": "b007",
+      "slot": "morning",
+      "priority": 3,
+      "entity": "guide",
+      "slug": "bali-guide",
+      "title": "발리 여행 준비 완전 가이드 2026 — 비자·환전·시즌·주의사항",
+      "keywords": [
+        "발리 여행 준비",
+        "발리 비자",
+        "발리 여행 가이드"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "bali temple rice terrace travel",
+      "meta": null,
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-03T22:15:07.514Z"
+    },
+    {
+      "id": "c007",
+      "slot": "morning",
+      "priority": 3,
+      "entity": "region",
+      "slug": "id-ubud",
+      "title": "발리 우붓 여행 가이드 — 라이스테라스·원숭이 숲·스파",
+      "keywords": [
+        "우붓 여행",
+        "발리 우붓 명소",
+        "우붓 가볼 곳"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "ubud bali rice terrace monkey forest",
+      "meta": {
+        "id": "R021",
+        "slug": "id-ubud",
+        "countrySlug": "id",
+        "regionName": "발리 우붓",
+        "regionNameEn": "Ubud, Bali",
+        "regionType": "region",
+        "lat": -8.507,
+        "lng": 115.262,
+        "tags": [
+          "우붓",
+          "발리",
+          "라이스테라스"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a008",
+      "slot": "noon",
+      "priority": 3,
+      "entity": "hotel",
+      "slug": "marina-bay-sands",
+      "title": "마리나 베이 샌즈 완전 가이드 — 싱가포르 상징 루프탑 풀",
+      "keywords": [
+        "마리나 베이 샌즈",
+        "싱가포르 5성 호텔",
+        "인피니티 풀 싱가포르"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Marina Bay Sands Singapore infinity pool",
+      "meta": {
+        "id": "H011",
+        "slug": "marina-bay-sands",
+        "countrySlug": "sg",
+        "regionSlug": "singapore",
+        "hotelName": "마리나 베이 샌즈",
+        "hotelNameEn": "Marina Bay Sands",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "SGD 500~1,500/박",
+        "amenities": [
+          "루프탑 인피니티 풀",
+          "카지노",
+          "쇼핑몰",
+          "다이닝",
+          "컨벤션"
+        ],
+        "address": "10 Bayfront Ave, Singapore 018956",
+        "lat": 1.284,
+        "lng": 103.861,
+        "iso2": "SG",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "마리나베이샌즈",
+          "싱가포르",
+          "루프탑풀",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b008",
+      "slot": "noon",
+      "priority": 3,
+      "entity": "compare",
+      "slug": "bali-vs-maldives",
+      "title": "발리 vs 몰디브 신혼여행 — 예산·풀빌라·날씨 완전 비교",
+      "keywords": [
+        "발리 vs 몰디브",
+        "신혼여행 발리 몰디브",
+        "발리 몰디브 비교"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "maldives overwater villa bali pool villa",
+      "meta": {
+        "id": "C008",
+        "slug": "bali-vs-maldives",
+        "title": "발리 vs 몰디브 신혼여행 비교",
+        "description": "발리와 몰디브 신혼여행 비교 가이드",
+        "tags": [
+          "발리",
+          "몰디브",
+          "신혼여행",
+          "비교"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c008",
+      "slot": "noon",
+      "priority": 3,
+      "entity": "situation",
+      "slug": "winter-beach",
+      "title": "겨울에 가기 좋은 해외 해변 여행 — 따뜻한 12~2월 여행지",
+      "keywords": [
+        "겨울 해외여행",
+        "겨울 따뜻한 여행지",
+        "12월 해외여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "tropical beach winter warm holiday",
+      "meta": {
+        "id": "SI011",
+        "slug": "winter-beach",
+        "title": "겨울 따뜻한 해외 해변 여행",
+        "description": "12~2월 최적의 따뜻한 해외 여행지",
+        "tags": [
+          "겨울여행",
+          "해변",
+          "동남아"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a009",
+      "slot": "evening",
+      "priority": 3,
+      "entity": "hotel",
+      "slug": "mandarin-oriental-bangkok",
+      "title": "만다린 오리엔탈 방콕 완전 가이드 — 차오프라야 강변 럭셔리",
+      "keywords": [
+        "만다린 오리엔탈 방콕",
+        "방콕 럭셔리 호텔",
+        "방콕 5성 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Mandarin Oriental Bangkok river luxury",
+      "meta": {
+        "id": "H012",
+        "slug": "mandarin-oriental-bangkok",
+        "countrySlug": "th",
+        "regionSlug": "bangkok",
+        "hotelName": "만다린 오리엔탈 방콕",
+        "hotelNameEn": "Mandarin Oriental Bangkok",
+        "hotelClass": "5성",
+        "hotelType": "럭셔리",
+        "starRating": 5,
+        "guestRating": 4.9,
+        "priceRange": "USD 350~1,200/박",
+        "amenities": [
+          "강변 수영장",
+          "스파",
+          "다이닝",
+          "역사적 건물",
+          "버틀러 서비스"
+        ],
+        "address": "48 Oriental Ave, Bangrak, Bangkok 10500, Thailand",
+        "lat": 13.724,
+        "lng": 100.515,
+        "iso2": "TH",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "만다린오리엔탈",
+          "방콕",
+          "럭셔리",
+          "강변"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b009",
+      "slot": "evening",
+      "priority": 3,
+      "entity": "theme",
+      "slug": "pool-villa-asia",
+      "title": "아시아 풀빌라 베스트 — 발리·다낭·푸껫·몰디브 TOP 10",
+      "keywords": [
+        "풀빌라 추천",
+        "아시아 풀빌라",
+        "동남아 풀빌라 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "private pool villa tropical bali asia",
+      "meta": {
+        "id": "TH013",
+        "slug": "pool-villa-asia",
+        "title": "아시아 풀빌라 베스트",
+        "description": "발리·다낭·푸껫·몰디브 풀빌라 TOP 10",
+        "tags": [
+          "풀빌라",
+          "아시아",
+          "동남아",
+          "추천"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c009",
+      "slot": "evening",
+      "priority": 3,
+      "entity": "addon",
+      "slug": "travel-wallet",
+      "title": "여행용 여권 지갑 추천 — 목걸이형·포켓형·RFID 차단",
+      "keywords": [
+        "여행용 여권 지갑",
+        "여권 케이스",
+        "여행 카드지갑"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel passport wallet organizer",
+      "meta": {
+        "id": "AD013",
+        "slug": "travel-wallet",
+        "title": "여행용 여권 지갑 추천",
+        "description": "여권 지갑 선택 가이드",
+        "tags": [
+          "여권지갑",
+          "여행용품",
+          "RFID"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a010",
+      "slot": "morning",
+      "priority": 4,
+      "entity": "hotel",
+      "slug": "park-hyatt-tokyo",
+      "title": "파크하얏트 도쿄 완전 가이드 — 신주쿠 52층 럭셔리",
+      "keywords": [
+        "파크하얏트 도쿄",
+        "도쿄 5성 호텔",
+        "신주쿠 럭셔리 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Park Hyatt Tokyo skyscraper city view",
+      "meta": {
+        "id": "H013",
+        "slug": "park-hyatt-tokyo",
+        "countrySlug": "jp",
+        "regionSlug": "tokyo",
+        "hotelName": "파크하얏트 도쿄",
+        "hotelNameEn": "Park Hyatt Tokyo",
+        "hotelClass": "5성",
+        "hotelType": "시티",
+        "starRating": 5,
+        "guestRating": 4.8,
+        "priceRange": "JPY 100,000~300,000/박 (약 90~270만 원)",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "뉴욕 바",
+          "도시 파노라마"
+        ],
+        "address": "3-7-1-2 Nishi-Shinjuku, Shinjuku, Tokyo 163-1055",
+        "lat": 35.685,
+        "lng": 139.69,
+        "iso2": "JP",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "파크하얏트",
+          "도쿄",
+          "신주쿠",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b010",
+      "slot": "morning",
+      "priority": 4,
+      "entity": "guide",
+      "slug": "japan-travel-prep",
+      "title": "일본 여행 준비 완전 가이드 2026 — 교통패스·환전·앱",
+      "keywords": [
+        "일본 여행 준비",
+        "일본 여행 교통",
+        "IC카드 스이카"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "japan shinkansen train travel",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c010",
+      "slot": "morning",
+      "priority": 4,
+      "entity": "region",
+      "slug": "jp-kyoto",
+      "title": "교토 여행 완전 가이드 — 기온·아라시야마·후시미이나리",
+      "keywords": [
+        "교토 여행",
+        "교토 관광",
+        "교토 명소"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "kyoto japan temple fushimi inari geisha",
+      "meta": {
+        "id": "R022",
+        "slug": "jp-kyoto",
+        "countrySlug": "jp",
+        "regionName": "교토",
+        "regionNameEn": "Kyoto",
+        "regionType": "city",
+        "lat": 35.011,
+        "lng": 135.768,
+        "tags": [
+          "교토",
+          "기온",
+          "아라시야마"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a011",
+      "slot": "noon",
+      "priority": 4,
+      "entity": "hotel",
+      "slug": "ritz-carlton-osaka",
+      "title": "리츠칼튼 오사카 완전 가이드 — 도심 5성·스파·다이닝",
+      "keywords": [
+        "리츠칼튼 오사카",
+        "오사카 5성 호텔",
+        "오사카 럭셔리 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Ritz-Carlton Osaka luxury hotel",
+      "meta": {
+        "id": "H014",
+        "slug": "ritz-carlton-osaka",
+        "countrySlug": "jp",
+        "regionSlug": "osaka",
+        "hotelName": "리츠칼튼 오사카",
+        "hotelNameEn": "The Ritz-Carlton Osaka",
+        "hotelClass": "5성",
+        "hotelType": "시티",
+        "starRating": 5,
+        "guestRating": 4.7,
+        "priceRange": "JPY 80,000~250,000/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "다이닝",
+          "클럽 라운지"
+        ],
+        "address": "2-5-25 Umeda, Kita, Osaka 530-0001",
+        "lat": 34.704,
+        "lng": 135.499,
+        "iso2": "JP",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "리츠칼튼",
+          "오사카",
+          "5성",
+          "우메다"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b011",
+      "slot": "noon",
+      "priority": 4,
+      "entity": "compare",
+      "slug": "tokyo-osaka-compare",
+      "title": "도쿄 vs 오사카 — 어디로 일본 여행 갈까? 완전 비교",
+      "keywords": [
+        "도쿄 오사카 비교",
+        "도쿄 vs 오사카",
+        "일본 여행 도시 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "tokyo shibuya osaka dotonbori",
+      "meta": {
+        "id": "C009",
+        "slug": "tokyo-osaka-compare",
+        "title": "도쿄 vs 오사카 여행 비교",
+        "description": "도쿄와 오사카 여행 완전 비교",
+        "tags": [
+          "도쿄",
+          "오사카",
+          "일본",
+          "비교"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c011",
+      "slot": "noon",
+      "priority": 4,
+      "entity": "situation",
+      "slug": "group-travel",
+      "title": "단체 여행 완전 가이드 — 10인 이상 패키지·비용·호텔",
+      "keywords": [
+        "단체 여행",
+        "단체 여행지",
+        "그룹 여행 패키지"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "group friends travel adventure",
+      "meta": {
+        "id": "SI012",
+        "slug": "group-travel",
+        "title": "단체 여행 가이드",
+        "description": "10인 이상 단체 여행 완전 가이드",
+        "tags": [
+          "단체여행",
+          "그룹",
+          "패키지"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a012",
+      "slot": "evening",
+      "priority": 4,
+      "entity": "hotel",
+      "slug": "four-seasons-bali",
+      "title": "포시즌스 발리 아트 스파 완전 가이드 — 짐바란 5성",
+      "keywords": [
+        "포시즌스 발리",
+        "발리 포시즌스",
+        "발리 최고급 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Four Seasons Bali spa luxury resort",
+      "meta": {
+        "id": "H015",
+        "slug": "four-seasons-bali",
+        "countrySlug": "id",
+        "regionSlug": "bali",
+        "hotelName": "포시즌스 리조트 발리 앳 짐바란 베이",
+        "hotelNameEn": "Four Seasons Resort Bali at Jimbaran Bay",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.9,
+        "priceRange": "USD 600~2,000/박",
+        "amenities": [
+          "프라이빗 풀빌라",
+          "스파",
+          "프라이빗 비치",
+          "다이닝",
+          "버틀러"
+        ],
+        "address": "Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361",
+        "lat": -8.789,
+        "lng": 115.155,
+        "iso2": "ID",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "포시즌스",
+          "발리",
+          "짐바란",
+          "5성",
+          "풀빌라"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b012",
+      "slot": "evening",
+      "priority": 4,
+      "entity": "theme",
+      "slug": "honeymoon-overseas",
+      "title": "해외 신혼여행지 BEST 7 — 2026 한국인 선호 랭킹",
+      "keywords": [
+        "신혼여행지 추천",
+        "2026 신혼여행",
+        "해외 신혼여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "honeymoon couple overwater villa maldives sunset",
+      "meta": {
+        "id": "TH014",
+        "slug": "honeymoon-overseas",
+        "title": "해외 신혼여행지 베스트",
+        "description": "한국인이 가장 선호하는 해외 신혼여행지",
+        "tags": [
+          "신혼여행",
+          "허니문",
+          "해외"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c012",
+      "slot": "evening",
+      "priority": 4,
+      "entity": "addon",
+      "slug": "travel-pillow",
+      "title": "여행용 목베개 추천 — 장거리 비행 목통증 예방",
+      "keywords": [
+        "여행용 목베개",
+        "비행기 목베개",
+        "목베개 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel neck pillow airplane seat",
+      "meta": {
+        "id": "AD014",
+        "slug": "travel-pillow",
+        "title": "여행용 목베개 추천",
+        "description": "장거리 비행 목베개 가이드",
+        "tags": [
+          "목베개",
+          "여행용품",
+          "비행기"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a013",
+      "slot": "morning",
+      "priority": 5,
+      "entity": "hotel",
+      "slug": "haevichi-jeju",
+      "title": "제주 해비치 호텔&리조트 완전 가이드 — 성산 5성 오션뷰",
+      "keywords": [
+        "해비치 호텔 제주",
+        "제주 해비치 리조트",
+        "성산 5성 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "해비치 호텔 제주",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H016",
+        "slug": "haevichi-jeju",
+        "countrySlug": "kr",
+        "regionSlug": "jeju",
+        "hotelName": "해비치 호텔&리조트 제주",
+        "hotelNameEn": "Haevichi Hotel&Resort Jeju",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "25~65만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "골프장",
+          "다이닝",
+          "성산 오션뷰"
+        ],
+        "address": "제주 서귀포시 성산읍 섭지코지로 107",
+        "lat": 33.432,
+        "lng": 126.92,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "해비치",
+          "성산",
+          "제주",
+          "5성",
+          "골프"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b013",
+      "slot": "morning",
+      "priority": 5,
+      "entity": "guide",
+      "slug": "thailand-visa",
+      "title": "태국 비자 완전 가이드 2026 — 무비자 60일·VOA·전자비자",
+      "keywords": [
+        "태국 비자",
+        "태국 무비자",
+        "태국 입국"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "bangkok thailand temple wat travel",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c013",
+      "slot": "morning",
+      "priority": 5,
+      "entity": "region",
+      "slug": "th-phuket",
+      "title": "푸껫 여행 완전 가이드 — 해변·야시장·다이빙·숙소",
+      "keywords": [
+        "푸껫 여행",
+        "푸껫 관광",
+        "태국 푸껫"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "phuket beach thailand tropical island",
+      "meta": {
+        "id": "R023",
+        "slug": "th-phuket",
+        "countrySlug": "th",
+        "regionName": "푸껫",
+        "regionNameEn": "Phuket",
+        "regionType": "island",
+        "lat": 7.89,
+        "lng": 98.298,
+        "tags": [
+          "푸껫",
+          "태국",
+          "해변"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a014",
+      "slot": "noon",
+      "priority": 5,
+      "entity": "hotel",
+      "slug": "capella-singapore",
+      "title": "카펠라 싱가포르 완전 가이드 — 센토사 럭셔리·풀빌라",
+      "keywords": [
+        "카펠라 싱가포르",
+        "싱가포르 럭셔리 리조트",
+        "센토사 5성 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Capella Singapore luxury resort pool",
+      "meta": {
+        "id": "H017",
+        "slug": "capella-singapore",
+        "countrySlug": "sg",
+        "regionSlug": "singapore",
+        "hotelName": "카펠라 싱가포르",
+        "hotelNameEn": "Capella Singapore",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.9,
+        "priceRange": "SGD 600~2,000/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "다이닝",
+          "풀빌라",
+          "역사적 건물"
+        ],
+        "address": "1 The Knolls, Sentosa Island, Singapore 098297",
+        "lat": 1.251,
+        "lng": 103.832,
+        "iso2": "SG",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "카펠라",
+          "싱가포르",
+          "센토사",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b014",
+      "slot": "noon",
+      "priority": 5,
+      "entity": "compare",
+      "slug": "phuket-hotels",
+      "title": "푸껫 해변별 5성 호텔 비교 — 파통·카타·라와이·수린",
+      "keywords": [
+        "푸껫 호텔 추천",
+        "푸껫 5성 호텔",
+        "푸껫 리조트 비교"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "phuket resort beach pool thailand",
+      "meta": {
+        "id": "C010",
+        "slug": "phuket-hotels",
+        "title": "푸껫 해변별 호텔 비교",
+        "description": "푸껫 해변별 5성 호텔 완전 비교",
+        "tags": [
+          "푸껫",
+          "호텔비교",
+          "태국"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c014",
+      "slot": "noon",
+      "priority": 5,
+      "entity": "situation",
+      "slug": "europe-first",
+      "title": "유럽 첫 여행 완전 가이드 — 루트·예산·교통·주의사항",
+      "keywords": [
+        "유럽 첫 여행",
+        "유럽 여행 계획",
+        "유럽 배낭여행 초보"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "europe travel paris rome tourism",
+      "meta": {
+        "id": "SI013",
+        "slug": "europe-first",
+        "title": "유럽 첫 여행 가이드",
+        "description": "유럽 첫 여행을 위한 완전 가이드",
+        "tags": [
+          "유럽",
+          "첫여행",
+          "배낭여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a015",
+      "slot": "evening",
+      "priority": 5,
+      "entity": "hotel",
+      "slug": "jw-marriott-danang",
+      "title": "JW 메리어트 다낭 완전 가이드 — 미케비치 5성·다이닝",
+      "keywords": [
+        "JW 메리어트 다낭",
+        "다낭 5성 호텔",
+        "미케비치 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "JW Marriott Danang beach resort pool",
+      "meta": {
+        "id": "H018",
+        "slug": "jw-marriott-danang",
+        "countrySlug": "vn",
+        "regionSlug": "danang",
+        "hotelName": "JW 메리어트 다낭 리조트 & 스파",
+        "hotelNameEn": "JW Marriott Danang Resort & Spa",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "USD 180~500/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "다이닝",
+          "피트니스",
+          "미케비치 위치"
+        ],
+        "address": "My Khe Beach, My An Ward, Ngu Hanh Son, Da Nang",
+        "lat": 16.032,
+        "lng": 108.241,
+        "iso2": "VN",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "JW메리어트",
+          "다낭",
+          "미케비치",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b015",
+      "slot": "evening",
+      "priority": 5,
+      "entity": "theme",
+      "slug": "luxury-ryokan",
+      "title": "일본 럭셔리 료칸 베스트 — 하코네·유후인·키노사키 TOP 10",
+      "keywords": [
+        "일본 료칸 추천",
+        "럭셔리 료칸",
+        "하코네 료칸"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "japan ryokan onsen luxury traditional",
+      "meta": {
+        "id": "TH015",
+        "slug": "luxury-ryokan",
+        "title": "일본 럭셔리 료칸 베스트",
+        "description": "하코네·유후인·키노사키 럭셔리 료칸 가이드",
+        "tags": [
+          "료칸",
+          "온천",
+          "일본",
+          "하코네"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c015",
+      "slot": "evening",
+      "priority": 5,
+      "entity": "addon",
+      "slug": "portable-charger",
+      "title": "여행용 보조배터리 추천 2026 — 용량·무게·비행기 반입 완전 가이드",
+      "keywords": [
+        "여행용 보조배터리",
+        "보조배터리 추천",
+        "비행기 배터리 반입"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "portable charger power bank travel",
+      "meta": {
+        "id": "AD015",
+        "slug": "portable-charger",
+        "title": "여행용 보조배터리 추천",
+        "description": "보조배터리 선택 완전 가이드",
+        "tags": [
+          "보조배터리",
+          "여행용품",
+          "비행기"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a016",
+      "slot": "morning",
+      "priority": 6,
+      "entity": "hotel",
+      "slug": "hilton-gyeongju",
+      "title": "경주 힐튼 완전 가이드 — 신라 천년 고도 5성 호텔",
+      "keywords": [
+        "경주 힐튼",
+        "경주 5성 호텔",
+        "경주 호텔 추천"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "경주 힐튼 호텔",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H019",
+        "slug": "hilton-gyeongju",
+        "countrySlug": "kr",
+        "regionSlug": "gyeongju",
+        "hotelName": "힐튼 경주",
+        "hotelNameEn": "Hilton Gyeongju",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.3,
+        "priceRange": "20~55만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "골프",
+          "다이닝",
+          "경주 관광지 인접"
+        ],
+        "address": "경북 경주시 보문로 484-7",
+        "lat": 35.851,
+        "lng": 129.255,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "힐튼",
+          "경주",
+          "5성",
+          "보문단지"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b016",
+      "slot": "morning",
+      "priority": 6,
+      "entity": "guide",
+      "slug": "currency-exchange",
+      "title": "해외여행 환전 완전 가이드 — 공항·은행·WISE·트래블카드",
+      "keywords": [
+        "해외여행 환전",
+        "환전 팁",
+        "트래블카드 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "currency exchange travel money",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c016",
+      "slot": "morning",
+      "priority": 6,
+      "entity": "region",
+      "slug": "sg-singapore",
+      "title": "싱가포르 여행 완전 가이드 — 마리나베이·센토사·차이나타운",
+      "keywords": [
+        "싱가포르 여행",
+        "싱가포르 관광",
+        "싱가포르 명소"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "singapore marina bay sands gardens city",
+      "meta": {
+        "id": "R024",
+        "slug": "sg-singapore",
+        "countrySlug": "sg",
+        "regionName": "싱가포르",
+        "regionNameEn": "Singapore",
+        "regionType": "city",
+        "lat": 1.352,
+        "lng": 103.82,
+        "tags": [
+          "싱가포르",
+          "마리나베이",
+          "센토사"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a017",
+      "slot": "noon",
+      "priority": 6,
+      "entity": "hotel",
+      "slug": "four-seasons-hoian",
+      "title": "포시즌스 리조트 호이안 완전 가이드 — 역사 도시 럭셔리",
+      "keywords": [
+        "포시즌스 호이안",
+        "호이안 럭셔리 호텔",
+        "베트남 5성 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Four Seasons Hoi An Vietnam resort luxury",
+      "meta": {
+        "id": "H020",
+        "slug": "four-seasons-hoian",
+        "countrySlug": "vn",
+        "regionSlug": "danang",
+        "hotelName": "포시즌스 리조트 더 남하이 호이안",
+        "hotelNameEn": "Four Seasons Resort The Nam Hai Hoi An",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.8,
+        "priceRange": "USD 500~2,000/박",
+        "amenities": [
+          "프라이빗 풀빌라",
+          "3단 수영장",
+          "스파",
+          "다이닝",
+          "비치프런트"
+        ],
+        "address": "Block Ha My Dong B, Dien Ban, Quang Nam, Vietnam",
+        "lat": 15.943,
+        "lng": 108.305,
+        "iso2": "VN",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "포시즌스",
+          "호이안",
+          "베트남",
+          "5성",
+          "풀빌라"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b017",
+      "slot": "noon",
+      "priority": 6,
+      "entity": "compare",
+      "slug": "danang-vs-phuket",
+      "title": "다낭 vs 푸껫 — 신혼여행·가족여행 어디가 나을까?",
+      "keywords": [
+        "다낭 vs 푸껫",
+        "다낭 푸껫 비교",
+        "동남아 여행지 비교"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "danang vietnam phuket thailand beach resort",
+      "meta": {
+        "id": "C011",
+        "slug": "danang-vs-phuket",
+        "title": "다낭 vs 푸껫 비교",
+        "description": "다낭과 푸껫 여행지 완전 비교",
+        "tags": [
+          "다낭",
+          "푸껫",
+          "비교",
+          "동남아"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c017",
+      "slot": "noon",
+      "priority": 6,
+      "entity": "situation",
+      "slug": "kids-resort",
+      "title": "아이와 함께하는 리조트 여행 — 키즈 시설 TOP 호텔 가이드",
+      "keywords": [
+        "아이와 리조트",
+        "키즈 호텔",
+        "가족 리조트 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "family resort kids pool beach hotel",
+      "meta": {
+        "id": "SI014",
+        "slug": "kids-resort",
+        "title": "아이와 리조트 여행 가이드",
+        "description": "키즈 시설 특화 호텔과 리조트 가이드",
+        "tags": [
+          "아이",
+          "키즈",
+          "가족여행",
+          "리조트"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a018",
+      "slot": "evening",
+      "priority": 6,
+      "entity": "hotel",
+      "slug": "sun-aqua-maldives",
+      "title": "몰디브 선 아쿠아 빌루 리프 완전 가이드 — 오버워터 빌라",
+      "keywords": [
+        "몰디브 오버워터 빌라",
+        "몰디브 리조트 추천",
+        "몰디브 5성"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "maldives overwater bungalow villa sunset",
+      "meta": {
+        "id": "H021",
+        "slug": "sun-aqua-maldives",
+        "countrySlug": "mv",
+        "regionSlug": "maldives",
+        "hotelName": "선 아쿠아 빌루 리프",
+        "hotelNameEn": "Sun Aqua Vilu Reef",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "USD 400~1,500/박",
+        "amenities": [
+          "오버워터 빌라",
+          "프라이빗 수영장",
+          "스파",
+          "올인클루시브",
+          "스노클링"
+        ],
+        "address": "Vilu Reef, Dhaalu Atoll, Maldives",
+        "lat": 2.836,
+        "lng": 72.827,
+        "iso2": "MV",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "몰디브",
+          "오버워터",
+          "5성",
+          "올인클루시브"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b018",
+      "slot": "evening",
+      "priority": 6,
+      "entity": "theme",
+      "slug": "foodie-japan",
+      "title": "일본 미식 여행 — 도쿄·오사카·후쿠오카 맛집 & 미슐랭",
+      "keywords": [
+        "일본 미식 여행",
+        "일본 미슐랭 식당",
+        "도쿄 맛집"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "japan food ramen sushi izakaya restaurant",
+      "meta": {
+        "id": "TH016",
+        "slug": "foodie-japan",
+        "title": "일본 미식 여행",
+        "description": "도쿄·오사카·후쿠오카 미식 여행 가이드",
+        "tags": [
+          "미식",
+          "일본",
+          "도쿄",
+          "오사카"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c018",
+      "slot": "evening",
+      "priority": 6,
+      "entity": "addon",
+      "slug": "universal-adapter",
+      "title": "여행용 멀티 어댑터 추천 — 국가별 콘센트 타입 완전 가이드",
+      "keywords": [
+        "여행용 어댑터",
+        "멀티 어댑터",
+        "해외 콘센트 어댑터"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel adapter plug outlet international",
+      "meta": {
+        "id": "AD016",
+        "slug": "universal-adapter",
+        "title": "여행용 멀티 어댑터 추천",
+        "description": "국가별 콘센트와 어댑터 선택 가이드",
+        "tags": [
+          "어댑터",
+          "여행용품",
+          "콘센트"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a019",
+      "slot": "morning",
+      "priority": 7,
+      "entity": "hotel",
+      "slug": "kensington-jeju",
+      "title": "켄싱턴 호텔 제주 완전 가이드 — 중문 5성·골프·스파",
+      "keywords": [
+        "켄싱턴 호텔 제주",
+        "중문 5성 호텔",
+        "제주 골프 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "켄싱턴 호텔 제주",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H022",
+        "slug": "kensington-jeju",
+        "countrySlug": "kr",
+        "regionSlug": "jeju",
+        "hotelName": "켄싱턴 호텔 제주",
+        "hotelNameEn": "Kensington Hotel Jeju",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.3,
+        "priceRange": "20~55만 원/박",
+        "amenities": [
+          "야외수영장",
+          "골프",
+          "스파",
+          "다이닝"
+        ],
+        "address": "제주 서귀포시 중문관광로 110",
+        "lat": 33.245,
+        "lng": 126.415,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "켄싱턴",
+          "중문",
+          "제주",
+          "5성",
+          "골프"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b019",
+      "slot": "morning",
+      "priority": 7,
+      "entity": "guide",
+      "slug": "travel-insurance",
+      "title": "여행자보험 완전 가이드 — 선택법·비교·클레임",
+      "keywords": [
+        "여행자보험",
+        "여행자보험 추천",
+        "해외여행 보험"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel insurance protection passport",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c019",
+      "slot": "morning",
+      "priority": 7,
+      "entity": "region",
+      "slug": "jp-hokkaido",
+      "title": "홋카이도 여행 완전 가이드 — 삿포로·오타루·후라노·설경",
+      "keywords": [
+        "홋카이도 여행",
+        "삿포로 여행",
+        "홋카이도 설경"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "hokkaido sapporo japan winter snow",
+      "meta": {
+        "id": "R025",
+        "slug": "jp-hokkaido",
+        "countrySlug": "jp",
+        "regionName": "홋카이도",
+        "regionNameEn": "Hokkaido",
+        "regionType": "island",
+        "lat": 43.064,
+        "lng": 141.347,
+        "tags": [
+          "홋카이도",
+          "삿포로",
+          "설경",
+          "스키"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a020",
+      "slot": "noon",
+      "priority": 7,
+      "entity": "hotel",
+      "slug": "sofitel-metropole-hanoi",
+      "title": "소피텔 레전드 메트로폴 하노이 완전 가이드 — 역사적 럭셔리",
+      "keywords": [
+        "소피텔 메트로폴 하노이",
+        "하노이 5성 호텔",
+        "하노이 럭셔리 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Sofitel Metropole Hanoi historic luxury hotel",
+      "meta": {
+        "id": "H023",
+        "slug": "sofitel-metropole-hanoi",
+        "countrySlug": "vn",
+        "regionSlug": "hanoi",
+        "hotelName": "소피텔 레전드 메트로폴 하노이",
+        "hotelNameEn": "Sofitel Legend Metropole Hanoi",
+        "hotelClass": "5성",
+        "hotelType": "역사 호텔",
+        "starRating": 5,
+        "guestRating": 4.8,
+        "priceRange": "USD 250~800/박",
+        "amenities": [
+          "수영장",
+          "스파",
+          "다이닝",
+          "역사적 건물",
+          "버틀러"
+        ],
+        "address": "15 Ngo Quyen Street, Hoan Kiem, Hanoi, Vietnam",
+        "lat": 21.025,
+        "lng": 105.852,
+        "iso2": "VN",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "소피텔",
+          "하노이",
+          "메트로폴",
+          "역사호텔"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b020",
+      "slot": "noon",
+      "priority": 7,
+      "entity": "compare",
+      "slug": "jeju-vs-okinawa",
+      "title": "제주 vs 오키나와 — 어디로 여행 갈까? 완전 비교 2026",
+      "keywords": [
+        "제주 오키나와 비교",
+        "제주 vs 오키나와",
+        "제주 오키나와 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "jeju island korea okinawa japan beach",
+      "meta": {
+        "id": "C012",
+        "slug": "jeju-vs-okinawa",
+        "title": "제주 vs 오키나와 비교",
+        "description": "제주도와 오키나와 여행지 완전 비교",
+        "tags": [
+          "제주",
+          "오키나와",
+          "비교",
+          "섬여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c020",
+      "slot": "noon",
+      "priority": 7,
+      "entity": "situation",
+      "slug": "senior-travel",
+      "title": "60대 부모님 효도여행 — 건강·안전·편안한 국내외 여행",
+      "keywords": [
+        "부모님 여행",
+        "효도여행",
+        "노인 여행 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "elderly parents travel senior hotel",
+      "meta": {
+        "id": "SI015",
+        "slug": "senior-travel",
+        "title": "60대 부모님 효도여행",
+        "description": "건강하고 편안한 부모님 여행 가이드",
+        "tags": [
+          "효도여행",
+          "부모님",
+          "60대"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a021",
+      "slot": "evening",
+      "priority": 7,
+      "entity": "hotel",
+      "slug": "capella-bangkok",
+      "title": "카펠라 방콕 완전 가이드 — 차오프라야 강변 최신 럭셔리",
+      "keywords": [
+        "카펠라 방콕",
+        "방콕 최신 호텔",
+        "방콕 럭셔리 리조트"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Capella Bangkok river luxury hotel pool",
+      "meta": {
+        "id": "H024",
+        "slug": "capella-bangkok",
+        "countrySlug": "th",
+        "regionSlug": "bangkok",
+        "hotelName": "카펠라 방콕",
+        "hotelNameEn": "Capella Bangkok",
+        "hotelClass": "5성",
+        "hotelType": "럭셔리",
+        "starRating": 5,
+        "guestRating": 4.9,
+        "priceRange": "USD 400~1,500/박",
+        "amenities": [
+          "강변 수영장",
+          "빌라형 객실",
+          "스파",
+          "다이닝",
+          "전용 선착장"
+        ],
+        "address": "300/2 Charoenkrung Road, Bang Rak, Bangkok 10500",
+        "lat": 13.72,
+        "lng": 100.513,
+        "iso2": "TH",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "카펠라",
+          "방콕",
+          "강변",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b021",
+      "slot": "evening",
+      "priority": 7,
+      "entity": "theme",
+      "slug": "ski-resort-asia",
+      "title": "아시아 스키 리조트 베스트 — 일본·한국·중국 TOP 10",
+      "keywords": [
+        "스키 여행",
+        "일본 스키 리조트",
+        "겨울 스포츠 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "ski resort powder snow japan winter",
+      "meta": {
+        "id": "TH017",
+        "slug": "ski-resort-asia",
+        "title": "아시아 스키 리조트 베스트",
+        "description": "일본·한국·중국 스키 리조트 TOP 10",
+        "tags": [
+          "스키",
+          "겨울",
+          "스포츠",
+          "일본"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c021",
+      "slot": "evening",
+      "priority": 7,
+      "entity": "addon",
+      "slug": "compression-bag",
+      "title": "여행용 압축팩 추천 — 짐 최대화 비법 완전 가이드",
+      "keywords": [
+        "여행용 압축팩",
+        "압축 파우치",
+        "캐리어 정리"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel packing compression bag suitcase",
+      "meta": {
+        "id": "AD017",
+        "slug": "compression-bag",
+        "title": "여행용 압축팩 추천",
+        "description": "압축팩으로 캐리어 공간 최대 활용",
+        "tags": [
+          "압축팩",
+          "짐싸기",
+          "여행용품"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a022",
+      "slot": "morning",
+      "priority": 8,
+      "entity": "hotel",
+      "slug": "seoul-lotte",
+      "title": "롯데호텔 서울 완전 가이드 — 명동 5성·면세점·다이닝",
+      "keywords": [
+        "롯데호텔 서울",
+        "명동 5성 호텔",
+        "서울 명동 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "롯데호텔 서울",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H025",
+        "slug": "seoul-lotte",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "롯데호텔 서울",
+        "hotelNameEn": "Lotte Hotel Seoul",
+        "hotelClass": "5성",
+        "hotelType": "시티",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "22~65만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "면세점 연결",
+          "다이닝",
+          "명동 위치"
+        ],
+        "address": "서울 중구 을지로 30",
+        "lat": 37.565,
+        "lng": 126.982,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "롯데호텔",
+          "서울",
+          "명동",
+          "5성",
+          "면세점"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b022",
+      "slot": "morning",
+      "priority": 8,
+      "entity": "guide",
+      "slug": "airport-transit",
+      "title": "공항 환승 완전 가이드 — 경유·트랜짓 호텔·무료 시티투어",
+      "keywords": [
+        "공항 환승",
+        "경유 여행",
+        "환승 비자"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "airport terminal transit travel gate",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c022",
+      "slot": "morning",
+      "priority": 8,
+      "entity": "region",
+      "slug": "jp-okinawa",
+      "title": "오키나와 여행 완전 가이드 — 나하·산호초·해변·류큐",
+      "keywords": [
+        "오키나와 여행",
+        "오키나와 관광",
+        "오키나와 해변"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "okinawa beach coral reef japan tropical",
+      "meta": {
+        "id": "R026",
+        "slug": "jp-okinawa",
+        "countrySlug": "jp",
+        "regionName": "오키나와",
+        "regionNameEn": "Okinawa",
+        "regionType": "island",
+        "lat": 26.212,
+        "lng": 127.68,
+        "tags": [
+          "오키나와",
+          "해변",
+          "스노클링",
+          "류큐"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a023",
+      "slot": "noon",
+      "priority": 8,
+      "entity": "hotel",
+      "slug": "ocean-suites-jeju",
+      "title": "오션스위츠 제주 호텔 완전 가이드 — 구좌 오션뷰 부티크",
+      "keywords": [
+        "오션스위츠 제주",
+        "제주 동쪽 호텔",
+        "제주 부티크 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "오션스위츠 제주",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H026",
+        "slug": "ocean-suites-jeju",
+        "countrySlug": "kr",
+        "regionSlug": "jeju",
+        "hotelName": "오션스위츠 제주 호텔",
+        "hotelNameEn": "Ocean Suites Jeju Hotel",
+        "hotelClass": "4성",
+        "hotelType": "부티크",
+        "starRating": 4,
+        "guestRating": 4.4,
+        "priceRange": "15~40만 원/박",
+        "amenities": [
+          "야외수영장",
+          "오션뷰",
+          "피트니스",
+          "조식"
+        ],
+        "address": "제주 제주시 구좌읍 해맞이해안로 1312",
+        "lat": 33.55,
+        "lng": 126.85,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "오션스위츠",
+          "제주",
+          "구좌",
+          "부티크"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b023",
+      "slot": "noon",
+      "priority": 8,
+      "entity": "compare",
+      "slug": "maldives-resorts",
+      "title": "몰디브 리조트 비교 — 예산별·섬별 TOP 5 완전 가이드",
+      "keywords": [
+        "몰디브 리조트 추천",
+        "몰디브 리조트 비교",
+        "몰디브 호텔 가격"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "maldives resort overwater luxury beach",
+      "meta": {
+        "id": "C013",
+        "slug": "maldives-resorts",
+        "title": "몰디브 리조트 비교",
+        "description": "예산·스타일별 몰디브 리조트 TOP 5",
+        "tags": [
+          "몰디브",
+          "리조트",
+          "비교",
+          "신혼여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c023",
+      "slot": "noon",
+      "priority": 8,
+      "entity": "situation",
+      "slug": "luxury-trip",
+      "title": "럭셔리 여행 완전 가이드 — 비즈니스 클래스·5성·프라이빗투어",
+      "keywords": [
+        "럭셔리 여행",
+        "비즈니스 클래스 여행",
+        "고급 해외여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "business class airplane luxury travel",
+      "meta": {
+        "id": "SI016",
+        "slug": "luxury-trip",
+        "title": "럭셔리 여행 가이드",
+        "description": "비즈니스 클래스와 5성 호텔로 즐기는 럭셔리 여행",
+        "tags": [
+          "럭셔리",
+          "비즈니스클래스",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a024",
+      "slot": "evening",
+      "priority": 8,
+      "entity": "hotel",
+      "slug": "haeundae-grand",
+      "title": "해운대 그랜드 호텔 완전 가이드 — 부산 바다뷰 5성",
+      "keywords": [
+        "해운대 그랜드 호텔",
+        "해운대 호텔 추천",
+        "부산 오션뷰 호텔"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "해운대 그랜드 호텔",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H027",
+        "slug": "haeundae-grand",
+        "countrySlug": "kr",
+        "regionSlug": "busan",
+        "hotelName": "해운대 그랜드 호텔",
+        "hotelNameEn": "Haeundae Grand Hotel",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.3,
+        "priceRange": "18~50만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "해운대 해변뷰",
+          "다이닝"
+        ],
+        "address": "부산 해운대구 해운대해변로 320",
+        "lat": 35.16,
+        "lng": 129.165,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "해운대그랜드",
+          "해운대",
+          "부산",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b024",
+      "slot": "evening",
+      "priority": 8,
+      "entity": "theme",
+      "slug": "workation-asia",
+      "title": "워케이션 여행지 추천 — 발리·치앙마이·방콕 디지털 노마드",
+      "keywords": [
+        "워케이션 여행지",
+        "디지털 노마드",
+        "치앙마이 워케이션"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "digital nomad cafe laptop bali coworking",
+      "meta": {
+        "id": "TH018",
+        "slug": "workation-asia",
+        "title": "워케이션 여행지 추천",
+        "description": "아시아 대표 워케이션 도시 가이드",
+        "tags": [
+          "워케이션",
+          "디지털노마드",
+          "발리",
+          "치앙마이"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c024",
+      "slot": "evening",
+      "priority": 8,
+      "entity": "addon",
+      "slug": "sunscreen-travel",
+      "title": "여행용 선크림 추천 — 국가별 기후·SPF 선택 완전 가이드",
+      "keywords": [
+        "여행용 선크림",
+        "해외여행 선크림",
+        "선크림 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "sunscreen beach summer travel SPF",
+      "meta": {
+        "id": "AD018",
+        "slug": "sunscreen-travel",
+        "title": "여행용 선크림 추천",
+        "description": "여행지별 최적 선크림 선택 가이드",
+        "tags": [
+          "선크림",
+          "여행용품",
+          "자외선"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a025",
+      "slot": "morning",
+      "priority": 9,
+      "entity": "hotel",
+      "slug": "grand-ic-seoul",
+      "title": "그랜드 인터컨티넨탈 서울 파르나스 완전 가이드",
+      "keywords": [
+        "그랜드 인터컨티넨탈 서울",
+        "강남 인터컨티넨탈",
+        "서울 5성 강남"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "그랜드 인터컨티넨탈 서울",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H028",
+        "slug": "grand-ic-seoul",
+        "countrySlug": "kr",
+        "regionSlug": "seoul",
+        "hotelName": "그랜드 인터컨티넨탈 서울 파르나스",
+        "hotelNameEn": "Grand InterContinental Seoul Parnas",
+        "hotelClass": "5성",
+        "hotelType": "비즈니스",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "20~60만 원/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "피트니스",
+          "이그제큐티브 라운지",
+          "COEX 인접"
+        ],
+        "address": "서울 강남구 테헤란로 521",
+        "lat": 37.513,
+        "lng": 127.059,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "인터컨티넨탈",
+          "강남",
+          "파르나스",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b025",
+      "slot": "morning",
+      "priority": 9,
+      "entity": "guide",
+      "slug": "carry-on-rules",
+      "title": "기내 수하물 규정 완전 가이드 — 항공사별 크기·무게·액체",
+      "keywords": [
+        "기내 수하물",
+        "기내 반입 규정",
+        "항공사 수하물"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "airplane carry on luggage overhead bin",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c025",
+      "slot": "morning",
+      "priority": 9,
+      "entity": "region",
+      "slug": "id-seminyak",
+      "title": "발리 세미냐크 여행 가이드 — 비치클럽·미식·쇼핑",
+      "keywords": [
+        "세미냐크 여행",
+        "발리 세미냐크",
+        "발리 비치클럽"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "seminyak bali beach club sunset",
+      "meta": {
+        "id": "R027",
+        "slug": "id-seminyak",
+        "countrySlug": "id",
+        "regionName": "발리 세미냐크",
+        "regionNameEn": "Seminyak, Bali",
+        "regionType": "region",
+        "lat": -8.686,
+        "lng": 115.158,
+        "tags": [
+          "세미냐크",
+          "발리",
+          "비치클럽",
+          "미식"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a026",
+      "slot": "noon",
+      "priority": 9,
+      "entity": "hotel",
+      "slug": "nine-bridge-jeju",
+      "title": "나인브릿지 제주 완전 가이드 — 골프·럭셔리 멤버십 리조트",
+      "keywords": [
+        "나인브릿지 제주",
+        "제주 골프 리조트",
+        "제주 고급 리조트"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "나인브릿지 제주",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H029",
+        "slug": "nine-bridge-jeju",
+        "countrySlug": "kr",
+        "regionSlug": "jeju",
+        "hotelName": "나인브릿지 리조트",
+        "hotelNameEn": "Nine Bridges Resort Jeju",
+        "hotelClass": "5성",
+        "hotelType": "골프·리조트",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "50~150만 원/박 (패키지)",
+        "amenities": [
+          "골프 18홀",
+          "빌라형 숙박",
+          "파인다이닝",
+          "스파"
+        ],
+        "address": "제주 서귀포시 안덕면 산록남로 863",
+        "lat": 33.367,
+        "lng": 126.48,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "나인브릿지",
+          "제주",
+          "골프",
+          "럭셔리"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b026",
+      "slot": "noon",
+      "priority": 9,
+      "entity": "compare",
+      "slug": "singapore-vs-bangkok",
+      "title": "싱가포르 vs 방콕 — 가족여행·신혼·예산별 완전 비교",
+      "keywords": [
+        "싱가포르 방콕 비교",
+        "싱가포르 vs 방콕",
+        "동남아 여행지 비교"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "singapore vs bangkok city comparison",
+      "meta": {
+        "id": "C014",
+        "slug": "singapore-vs-bangkok",
+        "title": "싱가포르 vs 방콕 비교",
+        "description": "싱가포르와 방콕 여행지 완전 비교",
+        "tags": [
+          "싱가포르",
+          "방콕",
+          "비교"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c026",
+      "slot": "noon",
+      "priority": 9,
+      "entity": "situation",
+      "slug": "budget-overseas",
+      "title": "100만 원으로 해외여행 — 저예산 알뜰 여행 완전 가이드",
+      "keywords": [
+        "100만원 해외여행",
+        "저예산 해외여행",
+        "알뜰 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "budget travel backpacker cheap hostel",
+      "meta": {
+        "id": "SI017",
+        "slug": "budget-overseas",
+        "title": "100만원 해외여행 가이드",
+        "description": "100만원으로 즐기는 해외여행 완전 가이드",
+        "tags": [
+          "저예산",
+          "알뜰여행",
+          "배낭여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a027",
+      "slot": "evening",
+      "priority": 9,
+      "entity": "hotel",
+      "slug": "four-seasons-maui",
+      "title": "포시즌스 리조트 마우이 완전 가이드 — 하와이 럭셔리",
+      "keywords": [
+        "포시즌스 마우이",
+        "하와이 5성 호텔",
+        "마우이 럭셔리 리조트"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Four Seasons Maui Hawaii luxury resort beach",
+      "meta": {
+        "id": "H030",
+        "slug": "four-seasons-maui",
+        "countrySlug": "us",
+        "regionSlug": "hawaii",
+        "hotelName": "포시즌스 리조트 마우이",
+        "hotelNameEn": "Four Seasons Resort Maui at Wailea",
+        "hotelClass": "5성",
+        "hotelType": "리조트",
+        "starRating": 5,
+        "guestRating": 4.8,
+        "priceRange": "USD 700~3,000/박",
+        "amenities": [
+          "3개 수영장",
+          "스파",
+          "비치프런트",
+          "다이닝",
+          "버틀러"
+        ],
+        "address": "3900 Wailea Alanui Dr, Wailea, HI 96753",
+        "lat": 20.69,
+        "lng": -156.44,
+        "iso2": "US",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "포시즌스",
+          "마우이",
+          "하와이",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b027",
+      "slot": "evening",
+      "priority": 9,
+      "entity": "theme",
+      "slug": "secret-beach",
+      "title": "숨겨진 해변 여행지 — 관광객 적은 청정 해변 BEST 10",
+      "keywords": [
+        "숨겨진 해변",
+        "관광객 없는 해변",
+        "한적한 해외 해변"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "hidden secret beach tropical pristine",
+      "meta": {
+        "id": "TH019",
+        "slug": "secret-beach",
+        "title": "숨겨진 해변 여행지",
+        "description": "관광객 적은 청정 해변 베스트",
+        "tags": [
+          "숨겨진해변",
+          "청정해변",
+          "한적한여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c027",
+      "slot": "evening",
+      "priority": 9,
+      "entity": "addon",
+      "slug": "travel-backpack",
+      "title": "여행용 백팩 추천 2026 — 기내 반입·장거리 완전 가이드",
+      "keywords": [
+        "여행용 백팩",
+        "기내 백팩",
+        "여행 배낭 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel backpack hiking daypack",
+      "meta": {
+        "id": "AD019",
+        "slug": "travel-backpack",
+        "title": "여행용 백팩 추천",
+        "description": "여행용 백팩 선택 완전 가이드",
+        "tags": [
+          "백팩",
+          "여행용품",
+          "기내반입"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a028",
+      "slot": "morning",
+      "priority": 10,
+      "entity": "hotel",
+      "slug": "pinks-point-jeju",
+      "title": "핀크스 포인트 제주 완전 가이드 — 프리미엄 골프·빌라",
+      "keywords": [
+        "핀크스 제주",
+        "제주 골프 빌라",
+        "제주 프리미엄 리조트"
+      ],
+      "imageSource": "tourapi",
+      "imageQuery": "핀크스 제주",
+      "contentTypeId": "32",
+      "meta": {
+        "id": "H031",
+        "slug": "pinks-point-jeju",
+        "countrySlug": "kr",
+        "regionSlug": "jeju",
+        "hotelName": "더 핀크스 포인트",
+        "hotelNameEn": "The Pinks Point Jeju",
+        "hotelClass": "5성",
+        "hotelType": "골프·빌라",
+        "starRating": 5,
+        "guestRating": 4.5,
+        "priceRange": "40~120만 원/박",
+        "amenities": [
+          "골프",
+          "빌라형",
+          "수영장",
+          "다이닝",
+          "한라산 전망"
+        ],
+        "address": "제주 서귀포시 안덕면 산록남로 863-2",
+        "lat": 33.361,
+        "lng": 126.463,
+        "iso2": "KR",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "핀크스",
+          "제주",
+          "골프",
+          "빌라"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b028",
+      "slot": "morning",
+      "priority": 10,
+      "entity": "guide",
+      "slug": "europe-etias",
+      "title": "유럽 ETIAS 완전 가이드 — 2026 시행·신청 방법·비용",
+      "keywords": [
+        "유럽 ETIAS",
+        "쉥겐 비자 면제",
+        "유럽 여행 입국"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "europe travel passport schengen airport",
+      "meta": null,
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c028",
+      "slot": "morning",
+      "priority": 10,
+      "entity": "region",
+      "slug": "my-penang",
+      "title": "말레이시아 페낭 여행 가이드 — 조지타운·미식·사원",
+      "keywords": [
+        "페낭 여행",
+        "말레이시아 페낭",
+        "조지타운 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "penang george town malaysia street art food",
+      "meta": {
+        "id": "R028",
+        "slug": "my-penang",
+        "countrySlug": "my",
+        "regionName": "페낭",
+        "regionNameEn": "Penang",
+        "regionType": "island",
+        "lat": 5.414,
+        "lng": 100.33,
+        "tags": [
+          "페낭",
+          "조지타운",
+          "말레이시아",
+          "미식"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a029",
+      "slot": "noon",
+      "priority": 10,
+      "entity": "hotel",
+      "slug": "anantara-phuket",
+      "title": "아난타라 마이카오 리조트 푸껫 완전 가이드 — 북부 럭셔리",
+      "keywords": [
+        "아난타라 푸껫",
+        "푸껫 럭셔리 리조트",
+        "마이카오 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Anantara Phuket resort luxury beach pool",
+      "meta": {
+        "id": "H032",
+        "slug": "anantara-phuket",
+        "countrySlug": "th",
+        "regionSlug": "phuket",
+        "hotelName": "아난타라 마이카오 리조트 & 빌라",
+        "hotelNameEn": "Anantara Mai Khao Phuket Villas",
+        "hotelClass": "5성",
+        "hotelType": "빌라·리조트",
+        "starRating": 5,
+        "guestRating": 4.6,
+        "priceRange": "USD 350~1,200/박",
+        "amenities": [
+          "빌라형 풀",
+          "스파",
+          "다이닝",
+          "프라이빗 비치 인접"
+        ],
+        "address": "888 Moo 3 Mai Khao, Thalang, Phuket 83110, Thailand",
+        "lat": 8.154,
+        "lng": 98.291,
+        "iso2": "TH",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "아난타라",
+          "푸껫",
+          "마이카오",
+          "5성",
+          "빌라"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b029",
+      "slot": "noon",
+      "priority": 10,
+      "entity": "compare",
+      "slug": "hawaii-islands",
+      "title": "하와이 섬 비교 — 오아후·마우이·빅아일랜드 어디로?",
+      "keywords": [
+        "하와이 섬 추천",
+        "오아후 마우이 비교",
+        "하와이 여행지"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "hawaii islands oahu maui beach",
+      "meta": {
+        "id": "C015",
+        "slug": "hawaii-islands",
+        "title": "하와이 섬 비교 가이드",
+        "description": "하와이 4개 섬 완전 비교 가이드",
+        "tags": [
+          "하와이",
+          "오아후",
+          "마우이",
+          "섬여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c029",
+      "slot": "noon",
+      "priority": 10,
+      "entity": "situation",
+      "slug": "last-minute",
+      "title": "갑자기 생긴 연차 — 3박4일 해외여행 번개 계획 가이드",
+      "keywords": [
+        "갑작스러운 해외여행",
+        "당일 항공권",
+        "번개 여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "last minute travel airport departure",
+      "meta": {
+        "id": "SI018",
+        "slug": "last-minute",
+        "title": "갑자기 떠나는 해외여행",
+        "description": "갑작스러운 연차로 떠나는 번개 여행 가이드",
+        "tags": [
+          "연차여행",
+          "번개여행",
+          "당일항공권"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "a030",
+      "slot": "evening",
+      "priority": 10,
+      "entity": "hotel",
+      "slug": "the-okura-kyoto",
+      "title": "오쿠라 교토 완전 가이드 — 기온 5성 전통 럭셔리",
+      "keywords": [
+        "오쿠라 교토",
+        "교토 5성 호텔",
+        "기온 럭셔리 호텔"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "Okura Kyoto luxury traditional hotel",
+      "meta": {
+        "id": "H033",
+        "slug": "the-okura-kyoto",
+        "countrySlug": "jp",
+        "regionSlug": "kyoto",
+        "hotelName": "더 오쿠라 교토",
+        "hotelNameEn": "The Okura Kyoto",
+        "hotelClass": "5성",
+        "hotelType": "럭셔리",
+        "starRating": 5,
+        "guestRating": 4.7,
+        "priceRange": "JPY 80,000~250,000/박",
+        "amenities": [
+          "야외수영장",
+          "스파",
+          "일식·양식 다이닝",
+          "기온 인접"
+        ],
+        "address": "Kamanza-dori Oike-sagaru, Nakagyo-ku, Kyoto 604-8558",
+        "lat": 35.013,
+        "lng": 135.762,
+        "iso2": "JP",
+        "hotelsCombinedDeepLink": "",
+        "affiliateLinkVerified": false,
+        "ymylLevel": "B",
+        "tags": [
+          "오쿠라",
+          "교토",
+          "기온",
+          "5성"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "b030",
+      "slot": "evening",
+      "priority": 10,
+      "entity": "theme",
+      "slug": "cultural-heritage",
+      "title": "세계유산 여행 — UNESCO 선정 아시아 역사도시 BEST",
+      "keywords": [
+        "유네스코 세계유산 여행",
+        "역사 여행",
+        "문화유산 관광"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "UNESCO world heritage temple history asia",
+      "meta": {
+        "id": "TH020",
+        "slug": "cultural-heritage",
+        "title": "UNESCO 세계유산 여행",
+        "description": "아시아 대표 UNESCO 세계유산 여행지",
+        "tags": [
+          "유네스코",
+          "세계유산",
+          "역사여행"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "c030",
+      "slot": "evening",
+      "priority": 10,
+      "entity": "addon",
+      "slug": "water-bottle",
+      "title": "여행용 텀블러·물통 추천 — 보온·정수·접이식 완전 가이드",
+      "keywords": [
+        "여행용 텀블러",
+        "여행 물통",
+        "보온 텀블러 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel water bottle tumbler outdoor",
+      "meta": {
+        "id": "AD020",
+        "slug": "water-bottle",
+        "title": "여행용 텀블러·물통 추천",
+        "description": "여행용 물통 선택 완전 가이드",
+        "tags": [
+          "텀블러",
+          "물통",
+          "여행용품"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    }
+  ]
+}
