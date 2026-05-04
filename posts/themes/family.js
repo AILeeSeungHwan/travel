@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `아이와 함께하는 가족여행은 단순 휴양이 아닌 안전·위생·키즈 친화·시차 부담 등을 종합 고려해야 합니다. 영유아(0~3세)·유아(4~7세)·초등(8~12세) 연령별로 적합한 목적지가 다릅니다.<br/><br/>본 가이드는 한국인 가족여행 인기 목적지(다낭·오키나와·괌·세부·제주·도쿄디즈니)와 연령별 추천을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1767519633458-27efd4509f11?auto=format&fit=crop&q=80&w=1200', alt: '가족여행 아이와 함께 비치 풀빌라', caption: '가족여행 키즈 리조트', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Hoi An Photographer on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '가족여행 BEST' },
     { type: 'body', html: `<ul>
       <li><strong>다낭/푸꾸옥 (베트남)</strong>: 5시간 직항, 풀빌라, 한식·키즈클럽 풍부. 4인 5박 250~500만 원.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>제주 (국내)</strong>: 항공 1시간, 풀빌라+렌터카, 안전.</li>
       <li><strong>도쿄디즈니/USJ (오사카)</strong>: 2시간, 디즈니랜드/씨·유니버설.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '가족여행 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'age', text: '연령별 추천' },
     { type: 'body', html: `<strong>영유아 (0~3세)</strong>: 다낭·푸꾸옥(가까움·풀빌라), 제주(국내·안전), 오키나와(시차X). 비행 4시간 이내.<br/><strong>유아 (4~7세)</strong>: 도쿄디즈니·오키나와·세부·괌. 키즈클럽·동물원·아쿠아리움.<br/><strong>초등 (8~12세)</strong>: 도쿄·오사카(테마파크), 싱가포르(다양성), 발리(액티비티), 하와이(자연).` },

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `아이와 함께하는 가족여행은 <strong>안전·시차·비행시간·키즈 친화 시설</strong>이 핵심입니다. 0~3세 영유아·4~7세 유아·8~12세 초등 연령별로 적합한 목적지가 다릅니다.<br/><br/>본 가이드는 연령별 추천 목적지와 풀빌라·키즈클럽·테마파크 옵션을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1731796865138-227d3c72dd71?auto=format&fit=crop&q=80&w=1200', alt: '아이와 가족여행 키즈 리조트 풀빌라', caption: '아이와 함께하는 가족여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joss Broward on Unsplash', imageSourceUrl: 'https://unsplash.com/@jossbroward?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'age', text: '연령별 추천' },
     { type: 'body', html: `<strong>영유아 (0~3세)</strong>:<br/><ul>
       <li>비행 4시간 이내 (다낭·오키나와·제주)</li>
@@ -16,6 +18,8 @@ module.exports = {
       <li>도쿄·싱가포르 — 도시 + 박물관 + 테마파크</li>
       <li>발리 액티비티·하와이 자연</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '가족여행 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'budget', text: '예산 (4인 가족 기준)' },
     { type: 'body', html: `2박3일 제주 풀빌라+렌터카: 80~250만 원<br/>5박6일 다낭 풀빌라: 250~500만 원<br/>5박6일 도쿄디즈니: 350~700만 원<br/>1주일 오키나와: 300~600만 원<br/>1주일 하와이: 700~1,500만 원` },

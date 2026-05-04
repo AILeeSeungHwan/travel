@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `신혼여행은 부부가 결혼 직후 떠나는 여행으로, 일생에 한두 번뿐인 만큼 목적지·예산·일정·기념일 옵션이 평생 추억으로 남습니다. 한국인 신혼여행 1위는 발리(인도네시아), 2위 다낭(베트남), 3위 몰디브, 4위 하와이, 5위 푸꾸옥(베트남) 순입니다(2024 트렌드).<br/><br/>본 가이드는 신혼여행 인기 5개 목적지의 시즌·예산·풀빌라·오버워터빌라·기념일 옵션을 비교해 부부의 선호에 맞는 선택을 돕습니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1568050878862-c8b4bdc99bc3?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 오버워터빌라 몰디브 수영장', caption: '신혼여행 오버워터빌라', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joyful on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top5', text: '신혼여행 BEST 5' },
     { type: 'body', html: `<ul>
       <li><strong>발리 (인도네시아)</strong> — 우붓·세미냐크·울루와뚜·누사두아. 5박 1인 200~400만 원. 풀빌라·요가·럭셔리.</li>
@@ -10,6 +12,8 @@ module.exports = {
       <li><strong>하와이</strong> — 오아후+마우이. 7박 1인 400~700만 원. ESTA 필수.</li>
       <li><strong>푸꾸옥 (베트남)</strong> — 풀빌라·빈펄. 5박 1인 150~300만 원.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '신혼여행 호텔·풀빌라 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'season', text: '시즌별 베스트 목적지' },
     { type: 'body', html: `<strong>1~3월</strong>: 발리 건기, 푸꾸옥, 하와이.<br/><strong>4~6월</strong>: 다낭, 발리, 일본 료칸.<br/><strong>7~8월</strong>: 발리·하와이·하와이 OK. 동남아 우기 — 가격 인하.<br/><strong>9~11월</strong>: 다낭·푸꾸옥, 발리.<br/><strong>12~2월</strong>: 몰디브·푸꾸옥(건기), 하와이.` },

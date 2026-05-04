@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `처음 해외여행을 떠나는 분들에게 가장 중요한 건 <strong>가까운 거리·짧은 비행·시차 적은 곳·언어 부담 적은 곳</strong>입니다. 일본·대만·베트남·태국이 한국인 첫 해외여행 4대 추천국이며, 모두 5시간 이내 직항·무비자·풍부한 한국인 인프라를 갖췄습니다.<br/><br/>본 가이드는 첫 해외여행 추천국·예산·준비물·일정 샘플을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '첫 해외여행 준비 공항 출발 가이드', caption: '첫 해외여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '첫 해외여행 BEST 4' },
     { type: 'body', html: `<ul>
       <li><strong>일본 (도쿄·오사카·후쿠오카)</strong>: 1~2.5시간, 시차X, 90일 무비자. 3박4일 1인 80~150만 원.</li>
@@ -9,6 +11,8 @@ module.exports = {
       <li><strong>베트남 (다낭)</strong>: 5시간, 45일 무비자, 한국인 풍부. 5박6일 1인 100~200만 원.</li>
       <li><strong>태국 (방콕·치앙마이)</strong>: 6시간, 90일 무비자, 미식·마사지. 5박 1인 100~200만 원.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '첫 해외여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'why', text: '왜 가까운 동아시아인가' },
     { type: 'body', html: `<ul>

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `문화·역사 여행은 UNESCO 세계유산·고대 도시·박물관·종교 유적 중심의 여행입니다. 이탈리아(56곳·세계 1위), 중국(57곳)·일본(25곳)·프랑스(49곳)·터키(21곳) 등 유산 강자가 인기. 본 가이드는 한국인 문화·역사 여행 BEST 5와 동선을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199?auto=format&fit=crop&q=80&w=1200', alt: '유럽 문화 역사 여행 UNESCO 세계유산', caption: '문화·역사 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '문화·역사 BEST 5' },
     { type: 'body', html: `<ul>
       <li><strong>이탈리아 (로마·피렌체·베네치아)</strong>: 콜로세움·바티칸·우피치·산마르코.</li>
@@ -10,6 +12,8 @@ module.exports = {
       <li><strong>터키 (이스탄불)</strong>: 아야소피아·블루모스크·톱카프·카파도키아.</li>
       <li><strong>그리스 (아테네)</strong>: 아크로폴리스·산토리니·미코노스.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '문화·역사 여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'rome', text: '로마 — 2,000년 도시' },
     { type: 'body', html: `<ul>

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `료칸(旅館)·온천(温泉) 여행은 일본의 정수를 가장 깊게 체험하는 형태입니다. 가이세키(코스 정식)·노천탕(露天風呂)·다다미·유카타(浴衣)의 결합이며, 부모님·신혼·기념일 1순위. 본 가이드는 일본 4대 온천 지역(유후인·하코네·구사쓰·벳푸)의 베스트 료칸과 예약·매너를 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1739609718564?auto=format&fit=crop&q=80&w=1200', alt: '일본 료칸 온천 노천탕 여행', caption: '일본 료칸·온천 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'HANVIN CHEONG on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '료칸·온천 BEST 지역' },
     { type: 'body', html: `<ul>
       <li><strong>유후인 (오이타·큐슈)</strong>: 후쿠오카 차로 2시간. 잔잔한 마을 + 산기슭 료칸. 료칸 1박 30~80만 원.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>키노사키 (효고)</strong>: 오사카 2.5시간. 7개 외탕 순례·료칸 마을.</li>
       <li><strong>노보리베츠 (홋카이도)</strong>: 삿포로 1.5시간. 지옥계곡·9가지 천질.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '료칸·온천 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'ryokan', text: '료칸 — 일본 전통 숙박' },
     { type: 'body', html: `<ul>

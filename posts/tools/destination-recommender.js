@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행지 추천 도구는 예산·기간·테마·동반자를 입력하면 한국인 여행객 평균 만족도 기반으로 적합한 국가·지역을 추천합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 목적지 추천 예산 테마별 여행지 가이드', caption: '예산·테마별 여행지 추천 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@phatthanan?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '계산기 위젯', html: '예산·기간·테마·동반자 입력 → 추천 국가·지역 자동 제안. (위젯 후속)' },
 
     { type: 'h2', id: 'budget', text: '예산별 추천' },
@@ -12,6 +14,8 @@ module.exports = {
       <li><strong>1인 400~600만 원</strong>: 하와이 7박·유럽 7박·발리 럭셔리</li>
       <li><strong>1인 700만 원+</strong>: 몰디브 OWB·일등석·럭셔리 패키지</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '추천 여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'duration', text: '기간별' },
     { type: 'body', html: `<ul>

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `부모님과 함께하는 효도여행은 일반 여행과 다른 기준이 필요합니다. <strong>짧은 비행(4시간 이내 권장), 안락한 숙소, 한식 가능 식당, 의료 접근성, 체력에 맞는 여유로운 일정</strong> — 이 다섯 가지가 효도여행의 기준입니다.<br/><br/>특히 60~70대 부모님은 무릎·허리 통증이 있을 수 있어, 계단이 많은 사원이나 장거리 이동은 사전에 동선을 확인해야 합니다. 여행자보험은 60세+ 기저질환 보장이 포함된 상품으로 반드시 가입하세요.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '부모님 효도여행 일본 료칸 온천 가족여행', caption: '효도여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dcbelanger?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top-destinations', text: '효도여행 BEST 목적지' },
     { type: 'h3', id: 'ryokan-japan', text: '1순위 — 일본 료칸 (하코네·유후인·키노사키)' },
     { type: 'body', html: `일본 료칸은 효도여행에 가장 잘 맞는 숙박 형태입니다. 다다미방에서 쉬고, 유카타를 입고, 온천(노천 노천탕)에 들어가고, 가이세키(정식) 코스를 먹는 모든 경험이 호텔 내에서 완결됩니다. 이동이 최소화되어 체력 소모가 적습니다.<br/><br/><strong>하코네</strong>: 도쿄에서 1.5시간. 후지산 전망 + 아시노코 유람선 + 온천. 일본에서 한국인 선호도 1위 효도 코스.<br/><strong>유후인</strong>: 후쿠오카에서 2시간. 조용한 온천 마을. 한국인 비율 높아 한국어 안내 료칸 多.<br/><strong>키노사키 온천</strong>: 오사카에서 2.5시간. 전통 온천 마을 보존, 유카타 입고 거리 산책.` },
@@ -27,6 +29,8 @@ module.exports = {
       <li><strong>한식 가능 식당 최소 1끼 확보</strong>: 된장찌개·김치찌개·한국식 BBQ. 특히 일본·대만·동남아는 한식당 풍부.</li>
       <li><strong>의료·비상 연락처 사전 준비</strong>: 여행자보험증(영문)·보험사 SOS번호·현지 병원 위치 저장. 처방약은 영문 처방전과 함께 충분히 지참.</li>
     </ol>` },
+
+    { type: 'hotelsCombinedCTA', text: '효도여행 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'health-precautions', text: '건강 주의사항' },
     { type: 'body', html: `<ul>

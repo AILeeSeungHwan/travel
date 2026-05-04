@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행용 화장품 케이스는 기내반입 액체 100ml 한도와 1L 투명 지퍼백 1개 규정에 맞춰 화장품을 옮겨 담는 필수 아이템입니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1575291930020-5dbada5097c7?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 화장품 케이스 기내 100ml 한도 여행 필수품', caption: '여행용 화장품 케이스 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'AR on Unsplash', imageSourceUrl: 'https://unsplash.com/@ar_bak?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'warning', title: '기내 100ml 한도', html: '국제선 기내 반입 액체는 100ml 이하 용기 + 1L 투명 지퍼백 1개. 위탁수하물은 한도 X.' },
 
     { type: 'h2', id: 'case', text: '케이스 종류' },
@@ -13,6 +15,8 @@ module.exports = {
       <li><strong>분말 케이스</strong>: 파운데이션·아이섀도우.</li>
       <li><strong>샘플 보틀</strong>: 30~50ml — 5박 충분.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'liquid', text: '100ml 한도 — 정확한 적용' },
     { type: 'body', html: `<ul>

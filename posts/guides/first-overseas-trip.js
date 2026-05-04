@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `처음 해외여행을 준비하면 어디서부터 시작해야 할지 막막합니다. 여권·비자·환전·항공권·숙소·여행자보험·짐 싸기·입국심사·세관까지 수많은 단계가 있고, 한 가지를 빠뜨리면 출국이 막히거나 현지에서 곤란을 겪습니다.<br/><br/>본 가이드는 첫 해외여행자를 위한 출국 90일 전부터 도착·귀국까지 전 과정 체크리스트를 정리합니다. 일본·대만·베트남·태국 등 가까운 동아시아 국가 첫 여행 기준입니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '첫 해외여행 준비 공항 출국 체크리스트', caption: '첫 해외여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: '90days', text: '출국 90~60일 전 — 큰 그림' },
     { type: 'body', html: `<ol>
       <li><strong>여권 확인</strong> — 잔여 6개월 이상. 만료 임박 시 외교부 여권과 갱신 (4~6주).</li>
@@ -9,6 +11,8 @@ module.exports = {
       <li><strong>예산 설정</strong> — 항공·호텔·식·교통·활동 합산. 여유 20% 추가.</li>
       <li><strong>항공권 예약</strong> — 60~120일 전 가격 가장 좋음. 정규/LCC 비교.</li>
     </ol>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: '30days', text: '출국 30~14일 전 — 디테일' },
     { type: 'body', html: `<ol>

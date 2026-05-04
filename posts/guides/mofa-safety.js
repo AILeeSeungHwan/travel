@@ -4,6 +4,8 @@ module.exports = {
 
     { type: 'intro', html: `대한민국 외교부는 해외 안전여행 정보를 위해 <strong>4단계 여행경보 제도</strong>를 운영합니다(<strong>0404.go.kr</strong>). 한국인이 가는 모든 해외 국가·도시는 4단계 중 하나로 분류되며, 출국 전 본인 여행지의 단계를 반드시 확인하고 적합한 대비책을 세워야 합니다.<br/><br/>본 가이드는 4단계 여행경보의 의미·대응·영사조력 신청 방법을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 외교부 여행경보 안전여행', caption: '외교부 여행경보 안전여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'levels', text: '여행경보 4단계' },
     { type: 'body', html: `<ul>
       <li><strong>1단계 여행유의(남색)</strong>: 신변안전 위험 요인 존재. <em>일반 여행 가능, 신변안전 유의</em>.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>3단계 출국권고(적색)</strong>: 신변안전 심각 위험. <em>출국 권고, 즉시 출국 또는 여행 취소</em>.</li>
       <li><strong>4단계 여행금지(흑색)</strong>: <em>방문 금지</em>. 위반 시 여권법 처벌 (1년 이하 징역 또는 1천만 원 이하 벌금).</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'levels-meaning', text: '단계별 의미 — 보험·영사조력' },
     { type: 'body', html: `<ul>

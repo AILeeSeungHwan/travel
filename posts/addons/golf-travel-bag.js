@@ -2,12 +2,16 @@ module.exports = {
   sections: [
     { type: 'intro', html: `골프투어(태국·베트남·일본·하와이·뉴질랜드)에서 골프백 항공 위탁은 핵심입니다. 하드케이스 vs 소프트커버, 항공사별 추가 요금, 골프채 보호 패딩이 핵심.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '해외 골프투어 골프백 항공 위탁 여행 가이드', caption: '해외 골프여행 골프백 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@phatthanan?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'types', text: '하드 vs 소프트' },
     { type: 'body', html: `<ul>
       <li><strong>하드케이스</strong>: ABS·플라스틱·잠금. 보호력 최고. 무게 6~10kg. 30~80만 원.</li>
       <li><strong>소프트커버</strong>: 나일론·패브릭. 가벼움. 보호력 낮음. 5~15만 원.</li>
       <li><strong>패디드 소프트</strong>: 두꺼운 패딩 + 휠. 절충형.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '골프투어 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'fees', text: '항공사별 위탁 요금' },
     { type: 'body', html: `<ul>

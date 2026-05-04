@@ -2,12 +2,16 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 캐리어는 기간·여행 스타일·항공사 한도에 맞게 선택해야 합니다. 20인치(기내)·24인치(위탁 표준)·28인치(장기) 3가지 사이즈가 표준이며, 하드케이스(보호력) vs 소프트케이스(가벼움·확장성) 두 타입으로 나뉩니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 캐리어 여행용 가방 사이즈 선택 가이드', caption: '여행 캐리어 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'size', text: '사이즈별 추천' },
     { type: 'body', html: `<ul>
       <li><strong>20인치 (기내수하물)</strong>: 1박2일·당일치기. 7~10kg. LCC 기내 한도 통과.</li>
       <li><strong>24인치 (위탁 표준)</strong>: 3~5박. 15~20kg. 가족·신혼 1주일.</li>
       <li><strong>28인치 (장기·가족)</strong>: 1주+. 25~30kg. 가족 4인 또는 면세 쇼핑 多.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'type', text: '하드 vs 소프트' },
     { type: 'body', html: `<ul>

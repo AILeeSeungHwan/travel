@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `장거리 비행(8시간+)에서 목베개는 수면 품질·도착 후 컨디션에 직접 영향을 줍니다. 메모리폼·헤드레스트형·접이식 등 형태별 장단점이 있습니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 목베개 수면 여행 편의용품 가이드', caption: '여행용 목베개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'types', text: '타입별' },
     { type: 'body', html: `<ul>
       <li><strong>메모리폼 U자형</strong>: 목 자연스러운 곡선. 1~2만 원.</li>
@@ -10,6 +12,8 @@ module.exports = {
       <li><strong>스트랩형 (트레이커 신스)</strong>: 머리 좌우 고정.</li>
       <li><strong>어깨 닿는 형 (J자)</strong>: 옆 좌석 기대기 방지.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'choice', text: '선택 기준' },
     { type: 'body', html: `<ul>

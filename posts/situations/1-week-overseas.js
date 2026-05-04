@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1주일(6~8일) 해외여행은 직장인 유급휴가 + 주말 활용에 가장 적합한 기간입니다. 1도시 깊게 머물기 또는 광역 동선 둘 다 가능. 본 가이드는 1주일 BEST 옵션을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1583863374731-4224cbbc8c36?auto=format&fit=crop&q=80&w=1200', alt: '1주일 해외여행 베트남 다낭 발리 일본', caption: '1주일 해외여행 BEST 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Terence Sandeep on Unsplash', imageSourceUrl: 'https://unsplash.com/@terence_sans?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '1주일 BEST' },
     { type: 'body', html: `<ul>
       <li><strong>다낭+호이안+후에 7박</strong>: 1인 130~280만 원. 가성비 1순위.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>이탈리아 7박</strong>: 로마+피렌체+베네치아. 1인 350~700만 원.</li>
       <li><strong>하와이 7박</strong>: 오아후 5박 + 마우이 2박. 1인 350~600만 원.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '1주일 여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'style', text: '스타일별' },
     { type: 'body', html: `<strong>1도시 깊게</strong>: 다낭·발리·치앙마이·푸꾸옥 — 휴양·풀빌라·로컬 체험<br/><strong>광역 동선</strong>: 도쿄+교토+오사카·로마+피렌체+베네치아 — 도시 미식·문화` },

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `장거리 비행과 호텔 숙면을 위해 안대·귀마개는 필수입니다. 3D 입체 안대 + 소음 차단(SNR 30dB+) 귀마개로 비행 중 또는 호텔에서 깊은 수면 가능.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 안대 귀마개 수면 여행 편의용품 가이드', caption: '여행용 안대·귀마개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'mask', text: '안대 — 3D 입체 vs 일반' },
     { type: 'body', html: `<ul>
       <li><strong>일반 평면 안대</strong>: 5,000~10,000원. 눈 누름 — 마스카라 번짐 가능.</li>
@@ -10,6 +12,8 @@ module.exports = {
       <li><strong>온열 안대 (홧팩)</strong>: 일회용 — 비행 중 1회 사용.</li>
       <li><strong>전동 마사지 안대</strong>: 충전식 — 장거리 비행에 인기.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'earplug', text: '귀마개 — SNR 차이' },
     { type: 'body', html: `<ul>

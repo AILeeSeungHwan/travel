@@ -16,6 +16,8 @@ module.exports = {
       <li><strong>안전 등급</strong>: 외교부 여행경보 미발효 — 일반 여행 안전 지역</li>
     </ul>` },
 
+    { type: 'hotelsCombinedCTA', text: '영국 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
+
     { type: 'h2', id: 'regions', text: '핵심 지역별 가이드' },
     { type: 'h3', id: 'london', text: '런던 — 영국의 심장' },
     { type: 'body', html: `영국 수도이자 세계 금융·문화·예술의 중심. 한국인 여행자 대부분이 5~7박을 배정합니다.<br/><br/><strong>무료 명소</strong>: 대영박물관·내셔널 갤러리·테이트 모던·빅토리아·알버트 박물관·자연사박물관·국립초상화 갤러리 등 대부분 국립 박물관은 무료.<br/><br/><strong>유료 명소</strong>: 런던 타워(GBP 30~), 버킹엄 궁전(여름 시즌, GBP 28~), 런던 아이(GBP 35~), 해리포터 스튜디오(웨스트런던, GBP 52~, 인기 → 사전 예약 필수).<br/><br/><strong>웨스트엔드 뮤지컬</strong>: 레미제라블·오페라의 유령·해밀턴·해리포터 연극·라이언킹. 공식 홈페이지 또는 웨스트엔드 라이브(officiallondontheatre.com) 사전 예약. 좋은 좌석은 3개월 전 예약 권장.` },

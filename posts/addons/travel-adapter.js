@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행에서 어댑터는 필수입니다. 국가별 콘센트 타입(A/B/C/F/G 등)이 다르며, 한 어댑터로 여러 국가에 대응하려면 멀티 어댑터를 구매해야 합니다. 최근 USB-C PD 65W 멀티 어댑터로 노트북·휴대폰·태블릿 동시 충전이 가능합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 멀티 어댑터 국가별 콘센트 타입 가이드', caption: '해외여행 멀티 어댑터 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'types', text: '국가별 콘센트 타입' },
     { type: 'body', html: `<ul>
       <li><strong>한국</strong>: F타입 (220V·50Hz)</li>
@@ -13,6 +15,8 @@ module.exports = {
       <li><strong>미국·캐나다·대만</strong>: A·B타입 (110V·60Hz)</li>
       <li><strong>호주·뉴질랜드</strong>: I타입</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'voltage', text: '전압 — 110V vs 220V' },
     { type: 'body', html: `<ul>

@@ -20,6 +20,7 @@ module.exports = {
       <li><strong>가까운 공항</strong>: 제주국제공항 (차량 40분)</li>
       <li><strong>고객 평점</strong>: 4.6/5.0 (HotelsCombined 집계)</li>
     </ul>` },
+    { type: 'hotelsCombinedCTA', text: '제주신라호텔 최저가 비교 →', subText: '날짜를 입력하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'gallery',
       images: [

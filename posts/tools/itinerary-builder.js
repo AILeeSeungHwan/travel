@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 일정 빌더는 스팟·호텔을 추가하면 GPS 기반 동선·예상 소요시간·이동 수단을 자동 계산합니다. 효율적 일정 설계로 여행 시간을 30~50% 절약할 수 있습니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199-2697edfc8794?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 일정 빌더 동선 설계 여행 계획', caption: '여행 일정 빌더 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/@siddheshmangela?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '계산기 위젯', html: '스팟·호텔 추가 → 동선 자동 최적화 + 1일 일정표 출력. (위젯 후속)' },
 
     { type: 'h2', id: 'principles', text: '동선 설계 원칙' },
@@ -13,6 +15,8 @@ module.exports = {
       <li><strong>식사 시간 1시간 30분 확보</strong>: 미식 여행 핵심</li>
       <li><strong>이동 시간 누적 X</strong>: 1일 이동 4시간 이내</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'sample-tokyo', text: '샘플 — 도쿄 1일 (효율 동선)' },
     { type: 'body', html: `<strong>오전 (9~12시)</strong>: 신주쿠 — 도쿄 도청 전망대(무료) → 신주쿠교엔 산책<br/><strong>점심 (12~13시 30분)</strong>: 신주쿠 — 라멘 잇푸도<br/><strong>오후 (14~17시)</strong>: 시부야 → 하라주쿠 → 메이지신궁 (도보·메트로)<br/><strong>저녁 (18~20시)</strong>: 시부야 — 츠텐 라멘 또는 야키니쿠<br/><strong>야간 (20~22시)</strong>: 시부야 스카이 야경` },

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 예산 계산은 항공·호텔·식비·교통·활동 5개 항목 합산이 핵심입니다. 인원·기간·목적지에 따라 1인 50만 원부터 1,500만 원까지 차이가 납니다. 본 가이드는 권역별 평균 예산과 절약 팁을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 예산 계산 항공 호텔 비용 절약', caption: '여행 예산 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '계산기 위젯', html: '인원·기간·목적지 입력 → 항공·호텔·식비·교통·활동 자동 합산. (위젯 컴포넌트 후속 추가 예정 — 현재는 평균 예산 가이드 제공)' },
 
     { type: 'h2', id: 'breakdown', text: '항목별 예산' },
@@ -12,6 +14,8 @@ module.exports = {
       <li><strong>교통</strong>: 시내 1일 1~5만 원, 공항 셔틀 1~3만 원, 렌터카 1일 5~12만 원</li>
       <li><strong>활동</strong>: 박물관 5~30만 원/명, 호핑투어 5~10만 원, 스파 3~10만 원</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '예산에 맞는 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'destination', text: '목적지별 1주일 평균 (1인)' },
     { type: 'body', html: `<ul>

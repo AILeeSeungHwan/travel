@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행 계획에서 비행시간과 시차는 일정·체력·아이 동반 결정에 직접 영향을 줍니다. 인천·김포·부산 출발 주요 목적지 비행시간을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '인천 출발 해외여행 비행시간 시차 계산', caption: '주요 목적지 비행시간·시차 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '계산기 위젯', html: '출발지·도착지 입력 → 직항 비행시간 + 한국 시간 기준 시차 자동 계산. (위젯 후속 추가 예정)' },
 
     { type: 'h2', id: 'asia', text: '동아시아·동남아 (1~7시간)' },
@@ -18,6 +20,8 @@ module.exports = {
       <li>싱가포르·쿠알라룸푸르 6~6.5시간 (-1)</li>
       <li>발리 7시간 30분 (0)</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'europe', text: '유럽·중동 (10~13시간)' },
     { type: 'body', html: `<ul>

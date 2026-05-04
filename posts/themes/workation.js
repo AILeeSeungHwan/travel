@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `워케이션·한 달 살기는 일과 휴양을 결합한 장기 체류 형태로 디지털 노마드·재택근무·프리랜서에게 인기. 치앙마이(태국)·발리 우붓(인도네시아)·세부(필리핀)·다낭(베트남)이 한국인 한 달 살기 BEST 4. 본 가이드는 권역별 비용·코워킹·비자·인터넷·생활 팁을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1649573650319?auto=format&fit=crop&q=80&w=1200', alt: '발리 치앙마이 워케이션 한달살기 코워킹스페이스', caption: '워케이션·한 달 살기', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Dung Anh on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '한 달 살기 BEST 4' },
     { type: 'body', html: `<ul>
       <li><strong>치앙마이 (태국)</strong>: 1인 100~150만 원/월. DTV 비자(5년).</li>
@@ -9,6 +11,8 @@ module.exports = {
       <li><strong>세부 (필리핀)</strong>: 1인 130~180만 원/월. 30일 무비자 + 연장.</li>
       <li><strong>다낭 (베트남)</strong>: 1인 100~160만 원/월. 45일 무비자.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '워케이션·장기 체류 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'cost', text: '월 비용 분석 (1인 평균)' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="background:#F8FAFC"><th style="padding:6px;border:1px solid #E2E8F0">항목</th><th style="padding:6px;border:1px solid #E2E8F0">치앙마이</th><th style="padding:6px;border:1px solid #E2E8F0">발리</th><th style="padding:6px;border:1px solid #E2E8F0">다낭</th></tr>

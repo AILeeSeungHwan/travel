@@ -4,6 +4,8 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권으로 입국 가능한 국가별 비자 요건을 정리합니다. 무비자·도착비자·E-비자·일반비자 등 카테고리별로 분류했습니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '한국 여권 해외여행 비자 체커 국가별 입국 요건', caption: '한국 여권 국가별 비자 요건 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '계산기 위젯', html: '국가 입력 → 비자 요건·체류 기간·신청 절차 자동 표시. 출국 전 재확인 필수.' },
 
     { type: 'h2', id: 'visa-free', text: '무비자 (90일+)' },
@@ -18,6 +20,8 @@ module.exports = {
       <li><strong>EU 쉥겐</strong> 90일/180일 (ETIAS 시행 예정)</li>
       <li><strong>영국</strong> 6개월 (ETA 사전 신청)</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'short', text: '단기 무비자 (30~60일)' },
     { type: 'body', html: `<ul>

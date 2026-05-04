@@ -16,6 +16,8 @@ module.exports = {
       <li><strong>안전 등급</strong>: 외교부 여행경보 미발효 — 일반 여행 안전 지역</li>
     </ul>` },
 
+    { type: 'hotelsCombinedCTA', text: '독일 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
+
     { type: 'h2', id: 'regions', text: '핵심 지역별 가이드' },
     { type: 'h3', id: 'berlin', text: '베를린 — 역사·예술의 도시' },
     { type: 'body', html: `독일 수도로 인구 380만 명의 메가시티. 브란덴부르크 문·베를린 장벽·홀로코스트 메모리얼·박물관섬이 핵심입니다.<br/><br/><strong>필수 명소</strong>: 브란덴부르크 문(무료)·베를린 장벽(이스트사이드 갤러리 무료)·박물관섬(UNESCO, 1일 통합권 EUR 22)·체크포인트 찰리·포츠담(UNESCO, 당일치기 가능).<br/><br/>권장 일정: <strong>3~4박</strong>. 클럽 문화로 유명하나, 여행자는 미테 중심 구도심에 머물면 됩니다.` },

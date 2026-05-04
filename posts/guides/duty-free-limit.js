@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행 후 한국 입국 시 면세 한도 초과 물품에는 관세·부가세가 부과됩니다. 자진신고하면 30% 감면, 미신고 후 적발되면 40% 가산세 + 명단 등록(향후 검사 강화)이 적용됩니다. 본 가이드는 한국 면세 한도와 자진신고 절차를 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1575291930020-5dbada5097c7?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 한국 입국 면세 한도 관세 쇼핑', caption: '한국 입국 면세 한도 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'AR on Unsplash', imageSourceUrl: 'https://unsplash.com/@ar__?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'info', title: '입국 면세 한도', html: '한국 거주자는 해외여행 후 입국 시 USD 800 상당의 휴대품 면세 + 술 2병(2L 이하·USD 400 이하) + 담배 200개비 + 향수 60ml 면세.' },
 
     { type: 'h2', id: 'limits', text: '면세 한도 — USD 800 + 추가' },
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>담배</strong>: 200개비 + 시가 50개비 + 전자담배·궐련형 200개비 (만 19세 이상)</li>
       <li><strong>향수</strong>: 60ml까지</li>
     </ul>위 한도 초과 시 <strong>전체 가액에 관세·부가세</strong>(상품마다 13~30%) 부과.` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'overcharge', text: '한도 초과 시 세금' },
     { type: 'body', html: `<ul>

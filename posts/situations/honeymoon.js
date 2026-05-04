@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `신혼여행은 일생에 한두 번뿐인 만큼 부부의 취향·예산·일정을 종합 고려해야 합니다. <strong>발리·몰디브·다낭·하와이·이탈리아</strong>가 한국인 신혼여행 BEST로 꼽히며, 예산과 여행 스타일에 따라 최적의 선택이 달라집니다.<br/><br/>신혼여행을 처음 계획할 때 가장 먼저 결정해야 할 것은 ① 예산, ② 비행시간 허용 범위, ③ 풀빌라·도시·자연 중 어느 스타일을 원하는지입니다. 이 세 가지만 정하면 목적지는 자연스럽게 좁혀집니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 발리 몰디브 풀빌라 오버워터빌라', caption: '한국인 신혼여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'best-five', text: '한국인 신혼여행 BEST 5' },
     { type: 'h3', id: 'bali', text: '1. 발리 — 다양성의 끝판왕' },
     { type: 'body', html: `인천에서 7시간 30분. 우붓(전통·요가·라이스테라스)·세미냐크(비치클럽·미식)·누사두아(럭셔리 풀빌라)·울루와뚜(절벽 뷰)까지 한 섬 안에 다양한 스타일이 공존합니다.<br/><br/><strong>추천 동선</strong>: 우붓 2박(케차 댄스·라이스테라스·스파)+ 세미냑 또는 누사두아 3박(풀빌라+비치).<br/><strong>예산</strong>: 2인 5박 150~350만 원(가성비) ~ 500만 원+ (럭셔리 빌라).` },
@@ -25,6 +27,8 @@ module.exports = {
       <li><strong>2인 600만 원+ (럭셔리)</strong>: 몰디브 OWB 5박 / 이탈리아 10박 / 발리 아만·포르 드 라 빌라 5박</li>
       <li><strong>2인 1,000만 원+ (프리미엄)</strong>: 몰디브 수상비행기 5성 리조트 7박 / 이탈리아+프랑스 조합 10박</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '신혼여행 호텔·풀빌라 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'season', text: '시즌별 최적 신혼여행지' },
     { type: 'body', html: `<strong>1~3월 (겨울 출발)</strong>: 푸꾸옥·다낭 건기 (최고 시즌) / 발리 건기 / 하와이 연중 OK<br/><strong>4~6월 (봄·초여름)</strong>: 다낭·발리·일본 료칸 / 이탈리아(피크 전) / 하와이<br/><strong>7~8월 (여름 성수기)</strong>: 발리·하와이(더위 관계없이 즐김) / 유럽은 비용↑인파↑ → 4~6월 권장<br/><strong>9~11월 (가을)</strong>: 다낭(건기 시작) / 발리·푸꾸옥 / 몰디브<br/><strong>12~2월 (겨울)</strong>: 몰디브·푸꾸옥·발리 건기 최성수기 → 6개월 전 예약` },

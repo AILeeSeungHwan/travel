@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여권지갑은 여행 중 여권·항공권·신용카드·동전을 한 곳에 보관하는 필수 아이템입니다. RFID 차단 기능이 있는 모델은 비접촉 카드(NFC) 해킹 방지 — 안전성 강화.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 여권지갑 RFID 차단 여행 필수품 가이드', caption: '여행용 여권지갑 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'features', text: '핵심 기능' },
     { type: 'body', html: `<ul>
       <li><strong>여권 슬롯</strong>: 단권/복수 여권</li>
@@ -12,6 +14,8 @@ module.exports = {
       <li><strong>RFID 차단</strong>: 비접촉 해킹 방지</li>
       <li><strong>펜 홀더</strong>: 입국 카드 작성</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'rfid', text: 'RFID 차단 — 왜 필요한가' },
     { type: 'body', html: `RFID(Radio-Frequency IDentification)는 비접촉 카드(NFC·MIFARE) 정보를 무선으로 읽는 기술. 일부 사기범이 휴대용 RFID 리더로 카드 정보 탈취 — RFID 차단 지갑은 카드 정보 무선 송수신 차단.<br/>한국 신용카드도 NFC 결제 가능 — 해외에서 RFID 차단 권장.` },

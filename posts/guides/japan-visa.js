@@ -4,6 +4,8 @@ module.exports = {
 
     { type: 'intro', html: `한국인 일반 여권 소지자는 일본 단기 체류(관광·친지 방문·출장)를 목적으로 <strong>90일 무비자</strong> 입국이 가능합니다. 별도 비자 신청·발급 절차가 필요 없으며, 항공권과 여권만으로 입국이 가능합니다.<br/><br/>다만 입국심사 시 입국 카드(2024년 디지털화)와 세관 신고서가 요구됩니다. 출국 전 <strong>Visit Japan Web</strong>(vjw-lp.digital.go.jp)에서 사전 등록하면 입국·세관 통과가 빠릅니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '일본 벚꽃 여행 90일 무비자 입국', caption: '일본 90일 무비자 입국 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>
       <li>한국 일반 여권: <strong>90일 무비자</strong> 단기 체류</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li>Visit Japan Web 사전 등록 권장 (입국 · 세관 QR 코드)</li>
       <li>워킹홀리데이·유학·취업 등 거주 목적은 별도 비자 필요</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '일본 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'documents', text: '필요 서류' },
     { type: 'body', html: `<ul>

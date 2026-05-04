@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1박2일·2박3일 국내 여행은 직장인 주말·연휴 활용 + 가족 단기 휴가에 가장 효율적입니다. KTX·고속도로 인프라가 발달해 서울 출발 2~3시간이면 부산·강릉·전주·경주 등 주요 도시 도착. 본 가이드는 서울 출발 BEST 코스를 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '국내 여행 부산 강릉 제주 1박2일 2박3일', caption: '국내 1박2일·2박3일 여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '서울 출발 1박2일 BEST' },
     { type: 'body', html: `<ul>
       <li><strong>강릉·속초</strong>: KTX 2시간. 비치 + 카페 + 회. 1인 20~40만 원.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>여수</strong>: KTX 3시간. 해상케이블카·향일암·갓김치. 1인 30~60만 원.</li>
       <li><strong>가평·양평</strong>: 차로 1시간. 풀빌라·캠핑·페트라르카. 가족 50~150만 원.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '국내 여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'sample-east', text: '샘플 — 강릉 1박2일' },
     { type: 'body', html: `<strong>1일</strong>:<br/>09:00 KTX 출발<br/>11:00 강릉 도착·렌터카 또는 택시<br/>12:00 점심 — 초당두부<br/>14:00 안목해변 카페거리 (테라로사)<br/>17:00 호텔 체크인<br/>19:00 저녁 — 회 또는 물회 (속초)<br/><br/><strong>2일</strong>:<br/>06:00 정동진 일출 (선택)<br/>09:00 호텔 조식<br/>10:30 경포해변 산책<br/>12:00 점심 — 짬뽕 또는 막국수<br/>15:00 KTX 복귀` },

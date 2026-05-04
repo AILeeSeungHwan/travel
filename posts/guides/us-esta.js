@@ -4,6 +4,8 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권 소지자는 <strong>VWP(비자 면제 프로그램)</strong>에 따라 <strong>ESTA 사전승인</strong>으로 90일 단기 무비자 입국이 가능합니다. ESTA는 정식 비자가 아닌 사전 입국 허가이며, 미국 국토안보부 시스템에서 신청합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1200', alt: '미국 여행 ESTA 비자 면제 프로그램', caption: '미국 ESTA 사전승인 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jonathan Roger on Unsplash', imageSourceUrl: 'https://unsplash.com/@jonathanroger?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>
       <li>한국 일반 여권: <strong>ESTA + 90일 무비자 입국</strong></li>
@@ -12,6 +14,8 @@ module.exports = {
       <li>비용: USD 21 (2024년 인상)</li>
       <li>신청 시점: 출국 최소 72시간 전 권장</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '미국 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'apply', text: 'ESTA 신청 절차' },
     { type: 'body', html: `<strong>esta.cbp.dhs.gov</strong> 공식 사이트 접속 → 다음 진행:<br/><ol>

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `효도여행은 부모님 동반 여행으로 일정·이동·식사·숙소 모두 부모님 컨디션에 맞춰야 합니다. 무리한 일정을 피하고, 5성호텔·료칸·온천 같은 안락한 숙소 + 짧은 직항 + 한식 가능 식당이 핵심.<br/><br/>본 가이드는 부모님과 함께하는 1주일 효도여행 추천 목적지(일본 료칸·하와이·국내 5성호텔)와 일정·예산·주의사항을 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1727411173314?auto=format&fit=crop&q=80&w=1200', alt: '부모님과 효도여행 료칸 온천', caption: '효도여행 료칸·온천', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: '安 崔士 on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '효도여행 BEST' },
     { type: 'body', html: `<ul>
       <li><strong>일본 료칸·온천</strong>: 유후인·하코네·구사쓰·노보리베츠. 가이세키 + 노천탕. 1주 1인 200~400만 원.</li>
@@ -10,6 +12,8 @@ module.exports = {
       <li><strong>일본 도쿄·교토</strong>: 5성호텔 + 료칸 1박. 5박 1인 150~300만 원.</li>
       <li><strong>대만 타이페이</strong>: 가까운 거리(2.5시간), 미식·온천(베이터우). 3박 1인 80~150만 원.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '효도여행 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'principles', text: '효도여행 원칙' },
     { type: 'body', html: `<ul>

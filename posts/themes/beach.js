@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `비치 휴양은 한국인 동남아 여행의 핵심 콘텐츠입니다. 발리·푸켓·세부·푸꾸옥·다낭·오키나와 등 권역마다 비치 색채가 다르며, 시즌·해류·풀빌라·5성호텔 조합이 핵심.<br/><br/>본 가이드는 한국인 인기 비치 6곳의 시즌·해류·호핑투어·풀빌라 정보를 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714412192114-61dca8f15f68?auto=format&fit=crop&q=80&w=1200', alt: '동남아 비치 휴양 풀빌라 수영장', caption: '한국인 인기 비치 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Bernd Dittrich on Unsplash', imageSourceUrl: 'https://unsplash.com/@bernd_dittrich?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '비치 BEST 6' },
     { type: 'body', html: `<ul>
       <li><strong>발리 (인도네시아)</strong>: 누사두아(가족), 세미냐크(파티), 울루와뚜(럭셔리). 4~10월.</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li><strong>다낭 (베트남)</strong>: 미케비치 6km. 2~8월.</li>
       <li><strong>오키나와 (일본)</strong>: 추라우미 + 미야코지마. 4~10월.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '비치 리조트 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'season', text: '시즌별 비치 추천' },
     { type: 'body', html: `<strong>1~3월</strong>: 푸꾸옥·푸켓·발리·세부 — 건기·청청바다.<br/><strong>4~6월</strong>: 다낭·발리·오키나와.<br/><strong>7~9월</strong>: 발리·하와이·오키나와. 동남아 우기 — 가격 인하.<br/><strong>10~12월</strong>: 푸켓·푸꾸옥·세부.` },

@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행자보험은 의료비·휴대품 도난·항공 지연·여권 분실 등 해외에서 발생하는 사고를 보장합니다. 1주 1.5~10만 원 수준이며, 의료비 부담이 큰 일본·미국·유럽 여행 시 특히 권장됩니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 여행자보험 의료비 보장 가이드', caption: '여행자보험 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dbelanger?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'coverage', text: '핵심 보장 항목' },
     { type: 'body', html: `<ul>
       <li><strong>해외 의료비</strong>: 응급실·입원·수술 — USD 50,000~500,000 보장 (가장 중요)</li>
@@ -12,6 +14,8 @@ module.exports = {
       <li><strong>배상 책임</strong>: 호텔·렌터카 손괴 — 1억 원</li>
       <li><strong>응급 의료 송환</strong>: 한국 후송 — USD 100,000+</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'amount', text: '보장 금액 권장' },
     { type: 'body', html: `<ul>

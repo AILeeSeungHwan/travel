@@ -2,6 +2,8 @@ module.exports = {
   sections: [
     { type: 'intro', html: `쇼핑 여행은 면세·아울렛·드럭스토어·기념품·명품 구매가 핵심. 도쿄·오사카(돈키호테·드럭스토어), 홍콩(IFC·하버시티), 방콕(시암 파라곤·짜뚜짝), 싱가포르(오차드·머스타파)이 주요 목적지. 본 가이드는 한국인 쇼핑 여행 BEST 4와 면세 한도·환급(Tax-Free) 절차를 정리합니다.` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1575291930020?auto=format&fit=crop&q=80&w=1200', alt: '도쿄 일본 쇼핑 면세 드럭스토어 여행', caption: '한국인 인기 쇼핑 여행지', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'AR on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'top', text: '쇼핑 BEST 4' },
     { type: 'body', html: `<ul>
       <li><strong>도쿄·오사카 (일본)</strong>: 돈키호테·로프트·드럭스토어·아울렛. 5,000엔+ Tax-Free.</li>
@@ -9,6 +11,8 @@ module.exports = {
       <li><strong>방콕 (태국)</strong>: 시암 파라곤·짜뚜짝·플래티넘 패션. 2,000바트+ Tax-Free.</li>
       <li><strong>싱가포르</strong>: 오차드 ION·다카시마야·머스타파. SGD 100+ Tax-Free.</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '쇼핑 여행지 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'japan', text: '일본 쇼핑 BEST' },
     { type: 'body', html: `<ul>

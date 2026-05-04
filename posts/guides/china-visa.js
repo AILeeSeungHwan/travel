@@ -4,6 +4,8 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권 소지자가 중국에 입국할 때는 일반적으로 <strong>비자 신청이 필요</strong>합니다. 다만 다음 예외 정책이 운영 중입니다(상시 변경): 단체 무비자, 일부 도시 환승 무비자(72/144시간), 하이난성 무비자(30일).` },
 
+    { type: 'image', src: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&q=80&w=1200', alt: '중국 여행 비자 신청 방법 안내', caption: '중국 비자 신청 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Edward He on Unsplash', imageSourceUrl: 'https://unsplash.com/@bingham008?utm_source=tripspot&utm_medium=referral' },
+
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>
       <li>한국 일반 여권: <strong>일반 비자 필요</strong> (단기 관광·비즈니스)</li>
@@ -11,6 +13,8 @@ module.exports = {
       <li>여권 유효기간: 잔여 6개월 이상</li>
       <li>처리 기간: 4~10영업일 (일반·급행)</li>
     </ul>` },
+
+    { type: 'hotelsCombinedCTA', text: '중국 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
 
     { type: 'h2', id: 'types', text: '비자 종류' },
     { type: 'body', html: `<ul>
