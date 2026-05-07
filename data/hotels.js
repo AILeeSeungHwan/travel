@@ -71,6 +71,30 @@ const hotels = [
     imageVerified: false, affiliateLinkVerified: true,
     tags: ['인터컨티넨탈','다낭','5성','신혼'],
   },
+  {
+    id: 'H004',
+    slug: 'seoul-shilla',
+    countrySlug: 'kr',
+    regionSlug: 'seoul',
+    hotelName: '서울신라호텔',
+    hotelNameEn: 'The Shilla Seoul',
+    hotelClass: '5성',
+    hotelType: '비즈니스·럭셔리',
+    starRating: 5,
+    guestRating: 4.7,
+    priceRange: '30~80만 원/박',
+    amenities: ["야외수영장","스파","피트니스","다이닝","면세점 인접"],
+    address: '서울 중구 동호로 249',
+    lat: 37.557,
+    lng: 127.007,
+    iso2: 'KR',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["서울신라","남산","5성","비즈니스"],
+    publishedAt: '2026-05-07',
+    updatedAt: '2026-05-07'
+  }
 ]
 
 module.exports = hotels
