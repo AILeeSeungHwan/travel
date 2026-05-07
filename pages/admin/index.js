@@ -10,6 +10,7 @@ export default function Admin() {
   const [stats, setStats] = useState(null)
   const [coupangLinks, setCoupangLinks] = useState([])
   const [hotelLinks, setHotelLinks] = useState([])
+  const [products, setProducts] = useState([])
   const [search, setSearch] = useState('')
   const [seeding, setSeeding] = useState(false)
   const [savingId, setSavingId] = useState(null)
@@ -30,6 +31,9 @@ export default function Admin() {
     } else if (tab === 'hotels') {
       const r = await fetch(`/api/admin/hotel-links`, { headers })
       setHotelLinks(r.ok ? await r.json() : [])
+    } else if (tab === 'products') {
+      const r = await fetch(`/api/admin/products?search=${encodeURIComponent(search)}`, { headers })
+      setProducts(r.ok ? await r.json() : [])
     }
   }, [pwd, tab, search])
 
@@ -97,6 +101,17 @@ export default function Admin() {
     refresh()
   }
 
+  async function updateProductUrl(productKey, coupangUrl, notes) {
+    setSavingId(productKey)
+    await fetch('/api/admin/products', {
+      method: 'PUT',
+      headers: { 'x-admin-password': pwd, 'content-type': 'application/json' },
+      body: JSON.stringify({ productKey, coupangUrl, notes }),
+    })
+    setSavingId(null)
+    refresh()
+  }
+
   async function addHotel() {
     const slug = prompt('호텔 슬러그 (예: shilla-jeju)')
     if (!slug) return
@@ -135,7 +150,7 @@ export default function Admin() {
       <Head><title>트립스팟 어드민</title><meta name="robots" content="noindex,nofollow" /></Head>
       <h1 style={{ fontSize: 22, fontWeight: 800, marginBottom: 14 }}>트립스팟 어드민</h1>
       <div style={{ display:'flex', gap:8, marginBottom:18, borderBottom:'1px solid #E2E8F0', paddingBottom:8, flexWrap:'wrap' }}>
-        {[['stats','📊 통계'],['hotels','🏨 호텔 링크'],['coupang','🛒 쿠팡 링크']].map(([k, label]) => (
+        {[['stats','📊 통계'],['hotels','🏨 호텔 링크'],['coupang','🛒 쿠팡 링크'],['products','📦 상품 관리']].map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{
             padding:'8px 16px', background: tab===k ? '#0EA5E9' : '#F8FAFC',
             color: tab===k ? '#fff' : '#334155', border:'none', borderRadius:8, fontWeight:600, cursor:'pointer'
@@ -178,6 +193,23 @@ export default function Admin() {
           )}
           {hotelLinks.map(h => (
             <HotelRow key={h.id} hotel={h} onUpdate={updateHotelLink} onDelete={deleteHotelLink} saving={savingId === h.id} />
+          ))}
+        </div>
+      )}
+
+      {tab === 'products' && (
+        <div>
+          <div style={{ background:'#EFF6FF', border:'1px solid #BFDBFE', borderRadius:10, padding:'12px 16px', marginBottom:16, fontSize:13, color:'#1E40AF' }}>
+            <strong>📦 쿠팡 파트너스 상품 관리</strong> — 자동 생성된 포스팅의 상품 링크를 관리합니다. URL을 등록하면 프론트에서 즉시 쿠팡 버튼이 활성화됩니다. (Supabase 미연결 시 파일 기반 작동)
+          </div>
+          <div style={{ display:'flex', gap:10, marginBottom:14 }}>
+            <input value={search} onChange={e => setSearch(e.target.value)} placeholder="상품키 / 이름 검색"
+              style={{ flex:1, padding:'10px 12px', border:'1px solid #E2E8F0', borderRadius:8, fontSize:13 }} />
+            <button onClick={refresh} style={btnSecondary}>↻ 새로고침</button>
+          </div>
+          {products.length === 0 && <Empty msg="등록된 상품이 없습니다." />}
+          {products.map(p => (
+            <ProductRow key={p.productKey} product={p} onSave={updateProductUrl} saving={savingId === p.productKey} />
           ))}
         </div>
       )}
@@ -320,6 +352,62 @@ function Row({ l, r }) {
 }
 function Empty({ msg }) {
   return <div style={{ padding:'18px 14px', fontSize:13, color:'#94A3B8', textAlign:'center', background:'#F8FAFC', borderRadius:8 }}>{msg || '아직 데이터가 없습니다.'}</div>
+}
+
+function ProductRow({ product: p, onSave, saving }) {
+  const [url, setUrl] = useState(p.coupangUrl || '')
+  const [notes, setNotes] = useState(p.notes || '')
+  const dirty = url !== (p.coupangUrl || '') || notes !== (p.notes || '')
+  const hasLink = !!p.coupangUrl
+
+  return (
+    <div style={{
+      background:'#fff',
+      border: hasLink ? '1px solid #14B8A6' : '1px solid #E2E8F0',
+      borderRadius:10, padding:'14px 16px', marginBottom:10,
+    }}>
+      <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:8 }}>
+        <div>
+          <span style={{ fontWeight:800, fontSize:15 }}>{p.productName}</span>
+          {hasLink && <span style={{ marginLeft:8, fontSize:10, padding:'2px 6px', background:'#CCFBF1', color:'#0F766E', borderRadius:4 }}>✓ 링크 등록됨</span>}
+          <span style={{ marginLeft:8, fontSize:11, color:'#94A3B8' }}>{p.category}</span>
+        </div>
+        <code style={{ fontSize:11, color:'#64748B', background:'#F1F5F9', padding:'2px 6px', borderRadius:4 }}>{p.productKey}</code>
+      </div>
+      <div style={{ fontSize:11, color:'#64748B', marginBottom:8 }}>
+        연결 포스팅: {(p.postSlugs || []).map(s => (
+          <a key={s} href={`/addons/${s}/`} target="_blank" rel="noreferrer"
+            style={{ color:'#0369A1', marginRight:8 }}>{s}</a>
+        ))}
+      </div>
+      <label style={lblStyle}>쿠팡 파트너스 URL</label>
+      <input
+        type="url" value={url} onChange={e => setUrl(e.target.value)}
+        placeholder="https://link.coupang.com/a/..."
+        style={inputStyle}
+      />
+      <label style={{ ...lblStyle, marginTop:8 }}>메모 (선택)</label>
+      <input value={notes} onChange={e => setNotes(e.target.value)}
+        placeholder="상품명, 모델번호, 등록일 등"
+        style={inputStyle}
+      />
+      <div style={{ display:'flex', justifyContent:'flex-end', gap:8, marginTop:10 }}>
+        {url && (
+          <a href={url} target="_blank" rel="noreferrer nofollow"
+            style={{ ...btnSecondary, textDecoration:'none', fontSize:12, padding:'6px 12px' }}>
+            🔗 링크 테스트
+          </a>
+        )}
+        <button
+          disabled={!dirty || saving}
+          onClick={() => onSave(p.productKey, url, notes)}
+          style={{ ...btnPrimary, opacity: dirty ? 1 : 0.4, cursor: dirty ? 'pointer' : 'not-allowed' }}
+        >
+          {saving ? '저장 중…' : '💾 저장'}
+        </button>
+      </div>
+    </div>
+  )
 }
 
 const inputStyle = { width:'100%', padding:'8px 10px', border:'1px solid #E2E8F0', borderRadius:6, fontSize:13, fontFamily: FONT_FAMILY }

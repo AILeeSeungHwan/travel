@@ -1,0 +1,82 @@
+[
+  {
+    "productKey": "travel-luggage",
+    "productName": "여행용 캐리어",
+    "category": "luggage",
+    "coupangUrl": "",
+    "postSlugs": ["travel-luggage", "summer-travel-essentials"],
+    "notes": ""
+  },
+  {
+    "productKey": "travel-adapter",
+    "productName": "해외여행 멀티 어댑터",
+    "category": "electronics",
+    "coupangUrl": "",
+    "postSlugs": ["travel-adapter", "summer-travel-essentials"],
+    "notes": ""
+  },
+  {
+    "productKey": "travel-power-bank",
+    "productName": "여행용 보조배터리",
+    "category": "electronics",
+    "coupangUrl": "",
+    "postSlugs": ["travel-power-bank", "summer-travel-essentials"],
+    "notes": ""
+  },
+  {
+    "productKey": "neck-pillow",
+    "productName": "여행용 목베개",
+    "category": "comfort",
+    "coupangUrl": "",
+    "postSlugs": ["neck-pillow", "long-haul-flight-comfort-kit"],
+    "notes": ""
+  },
+  {
+    "productKey": "eye-mask-earplug",
+    "productName": "안대 귀마개 세트",
+    "category": "comfort",
+    "coupangUrl": "",
+    "postSlugs": ["eye-mask-earplug", "long-haul-flight-comfort-kit"],
+    "notes": ""
+  },
+  {
+    "productKey": "travel-passport-wallet",
+    "productName": "여행용 여권지갑",
+    "category": "accessories",
+    "coupangUrl": "",
+    "postSlugs": ["travel-passport-wallet", "honeymoon-travel-pack"],
+    "notes": ""
+  },
+  {
+    "productKey": "compression-bag",
+    "productName": "여행 압축팩",
+    "category": "packing",
+    "coupangUrl": "",
+    "postSlugs": ["compression-bag", "honeymoon-travel-pack"],
+    "notes": ""
+  },
+  {
+    "productKey": "cosmetic-case",
+    "productName": "여행용 화장품케이스",
+    "category": "accessories",
+    "coupangUrl": "",
+    "postSlugs": ["cosmetic-case", "honeymoon-travel-pack"],
+    "notes": ""
+  },
+  {
+    "productKey": "golf-travel-bag",
+    "productName": "골프 트래블백",
+    "category": "sports",
+    "coupangUrl": "",
+    "postSlugs": ["golf-travel-bag", "golf-tour-gear-guide"],
+    "notes": ""
+  },
+  {
+    "productKey": "travel-medical-kit",
+    "productName": "여행 비상약 키트",
+    "category": "health",
+    "coupangUrl": "",
+    "postSlugs": ["travel-medical-kit", "golf-tour-gear-guide"],
+    "notes": ""
+  }
+]

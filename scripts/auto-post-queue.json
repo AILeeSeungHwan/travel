@@ -1,5 +1,5 @@
 {
-  "_comment": "slot: morning(7시)=호텔+가이드+지역 / noon(12시)=호텔+비교+상황 / evening(18시)=호텔+테마+용품",
+  "_comment": "slot: morning(7시)=트렌드2+허브1 / noon(12시)=허브2 / noon-addon(12시)=상품추천2 / evening(18시)=고단가키워드3+커밋푸시",
   "posts": [
     {
       "id": "a001",
@@ -49,10 +49,8 @@
           "비즈니스"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: error: An unknown error occurred (Unexpected)",
-      "errorAt": "2026-05-02T16:33:34.423Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b001",
@@ -69,10 +67,8 @@
       "imageSource": "unsplash",
       "imageQuery": "japan airport travel passport",
       "meta": null,
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-02T16:39:55.337Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c001",
@@ -104,10 +100,8 @@
           "명소"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-02T22:05:04.434Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a002",
@@ -155,10 +149,8 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T03:03:05.561Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b002",
@@ -185,10 +177,8 @@
           "비교"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T03:06:00.680Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c002",
@@ -215,10 +205,8 @@
           "로맨틱"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T03:08:52.764Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a003",
@@ -267,10 +255,8 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T09:03:06.065Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b003",
@@ -297,10 +283,8 @@
           "힐링"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T09:06:09.462Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c003",
@@ -327,10 +311,8 @@
           "쿠팡"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-03T09:09:07.773Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a004",
@@ -379,10 +361,8 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-02T22:10:05.127Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b004",
@@ -399,10 +379,8 @@
       "imageSource": "unsplash",
       "imageQuery": "vietnam ho chi minh travel",
       "meta": null,
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-02T22:15:07.368Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c004",
@@ -434,10 +412,8 @@
           "광안리"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-03T22:05:02.758Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a005",
@@ -485,10 +461,8 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-04T03:05:05.024Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b005",
@@ -515,10 +489,8 @@
           "호텔비교"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-04T03:08:05.462Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c005",
@@ -545,10 +517,8 @@
           "동남아"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "claude 종료 코드 1: ",
-      "errorAt": "2026-05-04T03:11:09.007Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a006",
@@ -597,10 +567,8 @@
           "시티"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-04T09:05:12.463Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b006",
@@ -627,10 +595,8 @@
           "사쿠라"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-04T09:10:14.417Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c006",
@@ -657,10 +623,8 @@
           "비행"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-04T09:15:16.522Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "a007",
@@ -710,10 +674,8 @@
           "럭셔리"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-03T22:10:05.004Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "b007",
@@ -730,10 +692,8 @@
       "imageSource": "unsplash",
       "imageQuery": "bali temple rice terrace travel",
       "meta": null,
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-03T22:15:07.514Z"
+      "status": "pending",
+      "generatedAt": null
     },
     {
       "id": "c007",
@@ -3183,6 +3143,176 @@
           "텀블러",
           "물통",
           "여행용품"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "na001",
+      "slot": "noon-addon",
+      "priority": 1,
+      "entity": "addon",
+      "slug": "summer-travel-essentials",
+      "title": "여름 해외여행 필수품 top 7 — 캐리어·어댑터·보조배터리 추천",
+      "keywords": [
+        "여름 해외여행 준비물",
+        "해외여행 필수품",
+        "여행용품 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel packing luggage summer",
+      "products": [
+        {
+          "productKey": "travel-luggage",
+          "productName": "여행용 캐리어",
+          "category": "luggage"
+        },
+        {
+          "productKey": "travel-adapter",
+          "productName": "해외여행 어댑터",
+          "category": "electronics"
+        },
+        {
+          "productKey": "travel-power-bank",
+          "productName": "보조배터리",
+          "category": "electronics"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. 각 productSlot의 productKey는 travel-luggage, travel-adapter, travel-power-bank 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함.",
+      "meta": {
+        "slug": "summer-travel-essentials",
+        "title": "여름 해외여행 필수품 top 7",
+        "category": "addon",
+        "tags": [
+          "여름",
+          "해외여행",
+          "필수품"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "na002",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "long-haul-flight-comfort-kit",
+      "title": "장거리 비행 편의용품 완전 가이드 — 목베개·안대·귀마개 추천",
+      "keywords": [
+        "장거리 비행 준비물",
+        "비행기 편의용품",
+        "목베개 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "airplane flight seat comfort travel",
+      "products": [
+        {
+          "productKey": "neck-pillow",
+          "productName": "여행용 목베개",
+          "category": "comfort"
+        },
+        {
+          "productKey": "eye-mask-earplug",
+          "productName": "안대 귀마개 세트",
+          "category": "comfort"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 2개 포함. productKey: neck-pillow, eye-mask-earplug.",
+      "meta": {
+        "slug": "long-haul-flight-comfort-kit",
+        "title": "장거리 비행 편의용품 완전 가이드",
+        "category": "addon",
+        "tags": [
+          "비행기",
+          "장거리",
+          "편의용품"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "na003",
+      "slot": "noon-addon",
+      "priority": 3,
+      "entity": "addon",
+      "slug": "honeymoon-travel-pack",
+      "title": "신혼여행 준비물 체크리스트 — 여권지갑·압축팩·화장품케이스",
+      "keywords": [
+        "신혼여행 준비물",
+        "신혼여행 짐",
+        "여권지갑 추천"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "honeymoon travel packing couple",
+      "products": [
+        {
+          "productKey": "travel-passport-wallet",
+          "productName": "여행용 여권지갑",
+          "category": "accessories"
+        },
+        {
+          "productKey": "compression-bag",
+          "productName": "여행 압축팩",
+          "category": "packing"
+        },
+        {
+          "productKey": "cosmetic-case",
+          "productName": "여행용 화장품케이스",
+          "category": "accessories"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 3개. productKey: travel-passport-wallet, compression-bag, cosmetic-case.",
+      "meta": {
+        "slug": "honeymoon-travel-pack",
+        "title": "신혼여행 준비물 체크리스트",
+        "category": "addon",
+        "tags": [
+          "신혼여행",
+          "준비물",
+          "체크리스트"
+        ]
+      },
+      "status": "pending",
+      "generatedAt": null
+    },
+    {
+      "id": "na004",
+      "slot": "noon-addon",
+      "priority": 4,
+      "entity": "addon",
+      "slug": "golf-tour-gear-guide",
+      "title": "해외 골프투어 장비 가이드 — 골프백·여행자보험·의약품",
+      "keywords": [
+        "해외 골프투어",
+        "골프여행 준비물",
+        "골프백 항공 위탁"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "golf travel bag course",
+      "products": [
+        {
+          "productKey": "golf-travel-bag",
+          "productName": "골프 트래블백",
+          "category": "sports"
+        },
+        {
+          "productKey": "travel-medical-kit",
+          "productName": "여행 비상약 키트",
+          "category": "health"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 2개. productKey: golf-travel-bag, travel-medical-kit.",
+      "meta": {
+        "slug": "golf-tour-gear-guide",
+        "title": "해외 골프투어 장비 가이드",
+        "category": "addon",
+        "tags": [
+          "골프",
+          "해외",
+          "장비"
         ]
       },
       "status": "pending",

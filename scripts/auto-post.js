@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 /**
- * scripts/auto-post.js
- * 자동 포스팅 — Claude Code CLI (claude -p) 로컬 실행
- * Usage: node scripts/auto-post.js [--slot morning|noon|evening] [--count 3] [--dry-run]
+ * scripts/auto-post.js  v2
+ * 자동 포스팅 — Claude Code CLI (claude --print) 로컬 실행
  *
- * API 키 불필요. 로컬 claude CLI 사용 (Claude Code 구독 기반).
- * 토큰 최소화: 시스템 프롬프트 고정 + 포스트 스펙만 전달.
+ * slot=morning  (7시)  : 트렌드 2개(WebSearch) + 큐 허브 1개
+ * slot=noon     (12시) : 큐 허브 2개 + 상품추천 2개
+ * slot=evening  (18시) : 큐 고단가 3개 → 커밋&푸시
+ *
+ * API 키 불필요. 로컬 Claude Code CLI (구독) 사용.
+ * Claude CLI 올바른 플래그: --print --output-format text [--allowedTools]
  */
 
 'use strict'
@@ -17,12 +20,12 @@ const ROOT       = path.resolve(__dirname, '..')
 const QUEUE_FILE = path.join(__dirname, 'auto-post-queue.json')
 const LOG_FILE   = path.join(ROOT, 'logs', 'autopost.log')
 const CLAUDE_BIN = '/opt/homebrew/bin/claude'
+const TODAY      = new Date().toISOString().slice(0, 10)
 
-// ─── 인자 파싱 ────────────────────────────────────────────────
-const argv   = process.argv.slice(2)
-const slotArg   = argv[argv.indexOf('--slot')  + 1] || 'morning'
-const countArg  = parseInt(argv[argv.indexOf('--count') + 1] || '3', 10)
-const dryRun    = argv.includes('--dry-run')
+// ─── CLI 인자 ─────────────────────────────────────────────────
+const argv     = process.argv.slice(2)
+const slotArg  = argv[argv.indexOf('--slot')  + 1] || 'morning'
+const dryRun   = argv.includes('--dry-run')
 
 // ─── 로깅 ─────────────────────────────────────────────────────
 const logsDir = path.join(ROOT, 'logs')
@@ -36,18 +39,15 @@ function log(msg) {
 
 // ─── 큐 관리 ──────────────────────────────────────────────────
 function loadQueue() {
-  const raw = fs.readFileSync(QUEUE_FILE, 'utf8')
-  return JSON.parse(raw)
+  return JSON.parse(fs.readFileSync(QUEUE_FILE, 'utf8'))
 }
-
-function saveQueue(queue) {
-  fs.writeFileSync(QUEUE_FILE, JSON.stringify(queue, null, 2))
+function saveQueue(q) {
+  fs.writeFileSync(QUEUE_FILE, JSON.stringify(q, null, 2))
 }
-
-function getPendingPosts(queue, slot, count) {
+function nextPending(queue, slot, count) {
   return queue.posts
     .filter(p => p.slot === slot && p.status === 'pending')
-    .sort((a, b) => a.priority - b.priority)
+    .sort((a, b) => (a.priority || 99) - (b.priority || 99))
     .slice(0, count)
 }
 
@@ -59,24 +59,20 @@ async function fetchImages(post) {
 
   if (post.imageSource === 'tourapi' && post.imageQuery && TOUR_KEY) {
     try {
-      const searchUrl = `${TOUR_BASE}/searchKeyword2?serviceKey=${TOUR_KEY}` +
+      const url = `${TOUR_BASE}/searchKeyword2?serviceKey=${TOUR_KEY}` +
         `&keyword=${encodeURIComponent(post.imageQuery)}&MobileOS=ETC&MobileApp=tripspot` +
         `&_type=json&numOfRows=3&pageNo=1` +
         (post.contentTypeId ? `&contentTypeId=${post.contentTypeId}` : '')
-      const sr   = await fetch(searchUrl, { headers: { Accept: 'application/json' } })
-      const sd   = await sr.json()
+      const sd  = await (await fetch(url, { headers: { Accept: 'application/json' } })).json()
       const items = sd?.response?.body?.items?.item
       if (!items) return null
-      const hit  = Array.isArray(items) ? items[0] : items
-
+      const hit = Array.isArray(items) ? items[0] : items
       const imgUrl = `${TOUR_BASE}/detailImage2?serviceKey=${TOUR_KEY}` +
         `&contentId=${hit.contentid}&imageYN=Y&MobileOS=ETC&MobileApp=tripspot` +
         `&_type=json&numOfRows=6&pageNo=1`
-      const ir   = await fetch(imgUrl, { headers: { Accept: 'application/json' } })
-      const id   = await ir.json()
+      const id   = await (await fetch(imgUrl, { headers: { Accept: 'application/json' } })).json()
       const imgs = id?.response?.body?.items?.item
       const gal  = (Array.isArray(imgs) ? imgs : imgs ? [imgs] : []).slice(0, 5)
-
       return {
         main: hit.firstimage || gal[0]?.originimgurl,
         gallery: gal.map(im => ({ url: im.originimgurl, caption: im.imgname || post.imageQuery })),
@@ -90,8 +86,7 @@ async function fetchImages(post) {
     try {
       await new Promise(r => setTimeout(r, 800))
       const url  = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(post.imageQuery)}&per_page=4&orientation=landscape&content_filter=high`
-      const r    = await fetch(url, { headers: { Authorization: `Client-ID ${UNSPLASH}`, 'Accept-Version': 'v1' } })
-      const data = await r.json()
+      const data = await (await fetch(url, { headers: { Authorization: `Client-ID ${UNSPLASH}`, 'Accept-Version': 'v1' } })).json()
       if (!data.results?.length) return null
       const imgs = data.results
       return {
@@ -99,7 +94,6 @@ async function fetchImages(post) {
         gallery: imgs.slice(0, 3).map(img => ({
           url: `${img.urls.regular}&w=1200`,
           caption: img.alt_description || post.imageQuery,
-          photographer: img.user.name,
         })),
         source: 'Unsplash', license: 'Unsplash License',
         credit: `${imgs[0].user.name} on Unsplash`,
@@ -107,107 +101,83 @@ async function fetchImages(post) {
       }
     } catch (e) { log(`Unsplash 실패 (${post.slug}): ${e.message}`); return null }
   }
-
   return null
 }
 
-// ─── 프롬프트 조립 ────────────────────────────────────────────
-const SYSTEM_INSTRUCTIONS = `You are a Korean travel content writer for tripspot.ambitstock.com.
-Write posts in STRICT JavaScript module format. Output ONLY valid JavaScript — no explanation, no markdown fences, no comments before the code.
+// ─── 시스템 프롬프트 ──────────────────────────────────────────
+const SYSTEM_PROMPT = `You are a Korean travel content writer for tripspot.ambitstock.com.
+Output ONLY valid JavaScript — no markdown fences, no explanations, no text before or after.
 
-=== OUTPUT FORMAT ===
+OUTPUT FORMAT:
 module.exports = {
   sections: [
     { type: 'intro', html: \`...\` },
-    { type: 'h2', id: 'slug', text: '제목' },
     ...
   ]
 }
 
-=== SECTION TYPES ===
-intro: { type:'intro', html:'<strong>키워드</strong> 설명...' }
-h2: { type:'h2', id:'영문-slug', text:'한국어 제목' }
-h3: { type:'h3', id:'영문-slug', text:'소제목' }
-body: { type:'body', html:'<ul><li><strong>항목</strong>: 내용</li></ul>' }
-image: { type:'image', src:'URL', alt:'설명', caption:'캡션', imageSource:'출처기관', imageLicense:'라이선스', imageCredit:'크레딧', imageSourceUrl:'URL' }
-gallery: { type:'gallery', images:[{url:'',caption:''}], imageSource:'', imageLicense:'', imageCredit:'', imageSourceUrl:'' }
-callout: { type:'callout', html:'팁이나 강조 내용' }
-info: { type:'info', title:'알림 제목', html:'내용' }
-warning: { type:'warning', title:'주의 제목', html:'내용' }
-faq: { type:'faq', items:[{q:'질문?',a:'답변.'}] }
-hotelsCombinedCTA: { type:'hotelsCombinedCTA', text:'버튼 텍스트', subText:'설명', href:'#' }
-sources: { type:'sources', items:[{label:'이름',url:'https://...',org:'기관명',accessedAt:'2026-05-03'}] }
+SECTION TYPES:
+intro   : { type:'intro', html:'<p>...</p>' }
+h2      : { type:'h2', id:'en-slug', text:'한국어 제목' }
+h3      : { type:'h3', id:'en-slug', text:'소제목' }
+body    : { type:'body', html:'<ul><li><strong>항목</strong>: 내용</li></ul>' }
+image   : { type:'image', src:'URL', alt:'설명', caption:'캡션', imageSource:'출처', imageLicense:'라이선스', imageCredit:'크레딧', imageSourceUrl:'URL' }
+gallery : { type:'gallery', images:[{url:'',caption:''}], imageSource:'', imageLicense:'', imageCredit:'', imageSourceUrl:'' }
+callout : { type:'callout', html:'...' }
+info    : { type:'info', title:'제목', html:'...' }
+warning : { type:'warning', title:'주의', html:'...' }
+risk    : { type:'risk', title:'주의사항', html:'...' }
+faq     : { type:'faq', items:[{q:'?',a:'.'}] }
+hotelsCombinedCTA: { type:'hotelsCombinedCTA', text:'버튼', subText:'설명', href:'#' }
+productSlot: { type:'productSlot', productKey:'키', text:'설명' }
+sources : { type:'sources', items:[{label:'',url:'',org:'',accessedAt:'${TODAY}'}] }
 disclaimer: { type:'disclaimer' }
 
-=== QUALITY RULES ===
-1. MINIMUM 8 H2 sections, MINIMUM 4000 Korean characters total
-2. intro: 3 paragraphs. First sentence must contain <strong>main keyword</strong>. Use bold for key facts.
-3. Use realistic price estimates: "약 XX만 원" or "USD XX~XX/박" format
-4. All HTML must be valid (properly closed tags)
-5. Sources: minimum 2 official sources (government/official hotel/tourism board)
-6. FAQ: exactly 5-6 items. Use real questions travelers ask.
-7. Hotel posts: MUST include hotelsCombinedCTA section before sources.
-8. Tables: use <table style="width:100%;border-collapse:collapse;font-size:14px"> with thead/tbody
-9. No fabricated specific phone numbers.
-10. Template literals use backtick. Escape backticks inside: \\\`
-11. Use Korean throughout. No English except proper nouns.
-12. Table cell style: style="padding:8px 10px;border:1px solid #CBD5E1"
+QUALITY:
+- Minimum 8 H2 sections, minimum 4000 Korean characters
+- intro: 3 paragraphs with <strong>main keyword</strong> in first sentence
+- FAQ: exactly 5-6 items
+- Hotel posts: include hotelsCombinedCTA before sources
+- All HTML properly closed
+- Minimum 2 official sources
+- Use Korean throughout (English only for proper nouns)
+- Table style: <table style="width:100%;border-collapse:collapse;font-size:14px">
+- Cell style: style="padding:8px 10px;border:1px solid #CBD5E1"
+- Template literals use backtick; escape inner backticks as \\\`
 
-=== ENTITY STRUCTURE ===
-hotel: intro → image(main) → h2:overview → gallery(3img) → h2:differentiators → h2:rooms(table) → h2:dining → gallery → h2:facilities(pool/spa) → h2:access → h2:nearby → h2:season-price(table) → faq(6) → hotelsCombinedCTA → warning → sources → disclaimer
-region: intro → image(main) → h2:overview → gallery → h2:highlight1 → h2:highlight2 → h2:highlight3 → h2:food → h2:transport → h2:accommodation → h2:budget → h2:season → faq(5) → sources → disclaimer
-country: intro → image(main) → h2:overview → h2:region1 → h2:region2 → h2:region3 → h2:visa → h2:food → h2:transport → h2:budget → h2:safety → faq(6) → sources → disclaimer
-guide: intro → h2:why-important → h2:step1 → h2:step2 → h2:step3 → h2:costs → h2:tips → faq(5) → warning → sources → disclaimer
-theme: intro → h2:destination1 → h2:destination2 → h2:destination3 → h2:tips → h2:budget → faq(5) → sources → disclaimer
-situation: intro → h2:recommendation1 → h2:recommendation2 → h2:recommendation3 → h2:checklist → h2:budget → faq(5) → sources → disclaimer
-compare: intro → h2:criteria → h2:item1 → h2:item2 → h2:comparison-table → h2:verdict → faq(5) → sources → disclaimer
-addon: intro → h2:why-need → h2:pick1 → h2:pick2 → h2:pick3 → h2:buying-guide → faq(5) → sources → disclaimer`
-
-function buildUserPrompt(post, images) {
-  const imgBlock = images ? [
-    `MainImage: ${images.main || '없음'}`,
-    `GalleryImages:`,
-    ...(images.gallery || []).map((g, i) => `  ${i+1}. url="${g.url}" caption="${g.caption || ''}"`),
-    `ImageSource: ${images.source} | ${images.license} | ${images.credit}`,
-    `ImageSourceUrl: ${images.sourceUrl}`,
-  ].join('\n') : `ImageSource: (이미지 없음, image/gallery 섹션 제외)`
-
-  const metaBlock = post.meta ? Object.entries(post.meta)
-    .filter(([k, v]) => v !== null && v !== undefined && k !== 'id')
-    .map(([k, v]) => `${k}: ${typeof v === 'object' ? JSON.stringify(v) : v}`)
-    .join('\n') : ''
-
-  return [
-    `Entity: ${post.entity}`,
-    `Slug: ${post.slug}`,
-    `Title: ${post.title}`,
-    `Keywords: ${(post.keywords || []).join(', ')}`,
-    metaBlock,
-    imgBlock,
-    ``,
-    `Write a complete module.exports = { sections: [...] } for this page.`,
-    `Today date for accessedAt fields: 2026-05-03`,
-  ].filter(l => l !== null && l !== undefined).join('\n')
-}
+ENTITY TEMPLATES:
+hotel    : intro→image→h2:overview→gallery→h2:rooms(table)→h2:dining→h2:facilities→h2:access→h2:nearby→h2:price(table)→faq(6)→hotelsCombinedCTA→sources→disclaimer
+region   : intro→image→h2:overview→gallery→h2:highlight×3→h2:food→h2:transport→h2:budget→h2:season→faq(5)→sources→disclaimer
+country  : intro→image→h2:overview→h2:regions→h2:visa→h2:food→h2:transport→h2:budget→h2:safety→faq(6)→sources→disclaimer
+guide    : intro→h2:why→h2:steps→h2:costs→h2:tips→faq(5)→warning→sources→disclaimer
+theme    : intro→h2:dest×3→h2:tips→h2:budget→faq(5)→sources→disclaimer
+situation: intro→h2:rec×3→h2:checklist→h2:budget→faq(5)→sources→disclaimer
+addon    : intro→h2:why→h2:pick×3→h2:guide→productSlot×3→faq(5)→sources→disclaimer
+highRPM  : intro→h2:overview→h2:detail×4→h2:comparison(table)→h2:tips→h2:budget→faq(6)→sources→disclaimer`
 
 // ─── Claude CLI 실행 ──────────────────────────────────────────
-function runClaude(post, images) {
+function runClaude(userPrompt, { useWebSearch = false } = {}) {
   if (!fs.existsSync(CLAUDE_BIN)) {
     throw new Error(`Claude CLI 없음: ${CLAUDE_BIN}`)
   }
 
-  const userPrompt = buildUserPrompt(post, images)
-  log(`  claude --print 실행: ${post.slug}`)
+  const fullPrompt = SYSTEM_PROMPT + '\n\n---\n\n' + userPrompt
 
-  // stdin으로 userPrompt 전달 / system-prompt 플래그 분리 / 도구 비활성화
-  const result = spawnSync(CLAUDE_BIN, [
+  const flags = [
     '--print',
-    '--system-prompt', SYSTEM_INSTRUCTIONS,
     '--output-format', 'text',
-    '--tools', '',              // 도구 불필요 (순수 텍스트 생성)
-    '--no-session-persistence', // 디스크 세션 저장 생략 (빠름)
-  ], {
-    input: userPrompt,          // stdin으로 전달 (긴 프롬프트 안전)
+  ]
+  if (useWebSearch) {
+    flags.push('--allowedTools', 'WebSearch')
+  } else {
+    // 도구 없이 순수 텍스트 생성 (빠름)
+    flags.push('--allowedTools', 'Bash(echo)')
+  }
+
+  log(`  claude 실행 (webSearch=${useWebSearch})`)
+
+  const result = spawnSync(CLAUDE_BIN, flags, {
+    input: fullPrompt,
     encoding: 'utf8',
     timeout: 300000,
     maxBuffer: 20 * 1024 * 1024,
@@ -220,18 +190,16 @@ function runClaude(post, images) {
 
   if (result.error) throw result.error
   if (result.status !== 0) {
-    const errMsg = (result.stderr || '').trim().slice(0, 400)
-    throw new Error(`claude 종료 코드 ${result.status}: ${errMsg}`)
+    const err = (result.stderr || '').trim().slice(0, 500)
+    throw new Error(`claude 종료 코드 ${result.status}: ${err}`)
   }
 
   let content = (result.stdout || '').trim()
-
-  // 마크다운 코드 펜스 제거 (혹시라도 감싸는 경우)
+  // 마크다운 코드펜스 제거
   content = content
     .replace(/^```(?:javascript|js)?\s*\n?/m, '')
     .replace(/\n?```\s*$/m, '')
     .trim()
-
   return content
 }
 
@@ -240,8 +208,7 @@ function validatePost(content, slug) {
   if (!content.includes('module.exports')) throw new Error('module.exports 없음')
   if (!content.includes('sections'))       throw new Error('sections 없음')
   if (!/type:\s*['"]intro['"]/.test(content)) throw new Error('intro 섹션 없음')
-
-  const tmpFile = path.join(ROOT, `_tmp_check_${slug}_${Date.now()}.js`)
+  const tmpFile = path.join(ROOT, `_tmp_${slug}_${Date.now()}.js`)
   try {
     fs.writeFileSync(tmpFile, content)
     const r = spawnSync('node', ['--check', tmpFile], { encoding: 'utf8' })
@@ -252,113 +219,246 @@ function validatePost(content, slug) {
   return true
 }
 
+// ─── 파일 저장 ────────────────────────────────────────────────
+function savePost(entity, slug, content) {
+  const dir = path.join(ROOT, 'posts', entity + 's')
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
+  const file = path.join(dir, `${slug}.js`)
+  fs.writeFileSync(file, content)
+  log(`  저장: posts/${entity}s/${slug}.js`)
+  return file
+}
+
 // ─── 데이터 파일 업데이트 ─────────────────────────────────────
 function appendToDataFile(entity, meta) {
-  const FILE_MAP = {
+  const MAP = {
     hotel: 'hotels.js', region: 'regions.js', country: 'countries.js',
     theme: 'themes.js', guide: 'guides.js', situation: 'situations.js',
     compare: 'compares.js', addon: 'addons.js', tool: 'tools.js',
   }
-  const filename = FILE_MAP[entity]
+  const filename = MAP[entity]
   if (!filename) return
-
   const filepath = path.join(ROOT, 'data', filename)
-  if (!fs.existsSync(filepath)) { log(`  데이터 파일 없음: ${filename}`); return }
-
+  if (!fs.existsSync(filepath)) return
   const content = fs.readFileSync(filepath, 'utf8')
-  if (content.includes(`slug: '${meta.slug}'`)) {
-    log(`  이미 존재: ${meta.slug}`)
-    return
-  }
-
+  if (content.includes(`slug: '${meta.slug}'`)) { log(`  이미 등록: ${meta.slug}`); return }
   const closeIdx = content.lastIndexOf('\n]\n')
-  if (closeIdx === -1) { log(`  삽입 위치 없음: ${filename}`); return }
-
-  const entryLines = JSON.stringify(meta, null, 2)
-    .split('\n').map((l, i) => (i === 0 ? '  ' : '  ') + l).join('\n')
-  const newContent = content.slice(0, closeIdx) + ',\n' + entryLines + content.slice(closeIdx)
+  if (closeIdx === -1) return
+  const entry = Object.entries(meta)
+    .filter(([, v]) => v !== null && v !== undefined)
+    .map(([k, v]) => `    ${k}: ${typeof v === 'object' ? JSON.stringify(v) : typeof v === 'string' ? `'${v}'` : v}`)
+    .join(',\n')
+  const entryBlock = `  {\n${entry}\n  }`
+  const newContent = content.slice(0, closeIdx) + ',\n' + entryBlock + content.slice(closeIdx)
   fs.writeFileSync(filepath, newContent)
   log(`  data/${filename} → ${meta.slug} 추가`)
 }
 
-// ─── Git 커밋 & 푸시 ──────────────────────────────────────────
-function gitCommit(slugs) {
-  try {
-    execSync('git add -A', { cwd: ROOT, stdio: 'pipe' })
-    const msg = `auto: ${new Date().toISOString().slice(0,16)} [${slotArg}] ${slugs.join(', ')}`
-    execSync(`git commit -m "${msg}"`, { cwd: ROOT, stdio: 'pipe' })
-    execSync('git push', { cwd: ROOT, stdio: 'pipe' })
-    log(`Git push 완료: ${slugs.join(', ')}`)
-  } catch (e) {
-    log(`Git 오류 (무시): ${e.message.slice(0, 200)}`)
+// ─── 쿠팡 상품 등록 ───────────────────────────────────────────
+function registerProductsFromPost(post) {
+  if (!post.products || !post.products.length) return
+  const prodFile = path.join(ROOT, 'data', 'coupang-products.json')
+  let products = []
+  if (fs.existsSync(prodFile)) {
+    try { products = JSON.parse(fs.readFileSync(prodFile, 'utf8')) } catch (_) {}
+  }
+  let changed = false
+  for (const p of post.products) {
+    if (!products.find(x => x.productKey === p.productKey)) {
+      products.push({
+        productKey: p.productKey,
+        productName: p.productName,
+        category: p.category || post.entity,
+        coupangUrl: '',    // 어드민에서 등록
+        postSlugs: [post.slug],
+        notes: '',
+      })
+      changed = true
+      log(`  상품 등록: ${p.productKey}`)
+    } else {
+      // 이미 있으면 postSlugs에만 추가
+      const existing = products.find(x => x.productKey === p.productKey)
+      if (!existing.postSlugs.includes(post.slug)) {
+        existing.postSlugs.push(post.slug)
+        changed = true
+      }
+    }
+  }
+  if (changed) fs.writeFileSync(prodFile, JSON.stringify(products, null, 2))
+}
+
+// ─── 큐 기반 포스트 생성 ──────────────────────────────────────
+async function generateQueuePost(post) {
+  const images = await fetchImages(post)
+  log(`  이미지: ${images ? (images.gallery?.length || 0) + '장' : '없음'}`)
+
+  const imgBlock = images
+    ? `MainImage: ${images.main || '없음'}
+ImageSource: ${images.source} | ${images.license} | ${images.credit}
+ImageSourceUrl: ${images.sourceUrl}
+GalleryImages:
+${(images.gallery || []).map((g, i) => `  ${i+1}. url="${g.url}" caption="${g.caption || ''}"`).join('\n')}`
+    : 'ImageSource: (이미지 없음, image/gallery 섹션 제외)'
+
+  const metaBlock = post.meta
+    ? Object.entries(post.meta)
+        .filter(([k, v]) => v !== null && v !== undefined && k !== 'id')
+        .map(([k, v]) => `${k}: ${typeof v === 'object' ? JSON.stringify(v) : v}`)
+        .join('\n')
+    : ''
+
+  const userPrompt = [
+    `Entity: ${post.entity}`,
+    `Slug: ${post.slug}`,
+    `Title: ${post.title}`,
+    `Keywords: ${(post.keywords || []).join(', ')}`,
+    metaBlock,
+    imgBlock,
+    post.extraInstructions || '',
+    ``,
+    `Write a complete module.exports = { sections: [...] } for this page.`,
+    `accessedAt date: ${TODAY}`,
+  ].filter(Boolean).join('\n')
+
+  return runClaude(userPrompt, { useWebSearch: false })
+}
+
+// ─── 트렌드 포스트 생성 (WebSearch) ───────────────────────────
+async function generateTrendPost(index) {
+  const topicPrompts = [
+    '지금 한국에서 가장 인기 있는 해외여행 프로모션이나 항공·호텔 특가 이벤트를 검색하라. 결과를 바탕으로 여행자들이 실제 활용할 수 있는 정보를 담은 포스팅 1개를 작성하라.',
+    '지금 트렌딩 중인 한국발 인기 해외여행지 또는 여행 트렌드(해외 호텔 오픈, 항공 신규노선, 여행 특집 이벤트 등)를 검색하라. 그것에 대한 여행 정보 포스팅 1개를 작성하라.',
+  ]
+
+  const searchQuery = `아래 주제로 최신 정보를 WebSearch로 먼저 검색한 후, 검색 결과를 바탕으로 포스팅을 작성하라.
+
+검색 주제: ${topicPrompts[index % 2]}
+
+포스팅 작성 조건:
+- Entity: guide
+- 슬러그: trend-${TODAY.replace(/-/g, '')}-${index + 1}
+- 오늘 날짜 기준 실제 이벤트/프로모션 정보 포함
+- intro 섹션에 핵심 정보 요약
+- 최소 6개 H2 섹션
+- 실제 여행사/항공사 이름은 사용 가능 (특정 가격 단정 금지, "약" 사용)
+- accessedAt: ${TODAY}
+
+WebSearch 검색 후 반드시 module.exports = { sections: [...] } 형식으로만 출력하라.`
+
+  return {
+    slug: `trend-${TODAY.replace(/-/g, '')}-${index + 1}`,
+    entity: 'guide',
+    content: runClaude(searchQuery, { useWebSearch: true }),
+    meta: {
+      slug: `trend-${TODAY.replace(/-/g, '')}-${index + 1}`,
+      title: `오늘의 여행 트렌드 ${index + 1} (${TODAY})`,
+      category: 'guide',
+      publishedAt: TODAY,
+      updatedAt: TODAY,
+    },
   }
 }
 
-// ─── 메인 ─────────────────────────────────────────────────────
-async function main() {
-  log(`=== 자동 포스팅 시작 [${slotArg}] count=${countArg} dryRun=${dryRun} ===`)
-
-  if (!fs.existsSync(CLAUDE_BIN)) {
-    log(`오류: ${CLAUDE_BIN} 없음. Claude Code CLI가 설치되어 있어야 합니다.`)
-    process.exit(1)
+// ─── Git 커밋 & 푸시 ──────────────────────────────────────────
+function gitPush(slugs) {
+  try {
+    execSync('git add -A', { cwd: ROOT, stdio: 'pipe' })
+    const msg = `auto(${slotArg}): ${TODAY} [${slugs.join(', ')}]`
+    execSync(`git commit -m "${msg}" -m "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"`, { cwd: ROOT, stdio: 'pipe' })
+    execSync('git push', { cwd: ROOT, stdio: 'pipe' })
+    log(`Git push 완료: ${slugs.join(', ')}`)
+  } catch (e) {
+    log(`Git 오류: ${e.message.slice(0, 300)}`)
   }
+}
 
-  const queue   = loadQueue()
-  const pending = getPendingPosts(queue, slotArg, countArg)
-
-  if (pending.length === 0) {
-    log(`[${slotArg}] 대기 포스팅 없음`)
-    return
+// ─── Prebuild ─────────────────────────────────────────────────
+function prebuild() {
+  try {
+    execSync('npm run prebuild', { cwd: ROOT, stdio: 'pipe' })
+    log('Prebuild 완료')
+  } catch (e) {
+    log(`Prebuild 오류 (무시): ${e.message.slice(0, 200)}`)
   }
+}
 
-  log(`처리 대상: ${pending.map(p => p.slug).join(', ')}`)
-
+// ─── 슬롯별 실행 ──────────────────────────────────────────────
+async function runMorning() {
+  log('=== 7시 morning 시작 ===')
   const generated = []
+  const queue = loadQueue()
 
-  for (const post of pending) {
+  // 1. 트렌드 포스팅 2개 (WebSearch)
+  for (let i = 0; i < 2; i++) {
     try {
-      log(`▶ 시작: ${post.slug} (${post.entity})`)
+      log(`▶ 트렌드 포스팅 ${i + 1}/2 (WebSearch)`)
+      if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
+      const { slug, entity, content, meta } = await generateTrendPost(i)
+      if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
+      validatePost(content, slug)
+      savePost(entity, slug, content)
+      appendToDataFile(entity, meta)
+      generated.push(slug)
+      log(`  ✅ 트렌드 완료: ${slug}`)
+      await new Promise(r => setTimeout(r, 2000))
+    } catch (e) {
+      log(`  ❌ 트렌드 오류 ${i + 1}: ${e.message}`)
+    }
+  }
 
-      // 1. 이미지 수집
-      const images = await fetchImages(post)
-      log(`  이미지: ${images ? (images.gallery?.length || 0) + '장' : '없음'}`)
-
-      if (dryRun) {
-        log(`  [DRY-RUN] 건너뜀: ${post.slug}`)
-        continue
-      }
-
-      // 2. Claude CLI로 포스트 생성
-      const content = runClaude(post, images)
-      if (!content || content.length < 500) throw new Error(`생성 내용 너무 짧음 (${content.length}자)`)
-
-      // 3. 검증
+  // 2. 큐에서 허브 포스팅 1개
+  const hubPosts = nextPending(queue, 'morning', 1)
+  for (const post of hubPosts) {
+    try {
+      log(`▶ 허브 포스팅: ${post.slug} (${post.entity})`)
+      if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
+      const content = await generateQueuePost(post)
+      if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
       validatePost(content, post.slug)
-
-      // 4. 파일 저장
-      const dir      = path.join(ROOT, 'posts', post.entity + 's')
-      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
-      const postFile = path.join(dir, `${post.slug}.js`)
-      fs.writeFileSync(postFile, content)
-      log(`  저장: posts/${post.entity}s/${post.slug}.js`)
-
-      // 5. 데이터 파일 업데이트
-      if (post.meta) {
-        const today = new Date().toISOString().slice(0, 10)
-        appendToDataFile(post.entity, { ...post.meta, publishedAt: today, updatedAt: today })
-      }
-
-      // 6. 큐 상태 업데이트
+      savePost(post.entity, post.slug, content)
+      if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
       const qi = queue.posts.find(p => p.id === post.id)
       if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
       saveQueue(queue)
+      generated.push(post.slug)
+      log(`  ✅ 허브 완료: ${post.slug}`)
+      await new Promise(r => setTimeout(r, 2000))
+    } catch (e) {
+      log(`  ❌ 허브 오류 [${post.slug}]: ${e.message}`)
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'error'; qi.error = e.message; qi.errorAt = new Date().toISOString() }
+      saveQueue(queue)
+    }
+  }
 
+  if (generated.length > 0) prebuild()
+  log(`=== morning 완료: ${generated.length}개 ===`)
+  return generated
+}
+
+async function runNoon() {
+  log('=== 12시 noon 시작 ===')
+  const generated = []
+  const queue = loadQueue()
+
+  // 1. 허브 포스팅 2개
+  const hubPosts = nextPending(queue, 'noon', 2)
+  for (const post of hubPosts) {
+    try {
+      log(`▶ 허브: ${post.slug}`)
+      if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
+      const content = await generateQueuePost(post)
+      if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
+      validatePost(content, post.slug)
+      savePost(post.entity, post.slug, content)
+      if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
+      registerProductsFromPost(post)
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
+      saveQueue(queue)
       generated.push(post.slug)
       log(`  ✅ 완료: ${post.slug}`)
-
-      // 연속 실행 시 잠깐 대기
-      await new Promise(r => setTimeout(r, 1500))
-
+      await new Promise(r => setTimeout(r, 2000))
     } catch (e) {
       log(`  ❌ 오류 [${post.slug}]: ${e.message}`)
       const qi = queue.posts.find(p => p.id === post.id)
@@ -367,27 +467,89 @@ async function main() {
     }
   }
 
-  if (generated.length === 0) {
-    log('생성된 포스팅 없음')
-    return
+  // 2. 상품 추천 포스팅 2개 (addon slot)
+  const addonPosts = nextPending(queue, 'noon-addon', 2)
+  for (const post of addonPosts) {
+    try {
+      log(`▶ 상품 추천: ${post.slug}`)
+      if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
+      const content = await generateQueuePost(post)
+      if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
+      validatePost(content, post.slug)
+      savePost(post.entity, post.slug, content)
+      if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
+      registerProductsFromPost(post)
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
+      saveQueue(queue)
+      generated.push(post.slug)
+      log(`  ✅ 완료: ${post.slug}`)
+      await new Promise(r => setTimeout(r, 2000))
+    } catch (e) {
+      log(`  ❌ 오류 [${post.slug}]: ${e.message}`)
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'error'; qi.error = e.message; qi.errorAt = new Date().toISOString() }
+      saveQueue(queue)
+    }
   }
 
-  // 7. Prebuild (sitemap + feeds)
-  try {
-    log('Prebuild 실행...')
-    execSync('npm run prebuild', { cwd: ROOT, stdio: 'pipe' })
-    log('Prebuild 완료')
-  } catch (e) {
-    log(`Prebuild 오류 (무시): ${e.message.slice(0, 200)}`)
-  }
-
-  // 8. Git commit & push
-  gitCommit(generated)
-
-  log(`=== 완료 [${slotArg}] 생성 ${generated.length}개: ${generated.join(', ')} ===`)
+  if (generated.length > 0) prebuild()
+  log(`=== noon 완료: ${generated.length}개 ===`)
+  return generated
 }
 
-main().catch(err => {
-  log(`치명적 오류: ${err.message}`)
+async function runEvening() {
+  log('=== 18시 evening 시작 ===')
+  const generated = []
+  const queue = loadQueue()
+
+  const posts = nextPending(queue, 'evening', 3)
+  for (const post of posts) {
+    try {
+      log(`▶ 고단가 키워드: ${post.slug}`)
+      if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
+      const content = await generateQueuePost(post)
+      if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
+      validatePost(content, post.slug)
+      savePost(post.entity, post.slug, content)
+      if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
+      saveQueue(queue)
+      generated.push(post.slug)
+      log(`  ✅ 완료: ${post.slug}`)
+      await new Promise(r => setTimeout(r, 2000))
+    } catch (e) {
+      log(`  ❌ 오류 [${post.slug}]: ${e.message}`)
+      const qi = queue.posts.find(p => p.id === post.id)
+      if (qi) { qi.status = 'error'; qi.error = e.message; qi.errorAt = new Date().toISOString() }
+      saveQueue(queue)
+    }
+  }
+
+  // evening: 항상 prebuild + 커밋·푸시 (오늘 생성된 모든 포스팅 포함)
+  prebuild()
+  gitPush(generated.length > 0 ? generated : [`no-new-${TODAY}`])
+  log(`=== evening 완료: ${generated.length}개 생성 + push ===`)
+  return generated
+}
+
+// ─── 메인 ─────────────────────────────────────────────────────
+async function main() {
+  log(`=== 자동 포스팅 [${slotArg}] dryRun=${dryRun} ===`)
+
+  if (!fs.existsSync(CLAUDE_BIN)) {
+    log(`오류: Claude CLI 없음 (${CLAUDE_BIN})`)
+    process.exit(1)
+  }
+
+  if (slotArg === 'morning') await runMorning()
+  else if (slotArg === 'noon')    await runNoon()
+  else if (slotArg === 'evening') await runEvening()
+  else log(`알 수 없는 슬롯: ${slotArg}`)
+}
+
+main().catch(e => {
+  log(`치명적 오류: ${e.message}`)
   process.exit(1)
 })
