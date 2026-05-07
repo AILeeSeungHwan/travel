@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
     ...r, category: 'region', url: `/countries/${meta.slug}/regions/${r.slug}/`,
   }))
   const myHotels = hotels.filter(h => h.countrySlug === meta.slug).map(h => ({
-    ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title,
+    ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title ?? h.hotelName ?? null,
   }))
   const myThemes = (meta.relatedThemeSlugs || []).map(s => themes.find(t => t.slug === s)).filter(Boolean).map(t => ({
     ...t, category: 'theme', url: `/themes/${t.slug}/`,

@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
     ...s, category: 'spot', url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`,
   }))
   const myHotels = hotels.filter(h => h.regionSlug === meta.slug && h.countrySlug === meta.countrySlug).map(h => ({
-    ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title,
+    ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title ?? h.hotelName ?? null,
   }))
 
   return { props: { country, meta, postData, spots: mySpots, hotels: myHotels } }
