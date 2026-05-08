@@ -67,8 +67,10 @@
       "imageSource": "unsplash",
       "imageQuery": "japan airport travel passport",
       "meta": null,
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-07T23:32:40.343Z"
     },
     {
       "id": "c001",
@@ -149,8 +151,10 @@
           "5성"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-08T03:05:09.655Z"
     },
     {
       "id": "b002",
@@ -177,8 +181,10 @@
           "비교"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-08T03:10:11.891Z"
     },
     {
       "id": "c002",
@@ -3190,8 +3196,10 @@
           "필수품"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-08T03:15:13.900Z"
     },
     {
       "id": "na002",
