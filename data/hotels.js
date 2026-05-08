@@ -107,6 +107,30 @@ const hotels = [
     tags: ['서울신라','남산','5성','비즈니스'],
     publishedAt: '2026-05-07',
     updatedAt: '2026-05-07',
+  },
+  {
+    id: 'H006',
+    slug: 'parnas-gangnam',
+    countrySlug: 'kr',
+    regionSlug: 'seoul',
+    hotelName: '파르나스 호텔 강남',
+    hotelNameEn: 'Parnas Hotel Gangnam',
+    hotelClass: '5성',
+    hotelType: '비즈니스',
+    starRating: 5,
+    guestRating: 4.5,
+    priceRange: '22~60만 원/박',
+    amenities: ["야외수영장","스파","피트니스","COEX 직결"],
+    address: '서울 강남구 테헤란로 521',
+    lat: 37.513,
+    lng: 127.06,
+    iso2: 'KR',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["파르나스","강남","COEX","5성"],
+    publishedAt: '2026-05-08',
+    updatedAt: '2026-05-08'
   }
 ]
 
