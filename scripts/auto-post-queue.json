@@ -289,8 +289,10 @@
           "힐링"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_wellness-spa_1778231268195.js:127\n          a: '마사지 초보자에게는 스웨디시 마사지를 권장합니다. 부드러운 압력으로 전신을 이완시키는 기초 마사지로, 대부분의 스파에서 제공됩니다. 근육통이 심하다면 딥 티슈로 시작할 수 있지만, 첫 방문 시에는 시술 강도를 '미디엄' 수준으로 요청하고 테라피스트에게 불편한 부위를 사전에 충분히 설명하세요.'\n                                                                                                                                    ^^^\n\nSyntaxError: Unexpected identifier '미디엄'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
+      "errorAt": "2026-05-08T09:07:48.278Z"
     },
     {
       "id": "c003",
@@ -317,8 +319,10 @@
           "쿠팡"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-08T09:12:50.138Z"
     },
     {
       "id": "a004",
