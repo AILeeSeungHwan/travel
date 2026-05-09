@@ -806,5 +806,128 @@
       "license": "Unsplash License",
       "source": "unsplash"
     }
+  },
+  "hotels": {
+    "shilla-jeju": {
+      "id": "c1sCNK-AalE",
+      "url": "https://images.unsplash.com/photo-1716091975692-d40296327f4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1716091975692-d40296327f4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Sung Jin Cho",
+      "photographerUsername": "sungjincho",
+      "photographerUrl": "https://unsplash.com/@sungjincho?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/c1sCNK-AalE?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "lotte-jeju": {
+      "id": "cmAS_kMa6e8",
+      "url": "https://images.unsplash.com/photo-1569614881478-972dc9ff6487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1569614881478-972dc9ff6487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Unsplash",
+      "photographerUsername": "uyasehn",
+      "photographerUrl": "https://unsplash.com/@uyasehn?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/cmAS_kMa6e8?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "intercontinental-danang": {
+      "id": "McZJ78I_5Gw",
+      "url": "https://images.unsplash.com/photo-1551105379-6c50b7647c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1551105379-6c50b7647c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "yeongkyeong lee",
+      "photographerUsername": "yagmurlee",
+      "photographerUrl": "https://unsplash.com/@yagmurlee?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/McZJ78I_5Gw?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "seoul-shilla": {
+      "id": "nSrBp-JFaeI",
+      "url": "https://images.unsplash.com/photo-1710007220706-dea6bda84a36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1710007220706-dea6bda84a36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Christopher Pap de Pestény",
+      "photographerUsername": "cpdp",
+      "photographerUrl": "https://unsplash.com/@cpdp?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/nSrBp-JFaeI?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "parnas-gangnam": {
+      "id": "xwAtO6q2H9Q",
+      "url": "https://images.unsplash.com/photo-1619273418549-46a70c39f420?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1619273418549-46a70c39f420?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Taewoo Kim",
+      "photographerUsername": "taewookim",
+      "photographerUrl": "https://unsplash.com/@taewookim?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/xwAtO6q2H9Q?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "jw-marriott-seoul": {
+      "id": "88wA5LKzON8",
+      "url": "https://images.unsplash.com/photo-1660061540566-e537ad1f67dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1660061540566-e537ad1f67dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "kaleb tapp",
+      "photographerUsername": "kalebtapp",
+      "photographerUrl": "https://unsplash.com/@kalebtapp?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/88wA5LKzON8?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "walkerhill-seoul": {
+      "id": "UxGPQOtxLzA",
+      "url": "https://images.unsplash.com/photo-1639026463663-1a1292f5e753?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1639026463663-1a1292f5e753?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Adil Edin",
+      "photographerUsername": "artististanbul",
+      "photographerUrl": "https://unsplash.com/@artististanbul?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/UxGPQOtxLzA?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "paradise-busan": {
+      "id": "OJvbGjqHQ5w",
+      "url": "https://images.unsplash.com/photo-1700278046857-b312d34e22ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1700278046857-b312d34e22ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "IRa Kang",
+      "photographerUsername": "lifeinkorea",
+      "photographerUrl": "https://unsplash.com/@lifeinkorea?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/OJvbGjqHQ5w?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "lotte-busan": {
+      "id": "XbAV4VfSzUA",
+      "url": "https://images.unsplash.com/photo-1769847770288-d290a1f9d943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1769847770288-d290a1f9d943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Iann kim",
+      "photographerUsername": "iannkim",
+      "photographerUrl": "https://unsplash.com/@iannkim?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/XbAV4VfSzUA?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "ayana-bali": {
+      "id": "aAShvYoDC0w",
+      "url": "https://images.unsplash.com/photo-1620310816969-35d6df760ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1620310816969-35d6df760ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "Ellena McGuinness",
+      "photographerUsername": "ellenaalice",
+      "photographerUrl": "https://unsplash.com/@ellenaalice?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/aAShvYoDC0w?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    },
+    "marina-bay-sands": {
+      "id": "Ip5m3UPwjfI",
+      "url": "https://images.unsplash.com/photo-1651712220046-f01a9279d7d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080",
+      "urlSmall": "https://images.unsplash.com/photo-1651712220046-f01a9279d7d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=400",
+      "photographer": "j .",
+      "photographerUsername": "ja_heic",
+      "photographerUrl": "https://unsplash.com/@ja_heic?utm_source=tripspot&utm_medium=referral",
+      "sourceUrl": "https://unsplash.com/photos/Ip5m3UPwjfI?utm_source=tripspot&utm_medium=referral",
+      "license": "Unsplash License",
+      "source": "unsplash"
+    }
   }
 }

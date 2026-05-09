@@ -1,6 +1,6 @@
 // data/hotels.js — 호텔 메타 (수익 핵심 엔티티)
 // 본문: posts/hotels/{slug}.js
-// 이미지는 호텔스컴바인 API hot-link 또는 호텔 PR 키트만 — 자체 다운로드 절대 금지
+// 이미지: Unsplash License (hot-link) / 호텔 PR 키트 — 자체 무단 다운로드 금지
 // hotelsCombinedDeepLink 는 어드민에서 입력. 빈 값이면 '준비 중' 표시.
 
 const hotels = [
@@ -22,11 +22,11 @@ const hotels = [
     lat: 33.25, lng: 126.41, iso2: 'KR',
     nearbySpotSlugs: [],
     gallery: [
-      { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '제주신라 야외수영장' },
+      { url: 'https://images.unsplash.com/photo-1716091975692-d40296327f4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Sung Jin Cho on Unsplash', unsplashId: 'c1sCNK-AalE', unsplashUser: 'sungjincho', sourceUrl: 'https://unsplash.com/photos/c1sCNK-AalE?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@sungjincho?utm_source=tripspot&utm_medium=referral', alt: '제주 리조트 인피니티 수영장' },
     ],
     hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
     publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: true,
+    imageVerified: true, affiliateLinkVerified: true,
     tags: ['제주신라','중문','5성','호캉스'],
   },
   {
@@ -43,11 +43,11 @@ const hotels = [
     nearestAirport: '제주국제공항(JEJU)', distanceFromAirport: '40분(차량)',
     address: '제주 서귀포시 중문관광로72번길 35', lat: 33.25, lng: 126.41, iso2: 'KR',
     gallery: [
-      { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '롯데호텔 제주 가든풀' },
+      { url: 'https://images.unsplash.com/photo-1569614881478-972dc9ff6487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Unsplash on Unsplash', unsplashId: 'cmAS_kMa6e8', unsplashUser: 'uyasehn', sourceUrl: 'https://unsplash.com/photos/cmAS_kMa6e8?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@uyasehn?utm_source=tripspot&utm_medium=referral', alt: '롯데호텔 제주 리조트 전경' },
     ],
     hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
     publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: true,
+    imageVerified: true, affiliateLinkVerified: true,
     tags: ['롯데호텔제주','중문','5성','호캉스'],
   },
   {
@@ -64,11 +64,11 @@ const hotels = [
     nearestAirport: '다낭국제공항(DAD)', distanceFromAirport: '30분(차량)',
     address: 'Bai Bac, Son Tra, Danang, Vietnam', lat: 16.13, lng: 108.30, iso2: 'VN',
     gallery: [
-      { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: 'InterContinental Danang Beach Pool' },
+      { url: 'https://images.unsplash.com/photo-1551105379-6c50b7647c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by yeongkyeong lee on Unsplash', unsplashId: 'McZJ78I_5Gw', unsplashUser: 'yagmurlee', sourceUrl: 'https://unsplash.com/photos/McZJ78I_5Gw?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@yagmurlee?utm_source=tripspot&utm_medium=referral', alt: '인터컨티넨탈 다낭 해변 수영장' },
     ],
     hotelsCombinedDeepLink: 'https://lpweb.kr/click.php?m=hcombine2&a=A100692599&l=0000', hotelsCombinedHotelId: '',
     publishedAt: '2026-04-25', updatedAt: '2026-04-28', ymylLevel: 'B',
-    imageVerified: false, affiliateLinkVerified: true,
+    imageVerified: true, affiliateLinkVerified: true,
     tags: ['인터컨티넨탈','다낭','5성','신혼'],
   },
   {
@@ -97,12 +97,12 @@ const hotels = [
     lng: 127.007,
     iso2: 'KR',
     gallery: [
-      { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '서울신라호텔 야외수영장' },
+      { url: 'https://images.unsplash.com/photo-1710007220706-dea6bda84a36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Christopher Pap de Pestény on Unsplash', unsplashId: 'nSrBp-JFaeI', unsplashUser: 'cpdp', sourceUrl: 'https://unsplash.com/photos/nSrBp-JFaeI?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@cpdp?utm_source=tripspot&utm_medium=referral', alt: '서울신라호텔 럭셔리 외관' },
     ],
     hotelsCombinedDeepLink: '',
     hotelsCombinedHotelId: '',
     affiliateLinkVerified: false,
-    imageVerified: false,
+    imageVerified: true,
     ymylLevel: 'B',
     tags: ['서울신라','남산','5성','비즈니스'],
     publishedAt: '2026-05-07',
@@ -134,12 +134,12 @@ const hotels = [
     lng: 127.06,
     iso2: 'KR',
     gallery: [
-      { url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '파르나스 호텔 강남 외관' },
+      { url: 'https://images.unsplash.com/photo-1619273418549-46a70c39f420?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Taewoo Kim on Unsplash', unsplashId: 'xwAtO6q2H9Q', unsplashUser: 'taewookim', sourceUrl: 'https://unsplash.com/photos/xwAtO6q2H9Q?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@taewookim?utm_source=tripspot&utm_medium=referral', alt: '파르나스 강남 호텔 로비' },
     ],
     hotelsCombinedDeepLink: '',
     hotelsCombinedHotelId: '',
     affiliateLinkVerified: false,
-    imageVerified: false,
+    imageVerified: true,
     ymylLevel: 'B',
     tags: ['파르나스','강남','COEX','5성'],
     publishedAt: '2026-05-08',
@@ -159,9 +159,9 @@ const hotels = [
     standoutFeatures: ['도곡역 지하 직결','스파 바이 JW 서울 최대 규모','Marriott Bonvoy 포인트 적립'],
     nearestAirport: '김포국제공항(GMP)', distanceFromAirport: '30분(차량)',
     address: '서울 강남구 도곡로 177', lat: 37.492, lng: 127.048, iso2: 'KR',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: 'JW 메리어트 서울 외관' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1660061540566-e537ad1f67dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by kaleb tapp on Unsplash', unsplashId: '88wA5LKzON8', unsplashUser: 'kalebtapp', sourceUrl: 'https://unsplash.com/photos/88wA5LKzON8?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@kalebtapp?utm_source=tripspot&utm_medium=referral', alt: 'JW 메리어트 서울 호텔 인테리어' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['JW메리어트','강남','도곡역','5성'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
   {
@@ -178,9 +178,9 @@ const hotels = [
     standoutFeatures: ['한강 파노라마 뷰','아쿠아월드 워터파크','25만㎡ 자연 캠퍼스'],
     nearestAirport: '김포국제공항(GMP)', distanceFromAirport: '40분(차량)',
     address: '서울 광진구 워커힐로 177', lat: 37.547, lng: 127.098, iso2: 'KR',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '워커힐 서울 한강뷰' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1639026463663-1a1292f5e753?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Adil Edin on Unsplash', unsplashId: 'UxGPQOtxLzA', unsplashUser: 'artististanbul', sourceUrl: 'https://unsplash.com/photos/UxGPQOtxLzA?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@artististanbul?utm_source=tripspot&utm_medium=referral', alt: '서울 한강 뷰 호텔' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['워커힐','광진구','한강뷰','아쿠아월드'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
   {
@@ -197,9 +197,9 @@ const hotels = [
     standoutFeatures: ['전 객실 오션뷰','해운대 도보 1분','루프탑 야외풀'],
     nearestAirport: '김해국제공항(PUS)', distanceFromAirport: '40분(차량)',
     address: '부산 해운대구 해운대해변로 296', lat: 35.160, lng: 129.161, iso2: 'KR',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '파라다이스 호텔 부산 해운대 전경' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1700278046857-b312d34e22ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by IRa Kang on Unsplash', unsplashId: 'OJvbGjqHQ5w', unsplashUser: 'lifeinkorea', sourceUrl: 'https://unsplash.com/photos/OJvbGjqHQ5w?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@lifeinkorea?utm_source=tripspot&utm_medium=referral', alt: '부산 해운대 해변 호텔' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['파라다이스부산','해운대','오션뷰','5성'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
   {
@@ -216,9 +216,9 @@ const hotels = [
     standoutFeatures: ['광안대교·부산항 야경','부전역 직결','롯데백화점 쇼핑 직연결'],
     nearestAirport: '김해국제공항(PUS)', distanceFromAirport: '30분(차량)',
     address: '부산 부산진구 가야대로 772', lat: 35.157, lng: 129.053, iso2: 'KR',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '롯데호텔 부산 광안대교 야경' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1769847770288-d290a1f9d943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Iann kim on Unsplash', unsplashId: 'XbAV4VfSzUA', unsplashUser: 'iannkim', sourceUrl: 'https://unsplash.com/photos/XbAV4VfSzUA?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@iannkim?utm_source=tripspot&utm_medium=referral', alt: '부산 바다 뷰 럭셔리 호텔' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['롯데부산','부전역','광안대교','5성'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
   {
@@ -235,9 +235,9 @@ const hotels = [
     standoutFeatures: ['세계 최초 암반 위 록바','아시아 최대급 스파','12개 프라이빗 풀'],
     nearestAirport: '응우라라이 국제공항(DPS)', distanceFromAirport: '20분(차량)',
     address: 'Jl. Karang Mas Sejahtera, Jimbaran, Bali 80364', lat: -8.782, lng: 115.158, iso2: 'ID',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '아야나 발리 짐바란 절벽 수영장' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1620310816969-35d6df760ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by Ellena McGuinness on Unsplash', unsplashId: 'aAShvYoDC0w', unsplashUser: 'ellenaalice', sourceUrl: 'https://unsplash.com/photos/aAShvYoDC0w?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@ellenaalice?utm_source=tripspot&utm_medium=referral', alt: '아야나 발리 절벽 인피니티 풀' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['아야나발리','짐바란','록바','풀빌라'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
   {
@@ -254,9 +254,9 @@ const hotels = [
     standoutFeatures: ['57층 인피니티 풀(투숙객 전용)','세계 유일의 복합 랜드마크','베이프론트역 직결'],
     nearestAirport: '창이 국제공항(SIN)', distanceFromAirport: '30분(택시·MRT)',
     address: '10 Bayfront Ave, Singapore 018956', lat: 1.284, lng: 103.861, iso2: 'SG',
-    gallery: [{ url: '/images/placeholder-hotel.svg', source: 'hotelscombined-api', license: '파트너 약관(다운로드 금지·hot-link)', credit: 'via HotelsCombined', alt: '마리나 베이 샌즈 인피니티 풀 야경' }],
+    gallery: [{ url: 'https://images.unsplash.com/photo-1651712220046-f01a9279d7d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080', source: 'unsplash', license: 'Unsplash License', credit: 'Photo by j . on Unsplash', unsplashId: 'Ip5m3UPwjfI', unsplashUser: 'ja_heic', sourceUrl: 'https://unsplash.com/photos/Ip5m3UPwjfI?utm_source=tripspot&utm_medium=referral', photographerUrl: 'https://unsplash.com/@ja_heic?utm_source=tripspot&utm_medium=referral', alt: '마리나 베이 샌즈 인피니티 풀 야경' }],
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
-    affiliateLinkVerified: false, imageVerified: false, ymylLevel: 'B',
+    affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['마리나베이샌즈','싱가포르','인피니티풀','5성'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
   },
 ]
