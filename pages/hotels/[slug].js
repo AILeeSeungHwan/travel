@@ -60,8 +60,20 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
 
   const galleryImages = resolvedGallery
 
+  // HeroImage가 mainImage(= gallery[0]와 동일 소스)를 표시하므로 갤러리는 1번째 이후부터
+  // heroImg 없으면 0번째부터 모두 포함
+  const galleryStartIdx = heroImg ? 1 : 0
+  const gallerySection = galleryImages.slice(galleryStartIdx)
   const fallbackSections = [
-    ...galleryImages.slice(0, 1),
+    ...(gallerySection.length > 0
+      ? [{ type: 'gallery',
+           images: gallerySection.map(g => ({ src: g.src, alt: g.alt, caption: g.caption })),
+           imageSource: gallerySection[0]?.imageSource,
+           imageLicense: gallerySection[0]?.imageLicense,
+           imageCredit: gallerySection[0]?.imageCredit,
+           imageSourceUrl: gallerySection[0]?.imageCreditUrl,
+        }]
+      : []),
     { type: 'intro', html: `${meta.summary}<br/><br/>` +
       `<strong>${meta.hotelName}</strong>은(는) ${country ? country.countryName : meta.countrySlug.toUpperCase()} ${region ? region.regionName : ''}의 ${meta.hotelClass} ${meta.hotelType}입니다. ` +
       `평점 ${meta.guestRating}·가격대 ${meta.priceRange} (시즌 변동, 클릭 시점 확인).<br/><br/>` +

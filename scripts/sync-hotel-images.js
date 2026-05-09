@@ -29,6 +29,15 @@ const UNSPLASH_HOTELS = {
   'intercontinental-danang':'resort infinity pool vietnam beach ocean',
   'ayana-bali':             'bali cliff infinity pool tropical ocean sunset',
   'marina-bay-sands':       'marina bay sands singapore infinity pool night skyline',
+  // TourAPI 이미지 없음 → Unsplash 단독
+  'seoul-shilla':           'grand hotel seoul luxury lobby interior modern',
+}
+
+// TourAPI 이미지가 부족한 국내 호텔에 Unsplash 이미지 보충 (merge)
+// Unsplash 0장 호텔도 여기서 처리 (mainImage 없으면 첫 보충 이미지가 hero 됨)
+const SUPPLEMENT_UNSPLASH = {
+  'walkerhill-seoul': { query: 'seoul luxury hotel rooftop city view pool', count: 4 },
+  'marina-bay-sands': { query: 'singapore luxury hotel infinity pool', count: 5 },
 }
 
 async function fetchTourImages(contentId) {
@@ -138,6 +147,28 @@ async function main() {
       sourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral',
     }
     console.log(`✓ ${images.length}장`)
+    await delay(1200)
+  }
+
+  // 3. TourAPI 이미지 부족 호텔 — Unsplash 보충 (gallery merge)
+  console.log('\n[Unsplash 보충]')
+  for (const [slug, { query, count }] of Object.entries(SUPPLEMENT_UNSPLASH)) {
+    process.stdout.write(`  ${slug} ... `)
+    const images = await searchUnsplash(query, count)
+    if (images.length === 0) { console.log('⚠ 결과 없음'); continue }
+    const existing = result[slug] || {}
+    const existingGallery = existing.gallery || []
+    const merged = [...existingGallery, ...images]
+    result[slug] = {
+      ...existing,
+      mainImage: existing.mainImage || images[0]?.url || null,
+      gallery: merged,
+      // 혼합 소스: TourAPI + Unsplash
+      source: existingGallery.length > 0 ? 'mixed' : 'unsplash',
+      license: existingGallery.length > 0 ? '공공누리 1유형 + Unsplash License' : 'Unsplash License',
+      credit: existingGallery.length > 0 ? '한국관광공사 + Unsplash' : `Photo by ${images[0].photographer} on Unsplash`,
+    }
+    console.log(`✓ ${images.length}장 보충 (총 ${merged.length}장)`)
     await delay(1200)
   }
 
