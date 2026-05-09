@@ -59,6 +59,16 @@ export default function Document() {
           })(window, document, "clarity", "script", "wmt3liusxh");
         `}} />
 
+        {/* Travelpayouts 어필리에이트 트래킹 (ID: 527031) */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function(){
+            var s=document.createElement("script");
+            s.async=1;
+            s.src='https://emrldco.com/NTI3MDMx.js?t=527031';
+            document.head.appendChild(s);
+          })();
+        `}} />
+
         {/* Leaflet CSS (mini-map 전역 — 사용 페이지에서만 실제 렌더) */}
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossOrigin="" />
       </Head>
