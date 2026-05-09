@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1박2일·2박3일 국내 여행은 직장인 주말·연휴 활용 + 가족 단기 휴가에 가장 효율적입니다. KTX·고속도로 인프라가 발달해 서울 출발 2~3시간이면 부산·강릉·전주·경주 등 주요 도시 도착. 본 가이드는 서울 출발 BEST 코스를 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '국내 여행 부산 강릉 제주 1박2일 2박3일', caption: '국내 1박2일·2박3일 여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '국내 여행 부산 강릉 제주 1박2일 2박3일', caption: '국내 1박2일·2박3일 여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '서울 출발 1박2일 BEST' },
     { type: 'body', html: `<ul>

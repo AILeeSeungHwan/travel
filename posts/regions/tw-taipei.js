@@ -10,7 +10,7 @@ module.exports = {
       caption: '타이베이 라오허제 야시장 — 미슐랭 거리음식이 가득한 밤의 축제',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Clement Souchet on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@windclems?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@windclems?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '타이베이 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

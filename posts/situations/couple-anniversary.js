@@ -14,7 +14,7 @@ module.exports = {
       imageSource: 'Unsplash',
       imageLicense: 'Unsplash License',
       imageCredit: 'Dmitry Rodionov on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@knuckles_echidna?utm_source=tripspot&utm_medium=referral'
+      imageSourceUrl: 'https://unsplash.com/@knuckles_echidna?utm_source=travel.ambitstock&utm_medium=referral'
     },
     {
       type: 'h2',
@@ -72,7 +72,7 @@ module.exports = {
       imageSource: 'Unsplash',
       imageLicense: 'Unsplash License',
       imageCredit: 'Dmitry Rodionov on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@knuckles_echidna?utm_source=tripspot&utm_medium=referral'
+      imageSourceUrl: 'https://unsplash.com/@knuckles_echidna?utm_source=travel.ambitstock&utm_medium=referral'
     },
     {
       type: 'body',

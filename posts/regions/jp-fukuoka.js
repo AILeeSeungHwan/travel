@@ -10,7 +10,7 @@ module.exports = {
       caption: '나카강(那珂川) — 나카스 야타이 포장마차 밀집 구역',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Alexander Schimmeck on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@alschim?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@alschim?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '후쿠오카 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1주일(6~8일) 해외여행은 직장인 유급휴가 + 주말 활용에 가장 적합한 기간입니다. 1도시 깊게 머물기 또는 광역 동선 둘 다 가능. 본 가이드는 1주일 BEST 옵션을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1583863374731-4224cbbc8c36?auto=format&fit=crop&q=80&w=1200', alt: '1주일 해외여행 베트남 다낭 발리 일본', caption: '1주일 해외여행 BEST 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Terence Sandeep on Unsplash', imageSourceUrl: 'https://unsplash.com/@terence_sans?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1583863374731-4224cbbc8c36?auto=format&fit=crop&q=80&w=1200', alt: '1주일 해외여행 베트남 다낭 발리 일본', caption: '1주일 해외여행 BEST 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Terence Sandeep on Unsplash', imageSourceUrl: 'https://unsplash.com/@terence_sans?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '1주일 BEST' },
     { type: 'body', html: `<ul>

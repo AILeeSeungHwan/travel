@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행 계획에서 비행시간과 시차는 일정·체력·아이 동반 결정에 직접 영향을 줍니다. 인천·김포·부산 출발 주요 목적지 비행시간을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '인천 출발 해외여행 비행시간 시차 계산', caption: '주요 목적지 비행시간·시차 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '인천 출발 해외여행 비행시간 시차 계산', caption: '주요 목적지 비행시간·시차 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '계산기 위젯', html: '출발지·도착지 입력 → 직항 비행시간 + 한국 시간 기준 시차 자동 계산. (위젯 후속 추가 예정)' },
 

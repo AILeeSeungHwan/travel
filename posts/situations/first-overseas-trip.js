@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `처음 해외여행을 떠나는 분들에게 가장 중요한 건 <strong>가까운 거리·짧은 비행·시차 적은 곳·언어 부담 적은 곳</strong>입니다. 일본·대만·베트남·태국이 한국인 첫 해외여행 4대 추천국이며, 모두 5시간 이내 직항·무비자·풍부한 한국인 인프라를 갖췄습니다.<br/><br/>본 가이드는 첫 해외여행 추천국·예산·준비물·일정 샘플을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '첫 해외여행 준비 공항 출발 가이드', caption: '첫 해외여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '첫 해외여행 준비 공항 출발 가이드', caption: '첫 해외여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '첫 해외여행 BEST 4' },
     { type: 'body', html: `<ul>

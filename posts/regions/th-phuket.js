@@ -10,7 +10,7 @@ module.exports = {
       caption: '푸켓 — 태국 최대 휴양섬의 에메랄드빛 바다',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'The DK Photography on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@deepain108?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@deepain108?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '푸켓 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

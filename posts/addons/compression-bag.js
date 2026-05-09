@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `압축팩은 캐리어 공간을 30~50% 절약하는 필수 아이템입니다. 옷·이불·수건 부피를 절반으로 압축. 진공 펌프식·롤링식·지퍼식 3가지 타입.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 압축팩 캐리어 공간 절약 짐 싸기 가이드', caption: '여행 압축팩 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dbelanger?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 압축팩 캐리어 공간 절약 짐 싸기 가이드', caption: '여행 압축팩 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dbelanger?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'types', text: '타입별' },
     { type: 'body', html: `<ul>

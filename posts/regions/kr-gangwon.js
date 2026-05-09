@@ -10,7 +10,7 @@ module.exports = {
       caption: '강원도 동해안 — 푸른 바다와 해안선',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Yeon Lee on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@hyleee7?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@hyleee7?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '강원도 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

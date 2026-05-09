@@ -4,7 +4,7 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권 소지자는 태국 단기 체류 시 <strong>90일 무비자</strong>(2024년 7월부터 적용)로 입국 가능합니다. 디지털 노마드·한 달 살기 목적은 <strong>DTV(Destination Thailand Visa)</strong> 도입으로 합법적 장기 체류 옵션이 생겼습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '태국 여행 90일 무비자 입국 DTV 가이드', caption: '태국 90일 무비자 입국 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@g_grace?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '태국 여행 90일 무비자 입국 DTV 가이드', caption: '태국 90일 무비자 입국 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@g_grace?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>

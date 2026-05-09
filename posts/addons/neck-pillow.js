@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `장거리 비행(8시간+)에서 목베개는 수면 품질·도착 후 컨디션에 직접 영향을 줍니다. 메모리폼·헤드레스트형·접이식 등 형태별 장단점이 있습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 목베개 수면 여행 편의용품 가이드', caption: '여행용 목베개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 목베개 수면 여행 편의용품 가이드', caption: '여행용 목베개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'types', text: '타입별' },
     { type: 'body', html: `<ul>

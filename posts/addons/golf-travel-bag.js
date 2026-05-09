@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `골프투어(태국·베트남·일본·하와이·뉴질랜드)에서 골프백 항공 위탁은 핵심입니다. 하드케이스 vs 소프트커버, 항공사별 추가 요금, 골프채 보호 패딩이 핵심.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '해외 골프투어 골프백 항공 위탁 여행 가이드', caption: '해외 골프여행 골프백 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@phatthanan?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1691488822390-0fd80c389953?auto=format&fit=crop&q=80&w=1200', alt: '해외 골프투어 골프백 항공 위탁 여행 가이드', caption: '해외 골프여행 골프백 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'phatthanan tuppocha on Unsplash', imageSourceUrl: 'https://unsplash.com/@phatthanan?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'types', text: '하드 vs 소프트' },
     { type: 'body', html: `<ul>

@@ -17,7 +17,7 @@ if (!KEY_ENC && !KEY) {
 
 const ROOT = path.resolve(__dirname, '..')
 const OUT = path.join(ROOT, 'data', 'tourapi-images.json')
-const COMMON = `MobileOS=ETC&MobileApp=tripspot&_type=json&numOfRows=10&pageNo=1`
+const COMMON = `MobileOS=ETC&MobileApp=travel-ambitstock&_type=json&numOfRows=10&pageNo=1`
 
 // 우리 사이트의 국내 스팟·지역 → TourAPI 검색 키워드
 const SPOT_QUERIES = {
@@ -49,7 +49,7 @@ async function searchByKeyword(keyword) {
 }
 
 async function detailImage(contentId) {
-  const url = `${ENDPOINT}/detailImage2?serviceKey=${KEY_ENC}&contentId=${contentId}&imageYN=Y&MobileOS=ETC&MobileApp=tripspot&_type=json&numOfRows=10&pageNo=1`
+  const url = `${ENDPOINT}/detailImage2?serviceKey=${KEY_ENC}&contentId=${contentId}&imageYN=Y&MobileOS=ETC&MobileApp=travel-ambitstock&_type=json&numOfRows=10&pageNo=1`
   const r = await fetch(url, { headers: { Accept: 'application/json' } })
   if (!r.ok) return []
   const data = await r.json()
@@ -59,7 +59,7 @@ async function detailImage(contentId) {
 }
 
 async function detailCommon(contentId) {
-  const url = `${ENDPOINT}/detailCommon2?serviceKey=${KEY_ENC}&contentId=${contentId}&firstImageYN=Y&overviewYN=Y&areacodeYN=Y&MobileOS=ETC&MobileApp=tripspot&_type=json&numOfRows=1&pageNo=1`
+  const url = `${ENDPOINT}/detailCommon2?serviceKey=${KEY_ENC}&contentId=${contentId}&firstImageYN=Y&overviewYN=Y&areacodeYN=Y&MobileOS=ETC&MobileApp=travel-ambitstock&_type=json&numOfRows=1&pageNo=1`
   const r = await fetch(url, { headers: { Accept: 'application/json' } })
   if (!r.ok) return null
   const data = await r.json()

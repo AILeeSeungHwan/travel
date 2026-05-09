@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `부모님과 함께하는 효도여행은 일반 여행과 다른 기준이 필요합니다. <strong>짧은 비행(4시간 이내 권장), 안락한 숙소, 한식 가능 식당, 의료 접근성, 체력에 맞는 여유로운 일정</strong> — 이 다섯 가지가 효도여행의 기준입니다.<br/><br/>특히 60~70대 부모님은 무릎·허리 통증이 있을 수 있어, 계단이 많은 사원이나 장거리 이동은 사전에 동선을 확인해야 합니다. 여행자보험은 60세+ 기저질환 보장이 포함된 상품으로 반드시 가입하세요.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '부모님 효도여행 일본 료칸 온천 가족여행', caption: '효도여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dcbelanger?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714388286286-15a5a8ead30b?auto=format&fit=crop&q=80&w=1200', alt: '부모님 효도여행 일본 료칸 온천 가족여행', caption: '효도여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Danielle-Claude Bélanger on Unsplash', imageSourceUrl: 'https://unsplash.com/@dcbelanger?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top-destinations', text: '효도여행 BEST 목적지' },
     { type: 'h3', id: 'ryokan-japan', text: '1순위 — 일본 료칸 (하코네·유후인·키노사키)' },

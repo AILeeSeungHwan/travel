@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `아이와 함께하는 가족여행은 <strong>안전·시차·비행시간·키즈 친화 시설</strong>이 핵심입니다. 0~3세 영유아·4~7세 유아·8~12세 초등 연령별로 적합한 목적지가 다릅니다.<br/><br/>본 가이드는 연령별 추천 목적지와 풀빌라·키즈클럽·테마파크 옵션을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1731796865138-227d3c72dd71?auto=format&fit=crop&q=80&w=1200', alt: '아이와 가족여행 키즈 리조트 풀빌라', caption: '아이와 함께하는 가족여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joss Broward on Unsplash', imageSourceUrl: 'https://unsplash.com/@jossbroward?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1731796865138-227d3c72dd71?auto=format&fit=crop&q=80&w=1200', alt: '아이와 가족여행 키즈 리조트 풀빌라', caption: '아이와 함께하는 가족여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joss Broward on Unsplash', imageSourceUrl: 'https://unsplash.com/@jossbroward?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'age', text: '연령별 추천' },
     { type: 'body', html: `<strong>영유아 (0~3세)</strong>:<br/><ul>

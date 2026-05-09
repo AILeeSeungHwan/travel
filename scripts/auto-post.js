@@ -60,7 +60,7 @@ async function fetchImages(post) {
   if (post.imageSource === 'tourapi' && post.imageQuery && TOUR_KEY) {
     try {
       const url = `${TOUR_BASE}/searchKeyword2?serviceKey=${TOUR_KEY}` +
-        `&keyword=${encodeURIComponent(post.imageQuery)}&MobileOS=ETC&MobileApp=tripspot` +
+        `&keyword=${encodeURIComponent(post.imageQuery)}&MobileOS=ETC&MobileApp=travel-ambitstock` +
         `&_type=json&numOfRows=3&pageNo=1` +
         (post.contentTypeId ? `&contentTypeId=${post.contentTypeId}` : '')
       const sd  = await (await fetch(url, { headers: { Accept: 'application/json' } })).json()
@@ -68,7 +68,7 @@ async function fetchImages(post) {
       if (!items) return null
       const hit = Array.isArray(items) ? items[0] : items
       const imgUrl = `${TOUR_BASE}/detailImage2?serviceKey=${TOUR_KEY}` +
-        `&contentId=${hit.contentid}&imageYN=Y&MobileOS=ETC&MobileApp=tripspot` +
+        `&contentId=${hit.contentid}&imageYN=Y&MobileOS=ETC&MobileApp=travel-ambitstock` +
         `&_type=json&numOfRows=6&pageNo=1`
       const id   = await (await fetch(imgUrl, { headers: { Accept: 'application/json' } })).json()
       const imgs = id?.response?.body?.items?.item
@@ -97,7 +97,7 @@ async function fetchImages(post) {
         })),
         source: 'Unsplash', license: 'Unsplash License',
         credit: `${imgs[0].user.name} on Unsplash`,
-        sourceUrl: `${imgs[0].user.links.html}?utm_source=tripspot&utm_medium=referral`,
+        sourceUrl: `${imgs[0].user.links.html}?utm_source=travel.ambitstock&utm_medium=referral`,
       }
     } catch (e) { log(`Unsplash 실패 (${post.slug}): ${e.message}`); return null }
   }
@@ -105,7 +105,7 @@ async function fetchImages(post) {
 }
 
 // ─── 시스템 프롬프트 ──────────────────────────────────────────
-const SYSTEM_PROMPT = `You are a Korean travel content writer for tripspot.ambitstock.com.
+const SYSTEM_PROMPT = `You are a Korean travel content writer for travel.ambitstock.com.
 Output ONLY valid JavaScript — no markdown fences, no explanations, no text before or after.
 
 OUTPUT FORMAT:

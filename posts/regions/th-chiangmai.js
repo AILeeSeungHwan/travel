@@ -10,7 +10,7 @@ module.exports = {
       caption: '치앙마이 산정 사원 — 태국 북부 란나 왕조 불교 문화의 정수',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Mike Holp on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@mikeholp?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@mikeholp?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '치앙마이 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `항공사별 수하물 한도는 국적기·LCC·해외 항공사·좌석 등급마다 다릅니다. 한도 초과 시 1kg당 1~3만 원 추가 요금. 본 가이드는 한국·해외 항공사 수하물 한도와 절약 팁을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 수하물 무게 한도 항공사별 짐 가이드', caption: '항공사별 수하물 한도 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 수하물 무게 한도 항공사별 짐 가이드', caption: '항공사별 수하물 한도 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '계산기 위젯', html: '항공사·좌석 등급 입력 → 무료 수하물 한도 + 추가 요금 자동 계산. (위젯 후속)' },
 

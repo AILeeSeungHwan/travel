@@ -10,7 +10,7 @@ module.exports = {
       caption: '푸꾸옥 켐비치 — 베트남 최고의 투명한 에메랄드빛 바다',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Vivu Vietnam on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@bttsg?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@bttsg?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '푸꾸옥 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

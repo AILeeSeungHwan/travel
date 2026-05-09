@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 일정 빌더는 스팟·호텔을 추가하면 GPS 기반 동선·예상 소요시간·이동 수단을 자동 계산합니다. 효율적 일정 설계로 여행 시간을 30~50% 절약할 수 있습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199-2697edfc8794?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 일정 빌더 동선 설계 여행 계획', caption: '여행 일정 빌더 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/@siddheshmangela?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199-2697edfc8794?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 일정 빌더 동선 설계 여행 계획', caption: '여행 일정 빌더 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/@siddheshmangela?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '계산기 위젯', html: '스팟·호텔 추가 → 동선 자동 최적화 + 1일 일정표 출력. (위젯 후속)' },
 

@@ -41,7 +41,7 @@ const SUPPLEMENT_UNSPLASH = {
 }
 
 async function fetchTourImages(contentId) {
-  const url = `${TOUR_ENDPOINT}/detailImage2?serviceKey=${TOUR_KEY_ENC}&contentId=${contentId}&imageYN=Y&MobileOS=ETC&MobileApp=tripspot&_type=json&numOfRows=10&pageNo=1`
+  const url = `${TOUR_ENDPOINT}/detailImage2?serviceKey=${TOUR_KEY_ENC}&contentId=${contentId}&imageYN=Y&MobileOS=ETC&MobileApp=travel-ambitstock&_type=json&numOfRows=10&pageNo=1`
   const r = await fetch(url, { headers: { Accept: 'application/json' } })
   if (!r.ok) { console.error('  ✗ TourAPI', contentId, r.status); return [] }
   const data = await r.json()
@@ -51,7 +51,7 @@ async function fetchTourImages(contentId) {
 }
 
 async function fetchTourCommon(contentId) {
-  const url = `${TOUR_ENDPOINT}/detailCommon2?serviceKey=${TOUR_KEY_ENC}&contentId=${contentId}&firstImageYN=Y&MobileOS=ETC&MobileApp=tripspot&_type=json`
+  const url = `${TOUR_ENDPOINT}/detailCommon2?serviceKey=${TOUR_KEY_ENC}&contentId=${contentId}&firstImageYN=Y&MobileOS=ETC&MobileApp=travel-ambitstock&_type=json`
   const r = await fetch(url, { headers: { Accept: 'application/json' } })
   if (!r.ok) return null
   const data = await r.json()
@@ -73,8 +73,8 @@ async function searchUnsplash(query, count = 5) {
     caption: img.description || img.alt_description || query,
     photographer: img.user.name,
     photographerUsername: img.user.username,
-    photographerUrl: `${img.user.links.html}?utm_source=tripspot&utm_medium=referral`,
-    sourceUrl: `${img.links.html}?utm_source=tripspot&utm_medium=referral`,
+    photographerUrl: `${img.user.links.html}?utm_source=travel.ambitstock&utm_medium=referral`,
+    sourceUrl: `${img.links.html}?utm_source=travel.ambitstock&utm_medium=referral`,
     unsplashId: img.id,
     license: 'Unsplash License',
     source: 'unsplash',
@@ -108,7 +108,7 @@ async function main() {
         mainImage: uImages[0]?.url || null,
         gallery: uImages,
         source: 'unsplash', license: 'Unsplash License', credit: 'Unsplash',
-        sourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral',
+        sourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral',
       }
       await delay(1200)
     } else {
@@ -144,7 +144,7 @@ async function main() {
       source: 'unsplash',
       license: 'Unsplash License',
       credit: images[0] ? `Photo by ${images[0].photographer} on Unsplash` : 'Unsplash',
-      sourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral',
+      sourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral',
     }
     console.log(`✓ ${images.length}장`)
     await delay(1200)

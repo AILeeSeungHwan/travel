@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행 시 비상약은 필수입니다. 동남아·열대 지역에서는 위장약·지사제·해열제·모기퇴치제·반창고가 핵심. 본 가이드는 권역별 비상약 체크리스트를 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 비상약 의약품 체크리스트 여행 필수품', caption: '해외여행 비상약 체크리스트 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1611153532534-d72e8baca034?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 비상약 의약품 체크리스트 여행 필수품', caption: '해외여행 비상약 체크리스트 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Pond Juprasong on Unsplash', imageSourceUrl: 'https://unsplash.com/@pondjup?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'warning', title: '처방약은 영문 처방전 동행', html: '고혈압·당뇨·심장 질환·정신과 약 등 처방약은 영문 처방전과 함께 동행해야 입국 시 의심 받지 않습니다. 일부 국가(일본·싱가포르)는 마약류 진통제·수면제 사전 신고 의무.' },
 

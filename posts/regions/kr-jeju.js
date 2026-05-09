@@ -10,7 +10,7 @@ module.exports = {
       caption: '제주 — 한국 최고의 섬 휴양지, 유네스코 세계자연유산의 아름다운 자연',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'inyoung jung on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@truly_film?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@truly_film?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '제주 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

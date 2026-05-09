@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `프랑스는 한국인이 가장 사랑하는 유럽 여행지입니다. 인천에서 12~13시간 직항, 쉥겐 협정에 따라 90일 무비자, 파리·니스·리옹·보르도·프로방스·노르망디까지 광역마다 분명한 색채를 갖춘 여행 대국입니다.<br/><br/>에펠탑·루브르·베르사유의 클래식 코스, 니스·생트로페·칸 등 코트다쥐르 해안의 럭셔리, 보르도·부르고뉴의 와이너리 투어, 몽생미셸의 신비, 7월 라벤더 절정의 프로방스, 스트라스부르의 크리스마스 마켓까지 — 1주일로는 부족한 나라입니다.<br/><br/>2026년 ETIAS(전자여행허가) 시행이 예정되어 있어 출국 전 정책 재확인이 필수입니다. 파리 등 대도시는 소매치기가 빈번하므로 가방 관리와 귀중품 분산 보관에 주의해야 합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1605194177907-84c213cb3654?auto=format&fit=crop&q=80&w=1200', alt: '프랑스 파리 에펠탑과 센강 전경', caption: '프랑스 파리 에펠탑', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Alex Harmuth on Unsplash', imageSourceUrl: 'https://unsplash.com/@a_harmuth?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1605194177907-84c213cb3654?auto=format&fit=crop&q=80&w=1200', alt: '프랑스 파리 에펠탑과 센강 전경', caption: '프랑스 파리 에펠탑', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Alex Harmuth on Unsplash', imageSourceUrl: 'https://unsplash.com/@a_harmuth?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'risk', title: '프랑스/쉥겐 비자·안전 (Level A)', html: '한국인은 <strong>쉥겐 협정에 따라 90일 무비자</strong>. 단 <strong>ETIAS</strong>(전자여행허가, EUR 7) 시행 일정에 따라 출국 전 사전 신청 필요할 수 있음 — 출국 전 외교부와 travel-europe.europa.eu/etias_ko 재확인. 파리 등 대도시 <strong>소매치기 매우 빈번</strong> — 메트로·관광지에서 가방 앞으로 착용 필수.' },
 

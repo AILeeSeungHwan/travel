@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1인 500만 원 이상 럭셔리 여행은 5성호텔·풀빌라·오버워터빌라·일등석 항공권·미슐랭 다이닝이 핵심입니다. 몰디브 OWB·하와이 7박·발리 럭셔리·일본 료칸 가이세키·이탈리아 호텔이 대표. 본 페이지는 럭셔리 여행 옵션과 추천 호텔을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '럭셔리 여행 5성호텔 풀빌라 오버워터빌라', caption: '럭셔리 여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '럭셔리 여행 5성호텔 풀빌라 오버워터빌라', caption: '럭셔리 여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '럭셔리 BEST' },
     { type: 'body', html: `<ul>

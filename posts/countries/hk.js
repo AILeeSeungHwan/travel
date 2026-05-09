@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `홍콩은 인천에서 3시간 30분 직항으로 도착하는 미식·야경·쇼핑의 압축 도시입니다. 90일 무비자에 영어·광동어·중국어가 함께 통용되고, MTR(지하철) 시스템이 정확해 지도 한 장으로 혼자서도 완벽히 돌아다닐 수 있습니다. 1박2일 주말 여행부터 3박4일 심층 탐방까지 일정 조합이 자유롭습니다.<br/><br/>빅토리아피크에서 내려다보는 야경은 세계 3대 야경 중 하나로 꼽힙니다. 딤섬·완탕면·로스트덕의 광동 미식 문화, 침사추이·센트럴·란콰이퐁의 바 거리, 몽콕·여인거리의 야시장 쇼핑까지 — 도시 여행의 정수가 이 작은 땅에 압축되어 있습니다.<br/><br/>홍콩디즈니랜드(란타우섬)와 오션파크를 보유하고 있어 가족여행 콘텐츠도 풍부하며, 스타페리로 빅토리아 항구를 가로지르는 경험은 어디서도 대체하기 어려운 낭만입니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1532455935509-eb76842cee50?auto=format&fit=crop&q=80&w=1200', alt: '홍콩 빅토리아 항구 야경 스카이라인', caption: '홍콩 빅토리아 항구와 스카이라인 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'bady abbas on Unsplash', imageSourceUrl: 'https://unsplash.com/@bady?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1532455935509-eb76842cee50?auto=format&fit=crop&q=80&w=1200', alt: '홍콩 빅토리아 항구 야경 스카이라인', caption: '홍콩 빅토리아 항구와 스카이라인 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'bady abbas on Unsplash', imageSourceUrl: 'https://unsplash.com/@bady?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '홍콩 비자 안내', html: '한국인은 <strong>90일 무비자</strong> 입국. 입국 카드 사전 작성 권장. 외교부 0404.go.kr에서 출국 전 최신 여행안전 정보를 확인하세요.' },
 

@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `장거리 비행과 호텔 숙면을 위해 안대·귀마개는 필수입니다. 3D 입체 안대 + 소음 차단(SNR 30dB+) 귀마개로 비행 중 또는 호텔에서 깊은 수면 가능.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 안대 귀마개 수면 여행 편의용품 가이드', caption: '여행용 안대·귀마개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1620451978644-841acb416d6f?auto=format&fit=crop&q=80&w=1200', alt: '장거리 비행 안대 귀마개 수면 여행 편의용품 가이드', caption: '여행용 안대·귀마개 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Keisuke Kuribara on Unsplash', imageSourceUrl: 'https://unsplash.com/@ksukkuri?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'mask', text: '안대 — 3D 입체 vs 일반' },
     { type: 'body', html: `<ul>

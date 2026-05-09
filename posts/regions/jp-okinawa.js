@@ -10,7 +10,7 @@ module.exports = {
       caption: '오키나와 해변 일몰 — 아열대 섬의 에메랄드빛 바다',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Roméo A. on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@gronemo?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@gronemo?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '오키나와 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

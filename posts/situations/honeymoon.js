@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `신혼여행은 일생에 한두 번뿐인 만큼 부부의 취향·예산·일정을 종합 고려해야 합니다. <strong>발리·몰디브·다낭·하와이·이탈리아</strong>가 한국인 신혼여행 BEST로 꼽히며, 예산과 여행 스타일에 따라 최적의 선택이 달라집니다.<br/><br/>신혼여행을 처음 계획할 때 가장 먼저 결정해야 할 것은 ① 예산, ② 비행시간 허용 범위, ③ 풀빌라·도시·자연 중 어느 스타일을 원하는지입니다. 이 세 가지만 정하면 목적지는 자연스럽게 좁혀집니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 발리 몰디브 풀빌라 오버워터빌라', caption: '한국인 신혼여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1756363626663-b274c8d73288?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 발리 몰디브 풀빌라 오버워터빌라', caption: '한국인 신혼여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'engin akyurt on Unsplash', imageSourceUrl: 'https://unsplash.com/@enginakyurt?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'best-five', text: '한국인 신혼여행 BEST 5' },
     { type: 'h3', id: 'bali', text: '1. 발리 — 다양성의 끝판왕' },

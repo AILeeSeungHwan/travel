@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `중국은 비자 정책의 변동이 가장 잦은 동아시아 여행지입니다. 출국 전 외교부와 주중 한국대사관 공시를 반드시 재확인하세요. 베이징(자금성·만리장성)·상하이(외탄·예원·디즈니)·시안(병마용)·계림·구이린(카르스트 절경)·청두(판다)·장가계(아바타 절경) 등 도시별 매력이 극명하게 다른 광대한 여행지입니다.<br/><br/>한국에서 가장 가까운 곳 중 하나이지만(베이징 2시간 30분), 방화장성으로 인한 구글·카카오·인스타그램 차단, 알리페이·위챗페이 결제 중심의 현지 환경, 언어 장벽 등 실무 준비가 필요합니다. VPN을 미리 설치하고, 알리페이 외국인 계정 등록을 사전에 완료해 두면 훨씬 편리합니다.<br/><br/>베이징·상하이 2도시 연계는 한국인이 가장 선호하는 중국 여행 패턴이며, 고속철도 한 번으로 두 도시를 연결할 수 있습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&q=80&w=1200', alt: '중국 만리장성 전경', caption: '중국 만리장성', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Edward He on Unsplash', imageSourceUrl: 'https://unsplash.com/@bingham008?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&q=80&w=1200', alt: '중국 만리장성 전경', caption: '중국 만리장성', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Edward He on Unsplash', imageSourceUrl: 'https://unsplash.com/@bingham008?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'risk', title: '중국 비자·안전 주의 (Level A)', html: '한국 일반 여권은 원칙적으로 <strong>비자가 필요</strong>합니다. 단 단체관광 무비자, 일부 도시 환승 무비자(72/144시간), 하이난성 무비자(30일) 등 예외 정책이 수시 변경됩니다. 출국 전 <strong>반드시 주중 대한민국 대사관(overseas.mofa.go.kr/cn-ko) 공지</strong>와 외교부 0404.go.kr에서 최신 정보를 재확인하세요. 일부 국경·소수민족 지역은 여행자제 또는 철수권고 단계일 수 있습니다.' },
 

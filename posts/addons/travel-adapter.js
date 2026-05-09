@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행에서 어댑터는 필수입니다. 국가별 콘센트 타입(A/B/C/F/G 등)이 다르며, 한 어댑터로 여러 국가에 대응하려면 멀티 어댑터를 구매해야 합니다. 최근 USB-C PD 65W 멀티 어댑터로 노트북·휴대폰·태블릿 동시 충전이 가능합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 멀티 어댑터 국가별 콘센트 타입 가이드', caption: '해외여행 멀티 어댑터 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 멀티 어댑터 국가별 콘센트 타입 가이드', caption: '해외여행 멀티 어댑터 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'types', text: '국가별 콘센트 타입' },
     { type: 'body', html: `<ul>

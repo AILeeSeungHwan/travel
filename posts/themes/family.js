@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `아이와 함께하는 가족여행은 단순 휴양이 아닌 안전·위생·키즈 친화·시차 부담 등을 종합 고려해야 합니다. 영유아(0~3세)·유아(4~7세)·초등(8~12세) 연령별로 적합한 목적지가 다릅니다.<br/><br/>본 가이드는 한국인 가족여행 인기 목적지(다낭·오키나와·괌·세부·제주·도쿄디즈니)와 연령별 추천을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1767519633458-27efd4509f11?auto=format&fit=crop&q=80&w=1200', alt: '가족여행 아이와 함께 비치 풀빌라', caption: '가족여행 키즈 리조트', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Hoi An Photographer on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1767519633458-27efd4509f11?auto=format&fit=crop&q=80&w=1200', alt: '가족여행 아이와 함께 비치 풀빌라', caption: '가족여행 키즈 리조트', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Hoi An Photographer on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '가족여행 BEST' },
     { type: 'body', html: `<ul>

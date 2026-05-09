@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `1인 100만 원 예산은 가깝고 가성비 좋은 동아시아·동남아 단기 여행에 적합한 한도입니다. 일본 후쿠오카 1박2일·베트남 다낭 3박4일·태국 방콕 4박5일·대만 타이페이 2박3일이 대표 코스. 본 페이지는 100만 원 예산으로 가능한 BEST 동선을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '1인 100만원 예산 해외여행 가성비 여행', caption: '1인 100만 원 예산 해외여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '1인 100만원 예산 해외여행 가성비 여행', caption: '1인 100만 원 예산 해외여행 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '100만 원 예산 BEST' },
     { type: 'body', html: `<ul>

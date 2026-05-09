@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 캐리어는 기간·여행 스타일·항공사 한도에 맞게 선택해야 합니다. 20인치(기내)·24인치(위탁 표준)·28인치(장기) 3가지 사이즈가 표준이며, 하드케이스(보호력) vs 소프트케이스(가벼움·확장성) 두 타입으로 나뉩니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 캐리어 여행용 가방 사이즈 선택 가이드', caption: '여행 캐리어 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 캐리어 여행용 가방 사이즈 선택 가이드', caption: '여행 캐리어 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'size', text: '사이즈별 추천' },
     { type: 'body', html: `<ul>

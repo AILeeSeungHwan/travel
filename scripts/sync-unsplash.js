@@ -82,7 +82,7 @@ const QUERIES = {
 function withUtm(url) {
   if (!url) return url
   const sep = url.includes('?') ? '&' : '?'
-  return `${url}${sep}utm_source=tripspot&utm_medium=referral`
+  return `${url}${sep}utm_source=travel.ambitstock&utm_medium=referral`
 }
 
 async function searchUnsplash(query) {

@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `문화·역사 여행은 UNESCO 세계유산·고대 도시·박물관·종교 유적 중심의 여행입니다. 이탈리아(56곳·세계 1위), 중국(57곳)·일본(25곳)·프랑스(49곳)·터키(21곳) 등 유산 강자가 인기. 본 가이드는 한국인 문화·역사 여행 BEST 5와 동선을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199?auto=format&fit=crop&q=80&w=1200', alt: '유럽 문화 역사 여행 UNESCO 세계유산', caption: '문화·역사 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1711980012199?auto=format&fit=crop&q=80&w=1200', alt: '유럽 문화 역사 여행 UNESCO 세계유산', caption: '문화·역사 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Siddhesh Mangela on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '문화·역사 BEST 5' },
     { type: 'body', html: `<ul>

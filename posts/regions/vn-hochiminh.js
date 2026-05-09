@@ -10,7 +10,7 @@ module.exports = {
       caption: '호치민(사이공) — 베트남 최대 경제 도시의 역동적인 도심',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Georgios Domouchtsidis on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@geodomou?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@geodomou?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '호치민 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

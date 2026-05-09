@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `대만은 인천에서 2시간 30분 직항으로 도착하는 가장 가까운 동아시아 미식·문화 여행지입니다. 90일 무비자에 한국과 시차 1시간, 영어·중국어 표지가 풍부해 첫 해외여행에도 부담 없습니다.<br/><br/>타이페이 도심 야시장(스린·라오허·닝샤)의 풍부한 미식, 지우펀의 홍등 골목과 센과 치히로 분위기, 스펀 천등 날리기, 단수이 일몰, 베이터우 온천까지 — 1박2일·2박3일 압축 동선으로 모두 즐길 수 있어 직장인 주말 여행 1순위로 자리잡았습니다.<br/><br/>타이페이를 넘어 가오슝(남부 항구도시)·타이중(중부·차밭)·화롄(타로코 협곡)·컨딩(남부 비치)까지 광역별 매력도 충분합니다. 야시장 1끼에 TWD 100~250(약 4,000~10,000원)이라는 놀라운 가성비는 대만 여행의 가장 큰 무기입니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1690966392143-cd2d77fb0e94?auto=format&fit=crop&q=80&w=1200', alt: '대만 타이페이 시내 야경과 타이페이 101', caption: '대만 타이페이 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucas T. on Unsplash', imageSourceUrl: 'https://unsplash.com/@lbob?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1690966392143-cd2d77fb0e94?auto=format&fit=crop&q=80&w=1200', alt: '대만 타이페이 시내 야경과 타이페이 101', caption: '대만 타이페이 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucas T. on Unsplash', imageSourceUrl: 'https://unsplash.com/@lbob?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '대만 비자 안내', html: '한국인은 <strong>90일 무비자</strong> 입국 가능. 여권 유효기간 잔여 6개월 이상 필수. 입국 카드는 출발 전 immigration.gov.tw에서 사전 작성 가능(종이 카드도 기내 배포).' },
 

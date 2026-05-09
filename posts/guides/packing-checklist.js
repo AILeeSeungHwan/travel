@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `짐 싸기는 여행 준비의 마지막 단계이지만 빠뜨리면 현지에서 비싸게 사거나 곤란을 겪습니다. 본 가이드는 일본·동남아·유럽·미국 등 4개 권역별 짐 체크리스트와 항공사 수하물 한도(국적기·LCC), 100ml 액체 규정, 보조배터리 등 항공 보안 규정까지 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 짐 싸기 캐리어 수하물 체크리스트', caption: '해외여행 짐 싸기 체크리스트', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 짐 싸기 캐리어 수하물 체크리스트', caption: '해외여행 짐 싸기 체크리스트', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'essential', text: '필수 — 모든 여행 공통' },
     { type: 'body', html: `<ul>

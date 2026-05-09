@@ -10,7 +10,7 @@ module.exports = {
       caption: '다낭 — 한국인 최애 베트남 여행지, 미케비치와 5성 리조트의 도시',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Anh Nguyen on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@pwign?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@pwign?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '다낭 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

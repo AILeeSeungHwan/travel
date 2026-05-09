@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `효도여행은 부모님 동반 여행으로 일정·이동·식사·숙소 모두 부모님 컨디션에 맞춰야 합니다. 무리한 일정을 피하고, 5성호텔·료칸·온천 같은 안락한 숙소 + 짧은 직항 + 한식 가능 식당이 핵심.<br/><br/>본 가이드는 부모님과 함께하는 1주일 효도여행 추천 목적지(일본 료칸·하와이·국내 5성호텔)와 일정·예산·주의사항을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1727411173314?auto=format&fit=crop&q=80&w=1200', alt: '부모님과 효도여행 료칸 온천', caption: '효도여행 료칸·온천', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: '安 崔士 on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1727411173314?auto=format&fit=crop&q=80&w=1200', alt: '부모님과 효도여행 료칸 온천', caption: '효도여행 료칸·온천', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: '安 崔士 on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '효도여행 BEST' },
     { type: 'body', html: `<ul>

@@ -10,7 +10,7 @@ module.exports = {
       caption: '해운대해수욕장 — 1.8 km 백사장과 뒤로 펼쳐지는 해운대 스카이라인',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: '선호 허 on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/photos/LsemW3YpqFA?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/photos/LsemW3YpqFA?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '부산 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

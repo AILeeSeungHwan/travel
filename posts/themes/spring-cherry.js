@@ -12,7 +12,7 @@ module.exports = {
       imageSource: 'Unsplash',
       imageLicense: 'Unsplash License',
       imageCredit: 'Daniel Bernard on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@nardly?utm_source=tripspot&utm_medium=referral'
+      imageSourceUrl: 'https://unsplash.com/@nardly?utm_source=travel.ambitstock&utm_medium=referral'
     },
     {
       type: 'h2',
@@ -84,7 +84,7 @@ module.exports = {
       imageSource: 'Unsplash',
       imageLicense: 'Unsplash License',
       imageCredit: 'Daniel Bernard on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@nardly?utm_source=tripspot&utm_medium=referral'
+      imageSourceUrl: 'https://unsplash.com/@nardly?utm_source=travel.ambitstock&utm_medium=referral'
     },
     {
       type: 'h2',

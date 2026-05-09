@@ -13,7 +13,7 @@ const tools      = require('../data/tools')
 const compares   = require('../data/compares')
 const addons     = require('../data/addons')
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://travel.ambitstock.com'
 const now = new Date().toISOString().slice(0, 10)
 
 function url(loc, lastmod, priority, changefreq) {

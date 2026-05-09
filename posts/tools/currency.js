@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `여행 환율 계산은 한국은행 ECOS API의 매매기준율을 기준으로 합니다. 실제 환전 환율은 매매기준율 + 수수료(0.5~3%) 더해진 값. 트래블카드는 매매기준율에 가깝게 적용되어 가장 유리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 환율 계산 트래블카드 환전 가이드', caption: '여행 환율 계산기 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 환율 계산 트래블카드 환전 가이드', caption: '여행 환율 계산기 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '계산기 위젯', html: '한국은행 ECOS API 일별 환율 자동 조회. KRW ↔ USD/JPY/EUR/CNY/THB/VND/IDR/SGD/HKD 등. (위젯 후속 추가)' },
 

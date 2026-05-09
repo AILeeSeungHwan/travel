@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `해외여행에서 환전·환율은 비용에 직접 영향을 주는 핵심 항목입니다. 같은 USD 1,000을 어떻게 환전하느냐에 따라 1~5만 원 차이가 나기도 합니다. 본 가이드는 트래블카드·환전소 현금·현지 ATM 3가지 옵션을 비교하고 시기별 절약 팁을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 환전 트래블카드 환율 절약 전략', caption: '해외여행 환전·환율 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 환전 트래블카드 환율 절약 전략', caption: '해외여행 환전·환율 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '환율은 매일 변동', html: '환율은 매일·매시간 변동합니다. 본 가이드의 수치는 작성일 기준 일반적 범위이며, 실제 적용 환율은 한국은행 ECOS(ecos.bok.or.kr) 또는 각 은행/카드사에서 확인하세요.' },
 

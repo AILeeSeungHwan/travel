@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `말레이시아는 인천에서 6시간 30분 직항으로 도착하는 다민족 국가입니다. 쿠알라룸푸르(KL)의 페트로나스 트윈타워와 부킷 빈탕 미식가, 보르네오섬 코타키나발루의 열대 비치와 키나발루산 트레킹, 페낭의 UNESCO 세계유산 조지타운까지 — 도시·자연·문화를 한 번 여행으로 모두 경험할 수 있는 동남아 최고의 올인원 목적지입니다.<br/><br/>말레이·중국·인도 세 문화권이 어우러진 덕분에 음식 다양성이 동남아 최고 수준이고, 90일 무비자에 영어가 잘 통해 첫 동남아 여행자에게도 진입 장벽이 낮습니다. 가성비 역시 좋아 가족 단위 1주일 여행이 부담 없습니다.<br/><br/>쿠알라룸푸르에서 시작해 국내 항공으로 코타키나발루나 페낭을 추가하는 복합 동선이 가장 인기 있습니다. 첫 방문이라면 KL 3박 + 코타키나발루 3박 6박7일 코스를 권장합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1689198920834-1d3e5627b9a2?auto=format&fit=crop&q=80&w=1200', alt: '말레이시아 쿠알라룸푸르 페트로나스 트윈타워 야경', caption: '말레이시아 쿠알라룸푸르 페트로나스 트윈타워', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Mehdi Ben on Unsplash', imageSourceUrl: 'https://unsplash.com/@maytasonmehdi?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1689198920834-1d3e5627b9a2?auto=format&fit=crop&q=80&w=1200', alt: '말레이시아 쿠알라룸푸르 페트로나스 트윈타워 야경', caption: '말레이시아 쿠알라룸푸르 페트로나스 트윈타워', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Mehdi Ben on Unsplash', imageSourceUrl: 'https://unsplash.com/@maytasonmehdi?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '말레이시아 비자', html: '한국인은 <strong>90일 무비자</strong>. MDAC(Malaysia Digital Arrival Card) 사전 등록 필수 — imigresen-online.imi.gov.my 에서 입국 3일 전부터 작성.' },
 

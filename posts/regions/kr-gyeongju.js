@@ -10,7 +10,7 @@ module.exports = {
       caption: '불국사 — 유네스코 세계문화유산, 신라 불교 예술의 정수',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Austin Curtis on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@afcurtis?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@afcurtis?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '경주 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

@@ -4,7 +4,7 @@ module.exports = {
 
     { type: 'intro', html: `한국인 일반 여권 소지자는 베트남 단기 체류 시 <strong>45일 무비자</strong>(2025년 8월부터 적용)로 입국 가능합니다. 45일 초과 또는 다회 입국·취업 등 목적은 E-비자(전자비자) 또는 일반 비자가 필요합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1583863374731-4224cbbc8c36?auto=format&fit=crop&q=80&w=1200', alt: '베트남 여행 45일 무비자 입국 가이드', caption: '베트남 45일 무비자 입국 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Terence Sandeep on Unsplash', imageSourceUrl: 'https://unsplash.com/@terence_sans?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1583863374731-4224cbbc8c36?auto=format&fit=crop&q=80&w=1200', alt: '베트남 여행 45일 무비자 입국 가이드', caption: '베트남 45일 무비자 입국 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Terence Sandeep on Unsplash', imageSourceUrl: 'https://unsplash.com/@terence_sans?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>

@@ -1,249 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR">
   <title>트립스팟</title>
-  <link href="https://tripspot.ambitstock.com/" />
-  <link rel="self" type="application/atom+xml" href="https://tripspot.ambitstock.com/atom.xml" />
-  <id>https://tripspot.ambitstock.com/</id>
-  <updated>2026-05-09T08:01:33.634Z</updated>
+  <link href="https://travel.ambitstock.com/" />
+  <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
+  <id>https://travel.ambitstock.com/</id>
+  <updated>2026-05-09T19:11:21.028Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
   <entry>
     <title><![CDATA[JW 메리어트 서울 완전 가이드 — 강남 5성·스파·다이닝]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/jw-marriott-seoul/" />
-    <id>https://tripspot.ambitstock.com/hotels/jw-marriott-seoul/</id>
+    <link href="https://travel.ambitstock.com/hotels/jw-marriott-seoul/" />
+    <id>https://travel.ambitstock.com/hotels/jw-marriott-seoul/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[강남 도곡역 직결 5성호텔 JW 메리어트 서울. 스파 바이 JW, 8개 다이닝, Marriott Bonvoy 혜택과 객실 타입·예약 꿀팁.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[워커힐 서울 완전 가이드 — 한강뷰·카지노·아쿠아월드]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/walkerhill-seoul/" />
-    <id>https://tripspot.ambitstock.com/hotels/walkerhill-seoul/</id>
+    <link href="https://travel.ambitstock.com/hotels/walkerhill-seoul/" />
+    <id>https://travel.ambitstock.com/hotels/walkerhill-seoul/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[광진구 아차산 한강변 리조트형 5성호텔 워커힐. 한강 파노라마, 아쿠아월드, 외국인 카지노, 아차산 트레킹 직결 가이드.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[파라다이스 호텔 부산 완전 가이드 — 해운대 5성 오션뷰]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/paradise-busan/" />
-    <id>https://tripspot.ambitstock.com/hotels/paradise-busan/</id>
+    <link href="https://travel.ambitstock.com/hotels/paradise-busan/" />
+    <id>https://travel.ambitstock.com/hotels/paradise-busan/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[해운대해수욕장 정면 5성호텔 파라다이스 부산. 전 객실 오션뷰, 루프탑 야외수영장, 외국인 카지노와 예약 꿀팁.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[롯데호텔 부산 완전 가이드 — 광안대교뷰 5성 시티호텔]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/lotte-busan/" />
-    <id>https://tripspot.ambitstock.com/hotels/lotte-busan/</id>
+    <link href="https://travel.ambitstock.com/hotels/lotte-busan/" />
+    <id>https://travel.ambitstock.com/hotels/lotte-busan/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[부산 부전역 직결 5성호텔 롯데 부산. 광안대교·부산항 야경, 롯데백화점 직결 쇼핑, L.포인트 적립·사용 가이드.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[발리 아야나 리조트 완전 가이드 — 짐바란 절벽 풀·스파]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/ayana-bali/" />
-    <id>https://tripspot.ambitstock.com/hotels/ayana-bali/</id>
+    <link href="https://travel.ambitstock.com/hotels/ayana-bali/" />
+    <id>https://travel.ambitstock.com/hotels/ayana-bali/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[발리 짐바란 절벽 77헥타르 럭셔리 리조트 아야나. 세계 최초 암반 위 록바, 8,000㎡ 아쿠아 스파, 12개 수영장, 풀빌라 가이드.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[마리나 베이 샌즈 완전 가이드 — 싱가포르 상징 루프탑 풀]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/marina-bay-sands/" />
-    <id>https://tripspot.ambitstock.com/hotels/marina-bay-sands/</id>
+    <link href="https://travel.ambitstock.com/hotels/marina-bay-sands/" />
+    <id>https://travel.ambitstock.com/hotels/marina-bay-sands/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[싱가포르 랜드마크 마리나 베이 샌즈. 57층 인피니티 풀, 동남아 최대 카지노, 200개+ 럭셔리 쇼핑, 셀럽 레스토랑 예약 꿀팁.]]></summary>
   </entry>
   <entry>
+    <title><![CDATA[벚꽃 여행 추천 — 국내외 벚꽃 명소·숙소 가이드]]></title>
+    <link href="https://travel.ambitstock.com/themes/spring-cherry/" />
+    <id>https://travel.ambitstock.com/themes/spring-cherry/</id>
+    <updated>2026-05-08T15:00:00.000Z</updated>
+    <category term="테마" />
+    <summary><![CDATA[국내외 벚꽃 명소와 숙소 가이드. 경주·진해·여의도·교토·오사카 벚꽃 시즌 일정.]]></summary>
+  </entry>
+  <entry>
     <title><![CDATA[커플 기념일 여행]]></title>
-    <link href="https://tripspot.ambitstock.com/situations/couple-anniversary/" />
-    <id>https://tripspot.ambitstock.com/situations/couple-anniversary/</id>
+    <link href="https://travel.ambitstock.com/situations/couple-anniversary/" />
+    <id>https://travel.ambitstock.com/situations/couple-anniversary/</id>
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="상황별" />
     <summary><![CDATA[국내외 로맨틱 여행지와 호텔 추천]]></summary>
   </entry>
   <entry>
     <title><![CDATA[파르나스 호텔 강남 완전 가이드 — COEX 직결 비즈니스 5성]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/parnas-gangnam/" />
-    <id>https://tripspot.ambitstock.com/hotels/parnas-gangnam/</id>
+    <link href="https://travel.ambitstock.com/hotels/parnas-gangnam/" />
+    <id>https://travel.ambitstock.com/hotels/parnas-gangnam/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[서울 강남 COEX몰 직결 5성호텔 파르나스. 야외수영장, 스파, 피트니스, 전시·컨벤션 접근성과 객실 타입·시설 정보.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[제주 호텔 가격대별 추천 — 10만원 이하·10~20만·20~50만·럭셔리]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/jeju-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/jeju-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/jeju-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/jeju-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[제주 호텔을 4개 가격대로 나눠 추천 — 가성비 10만원 이하부터 풀빌라·5성 럭셔리까지. 시즌별 예약 전략 포함.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[서울 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·럭셔리]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/seoul-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/seoul-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/seoul-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/seoul-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[서울 호텔을 4개 가격대로 나눠 추천 — 강남·명동·홍대·용산 지역별 가성비부터 5성 스위트까지.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[부산 호텔 가격대별 추천 — 7만원 이하·해운대 중급·럭셔리 리조트]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/busan-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/busan-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/busan-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/busan-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[부산 호텔을 4개 가격대로 나눠 추천 — 남포동 가성비부터 해운대 시그니엘·파라다이스 럭셔리까지. 여름 예약 전략 포함.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[다낭 호텔 가격대별 추천 — 5만원 이하·미케비치 중급·풀빌라 럭셔리]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/danang-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/danang-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/danang-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/danang-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[다낭 호텔을 4개 가격대로 나눠 추천 — 시내 가성비부터 인터컨티넨탈 선반도·프리미어빌리지 풀빌라까지.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[발리 호텔 가격대별 추천 — 5만원 이하·중급 빌라·풀빌라 럭셔리]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/bali-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/bali-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/bali-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/bali-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[발리 호텔을 4개 가격대로 나눠 추천 — 우붓 가성비부터 아만다리·포시즌스 사얀 풀빌라까지. 지역별 선택 가이드 포함.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[도쿄 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·아만 럭셔리]]></title>
-    <link href="https://tripspot.ambitstock.com/compare/tokyo-hotels-by-price/" />
-    <id>https://tripspot.ambitstock.com/compare/tokyo-hotels-by-price/</id>
+    <link href="https://travel.ambitstock.com/compare/tokyo-hotels-by-price/" />
+    <id>https://travel.ambitstock.com/compare/tokyo-hotels-by-price/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[도쿄 호텔을 4개 가격대로 나눠 추천 — 신주쿠 비즈니스호텔부터 아만·만다린·불가리 럭셔리까지. 벚꽃 시즌 예약 전략 포함.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[장거리 비행 편의용품 완전 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/addons/long-haul-flight-comfort-kit/" />
-    <id>https://tripspot.ambitstock.com/addons/long-haul-flight-comfort-kit/</id>
+    <link href="https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/" />
+    <id>https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/</id>
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="여행용품" />
     <summary><![CDATA[]]></summary>
   </entry>
   <entry>
     <title><![CDATA[서울신라호텔 완전 가이드 — 도심 5성 럭셔리·신라멤버스]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/seoul-shilla/" />
-    <id>https://tripspot.ambitstock.com/hotels/seoul-shilla/</id>
+    <link href="https://travel.ambitstock.com/hotels/seoul-shilla/" />
+    <id>https://travel.ambitstock.com/hotels/seoul-shilla/</id>
     <updated>2026-05-06T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[남산 자락 도심 5성호텔 서울신라. 야외수영장, 스파, 신라멤버스 라운지, 면세점 인접 위치와 객실 타입·시설 정보.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[제주신라호텔 — 중문관광단지 5성 가족 호캉스 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/shilla-jeju/" />
-    <id>https://tripspot.ambitstock.com/hotels/shilla-jeju/</id>
+    <link href="https://travel.ambitstock.com/hotels/shilla-jeju/" />
+    <id>https://travel.ambitstock.com/hotels/shilla-jeju/</id>
     <updated>2026-04-27T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[중문관광단지 대표 5성호텔 제주신라. 야외수영장(인피니티), 키즈클럽, 한식·일식·뷔페 다이닝, 중문해변 위치와 객실 타입·시설 정보.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[롯데호텔 제주 — 야외수영장·돌고래쇼·중문 가족 리조트]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/lotte-jeju/" />
-    <id>https://tripspot.ambitstock.com/hotels/lotte-jeju/</id>
+    <link href="https://travel.ambitstock.com/hotels/lotte-jeju/" />
+    <id>https://travel.ambitstock.com/hotels/lotte-jeju/</id>
     <updated>2026-04-27T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[중문관광단지 5성호텔 롯데 제주. 야외수영장(가든풀), 돌고래쇼, 카지노, 한식·일식·중식 다이닝과 키즈프로그램 가이드.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[인터컨티넨탈 다낭 선 페닌술라 — 베트남 신혼·럭셔리 리조트]]></title>
-    <link href="https://tripspot.ambitstock.com/hotels/intercontinental-danang/" />
-    <id>https://tripspot.ambitstock.com/hotels/intercontinental-danang/</id>
+    <link href="https://travel.ambitstock.com/hotels/intercontinental-danang/" />
+    <id>https://travel.ambitstock.com/hotels/intercontinental-danang/</id>
     <updated>2026-04-27T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[다낭 선차반도 절벽에 자리한 럭셔리 5성리조트. 4단 비치 풀, 미슐랭 다이닝(라메종 1888), 빌라형 객실로 신혼·기념일 여행 1순위.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[한국 여행 — 제주·강원·부산·경주 핵심 지역 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/kr/" />
-    <id>https://tripspot.ambitstock.com/countries/kr/</id>
+    <link href="https://travel.ambitstock.com/countries/kr/" />
+    <id>https://travel.ambitstock.com/countries/kr/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[국내 여행의 모든 것. 제주·강원·부산·경주·전남 등 광역별 추천 일정과 현지 음식·교통까지 한국관광공사 TourAPI 출처로 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[일본 여행 — 비자·교통·도쿄·오사카·후쿠오카·오키나와 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/jp/" />
-    <id>https://tripspot.ambitstock.com/countries/jp/</id>
+    <link href="https://travel.ambitstock.com/countries/jp/" />
+    <id>https://travel.ambitstock.com/countries/jp/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[한국인 최대 해외여행지 일본. 90일 무비자 입국, JR패스, 주요 광역(도쿄·오사카·후쿠오카·오키나와·홋카이도) 핵심 스팟과 료칸·온천 추천을 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[베트남 여행 — 다낭·호치민·하노이·푸꾸옥 가족여행 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/vn/" />
-    <id>https://tripspot.ambitstock.com/countries/vn/</id>
+    <link href="https://travel.ambitstock.com/countries/vn/" />
+    <id>https://travel.ambitstock.com/countries/vn/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[가족여행·풀빌라 수요 1위 다낭, 호치민·하노이 도시 여행, 푸꾸옥 리조트 등 베트남 광역별 추천과 비자·환율·교통 정보를 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[태국 여행 — 방콕·푸켓·치앙마이 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/th/" />
-    <id>https://tripspot.ambitstock.com/countries/th/</id>
+    <link href="https://travel.ambitstock.com/countries/th/" />
+    <id>https://travel.ambitstock.com/countries/th/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[90일 무비자, 6시간 직항. 방콕 도시 여행, 푸켓·끄라비 비치, 치앙마이 한 달 살기 등 태국 광역별 추천을 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[대만 여행 — 타이페이·지우펀·가오슝 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/tw/" />
-    <id>https://tripspot.ambitstock.com/countries/tw/</id>
+    <link href="https://travel.ambitstock.com/countries/tw/" />
+    <id>https://travel.ambitstock.com/countries/tw/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[90일 무비자, 2.5시간 직항. 타이페이 야시장, 지우펀, 화롄, 가오슝 등 대만 핵심 도시 추천과 교통·통화·음식 가이드를 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[싱가포르 여행 — 마리나베이·센토사·차이나타운 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/sg/" />
-    <id>https://tripspot.ambitstock.com/countries/sg/</id>
+    <link href="https://travel.ambitstock.com/countries/sg/" />
+    <id>https://travel.ambitstock.com/countries/sg/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[깨끗하고 안전한 도시국가. 마리나베이샌즈·가든스바이더베이·센토사 등 싱가포르 핵심 스팟과 가족여행·미식·쇼핑 추천을 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[홍콩 여행 — 센트럴·침사추이·란콰이퐁 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/hk/" />
-    <id>https://tripspot.ambitstock.com/countries/hk/</id>
+    <link href="https://travel.ambitstock.com/countries/hk/" />
+    <id>https://travel.ambitstock.com/countries/hk/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[3.5시간 직항, 90일 무비자. 빅토리아피크·심포니오브라이트·딤섬 등 홍콩 핵심 추천과 교통·환율·문화 가이드를 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[필리핀 여행 — 세부·보라카이·팔라완 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/ph/" />
-    <id>https://tripspot.ambitstock.com/countries/ph/</id>
+    <link href="https://travel.ambitstock.com/countries/ph/" />
+    <id>https://travel.ambitstock.com/countries/ph/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[30일 무비자, 4시간 직항. 세부·보라카이·팔라완 등 비치 리조트 추천과 호핑투어·다이빙·풀빌라 정보를 정리합니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[말레이시아 여행 — 쿠알라룸푸르·코타키나발루 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/my/" />
-    <id>https://tripspot.ambitstock.com/countries/my/</id>
+    <link href="https://travel.ambitstock.com/countries/my/" />
+    <id>https://travel.ambitstock.com/countries/my/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[90일 무비자, 6시간 직항. 페트로나스 트윈타워·코타키나발루 비치 리조트 추천과 다인종 문화·미식 가이드.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[인도네시아 여행 — 발리·자카르타 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/id/" />
-    <id>https://tripspot.ambitstock.com/countries/id/</id>
+    <link href="https://travel.ambitstock.com/countries/id/" />
+    <id>https://travel.ambitstock.com/countries/id/</id>
     <updated>2026-04-24T15:00:00.000Z</updated>
     <category term="국가" />
     <summary><![CDATA[발리(우붓·꾸따·세미냐크), 자카르타 등 인도네시아 핵심 지역 추천과 신혼여행·풀빌라·서핑 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[중국 여행 — 베이징·상하이·시안·계림 가이드]]></title>
-    <link href="https://tripspot.ambitstock.com/countries/cn/" />
-    <id>https://tripspot.ambitstock.com/countries/cn/</id>
-    <updated>2026-04-24T15:00:00.000Z</updated>
-    <category term="국가" />
-    <summary><![CDATA[비자 정책 변동 빈도가 높음. 베이징·상하이·시안·계림 등 중국 핵심 도시 추천과 비자·통화·교통 가이드를 출국 전 재확인 단서와 함께 정리합니다.]]></summary>
   </entry>
 </feed>

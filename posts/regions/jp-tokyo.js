@@ -10,7 +10,7 @@ module.exports = {
       caption: '시부야 스크램블 교차로 — 도쿄를 상징하는 세계 최대 교차로',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Jezael Melgoza on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@jezar?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@jezar?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '도쿄 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

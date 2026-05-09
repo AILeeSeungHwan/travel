@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `쇼핑 여행은 면세·아울렛·드럭스토어·기념품·명품 구매가 핵심. 도쿄·오사카(돈키호테·드럭스토어), 홍콩(IFC·하버시티), 방콕(시암 파라곤·짜뚜짝), 싱가포르(오차드·머스타파)이 주요 목적지. 본 가이드는 한국인 쇼핑 여행 BEST 4와 면세 한도·환급(Tax-Free) 절차를 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1575291930020?auto=format&fit=crop&q=80&w=1200', alt: '도쿄 일본 쇼핑 면세 드럭스토어 여행', caption: '한국인 인기 쇼핑 여행지', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'AR on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1575291930020?auto=format&fit=crop&q=80&w=1200', alt: '도쿄 일본 쇼핑 면세 드럭스토어 여행', caption: '한국인 인기 쇼핑 여행지', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'AR on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '쇼핑 BEST 4' },
     { type: 'body', html: `<ul>

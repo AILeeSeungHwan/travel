@@ -8,7 +8,7 @@ import { SideAd } from './StickySideAds'
 import TopAdRow from './TopAdRow'
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://travel.ambitstock.com'
 const SITE_DESC = '국내 50% / 해외 50% 균형 — 국가 → 지역 → 스팟 3단계 허브와 호텔·여행 가이드·계산기를 한 곳에서. 한국관광공사·외교부 출처를 우선합니다.'
 const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || ''
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || ''
@@ -164,7 +164,7 @@ export default function Layout({ children, title, description, topAd = true, sid
           </div>
         </div>
         <div style={{ borderTop:'1px solid #e2e8f0', padding:'14px 20px', textAlign:'center', fontSize:12, color:'#94a3b8' }}>
-          © {new Date().getFullYear()} {SITE_NAME} · tripspot.ambitstock.com
+          © {new Date().getFullYear()} {SITE_NAME} · travel.ambitstock.com
         </div>
       </footer>
 

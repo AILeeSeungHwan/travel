@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `싱가포르는 인천에서 6시간 30분 직항으로 도착하는 안전하고 효율적인 도시국가입니다. 90일 무비자에 영어 공용, 세계 최고 수준의 치안과 청결, 정확한 MRT 교통망 덕분에 첫 해외여행부터 가족·신혼·비즈니스 출장까지 어떤 여행 스타일에도 완벽하게 어울립니다.<br/><br/>마리나베이샌즈의 인피니티풀(투숙객 전용)과 야경, 가든스바이더베이의 슈퍼트리 야간 조명 쇼, 센토사섬 유니버설스튜디오, 오차드로드 쇼핑까지 — 3박4일이면 핵심을 모두 압축할 수 있습니다. 창이공항 주얼(세계 최대 실내 폭포)은 환승 중에도 들를 수 있어 싱가포르를 경유지로 선택하는 이유가 됩니다.<br/><br/>호커센터(야외 푸드코트)에서 SGD 4~8로 미슐랭 가이드 메뉴를 즐길 수 있는 나라, 다민족 문화가 차이나타운·리틀인디아·아랍 스트리트에서 각각 살아 숨쉬는 싱가포르는 작지만 크게 경험할 수 있는 도시입니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '싱가포르 마리나베이샌즈와 가든스바이더베이 야경', caption: '싱가포르 마리나베이 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1686455746285-4a921419bc6c?auto=format&fit=crop&q=80&w=1200', alt: '싱가포르 마리나베이샌즈와 가든스바이더베이 야경', caption: '싱가포르 마리나베이 야경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'VacationTravelInsider.com on Unsplash', imageSourceUrl: 'https://unsplash.com/@vacationtravelinsider?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '싱가포르 비자 안내', html: '한국인은 <strong>90일 무비자</strong> 입국 가능. SG Arrival Card(eservices.ica.gov.sg/sgarrivalcard/) 사전 등록 필수 — 입국 3일 전부터 작성. 무료이며 모바일로 5분 내 완료 가능.' },
 

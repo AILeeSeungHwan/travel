@@ -62,16 +62,13 @@ const themes = [
     description: '디지털 노마드 워케이션·한 달 살기 1순위 — 치앙마이·발리(우붓)·세부·다낭. 인터넷·코워킹·비자·생활비 가이드.',
     summary: '치앙마이·발리·세부·다낭 — 코워킹·비자·생활비 비교.',
     bestCountrySlugs: ['th', 'id', 'ph', 'vn'],
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B', tags: ['워케이션','한달살기'] },,
-  {
-    id: 'TH012',
-    slug: 'spring-cherry',
-    title: '벚꽃 여행',
-    description: '국내외 벚꽃 명소와 숙소 가이드',
-    tags: ["벚꽃","봄여행","사쿠라"],
-    publishedAt: '2026-05-09',
-    updatedAt: '2026-05-09'
-  }
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'B', tags: ['워케이션','한달살기'] },
+  { id: 'TH012', slug: 'spring-cherry', name: '벚꽃 여행', icon: '🌸', category: 'theme',
+    title: '벚꽃 여행 추천 — 국내외 벚꽃 명소·숙소 가이드',
+    description: '국내외 벚꽃 명소와 숙소 가이드. 경주·진해·여의도·교토·오사카 벚꽃 시즌 일정.',
+    summary: '경주·진해·교토·오사카 벚꽃 명소와 숙소 추천.',
+    bestCountrySlugs: ['kr', 'jp'],
+    publishedAt: '2026-05-09', updatedAt: '2026-05-09', ymylLevel: 'C', tags: ['벚꽃','봄여행','사쿠라'] }
 ]
 
 module.exports = themes

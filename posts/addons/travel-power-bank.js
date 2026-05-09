@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `보조배터리는 여행 중 휴대폰·노트북 충전에 필수입니다. 항공 안전 규정상 100Wh(약 27,000mAh) 이하만 자유롭게 기내 반입 가능, 100~160Wh는 항공사 승인 필요, 160Wh 초과는 금지.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 보조배터리 용량 항공 규정 가이드', caption: '여행용 보조배터리 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1528606323703-f879e36b2eb4?auto=format&fit=crop&q=80&w=1200', alt: '해외여행 보조배터리 용량 항공 규정 가이드', caption: '여행용 보조배터리 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jordan Opel on Unsplash', imageSourceUrl: 'https://unsplash.com/@opeleye?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'spec', text: '용량별 추천' },
     { type: 'body', html: `<ul>

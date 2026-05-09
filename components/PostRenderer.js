@@ -15,7 +15,7 @@ import {
   webApplicationSchema, howToSchema, productReviewSchema, itemListSchema
 } from '../lib/jsonld'
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://tripspot.ambitstock.com'
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://travel.ambitstock.com'
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || '트립스팟'
 
 const PREFIX = {

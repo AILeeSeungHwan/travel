@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `풀빌라는 프라이빗 풀이 딸린 단독·연립 빌라형 숙소로, 가족·신혼·기념일 여행에 인기가 폭발적으로 늘고 있습니다. 1박 25~60만 원(국내) / USD 150~600(해외)로 5성 호텔 가격에 더 넓은 공간·전용 풀·바베큐 시설을 누릴 수 있어 가성비가 매우 좋습니다.<br/><br/>본 가이드는 다낭·푸꾸옥·발리·제주 등 한국인 인기 풀빌라 목적지의 베스트 빌라와 가격대·시즌·인근 스팟을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1728049006562-236e5b0dddea?auto=format&fit=crop&q=80&w=1200', alt: '발리 풀빌라 프라이빗 수영장 리조트', caption: '발리 풀빌라 프라이빗 풀', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Antonio Araujo on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1728049006562-236e5b0dddea?auto=format&fit=crop&q=80&w=1200', alt: '발리 풀빌라 프라이빗 수영장 리조트', caption: '발리 풀빌라 프라이빗 풀', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Antonio Araujo on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '풀빌라 BEST 목적지' },
     { type: 'body', html: `<ul>

@@ -10,7 +10,7 @@ module.exports = {
       caption: '홋카이도 겨울 설경 — 눈 덮인 신사 도리이',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Cuvii on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@cuvii?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@cuvii?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '홋카이도 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

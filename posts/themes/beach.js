@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `비치 휴양은 한국인 동남아 여행의 핵심 콘텐츠입니다. 발리·푸켓·세부·푸꾸옥·다낭·오키나와 등 권역마다 비치 색채가 다르며, 시즌·해류·풀빌라·5성호텔 조합이 핵심.<br/><br/>본 가이드는 한국인 인기 비치 6곳의 시즌·해류·호핑투어·풀빌라 정보를 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1714412192114-61dca8f15f68?auto=format&fit=crop&q=80&w=1200', alt: '동남아 비치 휴양 풀빌라 수영장', caption: '한국인 인기 비치 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Bernd Dittrich on Unsplash', imageSourceUrl: 'https://unsplash.com/@bernd_dittrich?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1714412192114-61dca8f15f68?auto=format&fit=crop&q=80&w=1200', alt: '동남아 비치 휴양 풀빌라 수영장', caption: '한국인 인기 비치 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Bernd Dittrich on Unsplash', imageSourceUrl: 'https://unsplash.com/@bernd_dittrich?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '비치 BEST 6' },
     { type: 'body', html: `<ul>

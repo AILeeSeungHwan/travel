@@ -10,7 +10,7 @@ module.exports = {
       caption: '하노이 올드쿼터 — 36거리의 활기찬 일상',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Elliot Andrews on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@elliot_ra8?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@elliot_ra8?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '하노이 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

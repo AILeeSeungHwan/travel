@@ -4,7 +4,7 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권 소지자가 중국에 입국할 때는 일반적으로 <strong>비자 신청이 필요</strong>합니다. 다만 다음 예외 정책이 운영 중입니다(상시 변경): 단체 무비자, 일부 도시 환승 무비자(72/144시간), 하이난성 무비자(30일).` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&q=80&w=1200', alt: '중국 여행 비자 신청 방법 안내', caption: '중국 비자 신청 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Edward He on Unsplash', imageSourceUrl: 'https://unsplash.com/@bingham008?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?auto=format&fit=crop&q=80&w=1200', alt: '중국 여행 비자 신청 방법 안내', caption: '중국 비자 신청 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Edward He on Unsplash', imageSourceUrl: 'https://unsplash.com/@bingham008?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'summary', text: '핵심 요약' },
     { type: 'body', html: `<ul>

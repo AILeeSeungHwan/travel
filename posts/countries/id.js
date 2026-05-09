@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `인도네시아 발리는 한국인 신혼여행·힐링 여행 1순위 목적지 중 하나입니다. 인천에서 7시간 30분 직항(또는 KL·싱가포르 경유), 도착비자 30일, 풍부한 풀빌라·오버워터빌라·요가 리트리트까지 — 신혼·기념일·디지털 노마드·한 달 살기 모두에게 매력적인 섬입니다.<br/><br/>발리는 우붓(전통·문화·요가), 꾸따·세미냐크(비치·나이트라이프·쇼핑), 누사두아(럭셔리 리조트·가족), 짐바란(선셋·시푸드), 울루와뚜(절벽 사원·서핑·럭셔리 빌라) 등 권역별 색채가 분명합니다. 신혼 여행이라면 우붓 2박 + 비치 권역 3박 동선이 가장 인기입니다.<br/><br/>동남아에서 한국인 선호도가 가장 높은 여행지 중 하나로, 한국인 운영 여행사·맛집·게스트하우스가 풍부해 첫 해외여행자도 편리하게 여행할 수 있습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1643718220983-d6499832d422?auto=format&fit=crop&q=80&w=1200', alt: '인도네시아 발리 논밭 라이스 테라스 풍경', caption: '발리 테가랄랑 라이스 테라스', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lesya Soboleva on Unsplash', imageSourceUrl: 'https://unsplash.com/@lesyasoboleva?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1643718220983-d6499832d422?auto=format&fit=crop&q=80&w=1200', alt: '인도네시아 발리 논밭 라이스 테라스 풍경', caption: '발리 테가랄랑 라이스 테라스', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lesya Soboleva on Unsplash', imageSourceUrl: 'https://unsplash.com/@lesyasoboleva?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'risk', title: '인도네시아 비자 안내', html: '한국인은 <strong>도착비자(VOA) 30일</strong> 발급 가능(USD 35). 또는 e-VOA 사전 신청(molina.imigrasi.go.id). 1회 연장 가능(30일 추가, USD 35). 여권 잔여 6개월 + 출국 항공권 증빙 필수. 발리 응우라라이공항 도착 시 VOA 줄이 길 수 있으니 e-VOA 사전 신청 권장.' },
 

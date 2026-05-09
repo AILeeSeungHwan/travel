@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `신혼여행은 부부가 결혼 직후 떠나는 여행으로, 일생에 한두 번뿐인 만큼 목적지·예산·일정·기념일 옵션이 평생 추억으로 남습니다. 한국인 신혼여행 1위는 발리(인도네시아), 2위 다낭(베트남), 3위 몰디브, 4위 하와이, 5위 푸꾸옥(베트남) 순입니다(2024 트렌드).<br/><br/>본 가이드는 신혼여행 인기 5개 목적지의 시즌·예산·풀빌라·오버워터빌라·기념일 옵션을 비교해 부부의 선호에 맞는 선택을 돕습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1568050878862-c8b4bdc99bc3?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 오버워터빌라 몰디브 수영장', caption: '신혼여행 오버워터빌라', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joyful on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1568050878862-c8b4bdc99bc3?auto=format&fit=crop&q=80&w=1200', alt: '신혼여행 오버워터빌라 몰디브 수영장', caption: '신혼여행 오버워터빌라', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Joyful on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top5', text: '신혼여행 BEST 5' },
     { type: 'body', html: `<ul>

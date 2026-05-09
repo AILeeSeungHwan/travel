@@ -10,7 +10,7 @@ module.exports = {
       caption: '도톤보리 야경 — 오사카를 상징하는 글리코 러닝맨 사인',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Laura Barry on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@laurabarry?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@laurabarry?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '오사카 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

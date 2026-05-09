@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `미국은 인천에서 11~14시간 직항으로 도착하는 광활한 대륙 국가입니다. ESTA 사전승인으로 90일 무비자 입국이 가능하며, 하와이·뉴욕·로스앤젤레스·샌프란시스코·라스베이거스·올랜도까지 도시·자연·테마파크 모든 색채를 갖춘 여행지입니다.<br/><br/>한국인 신혼여행·가족여행에서 하와이(와이키키·마우이)가 압도적 1위를 차지하며, 라스베이거스·그랜드캐년 연계 서부 여행과 뉴욕·워싱턴 동부 여행도 인기입니다. 올랜도의 디즈니월드·유니버설은 가족 테마파크 여행의 최종 목적지로 꼽힙니다.<br/><br/>미국은 의료비가 세계 최고 수준이라 여행자보험(의료 USD 100,000 이상 보장)이 사실상 필수입니다. 팁 문화(식당 18~22%, 호텔·택시 등)도 미리 숙지해두면 여행이 한결 편합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1200', alt: '미국 뉴욕 맨해튼 스카이라인 야경', caption: '미국 뉴욕 맨해튼 스카이라인', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jonathan Roger on Unsplash', imageSourceUrl: 'https://unsplash.com/@jonathanroger?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1200', alt: '미국 뉴욕 맨해튼 스카이라인 야경', caption: '미국 뉴욕 맨해튼 스카이라인', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Jonathan Roger on Unsplash', imageSourceUrl: 'https://unsplash.com/@jonathanroger?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'risk', title: 'ESTA 필수·체류 조건 (Level A)', html: '한국 일반 여권은 <strong>ESTA 사전승인 필수</strong>(USD 21, esta.cbp.dhs.gov). 90일 단기 체류 한정 무비자. 입국 시 항공권·숙소 증빙·체류 목적 명확 답변 필요. 일부 도시 야간 외교부 여행유의 — 출국 전 0404.go.kr 확인. <strong>의료비 매우 고가</strong> — 여행자보험(의료 USD 100,000+) 가입 강력 권장.' },
 

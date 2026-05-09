@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `필리핀은 인천에서 4~4시간 30분 직항으로 도착하는 7,641개 섬의 비치 휴양지입니다. 30일 무비자에 영어가 공용어 중 하나로 의사소통이 쉽고, 세부·보라카이·팔라완 등 권역마다 비치·다이빙·풀빌라가 풍부합니다.<br/><br/>호핑투어에서 산호초와 바다거북을 만나고, 오슬롭에서 고래상어와 함께 스노클링을 하며, 엘니도의 석회암 절벽 사이를 카약으로 누빌 수 있습니다. 한국인이 운영하는 여행사·식당·게스트하우스가 풍부해 첫 동남아 여행자도 편리하게 즐길 수 있습니다.<br/><br/>다만 남부 민다나오 일부 지역(술루·마라위 등)은 외교부 여행자제·철수권고 지역입니다. 핵심 관광지인 세부·보라카이·팔라완은 안전하지만, 출국 전 반드시 0404.go.kr에서 최신 안전 정보를 확인하세요.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1694442948802-00beebcf6448?auto=format&fit=crop&q=80&w=1200', alt: '필리핀 팔라완 엘니도 석회암 절벽 바다', caption: '필리핀 팔라완 엘니도 절경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Mario von Rotz on Unsplash', imageSourceUrl: 'https://unsplash.com/@mariovr?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1694442948802-00beebcf6448?auto=format&fit=crop&q=80&w=1200', alt: '필리핀 팔라완 엘니도 석회암 절벽 바다', caption: '필리핀 팔라완 엘니도 절경', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Mario von Rotz on Unsplash', imageSourceUrl: 'https://unsplash.com/@mariovr?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'risk', title: '필리핀 비자·안전 안내', html: '한국인은 <strong>30일 무비자</strong> 입국. 30일 초과 시 이민국에서 연장(29일 추가, PHP 3,030). 여권 잔여 6개월 + 왕복 항공권 필수. <strong>남부 민다나오 일부 지역 여행자제·철수권고</strong> — 핵심 관광지(세부·보라카이·팔라완)는 일반 여행안전 등급이나 출국 전 외교부 0404.go.kr 재확인.' },
 

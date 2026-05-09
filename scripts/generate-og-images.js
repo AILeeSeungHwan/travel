@@ -25,7 +25,7 @@ const ENTITIES = {
 }
 
 const SITE_NAME = '트립스팟'
-const SITE_URL = 'tripspot.ambitstock.com'
+const SITE_URL = 'travel.ambitstock.com'
 
 function escapeXml(s) {
   return String(s || '').replace(/[<>&"']/g, c => ({ '<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&apos;' }[c]))

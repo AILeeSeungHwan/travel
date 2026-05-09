@@ -4,7 +4,7 @@ module.exports = {
 
     { type: 'intro', html: `한국 일반 여권으로 입국 가능한 국가별 비자 요건을 정리합니다. 무비자·도착비자·E-비자·일반비자 등 카테고리별로 분류했습니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '한국 여권 해외여행 비자 체커 국가별 입국 요건', caption: '한국 여권 국가별 비자 요건 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1628586268632-51b8418a5863?auto=format&fit=crop&q=80&w=1200', alt: '한국 여권 해외여행 비자 체커 국가별 입국 요건', caption: '한국 여권 국가별 비자 요건 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Lucine Moone on Unsplash', imageSourceUrl: 'https://unsplash.com/@lcn_moone?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'info', title: '계산기 위젯', html: '국가 입력 → 비자 요건·체류 기간·신청 절차 자동 표시. 출국 전 재확인 필수.' },
 

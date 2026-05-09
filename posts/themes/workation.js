@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `워케이션·한 달 살기는 일과 휴양을 결합한 장기 체류 형태로 디지털 노마드·재택근무·프리랜서에게 인기. 치앙마이(태국)·발리 우붓(인도네시아)·세부(필리핀)·다낭(베트남)이 한국인 한 달 살기 BEST 4. 본 가이드는 권역별 비용·코워킹·비자·인터넷·생활 팁을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1649573650319?auto=format&fit=crop&q=80&w=1200', alt: '발리 치앙마이 워케이션 한달살기 코워킹스페이스', caption: '워케이션·한 달 살기', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Dung Anh on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1649573650319?auto=format&fit=crop&q=80&w=1200', alt: '발리 치앙마이 워케이션 한달살기 코워킹스페이스', caption: '워케이션·한 달 살기', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Dung Anh on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '한 달 살기 BEST 4' },
     { type: 'body', html: `<ul>

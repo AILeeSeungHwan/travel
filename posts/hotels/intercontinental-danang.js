@@ -7,7 +7,7 @@ module.exports = {
       alt: '인터컨티넨탈 다낭 선 페닌술라 리조트 전경',
       caption: '다낭 선차반도 절벽 위의 인터컨티넨탈 리조트 전경',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Vivu Vietnam on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@vivuvietnam?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@vivuvietnam?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '한눈에 보기' },
     { type: 'body', html: `<ul>
@@ -29,7 +29,7 @@ module.exports = {
         { url: 'https://images.unsplash.com/photo-1548474931-a21c23cb85c3?crop=entropy&cs=tinysrgb&w=1200&fit=max', caption: '리조트 수영장 & 바다 전망', photographer: 'Pavel Roev on Unsplash' },
       ],
       imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Unsplash Contributors',
-      imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'why-ic', text: '왜 인터컨티넨탈 다낭인가 — 5가지 차별점' },
     { type: 'body', html: `<ol>

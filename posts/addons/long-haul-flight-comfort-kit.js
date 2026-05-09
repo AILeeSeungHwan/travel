@@ -12,7 +12,7 @@ module.exports = {
       imageSource: 'Unsplash',
       imageLicense: 'Unsplash License',
       imageCredit: 'Nitish Suri on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@nitishsuri13?utm_source=tripspot&utm_medium=referral'
+      imageSourceUrl: 'https://unsplash.com/@nitishsuri13?utm_source=travel.ambitstock&utm_medium=referral'
     },
     {
       type: 'h2',

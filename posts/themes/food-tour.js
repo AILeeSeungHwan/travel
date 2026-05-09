@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `미식 여행은 음식 자체가 여행 목적인 형태입니다. 일본(스시·라멘·이자카야)·태국(똠얌·팟타이·스트리트)·홍콩(딤섬·완탕)·대만(야시장·딘타이펑)·싱가포르(호커센터)·이탈리아(피자·파스타) 등 미식 강자가 풍부합니다. 본 가이드는 한국인 미식 여행 BEST 6의 핵심 메뉴·식당·예산을 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1609811159533-72e7ab01f13c?auto=format&fit=crop&q=80&w=1200', alt: '동남아 미식 여행 야시장 음식', caption: '미식 여행 야시장', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Beth Macdonald on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1609811159533-72e7ab01f13c?auto=format&fit=crop&q=80&w=1200', alt: '동남아 미식 여행 야시장 음식', caption: '미식 여행 야시장', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Beth Macdonald on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '미식 BEST 6 + 핵심 메뉴' },
     { type: 'body', html: `<ul>

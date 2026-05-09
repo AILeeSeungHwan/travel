@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-core.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-core.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-countries.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-countries.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-regions.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-regions.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-spots.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-spots.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-hotels.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-hotels.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-themes.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-themes.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-situations.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-situations.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-guides.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-guides.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-tools.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-tools.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-compares.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-compares.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-addons.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-addons.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://tripspot.ambitstock.com/sitemap-news.xml</loc>
+    <loc>https://travel.ambitstock.com/sitemap-news.xml</loc>
     <lastmod>2026-05-09</lastmod>
   </sitemap>
 </sitemapindex>

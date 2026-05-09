@@ -10,7 +10,7 @@ module.exports = {
       caption: '방콕 왓포 — 태국을 대표하는 황금 사원과 거대 와불',
       imageSource: 'Unsplash', imageLicense: 'Unsplash License',
       imageCredit: 'Alejandro Cartagena on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@cartayen?utm_source=tripspot&utm_medium=referral' },
+      imageSourceUrl: 'https://unsplash.com/@cartayen?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'overview', text: '방콕 한눈에 보기' },
     { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">

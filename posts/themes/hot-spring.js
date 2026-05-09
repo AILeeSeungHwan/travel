@@ -2,7 +2,7 @@ module.exports = {
   sections: [
     { type: 'intro', html: `료칸(旅館)·온천(温泉) 여행은 일본의 정수를 가장 깊게 체험하는 형태입니다. 가이세키(코스 정식)·노천탕(露天風呂)·다다미·유카타(浴衣)의 결합이며, 부모님·신혼·기념일 1순위. 본 가이드는 일본 4대 온천 지역(유후인·하코네·구사쓰·벳푸)의 베스트 료칸과 예약·매너를 정리합니다.` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1739609718564?auto=format&fit=crop&q=80&w=1200', alt: '일본 료칸 온천 노천탕 여행', caption: '일본 료칸·온천 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'HANVIN CHEONG on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=tripspot&utm_medium=referral' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1739609718564?auto=format&fit=crop&q=80&w=1200', alt: '일본 료칸 온천 노천탕 여행', caption: '일본 료칸·온천 여행', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'HANVIN CHEONG on Unsplash', imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral' },
 
     { type: 'h2', id: 'top', text: '료칸·온천 BEST 지역' },
     { type: 'body', html: `<ul>
