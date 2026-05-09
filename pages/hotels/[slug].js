@@ -23,8 +23,15 @@ export async function getStaticProps({ params }) {
   try { postData = require(`../../posts/hotels/${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
-  const nearbySpots = spots.filter(s => s.regionSlug === meta.regionSlug && s.countrySlug === meta.countrySlug).slice(0, 5)
-    .map(s => ({ ...s, category: 'spot', url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`, title: s.spotName ?? s.spotName ?? null }))
+  const nearbySpots = spots
+    .filter(s => s.regionSlug === meta.regionSlug && s.countrySlug === meta.countrySlug)
+    .slice(0, 5)
+    .map(s => ({
+      ...s,
+      category: 'spot',
+      url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`,
+      title: s.spotName ?? null,
+    }))
   return { props: { meta, country, region: region ?? null, postData, nearbySpots } }
 }
 
@@ -35,11 +42,27 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
   ]
   const canonicalPath = `/hotels/${meta.slug}/`
 
-  // hotel-images.json 우선, 없으면 hotels.js gallery 폴백
+  // ── 이미지 ──────────────────────────────────────────────
   const hotelImg = getHotelImage(meta.slug)
-  const resolvedGallery = hotelImg?.gallery?.length
+
+  // HeroImage: mainImage 있을 때만
+  const heroImg = hotelImg?.mainImage
+    ? {
+        url: hotelImg.mainImage,
+        photographer: hotelImg.isTourApi
+          ? '한국관광공사'
+          : hotelImg.credit?.replace('Photo by ', '').replace(' on Unsplash', ''),
+        photographerUrl: hotelImg.creditUrl,
+        sourceUrl: hotelImg.creditUrl,
+        license: hotelImg.license,
+        source: hotelImg.source,
+        description: meta.hotelName,
+      }
+    : null
+
+  // gallery: HeroImage가 gallery[0]을 커버하므로 1번째 이후부터
+  const rawGallery = hotelImg?.gallery?.length
     ? hotelImg.gallery.map(g => ({
-        type: 'image',
         src: g.url,
         alt: g.caption || meta.hotelName,
         caption: g.caption,
@@ -49,7 +72,6 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
         imageCreditUrl: hotelImg.creditUrl,
       }))
     : (meta.gallery || []).map(g => ({
-        type: 'image',
         src: g.url,
         alt: g.alt || meta.hotelName,
         caption: g.alt,
@@ -58,26 +80,74 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
         imageCredit: g.credit,
       }))
 
-  const galleryImages = resolvedGallery
+  const gallerySlice = rawGallery.slice(heroImg ? 1 : 0)
+  const galleryBlock = gallerySlice.length > 0
+    ? {
+        type: 'gallery',
+        images: gallerySlice.map(g => ({ src: g.src, alt: g.alt, caption: g.caption })),
+        imageSource: gallerySlice[0]?.imageSource,
+        imageLicense: gallerySlice[0]?.imageLicense,
+        imageCredit: gallerySlice[0]?.imageCredit,
+        imageSourceUrl: gallerySlice[0]?.imageCreditUrl,
+      }
+    : null
 
-  // HeroImage가 mainImage(= gallery[0]와 동일 소스)를 표시하므로 갤러리는 1번째 이후부터
-  // heroImg 없으면 0번째부터 모두 포함
-  const galleryStartIdx = heroImg ? 1 : 0
-  const gallerySection = galleryImages.slice(galleryStartIdx)
-  const fallbackSections = [
-    ...(gallerySection.length > 0
-      ? [{ type: 'gallery',
-           images: gallerySection.map(g => ({ src: g.src, alt: g.alt, caption: g.caption })),
-           imageSource: gallerySection[0]?.imageSource,
-           imageLicense: gallerySection[0]?.imageLicense,
-           imageCredit: gallerySection[0]?.imageCredit,
-           imageSourceUrl: gallerySection[0]?.imageCreditUrl,
-        }]
-      : []),
-    { type: 'intro', html: `${meta.summary}<br/><br/>` +
-      `<strong>${meta.hotelName}</strong>은(는) ${country ? country.countryName : meta.countrySlug.toUpperCase()} ${region ? region.regionName : ''}의 ${meta.hotelClass} ${meta.hotelType}입니다. ` +
-      `평점 ${meta.guestRating}·가격대 ${meta.priceRange} (시즌 변동, 클릭 시점 확인).<br/><br/>` +
-      `이런 분에게 추천: <strong>${meta.whoIsItFor}</strong>` },
+  // CTA 템플릿 (href는 페이지 meta 기준)
+  const ctaBlock = {
+    type: 'hotelsCombinedCTA',
+    text: `${meta.hotelName} 최저가 비교 →`,
+    subText: '체크인·체크아웃 날짜를 입력하면 여러 예약 사이트 가격을 한번에 비교할 수 있습니다.',
+    href: meta.hotelsCombinedDeepLink || '#',
+  }
+
+  // ── sections 가공 ────────────────────────────────────────
+  // 1. placeholder 이미지 → gallery 블록 교체
+  // 2. CTA 2개 보장 (중간 + 끝 disclaimer 직전)
+  function processHotelSections(sections) {
+    let result = [...sections]
+
+    // placeholder 제거 + gallery 삽입
+    const hasPlaceholder = result.some(
+      s => s.type === 'image' && (s.src?.includes('placeholder') || s.src?.startsWith('/images/'))
+    )
+    result = result.filter(
+      s => !(s.type === 'image' && (s.src?.includes('placeholder') || s.src?.startsWith('/images/')))
+    )
+    if (galleryBlock && (hasPlaceholder || !result.some(s => s.type === 'gallery' || s.type === 'image'))) {
+      const introIdx = result.findIndex(s => s.type === 'intro')
+      const at = introIdx >= 0 ? introIdx + 1 : 0
+      result = [...result.slice(0, at), galleryBlock, ...result.slice(at)]
+    }
+
+    // CTA 2개 보장
+    const ctaCount = result.filter(s => s.type === 'hotelsCombinedCTA').length
+    if (ctaCount < 2) {
+      const endIdx = result.findIndex(s => s.type === 'disclaimer' || s.type === 'sources')
+      const end = endIdx >= 0 ? endIdx : result.length
+      if (ctaCount === 0) {
+        const mid = Math.floor(end / 2)
+        result = [
+          ...result.slice(0, mid), ctaBlock,
+          ...result.slice(mid, end), ctaBlock,
+          ...result.slice(end),
+        ]
+      } else {
+        result = [...result.slice(0, end), ctaBlock, ...result.slice(end)]
+      }
+    }
+
+    return result
+  }
+
+  // fallback (post 파일 없을 때)
+  const fallbackRaw = [
+    { type: 'intro',
+      html: `${meta.summary ?? ''}<br/><br/>` +
+        `<strong>${meta.hotelName}</strong>은(는) ` +
+        `${country ? country.countryName : meta.countrySlug?.toUpperCase() ?? ''} ` +
+        `${region ? region.regionName : ''}의 ${meta.hotelClass ?? ''} ${meta.hotelType ?? ''}입니다. ` +
+        `평점 ${meta.guestRating ?? '-'}·가격대 ${meta.priceRange ?? '-'} (시즌 변동, 클릭 시점 확인).<br/><br/>` +
+        `이런 분에게 추천: <strong>${meta.whoIsItFor ?? ''}</strong>` },
     { type: 'h2', id: 'standout', text: '이 호텔의 차별점' },
     { type: 'body', html: '<ul>' + (meta.standoutFeatures || []).map(f => `<li>${f}</li>`).join('') + '</ul>' },
     { type: 'h2', id: 'amenities', text: '시설·편의' },
@@ -85,42 +155,33 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
     { type: 'h2', id: 'rooms', text: '객실 타입' },
     { type: 'body', html: '<ul>' + (meta.roomTypes || []).map(r => `<li>${r}</li>`).join('') + '</ul>' },
     { type: 'h2', id: 'access', text: '공항에서 가는 법' },
-    { type: 'body', html: `주소: ${meta.address}<br/>좌표: ${meta.lat}, ${meta.lng}<br/>가까운 공항: <strong>${meta.nearestAirport}</strong> (${meta.distanceFromAirport})` },
+    { type: 'body',
+      html: `주소: ${meta.address ?? '-'}<br/>좌표: ${meta.lat ?? '-'}, ${meta.lng ?? '-'}<br/>` +
+        `가까운 공항: <strong>${meta.nearestAirport ?? '-'}</strong> (${meta.distanceFromAirport ?? '-'})` },
     { type: 'h2', id: 'nearby', text: '주변 추천 스팟' },
     { type: 'body', html: nearbySpots.length === 0
       ? `${region ? region.regionName : meta.regionSlug}의 추천 스팟을 준비 중입니다.`
       : `${meta.hotelName} 인근의 추천 스팟입니다.` },
-    { type: 'hotelsCombinedCTA',
-      text: '호텔스컴바인에서 최저가 보기 →',
-      subText: `${meta.hotelName} 객실 가격을 호텔스컴바인이 여러 예약 사이트에서 동시 비교합니다.`,
-      href: meta.hotelsCombinedDeepLink || '#' },
     { type: 'warning', title: '예약 전 알아두세요',
       html: '체크인/체크아웃 시간, 반려동물 정책, 취소 규정은 호텔별로 다르며 시즌·요금제에 따라 변동됩니다. 예약 전 호텔스컴바인 또는 호텔 공식 페이지에서 반드시 확인하세요.' },
     { type: 'sources', items: [
-      { label: '호텔스컴바인', url: 'https://www.hotelscombined.com/', org: 'HotelsCombined', accessedAt: meta.updatedAt },
+      { label: '호텔스컴바인', url: 'https://www.hotelscombined.com/', org: 'HotelsCombined', accessedAt: meta.updatedAt ?? meta.publishedAt ?? '' },
     ]},
     { type: 'disclaimer' },
   ]
 
-  const finalPostData = postData || { sections: fallbackSections }
+  const finalSections = processHotelSections(
+    postData ? postData.sections : fallbackRaw
+  )
 
+  // ── 지도 ────────────────────────────────────────────────
   const hasMap = meta.lat && meta.lng
   const mapMarkers = [
     { lat: meta.lat, lng: meta.lng, label: meta.hotelName, subLabel: meta.hotelClass, type: 'hotel' },
-    ...nearbySpots.filter(s => s.lat && s.lng).map(s => ({ lat: s.lat, lng: s.lng, label: s.spotName, subLabel: s.spotType, url: s.url, type: 'spot' })),
+    ...nearbySpots
+      .filter(s => s.lat && s.lng)
+      .map(s => ({ lat: s.lat, lng: s.lng, label: s.spotName, subLabel: s.spotType, url: s.url, type: 'spot' })),
   ]
-
-  const heroImg = hotelImg?.mainImage
-    ? {
-        url: hotelImg.mainImage,
-        photographer: hotelImg.isTourApi ? '한국관광공사' : hotelImg.credit?.replace('Photo by ', '').replace(' on Unsplash', ''),
-        photographerUrl: hotelImg.creditUrl,
-        sourceUrl: hotelImg.creditUrl,
-        license: hotelImg.license,
-        source: hotelImg.source,
-        description: meta.hotelName,
-      }
-    : null
 
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
@@ -128,8 +189,8 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
       {heroImg && <HeroImage image={heroImg} alt={meta.hotelName} />}
       {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={320} />}
       <PostRenderer
-        meta={{ ...meta, category: 'hotel', countryName: country ? country.countryName : meta.countrySlug.toUpperCase() }}
-        postData={finalPostData}
+        meta={{ ...meta, category: 'hotel', countryName: country ? country.countryName : meta.countrySlug?.toUpperCase() }}
+        postData={{ sections: finalSections }}
         related={nearbySpots}
         breadcrumbItems={breadcrumbItems}
         canonicalPath={canonicalPath}

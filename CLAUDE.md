@@ -150,6 +150,40 @@ node -e "const h=require('./data/hotels'); h.forEach(x=>{ ['title','description'
 
 **페이지 방어 원칙**: `getStaticProps`에서 호텔 객체를 props로 넘길 때 반드시 `h.title ?? h.hotelName ?? null` 패턴을 사용하고 `undefined`를 그대로 전달하지 않는다.
 
+## 7-2. `TypeError: Cannot read properties of undefined` 방지 규칙
+
+**원인**: 포스트·데이터 파일에 필드를 추가할 때 `updatedAt`, `publishedAt`, `summary` 등 필수 필드를 누락하면, 렌더러나 fallbackSections에서 `.속성` 참조 시 런타임 오류 발생.
+
+**모든 엔티티(hotels/spots/regions/countries/guides/themes) 공통 점검 명령** — 신규 항목 추가 후 반드시 실행:
+```bash
+node -e "
+const entities = [
+  { name:'hotels',   file:'./data/hotels.js',   fields:['title','description','summary','updatedAt','publishedAt','gallery','hotelsCombinedDeepLink'] },
+  { name:'spots',    file:'./data/spots.js',     fields:['title','description','updatedAt','publishedAt'] },
+  { name:'regions',  file:'./data/regions.js',   fields:['regionName','updatedAt','publishedAt'] },
+  { name:'guides',   file:'./data/guides.js',    fields:['title','description','updatedAt','publishedAt'] },
+  { name:'themes',   file:'./data/themes.js',    fields:['title','description','updatedAt','publishedAt'] },
+];
+let ok = true;
+entities.forEach(({name,file,fields})=>{
+  let data;
+  try { data = require(file); } catch(e){ return; }
+  data.forEach(x=>{
+    fields.forEach(f=>{
+      if(x[f]===undefined){ console.error(name+' '+x.slug+': missing '+f); ok=false; }
+    });
+  });
+});
+if(ok) console.log('OK — 모든 필드 정상');
+"
+```
+
+**렌더러 방어 코딩 원칙** (페이지 파일 수정 시 적용):
+- `meta.updatedAt` 참조 전 반드시 `?? meta.publishedAt ?? ''` 폴백 사용
+- `meta.summary`, `meta.address` 등 문자열 필드는 `?? ''` 폴백
+- 배열 필드(`amenities`, `roomTypes`, `standoutFeatures`)는 `|| []` 폴백
+- `country?.countryName`, `region?.regionName` — 옵셔널 체이닝 필수
+
 ## 8. 배포 전 체크
 
 ```bash
