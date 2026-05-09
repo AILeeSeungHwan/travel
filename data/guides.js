@@ -54,7 +54,14 @@ const guides = [
     title: '짐 싸기 체크리스트 — 시즌·여행지·항공사 수하물 가이드',
     description: '비치·도시·온천·골프·동남아·유럽 등 여행지별 짐 싸기 체크리스트와 항공사 수하물 한도(국적·LCC 차이) 가이드.',
     summary: '여행지·시즌별 체크리스트 + 수하물 한도.',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['짐싸기','수하물'] },
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['짐싸기','수하물'] },,
+  {
+    slug: 'trend-20260509-2',
+    title: '오늘의 여행 트렌드 2 (2026-05-09)',
+    category: 'guide',
+    publishedAt: '2026-05-09',
+    updatedAt: '2026-05-09'
+  }
 ]
 
 module.exports = guides
