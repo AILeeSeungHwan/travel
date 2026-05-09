@@ -14,16 +14,16 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const meta = hotels.find(h => h.slug === params.slug)
   if (!meta) return { notFound: true }
-  const country = countries.find(c => c.slug === meta.countrySlug)
-  const region  = regions.find(r => r.countrySlug === meta.countrySlug && r.slug === meta.regionSlug)
+  const country = countries.find(c => c.slug === meta.countrySlug) ?? null
+  const region  = regions.find(r => r.countrySlug === meta.countrySlug && r.slug === meta.regionSlug) ?? null
 
   let postData = null
   try { postData = require(`../../posts/hotels/${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
   const nearbySpots = spots.filter(s => s.regionSlug === meta.regionSlug && s.countrySlug === meta.countrySlug).slice(0, 5)
-    .map(s => ({ ...s, category: 'spot', url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`, title: s.spotName }))
-  return { props: { meta, country, region, postData, nearbySpots } }
+    .map(s => ({ ...s, category: 'spot', url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`, title: s.spotName ?? s.spotName ?? null }))
+  return { props: { meta, country, region: region ?? null, postData, nearbySpots } }
 }
 
 export default function HotelDetail({ meta, country, region, postData, nearbySpots }) {
@@ -46,7 +46,7 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
   const fallbackSections = [
     ...galleryImages.slice(0, 1),
     { type: 'intro', html: `${meta.summary}<br/><br/>` +
-      `<strong>${meta.hotelName}</strong>은(는) ${country.countryName} ${region ? region.regionName : ''}의 ${meta.hotelClass} ${meta.hotelType}입니다. ` +
+      `<strong>${meta.hotelName}</strong>은(는) ${country ? country.countryName : meta.countrySlug.toUpperCase()} ${region ? region.regionName : ''}의 ${meta.hotelClass} ${meta.hotelType}입니다. ` +
       `평점 ${meta.guestRating}·가격대 ${meta.priceRange} (시즌 변동, 클릭 시점 확인).<br/><br/>` +
       `이런 분에게 추천: <strong>${meta.whoIsItFor}</strong>` },
     { type: 'h2', id: 'standout', text: '이 호텔의 차별점' },
@@ -86,7 +86,7 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
       <PageTracker slug={meta.slug} title={meta.title} />
       {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={320} />}
       <PostRenderer
-        meta={{ ...meta, category: 'hotel', countryName: country.countryName }}
+        meta={{ ...meta, category: 'hotel', countryName: country ? country.countryName : meta.countrySlug.toUpperCase() }}
         postData={finalPostData}
         related={nearbySpots}
         breadcrumbItems={breadcrumbItems}
