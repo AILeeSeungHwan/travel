@@ -42,6 +42,15 @@ const situations = [
     description: '직장인 1주일 휴가 활용 6~8일 해외여행 — 다낭·푸꾸옥·발리·치앙마이 한 도시 깊게, 또는 도쿄·오사카·교토 동선.',
     summary: '6~8일 — 1도시 깊게 OR 일본 광역 동선.',
     publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['1주일','해외여행'] },
+  {
+    id: 'SI009',
+    slug: 'couple-anniversary',
+    title: '커플 기념일 여행',
+    description: '국내외 로맨틱 여행지와 호텔 추천',
+    tags: ["커플","기념일","로맨틱"],
+    publishedAt: '2026-05-09',
+    updatedAt: '2026-05-09'
+  }
 ]
 
 module.exports = situations

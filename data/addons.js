@@ -49,7 +49,7 @@ const addons = [
     title: '골프투어 골프백 가이드 — 하드케이스·항공 위탁',
     description: '골프투어(태국·베트남·일본) 골프백 항공 위탁 가이드 — 하드케이스 vs 소프트커버, 항공사 추가요금.',
     summary: '하드케이스 vs 소프트커버, 항공사 위탁.',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['골프투어','골프백'] },,
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C', tags: ['골프투어','골프백'] },
   {
     slug: 'long-haul-flight-comfort-kit',
     title: '장거리 비행 편의용품 완전 가이드',
