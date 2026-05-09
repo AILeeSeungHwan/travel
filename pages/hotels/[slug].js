@@ -2,6 +2,8 @@ import Layout from '../../components/Layout'
 import PostRenderer from '../../components/PostRenderer'
 import PageTracker from '../../components/PageTracker'
 import LeafletMap from '../../components/MapClient'
+import HeroImage from '../../components/HeroImage'
+import { getHotelImage } from '../../lib/images'
 import countries from '../../data/countries'
 import regions from '../../data/regions'
 import spots from '../../data/spots'
@@ -33,15 +35,30 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
   ]
   const canonicalPath = `/hotels/${meta.slug}/`
 
-  const galleryImages = (meta.gallery || []).map(g => ({
-    type: 'image',
-    src: g.url,
-    alt: g.alt || meta.hotelName,
-    caption: g.alt,
-    imageSource: g.source,
-    imageLicense: g.license,
-    imageCredit: g.credit,
-  }))
+  // hotel-images.json 우선, 없으면 hotels.js gallery 폴백
+  const hotelImg = getHotelImage(meta.slug)
+  const resolvedGallery = hotelImg?.gallery?.length
+    ? hotelImg.gallery.map(g => ({
+        type: 'image',
+        src: g.url,
+        alt: g.caption || meta.hotelName,
+        caption: g.caption,
+        imageSource: g.source || hotelImg.source,
+        imageLicense: hotelImg.license,
+        imageCredit: hotelImg.credit,
+        imageCreditUrl: hotelImg.creditUrl,
+      }))
+    : (meta.gallery || []).map(g => ({
+        type: 'image',
+        src: g.url,
+        alt: g.alt || meta.hotelName,
+        caption: g.alt,
+        imageSource: g.source,
+        imageLicense: g.license,
+        imageCredit: g.credit,
+      }))
+
+  const galleryImages = resolvedGallery
 
   const fallbackSections = [
     ...galleryImages.slice(0, 1),
@@ -81,9 +98,22 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
     ...nearbySpots.filter(s => s.lat && s.lng).map(s => ({ lat: s.lat, lng: s.lng, label: s.spotName, subLabel: s.spotType, url: s.url, type: 'spot' })),
   ]
 
+  const heroImg = hotelImg?.mainImage
+    ? {
+        url: hotelImg.mainImage,
+        photographer: hotelImg.isTourApi ? '한국관광공사' : hotelImg.credit?.replace('Photo by ', '').replace(' on Unsplash', ''),
+        photographerUrl: hotelImg.creditUrl,
+        sourceUrl: hotelImg.creditUrl,
+        license: hotelImg.license,
+        source: hotelImg.source,
+        description: meta.hotelName,
+      }
+    : null
+
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
       <PageTracker slug={meta.slug} title={meta.title} />
+      {heroImg && <HeroImage image={heroImg} alt={meta.hotelName} />}
       {hasMap && <LeafletMap center={[meta.lat, meta.lng]} zoom={14} markers={mapMarkers} height={320} />}
       <PostRenderer
         meta={{ ...meta, category: 'hotel', countryName: country ? country.countryName : meta.countrySlug.toUpperCase() }}

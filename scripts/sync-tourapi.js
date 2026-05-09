@@ -32,7 +32,7 @@ const AREA_CODES = {
   'kr-busan': 6,
   'kr-jeju': 39,
   'kr-gangwon': 32,
-  'kr-gyeongsang-buk': 35,  // 경주 포함
+  'kr-gyeongju': 35,  // 경주 areaCode=35(경상북도)
 }
 
 async function searchByKeyword(keyword) {
