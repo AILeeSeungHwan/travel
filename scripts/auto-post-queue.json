@@ -605,8 +605,8 @@
           "사쿠라"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "done",
+      "generatedAt": "2026-05-09T09:06:16.626Z"
     },
     {
       "id": "c006",
@@ -633,8 +633,10 @@
           "비행"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-09T09:11:20.874Z"
     },
     {
       "id": "a007",
