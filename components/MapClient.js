@@ -1,17 +1,24 @@
-// LeafletMap 의 SSR-off dynamic import 래퍼
-// Leaflet 은 window 객체를 요구하므로 클라이언트에서만 로드
-
+// LeafletMap SSR-off dynamic import 래퍼
 import dynamic from 'next/dynamic'
 
 const LeafletMap = dynamic(() => import('./LeafletMap'), {
   ssr: false,
   loading: () => (
     <div style={{
-      height: 320, background:'#F0FDFA', border:'1px solid #E2E8F0', borderRadius:12,
-      display:'flex', alignItems:'center', justifyContent:'center',
-      fontSize:13, color:'#64748B', marginBottom:18,
+      height: 340,
+      background: 'linear-gradient(160deg, #f0f9ff, #ecfdf5)',
+      border: '1px solid rgba(14,165,233,0.15)',
+      borderRadius: 20, marginBottom: 20,
+      display: 'flex', flexDirection: 'column',
+      alignItems: 'center', justifyContent: 'center', gap: 10,
     }}>
-      🗺️ 지도 로딩 중…
+      <div style={{
+        width: 40, height: 40, borderRadius: '50%',
+        border: '3px solid #E2E8F0', borderTopColor: '#0EA5E9',
+        animation: 'spin 0.8s linear infinite',
+      }} />
+      <div style={{ fontSize: 12, color: '#94A3B8', fontWeight: 600 }}>지도 불러오는 중…</div>
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
   ),
 })
