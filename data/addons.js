@@ -65,6 +65,14 @@ const addons = [
     tags: ["신혼여행","준비물","체크리스트"],
     publishedAt: '2026-05-10',
     updatedAt: '2026-05-10'
+  },
+  {
+    slug: 'golf-tour-gear-guide',
+    title: '해외 골프투어 장비 가이드',
+    category: 'addon',
+    tags: ["골프","해외","장비"],
+    publishedAt: '2026-05-10',
+    updatedAt: '2026-05-10'
   }
 ]
 
