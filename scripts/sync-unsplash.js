@@ -135,20 +135,24 @@ async function searchUnsplash(query, count = 1) {
 async function delay(ms) { return new Promise(r => setTimeout(r, ms)) }
 
 async function main() {
-  const manifest = { countries: {}, regions: {}, themes: {}, situations: {} }
-  const existing = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : { countries: {}, regions: {}, themes: {}, situations: {} }
+  // 기존 파일을 manifest 초기값으로 사용 — Ctrl+C 중단 후 재실행 시 이전 진행분 보존
+  const manifest = fs.existsSync(OUT)
+    ? JSON.parse(fs.readFileSync(OUT, 'utf8'))
+    : { countries: {}, regions: {}, themes: {}, situations: {} }
+  // 카테고리 누락 시 초기화
+  for (const cat of Object.keys(QUERIES)) { if (!manifest[cat]) manifest[cat] = {} }
+
   let newCount = 0
   let cachedCount = 0
 
   for (const [category, items] of Object.entries(QUERIES)) {
     const imgCount = IMG_COUNT[category] ?? 1
     for (const [slug, query] of Object.entries(items)) {
-      const cached = existing[category]?.[slug]
-      // 배열이면 5장 확보 여부, 단일 객체면 존재 여부로 캐시 판단
+      const cached = manifest[category][slug]
+      // 배열이면 imgCount장 확보 여부, 단일 객체면 존재 여부로 캐시 판단
       if (cached) {
         const isOk = Array.isArray(cached) ? cached.length >= imgCount : imgCount === 1
         if (isOk) {
-          manifest[category][slug] = cached
           cachedCount++
           continue
         }
@@ -163,9 +167,10 @@ async function main() {
         console.log('  ✓', category, slug, '→', display)
       } else if (cached) {
         // Rate limit / API 오류 — 기존 데이터 폴백 (데이터 손실 방지)
-        manifest[category][slug] = cached
         console.log('  ⚠', category, slug, '→ 기존 데이터 유지')
       }
+      // 매 fetch 후 즉시 저장 — Ctrl+C 중단 시에도 진행분 보존
+      fs.writeFileSync(OUT, JSON.stringify(manifest, null, 2))
       await delay(1200) // 1.2초 간격 — 50/h 한도 안전
     }
   }
