@@ -60,7 +60,17 @@ const guides = [
     description: '2026년 5월 주목받는 여행 트렌드. 인기 급상승 여행지, 시즌별 추천 코스, 최신 비자·입국 변경 사항 정리.',
     summary: '2026년 5월 여행 트렌드 — 인기 급상승 여행지와 시즌 추천.',
     ymylLevel: 'C', tags: ['여행트렌드','2026','추천여행지'],
-    publishedAt: '2026-05-09', updatedAt: '2026-05-09' }
+    publishedAt: '2026-05-09', updatedAt: '2026-05-09' },
+  {
+    slug: 'trend-20260510-2',
+    title: '오늘의 여행 트렌드 2 (2026-05-10)',
+    category: 'guide',
+    publishedAt: '2026-05-10',
+    updatedAt: '2026-05-10',
+    ymylLevel: 'B',
+    id: '',
+    description: ''
+  }
 ]
 
 module.exports = guides
