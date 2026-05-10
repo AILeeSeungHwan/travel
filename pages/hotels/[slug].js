@@ -101,23 +101,18 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
   }
 
   // ── sections 가공 ────────────────────────────────────────
-  // 1. placeholder 이미지 → gallery 블록 교체
+  // 1. placeholder 이미지 제거
   // 2. CTA 2개 보장 (중간 + 끝 disclaimer 직전)
+  // 3. H2마다 gallery 이미지 1장씩 분배
   function processHotelSections(sections) {
     let result = [...sections]
 
-    // placeholder 제거 + gallery 삽입
-    const hasPlaceholder = result.some(
-      s => s.type === 'image' && (s.src?.includes('placeholder') || s.src?.startsWith('/images/'))
-    )
+    // placeholder/로컬 이미지 제거
     result = result.filter(
       s => !(s.type === 'image' && (s.src?.includes('placeholder') || s.src?.startsWith('/images/')))
     )
-    if (galleryBlock && (hasPlaceholder || !result.some(s => s.type === 'gallery' || s.type === 'image'))) {
-      const introIdx = result.findIndex(s => s.type === 'intro')
-      const at = introIdx >= 0 ? introIdx + 1 : 0
-      result = [...result.slice(0, at), galleryBlock, ...result.slice(at)]
-    }
+    // 기존 gallery 블록도 제거 (H2별 단독 이미지로 교체)
+    result = result.filter(s => s.type !== 'gallery')
 
     // CTA 2개 보장
     const ctaCount = result.filter(s => s.type === 'hotelsCombinedCTA').length
@@ -134,6 +129,30 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
       } else {
         result = [...result.slice(0, end), ctaBlock, ...result.slice(end)]
       }
+    }
+
+    // H2마다 이미지 1장씩 분배
+    if (gallerySlice.length > 0) {
+      let imgIdx = 0
+      const withImgs = []
+      for (const s of result) {
+        withImgs.push(s)
+        if (s.type === 'h2' && imgIdx < gallerySlice.length) {
+          const g = gallerySlice[imgIdx]
+          withImgs.push({
+            type: 'image',
+            src: g.src,
+            alt: g.alt,
+            caption: g.caption,
+            imageSource: g.imageSource,
+            imageLicense: g.imageLicense,
+            imageCredit: g.imageCredit,
+            imageSourceUrl: g.imageCreditUrl,
+          })
+          imgIdx++
+        }
+      }
+      result = withImgs
     }
 
     return result

@@ -3,7 +3,7 @@ import PostRenderer from '../../../../../components/PostRenderer'
 import PageTracker from '../../../../../components/PageTracker'
 import LeafletMap from '../../../../../components/MapClient'
 import HeroImage from '../../../../../components/HeroImage'
-import { getRegionImage } from '../../../../../lib/images'
+import { getRegionImage, getRegionGallery } from '../../../../../lib/images'
 import countries from '../../../../../data/countries'
 import regions from '../../../../../data/regions'
 import spots from '../../../../../data/spots'
@@ -35,6 +35,35 @@ export async function getStaticProps({ params }) {
   return { props: { country, meta, postData, spots: mySpots, hotels: myHotels } }
 }
 
+function makeImageSection(img, fallbackAlt) {
+  if (!img) return null
+  return {
+    type: 'image',
+    src: img.url,
+    alt: img.description || fallbackAlt || '',
+    caption: img.description || '',
+    imageSource: img.source,
+    imageLicense: img.license,
+    imageCredit: img.photographer ? `Photo by ${img.photographer} on Unsplash` : (img.credit || ''),
+    imageSourceUrl: img.photographerUrl || img.sourceUrl,
+  }
+}
+
+function distributeGalleryPerH2(sections, gallery, fallbackAlt) {
+  if (!gallery || gallery.length === 0) return sections
+  let imgIdx = 0
+  const result = []
+  for (const s of sections) {
+    result.push(s)
+    if (s.type === 'h2' && imgIdx < gallery.length) {
+      const sec = makeImageSection(gallery[imgIdx], fallbackAlt)
+      if (sec) result.push(sec)
+      imgIdx++
+    }
+  }
+  return result
+}
+
 export default function RegionDetail({ country, meta, postData, spots, hotels }) {
   const breadcrumbItems = [
     { name: '나라별', url: '/countries/' },
@@ -64,7 +93,10 @@ export default function RegionDetail({ country, meta, postData, spots, hotels })
     { type: 'disclaimer' },
   ]
 
-  const finalPostData = postData || { sections: fallbackSections }
+  const regionGallery = getRegionGallery(country.slug, meta.slug)
+  const basePostData = postData || { sections: fallbackSections }
+  const finalSections = distributeGalleryPerH2(basePostData.sections, regionGallery, `${meta.regionName} ${country.countryName}`)
+  const finalPostData = { ...basePostData, sections: finalSections }
 
   const mapMarkers = [
     ...spots.map(s => ({ lat: s.lat, lng: s.lng, label: s.spotName, subLabel: s.spotType, url: s.url, type: 'spot' })),

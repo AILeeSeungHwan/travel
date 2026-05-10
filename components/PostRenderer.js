@@ -73,8 +73,10 @@ function Section({ section, coupangLinks, meta }) {
   if (s.type === 'medDisclaimer' || s.type === 'disclaimer') return <TravelDisclaimer />
   if (s.type === 'toc')     return null
   if (s.type === 'image')   return (
-    <figure style={{ margin:'20px 0', textAlign:'center' }}>
-      <img src={s.src} alt={s.alt || ''} loading="lazy" style={{ maxWidth:'100%', borderRadius:10, width:'100%', objectFit:'cover', maxHeight:480 }} />
+    <figure style={{ margin:'28px 0', textAlign:'center' }}>
+      <img src={s.src} alt={s.alt || ''} loading="lazy"
+        style={{ maxWidth:'100%', borderRadius:12, width:'100%', objectFit:'cover', maxHeight:560,
+          boxShadow:'0 4px 20px rgba(0,0,0,0.10)' }} />
       {s.caption && <figcaption style={{ fontSize:12, color:'#94A3B8', marginTop:8 }}>{s.caption}</figcaption>}
       <ImageCredit source={s.imageSource} license={s.imageLicense} credit={s.imageCredit} link={s.imageSourceUrl} />
     </figure>

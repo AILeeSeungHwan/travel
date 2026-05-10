@@ -1,7 +1,7 @@
 // scripts/sync-unsplash.js
-// Unsplash API → 모든 country/region/theme/situation 1장씩 hot-link URL + 메타 동기화
+// Unsplash API → country/region 5장 배열, theme/situation 1장 동기화
 // 출력: data/unsplash-images.json (manifest)
-// 호출 한도: Demo 50/시간, 51개 엔티티 — 1.5초 간격으로 안전하게
+// 호출 한도: Demo 50/시간 — country(16)+region(18)=34건×1req, theme+situation=18건 / 1.5초 간격 안전
 
 const fs = require('fs')
 const path = require('path')
@@ -79,30 +79,16 @@ const QUERIES = {
   },
 }
 
+// countries·regions는 5장 배열, themes·situations는 1장 단일 객체
+const IMG_COUNT = { countries: 5, regions: 5, themes: 1, situations: 1 }
+
 function withUtm(url) {
   if (!url) return url
   const sep = url.includes('?') ? '&' : '?'
   return `${url}${sep}utm_source=travel.ambitstock&utm_medium=referral`
 }
 
-async function searchUnsplash(query) {
-  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape&content_filter=high`
-  const r = await fetch(url, {
-    headers: { Authorization: `Client-ID ${ACCESS_KEY}`, 'Accept-Version': 'v1' },
-  })
-  if (!r.ok) {
-    console.error('  ✗', query, r.status, await r.text().then(t => t.slice(0, 100)))
-    return null
-  }
-  const data = await r.json()
-  if (!data.results || data.results.length === 0) {
-    console.error('  ∅', query, 'no results')
-    return null
-  }
-  const img = data.results[0]
-  // download endpoint 트리거 (Unsplash 가이드라인)
-  fetch(`${img.links.download_location}?client_id=${ACCESS_KEY}`).catch(() => {})
-
+function mapImg(img) {
   return {
     id: img.id,
     url: img.urls.regular,
@@ -121,35 +107,71 @@ async function searchUnsplash(query) {
   }
 }
 
+async function searchUnsplash(query, count = 1) {
+  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${count}&orientation=landscape&content_filter=high`
+  const r = await fetch(url, {
+    headers: { Authorization: `Client-ID ${ACCESS_KEY}`, 'Accept-Version': 'v1' },
+  })
+  if (!r.ok) {
+    console.error('  ✗', query, r.status, await r.text().then(t => t.slice(0, 100)))
+    return count === 1 ? null : []
+  }
+  const data = await r.json()
+  if (!data.results || data.results.length === 0) {
+    console.error('  ∅', query, 'no results')
+    return count === 1 ? null : []
+  }
+
+  const imgs = data.results.slice(0, count)
+  // download endpoint 트리거 (Unsplash 가이드라인)
+  imgs.forEach(img => {
+    fetch(`${img.links.download_location}?client_id=${ACCESS_KEY}`).catch(() => {})
+  })
+
+  const mapped = imgs.map(mapImg)
+  return count === 1 ? mapped[0] : mapped
+}
+
 async function delay(ms) { return new Promise(r => setTimeout(r, ms)) }
 
 async function main() {
   const manifest = { countries: {}, regions: {}, themes: {}, situations: {} }
   const existing = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : { countries: {}, regions: {}, themes: {}, situations: {} }
-  let count = 0
-  let cached = 0
+  let newCount = 0
+  let cachedCount = 0
 
   for (const [category, items] of Object.entries(QUERIES)) {
+    const imgCount = IMG_COUNT[category] ?? 1
     for (const [slug, query] of Object.entries(items)) {
-      // 이미 있으면 건너뛰기 (재실행 가능)
-      if (existing[category] && existing[category][slug]) {
-        manifest[category][slug] = existing[category][slug]
-        cached++
-        continue
+      const cached = existing[category]?.[slug]
+      // 배열이면 5장 확보 여부, 단일 객체면 존재 여부로 캐시 판단
+      if (cached) {
+        const isOk = Array.isArray(cached) ? cached.length >= imgCount : imgCount === 1
+        if (isOk) {
+          manifest[category][slug] = cached
+          cachedCount++
+          continue
+        }
       }
 
-      const img = await searchUnsplash(query)
-      if (img) {
-        manifest[category][slug] = img
-        count++
-        console.log('  ✓', category, slug, '→', img.photographer)
+      const result = await searchUnsplash(query, imgCount)
+      const valid = Array.isArray(result) ? result.length > 0 : result !== null
+      if (valid) {
+        manifest[category][slug] = result
+        newCount++
+        const display = Array.isArray(result) ? `${result.length}장` : result.photographer
+        console.log('  ✓', category, slug, '→', display)
+      } else if (cached) {
+        // Rate limit / API 오류 — 기존 데이터 폴백 (데이터 손실 방지)
+        manifest[category][slug] = cached
+        console.log('  ⚠', category, slug, '→ 기존 데이터 유지')
       }
       await delay(1200) // 1.2초 간격 — 50/h 한도 안전
     }
   }
 
   fs.writeFileSync(OUT, JSON.stringify(manifest, null, 2))
-  console.log('\n총', count, '신규 +', cached, '캐시 →', OUT)
+  console.log('\n총', newCount, '신규 +', cachedCount, '캐시 →', OUT)
 }
 
 main().catch(err => { console.error(err); process.exit(1) })

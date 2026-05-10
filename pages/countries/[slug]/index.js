@@ -3,7 +3,7 @@ import PostRenderer from '../../../components/PostRenderer'
 import PageTracker from '../../../components/PageTracker'
 import CountryMiniMap from '../../../components/CountryMiniMap'
 import HeroImage from '../../../components/HeroImage'
-import { getCountryImage } from '../../../lib/images'
+import { getCountryImage, getCountryGallery } from '../../../lib/images'
 import countries from '../../../data/countries'
 import regions from '../../../data/regions'
 import hotels from '../../../data/hotels'
@@ -38,12 +38,43 @@ export async function getStaticProps({ params }) {
   return { props: { meta, postData, regions: myRegions, hotels: myHotels, themes: myThemes, guides: myGuides } }
 }
 
+function makeImageSection(img, fallbackAlt) {
+  if (!img) return null
+  return {
+    type: 'image',
+    src: img.url,
+    alt: img.description || fallbackAlt || '',
+    caption: img.description || '',
+    imageSource: img.source,
+    imageLicense: img.license,
+    imageCredit: img.photographer ? `Photo by ${img.photographer} on Unsplash` : (img.credit || ''),
+    imageSourceUrl: img.photographerUrl || img.sourceUrl,
+  }
+}
+
+function distributeGalleryPerH2(sections, gallery, fallbackAlt) {
+  if (!gallery || gallery.length === 0) return sections
+  let imgIdx = 0
+  const result = []
+  for (const s of sections) {
+    result.push(s)
+    if (s.type === 'h2' && imgIdx < gallery.length) {
+      const sec = makeImageSection(gallery[imgIdx], fallbackAlt)
+      if (sec) result.push(sec)
+      imgIdx++
+    }
+  }
+  return result
+}
+
 export default function CountryDetail({ meta, postData, regions, hotels, themes, guides }) {
   const breadcrumbItems = [
     { name: '나라별', url: '/countries/' },
     { name: meta.countryName },
   ]
   const canonicalPath = `/countries/${meta.slug}/`
+
+  const countryGallery = getCountryGallery(meta.slug)
 
   // 인라인 섹션 본문(없을 때 폴백)
   const fallbackSections = [
@@ -79,7 +110,9 @@ export default function CountryDetail({ meta, postData, regions, hotels, themes,
     { type: 'disclaimer' },
   ]
 
-  const finalPostData = postData || { sections: fallbackSections }
+  const basePostData = postData || { sections: fallbackSections }
+  const finalSections = distributeGalleryPerH2(basePostData.sections, countryGallery, meta.countryName)
+  const finalPostData = { ...basePostData, sections: finalSections }
 
   return (
     <Layout title={meta.title} description={meta.description} topAd={false}>
