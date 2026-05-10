@@ -258,7 +258,31 @@ const hotels = [
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
     affiliateLinkVerified: false, imageVerified: true, ymylLevel: 'B',
     tags: ['마리나베이샌즈','싱가포르','인피니티풀','5성'], publishedAt: '2026-05-09', updatedAt: '2026-05-09',
-  },
+  },,
+  {
+    id: 'H012',
+    slug: 'mandarin-oriental-bangkok',
+    countrySlug: 'th',
+    regionSlug: 'bangkok',
+    hotelName: '만다린 오리엔탈 방콕',
+    hotelNameEn: 'Mandarin Oriental Bangkok',
+    hotelClass: '5성',
+    hotelType: '럭셔리',
+    starRating: 5,
+    guestRating: 4.9,
+    priceRange: 'USD 350~1,200/박',
+    amenities: ["강변 수영장","스파","다이닝","역사적 건물","버틀러 서비스"],
+    address: '48 Oriental Ave, Bangrak, Bangkok 10500, Thailand',
+    lat: 13.724,
+    lng: 100.515,
+    iso2: 'TH',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["만다린오리엔탈","방콕","럭셔리","강변"],
+    publishedAt: '2026-05-10',
+    updatedAt: '2026-05-10'
+  }
 ]
 
 module.exports = hotels
