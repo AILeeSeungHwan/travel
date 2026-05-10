@@ -54,16 +54,13 @@ const compares = [
     title: '도쿄 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·아만 럭셔리',
     description: '도쿄 호텔을 4개 가격대로 나눠 추천 — 신주쿠 비즈니스호텔부터 아만·만다린·불가리 럭셔리까지. 벚꽃 시즌 예약 전략 포함.',
     summary: '도쿄 호텔 4개 가격대 — 신주쿠·긴자·마루노우치 지역별 추천.',
-    publishedAt: '2026-05-08', updatedAt: '2026-05-08', ymylLevel: 'C', tags: ['도쿄','호텔','일본','가격대별'] },,
-  {
-    id: 'C007',
-    slug: 'busan-beach-hotels',
-    title: '부산 해수욕장 호텔 비교',
-    description: '부산 해수욕장별 최고 호텔 비교',
-    tags: ["부산","해운대","호텔비교"],
-    publishedAt: '2026-05-10',
-    updatedAt: '2026-05-10'
-  }
+    publishedAt: '2026-05-08', updatedAt: '2026-05-08', ymylLevel: 'C', tags: ['도쿄','호텔','일본','가격대별'] },
+  { id: 'C007', slug: 'busan-beach-hotels', category: 'compare',
+    title: '부산 해수욕장 호텔 비교 — 해운대·광안리·기장 가격대별 추천',
+    description: '부산 해수욕장별 최고 호텔 비교. 해운대·광안리·기장 권역 4개 가격대 호텔 추천과 시즌별 예약 전략.',
+    summary: '해운대·광안리·기장 권역 가격대별 부산 해수욕장 호텔 추천.',
+    ymylLevel: 'C', tags: ['부산','해운대','호텔비교','가격대별'],
+    publishedAt: '2026-05-10', updatedAt: '2026-05-10' }
 ]
 
 module.exports = compares
