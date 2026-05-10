@@ -57,6 +57,14 @@ const addons = [
     tags: ["비행기","장거리","편의용품"],
     publishedAt: '2026-05-08',
     updatedAt: '2026-05-08'
+  },
+  {
+    slug: 'honeymoon-travel-pack',
+    title: '신혼여행 준비물 체크리스트',
+    category: 'addon',
+    tags: ["신혼여행","준비물","체크리스트"],
+    publishedAt: '2026-05-10',
+    updatedAt: '2026-05-10'
   }
 ]
 
