@@ -7,7 +7,7 @@ import situations from '../../data/situations'
 import countries from '../../data/countries'
 
 export async function getStaticPaths() {
-  return { paths: situations.map(s => ({ params: { slug: s.slug } })), fallback: false }
+  return { paths: situations.filter(s => s?.slug).map(s => ({ params: { slug: s.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

@@ -11,7 +11,7 @@ import hotels from '../../../../../../data/hotels'
 
 export async function getStaticPaths() {
   return {
-    paths: spots.map(s => ({ params: { slug: s.countrySlug, region: s.regionSlug, spot: s.slug } })),
+    paths: spots.filter(s => s?.slug && s?.countrySlug && s?.regionSlug).map(s => ({ params: { slug: s.countrySlug, region: s.regionSlug, spot: s.slug } })),
     fallback: false,
   }
 }

@@ -11,7 +11,7 @@ import themes from '../../../data/themes'
 import guides from '../../../data/guides'
 
 export async function getStaticPaths() {
-  return { paths: countries.map(c => ({ params: { slug: c.slug } })), fallback: false }
+  return { paths: countries.filter(c => c?.slug).map(c => ({ params: { slug: c.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

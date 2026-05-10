@@ -7,7 +7,7 @@ import themes from '../../data/themes'
 import countries from '../../data/countries'
 
 export async function getStaticPaths() {
-  return { paths: themes.map(t => ({ params: { slug: t.slug } })), fallback: false }
+  return { paths: themes.filter(t => t?.slug).map(t => ({ params: { slug: t.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

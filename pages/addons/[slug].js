@@ -4,7 +4,7 @@ import PageTracker from '../../components/PageTracker'
 import addons from '../../data/addons'
 
 export async function getStaticPaths() {
-  return { paths: addons.map(a => ({ params: { slug: a.slug } })), fallback: false }
+  return { paths: addons.filter(a => a?.slug).map(a => ({ params: { slug: a.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

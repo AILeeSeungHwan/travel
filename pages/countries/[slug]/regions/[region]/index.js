@@ -11,7 +11,7 @@ import hotels from '../../../../../data/hotels'
 
 export async function getStaticPaths() {
   return {
-    paths: regions.map(r => ({ params: { slug: r.countrySlug, region: r.slug } })),
+    paths: regions.filter(r => r?.slug && r?.countrySlug).map(r => ({ params: { slug: r.countrySlug, region: r.slug } })),
     fallback: false,
   }
 }

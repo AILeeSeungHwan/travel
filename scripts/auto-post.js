@@ -288,6 +288,14 @@ function appendToDataFile(entity, meta) {
   const entryBlock = `  {\n${entry}\n  }`
   const newContent = content.slice(0, closeIdx) + ',\n' + entryBlock + content.slice(closeIdx)
   fs.writeFileSync(filepath, newContent)
+
+  // 이중 쉼표·문법 오류 즉시 검증 — 실패 시 롤백
+  const check = spawnSync('node', ['--check', filepath], { encoding: 'utf8' })
+  if (check.status !== 0) {
+    log(`  ⚠ data/${filename} 문법 오류 → 롤백`)
+    fs.writeFileSync(filepath, content)
+    throw new Error(`data/${filename} 문법 오류: ${check.stderr?.slice(0, 200)}`)
+  }
   log(`  data/${filename} → ${meta.slug} 추가`)
 }
 

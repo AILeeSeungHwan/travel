@@ -5,7 +5,7 @@ import guides from '../../data/guides'
 import countries from '../../data/countries'
 
 export async function getStaticPaths() {
-  return { paths: guides.map(g => ({ params: { slug: g.slug } })), fallback: false }
+  return { paths: guides.filter(g => g?.slug).map(g => ({ params: { slug: g.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

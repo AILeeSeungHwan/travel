@@ -5,7 +5,7 @@ import tools from '../../data/tools'
 import { fetchAllRates } from '../../lib/ecos'
 
 export async function getStaticPaths() {
-  return { paths: tools.map(t => ({ params: { slug: t.slug } })), fallback: false }
+  return { paths: tools.filter(t => t?.slug).map(t => ({ params: { slug: t.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {

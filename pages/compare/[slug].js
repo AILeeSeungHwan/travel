@@ -4,7 +4,7 @@ import PageTracker from '../../components/PageTracker'
 import compares from '../../data/compares'
 
 export async function getStaticPaths() {
-  return { paths: compares.map(c => ({ params: { slug: c.slug } })), fallback: false }
+  return { paths: compares.filter(c => c?.slug).map(c => ({ params: { slug: c.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {
