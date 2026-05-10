@@ -21,6 +21,6 @@ const posts = [
   ...tools.map(p => ({ ...p, category: 'tool', categoryLabel: '계산기', url: `/tools/${p.slug}/` })),
   ...compares.map(p => ({ ...p, category: 'compare', categoryLabel: '비교', url: `/compare/${p.slug}/` })),
   ...addons.map(p => ({ ...p, category: 'addon', categoryLabel: '여행용품', url: `/addons/${p.slug}/` })),
-]
+].filter(p => p != null && p.slug)  // sparse array / undefined 방어 (이중 쉼표 등)
 
 module.exports = posts

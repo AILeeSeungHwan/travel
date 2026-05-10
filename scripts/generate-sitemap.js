@@ -68,9 +68,9 @@ const allPosts = [
   ...guides.map(p => ({ ...p, path: `guides/${p.slug}` })),
   ...tools.map(p => ({ ...p, path: `tools/${p.slug}` })),
   ...compares.map(p => ({ ...p, path: `compare/${p.slug}` })),
-]
+].filter(p => p != null && p.slug)  // sparse array / undefined 방어
 const cutoff = new Date(Date.now() - 30*24*60*60*1000).toISOString().slice(0, 10)
-const recent = allPosts.filter(p => (p.updatedAt || '0000-00-00') >= cutoff)
+const recent = allPosts.filter(p => (p.updatedAt || p.publishedAt || '0000-00-00') >= cutoff)
 sitemap('sitemap-news.xml', recent.map(p => url(`${SITE}/${p.path}/`, p.updatedAt, '0.9', 'daily')))
 
 const sitemaps = [

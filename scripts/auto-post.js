@@ -230,6 +230,26 @@ function savePost(entity, slug, content) {
 }
 
 // ─── 데이터 파일 업데이트 ─────────────────────────────────────
+// 엔티티별 필수 필드 — 누락 시 sitemap/렌더러 TypeError 방지
+const REQUIRED_FIELDS = {
+  hotel:     ['id','slug','title','description','summary','publishedAt','updatedAt','hotelName','gallery','hotelsCombinedDeepLink'],
+  theme:     ['id','slug','title','description','summary','publishedAt','updatedAt','name','icon','category'],
+  guide:     ['id','slug','title','description','publishedAt','updatedAt'],
+  situation: ['id','slug','title','description','publishedAt','updatedAt'],
+  region:    ['id','slug','regionName','countrySlug','publishedAt','updatedAt'],
+  country:   ['id','slug','countryName','publishedAt','updatedAt'],
+  compare:   ['id','slug','title','description','publishedAt','updatedAt'],
+  addon:     ['id','slug','title','description','publishedAt','updatedAt'],
+  tool:      ['id','slug','title','description','publishedAt','updatedAt'],
+}
+// 엔티티별 자동 기본값 (meta에 없으면 채움)
+const DEFAULT_FIELDS = {
+  hotel:     { gallery: '[]', hotelsCombinedDeepLink: "''" },
+  theme:     { name: null, icon: "'🌍'", category: "'theme'", ymylLevel: "'C'" },
+  guide:     { ymylLevel: "'B'" },
+  situation: { ymylLevel: "'C'" },
+}
+
 function appendToDataFile(entity, meta) {
   const MAP = {
     hotel: 'hotels.js', region: 'regions.js', country: 'countries.js',
@@ -242,11 +262,28 @@ function appendToDataFile(entity, meta) {
   if (!fs.existsSync(filepath)) return
   const content = fs.readFileSync(filepath, 'utf8')
   if (content.includes(`slug: '${meta.slug}'`)) { log(`  이미 등록: ${meta.slug}`); return }
+
+  // 필수 필드 검증 — 누락 필드는 경고 후 기본값으로 채움
+  const required = REQUIRED_FIELDS[entity] || ['id','slug','title','description','publishedAt','updatedAt']
+  const defaults = DEFAULT_FIELDS[entity] || {}
+  const missing = required.filter(f => meta[f] === undefined && defaults[f] === undefined)
+  if (missing.length > 0) {
+    log(`  ⚠ ${entity}/${meta.slug} 누락 필드: ${missing.join(', ')} — 빈값으로 채움`)
+  }
+  // 기본값 적용 (없는 필드만)
+  const filledMeta = { ...meta }
+  for (const [k, v] of Object.entries(defaults)) {
+    if (filledMeta[k] === undefined) filledMeta[k] = v === null ? meta.title || meta.slug : v.replace(/^'|'$/g, '')
+  }
+  for (const f of missing) {
+    if (filledMeta[f] === undefined) filledMeta[f] = ''
+  }
+
   const closeIdx = content.lastIndexOf('\n]\n')
   if (closeIdx === -1) return
-  const entry = Object.entries(meta)
+  const entry = Object.entries(filledMeta)
     .filter(([, v]) => v !== null && v !== undefined)
-    .map(([k, v]) => `    ${k}: ${typeof v === 'object' ? JSON.stringify(v) : typeof v === 'string' ? `'${v}'` : v}`)
+    .map(([k, v]) => `    ${k}: ${typeof v === 'object' ? JSON.stringify(v) : typeof v === 'string' ? `'${v.replace(/'/g, "\\'")}'` : v}`)
     .join(',\n')
   const entryBlock = `  {\n${entry}\n  }`
   const newContent = content.slice(0, closeIdx) + ',\n' + entryBlock + content.slice(closeIdx)
@@ -431,8 +468,8 @@ async function runMorning() {
     }
   }
 
-  if (generated.length > 0) prebuild()
-  log(`=== morning 완료: ${generated.length}개 ===`)
+  // morning: 파일만 생성, prebuild/push는 evening에서 일괄 처리
+  log(`=== morning 완료: ${generated.length}개 (push 없음 — evening에서 일괄) ===`)
   return generated
 }
 
@@ -493,8 +530,8 @@ async function runNoon() {
     }
   }
 
-  if (generated.length > 0) prebuild()
-  log(`=== noon 완료: ${generated.length}개 ===`)
+  // noon: 파일만 생성, prebuild/push는 evening에서 일괄 처리
+  log(`=== noon 완료: ${generated.length}개 (push 없음 — evening에서 일괄) ===`)
   return generated
 }
 
@@ -527,10 +564,10 @@ async function runEvening() {
     }
   }
 
-  // evening: 항상 prebuild + 커밋·푸시 (오늘 생성된 모든 포스팅 포함)
+  // evening: 하루 종일 생성된 모든 파일을 한번에 prebuild + 커밋 + 푸시
   prebuild()
-  gitPush(generated.length > 0 ? generated : [`no-new-${TODAY}`])
-  log(`=== evening 완료: ${generated.length}개 생성 + push ===`)
+  gitPush(generated.length > 0 ? generated : [`daily-${TODAY}`])
+  log(`=== evening 완료: ${generated.length}개 생성 — sitemap 갱신 + 1회 commit·push ===`)
   return generated
 }
 

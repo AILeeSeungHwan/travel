@@ -184,6 +184,27 @@ if(ok) console.log('OK — 모든 필드 정상');
 - 배열 필드(`amenities`, `roomTypes`, `standoutFeatures`)는 `|| []` 폴백
 - `country?.countryName`, `region?.regionName` — 옵셔널 체이닝 필수
 
+**generate-sitemap.js 방어**: `allPosts` 배열은 반드시 `.filter(p => p != null && p.slug)` 후처리. sparse array(이중 쉼표 `,,`)나 auto-post가 undefined 삽입 시 크래시 방지.
+
+**data 파일에 이중 쉼표 `,,` 절대 금지** — sparse array 생성 원인. auto-post의 `appendToDataFile`이 항목 추가 후 생성되는 JS를 `node --check data/{file}.js`로 반드시 검증.
+
+## 7-3. 자동 포스팅(auto-post.js) 규칙
+
+**커밋·푸시는 하루 1회(evening 슬롯)에만**:
+- morning(7시): 포스트 파일만 생성, prebuild/push 없음
+- noon(12시): 포스트 파일만 생성, prebuild/push 없음
+- evening(18시): 하루 전체 생성분 + sitemap 갱신 → 커밋 → 푸시 1회
+
+**appendToDataFile 필수 필드 자동 검증** (auto-post.js 내장):
+- `REQUIRED_FIELDS` 맵에 엔티티별 필수 필드 정의
+- 누락 필드는 `DEFAULT_FIELDS`로 자동 채움 (name/icon/category 등)
+- 누락 필드 경고 로그: `⚠ {entity}/{slug} 누락 필드: ...`
+
+**auto-post가 data 파일에 항목 추가 후 반드시 실행**:
+```bash
+node --check data/{entity}s.js   # 문법 오류(이중 쉼표 등) 즉시 발견
+```
+
 ## 8. 배포 전 체크
 
 ```bash

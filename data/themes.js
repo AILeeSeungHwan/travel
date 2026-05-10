@@ -69,15 +69,12 @@ const themes = [
     summary: '경주·진해·교토·오사카 벚꽃 명소와 숙소 추천.',
     bestCountrySlugs: ['kr', 'jp'],
     publishedAt: '2026-05-09', updatedAt: '2026-05-09', ymylLevel: 'C', tags: ['벚꽃','봄여행','사쿠라'] },
-  {
-    id: 'TH013',
-    slug: 'pool-villa-asia',
-    title: '아시아 풀빌라 베스트',
-    description: '발리·다낭·푸껫·몰디브 풀빌라 TOP 10',
-    tags: ["풀빌라","아시아","동남아","추천"],
-    publishedAt: '2026-05-10',
-    updatedAt: '2026-05-10'
-  }
+  { id: 'TH013', slug: 'pool-villa-asia', name: '아시아 풀빌라', icon: '🏖️', category: 'theme',
+    title: '아시아 풀빌라 베스트 — 발리·다낭·푸껫·몰디브 TOP 10',
+    description: '발리·다낭·푸껫·몰디브 풀빌라 TOP 10. 가격대별·시즌별 최적 풀빌라 추천.',
+    summary: '발리·다낭·푸껫·몰디브 프라이빗 풀빌라 TOP 10 비교.',
+    bestCountrySlugs: ['id', 'vn', 'th'],
+    publishedAt: '2026-05-10', updatedAt: '2026-05-10', ymylLevel: 'C', tags: ['풀빌라','아시아','동남아','추천'] }
 ]
 
 module.exports = themes
