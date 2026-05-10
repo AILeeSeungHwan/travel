@@ -73,6 +73,15 @@ const addons = [
     tags: ["골프","해외","장비"],
     publishedAt: '2026-05-10',
     updatedAt: '2026-05-10'
+  },
+  {
+    id: 'AD013',
+    slug: 'travel-wallet',
+    title: '여행용 여권 지갑 추천',
+    description: '여권 지갑 선택 가이드',
+    tags: ["여권지갑","여행용품","RFID"],
+    publishedAt: '2026-05-10',
+    updatedAt: '2026-05-10'
   }
 ]
 
