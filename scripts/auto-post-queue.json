@@ -1208,8 +1208,10 @@
           "풀빌라"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_four-seasons-bali_1778490137644.js:103\n          a: '두 리조트는 콘셉트가 다릅니다. 짐바란은 바다·일몰·공항 접근성이 강점이고, 사양(Sayan)은 우붓 정글·아융강·문화 체험이 강점입니다. 첫 발리 여행이라면 짐바란, 두 번째 이후 깊이 있는 휴양을 원한다면 사양 또는 두 곳을 나눠 묵는 'Two Resort Stay' 패키지가 인기입니다.',\n                                                                                                                                                     ^^^\n\nSyntaxError: Unexpected identifier 'Two'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
+      "errorAt": "2026-05-11T09:02:17.735Z"
     },
     {
       "id": "b012",
