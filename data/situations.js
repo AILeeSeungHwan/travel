@@ -50,6 +50,16 @@ const situations = [
     tags: ["커플","기념일","로맨틱"],
     publishedAt: '2026-05-09',
     updatedAt: '2026-05-09'
+  },
+  {
+    id: 'SI010',
+    slug: 'solo-travel-asia',
+    title: '혼자 동남아 여행',
+    description: '첫 솔로 동남아 여행 완전 가이드',
+    tags: ["솔로","혼자여행","동남아"],
+    publishedAt: '2026-05-11',
+    updatedAt: '2026-05-11',
+    ymylLevel: 'C'
   }
 ]
 
