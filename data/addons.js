@@ -82,6 +82,15 @@ const addons = [
     tags: ["여권지갑","여행용품","RFID"],
     publishedAt: '2026-05-10',
     updatedAt: '2026-05-10'
+  },
+  {
+    id: 'AD014',
+    slug: 'travel-pillow',
+    title: '여행용 목베개 추천',
+    description: '장거리 비행 목베개 가이드',
+    tags: ["목베개","여행용품","비행기"],
+    publishedAt: '2026-05-11',
+    updatedAt: '2026-05-11'
   }
 ]
 
