@@ -74,7 +74,21 @@ const themes = [
     description: '발리·다낭·푸껫·몰디브 풀빌라 TOP 10. 가격대별·시즌별 최적 풀빌라 추천.',
     summary: '발리·다낭·푸껫·몰디브 프라이빗 풀빌라 TOP 10 비교.',
     bestCountrySlugs: ['id', 'vn', 'th'],
-    publishedAt: '2026-05-10', updatedAt: '2026-05-10', ymylLevel: 'C', tags: ['풀빌라','아시아','동남아','추천'] }
+    publishedAt: '2026-05-10', updatedAt: '2026-05-10', ymylLevel: 'C', tags: ['풀빌라','아시아','동남아','추천'] },
+  {
+    id: 'TH014',
+    slug: 'honeymoon-overseas',
+    title: '해외 신혼여행지 베스트',
+    description: '한국인이 가장 선호하는 해외 신혼여행지',
+    tags: ["신혼여행","허니문","해외"],
+    publishedAt: '2026-05-11',
+    updatedAt: '2026-05-11',
+    name: '해외 신혼여행지 베스트',
+    icon: '🌍',
+    category: 'theme',
+    ymylLevel: 'C',
+    summary: ''
+  }
 ]
 
 module.exports = themes
