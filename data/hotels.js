@@ -278,7 +278,35 @@ const hotels = [
     hotelsCombinedDeepLink: '', hotelsCombinedHotelId: '',
     affiliateLinkVerified: false, imageVerified: false,
     ymylLevel: 'B', tags: ['만다린오리엔탈','방콕','럭셔리','강변'],
-    publishedAt: '2026-05-10', updatedAt: '2026-05-10' }
+    publishedAt: '2026-05-10', updatedAt: '2026-05-10' },
+  {
+    id: 'H018',
+    slug: 'jw-marriott-danang',
+    countrySlug: 'vn',
+    regionSlug: 'danang',
+    hotelName: 'JW 메리어트 다낭 리조트 & 스파',
+    hotelNameEn: 'JW Marriott Danang Resort & Spa',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.6,
+    priceRange: 'USD 180~500/박',
+    amenities: ["야외수영장","스파","다이닝","피트니스","미케비치 위치"],
+    address: 'My Khe Beach, My An Ward, Ngu Hanh Son, Da Nang',
+    lat: 16.032,
+    lng: 108.241,
+    iso2: 'VN',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["JW메리어트","다낭","미케비치","5성"],
+    publishedAt: '2026-05-12',
+    updatedAt: '2026-05-12',
+    gallery: '[]',
+    title: '',
+    description: '',
+    summary: ''
+  }
 ]
 
 module.exports = hotels
