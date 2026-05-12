@@ -60,7 +60,16 @@ const compares = [
     description: '부산 해수욕장별 최고 호텔 비교. 해운대·광안리·기장 권역 4개 가격대 호텔 추천과 시즌별 예약 전략.',
     summary: '해운대·광안리·기장 권역 가격대별 부산 해수욕장 호텔 추천.',
     ymylLevel: 'C', tags: ['부산','해운대','호텔비교','가격대별'],
-    publishedAt: '2026-05-10', updatedAt: '2026-05-10' }
+    publishedAt: '2026-05-10', updatedAt: '2026-05-10' },
+  {
+    id: 'C008',
+    slug: 'bali-vs-maldives',
+    title: '발리 vs 몰디브 신혼여행 비교',
+    description: '발리와 몰디브 신혼여행 비교 가이드',
+    tags: ["발리","몰디브","신혼여행","비교"],
+    publishedAt: '2026-05-12',
+    updatedAt: '2026-05-12'
+  }
 ]
 
 module.exports = compares
