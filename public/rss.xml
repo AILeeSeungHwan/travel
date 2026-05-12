@@ -6,12 +6,36 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://travel.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 11 May 2026 09:08:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 04:15:46 GMT</lastBuildDate>
     <image>
       <url>https://travel.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
       <link>https://travel.ambitstock.com/</link>
     </image>
+    <item>
+      <title><![CDATA[겨울 따뜻한 해외 해변 여행]]></title>
+      <link>https://travel.ambitstock.com/situations/winter-beach/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/situations/winter-beach/</guid>
+      <pubDate>Mon, 11 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[상황별]]></category>
+      <description><![CDATA[12~2월 최적의 따뜻한 해외 여행지]]></description>
+    </item>
+    <item>
+      <title><![CDATA[발리 vs 몰디브 신혼여행 비교]]></title>
+      <link>https://travel.ambitstock.com/compare/bali-vs-maldives/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/compare/bali-vs-maldives/</guid>
+      <pubDate>Mon, 11 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[비교]]></category>
+      <description><![CDATA[발리와 몰디브 신혼여행 비교 가이드]]></description>
+    </item>
+    <item>
+      <title><![CDATA[undefined]]></title>
+      <link>https://travel.ambitstock.com/countries/kr/regions/kr-busan/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/countries/kr/regions/kr-busan/</guid>
+      <pubDate>Sun, 10 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[지역]]></category>
+      <description><![CDATA[]]></description>
+    </item>
     <item>
       <title><![CDATA[해외 신혼여행지 베스트]]></title>
       <link>https://travel.ambitstock.com/themes/honeymoon-overseas/</link>
@@ -19,6 +43,22 @@
       <pubDate>Sun, 10 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[테마]]></category>
       <description><![CDATA[한국인이 가장 선호하는 해외 신혼여행지]]></description>
+    </item>
+    <item>
+      <title><![CDATA[오늘의 여행 트렌드 1 (2026-05-11)]]></title>
+      <link>https://travel.ambitstock.com/guides/trend-20260511-1/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/guides/trend-20260511-1/</guid>
+      <pubDate>Sun, 10 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[가이드]]></category>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title><![CDATA[오늘의 여행 트렌드 2 (2026-05-11)]]></title>
+      <link>https://travel.ambitstock.com/guides/trend-20260511-2/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/guides/trend-20260511-2/</guid>
+      <pubDate>Sun, 10 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[가이드]]></category>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title><![CDATA[혼자 동남아 여행]]></title>
@@ -211,46 +251,6 @@
       <pubDate>Thu, 07 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[비교]]></category>
       <description><![CDATA[발리 호텔을 4개 가격대로 나눠 추천 — 우붓 가성비부터 아만다리·포시즌스 사얀 풀빌라까지. 지역별 선택 가이드 포함.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[도쿄 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·아만 럭셔리]]></title>
-      <link>https://travel.ambitstock.com/compare/tokyo-hotels-by-price/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/compare/tokyo-hotels-by-price/</guid>
-      <pubDate>Thu, 07 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[비교]]></category>
-      <description><![CDATA[도쿄 호텔을 4개 가격대로 나눠 추천 — 신주쿠 비즈니스호텔부터 아만·만다린·불가리 럭셔리까지. 벚꽃 시즌 예약 전략 포함.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[장거리 비행 편의용품 완전 가이드]]></title>
-      <link>https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/</guid>
-      <pubDate>Thu, 07 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[여행용품]]></category>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title><![CDATA[서울신라호텔 완전 가이드 — 도심 5성 럭셔리·신라멤버스]]></title>
-      <link>https://travel.ambitstock.com/hotels/seoul-shilla/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/seoul-shilla/</guid>
-      <pubDate>Wed, 06 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[호텔]]></category>
-      <description><![CDATA[남산 자락 도심 5성호텔 서울신라. 야외수영장, 스파, 신라멤버스 라운지, 면세점 인접 위치와 객실 타입·시설 정보.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[제주신라호텔 — 중문관광단지 5성 가족 호캉스 가이드]]></title>
-      <link>https://travel.ambitstock.com/hotels/shilla-jeju/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/shilla-jeju/</guid>
-      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[호텔]]></category>
-      <description><![CDATA[중문관광단지 대표 5성호텔 제주신라. 야외수영장(인피니티), 키즈클럽, 한식·일식·뷔페 다이닝, 중문해변 위치와 객실 타입·시설 정보.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[롯데호텔 제주 — 야외수영장·돌고래쇼·중문 가족 리조트]]></title>
-      <link>https://travel.ambitstock.com/hotels/lotte-jeju/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/lotte-jeju/</guid>
-      <pubDate>Mon, 27 Apr 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[호텔]]></category>
-      <description><![CDATA[중문관광단지 5성호텔 롯데 제주. 야외수영장(가든풀), 돌고래쇼, 카지노, 한식·일식·중식 다이닝과 키즈프로그램 가이드.]]></description>
     </item>
   </channel>
 </rss>

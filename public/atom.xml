@@ -4,8 +4,32 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-11T09:08:04.488Z</updated>
+  <updated>2026-05-12T04:15:46.452Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[겨울 따뜻한 해외 해변 여행]]></title>
+    <link href="https://travel.ambitstock.com/situations/winter-beach/" />
+    <id>https://travel.ambitstock.com/situations/winter-beach/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="상황별" />
+    <summary><![CDATA[12~2월 최적의 따뜻한 해외 여행지]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[발리 vs 몰디브 신혼여행 비교]]></title>
+    <link href="https://travel.ambitstock.com/compare/bali-vs-maldives/" />
+    <id>https://travel.ambitstock.com/compare/bali-vs-maldives/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="비교" />
+    <summary><![CDATA[발리와 몰디브 신혼여행 비교 가이드]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[undefined]]></title>
+    <link href="https://travel.ambitstock.com/countries/kr/regions/kr-busan/" />
+    <id>https://travel.ambitstock.com/countries/kr/regions/kr-busan/</id>
+    <updated>2026-05-10T15:00:00.000Z</updated>
+    <category term="지역" />
+    <summary><![CDATA[]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[해외 신혼여행지 베스트]]></title>
     <link href="https://travel.ambitstock.com/themes/honeymoon-overseas/" />
@@ -13,6 +37,22 @@
     <updated>2026-05-10T15:00:00.000Z</updated>
     <category term="테마" />
     <summary><![CDATA[한국인이 가장 선호하는 해외 신혼여행지]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[오늘의 여행 트렌드 1 (2026-05-11)]]></title>
+    <link href="https://travel.ambitstock.com/guides/trend-20260511-1/" />
+    <id>https://travel.ambitstock.com/guides/trend-20260511-1/</id>
+    <updated>2026-05-10T15:00:00.000Z</updated>
+    <category term="가이드" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[오늘의 여행 트렌드 2 (2026-05-11)]]></title>
+    <link href="https://travel.ambitstock.com/guides/trend-20260511-2/" />
+    <id>https://travel.ambitstock.com/guides/trend-20260511-2/</id>
+    <updated>2026-05-10T15:00:00.000Z</updated>
+    <category term="가이드" />
+    <summary><![CDATA[]]></summary>
   </entry>
   <entry>
     <title><![CDATA[혼자 동남아 여행]]></title>
@@ -205,45 +245,5 @@
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[발리 호텔을 4개 가격대로 나눠 추천 — 우붓 가성비부터 아만다리·포시즌스 사얀 풀빌라까지. 지역별 선택 가이드 포함.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[도쿄 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·아만 럭셔리]]></title>
-    <link href="https://travel.ambitstock.com/compare/tokyo-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/tokyo-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[도쿄 호텔을 4개 가격대로 나눠 추천 — 신주쿠 비즈니스호텔부터 아만·만다린·불가리 럭셔리까지. 벚꽃 시즌 예약 전략 포함.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[장거리 비행 편의용품 완전 가이드]]></title>
-    <link href="https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/" />
-    <id>https://travel.ambitstock.com/addons/long-haul-flight-comfort-kit/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="여행용품" />
-    <summary><![CDATA[]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[서울신라호텔 완전 가이드 — 도심 5성 럭셔리·신라멤버스]]></title>
-    <link href="https://travel.ambitstock.com/hotels/seoul-shilla/" />
-    <id>https://travel.ambitstock.com/hotels/seoul-shilla/</id>
-    <updated>2026-05-06T15:00:00.000Z</updated>
-    <category term="호텔" />
-    <summary><![CDATA[남산 자락 도심 5성호텔 서울신라. 야외수영장, 스파, 신라멤버스 라운지, 면세점 인접 위치와 객실 타입·시설 정보.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[제주신라호텔 — 중문관광단지 5성 가족 호캉스 가이드]]></title>
-    <link href="https://travel.ambitstock.com/hotels/shilla-jeju/" />
-    <id>https://travel.ambitstock.com/hotels/shilla-jeju/</id>
-    <updated>2026-04-27T15:00:00.000Z</updated>
-    <category term="호텔" />
-    <summary><![CDATA[중문관광단지 대표 5성호텔 제주신라. 야외수영장(인피니티), 키즈클럽, 한식·일식·뷔페 다이닝, 중문해변 위치와 객실 타입·시설 정보.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[롯데호텔 제주 — 야외수영장·돌고래쇼·중문 가족 리조트]]></title>
-    <link href="https://travel.ambitstock.com/hotels/lotte-jeju/" />
-    <id>https://travel.ambitstock.com/hotels/lotte-jeju/</id>
-    <updated>2026-04-27T15:00:00.000Z</updated>
-    <category term="호텔" />
-    <summary><![CDATA[중문관광단지 5성호텔 롯데 제주. 야외수영장(가든풀), 돌고래쇼, 카지노, 한식·일식·중식 다이닝과 키즈프로그램 가이드.]]></summary>
   </entry>
 </feed>

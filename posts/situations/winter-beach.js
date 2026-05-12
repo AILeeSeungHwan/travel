@@ -1,0 +1,105 @@
+module.exports = {
+  sections: [
+    {
+      type: 'intro',
+      html: `<p><strong>겨울 해외여행</strong>으로 따뜻한 해변을 찾는 분들이 매년 12월부터 2월 사이 폭발적으로 늘고 있습니다. 한국의 영하 기온을 벗어나 평균 28~32℃의 트로피컬 기후를 즐길 수 있는 동남아·오세아니아 해변 도시는 직항 4~10시간 거리로 비교적 가깝고, 비자 부담도 적어 가족·신혼·친구 여행 모두에 적합한 선택지입니다.</p><p>특히 12~2월은 동남아 대부분 지역이 <strong>건기(dry season)</strong>에 해당하여 강수량이 적고 일조 시간이 길기 때문에, 해변·수영장·스노클링 일정을 안정적으로 짤 수 있는 유일한 시기입니다. 같은 가격대에서도 우기보다 만족도가 크게 높아지는 점이 핵심입니다.</p><p>이 글에서는 한국에서 직항 가능하면서 12~2월에 가장 따뜻하고 안전한 해변 여행지 3곳을 소개하고, 짐 체크리스트·예산 가이드·건강·안전 주의사항까지 상황별로 정리합니다. 직접 비교해 본인 일정과 예산에 맞는 곳을 골라보세요.</p>`,
+    },
+    {
+      type: 'image',
+      src: 'https://images.unsplash.com/photo-1760465789358-39db3b06835b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGJlYWNoJTIwd2ludGVyJTIwd2FybSUyMGhvbGlkYXl8ZW58MXwwfHx8MTc3ODU1NDkyOXww&ixlib=rb-4.1.0&q=80&w=1080&w=1200',
+      alt: '겨울 따뜻한 해외 해변 여행 대표 이미지',
+      caption: 'Tropical beach with trees and distant islands — 12~2월 동남아 건기 해변',
+      imageSource: 'Unsplash',
+      imageLicense: 'Unsplash License',
+      imageCredit: 'Bernd 📷 Dittrich on Unsplash',
+      imageSourceUrl: 'https://unsplash.com/@hdbernd?utm_source=travel.ambitstock&utm_medium=referral',
+    },
+    { type: 'h2', id: 'why-winter-beach', text: '왜 12~2월에 해외 해변인가' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>한국 겨울 vs 동남아 건기</strong>: 한국 1월 평균 기온은 영하 2℃ 안팎이지만, 같은 시기 발리·푸켓·세부는 27~31℃의 안정적인 트로피컬 기후를 유지합니다.</li><li><strong>강수량이 낮은 시기</strong>: 12~2월은 동남아 적도권의 대표적인 건기로, 우기(6~9월) 대비 강수일이 절반 이하로 떨어집니다.</li><li><strong>일조 시간 충분</strong>: 일조량이 길어 스노클링·다이빙·일출/일몰 사진 모두 안정적으로 즐길 수 있습니다.</li><li><strong>면역·관절 회복</strong>: 따뜻한 기온과 햇볕은 비타민 D 합성을 도와 겨울철 관절통·수면 패턴에 긍정적이라는 보고가 있습니다(단, 일사·자외선은 별도 관리 필요).</li><li><strong>가성비 일정 가능</strong>: 한국 출발 4~7시간 직항 + 4박 5일 일정으로 무난히 가능합니다.</li></ul>`,
+    },
+    { type: 'h2', id: 'rec-bali', text: '추천 1 — 인도네시아 발리 (Bali)' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>위치·이동</strong>: 인천 → 덴파사르(DPS) 직항 약 7시간 30분. 12~2월은 우기에 해당하지만, 남부 누사두아·울루와뚜 권역은 강수량이 비교적 적고 오전 맑은 날씨 비율이 높습니다.</li><li><strong>대표 해변</strong>: 누사두아(가족·리조트), 짐바란(노을), 스미냑(트렌디 비치클럽), 누사페니다(스노클링 데이트립).</li><li><strong>분위기</strong>: 리조트·빌라·요가·서핑·발리니즈 마사지가 결합된 종합 휴양지. 신혼·30대 커플 비율이 매우 높습니다.</li><li><strong>주의</strong>: 1~2월은 일시 소나기(스콜)와 해류 변화가 있을 수 있으니, 일정 중 마사지·실내 스파를 1~2회 끼워 두면 안정적입니다.</li><li><strong>예산</strong>: 항공 60~90만원, 4성 풀빌라 1박 15~30만원, 식비 1일 4~7만원 수준.</li></ul>`,
+    },
+    {
+      type: 'image',
+      src: 'https://images.unsplash.com/photo-1614611587986-56bfe82f9b60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwyfHx0cm9waWNhbCUyMGJlYWNoJTIwd2ludGVyJTIwd2FybSUyMGhvbGlkYXl8ZW58MXwwfHx8MTc3ODU1NDkyOXww&ixlib=rb-4.1.0&q=80&w=1080&w=1200',
+      alt: '낮 시간대 해변에서 휴양 중인 여행자들',
+      caption: 'people on beach during daytime — 1월 동남아 해변 풍경',
+      imageSource: 'Unsplash',
+      imageLicense: 'Unsplash License',
+      imageCredit: 'Bernd 📷 Dittrich on Unsplash',
+      imageSourceUrl: 'https://unsplash.com/@hdbernd?utm_source=travel.ambitstock&utm_medium=referral',
+    },
+    { type: 'h2', id: 'rec-phuket', text: '추천 2 — 태국 푸켓·끄라비 (Phuket·Krabi)' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>위치·이동</strong>: 인천 → 푸켓(HKT) 직항 약 6시간 30분. 12~2월은 푸켓의 <strong>완전 성수기</strong>로 강수량이 가장 적고 일조 시간이 가장 깁니다.</li><li><strong>대표 해변</strong>: 카타·카론(가족), 빠통(나이트·쇼핑), 라일레이·아오낭(끄라비 — 라임스톤 절벽), 피피섬·시밀란(스노클링·다이빙).</li><li><strong>분위기</strong>: 호캉스+섬투어+나이트라이프 균형이 좋고, 5성 호텔도 1박 12~25만원대로 가성비가 우수합니다.</li><li><strong>주의</strong>: 성수기엔 카오락·피피섬 데이트립이 매진되므로 한국 출국 2~3주 전 예약 권장.</li><li><strong>예산</strong>: 항공 50~80만원, 4~5성 1박 12~25만원, 식비 1일 3~6만원.</li></ul>`,
+    },
+    { type: 'h2', id: 'rec-cebu', text: '추천 3 — 필리핀 세부·보홀 (Cebu·Bohol)' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>위치·이동</strong>: 인천 → 세부(CEB) 직항 약 4시간 40분. 한국 출발 동남아 중 <strong>최단거리</strong>로, 짧은 휴가에 가장 적합합니다.</li><li><strong>대표 해변·체험</strong>: 막탄섬(리조트·아일랜드 호핑), 모알보알(정어리떼·스노클링), 보홀 알로나비치(고래상어 시즌 외 일정 추천), 카모테스·바디안(고급 풀빌라).</li><li><strong>분위기</strong>: 가족 친화형 풀빌라·아쿠아 액티비티 중심. 영어가 통해 첫 해외 가족여행으로도 무난합니다.</li><li><strong>주의</strong>: 2023년 이후 일부 지역 입국 시 e-Travel 사전 등록 필요(외교부 안내 기준). 출국 72시간 전 모바일 등록을 권장합니다.</li><li><strong>예산</strong>: 항공 45~70만원, 4성 리조트 1박 10~22만원, 식비 1일 3~6만원.</li></ul>`,
+    },
+    { type: 'h2', id: 'checklist', text: '겨울 해변 여행 짐 체크리스트' },
+    {
+      type: 'body',
+      html: `<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">분류</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">필수 품목</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">이유·팁</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">의류</td><td style="padding:8px 10px;border:1px solid #CBD5E1">래시가드·반바지·얇은 카디건</td><td style="padding:8px 10px;border:1px solid #CBD5E1">기내·공항·실내 강한 에어컨 대비 가벼운 겉옷 1장</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">자외선·해변</td><td style="padding:8px 10px;border:1px solid #CBD5E1">SPF50+ 선크림, 워터프루프 선크림, 모자, 선글라스</td><td style="padding:8px 10px;border:1px solid #CBD5E1">정오 자외선 지수 11+ 빈번. 코·귀·발등 화상 빈도 높음</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">전자</td><td style="padding:8px 10px;border:1px solid #CBD5E1">유심·이심, 보조배터리, 멀티 어댑터(C타입)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">동남아 대부분 230V/유럽형. C타입 어댑터로 무난</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">건강</td><td style="padding:8px 10px;border:1px solid #CBD5E1">지사제, 종합감기약, 모기 기피제, 일회용 마스크</td><td style="padding:8px 10px;border:1px solid #CBD5E1">현지 음식 적응·뎅기열 매개모기 대비</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">서류</td><td style="padding:8px 10px;border:1px solid #CBD5E1">여권 잔여 6개월, 여행자보험, e-Travel(필 한정)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">잔여 유효기간 6개월 미만이면 일부 국가 입국 거부</td></tr></tbody></table>`,
+    },
+    { type: 'h2', id: 'budget', text: '4박 5일 예산 — 1인 기준 비교' },
+    {
+      type: 'body',
+      html: `<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">항목</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">발리</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">푸켓</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">세부</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">왕복 항공</td><td style="padding:8px 10px;border:1px solid #CBD5E1">60~90만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">50~80만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">45~70만원</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">숙박(4박, 4성)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">60~120만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">48~100만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">40~88만원</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">식비·교통</td><td style="padding:8px 10px;border:1px solid #CBD5E1">25~40만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20~35만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">18~32만원</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">액티비티</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15~30만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15~30만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12~25만원</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>합계 (1인)</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 160~280만원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 133~245만원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 115~215만원</strong></td></tr></tbody></table><p style="margin-top:8px;color:#475569;font-size:13px">※ 시즌(설 연휴/크리스마스)·항공권 직전 발권 여부에 따라 ±30%까지 변동.</p>`,
+    },
+    { type: 'h2', id: 'safety', text: '겨울 해변 여행 — 안전·건강 체크' },
+    {
+      type: 'warning',
+      title: '햇볕·해류·식중독 3대 리스크',
+      html: `<ul><li><strong>일사·자외선</strong>: 정오 12시~오후 3시 직사광선을 피하고, 2~3시간 간격으로 워터프루프 선크림 재도포. 어린이는 래시가드 필수.</li><li><strong>해류·이안류</strong>: 발리·푸켓 일부 해변에 1~2월 이안류 주의보 발령 가능. 적색기·황색기 게양 시 입수 금지.</li><li><strong>식중독·음용수</strong>: 수돗물 음용 금지(반드시 생수). 노점 얼음·해산물 회는 컨디션이 좋은 첫날 위주로 제한.</li><li><strong>모기 매개 감염병</strong>: 뎅기열·말라리아 일부 지역 잔존. 모기 기피제·긴팔 외출, 의심 증상 시 현지 병원 방문.</li><li><strong>여행자 보험</strong>: 해양 액티비티(스노클링·다이빙) 포함 상품인지 가입 전 약관 확인.</li></ul>`,
+    },
+    { type: 'h2', id: 'visa-entry', text: '입국·비자·항공 — 출발 전 점검' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>인도네시아(발리)</strong>: 한국 여권 도착비자(VOA, 약 USD 35) 또는 e-VOA. 여권 잔여 6개월, 입출국 카드(전자) 별도 작성.</li><li><strong>태국(푸켓)</strong>: 한국 여권 무비자 90일. 단, 출입국카드(TM6)는 2024년 전산화 진행 — 출국 직전 외교부·항공사 공지 확인.</li><li><strong>필리핀(세부)</strong>: 무비자 30일. 입국 시 <strong>e-Travel 사전 등록</strong> 필수(QR 발급). 항공권 왕복 증빙 요구 가능.</li><li><strong>항공권 발권 타이밍</strong>: 설 연휴·크리스마스 포함 일정은 출발 8~12주 전이 평균가 기준 가장 안정적.</li></ul>`,
+    },
+    { type: 'h2', id: 'tips', text: '실전 팁 — 만족도 높이는 5가지' },
+    {
+      type: 'body',
+      html: `<ul><li><strong>아침형 일정</strong>: 더운 시간대 피하고 오전 7~10시 액티비티를 메인으로 배치하면 화상·탈진 가능성이 크게 줄어듭니다.</li><li><strong>호텔 위치 우선</strong>: 해변 도보 10분 이내 또는 비치프론트 객실을 우선 — 이동 피로 절감 효과가 큽니다.</li><li><strong>현지 결제 수단 분산</strong>: 트래블월렛/트래블로그·현금 USD·신용카드 3종 분산. 일부 외곽 식당은 카드 미수령.</li><li><strong>액티비티 사전 예약</strong>: 12~2월 성수기엔 데이트립·스노클링 보트가 매진. 출발 1~2주 전 예약 권장.</li><li><strong>1일 1여유</strong>: 매일 풀 일정은 피로 누적. 마사지·풀 휴식 슬롯을 4박 중 1~2회 비워두기.</li></ul>`,
+    },
+    {
+      type: 'image',
+      src: 'https://images.unsplash.com/photo-1569497254445-aa48326c844e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwzfHx0cm9waWNhbCUyMGJlYWNoJTIwd2ludGVyJTIwd2FybSUyMGhvbGlkYXl8ZW58MXwwfHx8MTc3ODU1NDkyOXww&ixlib=rb-4.1.0&q=80&w=1080&w=1200',
+      alt: '낮 시간대 트로피컬 해변의 파도',
+      caption: 'wavy ocean during daytime — 동남아 건기 해변 파도',
+      imageSource: 'Unsplash',
+      imageLicense: 'Unsplash License',
+      imageCredit: 'Bernd 📷 Dittrich on Unsplash',
+      imageSourceUrl: 'https://unsplash.com/@hdbernd?utm_source=travel.ambitstock&utm_medium=referral',
+    },
+    {
+      type: 'faq',
+      items: [
+        { q: '12~2월 동남아 해변은 정말 건기인가요?', a: '발리는 부분 우기(스콜 동반)이고, 푸켓·세부는 본격 건기입니다. 통계상 12~2월의 강수일은 우기(6~9월) 대비 절반 이하지만, 발리는 오후 짧은 스콜이 있을 수 있습니다. 안정성만 따지면 푸켓 > 세부 > 발리 순입니다.' },
+        { q: '신혼여행으로는 어디가 가장 좋나요?', a: '풀빌라·노을·미식이 결합된 발리(우붓+짐바란)와 한적한 보홀·바디안이 인기 1·2위입니다. 가성비와 직항 시간(4~7시간)을 함께 고려하면 발리·푸켓·세부 모두 무난합니다.' },
+        { q: '아이와 함께 가는데 추천 순서는?', a: '직항 거리·영어 사용·풀빌라 인프라를 보면 세부 막탄 → 푸켓 카타·카론 → 발리 누사두아 순입니다. 비행시간이 짧을수록 컨디션 관리에 유리합니다.' },
+        { q: '예산 150만원으로 4박 5일 가능한가요?', a: '세부 막탄 4성 리조트 기준 가능합니다. 성수기 직전 발권(8~12주 전) + 식사 일부 호텔 외식 줄이기 + 데이트립 1회로 구성하면 1인 130~150만원 선이 현실적입니다.' },
+        { q: '비자·입국서류는 어떻게 준비하나요?', a: '발리는 도착비자(USD 35), 푸켓은 무비자 90일, 세부는 무비자 30일 + e-Travel 사전등록입니다. 출국 72시간 전 외교부 해외안전여행과 항공사 공지를 함께 확인하세요.' },
+        { q: '해양 액티비티 보험은 따로 가입해야 하나요?', a: '일반 여행자보험은 스노클링·다이빙을 제외하는 경우가 있습니다. 가입 전 \`해양 레저 포함\` 약관 여부를 반드시 확인하고, 다이빙 자격증 없이 체험 다이빙만 한다면 \'체험 한정 보상\' 항목도 체크하세요.' },
+      ],
+    },
+    {
+      type: 'sources',
+      items: [
+        { label: '외교부 해외안전여행', url: 'https://www.0404.go.kr/', org: '대한민국 외교부', accessedAt: '2026-05-12' },
+        { label: '필리핀 e-Travel 공식 등록', url: 'https://etravel.gov.ph/', org: 'Bureau of Immigration, Philippines', accessedAt: '2026-05-12' },
+        { label: 'Tourism Authority of Thailand — Weather & Seasons', url: 'https://www.tourismthailand.org/', org: 'TAT', accessedAt: '2026-05-12' },
+        { label: 'Indonesia Visa on Arrival 안내', url: 'https://molina.imigrasi.go.id/', org: 'Directorate General of Immigration, Indonesia', accessedAt: '2026-05-12' },
+      ],
+    },
+    { type: 'disclaimer' },
+  ],
+}

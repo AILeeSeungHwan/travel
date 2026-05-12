@@ -60,6 +60,16 @@ const situations = [
     publishedAt: '2026-05-11',
     updatedAt: '2026-05-11',
     ymylLevel: 'C'
+  },
+  {
+    id: 'SI011',
+    slug: 'winter-beach',
+    title: '겨울 따뜻한 해외 해변 여행',
+    description: '12~2월 최적의 따뜻한 해외 여행지',
+    tags: ["겨울여행","해변","동남아"],
+    publishedAt: '2026-05-12',
+    updatedAt: '2026-05-12',
+    ymylLevel: 'C'
   }
 ]
 
