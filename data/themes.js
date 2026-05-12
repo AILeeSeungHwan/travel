@@ -88,6 +88,20 @@ const themes = [
     category: 'theme',
     ymylLevel: 'C',
     summary: ''
+  },
+  {
+    id: 'TH015',
+    slug: 'luxury-ryokan',
+    title: '일본 럭셔리 료칸 베스트',
+    description: '하코네·유후인·키노사키 럭셔리 료칸 가이드',
+    tags: ["료칸","온천","일본","하코네"],
+    publishedAt: '2026-05-12',
+    updatedAt: '2026-05-12',
+    name: '일본 럭셔리 료칸 베스트',
+    icon: '🌍',
+    category: 'theme',
+    ymylLevel: 'C',
+    summary: ''
   }
 ]
 
