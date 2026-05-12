@@ -199,6 +199,8 @@ const region = regions.filter(r => r?.slug && r?.countrySlug)
 const nearbySpots = spots.filter(s => s?.slug && s.regionSlug === meta.regionSlug ...) ...
 ```
 
+**gallery 필드는 반드시 실제 배열** — `gallery: '[]'`(문자열) 금지, `gallery: []`(배열)만 허용. 문자열이면 `.map()` 호출 시 TypeError. `lib/images.js`·`pages/hotels/[slug].js`·`pages/image-credits.js` 모두 `Array.isArray(h.gallery)` 방어 적용 완료.
+
 **배열 이중쉼표 점검 명령** (데이터 파일 변경 후 즉시 실행):
 ```bash
 node -e "

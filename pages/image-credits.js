@@ -5,11 +5,11 @@ import hotels from '../data/hotels'
 
 export async function getStaticProps() {
   const items = []
-  spots.forEach(s => (s.gallery || []).forEach(g => items.push({
+  spots.filter(s => s?.slug).forEach(s => (Array.isArray(s.gallery) ? s.gallery : []).forEach(g => items.push({
     page: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`,
     name: s.spotName, ...g,
   })))
-  hotels.forEach(h => (h.gallery || []).forEach(g => items.push({
+  hotels.filter(h => h?.slug).forEach(h => (Array.isArray(h.gallery) ? h.gallery : []).forEach(g => items.push({
     page: `/hotels/${h.slug}/`,
     name: h.hotelName, ...g,
   })))

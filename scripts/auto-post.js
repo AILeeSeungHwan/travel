@@ -244,10 +244,10 @@ const REQUIRED_FIELDS = {
 }
 // 엔티티별 자동 기본값 (meta에 없으면 채움)
 const DEFAULT_FIELDS = {
-  hotel:     { gallery: '[]', hotelsCombinedDeepLink: "''" },
-  theme:     { name: null, icon: "'🌍'", category: "'theme'", ymylLevel: "'C'" },
-  guide:     { ymylLevel: "'B'" },
-  situation: { ymylLevel: "'C'" },
+  hotel:     { gallery: [], hotelsCombinedDeepLink: '' },
+  theme:     { name: null, icon: '🌍', category: 'theme', ymylLevel: 'C' },
+  guide:     { ymylLevel: 'B' },
+  situation: { ymylLevel: 'C' },
 }
 
 function appendToDataFile(entity, meta) {
@@ -270,10 +270,10 @@ function appendToDataFile(entity, meta) {
   if (missing.length > 0) {
     log(`  ⚠ ${entity}/${meta.slug} 누락 필드: ${missing.join(', ')} — 빈값으로 채움`)
   }
-  // 기본값 적용 (없는 필드만)
+  // 기본값 적용 (없는 필드만) — 값 타입 그대로 유지 (string/array/boolean 등)
   const filledMeta = { ...meta }
   for (const [k, v] of Object.entries(defaults)) {
-    if (filledMeta[k] === undefined) filledMeta[k] = v === null ? meta.title || meta.slug : v.replace(/^'|'$/g, '')
+    if (filledMeta[k] === undefined) filledMeta[k] = v === null ? (meta.title || meta.slug) : v
   }
   for (const f of missing) {
     if (filledMeta[f] === undefined) filledMeta[f] = ''

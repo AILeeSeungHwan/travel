@@ -72,7 +72,7 @@ export default function HotelDetail({ meta, country, region, postData, nearbySpo
         imageCredit: hotelImg.credit,
         imageCreditUrl: hotelImg.creditUrl,
       }))
-    : (meta.gallery || []).map(g => ({
+    : (Array.isArray(meta.gallery) ? meta.gallery : []).map(g => ({
         src: g.url,
         alt: g.alt || meta.hotelName,
         caption: g.alt,
