@@ -17,18 +17,19 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const country = countries.find(c => c.slug === params.slug)
-  const meta = regions.find(r => r.countrySlug === params.slug && r.slug === params.region)
+  const country = countries.filter(c => c?.slug).find(c => c.slug === params.slug)
+  const meta = regions.filter(r => r?.slug && r?.countrySlug)
+    .find(r => r.countrySlug === params.slug && r.slug === params.region)
   if (!country || !meta) return { notFound: true }
 
   let postData = null
   try { postData = require(`../../../../../posts/regions/${meta.countrySlug}-${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
-  const mySpots = spots.filter(s => s.regionSlug === meta.slug && s.countrySlug === meta.countrySlug).map(s => ({
+  const mySpots = spots.filter(s => s?.slug && s.regionSlug === meta.slug && s.countrySlug === meta.countrySlug).map(s => ({
     ...s, category: 'spot', url: `/countries/${s.countrySlug}/regions/${s.regionSlug}/spots/${s.slug}/`,
   }))
-  const myHotels = hotels.filter(h => h.regionSlug === meta.slug && h.countrySlug === meta.countrySlug).map(h => ({
+  const myHotels = hotels.filter(h => h?.slug && h.regionSlug === meta.slug && h.countrySlug === meta.countrySlug).map(h => ({
     ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title ?? h.hotelName ?? null,
   }))
 

@@ -286,7 +286,10 @@ function appendToDataFile(entity, meta) {
     .map(([k, v]) => `    ${k}: ${typeof v === 'object' ? JSON.stringify(v) : typeof v === 'string' ? `'${v.replace(/'/g, "\\'")}'` : v}`)
     .join(',\n')
   const entryBlock = `  {\n${entry}\n  }`
-  const newContent = content.slice(0, closeIdx) + ',\n' + entryBlock + content.slice(closeIdx)
+  const contentBefore = content.slice(0, closeIdx)
+  // 마지막 항목에 이미 trailing comma가 있으면 추가 쉼표 생략 (이중쉼표 방지)
+  const separator = /,\s*$/.test(contentBefore) ? '\n' : ',\n'
+  const newContent = contentBefore + separator + entryBlock + content.slice(closeIdx)
   fs.writeFileSync(filepath, newContent)
 
   // 이중 쉼표·문법 오류 즉시 검증 — 실패 시 롤백

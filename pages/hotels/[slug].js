@@ -10,21 +10,22 @@ import spots from '../../data/spots'
 import hotels from '../../data/hotels'
 
 export async function getStaticPaths() {
-  return { paths: hotels.map(h => ({ params: { slug: h.slug } })), fallback: false }
+  return { paths: hotels.filter(h => h?.slug).map(h => ({ params: { slug: h.slug } })), fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-  const meta = hotels.find(h => h.slug === params.slug)
+  const meta = hotels.filter(h => h?.slug).find(h => h.slug === params.slug)
   if (!meta) return { notFound: true }
-  const country = countries.find(c => c.slug === meta.countrySlug) ?? null
-  const region  = regions.find(r => r.countrySlug === meta.countrySlug && r.slug === meta.regionSlug) ?? null
+  const country = countries.filter(c => c?.slug).find(c => c.slug === meta.countrySlug) ?? null
+  const region  = regions.filter(r => r?.slug && r?.countrySlug)
+    .find(r => r.countrySlug === meta.countrySlug && r.slug === meta.regionSlug) ?? null
 
   let postData = null
   try { postData = require(`../../posts/hotels/${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
   const nearbySpots = spots
-    .filter(s => s.regionSlug === meta.regionSlug && s.countrySlug === meta.countrySlug)
+    .filter(s => s?.slug && s.regionSlug === meta.regionSlug && s.countrySlug === meta.countrySlug)
     .slice(0, 5)
     .map(s => ({
       ...s,

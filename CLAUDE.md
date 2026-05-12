@@ -188,6 +188,28 @@ if(ok) console.log('OK — 모든 필드 정상');
 
 **data 파일에 이중 쉼표 `,,` 절대 금지** — sparse array 생성 원인. auto-post의 `appendToDataFile`이 항목 추가 후 생성되는 JS를 `node --check data/{file}.js`로 반드시 검증.
 
+**이중 쉼표 근본 원인**: data 파일의 마지막 항목에 trailing comma(`,`)가 있을 때 `appendToDataFile`이 추가로 `,\n`을 붙이면 `},,` 발생. `appendToDataFile`은 내부적으로 `/,\s*$/` 패턴으로 trailing comma를 감지해 중복 추가를 방지한다.
+
+**getStaticProps 방어 패턴** (모든 동적 라우트 페이지에 적용):
+```js
+// 이중쉼표로 인한 undefined 요소가 있어도 .find()/.filter() 내부에서 크래시 방지
+const meta = hotels.filter(h => h?.slug).find(h => h.slug === params.slug)
+const region = regions.filter(r => r?.slug && r?.countrySlug)
+  .find(r => r.countrySlug === meta.countrySlug && r.slug === meta.regionSlug) ?? null
+const nearbySpots = spots.filter(s => s?.slug && s.regionSlug === meta.regionSlug ...) ...
+```
+
+**배열 이중쉼표 점검 명령** (데이터 파일 변경 후 즉시 실행):
+```bash
+node -e "
+['hotels','regions','spots','guides','themes','situations','compares','addons','tools'].forEach(n=>{
+  const d=require('./data/'+n+'.js');
+  d.forEach((x,i)=>{ if(x==null) throw new Error(n+'['+i+']=undefined 이중쉼표!') })
+  console.log(n, d.length,'OK')
+})
+"
+```
+
 ## 7-3. 자동 포스팅(auto-post.js) 규칙
 
 **커밋·푸시는 하루 1회(evening 슬롯)에만**:

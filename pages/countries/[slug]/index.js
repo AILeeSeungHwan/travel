@@ -15,17 +15,17 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const meta = countries.find(c => c.slug === params.slug)
+  const meta = countries.filter(c => c?.slug).find(c => c.slug === params.slug)
   if (!meta) return { notFound: true }
 
   let postData = null
   try { postData = require(`../../../posts/countries/${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
-  const myRegions = regions.filter(r => r.countrySlug === meta.slug).map(r => ({
+  const myRegions = regions.filter(r => r?.slug && r.countrySlug === meta.slug).map(r => ({
     ...r, category: 'region', url: `/countries/${meta.slug}/regions/${r.slug}/`,
   }))
-  const myHotels = hotels.filter(h => h.countrySlug === meta.slug).map(h => ({
+  const myHotels = hotels.filter(h => h?.slug && h.countrySlug === meta.slug).map(h => ({
     ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title ?? h.hotelName ?? null,
   }))
   const myThemes = (meta.relatedThemeSlugs || []).map(s => themes.find(t => t.slug === s)).filter(Boolean).map(t => ({

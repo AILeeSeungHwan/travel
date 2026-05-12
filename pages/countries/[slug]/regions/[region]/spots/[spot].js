@@ -17,16 +17,18 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const country = countries.find(c => c.slug === params.slug)
-  const region  = regions.find(r => r.countrySlug === params.slug && r.slug === params.region)
-  const meta    = spots.find(s => s.countrySlug === params.slug && s.regionSlug === params.region && s.slug === params.spot)
+  const country = countries.filter(c => c?.slug).find(c => c.slug === params.slug)
+  const region  = regions.filter(r => r?.slug && r?.countrySlug)
+    .find(r => r.countrySlug === params.slug && r.slug === params.region)
+  const meta    = spots.filter(s => s?.slug && s?.countrySlug && s?.regionSlug)
+    .find(s => s.countrySlug === params.slug && s.regionSlug === params.region && s.slug === params.spot)
   if (!country || !region || !meta) return { notFound: true }
 
   let postData = null
   try { postData = require(`../../../../../../posts/spots/${meta.countrySlug}-${meta.slug}.js`) } catch (_) { postData = null }
   if (postData && postData.default) postData = postData.default
 
-  const nearbyHotels = hotels.filter(h => h.regionSlug === region.slug && h.countrySlug === country.slug).slice(0, 3)
+  const nearbyHotels = hotels.filter(h => h?.slug && h.regionSlug === region.slug && h.countrySlug === country.slug).slice(0, 3)
     .map(h => ({ ...h, category: 'hotel', url: `/hotels/${h.slug}/`, title: h.title }))
 
   return { props: { country, region, meta, postData, nearbyHotels } }
