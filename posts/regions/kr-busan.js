@@ -1,160 +1,190 @@
 module.exports = {
   sections: [
-    { type: 'intro', html: `<strong>부산 여행</strong>은 서울에서 KTX·SRT로 2시간 30분이면 도착하는, 해변·미식·야경·역사가 한 도시에 집약된 한국 제2의 도시 체험입니다. 해운대와 광안리 비치는 여름이면 국내 최대 인파가 몰리며, 부산국제영화제(BIFF)·광안리불꽃축제 시즌에는 한 달 전 호텔 예약이 필수입니다. 세계 최대 규모 비치 중 하나인 <strong>해운대 해수욕장</strong>(1.8 km)을 배경으로 시그니엘·웨스틴·파라다이스 등 5성 호텔이 즐비해, 도심 리조트 휴가로도 손색이 없습니다.` +
-      `<br/><br/>미식 여행지로서 부산은 독보적입니다. 자갈치시장의 갓 잡은 회와 곰장어구이, 서면·남포동 돼지국밥 골목, 밀면·씨앗호떡·고로케까지 서울에서는 쉽게 만날 수 없는 음식들이 기다립니다. <strong>감천문화마을</strong>은 "한국의 산토리니"로 불리며 파스텔 계단식 주택이 SNS를 도배하고, <strong>태종대</strong> 해안 절벽과 흰여울문화마을은 사진 작가들의 성지입니다.` +
-      `<br/><br/>계절을 가리지 않지만, 부산의 진가는 4월~10월입니다. 봄 벚꽃(온천천·영도 해안), 여름 비치·야경, 가을 BIFF·불꽃축제·단풍이 이어지고, 겨울에도 다대포 낙조와 따뜻한 돼지국밥이 여행자를 끌어당깁니다. 1박 2일 단거리 여행지로도, 5성 호텔 도심 리조트로도 최적의 목적지입니다.` },
-
-    { type: 'image',
-      src: 'https://images.unsplash.com/photo-1679054142611-5f0580dab94f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHxidXNhbiUyMGhhZXVuZGFlJTIwYmVhY2h8ZW58MXwwfHx8MTc3NzM1NTUzM3ww&ixlib=rb-4.1.0&q=80&w=1200',
-      alt: '해운대해수욕장 전경 — 부산 비치 대표 명소',
-      caption: '해운대해수욕장 — 1.8 km 백사장과 뒤로 펼쳐지는 해운대 스카이라인',
-      imageSource: 'Unsplash', imageLicense: 'Unsplash License',
-      imageCredit: '선호 허 on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/photos/LsemW3YpqFA?utm_source=travel.ambitstock&utm_medium=referral' },
-
-    { type: 'h2', id: 'overview', text: '부산 한눈에 보기' },
-    { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
-      <thead><tr style="background:#0EA5E9;color:#fff">
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">항목</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">내용</th>
-      </tr></thead>
-      <tbody>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">위치</td><td style="padding:8px 10px;border:1px solid #CBD5E1">경상남도, 대한민국 남동부 해안</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">인구</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 330만 명 (한국 제2의 도시)</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">서울→부산 교통</td><td style="padding:8px 10px;border:1px solid #CBD5E1">KTX 부산역 2시간 15분 / SRT 2시간 10분 / 항공 1시간(국내선)</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">공항</td><td style="padding:8px 10px;border:1px solid #CBD5E1">김해국제공항 (국내·국제선) / 2035년 가덕도신공항 예정</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">추천 일정</td><td style="padding:8px 10px;border:1px solid #CBD5E1">당일치기 가능 / 1박 2일 (알찬 여행) / 2박 3일 (여유)</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">베스트 시즌</td><td style="padding:8px 10px;border:1px solid #CBD5E1">4~10월 (여름 비치 최성수 7~8월, 가을 BIFF·불꽃축제)</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">대표 축제</td><td style="padding:8px 10px;border:1px solid #CBD5E1">부산국제영화제(BIFF, 10월) / 광안리 불꽃축제(11월)</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">화폐·언어</td><td style="padding:8px 10px;border:1px solid #CBD5E1">원(KRW) / 한국어 (관광지 영어 가능)</td></tr>
-      </tbody>
-    </table>` },
-
-    { type: 'h2', id: 'beach', text: '해운대·광안리·송도 — 부산 3대 비치' },
-    { type: 'body', html: `부산 여행의 핵심은 세 곳의 개성 다른 해수욕장입니다.
-      <br/><br/><strong>해운대 해수욕장</strong>은 길이 1.8 km, 폭 최대 70 m의 백사장이 펼쳐지고, 뒤편으로 시그니엘 부산·웨스틴 조선·파라다이스 등 5성 호텔이 서 있습니다. 달맞이고개에서 바라보는 해운대 야경은 동해안 최고 수준입니다. 인근 <strong>동백섬</strong>은 산책로와 APEC 나루공원이 있어 이른 아침 조깅 코스로 인기입니다.
-      <br/><br/><strong>광안리 해수욕장</strong>은 해운대보다 조용하고 젊은 분위기입니다. 1.4 km 백사장 너머로 광안대교가 야간 조명을 밝히며 "부산의 야경 1번지" 칭호를 얻습니다. 11월 첫째 주 토요일 열리는 <strong>광안리 불꽃축제</strong>에는 30~40만 명이 몰리며 호텔은 6개월 전 예약이 상식입니다. 주변에 이자카야·로스터리 카페·칵테일 바가 밀집해 밤까지 활기찹니다.
-      <br/><br/><strong>송도 해수욕장</strong>은 부산에서 가장 오래된 공설 해수욕장(1913년 개장)으로, 케이블카와 구름다리가 명물입니다. 거가대교와 남해가 보이는 풍광, 가족 단위 방문객이 많은 조용한 분위기가 특징입니다.` },
-
-    { type: 'callout', html: `<strong>TIP</strong>: 여름 성수기(7~8월) 해운대는 바닥에 앉을 자리조차 없을 만큼 혼잡합니다. 이른 아침(오전 6~8시) 산책이나 일몰 후 야경 감상을 추천합니다. 7~8월 피크 시즌에는 해운대역 주차가 불가능에 가까우므로 지하철(2호선 해운대역)을 이용하세요.` },
-
-    { type: 'h2', id: 'culture', text: '감천문화마을·태종대·영도 — 문화·사진 명소' },
-    { type: 'body', html: `<strong>감천문화마을</strong>은 부산 서구 감천동에 위치한 파스텔 계단식 주택 마을입니다. 한국전쟁 피난민들이 산비탈에 집을 지으며 형성된 이 마을은, 2009년 지역 주민과 예술가들의 협업으로 색색의 벽화와 조형물로 탈바꿈했습니다. "한국의 산토리니", "한국의 마추픽추"라 불리는 이 곳은 좁은 골목길을 따라 걸으며 발견하는 작은 전시물과 카페가 매력입니다. 입장료 없음, 셔틀버스(서구청 앞 출발) 운행.
-      <br/><br/><strong>태종대</strong>는 영도구 끝에 자리한 해안 절벽 공원입니다. 높이 250 m 벼랑 위에서 바라보는 남해와 쓰시마(대마도)의 실루엣, 빨간 태종대 등대는 부산 10경 중 하나입니다. 다누비 열차로 공원 내부를 순환하며(1인 3,000원), 신선바위·전망대·목도 조망이 필수 코스입니다.
-      <br/><br/><strong>흰여울문화마을</strong>은 영도 절벽 끝에 걸쳐 있는 골목 마을로, 영화 <범죄와의 전쟁> 촬영지입니다. 바다와 수직 절벽이 이루는 구도, 오래된 부산 감성이 조화를 이룹니다. <strong>아미동 비석마을</strong>은 일제강점기 일본인 묘지 비석을 주춧돌·담벼락에 재활용한 집들이 남아 있는, 역사의 흔적이 깊은 마을입니다.` },
-
-    { type: 'h2', id: 'old-town', text: '남포동·자갈치·국제시장 — 부산 구도심' },
-    { type: 'body', html: `<strong>자갈치시장</strong>은 부산의 상징입니다. 새벽부터 경매가 열리는 수산물 시장으로, 1층은 생선·해산물 판매, 2층 식당가에서 바로 회를 먹을 수 있습니다. 곰장어구이(물곰)는 자갈치만의 별미로, 30~40분 줄 서는 맛집이 즐비합니다. 인근 <strong>국제시장</strong>은 6·25 전쟁 피난민들이 형성한 재래시장으로, 영화 <국제시장> 배경입니다.
-      <br/><br/><strong>BIFF 광장(남포동)</strong>은 부산국제영화제 공식 상영관 밀집 구역입니다. 핸드프린팅 명예의 전당, 야외 스크린, 먹거리 노점이 10월 영화제 기간 최고조를 이룹니다. 근처 <strong>용두산공원</strong>에서 부산타워(118 m 전망대) 뷰로 남포동·자갈치 항구를 내려다볼 수 있습니다(입장료 성인 12,000원).
-      <br/><br/><strong>부평깡통시장</strong>은 국제시장 맞은편에 위치한 야시장으로 저녁 7시부터 문을 엽니다. 비빔당면·달걀빵·꽈배기·크레이프 등 길거리 음식을 즐기며 부산 서민 정서를 체험할 수 있습니다.` },
-
-    { type: 'h2', id: 'food', text: '부산 미식 가이드 — 반드시 먹어야 할 7가지' },
-    { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
-      <thead><tr style="background:#0EA5E9;color:#fff">
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">음식</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">특징</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">추천 가게</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">가격대</th>
-      </tr></thead>
-      <tbody>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>돼지국밥</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">돼지 뼈·머릿고기를 오랜 시간 끓인 국물에 수육·내장을 올린 부산 대표 음식. 깍두기·새우젓 셀프.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">쌍둥이돼지국밥·합천일류·송정3대국밥</td><td style="padding:8px 10px;border:1px solid #CBD5E1">8,000~12,000원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>밀면</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">피난민들이 밀가루로 만든 냉면. 비빔밀면이 더 인기.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">가야밀면·내호냉면·초량밀면</td><td style="padding:8px 10px;border:1px solid #CBD5E1">8,000~11,000원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>회</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치시장 2층 식당에서 광어·우럭·문어 생물회. 1인 3만~5만 원선.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치시장 2층 식당가</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1인 30,000~50,000원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>곰장어구이</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">비닐장갑 껴 가며 양념 곰장어를 굽는 부산만의 경험. 소주 필수 조합.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치시장 앞 골목</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1인분 18,000~25,000원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>씨앗호떡</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">해바라기씨·땅콩 등 견과류를 넣은 부산식 호떡. 남포동 포장마차 필수.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">남포동 BIFF 광장 포장마차</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2,000~2,500원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>고로케</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">감자·새우 속재료가 들어간 바삭한 부산식 고로케. 비파나·삼진어묵이 유명.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">삼진어묵(영도·수영)·비파나</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1,500~3,000원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>낙곱새</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">낙지·곱창·새우를 볶아 치즈와 함께 먹는 부산 포차 인기 메뉴.</td><td style="padding:8px 10px;border:1px solid #CBD5E1">서면 포차 골목</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2인 35,000~50,000원</td></tr>
-      </tbody>
-    </table>` },
-
-    { type: 'h2', id: 'transport', text: '교통 — 부산 이동 방법' },
-    { type: 'body', html: `<strong>서울→부산</strong>
-      <ul>
-        <li><strong>KTX</strong>: 서울역·수서역(SRT) 출발 → 부산역 도착, 약 2시간 10~30분. 요금 59,800원(일반실). 매진 잦으므로 2주 전 예매 권장.</li>
-        <li><strong>항공</strong>: 김포→김해 약 55분, 요금 3~8만 원(할인 기간). 수하물 포함 시 KTX와 큰 차이 없음.</li>
-        <li><strong>시외버스</strong>: 서울고속버스터미널→부산(사상) 4시간 30분, 편도 31,800원. 새벽버스 이용 시 저렴.</li>
-      </ul>
-      <br/><strong>부산 시내 이동</strong>
-      <ul>
-        <li><strong>지하철</strong>: 1~4호선 + 동해선. 부산역(1호선)·해운대(2호선)·광안리(2호선 금련산역)·서면(1·2호선 환승)으로 연결. 1회 기본 1,500원.</li>
-        <li><strong>버스</strong>: 감천문화마을(마을버스 1-1·2번)·태종대(88번 버스). 지하철 미연결 명소 필수 수단.</li>
-        <li><strong>택시·카카오T</strong>: 기본요금 4,800원(2026년 기준). 공항→해운대 약 25,000~35,000원.</li>
-        <li><strong>김해공항→시내</strong>: 경전철(부산김해경전철) 사상역 환승 → 서면·부산역 지하철 연결. 약 40분.</li>
-      </ul>` },
-
-    { type: 'h2', id: 'accommodation', text: '숙소 — 권역별 추천' },
-    { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
-      <thead><tr style="background:#0EA5E9;color:#fff">
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">권역</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">추천 숙소</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">특징</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">평균 요금/박</th>
-      </tr></thead>
-      <tbody>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>해운대</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">시그니엘 부산·웨스틴 조선·파라다이스시티·그랜드 조선</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5성 집중, 비치 뷰, 수영장·스파 완비</td><td style="padding:8px 10px;border:1px solid #CBD5E1">25~90만 원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>광안리</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">노보텔·센텀·이비스·라발스호텔</td><td style="padding:8px 10px;border:1px solid #CBD5E1">광안대교 뷰, 비치 접근성, 상대적 합리적 가격</td><td style="padding:8px 10px;border:1px solid #CBD5E1">10~25만 원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>서면·부산역</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">롯데호텔·롯데시티·나인트리·비즈니스호텔</td><td style="padding:8px 10px;border:1px solid #CBD5E1">교통 허브, 지하철 이동 최적, 가성비</td><td style="padding:8px 10px;border:1px solid #CBD5E1">6~15만 원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>남포·중구</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">게스트하우스·한옥체험·중급 호텔</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치·감천 접근 편리, 레트로 감성</td><td style="padding:8px 10px;border:1px solid #CBD5E1">4~10만 원</td></tr>
-      </tbody>
-    </table>
-    <br/><strong>추천 픽</strong>: 첫 부산 여행이라면 <strong>해운대 권역</strong>(비치+야경+5성 경험), 미식·야시장 중심이라면 <strong>서면·남포동</strong>이 동선 효율적입니다.` },
-
-    { type: 'h2', id: 'budget', text: '예산 — 여행 유형별 예상 비용' },
-    { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
-      <thead><tr style="background:#0EA5E9;color:#fff">
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">여행 유형</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">1인 기준</th>
-        <th style="padding:8px 10px;border:1px solid #CBD5E1">세부 내역</th>
-      </tr></thead>
-      <tbody>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">당일치기 (서울→부산)</td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 15~25만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">KTX 왕복 12만 원 + 식비 3~5만 원 + 입장료·교통비</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">가성비 1박 2일</td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 20~35만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">KTX 편도 6만 원 + 게스트하우스 5~8만 원 + 식비 8~12만 원</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">중급 호텔 2박 3일</td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 40~65만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">KTX 왕복 12만 원 + 4성 호텔 2박 20~30만 원 + 식비·관광</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">5성 리조트 2박</td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 80~200만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">시그니엘·웨스틴 2박 60~160만 원 + 다이닝·스파</td></tr>
-        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">가족 4인 1박 2일</td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>총 80~150만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1">KTX 4인 왕복 + 4성 호텔 1박 + 아쿠아리움·식비 포함</td></tr>
-      </tbody>
-    </table>` },
-
-    { type: 'h2', id: 'season', text: '시즌별 부산 — 언제 가야 할까' },
-    { type: 'body', html: `<ul>
-      <li><strong>봄 (3~5월)</strong>: 온천천·부산시민공원 벚꽃(4월 초), 날씨 온화. 비수기 → 호텔 합리적. 해양스포츠는 아직 이르지만 트레킹(금정산·갈맷길)에 최적.</li>
-      <li><strong>여름 (6~8월)</strong>: 해운대·광안리·송도 비치 완전 오픈. 7~8월 성수기는 숙박비 2~3배 상승. 해수욕·야경·야시장·축제(해운대 모래축제 6월)가 한꺼번에 열림. 최소 2개월 전 예약 필수.</li>
-      <li><strong>가을 (9~11월)</strong>: 부산국제영화제(BIFF, 10월 초) 기간은 숙소 전쟁. 광안리 불꽃축제(11월 첫째 주 토요일)도 마찬가지. 비치는 9월까지 수영 가능. 갈맷길 단풍 트레킹 10월. <strong>부산 여행 최고 시즌</strong>으로 꼽힘.</li>
-      <li><strong>겨울 (12~2월)</strong>: 비수기 → 호텔 최저가. 다대포 일몰·달맞이고개 야경은 오히려 한산하게 즐길 수 있음. 돼지국밥·따뜻한 실내 미식 중심 여행에 제격. 평균 최저 기온 0~5°C(서울보다 5도 정도 따뜻함).</li>
-    </ul>` },
-
-    { type: 'h2', id: 'day-trip', text: '추천 일정 — 1박 2일 베스트 코스' },
-    { type: 'body', html: `<strong>1일차 — 해운대·광안리·야경</strong>
-      <ul>
-        <li>오전: 해운대 해수욕장 산책 → 동백섬 APEC 나루공원</li>
-        <li>점심: 해운대 시장 내 돼지국밥·밀면</li>
-        <li>오후: 달맞이고개 카페 → 센텀시티 쇼핑(롯데·신세계 센텀점)</li>
-        <li>저녁: 광안리 이자카야 or 로스터리 카페 → 광안대교 야경</li>
-      </ul>
-      <br/><strong>2일차 — 자갈치·감천·남포동</strong>
-      <ul>
-        <li>오전: 자갈치시장 → 회·곰장어구이 (이른 점심)</li>
-        <li>오후: 감천문화마을 → 용두산공원 부산타워</li>
-        <li>저녁: BIFF 광장 씨앗호떡 → 부평깡통야시장</li>
-        <li>귀환: 부산역 KTX</li>
-      </ul>
-      <br/><em>태종대·흰여울문화마을은 2박 3일이면 추가 가능. 아이 동반 시 SEA LIFE 부산아쿠아리움(해운대)·송도 케이블카를 넣으면 좋습니다.</em>` },
-
-    { type: 'faq', items: [
-      { q: '부산 비수기는 언제인가요?', a: '12월~2월이 비수기입니다. 이 시기 해운대 5성 호텔도 성수기 대비 40~60% 할인된 요금을 찾을 수 있습니다. 날씨는 서울보다 따뜻하고, 관광지가 한산해 여유롭게 즐길 수 있습니다.' },
-      { q: '광안리 불꽃축제 날짜가 어떻게 되나요?', a: '매년 11월 첫째 주 토요일 저녁 8시에 열립니다. 정확한 날짜는 매년 9~10월에 부산관광공사(visitbusan.net)에서 공식 발표합니다. 당일 광안리 인근 숙박은 최소 3~6개월 전 예약이 필요합니다.' },
-      { q: '부산 지하철로 주요 명소를 다 갈 수 있나요?', a: '해운대(2호선)·광안리(금련산역·2호선)·자갈치(1호선)·남포동(1호선)·서면(1·2호선)은 지하철로 충분히 이동 가능합니다. 감천문화마을(마을버스 1-1·2번)과 태종대(88번 버스)는 버스 환승이 필요합니다.' },
-      { q: '돼지국밥 맛집, 줄 서지 않고 먹으려면?', a: '오전 7~9시 아침 일찍 방문하거나 오후 2~4시 브레이크 타임 직후를 공략하세요. 쌍둥이돼지국밥(서면)·합천일류(서면)가 대표 맛집이나 주말 낮에는 20~40분 대기가 일반적입니다. 부산역 인근 국밥골목도 맛집이 많고 상대적으로 여유롭습니다.' },
-      { q: '부산 여행 최적의 숙소 위치는?', a: '처음 방문한다면 해운대(비치·야경·5성 경험), 미식과 야시장 중심이면 서면·남포동, 가성비를 원하면 부산역 주변이 최적입니다. 일정에 따라 첫날 해운대, 둘째 날 남포동으로 숙소를 이동하는 방식도 인기입니다.' },
-      { q: 'BIFF 기간에 부산을 방문하면 영화를 볼 수 있나요?', a: '네. 부산국제영화제(BIFF)는 매년 10월 첫째 주에 10일간 열리며, 일반 관객도 사전 예매로 상영작을 관람할 수 있습니다. 티켓은 BIFF 공식 사이트(biff.kr)에서 9월 중 오픈됩니다. 야외 스크린 무료 상영 행사도 있습니다.' },
-    ]},
-
-    { type: 'sources', items: [
-      { label: '부산관광공사 — VISIT BUSAN', url: 'https://www.visitbusan.net/', org: '부산관광공사', accessedAt: '2026-05-04' },
-      { label: '부산국제영화제(BIFF) 공식 사이트', url: 'https://www.biff.kr/', org: 'BIFF 집행위원회', accessedAt: '2026-05-04' },
-      { label: '부산광역시 관광 안내', url: 'https://www.busan.go.kr/tour', org: '부산광역시', accessedAt: '2026-05-04' },
-      { label: '한국관광공사 — 부산 여행 정보', url: 'https://korean.visitkorea.or.kr/', org: '한국관광공사', accessedAt: '2026-05-04' },
-    ]},
-    { type: 'disclaimer' },
+    {
+      type: 'intro',
+      html: `<p><strong>부산 여행</strong>은 바다와 산, 도심이 한 도시에 응축된 한국 대표 휴양 도시로, 해운대·광안리의 해변 라인부터 감천문화마을의 컬러풀한 골목, 자갈치시장의 활기까지 짧은 일정으로도 다양한 결을 경험할 수 있는 곳입니다. KTX·SRT 기준 서울에서 약 2시간 30분, 김해국제공항을 통한 국내선·국제선 접근도 편리해 1박 2일부터 4박 5일까지 일정 조절이 자유롭습니다.</p>
+<p>이 가이드는 부산 첫 방문자와 재방문자 모두를 위해 핵심 권역(해운대·광안리·남포동·서면), 대표 명소, 부산 맛집 흐름, 시내 교통, 예산, 시즌별 포인트를 한 번에 정리한 부산 관광 완전 가이드입니다. 부산광역시 관광 공식 자료와 한국관광공사 데이터, 부산교통공사·코레일 정보를 근거로 작성했습니다.</p>
+<p>여름 성수기 해운대 해변, 가을 광안리 불꽃축제, 겨울 해돋이까지 시즌별 분위기가 뚜렷한 만큼 일정과 숙소 위치를 먼저 정한 뒤 동선을 짜는 방식이 효율적입니다. 본문 하단의 FAQ와 공식 출처를 함께 확인하면 현지에서 동선·예산 관리가 한층 수월해집니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'overview',
+      text: '부산 한눈에 보기 — 권역·특징·추천 일정'
+    },
+    {
+      type: 'body',
+      html: `<p>부산은 인구 약 330만 명의 한국 제2 도시이자 동남권 최대 항구 도시입니다. 여행 동선은 크게 <strong>해운대·센텀권</strong>, <strong>광안리·수영권</strong>, <strong>남포동·자갈치·감천권</strong>, <strong>서면·동래권</strong>으로 나뉘며 권역마다 분위기와 숙박 가격대가 다릅니다.</p>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">권역</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">대표 명소</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">분위기</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">추천 대상</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">해운대·센텀</td><td style="padding:8px 10px;border:1px solid #CBD5E1">해운대해수욕장, 동백섬, 영화의전당</td><td style="padding:8px 10px;border:1px solid #CBD5E1">리조트·도심 휴양</td><td style="padding:8px 10px;border:1px solid #CBD5E1">가족·신혼·호캉스</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">광안리·수영</td><td style="padding:8px 10px;border:1px solid #CBD5E1">광안리해수욕장, 광안대교, 민락수변</td><td style="padding:8px 10px;border:1px solid #CBD5E1">감성 야경·카페</td><td style="padding:8px 10px;border:1px solid #CBD5E1">커플·친구</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">남포·자갈치·감천</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치시장, 국제시장, 감천문화마을</td><td style="padding:8px 10px;border:1px solid #CBD5E1">로컬·전통</td><td style="padding:8px 10px;border:1px solid #CBD5E1">첫 방문·맛집 투어</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">서면·동래</td><td style="padding:8px 10px;border:1px solid #CBD5E1">서면 먹자골목, 동래온천, 범어사</td><td style="padding:8px 10px;border:1px solid #CBD5E1">쇼핑·온천</td><td style="padding:8px 10px;border:1px solid #CBD5E1">실속·로컬</td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>1박 2일</strong>: 해운대 또는 광안리 1박 + 감천·자갈치·국제시장</li>
+<li><strong>2박 3일</strong>: 위 일정 + 송도·태종대 또는 기장(해동용궁사)</li>
+<li><strong>3박 4일</strong>: 권역 4곳 + 양산 통도사·김해 가야 유적까지 외곽 확장</li>
+</ul>`
+    },
+    {
+      type: 'h2',
+      id: 'haeundae',
+      text: '해운대 — 부산 대표 해변과 도심 휴양'
+    },
+    {
+      type: 'body',
+      html: `<p>해운대해수욕장은 길이 약 1.5km의 백사장과 인근 고층 호텔·리조트 라인이 만들어내는 도심형 해변입니다. 여름철에는 부산 최대 인파가 몰리지만, 봄·가을·겨울에는 한적하게 산책하기 좋은 코스로 변합니다.</p>
+<ul>
+<li><strong>해운대해수욕장</strong>: 백사장 산책, 모래사장 이벤트, 해운대전통시장과 도보 5분 거리</li>
+<li><strong>동백섬·누리마루</strong>: 해안 데크로드 약 2km, APEC 정상회의 개최지, 광안대교 조망 명소</li>
+<li><strong>해운대 블루라인파크</strong>: 옛 동해남부선 폐선 부지를 활용한 해변열차·스카이캡슐 (예약 권장)</li>
+<li><strong>달맞이길·청사포</strong>: 카페·갤러리 라인, 다릿돌전망대와 청사포 다이아몬드브릿지</li>
+</ul>
+<p>해운대역(부산 2호선)에서 해변까지 도보 약 10분, 부산역에서는 1호선→서면→2호선 환승으로 약 60분 소요됩니다. 자차 이용 시 해변 공영주차장은 성수기 만차가 잦아 숙소 발렛 또는 인근 유료주차장 사전 확인이 안전합니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'gwangalli',
+      text: '광안리 — 광안대교 야경과 감성 카페'
+    },
+    {
+      type: 'body',
+      html: `<p>광안리해수욕장은 광안대교의 다이내믹한 야경이 정면에 펼쳐지는 점에서 해운대와는 다른 결의 매력을 제공합니다. 해변 라인에 위치한 카페·바·게스트하우스 밀도가 높아 야간 산책과 인생샷 명소로 인기입니다.</p>
+<ul>
+<li><strong>광안대교 야경</strong>: 일몰 후 약 1시간 전후가 컬러 변화가 가장 풍부한 골든타임</li>
+<li><strong>드론 라이트쇼</strong>: 매주 토요일 약 20시(시즌·기상에 따라 변동) 광안리 상공에서 진행, 부산광역시 관광공사 공식 안내 확인 권장</li>
+<li><strong>민락수변공원</strong>: 회·치킨·맥주 포장 후 해안 데크에서 즐기는 부산식 야경 피크닉의 성지</li>
+<li><strong>광안리 해변열차·자전거 라인</strong>: 광안리~민락~수영만 구간 라이딩 코스</li>
+</ul>
+<p>광안역(2호선) 또는 금련산역(2호선)에서 해변까지 도보 5~10분입니다. 부산불꽃축제(매년 10월~11월 중)는 광안리 일대가 메인 무대로, 이 기간 숙박료는 평소 대비 2~3배까지 상승하므로 일정과 예산을 분리해서 검토하는 편이 안전합니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'gamcheon',
+      text: '감천문화마을 — 부산의 마추픽추, 컬러풀 골목'
+    },
+    {
+      type: 'body',
+      html: `<p>감천문화마을은 6·25 전쟁기 피난민 정착지에서 출발해 2009년 마을미술 프로젝트를 통해 컬러풀한 골목 예술 마을로 재탄생한 공간입니다. 부산광역시·사하구 공식 자료 기준 연간 200만 명 이상이 방문하는 부산 대표 인생샷 명소입니다.</p>
+<ul>
+<li><strong>스탬프 투어</strong>: 마을 안내소에서 지도 구매 후 골목길 곳곳의 작품 스탬프 수집</li>
+<li><strong>전망 포토존</strong>: 어린왕자 포토존, 별 보러 가는 계단, 하늘마루 전망대</li>
+<li><strong>관람 매너</strong>: 실거주자가 사는 마을이므로 큰 소리·이른 시간 촬영·사유지 출입 자제</li>
+<li><strong>운영 시간</strong>: 안내소·체험관 일부는 18시 전후 마감, 야간 골목 조명 제한적</li>
+</ul>
+<p>접근은 부산역→1호선→토성역(부산대학교병원 출구) 하차 후 마을버스 사하1-1·서구2-2를 이용하는 코스가 가장 보편적입니다. 도보로는 비탈길 구간이 많으니 편한 신발을 권장합니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'food',
+      text: '부산 맛집 흐름 — 회·돼지국밥·밀면·씨앗호떡'
+    },
+    {
+      type: 'body',
+      html: `<p>부산 맛집은 권역별 색이 뚜렷합니다. <strong>자갈치·남포동</strong>은 회와 해산물, <strong>서면</strong>은 돼지국밥·밀면, <strong>해운대·광안리</strong>는 해변 뷰 다이닝과 야식 카페가 강세입니다.</p>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">메뉴</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">대표 권역</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">1인 예상</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">팁</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">회·해산물</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자갈치시장, 민락회센터</td><td style="padding:8px 10px;border:1px solid #CBD5E1">3~6만 원대</td><td style="padding:8px 10px;border:1px solid #CBD5E1">상차림 비용 별도, 가격표 확인</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">돼지국밥</td><td style="padding:8px 10px;border:1px solid #CBD5E1">서면, 범일, 부산역</td><td style="padding:8px 10px;border:1px solid #CBD5E1">9,000~13,000원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">부추무침·소면 조합이 부산식</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">밀면</td><td style="padding:8px 10px;border:1px solid #CBD5E1">남포동, 부전</td><td style="padding:8px 10px;border:1px solid #CBD5E1">8,000~12,000원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">물밀면·비빔밀면 모두 부산만의 식감</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">씨앗호떡·비빔당면</td><td style="padding:8px 10px;border:1px solid #CBD5E1">국제시장·BIFF 광장</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2,000~5,000원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">현장 결제 위주, 잔돈 준비</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">해물탕·복국</td><td style="padding:8px 10px;border:1px solid #CBD5E1">기장·해운대</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15,000~25,000원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">아침 해장 메뉴로 인기</td></tr>
+</tbody>
+</table>
+<p>특정 점포 추천은 운영 상황·평점이 자주 변동되므로 한국관광공사 대한민국 구석구석, 부산광역시 공식 관광 사이트의 최신 큐레이션과 현장 리뷰를 함께 확인하는 방식이 안전합니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'transport',
+      text: '부산 교통 — KTX·SRT·지하철·시내버스·택시'
+    },
+    {
+      type: 'body',
+      html: `<p>부산은 광역 교통과 시내 교통이 모두 잘 갖춰져 있습니다. 서울·수도권에서의 접근은 KTX·SRT가 표준이며, 시내 이동은 도시철도 1~4호선과 동해선, 시내버스 조합이 효율적입니다.</p>
+<ul>
+<li><strong>KTX·SRT</strong>: 서울역·수서역 → 부산역 약 2시간 20~40분, 코레일·SR 공식 홈페이지 또는 코레일톡 앱 예매</li>
+<li><strong>김해국제공항</strong>: 부산도시철도 부산-김해경전철 + 2호선 환승, 또는 리무진버스</li>
+<li><strong>도시철도 1·2·3·4호선</strong>: 기본요금 1,600원대(교통카드 기준, 2025년 인상 반영), 환승 무료</li>
+<li><strong>동해선 광역전철</strong>: 부전~태화강, 해운대·기장·송정 방면 이용 시 유용</li>
+<li><strong>시내버스·마을버스</strong>: 감천문화마을, 해동용궁사, 송도 등 지하철 사각지대 보완</li>
+<li><strong>택시</strong>: 일반·모범 구분, 카카오T 호출 가능, 심야할증 자정~04시</li>
+</ul>
+<p>관광 일정이 1~2일이라면 교통카드(레일플러스·캐시비) 충전 후 지하철+버스 환승 조합이 가장 가성비가 좋으며, 4인 가족이 권역 4곳을 도는 경우 단거리 택시 합승이 시간 효율이 더 높을 수 있습니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'budget',
+      text: '부산 1박 2일·2박 3일 예산 가이드'
+    },
+    {
+      type: 'body',
+      html: `<p>아래는 2026년 5월 기준 평일 1인 예산 추정치로, 성수기(7~8월·연말연시·불꽃축제 기간)에는 숙박이 2~3배까지 상승할 수 있습니다.</p>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">항목</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">실속형(1박 2일)</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">표준형(2박 3일)</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">프리미엄(2박 3일)</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">교통(왕복 KTX)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12만 원대</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12만 원대</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12만 원대</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">숙박</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5~8만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20~30만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">50만 원~</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">식비</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5~7만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">10~15만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20만 원~</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">입장료·체험</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1~2만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">3~5만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5~10만 원</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1">시내 교통</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2~3만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5만 원(택시 비중↑)</td></tr>
+<tr><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>합계(1인)</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 25만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 50~65만 원</strong></td><td style="padding:8px 10px;border:1px solid #CBD5E1"><strong>약 100만 원~</strong></td></tr>
+</tbody>
+</table>
+<p>가족 단위라면 숙박을 패밀리룸·한실로 묶고, 커플은 광안리·해운대 오션뷰 1박 + 남포·감천 데이코스 조합이 비용 대비 만족도가 높습니다.</p>`
+    },
+    {
+      type: 'h2',
+      id: 'season',
+      text: '시즌별 부산 — 봄·여름·가을·겨울 포인트'
+    },
+    {
+      type: 'body',
+      html: `<ul>
+<li><strong>봄(3~5월)</strong>: 동백섬 동백·해운대 벚꽃, 평일 숙박 가성비 우수. 황사·미세먼지 일자 확인 필요</li>
+<li><strong>여름(6~8월)</strong>: 해수욕장 공식 개장(통상 6월 말~8월 말), 해변 인파 최대, 자외선·열사병 대비</li>
+<li><strong>가을(9~11월)</strong>: 부산국제영화제(BIFF, 10월), 불꽃축제(10~11월 중), 광안리 야경 최적기. 숙박 사전 예약 필수</li>
+<li><strong>겨울(12~2월)</strong>: 해운대·송정 해돋이, 동래·해운대 온천, 비교적 한산해 호캉스 가성비 양호</li>
+</ul>
+<p>해수욕장 개장일·축제 일정은 부산광역시 관광공사와 한국관광공사 공식 홈페이지의 매년 갱신 일정이 가장 정확합니다. 일정이 일·이 주 단위로 조정되는 경우가 잦으므로 출발 1~2주 전 재확인을 권장합니다.</p>`
+    },
+    {
+      type: 'faq',
+      items: [
+        {
+          q: '부산 여행 며칠이 적당한가요?',
+          a: '핵심 권역만 도는 1박 2일도 가능하지만, 해운대·광안리·남포·감천 네 권역을 여유 있게 보려면 2박 3일이 표준입니다. 기장·송도·외곽까지 포함하려면 3박 4일 일정을 권장합니다.'
+        },
+        {
+          q: '부산 숙소는 어느 권역이 좋을까요?',
+          a: '바다와 휴양이 중심이면 해운대·광안리, 도심·맛집·쇼핑 중심이면 서면·남포가 편리합니다. KTX 이용자라면 부산역 인근(중앙·범일)도 동선 효율이 좋습니다.'
+        },
+        {
+          q: '부산 대중교통 카드는 어떻게 사용하나요?',
+          a: '전국 호환 교통카드(티머니·캐시비·레일플러스)로 도시철도·시내버스·동해선·일부 택시까지 사용할 수 있습니다. 환승 할인은 카드 사용 시에만 적용됩니다.'
+        },
+        {
+          q: '감천문화마을 방문 시 유의할 점은 무엇인가요?',
+          a: '실주민이 거주하는 마을이므로 큰 소리·사유지 출입·이른 아침 촬영을 자제해야 합니다. 안내소·체험관은 18시 전후 마감이라 오후 일찍 방문하는 것이 좋습니다.'
+        },
+        {
+          q: '여름철 해운대·광안리는 얼마나 붐비나요?',
+          a: '7월 말~8월 초 피크 시즌은 백사장이 발 디딜 틈 없이 붐빕니다. 평일 오전 또는 저녁 산책 중심으로 일정을 짜고 숙박은 최소 1~2개월 전 예약을 권장합니다.'
+        }
+      ]
+    },
+    {
+      type: 'sources',
+      items: [
+        { label: '부산광역시 공식 관광 포털 (Visit Busan)', url: 'https://www.visitbusan.net/', org: '부산광역시', accessedAt: '2026-05-11' },
+        { label: '대한민국 구석구석 — 부산', url: 'https://korean.visitkorea.or.kr/', org: '한국관광공사', accessedAt: '2026-05-11' },
+        { label: '부산교통공사 도시철도 안내', url: 'https://www.humetro.busan.kr/', org: '부산교통공사', accessedAt: '2026-05-11' },
+        { label: '코레일 KTX 예매', url: 'https://www.letskorail.com/', org: '한국철도공사', accessedAt: '2026-05-11' }
+      ]
+    },
+    { type: 'disclaimer' }
   ]
 }

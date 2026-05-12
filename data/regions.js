@@ -116,7 +116,20 @@ const regions = [
     description: '대만 수도 타이페이. 지우펀, 스펀, 스린야시장, 타이페이101, 단수이까지 핵심 스팟과 MRT·교통카드 가이드.',
     summary: '직항 2.5시간, 야시장·미식·당일치기 1순위.',
     centerLat: 25.03, centerLng: 121.57, bestSeasons: '10~4월',
-    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C' },
+    publishedAt: '2026-04-25', updatedAt: '2026-04-25', ymylLevel: 'C' },,
+  {
+    id: 'R020',
+    slug: 'kr-busan',
+    countrySlug: 'kr',
+    regionName: '부산',
+    regionNameEn: 'Busan',
+    regionType: 'city',
+    lat: 35.179,
+    lng: 129.075,
+    tags: ["부산","해운대","광안리"],
+    publishedAt: '2026-05-11',
+    updatedAt: '2026-05-11'
+  }
 ]
 
 module.exports = regions
