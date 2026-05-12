@@ -4,8 +4,24 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-12T04:15:46.452Z</updated>
+  <updated>2026-05-12T09:06:19.853Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/jw-marriott-danang/" />
+    <id>https://travel.ambitstock.com/hotels/jw-marriott-danang/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[일본 럭셔리 료칸 베스트]]></title>
+    <link href="https://travel.ambitstock.com/themes/luxury-ryokan/" />
+    <id>https://travel.ambitstock.com/themes/luxury-ryokan/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="테마" />
+    <summary><![CDATA[하코네·유후인·키노사키 럭셔리 료칸 가이드]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[겨울 따뜻한 해외 해변 여행]]></title>
     <link href="https://travel.ambitstock.com/situations/winter-beach/" />
@@ -21,6 +37,14 @@
     <updated>2026-05-11T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[발리와 몰디브 신혼여행 비교 가이드]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[여행용 보조배터리 추천]]></title>
+    <link href="https://travel.ambitstock.com/addons/portable-charger/" />
+    <id>https://travel.ambitstock.com/addons/portable-charger/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="여행용품" />
+    <summary><![CDATA[보조배터리 선택 완전 가이드]]></summary>
   </entry>
   <entry>
     <title><![CDATA[undefined]]></title>
@@ -221,29 +245,5 @@
     <updated>2026-05-07T15:00:00.000Z</updated>
     <category term="비교" />
     <summary><![CDATA[서울 호텔을 4개 가격대로 나눠 추천 — 강남·명동·홍대·용산 지역별 가성비부터 5성 스위트까지.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[부산 호텔 가격대별 추천 — 7만원 이하·해운대 중급·럭셔리 리조트]]></title>
-    <link href="https://travel.ambitstock.com/compare/busan-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/busan-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[부산 호텔을 4개 가격대로 나눠 추천 — 남포동 가성비부터 해운대 시그니엘·파라다이스 럭셔리까지. 여름 예약 전략 포함.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[다낭 호텔 가격대별 추천 — 5만원 이하·미케비치 중급·풀빌라 럭셔리]]></title>
-    <link href="https://travel.ambitstock.com/compare/danang-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/danang-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[다낭 호텔을 4개 가격대로 나눠 추천 — 시내 가성비부터 인터컨티넨탈 선반도·프리미어빌리지 풀빌라까지.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[발리 호텔 가격대별 추천 — 5만원 이하·중급 빌라·풀빌라 럭셔리]]></title>
-    <link href="https://travel.ambitstock.com/compare/bali-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/bali-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[발리 호텔을 4개 가격대로 나눠 추천 — 우붓 가성비부터 아만다리·포시즌스 사얀 풀빌라까지. 지역별 선택 가이드 포함.]]></summary>
   </entry>
 </feed>

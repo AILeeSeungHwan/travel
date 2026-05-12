@@ -91,6 +91,15 @@ const addons = [
     tags: ["목베개","여행용품","비행기"],
     publishedAt: '2026-05-11',
     updatedAt: '2026-05-11'
+  },
+  {
+    id: 'AD015',
+    slug: 'portable-charger',
+    title: '여행용 보조배터리 추천',
+    description: '보조배터리 선택 완전 가이드',
+    tags: ["보조배터리","여행용품","비행기"],
+    publishedAt: '2026-05-12',
+    updatedAt: '2026-05-12'
   }
 ]
 
