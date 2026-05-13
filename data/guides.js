@@ -100,6 +100,16 @@ const guides = [
     ymylLevel: 'B',
     id: '',
     description: ''
+  },
+  {
+    slug: 'trend-20260513-2',
+    title: '오늘의 여행 트렌드 2 (2026-05-13)',
+    category: 'guide',
+    publishedAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+    ymylLevel: 'B',
+    id: '',
+    description: ''
   }
 ]
 
