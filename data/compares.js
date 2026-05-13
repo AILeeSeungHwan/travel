@@ -69,6 +69,15 @@ const compares = [
     tags: ["발리","몰디브","신혼여행","비교"],
     publishedAt: '2026-05-12',
     updatedAt: '2026-05-12'
+  },
+  {
+    id: 'C009',
+    slug: 'tokyo-osaka-compare',
+    title: '도쿄 vs 오사카 여행 비교',
+    description: '도쿄와 오사카 여행 완전 비교',
+    tags: ["도쿄","오사카","일본","비교"],
+    publishedAt: '2026-05-13',
+    updatedAt: '2026-05-13'
   }
 ]
 
