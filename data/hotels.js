@@ -397,6 +397,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_023',
+    slug: 'fullerton-hotel-singapore',
+    countrySlug: 'sg',
+    regionSlug: 'singapore',
+    hotelName: '풀러턴 호텔 싱가포르',
+    hotelNameEn: 'The Fullerton Hotel Singapore',
+    hotelClass: '5성',
+    hotelType: '헤리티지 럭셔리',
+    starRating: 5,
+    guestRating: 4.7,
+    priceRange: '40~120만 원/박',
+    amenities: ["수영장","스파","피트니스","파인다이닝","리버뷰"],
+    address: '1 Fullerton Square, Singapore 049178',
+    lat: 1.2866,
+    lng: 103.853,
+    iso2: 'SG',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["풀러턴","싱가포르","헤리티지","5성"],
+    publishedAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

@@ -4,8 +4,48 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-12T09:14:06.435Z</updated>
+  <updated>2026-05-13T09:06:14.153Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/ritz-carlton-osaka/" />
+    <id>https://travel.ambitstock.com/hotels/ritz-carlton-osaka/</id>
+    <updated>2026-05-12T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/four-seasons-sayan-bali/" />
+    <id>https://travel.ambitstock.com/hotels/four-seasons-sayan-bali/</id>
+    <updated>2026-05-12T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/marina-bay-sands-singapore/" />
+    <id>https://travel.ambitstock.com/hotels/marina-bay-sands-singapore/</id>
+    <updated>2026-05-12T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/fullerton-hotel-singapore/" />
+    <id>https://travel.ambitstock.com/hotels/fullerton-hotel-singapore/</id>
+    <updated>2026-05-12T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[도쿄 vs 오사카 여행 비교]]></title>
+    <link href="https://travel.ambitstock.com/compare/tokyo-osaka-compare/" />
+    <id>https://travel.ambitstock.com/compare/tokyo-osaka-compare/</id>
+    <updated>2026-05-12T15:00:00.000Z</updated>
+    <category term="비교" />
+    <summary><![CDATA[도쿄와 오사카 여행 완전 비교]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[JW 메리어트 다낭 리조트 완전 가이드 — 미케비치 5성 스파 리조트]]></title>
     <link href="https://travel.ambitstock.com/hotels/jw-marriott-danang/" />
@@ -21,6 +61,14 @@
     <updated>2026-05-11T15:00:00.000Z</updated>
     <category term="테마" />
     <summary><![CDATA[하코네·유후인·키노사키 럭셔리 료칸 가이드]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[오늘의 여행 트렌드 1 (2026-05-12)]]></title>
+    <link href="https://travel.ambitstock.com/guides/trend-20260512-1/" />
+    <id>https://travel.ambitstock.com/guides/trend-20260512-1/</id>
+    <updated>2026-05-11T15:00:00.000Z</updated>
+    <category term="가이드" />
+    <summary><![CDATA[]]></summary>
   </entry>
   <entry>
     <title><![CDATA[겨울 따뜻한 해외 해변 여행]]></title>
@@ -197,53 +245,5 @@
     <updated>2026-05-08T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[싱가포르 랜드마크 마리나 베이 샌즈. 57층 인피니티 풀, 동남아 최대 카지노, 200개+ 럭셔리 쇼핑, 셀럽 레스토랑 예약 꿀팁.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[벚꽃 여행 추천 — 국내외 벚꽃 명소·숙소 가이드]]></title>
-    <link href="https://travel.ambitstock.com/themes/spring-cherry/" />
-    <id>https://travel.ambitstock.com/themes/spring-cherry/</id>
-    <updated>2026-05-08T15:00:00.000Z</updated>
-    <category term="테마" />
-    <summary><![CDATA[국내외 벚꽃 명소와 숙소 가이드. 경주·진해·여의도·교토·오사카 벚꽃 시즌 일정.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[오늘의 여행 트렌드 — 2026년 5월 인기 여행지 BEST]]></title>
-    <link href="https://travel.ambitstock.com/guides/trend-20260509-2/" />
-    <id>https://travel.ambitstock.com/guides/trend-20260509-2/</id>
-    <updated>2026-05-08T15:00:00.000Z</updated>
-    <category term="가이드" />
-    <summary><![CDATA[2026년 5월 주목받는 여행 트렌드. 인기 급상승 여행지, 시즌별 추천 코스, 최신 비자·입국 변경 사항 정리.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[커플 기념일 여행]]></title>
-    <link href="https://travel.ambitstock.com/situations/couple-anniversary/" />
-    <id>https://travel.ambitstock.com/situations/couple-anniversary/</id>
-    <updated>2026-05-08T15:00:00.000Z</updated>
-    <category term="상황별" />
-    <summary><![CDATA[국내외 로맨틱 여행지와 호텔 추천]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[파르나스 호텔 강남 완전 가이드 — COEX 직결 비즈니스 5성]]></title>
-    <link href="https://travel.ambitstock.com/hotels/parnas-gangnam/" />
-    <id>https://travel.ambitstock.com/hotels/parnas-gangnam/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="호텔" />
-    <summary><![CDATA[서울 강남 COEX몰 직결 5성호텔 파르나스. 야외수영장, 스파, 피트니스, 전시·컨벤션 접근성과 객실 타입·시설 정보.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[제주 호텔 가격대별 추천 — 10만원 이하·10~20만·20~50만·럭셔리]]></title>
-    <link href="https://travel.ambitstock.com/compare/jeju-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/jeju-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[제주 호텔을 4개 가격대로 나눠 추천 — 가성비 10만원 이하부터 풀빌라·5성 럭셔리까지. 시즌별 예약 전략 포함.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[서울 호텔 가격대별 추천 — 8만원 이하·중급·프리미엄·럭셔리]]></title>
-    <link href="https://travel.ambitstock.com/compare/seoul-hotels-by-price/" />
-    <id>https://travel.ambitstock.com/compare/seoul-hotels-by-price/</id>
-    <updated>2026-05-07T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[서울 호텔을 4개 가격대로 나눠 추천 — 강남·명동·홍대·용산 지역별 가성비부터 5성 스위트까지.]]></summary>
   </entry>
 </feed>
