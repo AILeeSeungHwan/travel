@@ -341,6 +341,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_021',
+    slug: 'four-seasons-sayan-bali',
+    countrySlug: 'id',
+    regionSlug: 'bali',
+    hotelName: '포시즌스 리조트 발리 앳 사얀',
+    hotelNameEn: 'Four Seasons Resort Bali at Sayan',
+    hotelClass: '5성',
+    hotelType: '정글 리조트',
+    starRating: 5,
+    guestRating: 4.9,
+    priceRange: '80~250만 원/박',
+    amenities: ["풀빌라","스파","정글뷰","계곡뷰","요가"],
+    address: 'Sayan, Ubud, Gianyar, Bali 80571, Indonesia',
+    lat: -8.4974,
+    lng: 115.2417,
+    iso2: 'ID',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["포시즌스","발리","우붓","정글"],
+    publishedAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
