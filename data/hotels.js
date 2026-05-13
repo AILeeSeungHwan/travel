@@ -369,6 +369,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_022',
+    slug: 'marina-bay-sands-singapore',
+    countrySlug: 'sg',
+    regionSlug: 'singapore',
+    hotelName: '마리나 베이 샌즈',
+    hotelNameEn: 'Marina Bay Sands',
+    hotelClass: '5성',
+    hotelType: '복합리조트',
+    starRating: 5,
+    guestRating: 4.6,
+    priceRange: '50~200만 원/박',
+    amenities: ["인피니티풀","카지노","쇼핑몰","스카이파크","파인다이닝"],
+    address: '10 Bayfront Avenue, Singapore 018956',
+    lat: 1.2834,
+    lng: 103.8607,
+    iso2: 'SG',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["마리나베이샌즈","싱가포르","인피니티풀","랜드마크"],
+    publishedAt: '2026-05-13',
+    updatedAt: '2026-05-13',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
