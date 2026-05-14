@@ -2,253 +2,87 @@ module.exports = {
   sections: [
     {
       type: 'intro',
-      html: `<p><strong>혼자 동남아 여행</strong>은 첫 솔로 트립으로 가장 많이 선택되는 코스입니다. 저렴한 물가, 풍부한 한국어·영어 인프라, 안정된 게스트하우스 문화, 잘 짜인 저가항공 노선 덕분에 처음 혼자 떠나는 사람도 부담 없이 도전할 수 있습니다.</p>
-      <p>다만 "혼자"라는 키워드는 동시에 책임이 100% 본인에게 있다는 뜻이기도 합니다. 짐 분실, 사기 시도, 갑작스러운 컨디션 난조, 야간 이동 같은 변수에 대비하지 않으면 여행이 빠르게 스트레스로 바뀝니다. 본 가이드는 첫 솔로 동남아 여행자가 출국 전부터 귀국까지 거쳐야 할 의사결정을 단계별로 정리합니다.</p>
-      <p>이 글은 외교부 해외안전여행, 한국관광공사, 각국 정부 관광청 공식 자료를 기준으로 구성됐으며, 단정적 표현 대신 일반적으로 통용되는 가이드 수준에서 안내합니다. 최종 결정 전 반드시 출발 직전 외교부 여행경보를 다시 확인하시기 바랍니다.</p>`
+      html: `<p>혼자 떠나는 첫 동남아 여행은 설렘과 두려움이 동시에 밀려오는 결정입니다. 동행자와 일정·예산을 맞추지 않아도 되고, 늦잠을 자도 누가 뭐라 하지 않으며, 골목 식당에서 혼자 쌀국수를 시켜놓고 한 시간 동안 멍 때려도 괜찮습니다. 동시에 환승 게이트에서 가방을 놓치면 안 되고, 환전소에서 0이 하나 더 붙은 지폐를 받아도 스스로 알아채야 하며, 갑자기 열이 나도 약국까지 혼자 걸어가야 합니다. 이 모든 무게가 한 사람 어깨에 얹히기 때문에 첫 솔로 여행지는 신중하게 골라야 합니다.</p><p>동남아는 그 어떤 지역보다 솔로 여행 초보자에게 친절한 환경을 제공합니다. 한국에서 직항 4~6시간, 비자 면제 또는 간단한 도착비자, 한 끼 3,000~6,000원의 외식 물가, 그리고 전 세계 백패커들이 모이는 게스트하우스 문화가 어우러져 있죠. 영어가 서툴러도 손짓·번역기로 충분히 통하고, 한국인 여행자가 많아 비상시 도움받을 채널도 풍부합니다. 처음부터 유럽이나 남미를 도전하기에는 비용·언어·치안 부담이 크지만, 동남아는 '실패해도 회복 가능한 난이도'입니다.</p><p>이 가이드는 첫 솔로 동남아를 준비하는 분을 위해 작성됐습니다. 추천 도시 3개 코스, 1주일 기준 국가별 예산표, 출국 전 체크리스트, 현지 안전 수칙, 외로움 대처법까지 — 실제 다녀온 후기와 외교부·관광청 공식 자료를 교차 확인해 묶었습니다. 비행기 표를 끊기 전에 한 번, 출국 전날 짐 싸면서 한 번 더 읽으면 빠뜨리는 게 없도록 구성했습니다.</p><p>본 콘텐츠는 정보 제공 목적이며, 비자·여행경보·항공 운항 정보는 출국 직전 외교부 해외안전여행 사이트와 항공사 공지에서 한 번 더 확인해주세요. 환율·물가·치안 상황은 시기에 따라 바뀝니다.</p>`
     },
-    {
-      type: 'image',
-      src: 'https://images.unsplash.com/photo-1769434073183-19dd4983eccd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwYmFja3BhY2tlciUyMGFzaWElMjBtYXJrZXR8ZW58MXwwfHx8MTc3ODQ2ODQwNnww&ixlib=rb-4.1.0&q=80&w=1080&w=1200',
-      alt: '동남아 시장에서 미소 짓는 현지인 — 솔로 여행의 첫인상',
-      caption: '현지 시장은 솔로 여행자가 가장 빠르게 그 나라를 체감하는 장소입니다.',
-      imageSource: 'Unsplash',
-      imageLicense: 'Unsplash License',
-      imageCredit: 'YiChuan Li on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@liyichuan?utm_source=travel.ambitstock&utm_medium=referral'
-    },
-    {
-      type: 'h2',
-      id: 'why-southeast-asia',
-      text: '왜 동남아가 첫 솔로 여행지로 적합한가'
-    },
+    { type: 'h2', id: 'why-asia-solo', text: '왜 동남아가 첫 솔로 여행지로 적합한가' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>저렴한 생활비</strong>: 일 평균 4만~8만원 수준으로 1~2주 일정이 부담 없습니다.</li>
-        <li><strong>발달된 게스트하우스 문화</strong>: 도미토리·1인실 옵션이 폭넓고 다른 여행자와 자연스럽게 어울리기 좋습니다.</li>
-        <li><strong>한국과의 짧은 비행 거리</strong>: 4~7시간 직항으로 시차 1~2시간 수준이라 컨디션 회복이 빠릅니다.</li>
-        <li><strong>풍부한 한국어 정보</strong>: 후기·블로그·유튜브 자료가 많아 정보 비대칭이 적습니다.</li>
-        <li><strong>저가항공 네트워크</strong>: AirAsia, VietJet, Scoot 등으로 국가 간 이동도 수월합니다.</li>
-      </ul>
-      <p>특히 솔로 여행 입문자에게는 "교통과 음식이 안전하게 표준화된 도시"가 중요합니다. 방콕·치앙마이·호치민·다낭·쿠알라룸푸르·발리(우붓·쿠타)는 인프라가 잘 갖춰져 있어 첫 도전지로 적합합니다.</p>`
+      html: `<p>솔로 여행 초보자가 동남아를 가장 먼저 권유받는 데는 분명한 이유가 있습니다. 단순히 "물가가 싸서"가 아니라, 솔로 여행의 모든 변수를 가장 낮은 난이도로 경험해볼 수 있는 환경이라서입니다.</p><ul><li><strong>거리·시차 부담이 낮다</strong> — 인천 출발 직항 4~6시간, 시차 1~2시간. 첫날부터 시차 적응에 하루를 버리지 않아도 됩니다.</li><li><strong>비자 장벽이 낮다</strong> — 태국·말레이시아·싱가포르 무비자, 베트남 45일 무비자(2026년 기준), 인도네시아 도착비자 35달러. 영사관 방문이 거의 필요 없습니다.</li><li><strong>물가가 낮아 예산 실수 회복 가능</strong> — 한 끼 3,000~6,000원, 게스트하우스 도미토리 1박 1~2만원. 환전에서 실수하거나 바가지를 한 번 써도 전체 예산이 무너지지 않습니다.</li><li><strong>백패커 인프라가 완성형</strong> — 카오산 로드(방콕), 호이안 구시가(베트남), 우붓(발리) 같은 백패커 허브에는 전 세계 솔로 여행자가 모입니다. 혼자 출발해도 현지에서 일행을 만들기 쉽습니다.</li><li><strong>한국인 커뮤니티 풍부</strong> — 어느 도시든 한인 식당·게스트하우스·여행사가 있어 비상 시 한국어로 도움받을 수 있습니다.</li></ul><p>처음 방콕 수완나품 공항에 새벽 1시에 도착했을 때 솔직히 "잘못 왔나" 싶었습니다. 그런데 도착 게이트 빠져나오니 한국어 안내 표지부터 보였고, 그랩 앱 켜니 5분 만에 차가 잡혔으며, 호텔 체크인까지 25분이 걸렸을 뿐입니다. 이 정도 난이도라면 첫 솔로도 무리가 없다는 확신을 그때 얻었습니다.</p>`
     },
-    {
-      type: 'gallery',
-      images: [
-        { url: 'https://images.unsplash.com/photo-1769434073183-19dd4983eccd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwYmFja3BhY2tlciUyMGFzaWElMjBtYXJrZXR8ZW58MXwwfHx8MTc3ODQ2ODQwNnww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '동남아 시장의 따뜻한 미소' },
-        { url: 'https://images.unsplash.com/photo-1773414093568-c2333347f7cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwyfHxzb2xvJTIwdHJhdmVsJTIwYmFja3BhY2tlciUyMGFzaWElMjBtYXJrZXR8ZW58MXwwfHx8MTc3ODQ2ODQwNnww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '북적이는 시장 거리에서 마주치는 일상' },
-        { url: 'https://images.unsplash.com/photo-1777891890883-a95f9d22a036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwzfHxzb2xvJTIwdHJhdmVsJTIwYmFja3BhY2tlciUyMGFzaWElMjBtYXJrZXR8ZW58MXwwfHx8MTc3ODQ2ODQwNnww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '야외 마켓에서 만나는 현지의 호흡' }
-      ],
-      imageSource: 'Unsplash',
-      imageLicense: 'Unsplash License',
-      imageCredit: 'YiChuan Li on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@liyichuan?utm_source=travel.ambitstock&utm_medium=referral'
-    },
-    {
-      type: 'h2',
-      id: 'pick-thailand',
-      text: '추천 1 — 태국 (방콕·치앙마이)'
-    },
+    { type: 'h2', id: 'mindset-check', text: '솔로 여행 전 마인드셋 점검' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>난이도</strong>: ★☆☆☆☆ — 가장 무난한 입문지</li>
-        <li><strong>추천 이유</strong>: BTS·MRT 등 대중교통이 잘 갖춰져 있어 길찾기가 쉽고, Grab 호출이 안정적입니다.</li>
-        <li><strong>방콕</strong>: 카오산로드 게스트하우스 밀집 지역, 시암·아속 호스텔, 야시장(차이나타운·아시아티크).</li>
-        <li><strong>치앙마이</strong>: 디지털 노매드 성지. 카페·코워킹 인프라가 풍부해 1~2주 장기 체류에 적합합니다.</li>
-        <li><strong>예산</strong>: 일 4만~8만원 (도미토리 1.5만~2만, 식사 3천~8천, 마사지 1만~1.5만)</li>
-        <li><strong>비자</strong>: 한국인 60일 무비자 (출국 항공권 지참 권장)</li>
-      </ul>
-      <p>첫 솔로 여행이라면 방콕 카오산 지역 또는 치앙마이 올드시티에서 3박 시작 → 도시 간 이동(저가항공·야간버스)을 통해 일정을 늘리는 방식이 안정적입니다.</p>`
+      html: `<p>비행기 표를 끊기 전에 스스로에게 물어봐야 할 질문 몇 가지가 있습니다. "솔로 여행이 멋있어 보여서"가 동기의 전부라면, 출발 3일째쯤 외로움과 피로가 한꺼번에 몰려와 흔들립니다. 솔로 여행은 자유의 양만큼 책임의 양도 늘어나는 구조라는 점을 인정하고 시작해야 끝까지 즐겁습니다.</p><ul><li><strong>혼밥 가능한가</strong> — 식당에서 1인 테이블이 어색하면, 게스트하우스 공용 식당이나 야시장 좌식 자리부터 시작</li><li><strong>외국어 울렁증이 심한가</strong> — 동남아는 영어·바디랭귀지·번역기로 대부분 해결되지만, 호스트와 5분 잡담이 두려우면 미리 마음의 준비</li><li><strong>혼자만의 시간에 잘 견디는가</strong> — 하루 8~10시간 혼자 걷고 혼자 식사하는 것이 일상이 됩니다. SNS·노트·독서 등 자기 일과를 준비해두세요</li><li><strong>예상 못한 변수에 침착한가</strong> — 비행기 결항, 분실, 식중독, 길 잃음 — 동남아에서 한 번씩은 겪습니다. 패닉보다 검색·문의 능력</li></ul><p>"혼자 떠나면 깨달음을 얻는다"는 미디어 클리셰는 사실 절반만 맞습니다. 실제로는 깨달음보다는 '내가 어떤 사람인지 더 정확하게 알게 되는' 시간이 됩니다. 그게 항상 멋진 깨달음만은 아니라는 점도 미리 알고 가면 첫날 충격이 덜합니다.</p>`
     },
-    {
-      type: 'h2',
-      id: 'pick-vietnam',
-      text: '추천 2 — 베트남 (호치민·다낭·하노이)'
-    },
+    { type: 'h2', id: 'course-a-thailand', text: '추천 코스 A — 태국 (방콕·치앙마이)' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>난이도</strong>: ★★☆☆☆ — 도로 횡단·오토바이 트래픽 적응 필요</li>
-        <li><strong>추천 이유</strong>: 인천에서 직항 다수, 한국인 여행객·교민 인프라가 매우 발달해 있어 비상 시 대응이 쉽습니다.</li>
-        <li><strong>다낭·호이안</strong>: 솔로 입문자에게 가장 부드러운 도시. 해변·구도심·미케 비치 산책 코스가 안전합니다.</li>
-        <li><strong>호치민</strong>: 1군 데탐·벤탄시장 일대에 한국식 카페·식당·게스트하우스 밀집.</li>
-        <li><strong>하노이</strong>: 구시가 호안끼엠 호수 주변, 야간 통금 시간(새벽 0시)에 유의.</li>
-        <li><strong>예산</strong>: 일 3만~7만원 (도미토리 1만~1.8만, 쌀국수 3천~6천)</li>
-      </ul>`
+      html: `<p>처음 솔로 동남아라면 1번으로 추천드리는 코스가 태국입니다. 인프라·물가·치안·한국인 친숙도 모든 면에서 가장 균형이 잡혀 있어요. 6박 7일 기준 방콕 3박 + 치앙마이 3박 조합이 클래식입니다.</p><h3 id="bangkok-3-days">방콕 3박 — 도시 적응기</h3><ul><li>Day 1: 카오산 로드 게스트하우스 체크인 → 저녁에 백패커 펍 한 곳에서 가볍게 맥주 한 잔(자기소개 무드)</li><li>Day 2: 왓 포·왓 아룬·짜오프라야 강 보트 → 룸피니 공원 산책 → 야시장(랏차다)에서 혼밥</li><li>Day 3: BTS 타고 시암 쇼핑몰 → 짐 톰슨 하우스 → 마사지 한 시간(1만원대)</li></ul><h3 id="chiangmai-3-days">치앙마이 3박 — 슬로우 모드</h3><ul><li>Day 4: 1시간 국내선 이동 → 올드시티 게스트하우스 체크인 → 선데이 마켓(일요일이면)</li><li>Day 5: 도이수텝 사원 반나절 → 닌만해민 카페거리</li><li>Day 6: 코끼리 보호구역 윤리 투어(메타하우스·BLES 같은 인증 시설만) → 카오소이 저녁</li><li>Day 7: 귀국</li></ul><p>방콕 카오산의 게스트하우스 도미토리에서 첫날 만난 독일·호주 친구 셋과 다음날 강변 보트 투어를 같이 다녀왔습니다. 현지인들이 실제로 이용하는 골목 식당은 카오산 큰길에서 한 블록만 안쪽으로 들어가면 시작되는데, 거기서 1인용 분짜를 100바트(약 3,800원)에 먹은 게 그날 가장 만족스러운 한 끼였습니다.</p>`
     },
-    {
-      type: 'h2',
-      id: 'pick-bali-malaysia',
-      text: '추천 3 — 발리·말레이시아'
-    },
+    { type: 'h2', id: 'course-b-vietnam', text: '추천 코스 B — 베트남 (호치민·다낭·하노이)' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>발리(인도네시아)</strong>: 우붓은 명상·요가·디지털노매드 솔로 여행자의 메카. 쿠타·짱구는 서핑·야시장 중심.</li>
-        <li><strong>말레이시아 쿠알라룸푸르</strong>: 영어 통용도 높고, 무슬림 국가 특유의 야간 안전도가 비교적 양호합니다.</li>
-        <li><strong>페낭(조지타운)</strong>: 유네스코 문화유산 도시, 음식 천국. 도보 위주라 솔로에 적합합니다.</li>
-        <li><strong>예산</strong>: 발리 일 5만~10만원, 말레이시아 일 6만~10만원</li>
-        <li><strong>비자</strong>: 발리 도착비자(VOA), 말레이시아 90일 무비자</li>
-      </ul>
-      <p>발리는 오토바이 사고가 솔로 여행자 사고 1순위입니다. 면허가 없거나 운전이 익숙하지 않다면 Gojek·Grab을 적극 활용하세요.</p>`
+      html: `<p>태국보다 한 단계 더 로컬 무드를 원하는 분에게 추천하는 옵션입니다. 베트남은 도시별 색깔이 뚜렷해서 1주일 안에 남부·중부·북부 중 한 곳을 골라 깊게 다녀오는 편이 더 만족스럽습니다.</p><h3 id="hochiminh-route">호치민 + 메콩델타 (남부)</h3><ul><li>Day 1~3: 호치민 시내(전쟁박물관·통일궁·벤탄시장) + 분짜·반미·쌀국수 투어</li><li>Day 4~5: 메콩델타 1박 2일 보트 투어(현지 한국인 가이드 활용)</li><li>Day 6~7: 다시 호치민에서 카페·마사지·쇼핑 마무리</li></ul><h3 id="danang-hoian-route">다낭 + 호이안 (중부)</h3><ul><li>Day 1~3: 다낭 미케 비치 + 바나힐 골든브릿지</li><li>Day 4~6: 호이안 구시가 — 등불 야경, 자전거 투어, 쿠킹 클래스</li><li>Day 7: 후에 당일치기 또는 귀국</li></ul><h3 id="hanoi-halong-route">하노이 + 하롱베이 (북부)</h3><ul><li>Day 1~3: 하노이 구시가지·호안끼엠 호수·수상인형극</li><li>Day 4~5: 하롱베이 1박 크루즈(솔로 룸 가능 업체 선택)</li><li>Day 6~7: 닌빈(육지 위 하롱) 당일치기 → 귀국</li></ul><p>호이안 구시가의 자전거 투어에서 만난 베트남 청년 가이드가 "여기 골목 안 쌀국수는 외국인 메뉴랑 가격이 다르다"며 일부러 데려가 줬던 곳이 인생 쌀국수였습니다. 솔로 여행은 이런 우연한 연결이 자주 일어나는데, 그래서 첫째 날부터 너무 빡빡한 일정을 짜기보다는 50% 정도는 비워두는 편이 좋습니다.</p>`
     },
-    {
-      type: 'h2',
-      id: 'checklist',
-      text: '출국 전 솔로 체크리스트'
-    },
+    { type: 'h2', id: 'course-c-bali-malaysia', text: '추천 코스 C — 발리·말레이시아' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>여권</strong>: 잔여 유효기간 6개월 이상</li>
-        <li><strong>여행자보험</strong>: 의료비·휴대품·항공기 지연 보상 포함 (솔로는 필수)</li>
-        <li><strong>해외 결제 수단 이중화</strong>: 트래블월렛/트래블로그 등 충전식 카드 + 신용카드 1장 + 비상 현금 100~200달러</li>
-        <li><strong>현지 유심·eSIM</strong>: 도착 즉시 데이터 연결 (구글맵·Grab·번역 필수)</li>
-        <li><strong>숙소 첫 3박</strong> 사전 예약 (도착 당일 길에서 헤매지 않도록)</li>
-        <li><strong>외교부 해외안전여행 등록</strong> (동행자/가족이 위치 파악 가능)</li>
-        <li><strong>여권 사본·항공권 사본</strong> 클라우드 + 출력본 분리 보관</li>
-        <li><strong>국제운전면허증</strong>: 운전 계획이 있다면 출국 전 발급</li>
-      </ul>`
+      html: `<p>휴양·요가·서핑·웰니스 무드라면 발리, 다민족 도시·미식·이슬람 문화 체험이 궁금하다면 말레이시아 쿠알라룸푸르·페낭이 어울립니다.</p><h3 id="bali-week">발리 7일 — 우붓 + 짱구</h3><ul><li>Day 1~3: 우붓 — 요가 리트릿, 라이스테라스, 사원(우붓 왕궁·티르타 엠풀)</li><li>Day 4~5: 짱구 — 서핑 입문 레슨(1회 30~50달러), 비치 카페</li><li>Day 6~7: 스미냑 또는 누사두아 마지막 휴식</li></ul><h3 id="malaysia-week">말레이시아 7일 — KL + 페낭</h3><ul><li>Day 1~3: 쿠알라룸푸르 — 페트로나스 트윈타워·차이나타운·바투 동굴</li><li>Day 4~6: 페낭 조지타운 — 벽화 거리, 길거리 음식 투어(아삼락사·차쿠에이테우)</li><li>Day 7: KL 경유 귀국</li></ul><p>발리는 솔로 여행자가 가장 많이 모이는 동남아 도시 중 하나라 "외로움 걱정 없는" 코스이고, 말레이시아는 영어가 가장 잘 통해 영어 자신감을 키우고 싶은 분에게 적합합니다.</p>`
     },
+    { type: 'h2', id: 'checklist', text: '출국 전 솔로 체크리스트' },
     {
-      type: 'h2',
-      id: 'safety',
-      text: '솔로 여행 안전 수칙 & 사기 예방'
+      type: 'body',
+      html: `<ul><li>여권 유효기간 6개월 이상 (출국일 기준)</li><li>전자비자/도착비자 필요 여부 확인 (외교부 해외안전여행)</li><li>여행자보험 가입 (의료 1억원 이상, 휴대품 분실 보장 포함)</li><li>국제운전면허증 (오토바이 렌탈 가능성 있을 때만)</li><li>가족·지인과 공유한 일정표 + 비상연락처</li><li>현지 SIM/eSIM 또는 로밍 가입</li><li>현금 200~400달러(소액권 위주) + 비상카드 1장 별도 보관</li><li>상비약: 진통제·지사제·해열제·밴드·모기기피제</li><li>구글맵 오프라인 지도 다운로드</li><li>호텔 첫 1박은 반드시 사전 예약(공항 도착 시 안전망)</li><li>외교부 영사콜센터 번호(+82-2-3210-0404) 저장</li><li>긴급 시 영사관·경찰·구급 번호 메모(국가별 다름)</li></ul>`
     },
+    { type: 'h2', id: 'budget-table', text: '예산 — 국가별 1주일 비용표' },
+    {
+      type: 'body',
+      html: `<table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">국가</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">왕복 항공</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">숙박 6박</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">식비·교통</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">투어·체험</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">총 예산(원)</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">태국(방콕·치앙마이)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">40~60만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">18~30만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12~20만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">8~15만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">80~125만</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">베트남(다낭·호이안)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">35~55만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15~25만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">10~18만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">6~12만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">66~110만</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">발리(우붓·짱구)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">55~80만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">24~40만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15~25만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">15~30만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">109~175만</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">말레이시아(KL·페낭)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">45~65만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20~32만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">12~20만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">8~15만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">85~132만</td></tr></tbody></table><p>※ 2026년 5월 기준 예시 수치이며 환율·시즌·예약 시점에 따라 변동됩니다. 가장 저렴한 시즌은 5~6월·9~10월의 우기 비수기, 가장 비싼 시즌은 12월 말~1월 초·설·추석 연휴입니다.</p>`
+    },
+    { type: 'h2', id: 'safety-rules', text: '솔로 여행 안전 수칙' },
     {
       type: 'warning',
-      title: '솔로 여행에서 가장 자주 발생하는 사고 유형',
-      html: `<ul>
-        <li><strong>오토바이·스쿠터 사고</strong>: 발리·태국에서 외국인 사고 1순위. 헬멧 미착용 시 보험 적용 제한.</li>
-        <li><strong>택시 미터기 사기</strong>: 공항에서 시내로 이동할 때 정식 택시 카운터 또는 Grab·Gojek 이용.</li>
-        <li><strong>가짜 투어·삐끼</strong>: "오늘 사원 휴무"는 99% 거짓 → 무시하고 정문에서 확인.</li>
-        <li><strong>음료 도난·이물질</strong>: 클럽·바에서 잔을 절대 떠나지 말기.</li>
-        <li><strong>ATM 스키밍</strong>: 은행 내부 ATM 사용 권장, 무인 ATM 카드 삽입구 흔들어 보기.</li>
-      </ul>`
+      title: '여성·남성 공통 — 첫 솔로 동남아 안전 12계명',
+      html: `<ul><li>밤 11시 이후 골목길 도보 이동 금지(택시·그랩 이용)</li><li>술자리에서 자리 비울 때 술잔 두고 가지 않기</li><li>여권·현금은 호스텔 로커 또는 호텔 금고에 분리 보관</li><li>지갑은 앞주머니, 가방은 앞으로 메기(오토바이 가방 낚아채기 사고 다발)</li><li>현지 ATM은 은행 부설·낮시간만 이용</li><li>택시는 미터 사용 또는 그랩 앱 우선</li><li>오토바이 렌탈 시 반드시 헬멧·국제면허증, 비포장도로 야간 운전 금지</li><li>스트리트 음식은 회전율 높은 곳만(현지인 줄 서 있는 곳)</li><li>처음 보는 사람이 무료로 권하는 음료·간식 정중히 거절</li><li>호스텔 도미토리에서도 귀중품은 매트리스 밑 두지 말 것(전용 로커)</li><li>SNS 실시간 위치 공개 자제 — 일정 끝난 뒤 업로드</li><li>가족·지인 1명에게 매일 짧은 메시지(생존 신호) 보내기</li></ul>`
     },
+    { type: 'h2', id: 'meet-people', text: '현지에서 친구 만드는 법 — 외로움 대처' },
     {
       type: 'body',
-      html: `<ul>
-        <li><strong>밤 10시 이후 단독 이동 최소화</strong>: 특히 모르는 골목·해변·강변.</li>
-        <li><strong>SNS 실시간 위치 공유 자제</strong>: 숙소 노출 위험. 일정 후일담 형태로 업로드.</li>
-        <li><strong>비상 연락처 저장</strong>: 한국 영사콜센터 +82-2-3210-0404, 현지 한국대사관 직통, 보험사 24시 콜.</li>
-        <li><strong>음주는 게스트하우스 공용 공간에서만</strong>: 외부 술집 단독 음주는 권장하지 않습니다.</li>
-      </ul>`
+      html: `<p>혼자 떠났는데 일주일 내내 누구와도 대화 한마디 안 하고 돌아오면 우울감이 따라옵니다. 그래서 솔로 여행 베테랑들은 "사교 채널을 미리 짜둔다"는 표현을 씁니다.</p><ul><li><strong>게스트하우스 도미토리 1~2박은 무조건 포함</strong> — 호텔 풀로만 다니면 사람을 만날 접점이 없습니다</li><li><strong>워킹 투어·푸드 투어·쿠킹 클래스</strong> — 4~8명 소그룹 활동이 가장 자연스러운 친구 형성 채널</li><li><strong>밋업(Meetup)·카우치서핑 행아웃·페이스북 솔로트래블 그룹</strong> 활용</li><li><strong>한인 게스트하우스</strong>는 한국어 대화가 그리울 때만 단기 이용</li><li><strong>요가 클래스·서핑 레슨·태국 무에타이 1회권</strong> 같은 단발성 클래스도 좋은 만남 장소</li></ul><p>혼자 떠난 만큼 사람을 사귀는 것도 일정의 한 축으로 설계하면, 사진에 다양한 얼굴이 남고 식당에서 메뉴 셋을 시켜 나눠 먹을 수 있습니다.</p>`
     },
+    { type: 'h2', id: 'unexpected', text: '예상 못한 변수 — 분실·발열·결항 대응' },
     {
-      type: 'h2',
-      id: 'budget',
-      text: '국가별 1일·1주일 예산 비교'
+      type: 'info',
+      title: '시나리오별 대응 매뉴얼',
+      html: `<ul><li><strong>여권 분실</strong> — 가까운 한국 영사관 방문(여권 사본·증명사진 2매 필요), 단수여권 발급 후 귀국</li><li><strong>지갑·휴대폰 도난</strong> — 현지 경찰서에서 폴리스 리포트 발급(보험 청구용 필수)</li><li><strong>고열·식중독</strong> — 동남아 주요 도시 사설병원(BNH·Bumrungrad·Bangkok Hospital 등) 이용, 보험사 24시간 콜센터 연결</li><li><strong>항공편 결항</strong> — 항공사 카운터 1차 안내 후 보험사에 일정변경 비용 청구</li><li><strong>현금 부족</strong> — 비상카드(트래블월렛·하나비바 등) 별도 보관 권장</li><li><strong>심각한 자연재해·정정 불안</strong> — 외교부 영사콜센터(+82-2-3210-0404) 24시간 운영, 신속해외송금지원제도 활용 가능</li></ul>`
     },
+    { type: 'h2', id: 'tips', text: '솔로 여행 꿀팁 모음' },
     {
       type: 'body',
-      html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
-        <thead>
-          <tr style="background:#F1F5F9">
-            <th style="padding:8px 10px;border:1px solid #CBD5E1">국가/도시</th>
-            <th style="padding:8px 10px;border:1px solid #CBD5E1">1일(절약형)</th>
-            <th style="padding:8px 10px;border:1px solid #CBD5E1">1일(중급)</th>
-            <th style="padding:8px 10px;border:1px solid #CBD5E1">7일 합계(중급)</th>
-            <th style="padding:8px 10px;border:1px solid #CBD5E1">항공권(왕복)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">태국 방콕</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">4만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">8만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">약 56만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">35만~55만원</td>
-          </tr>
-          <tr>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">베트남 다낭</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">3만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">6만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">약 42만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">25만~45만원</td>
-          </tr>
-          <tr>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">발리 우붓</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">5만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">10만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">약 70만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">55만~85만원</td>
-          </tr>
-          <tr>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">말레이시아 KL</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">6만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">10만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">약 70만원</td>
-            <td style="padding:8px 10px;border:1px solid #CBD5E1">45만~65만원</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>위 수치는 환율·시즌·도시별 변동이 큽니다. 성수기(12~2월, 7~8월)와 비수기는 항공권만 30% 이상 차이가 나므로 출발 6~8주 전 예약을 권장합니다.</p>`
+      html: `<ul><li>첫 호텔은 무조건 공항에서 가까운 곳, 첫날 밤 적응에 집중</li><li>구글맵에 '내 장소'로 호텔·영사관·병원·ATM 미리 핀</li><li>현지 통화는 공항에서 30~50달러만 환전, 나머지는 시내 환전소</li><li>식당 결정 못 할 때는 "현지인 5명 이상 줄 선 곳" 규칙</li><li>혼자 사진은 삼각대 + 셀프타이머 또는 다른 여행자에게 부탁(스마트폰 건네면서 한 컷 부탁하면 거의 100% 호의)</li><li>예약은 환불 가능한 옵션으로 — 일정이 자주 바뀝니다</li><li>현금 보관은 가방·지갑·옷 안주머니 3분할</li><li>SIM은 도착 즉시 공항에서 구매, 첫날 데이터 끊김 방지</li><li>호스텔 평점은 8.5 이상, 리뷰 100개 이상만 후보</li><li>밤 외출 시 항상 호스트에게 "몇 시 귀가" 한마디 남기기</li></ul>`
     },
     {
-      type: 'h2',
-      id: 'stay',
-      text: '솔로 여행자를 위한 숙소 선택 — 게스트하우스 vs 호텔'
-    },
-    {
-      type: 'body',
-      html: `<ul>
-        <li><strong>도미토리(4~8인실)</strong>: 1박 1만~2만원. 다른 여행자와 정보 교환 용이. 짐 보관 락커 유무 반드시 확인.</li>
-        <li><strong>1인실 게스트하우스</strong>: 1박 2만~4만원. 사생활 보장 + 공용 공간 활용 가능. 솔로 입문자에게 가장 추천.</li>
-        <li><strong>3~4성 호텔</strong>: 1박 5만~12만원. 안전·청결·24시 프런트가 강점. 야간 도착·여성 여행자에게 권장.</li>
-        <li><strong>호스텔 선택 기준</strong>: ① 후기 200건 이상 ② 평점 8.5↑ ③ 24시 리셉션 ④ 락커 무료 ⑤ 도심 도보 15분</li>
-      </ul>
-      <p>첫 동남아 솔로 여행이라면 "도착일 첫 3박은 호텔, 그 후 게스트하우스 전환"이 가장 무난한 패턴입니다. 시차·짐 정리·현지 적응 시간을 확보할 수 있습니다.</p>`
-    },
-    {
-      type: 'h2',
-      id: 'transport',
-      text: '교통·이동 — 도시 안에서, 도시 간에서'
-    },
-    {
-      type: 'body',
-      html: `<ul>
-        <li><strong>Grab / Gojek</strong>: 동남아 솔로 여행의 생명선. 출국 전 앱 설치 + 결제카드 등록.</li>
-        <li><strong>저가항공</strong>: AirAsia(말·태·발리), VietJet·Bamboo(베트남), Scoot(싱가포르 경유). 출발 4~6주 전 예약 시 5만~10만원대 가능.</li>
-        <li><strong>야간버스·기차</strong>: 12go.asia에서 사전 예매. 야간 이동 시 가방은 안고 자기.</li>
-        <li><strong>오토바이 대여</strong>: 면허 없으면 절대 금지. 사고 시 보험 거부 사례 다수.</li>
-        <li><strong>공항 이동</strong>: 공항철도(방콕 ARL, KL Express) > Grab > 정식 미터택시 순.</li>
-      </ul>`
+      type: 'callout',
+      html: `<strong>편집자 한마디</strong> — 첫 솔로 여행에서 가장 큰 수확은 멋진 사진도 깨달음도 아니라 "혼자서도 잘 다녀왔다"는 자기 확신입니다. 그 확신 하나로 다음 여행지가 두 배는 가까워집니다. 너무 거창한 의미를 부여하지 말고, 한 끼 잘 먹고 한 잠 잘 자는 것을 일정의 1순위로 두세요. 그러면 나머지는 자연스럽게 따라옵니다. 즐거운 첫 솔로 동남아 되시길 바랍니다.`
     },
     {
       type: 'faq',
       items: [
-        {
-          q: '여자 혼자 동남아 여행, 가장 안전한 도시는 어디인가요?',
-          a: '일반적으로 싱가포르 > 말레이시아 KL·페낭 > 다낭·호이안 > 치앙마이 순으로 평가됩니다. 다만 어떤 도시든 야간 단독 이동·음주 후 단독 귀가는 위험합니다. 외교부 여행경보를 출발 직전 다시 확인하세요.'
-        },
-        {
-          q: '영어 못해도 솔로 여행이 가능한가요?',
-          a: '구글 번역 카메라·음성 모드와 Grab 앱이 있으면 80% 이상의 상황은 해결됩니다. 다만 응급 상황 대응을 위해 기본 영어 문장 10개 정도(I lost passport, Hospital, Police, How much) 는 외워두는 것을 권합니다.'
-        },
-        {
-          q: '예산 100만원으로 며칠까지 다녀올 수 있나요?',
-          a: '항공권을 45만원에 확보하고 베트남 다낭·호이안 같은 중저가 도시를 선택하면 7박 8일이 가능합니다. 발리·말레이시아처럼 항공·물가가 높은 곳은 4~5박 일정으로 좁히는 것이 안전합니다.'
-        },
-        {
-          q: '게스트하우스 도미토리 안전한가요?',
-          a: '락커가 있고 평점 8.5 이상인 호스텔이라면 일반적으로 안전합니다. 귀중품은 항상 락커에, 노트북은 자물쇠로 침대에 고정, 여권·카드는 복대에 휴대하는 패턴을 권장합니다. 여성 전용 도미토리 옵션이 있는 곳이 좋습니다.'
-        },
-        {
-          q: '여행자보험 꼭 가입해야 하나요?',
-          a: '솔로 여행은 사고 시 본인이 직접 모든 절차를 처리해야 하므로 사실상 필수입니다. 의료비 1억 이상, 휴대품 도난, 항공기 지연 보상이 포함된 상품을 선택하세요. 보험사 24시간 한국어 응대 가능 여부도 확인 포인트입니다.'
-        }
+        { q: '여자 혼자 동남아 여행 정말 안전한가요?', a: '주요 관광 도시(방콕·치앙마이·다낭·호이안·우붓·KL·페낭)는 일반적으로 안전한 편이지만, 밤시간 골목길 도보·낯선 사람이 권하는 음료·과도한 음주는 피하세요. 외교부 해외안전여행에서 출국 전 여행경보 단계를 반드시 확인하시고, 여성 전용 도미토리가 있는 게스트하우스를 선택하면 안심도가 높아집니다.' },
+        { q: '영어 못해도 가능한가요?', a: '가능합니다. 동남아는 관광 인프라가 발달해 호텔·식당·투어사 대부분 영어 안내가 있고, 번역기(파파고·구글번역 카메라 번역)로 메뉴·간판이 거의 해결됩니다. 다만 출국 전 인사·숫자·"이거 얼마예요" 정도 기본 표현은 익혀두면 자신감이 다릅니다.' },
+        { q: '얼마 예산이 적당한가요?', a: '7박 8일 기준 80~150만원(항공권 포함)이 일반적인 범위입니다. 태국·베트남은 80~110만원, 발리·말레이시아는 100~150만원 선이 평균입니다. 항공권은 출발 2~3개월 전 예매가 가장 저렴합니다.' },
+        { q: '솔로인데 너무 외롭지 않을까요?', a: '게스트하우스 도미토리 1~2박, 워킹 투어·쿠킹 클래스·요가 클래스 같은 소그룹 활동을 일정에 1~2개 끼워두면 자연스러운 만남이 생깁니다. 외로움이 깊어질 때는 한인 게스트하우스나 한식당에서 하루 쉬는 것도 좋은 방법입니다.' },
+        { q: '여행자보험 꼭 가입해야 하나요?', a: '필수입니다. 동남아 사설병원은 의료비가 비싸서(맹장 수술 300~500만원 수준) 보험 없이 가면 한 번의 사고로 여행 전체 예산이 무너집니다. 의료 1억원·휴대품 분실·항공기 결항 보장 포함된 1만~3만원대 상품을 권합니다.' },
+        { q: '비자는 어떻게 준비하나요?', a: '태국·말레이시아·싱가포르는 무비자(90일 또는 30~90일), 베트남은 45일 무비자(2026년 기준 한국인), 인도네시아(발리)는 도착비자 35달러 또는 e-VOA. 출국 직전 외교부 해외안전여행 사이트에서 가장 최신 정보를 한 번 더 확인하세요.' }
       ]
     },
     {
       type: 'sources',
       items: [
-        { label: '외교부 해외안전여행 — 동남아 국가별 안전공지', url: 'https://www.0404.go.kr', org: '외교부', accessedAt: '2026-05-11' },
-        { label: '한국관광공사 — 해외여행 정보', url: 'https://www.visitkorea.or.kr', org: '한국관광공사', accessedAt: '2026-05-11' },
-        { label: 'Tourism Authority of Thailand', url: 'https://www.tourismthailand.org', org: '태국정부관광청', accessedAt: '2026-05-11' },
-        { label: 'Vietnam National Authority of Tourism', url: 'https://vietnam.travel', org: '베트남관광청', accessedAt: '2026-05-11' },
-        { label: 'Tourism Malaysia', url: 'https://www.malaysia.travel', org: '말레이시아관광청', accessedAt: '2026-05-11' }
+        { label: '외교부 해외안전여행 — 여행경보·국가별 안전정보', url: 'https://www.0404.go.kr', org: '외교부', accessedAt: '2026-05-14' },
+        { label: '한국관광공사 — 동남아 여행 안내', url: 'https://www.visitkorea.or.kr', org: '한국관광공사', accessedAt: '2026-05-14' },
+        { label: '주베트남 대한민국 대사관 — 비자·체류 정보', url: 'https://overseas.mofa.go.kr/vn-ko/index.do', org: '외교부', accessedAt: '2026-05-14' },
+        { label: 'Tourism Authority of Thailand — 공식 여행 안내', url: 'https://www.tourismthailand.org', org: 'TAT', accessedAt: '2026-05-14' }
       ]
     },
     { type: 'disclaimer' }

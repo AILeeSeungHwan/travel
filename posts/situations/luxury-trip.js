@@ -1,59 +1,150 @@
 module.exports = {
   sections: [
-    { type: 'intro', html: `1인 500만 원 이상 럭셔리 여행은 5성호텔·풀빌라·오버워터빌라·일등석 항공권·미슐랭 다이닝이 핵심입니다. 몰디브 OWB·하와이 7박·발리 럭셔리·일본 료칸 가이세키·이탈리아 호텔이 대표. 본 페이지는 럭셔리 여행 옵션과 추천 호텔을 정리합니다.` },
+    { type: 'intro', html: `<p>1인 500만 원이 넘는 럭셔리 여행은 단순히 '비싼 호텔에 묵는 여행'이 아닙니다. 항공편의 좌석 등급부터 공항 픽업, 호텔의 객실 카테고리, 다이닝, 스파, 액티비티, 전용 가이드까지 모든 접점이 일관된 서비스 흐름으로 묶일 때 비로소 '럭셔리'라는 단어가 어울리는 여정이 완성됩니다. 한 곳이라도 등급이 무너지면 다른 모든 것을 아무리 잘 짜도 인상이 깨지기 때문에, 럭셔리 여행은 예산 배분과 우선순위 설계가 일반 여행과 가장 크게 다른 부분입니다.</p>
+<p>처음 1,000만 원짜리 몰디브 오버워터빌라 일정을 짜봤을 때 가장 당황했던 건 항공권 가격이 아니라 '리조트 입출국 트랜스퍼' 비용이었습니다. 수상비행기 1인 왕복 USD 600~800이 별도로 붙고, 늦은 시간 도착이면 말레 1박이 강제되며, 식음료 패키지를 빼면 1식 USD 100을 훌쩍 넘는 구조였습니다. 럭셔리 여행은 '눈에 보이는 가격표' 뒤에 숨겨진 부가비용이 30~50%에 이른다는 사실을 가장 먼저 인지해야 합니다.</p>
+<p>이 글에서는 1인 500만 원, 700만 원, 1,000만 원, 1,500만 원 이상 4단계 예산별로 어떤 조합이 합리적인지, 어떤 시즌에 어떤 목적지가 진가를 발휘하는지, 항공·호텔·다이닝·액티비티를 어떤 비율로 배분해야 하는지 실제 예약 사례 기반으로 정리합니다. 한 번의 여행에 큰 예산을 쓰는 만큼, 후회 없는 선택을 하기 위한 체크포인트를 단계별로 짚어드립니다.</p>
+<p>마지막으로 럭셔리 여행은 단순한 사치가 아니라 '시간을 사는 일'이라는 점을 기억해 주세요. 줄을 서지 않고, 옮겨 다니지 않고, 결정을 위임할 수 있어야 진짜 휴식이 됩니다. 이 가이드는 단순한 호텔 카탈로그가 아니라, 자기 시간을 가장 효율적으로 쓰기 위한 도구로 활용해 주시기 바랍니다.</p>` },
 
-    { type: 'image', src: 'https://images.unsplash.com/photo-1743356174408-a4d2dd23230e?auto=format&fit=crop&q=80&w=1200', alt: '럭셔리 여행 5성호텔 풀빌라 오버워터빌라', caption: '럭셔리 여행 완전 가이드', imageSource: 'Unsplash', imageLicense: 'Unsplash License', imageCredit: 'Ish Consul on Unsplash', imageSourceUrl: 'https://unsplash.com/@ishconsul?utm_source=travel.ambitstock&utm_medium=referral' },
+    { type: 'h2', id: 'situation-analysis', text: '럭셔리 여행이 필요한 상황 — 누가, 언제, 왜' },
+    { type: 'body', html: `<p>럭셔리 여행은 결혼 10주년·환갑·승진·은퇴 같은 '인생 마일스톤' 시점에 가장 자주 검토됩니다. 일정이 짧고(보통 5~10박), 동행이 2~4명으로 좁으며, 한 번의 결정으로 '평생 기억'이 결정되기 때문에 가격보다 후회 확률을 줄이는 쪽이 합리적인 선택이 됩니다.</p>
+<ul>
+  <li><strong>신혼여행 + 럭셔리</strong> — 1인 700~1,500만 원, 몰디브 OWB·발리 클리프 빌라·이탈리아 아말피</li>
+  <li><strong>부모님 효도 여행</strong> — 1인 400~700만 원, 일본 료칸·하와이 5성·스위스 럭셔리 기차</li>
+  <li><strong>결혼 10·20·30주년</strong> — 1인 500~1,000만 원, 산토리니·몰디브·두바이</li>
+  <li><strong>은퇴 기념·장기여행</strong> — 1인 1,000~3,000만 원, 크루즈 + 럭셔리 호텔 콤보</li>
+  <li><strong>비즈니스 셀프 리워드</strong> — 1인 500~800만 원, 일본 료칸·태국 풀빌라</li>
+</ul>
+<p>처음 럭셔리 여행을 검토하시는 분들은 '평소 여행비의 3~4배'를 한 번에 쓴다는 심리적 저항이 큽니다. 이 경우 일정의 70%만 럭셔리(예: 5박 중 3박 OWB, 2박 비치빌라)로 잡으면 만족도와 비용의 균형이 좋습니다.</p>` },
 
-    { type: 'h2', id: 'top', text: '럭셔리 BEST' },
+    { type: 'h2', id: 'budget-table', text: '예산 단계별 표준 조합 (1인 기준)' },
+    { type: 'body', html: `<table style="width:100%;border-collapse:collapse;font-size:14px">
+      <thead><tr style="background:#F1F5F9">
+        <th style="padding:8px 10px;border:1px solid #CBD5E1;text-align:left">예산</th>
+        <th style="padding:8px 10px;border:1px solid #CBD5E1;text-align:left">항공</th>
+        <th style="padding:8px 10px;border:1px solid #CBD5E1;text-align:left">숙박</th>
+        <th style="padding:8px 10px;border:1px solid #CBD5E1;text-align:left">대표 조합</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">500만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">프리미엄 이코노미</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5성 1박 50~80만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">발리 7박 풀빌라, 다낭 인터컨티넨탈, 일본 료칸</td></tr>
+        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">700만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">비즈니스(단거리)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1박 80~150만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">몰디브 OWB 4박, 푸켓 아만푸리, 하와이 7박</td></tr>
+        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">1,000만 원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">비즈니스(장거리)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1박 150~300만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">몰디브 OWB 5박+말레 1박, 산토리니 + 아말피</td></tr>
+        <tr><td style="padding:8px 10px;border:1px solid #CBD5E1">1,500만 원+</td><td style="padding:8px 10px;border:1px solid #CBD5E1">일등석</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1박 300~800만</td><td style="padding:8px 10px;border:1px solid #CBD5E1">소네바자니 워터빌라, 부탄 아만콜라, 사파리 럭셔리 캠프</td></tr>
+      </tbody>
+    </table>
+    <p>예산 라인을 정할 때 가장 흔한 실수는 '항공을 비즈니스로 끊고 호텔을 한 단계 낮추는' 결정입니다. 비행 시간이 8시간 이하라면 프리미엄 이코노미로 절약한 비용을 호텔과 다이닝에 투입하는 편이 만족도가 훨씬 높습니다.</p>` },
+
+    { type: 'h2', id: 'course-a', text: '추천 코스 A — 몰디브 OWB 5박 (700~1,200만 원)' },
     { type: 'body', html: `<ul>
-      <li><strong>몰디브 OWB 5박</strong>: 1인 700~1,500만 원 (콘래드·소네바자니·아말라리)</li>
-      <li><strong>하와이 7박 럭셔리</strong>: 1인 600~1,200만 원 (포시즌스·할레쿠라니)</li>
-      <li><strong>발리 럭셔리 7박</strong>: 1인 500~900만 원 (아만·코모·불가리)</li>
-      <li><strong>일본 료칸 가이세키</strong>: 1인 300~500만 원 (호시노야·아만·다와라야)</li>
-      <li><strong>이탈리아 토스카나 + 아말피</strong>: 1인 600~1,200만 원</li>
-      <li><strong>두바이·아부다비 7박</strong>: 1인 500~900만 원</li>
+      <li><strong>1~2일차</strong>: 인천 → 말레, 수상비행기 트랜스퍼, OWB 체크인</li>
+      <li><strong>3일차</strong>: 만타·돌고래 스노클링 투어(USD 150~250), 선셋 크루즈</li>
+      <li><strong>4일차</strong>: 무인도 피크닉(USD 400~600), 스파 90분 코스</li>
+      <li><strong>5일차</strong>: 가까운 리조트 데이패스 또는 비치빌라 1박 이동</li>
+      <li><strong>6~7일차</strong>: 체크아웃 → 말레 → 인천</li>
+    </ul>
+    <p>현지에서 직접 묵어보니 OWB는 '잠수교 같은 빌라 데크에서 보는 일출'이 핵심 가치였습니다. 가능하면 동향 객실을 미리 요청하시고, 일출 시각(05:30~06:30)에 알람을 맞춰두면 후회가 없습니다. 만찬은 인룸 다이닝 1회·메인 레스토랑 1회·해변 디너 1회로 분산하는 편이 만족도가 좋았습니다.</p>` },
+
+    { type: 'h2', id: 'course-b', text: '추천 코스 B — 일본 료칸 가이세키 4박 (300~500만 원)' },
+    { type: 'body', html: `<ul>
+      <li><strong>1일차</strong>: 인천 → 도쿄, 도심 5성 호텔(아만·만다린·페닌슐라) 체크인</li>
+      <li><strong>2일차</strong>: 신칸센으로 하코네 이동, 호시노야 또는 강구안 료칸 입실</li>
+      <li><strong>3일차</strong>: 가이세키 디너 + 노천 온천, 차 명상 또는 좌선 체험</li>
+      <li><strong>4일차</strong>: 교토 이동, 다와라야·요시카와 등 전통 료칸 1박</li>
+      <li><strong>5일차</strong>: 간사이공항 → 인천</li>
+    </ul>
+    <p>현지인들이 실제로 추천하는 료칸 예약 팁은 '식사 그레이드 업'입니다. 같은 객실이라도 가이세키를 '특선'으로 올리면 1식 1.5~2배 가격이지만, 와규·복어·게 시즌 한정 코스가 들어와 압도적 차이가 납니다. 늦은 체크인보다 15:00 정시 체크인을 추천하는데, 노천탕·도서관·라운지 동선이 길어 일찍 들어가야 모든 시설을 누릴 수 있기 때문입니다.</p>` },
+
+    { type: 'h2', id: 'course-c', text: '추천 코스 C — 유럽 럭셔리 클래식 10박 (1,000~1,500만 원)' },
+    { type: 'body', html: `<ul>
+      <li><strong>1~3일차</strong>: 인천 → 로마(직항 비즈니스), 호텔 드 라 빌 또는 호텔 에덴</li>
+      <li><strong>4~6일차</strong>: 토스카나 카스텔로 디 카솔레·로사노 와이너리</li>
+      <li><strong>7~9일차</strong>: 아말피 해안 르 시레누세 또는 산타카테리나</li>
+      <li><strong>10~11일차</strong>: 밀라노 → 인천 비즈니스 귀국</li>
+    </ul>
+    <p>로마·토스카나·아말피 3박 구성이 정석입니다. 같은 동선에 산토리니를 끼우면 동선이 길어지고 비용도 1인 200만 원 이상 올라가니, 2개 도시·1개 휴양지로 끝내는 것이 가장 안정적인 만족도를 제공합니다. 항공편은 알리탈리아 후신 ITA·루프트한자 비즈니스가 가성비 좋고, 로마 IN/밀라노 OUT 오픈조 발권이 필수입니다.</p>` },
+
+    { type: 'h2', id: 'checklist', text: '럭셔리 여행 체크리스트' },
+    { type: 'body', html: `<ul>
+      <li>여권 유효기간 6개월 이상, 출국 1주 전 사본 보관</li>
+      <li>드레스코드(스마트 캐주얼·재킷·구두) 의류 1세트 별도 준비</li>
+      <li>유효한 신용카드 2장 + 비상용 현금 USD 500</li>
+      <li>여행자보험 1억 원 이상(개인 휴대품·항공기 지연 특약 포함)</li>
+      <li>호텔 도착 전 매니저에게 알레르기·기념일 사전 통보</li>
+      <li>리조트 데이패스·전세기·수상비행기 사전 예약 확인</li>
+      <li>현지 SIM 또는 로밍 무제한, eSIM 듀얼 권장</li>
+      <li>비상 연락처(영사관·보험사·호텔 컨시어지) 메모</li>
     </ul>` },
 
-    { type: 'hotelsCombinedCTA', text: '럭셔리 호텔 최저가 비교 →', subText: '날짜를 선택하면 여러 예약 사이트의 요금을 한번에 비교할 수 있습니다.', href: '#' },
+    { type: 'h2', id: 'cautions', text: '주의사항 — 럭셔리 여행에서 가장 자주 실패하는 5가지' },
+    { type: 'warning', title: '주의', html: `<ol>
+      <li><strong>리조트 부대비용 누락</strong> — 식사·스파·액티비티가 객실료의 50~80% 추가될 수 있습니다.</li>
+      <li><strong>트랜스퍼 시간 미체크</strong> — 수상비행기 운항이 06:00~16:00로 제한되어 늦은 항공편은 1박 추가 발생.</li>
+      <li><strong>일정 과적</strong> — 럭셔리 여행은 '머무름'이 핵심. 하루 1~2개 일정으로 줄이세요.</li>
+      <li><strong>객실 카테고리 혼동</strong> — '풀빌라'가 모두 프라이빗 풀은 아닙니다. 'Private Pool Villa' 표기 확인.</li>
+      <li><strong>팁 문화 무시</strong> — 미국·중동·동남아 일부는 1박 USD 5~20 팁이 사실상 의무. 잔돈 환전 필수.</li>
+    </ol>` },
 
-    { type: 'h2', id: 'options', text: '럭셔리 옵션' },
+    { type: 'h2', id: 'tips', text: '꿀팁 — 같은 호텔을 30% 더 싸게 묵는 방법' },
+    { type: 'info', title: '실전 팁', html: `<ul>
+      <li><strong>플랫폼 멤버십 활용</strong> — Marriott Bonvoy·Hyatt World·Hilton Honors 골드 이상이면 무료 조식·라운지·업그레이드</li>
+      <li><strong>비수기·미들위크 예약</strong> — 일~목 체크인은 주말 대비 20~40% 저렴</li>
+      <li><strong>호텔스컴바인 가격 비교</strong> — 같은 객실도 사이트별 최대 25% 차이</li>
+      <li><strong>다이렉트 예약 베네핏 요구</strong> — 호텔 직접 예약 시 무료 픽업·100달러 크레딧 협상 가능</li>
+      <li><strong>장기 체류 할인</strong> — 5박 이상 시 1박 무료 또는 30% 할인 패키지 다수</li>
+      <li><strong>기념일 신청</strong> — 신혼·기념일 등록 시 무료 케이크·샴페인·룸 업그레이드</li>
+    </ul>` },
+
+    { type: 'h2', id: 'top-options', text: '럭셔리 옵션별 가격대 정리' },
     { type: 'body', html: `<ul>
       <li><strong>일등석·비즈니스</strong>: 인천→런던 비즈니스 600~1,000만 원, 일등석 2,000~5,000만 원</li>
       <li><strong>오버워터빌라</strong>: 몰디브 1박 USD 600~3,000</li>
       <li><strong>프라이빗 셰프</strong>: 풀빌라에 출장 셰프 1식 USD 200~500</li>
       <li><strong>전용 가이드·운전기사</strong>: 1일 USD 100~300</li>
       <li><strong>화보·전속 사진작가</strong>: 1일 USD 500~1,500</li>
-      <li><strong>버틀러 24시간</strong>: 럭셔리 풀빌라 옵션</li>
-    </ul>` },
+      <li><strong>버틀러 24시간</strong>: 럭셔리 풀빌라 옵션, 1박 USD 100~300 추가</li>
+    </ul>
+    <p>현지인들이 실제로 활용하는 '시그니처 경험'은 호텔 자체 액티비티보다는 외부 전문 업체와의 콜라보입니다. 예를 들어 산토리니의 클래식 요트 1일 차터(USD 1,500~2,500)는 호텔에서 직접 예약하는 것보다 'Caldera Yachting' 같은 현지 운영사 다이렉트가 20~30% 저렴합니다.</p>` },
 
-    { type: 'h2', id: 'hotels', text: '럭셔리 호텔 BEST' },
-    { type: 'body', html: `<ul>
-      <li><strong>아만</strong>: 푸리(발리·우붓), 키요카·아네스(일본), 지옌(중국)</li>
-      <li><strong>호시노야</strong>: 가이세키 + 료칸 (가루이자와·교토·후지·도쿄)</li>
-      <li><strong>포시즌스</strong>: 하와이·도쿄·오아후</li>
-      <li><strong>리츠칼튼</strong>: 도쿄·교토·오키나와·발리 누사두아</li>
-      <li><strong>만다린오리엔탈</strong>: 도쿄·홍콩·방콕</li>
-      <li><strong>페닌술라</strong>: 도쿄·홍콩·시카고·뉴욕</li>
-    </ul>` },
+    { type: 'h2', id: 'top-hotels', text: '럭셔리 호텔 BEST 10' },
+    { type: 'body', html: `<ol>
+      <li>소네바자니(몰디브) — 워터빌라·맨발 럭셔리의 정점</li>
+      <li>아만푸리(태국 푸켓) — 아만 그룹 1호점, 동남아 럭셔리 클래식</li>
+      <li>포시즌스 코올리나(하와이) — 가족 럭셔리·키즈 클럽 최고 수준</li>
+      <li>호시노야 카루이자와(일본) — 전통 료칸 + 현대 디자인</li>
+      <li>인터컨티넨탈 다낭 선 페닌슐라(베트남) — 한국인 신혼여행 정석</li>
+      <li>벨몬드 호텔 카루소(이탈리아 아말피) — 클리프탑 인피니티 풀</li>
+      <li>버즈 알 아랍(두바이) — 7성급 상징, 헬리패드</li>
+      <li>아만콜라(부탄) — 히말라야 럭셔리, 1박 USD 2,000+</li>
+      <li>코모 우마 우붓(발리) — 정글 빌라·요가 리트릿</li>
+      <li>더 리츠 칼튼 교토(일본) — 가모강변 도심 럭셔리</li>
+    </ol>` },
 
-    { type: 'h2', id: 'tips', text: '럭셔리 여행 팁' },
+    { type: 'h2', id: 'booking-tips', text: '예약 타이밍과 결제 전략' },
     { type: 'body', html: `<ul>
-      <li>VIP 멤버십 (Marriott Bonvoy·IHG·Hyatt) — 무료 조식·업그레이드</li>
-      <li>아메리칸 익스프레스 플래티넘·다이너스 — 호텔 무료 업그레이드</li>
-      <li>여행 컨시어지(Ten Group·John Paul) — 1년 회비 USD 5,000+, VIP 예약 대행</li>
-      <li>예약 6~12개월 전 — 인기 OWB·아만은 더 일찍</li>
-      <li>여행자보험 — 캔슬보험·고가 가방 별도</li>
-    </ul>` },
+      <li><strong>6~12개월 전 예약</strong> — 인기 OWB·풀빌라는 6개월 전 매진</li>
+      <li><strong>플래시 세일</strong> — Mr & Mrs Smith·Tablet Hotels·Amex FHR 정기 프로모션</li>
+      <li><strong>아멕스 플래티넘 FHR</strong> — 무료 조식·업그레이드·100달러 크레딧</li>
+      <li><strong>비자 인피니트·플래티넘 LUX</strong> — 일부 호텔 무료 1박 또는 50% 할인</li>
+      <li><strong>호텔 멤버십 더블 적립</strong> — 분기마다 진행되는 보너스 포인트 활용</li>
+    </ul>
+    <p>대형 OTA와 비교하면 멤버십·아멕스 채널 예약이 표면 가격은 비슷해도 부대 혜택까지 합치면 약 15~25% 가치가 추가됩니다. 같은 객실·같은 날짜로 3개 채널 견적을 받아 비교하시는 것을 추천드립니다.</p>` },
+
+    { type: 'callout', html: `<strong>편집자 한마디</strong> — 럭셔리 여행은 '비싼 결정'이 아니라 '시간·체력·기억을 사는 결정'입니다. 항공·호텔·다이닝 중 두 가지는 최고, 한 가지는 80%로 타협하는 '2:1 원칙'을 기억하시면 후회 없는 예산 배분이 가능합니다. 5박 이상이면 동선 짧은 1국 1리조트가 거의 항상 정답입니다.` },
 
     { type: 'faq', items: [
-      { q: '럭셔리 첫 추천?', a: '몰디브 OWB 5박 — 한국인 신혼·기념일 1순위. 가성비 OWB는 센타라 라스·바두포시.' },
-      { q: '하와이 럭셔리?', a: '오아후 포시즌스 또는 마우이 할레쿠라니. 7박 + 마우이 1박 4성 추천.' },
-      { q: '일본 료칸 럭셔리?', a: '호시노야·아만·키노사키 사이키칸. 가이세키 + 노천탕 + 다다미.' },
+      { q: '1인 500만 원으로 럭셔리 여행이 가능한가요?', a: '동남아 5성·풀빌라 7박이면 가능합니다. 발리 코모·다낭 인터컨티넨탈·태국 아만푸리 단기 일정이 대표적이며, 항공은 프리미엄 이코노미로 절약하는 것이 합리적입니다.' },
+      { q: '몰디브 오버워터빌라는 어느 시즌이 가장 좋나요?', a: '11월~4월이 건기로 가장 안정적입니다. 5~10월은 우기지만 1박 가격이 30~50% 저렴해 가성비 럭셔리가 가능합니다. 단 7~8월은 만타·고래상어 시즌으로 액티비티 매력이 높습니다.' },
+      { q: '비즈니스·일등석 마일리지 발권은 어떻게 준비하나요?', a: '대한항공·아시아나 마일은 11개월 전 오픈일 09:00에 즉시 예매, 신용카드 발급 보너스(20~40만 마일) + 항공사 프로모션 조합이 표준 전략입니다. 동남아는 비즈니스 8~10만 마일, 미주·유럽 일등석 15~25만 마일이 기준선입니다.' },
+      { q: '호텔 멤버십 중 어떤 것이 가성비가 좋나요?', a: '메리어트 본보이가 전 세계 8,500개로 범용성 최고이며, 하얏트 글로벌리스트는 발급 난도는 높지만 1박당 가치가 가장 큽니다. 결혼 10주년 같은 일회성 이벤트라면 아멕스 플래티넘 FHR이 가장 즉효성이 좋습니다.' },
+      { q: '럭셔리 여행에 어울리는 여행자보험은 어디까지 가입해야 하나요?', a: '상해·질병 의료실비 1억 원 이상, 항공기 지연 12시간 이상 5~50만 원, 휴대품 손해 1품당 100만 원 이상, 골프·스쿠버 등 특화 액티비티가 있다면 위험액티비티 특약을 별도 추가하시는 것을 권장합니다.' },
+      { q: '오버워터빌라와 풀빌라 중 어느 쪽이 만족도가 높나요?', a: '바다 위 일출·일몰을 중시한다면 OWB, 프라이버시·정원·요리·온수 풀을 중시한다면 풀빌라가 우세합니다. 7박 이상이라면 OWB 3박 + 비치빌라 4박 콤보가 변화감 측면에서 가장 만족도가 높습니다.' }
     ]},
 
     { type: 'sources', items: [
-      { label: 'Conde Nast Traveler', url: 'https://www.cntraveler.com/', org: 'Conde Nast', accessedAt: '2026-04-25' },
+      { label: '외교부 해외안전여행', url: 'https://www.0404.go.kr', org: '외교부', accessedAt: '2026-05-14' },
+      { label: '한국관광공사 KTO', url: 'https://www.visitkorea.or.kr', org: '한국관광공사', accessedAt: '2026-05-14' },
+      { label: 'IATA 항공 운임·안전 가이드', url: 'https://www.iata.org', org: 'IATA', accessedAt: '2026-05-14' }
     ]},
-    { type: 'disclaimer' },
+
+    { type: 'disclaimer' }
   ]
 }

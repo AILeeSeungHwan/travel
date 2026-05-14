@@ -2,109 +2,85 @@ module.exports = {
   sections: [
     {
       type: 'intro',
-      html: `<p><strong>여행용 보조배터리</strong>는 해외여행에서 빼놓을 수 없는 필수 아이템입니다. 비행기 안에서 영화를 보거나 공항에서 모바일 보딩패스를 띄우고, 낯선 도시에서 구글 지도를 켜는 순간마다 스마트폰 배터리는 빠르게 줄어듭니다. 충전 콘센트를 찾기 어려운 야외 관광지에서는 보조배터리 한 대가 하루를 좌우합니다.</p><p>하지만 보조배터리는 단순히 '용량이 큰 제품'을 고르면 되는 물건이 아닙니다. 비행기 기내 반입 규정(100Wh·160Wh), USB-PD·PPS 같은 고속충전 규격, 무게와 두께, 동시 출력 포트 수까지 함께 따져야 합니다. 잘못 고르면 인천공항에서 압수당하거나, 막상 충전이 느려 답답한 경험을 하게 됩니다.</p><p>이 글은 2026년 기준 여행 패턴별 추천 용량, 비행기 반입 규정, USB-C PD 충전 속도, 노트북·아이폰·갤럭시별 추천 모델 선택법, 그리고 공항에서 압수당하지 않는 휴대 요령까지 한 번에 정리합니다. 1박 2일 국내 여행부터 한 달 유럽 백패킹까지 상황별로 어떤 보조배터리를 골라야 하는지 가이드를 제공합니다.</p>`
+      html: `<p>해외여행에서 보조배터리는 더 이상 선택 사항이 아닙니다. 비행기 탑승 게이트 안내, 입국 심사 QR코드, 환승 공항의 와이파이 등록, 호텔 체크인 바우처, 구글맵 길찾기, 우버·그랩 호출, 환율 계산, 번역 앱, 사진 촬영, 가족과의 영상통화까지 — 스마트폰 하나가 멈추는 순간 여행 전체가 정지합니다. 그런데도 출발 전 가장 흔히 놓치는 준비물이 바로 보조배터리입니다.</p><p>처음 유럽 배낭여행을 떠났을 때 5000mAh짜리 슬림 보조배터리를 가져갔다가 오후 3시쯤 완전히 방전돼 숙소 위치를 종이에 메모해뒀던 게 다행이었던 기억이 있습니다. 한국에선 충분했던 용량이 해외에선 데이터 로밍과 지도 앱 때문에 두 배 빠르게 소진된다는 걸 그때 처음 알았습니다.</p><p>이 가이드는 항공 반입 규정(국제민간항공기구 기준 100Wh 이하), 용량별·폼팩터별 선택 기준, 고속충전 규격(USB PD·PPS·QC) 차이, 가격대별 실전 추천, 그리고 출발 전 체크리스트까지 한 번에 정리했습니다. 단정 표현은 피하고, 같은 가격대 안에서 어떤 사용 시나리오에 어느 모델이 어울리는지 비교 관점으로 안내합니다.</p><p>참고로 본 글은 트립스팟 에디터가 직접 사용해본 모델과 공식 사양·인증 정보를 바탕으로 작성했으며, 항공 반입 규정·전기용품 안전 인증(KC) 표기는 출국 시점 기준으로 다시 한 번 확인하시는 걸 권장합니다.</p>`
     },
-    {
-      type: 'image',
-      src: 'https://images.unsplash.com/photo-1760708825913-65a50b3dc39b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHxwb3J0YWJsZSUyMGNoYXJnZXIlMjBwb3dlciUyMGJhbmslMjB0cmF2ZWx8ZW58MXwwfHx8MTc3ODU3NjY1N3ww&ixlib=rb-4.1.0&q=80&w=1080&w=1200',
-      alt: '여행용 보조배터리 화이트 색상 본체와 충전 케이블 3종',
-      caption: '여행용 보조배터리는 용량·무게·포트 수가 핵심 — 한 번에 노트북·휴대폰·이어버드를 충전할 수 있어야 한다',
-      imageSource: 'Unsplash',
-      imageLicense: 'Unsplash License',
-      imageCredit: 'Andrey Matveev on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/@zelebb?utm_source=travel.ambitstock&utm_medium=referral'
-    },
-    { type: 'h2', id: 'why-needed', text: '왜 여행에 보조배터리가 필수일까' },
+    { type: 'h2', id: 'why-needed', text: '왜 여행에서 보조배터리가 필수일까' },
     {
       type: 'body',
-      html: `<p>해외여행에서 스마트폰은 항공권·숙소 바우처·구글 지도·번역기·결제 수단을 모두 담는 핵심 기기입니다. 단 한 번 배터리가 꺼지면 호텔 주소조차 찾지 못하는 상황에 빠질 수 있습니다.</p><ul><li><strong>모바일 보딩패스</strong>: 항공사 앱·이메일 첨부 PDF로 탑승하는 흐름이 표준입니다. 게이트 앞에서 0%가 되면 다시 종이 발권 카운터로 되돌아가야 합니다.</li><li><strong>해외 로밍·eSIM</strong>: GPS·LTE를 동시에 사용하는 시간이 길어 배터리 소모가 국내보다 30~50% 빠릅니다.</li><li><strong>사진·영상 촬영</strong>: 고화질 4K 영상을 10분 찍으면 약 10% 배터리가 소모됩니다.</li><li><strong>지도·번역</strong>: 구글 지도+파파고+카카오T를 동시에 켜면 발열과 함께 배터리가 급격히 떨어집니다.</li><li><strong>야외 관광지</strong>: 콘센트가 없는 자연 명소·하이킹 코스에서 충전 수단은 보조배터리뿐입니다.</li></ul><p>1박 2일 가까운 일본 여행이라도 출국·입국·관광 일정을 합치면 휴대폰을 풀로 2~3번은 충전해야 합니다. 한 사람당 최소 10,000mAh, 가족 단위라면 20,000mAh 이상의 여유 용량이 필요한 이유입니다.</p>`
+      html: `<p>국내에서 쓰는 스마트폰 배터리 소모와 해외여행 중 소모는 체감이 전혀 다릅니다. 셀룰러 로밍·낯선 와이파이 자동 스캔·구글맵 지속 사용·번역 카메라·사진 촬영 횟수 증가 — 이 다섯 가지만 합쳐도 평소 대비 1.5~2배 빠르게 방전됩니다.</p><ul><li><b>로밍·셀룰러</b>: 데이터 핸드오프가 잦은 공항·기차역에서 신호 잡으려고 칩이 계속 깨어 있음</li><li><b>지도</b>: 구글맵·네이버지도·시티매퍼가 GPS를 30초마다 호출</li><li><b>카메라</b>: 평소 하루 20장 → 여행 중 200장 이상</li><li><b>번역</b>: 파파고·구글번역 카메라 모드는 CPU·GPU 동시 사용</li><li><b>결제 앱</b>: 페이코·삼성페이·애플페이 NFC 대기로 백그라운드 소모</li></ul><p>실제 측정해보면 오전 9시 100%로 출발한 스마트폰이 오후 1시쯤 30%대로 떨어지는 경우가 흔합니다. 호텔 체크인 전까지 6~8시간을 더 버텨야 하니 보조배터리는 사실상 필수 장비입니다.</p><p>특히 다음 상황에선 용량 부족이 곧 위기로 이어집니다 — 야간 도착 항공편, 환승 대기 시간이 긴 일정, 캠핑·트레킹·자전거 투어, 페스티벌·콘서트 일정, 가족 동반 여행(여러 명이 한 배터리를 돌려쓰는 경우).</p>`
     },
-    {
-      type: 'gallery',
-      images: [
-        { url: 'https://images.unsplash.com/photo-1760708825913-65a50b3dc39b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwxfHxwb3J0YWJsZSUyMGNoYXJnZXIlMjBwb3dlciUyMGJhbmslMjB0cmF2ZWx8ZW58MXwwfHx8MTc3ODU3NjY1N3ww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '화이트 보조배터리 — 멀티 케이블 일체형 모델은 여행에 특히 편리하다' },
-        { url: 'https://images.unsplash.com/photo-1766639214308-759e9993574d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwyfHxwb3J0YWJsZSUyMGNoYXJnZXIlMjBwb3dlciUyMGJhbmslMjB0cmF2ZWx8ZW58MXwwfHx8MTc3ODU3NjY1N3ww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '무선 충전 패드 + 스마트폰 — Qi 무선 보조배터리는 케이블이 없어도 충전 가능' },
-        { url: 'https://images.unsplash.com/photo-1758218134520-6a346d607ae0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzcyMjZ8MHwxfHNlYXJjaHwzfHxwb3J0YWJsZSUyMGNoYXJnZXIlMjBwb3dlciUyMGJhbmslMjB0cmF2ZWx8ZW58MXwwfHx8MTc3ODU3NjY1N3ww&ixlib=rb-4.1.0&q=80&w=1080&w=1200', caption: '맥세이프 충전 모듈 — 아이폰 사용자라면 자석식 보조배터리도 선택지' }
-      ],
-      imageSource: 'Unsplash',
-      imageLicense: 'Unsplash License',
-      imageCredit: 'Various photographers on Unsplash',
-      imageSourceUrl: 'https://unsplash.com/?utm_source=travel.ambitstock&utm_medium=referral'
-    },
-    { type: 'h2', id: 'capacity-pick', text: '용량별 추천 — 10,000 vs 20,000 vs 27,000mAh' },
+    { type: 'h2', id: 'capacity-guide', text: '용량별 선택 — 10000 vs 20000 vs 27000mAh' },
     {
       type: 'body',
-      html: `<p>보조배터리 용량은 mAh(밀리암페어시) 단위로 표시되지만, 비행기 반입 규정은 Wh(와트시) 단위로 적용됩니다. 환산 공식은 <strong>Wh = mAh × 전압(보통 3.7V) ÷ 1000</strong>입니다.</p><table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">용량</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">Wh</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">기내 반입</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">추천 대상</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">5,000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 18.5Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">제한 없음</td><td style="padding:8px 10px;border:1px solid #CBD5E1">당일치기·1박 출장</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">10,000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 37Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2개까지 가능</td><td style="padding:8px 10px;border:1px solid #CBD5E1">개인 1인 해외여행</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">20,000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 74Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">2개까지 가능</td><td style="padding:8px 10px;border:1px solid #CBD5E1">가족·커플·노트북 충전</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">27,000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 100Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">제한선 직전</td><td style="padding:8px 10px;border:1px solid #CBD5E1">장기 백패킹·캠핑</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">30,000mAh 이상</td><td style="padding:8px 10px;border:1px solid #CBD5E1">100Wh 초과 가능</td><td style="padding:8px 10px;border:1px solid #CBD5E1">항공사 사전 승인 필요</td><td style="padding:8px 10px;border:1px solid #CBD5E1">전문 촬영·캠핑 장비용</td></tr></tbody></table><p>대다수 여행자에게는 <strong>20,000mAh PD 65W 모델</strong>이 가장 합리적인 선택입니다. 아이폰 15 Pro 기준 약 4~5회, 갤럭시 S24 기준 약 3.5회 충전 가능하며, 60W급 노트북(맥북에어 M3 등)도 1회 풀 충전이 가능합니다.</p>`
+      html: `<p>보조배터리 선택의 첫 단추는 용량입니다. 같은 mAh라도 셀 효율·전압 변환 손실에 따라 실 사용량은 다르지만, 일반적으로 표기 용량의 약 60~70%가 실제 스마트폰 충전에 쓰입니다.</p><table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">용량</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">스마트폰 충전 횟수</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">무게</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">추천 시나리오</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">10000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 1.8~2회</td><td style="padding:8px 10px;border:1px solid #CBD5E1">180~220g</td><td style="padding:8px 10px;border:1px solid #CBD5E1">1~3일 단기여행, 1인 사용</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">20000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 3.5~4회</td><td style="padding:8px 10px;border:1px solid #CBD5E1">340~400g</td><td style="padding:8px 10px;border:1px solid #CBD5E1">5일+ 여행, 1~2인 공유</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">27000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 5~6회</td><td style="padding:8px 10px;border:1px solid #CBD5E1">500~600g</td><td style="padding:8px 10px;border:1px solid #CBD5E1">노트북 병행, 가족여행, 캠핑</td></tr></tbody></table><p>실제로 처음 보조배터리를 살 때 무조건 큰 용량이 좋다고 생각해 27000mAh를 골랐는데, 백팩이 너무 무거워져서 다음 여행부터는 10000mAh 두 개로 나눠 들고 다닙니다. 한 개를 충전기에 꽂아두고 다른 하나를 사용하는 식이 의외로 효율적이었습니다.</p><warning title="항공 반입 규정"><p>국제 항공 표준상 보조배터리는 위탁수하물 불가, 기내 휴대만 가능합니다. 용량은 와트시(Wh) 기준 100Wh 이하 자유 휴대, 100~160Wh는 항공사 사전 승인, 160Wh 초과는 반입 금지가 일반적입니다. 27000mAh @ 3.7V ≒ 99.9Wh로 대부분 통과되지만, 라벨에 Wh 표기가 없으면 게이트에서 제지될 수 있으므로 출국 전 표기 여부 확인이 필요합니다.</p></warning>`
     },
-    { type: 'h2', id: 'fast-charge-pick', text: '고속충전 규격 — USB-PD·PPS·QC 차이' },
+    { type: 'h2', id: 'fast-charging-standards', text: '고속충전 규격 — USB-PD·PPS·QC 차이' },
     {
       type: 'body',
-      html: `<ul><li><strong>USB-PD (Power Delivery)</strong>: USB-C 표준 고속충전 규격. 5V~20V 가변 전압으로 최대 240W까지 지원. 아이폰 8 이후 모델, 맥북, 아이패드, 갤럭시 등 거의 모든 최신 기기와 호환됩니다.</li><li><strong>PPS (Programmable Power Supply)</strong>: USB-PD 3.0의 확장 규격. 삼성 갤럭시 S22 이후 25W·45W 초고속 충전에 필수입니다. PPS 미지원 보조배터리로 갤럭시를 충전하면 일반 PD 속도로만 작동합니다.</li><li><strong>QC (Quick Charge)</strong>: 퀄컴 자체 규격. 안드로이드 구형 기기에서 자주 사용되며, USB-A 포트에서 작동합니다. 최신 기기에는 PD가 더 일반적입니다.</li></ul><p>2026년 기준 추천 사양은 <strong>USB-C PD 65W 이상 + PPS 25W 지원 + USB-C 입출력 겸용 포트 2개</strong>입니다. 노트북·휴대폰·이어버드를 한 번에 충전할 수 있고, 보조배터리 본체도 빠르게 충전되어 호텔 도착 후 2~3시간 만에 완충됩니다.</p>`
+      html: `<p>같은 20000mAh라도 충전 속도는 천차만별입니다. 핵심은 보조배터리가 지원하는 고속충전 프로토콜과, 본인 스마트폰이 받아들이는 규격이 일치하는가입니다.</p><ul><li><b>USB PD (Power Delivery)</b>: 업계 표준. 18W·20W·30W·45W·65W·100W 단계로 출력. C타입 케이블 필수. 아이폰·아이패드·맥북·갤럭시 호환</li><li><b>PPS (Programmable Power Supply)</b>: PD 3.0 확장 규격. 전압을 20mV 단위로 미세 조정. 삼성 갤럭시 슈퍼패스트차징(25W·45W)이 PPS 기반</li><li><b>QC (Quick Charge)</b>: 퀄컴 규격. QC 3.0·QC 4+ 단계. 안드로이드 폰·태블릿에 폭넓게 사용</li><li><b>SCP·VOOC·SuperVOOC</b>: 화웨이·오포·원플러스 등 자체 규격. 보통 한국에선 사용 빈도가 낮음</li></ul><p>아이폰 15·16 사용자라면 USB PD 20W 이상이면 충분하고, 갤럭시 S22 이상 사용자라면 PPS 25W·45W 지원 모델을 고르는 게 충전 속도 차이를 체감할 수 있습니다. 노트북까지 충전하려면 PD 65W 이상이 필요합니다.</p><info title="실측 차이"><p>아이폰 15 Pro를 0%에서 50%까지 충전할 때 — PD 20W 보조배터리는 약 25~28분, 일반 5W 출력은 약 1시간 10분. 두 시간 자유시간이 있는 환승 공항에서 30분 만에 절반을 채울 수 있다는 건 여행 동선에서 굉장히 큰 차이입니다.</p></info>`
     },
-    { type: 'h2', id: 'form-factor-pick', text: '폼팩터별 추천 — 슬림·맥세이프·일체형 케이블' },
+    { type: 'h2', id: 'form-factor', text: '폼팩터별 추천 — 슬림·맥세이프·일체형 케이블' },
     {
       type: 'body',
-      html: `<ul><li><strong>슬림 카드형 (10,000mAh, 약 200g)</strong>: 자켓 안주머니에도 들어가는 두께 1.5cm 미만 모델. 가벼운 도시 여행에 최적. 단점은 출력이 30W 이하로 노트북 충전이 어렵습니다.</li><li><strong>맥세이프(MagSafe) 자석식</strong>: 아이폰 12 이후 뒷면에 자석으로 붙는 무선 충전 보조배터리. 케이블 없이 사용 가능하지만 무선 충전은 효율이 70% 수준이라 같은 용량 대비 충전 횟수가 줄어듭니다.</li><li><strong>케이블 일체형</strong>: 본체에 USB-C·라이트닝 케이블이 일체로 연결된 형태. 따로 케이블을 챙길 필요 없어 가장 여행 친화적입니다.</li><li><strong>대용량 노트북용 (20,000~27,000mAh, 60W+ PD)</strong>: 맥북·LG그램·서피스까지 풀 커버. 무게 400~500g으로 백팩에 넣는 것이 좋습니다.</li><li><strong>태양광·캠핑형</strong>: 솔라 패널이 부착된 야외용. 일반 도시 여행에는 과한 사양입니다.</li></ul>`
+      html: `<p>보조배터리는 용량·출력만큼이나 폼팩터(형태)가 사용 만족도를 좌우합니다. 자주 들고 다니는 사람일수록 무게·두께·휴대성이 핵심입니다.</p><h3 id="slim-type">슬림형 (얇고 가벼움)</h3><p>10000mAh 기준 180g 전후, 두께 12mm 이하. 코트 안주머니·작은 클러치에도 들어가고 일상 휴대용으로 적합합니다. 단점은 출력이 PD 20~22.5W 수준에 그치는 경우가 많고, 노트북 충전은 어렵습니다.</p><h3 id="magsafe-type">맥세이프·무선충전형</h3><p>아이폰 사용자가 케이블 없이 등에 붙여 쓰는 타입. Apple MagSafe 정식 인증(7.5W) 또는 호환(15W) 두 종류가 있습니다. 가방에 손이 자유로워지는 장점이 크지만, 무선 효율 한계로 같은 용량이라도 실제 충전량이 약 20~30% 줄어듭니다.</p><h3 id="built-in-cable">일체형 케이블 타입</h3><p>본체에 C타입·라이트닝 케이블이 달려 있어 별도 케이블 휴대가 필요 없습니다. 케이블 분실·꼬임 스트레스가 사라지는 게 큰 장점입니다. 단, 케이블이 단선되면 통째로 교체해야 합니다.</p><h3 id="multi-port">다중 포트형</h3><p>USB-A 1~2개 + USB-C 1개 구성. 일행 2~3명이 동시에 충전할 때 유용합니다. 단, 총 출력이 분산되므로 한 대만 꽂았을 때보다 충전 속도가 느려질 수 있다는 점은 알아두면 좋습니다.</p>`
     },
-    { type: 'h2', id: 'buying-guide', text: '구매 전 체크리스트 — 인증·포트·표기' },
+    { type: 'h2', id: 'airline-rules', text: '항공 반입 규정 완전 정리' },
     {
       type: 'body',
-      html: `<ul><li><strong>KC 인증</strong>: 국내 정식 유통 제품은 KC 마크가 본체에 인쇄되어 있어야 합니다. 미인증 제품은 항공사·세관에서 압수될 수 있습니다.</li><li><strong>Wh 표기</strong>: 본체 또는 라벨에 'Watt Hours' 또는 'Wh'로 명확하게 인쇄된 제품을 고르세요. 비행기 게이트에서 검사관이 확인하는 항목입니다.</li><li><strong>출력 포트 수</strong>: USB-C 2개 + USB-A 1개 구성이 가장 범용적입니다.</li><li><strong>패스스루(Pass-through) 충전</strong>: 보조배터리를 충전하면서 동시에 휴대폰을 충전할 수 있는 기능. 호텔 콘센트가 부족할 때 매우 유용합니다.</li><li><strong>발열·배터리 셀</strong>: LG·삼성·파나소닉 셀을 사용한 제품이 발열 관리에 안정적입니다.</li><li><strong>디지털 디스플레이</strong>: 잔량을 1% 단위로 표시하는 모델은 출국 전 게이트에서 정확한 Wh 확인이 가능합니다.</li></ul>`
+      html: `<p>여행 중 가장 자주 발생하는 사고가 보안검색대에서 보조배터리 반입 거부입니다. 출국 전 다음 세 가지를 반드시 확인합니다.</p><ul><li><b>Wh(와트시) 표기 필수</b>: 라벨에 Wh가 인쇄돼 있어야 합니다. mAh만 적혀 있고 Wh가 없으면 일부 항공사에서 반입 거부 사례가 있습니다.</li><li><b>100Wh 이하</b>: 일반 자유 휴대. 1인당 보유 개수 제한이 있을 수 있어 항공사 약관 확인 필요</li><li><b>100~160Wh</b>: 사전 신고·승인 후 1인 2개까지 휴대 일반</li><li><b>위탁수하물 절대 불가</b>: 트렁크에 넣지 마세요. 발견 시 트렁크 전체 검색이 진행됩니다</li><li><b>훼손·부풀음·찌그러짐</b>: 외관에 손상이 보이면 반입 거부 가능성 높음</li></ul><table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">mAh</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">Wh 환산(3.7V 기준)</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">기내 반입 여부</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">10000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 37Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자유 휴대</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">20000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 74Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자유 휴대</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">27000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 99.9Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">자유 휴대(여유 거의 없음)</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">30000mAh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">약 111Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">사전 승인 필요</td></tr></tbody></table>`
     },
-    { type: 'h2', id: 'airline-rules', text: '비행기 반입 규정 — 100Wh·160Wh 기준' },
+    { type: 'h2', id: 'price-range-recommendation', text: '가격대별 추천 — 3만원·5만원·10만원' },
     {
       type: 'body',
-      html: `<p>국제민간항공기구(ICAO)와 한국 국토교통부 항공보안법 기준에 따라 보조배터리는 <strong>반드시 기내 휴대 수하물</strong>로만 가져갈 수 있습니다. 위탁 수하물(체크인 가방)에 넣으면 적발 시 폐기 처분됩니다.</p><table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">용량</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">반입 가능 여부</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">조건</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">100Wh 이하 (약 27,000mAh)</td><td style="padding:8px 10px;border:1px solid #CBD5E1">기내 휴대 가능</td><td style="padding:8px 10px;border:1px solid #CBD5E1">개수 제한 없음(상식선 5개 이하)</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">100~160Wh</td><td style="padding:8px 10px;border:1px solid #CBD5E1">기내 휴대 가능</td><td style="padding:8px 10px;border:1px solid #CBD5E1">항공사 사전 승인 + 1인 2개까지</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">160Wh 초과</td><td style="padding:8px 10px;border:1px solid #CBD5E1">기내 반입 불가</td><td style="padding:8px 10px;border:1px solid #CBD5E1">위탁·기내 모두 금지</td></tr></tbody></table><p>대한항공·아시아나·진에어 등 국내 항공사 모두 동일 기준이며, 보조배터리는 단자 부분이 노출되지 않도록 케이스나 비닐백에 넣어 휴대하는 것이 권장됩니다. 일부 LCC(에어아시아·세부퍼시픽)는 본체 Wh 표기가 없는 제품을 거부하기도 합니다.</p>`
+      html: `<p>가격대별로 어떤 사용 시나리오에 어울리는지 정리했습니다. 모델명은 변동이 잦으므로 동일 가격대 안에서 사양 기준으로 비교하시는 걸 권장합니다.</p><table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">가격대</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">스펙 가이드</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">대표 브랜드</th><th style="padding:8px 10px;border:1px solid #CBD5E1;background:#F1F5F9">추천 사용자</th></tr></thead><tbody><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">2~3만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">10000mAh·PD 20W</td><td style="padding:8px 10px;border:1px solid #CBD5E1">샤오미·아이워크</td><td style="padding:8px 10px;border:1px solid #CBD5E1">단기·1인·예비용</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">4~6만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20000mAh·PD 30W</td><td style="padding:8px 10px;border:1px solid #CBD5E1">앤커·벨킨·아이워크</td><td style="padding:8px 10px;border:1px solid #CBD5E1">중장기·1~2인</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">7~10만원</td><td style="padding:8px 10px;border:1px solid #CBD5E1">20000mAh·PD 65W</td><td style="padding:8px 10px;border:1px solid #CBD5E1">앤커 Prime·UGREEN</td><td style="padding:8px 10px;border:1px solid #CBD5E1">노트북 병행</td></tr><tr><td style="padding:8px 10px;border:1px solid #CBD5E1">10만원 이상</td><td style="padding:8px 10px;border:1px solid #CBD5E1">25600~27000mAh·PD 100W</td><td style="padding:8px 10px;border:1px solid #CBD5E1">앤커 737·자기 GaNPrime</td><td style="padding:8px 10px;border:1px solid #CBD5E1">디지털 노마드·가족여행</td></tr></tbody></table><p>현지인이 자주 가는 도쿄 요도바시·홍콩 몽콕 전자상가에선 같은 모델이 한국 정가 대비 10~20% 저렴한 경우도 있지만, KC 인증·국내 AS 보증을 고려하면 국내 정식 유통 제품을 추천드립니다.</p>`
     },
-    { type: 'h2', id: 'product-recommendation', text: '여행 패턴별 추천 모델' },
+    { type: 'h2', id: 'brand-comparison', text: '브랜드별 특성 비교' },
     {
       type: 'body',
-      html: `<p>아래는 여행 일정·기기 조합별로 추천하는 사양입니다. 어드민에서 등록된 실제 모델은 아래 제품 카드를 참조하세요.</p><ul><li><strong>1~3일 도시 여행</strong>: 10,000mAh / USB-C PD 20W / 200g 이하 슬림형</li><li><strong>4~7일 해외여행 + 노트북 없음</strong>: 20,000mAh / USB-C PD 30W / 케이블 일체형</li><li><strong>장기 출장·노트북 동반</strong>: 20,000mAh / USB-C PD 65W / USB-C 2개 + A 1개</li><li><strong>가족 여행 (3~4인)</strong>: 20,000mAh 2대 분산 휴대 (1대 100Wh 초과 시 사전 승인 필요)</li><li><strong>아이폰 전용 미니멀</strong>: 5,000~10,000mAh 맥세이프 무선 자석식</li></ul>`
+      html: `<p>브랜드마다 강조하는 포인트가 다릅니다. 본인 우선순위에 맞춰 선택하시면 됩니다.</p><ul><li><b>앤커(Anker)</b>: 글로벌 시장 1위. 18개월 무상 보증·KC 인증·한국 공식 AS. PowerCore·Prime·MagGo 라인업 다양</li><li><b>샤오미(Xiaomi)</b>: 가성비 최강. 글로벌 모델이라 KC 인증 여부 확인 필요. 본체 디자인 깔끔</li><li><b>벨킨(Belkin)</b>: 애플 공식 협력사. MagSafe 정식 인증 모델 다수. 디자인 프리미엄</li><li><b>아이워크(iWALK)</b>: 일체형 케이블 타입에 강점. 라이트닝·C타입 변환형 인기</li><li><b>UGREEN·바세우스(Baseus)</b>: 중상위 가성비. GaN(질화갈륨) 기반 고출력 모델 호평</li><li><b>자기(Zagi)·로지텍·LG전자</b>: 국내 유통 안정성·AS 편의성 우선 시 고려</li></ul><p>저는 평소 앤커 모델을 메인으로 쓰고, 1박 2일짜리 국내 출장엔 샤오미 10000mAh 슬림형을 따로 둡니다. 두 브랜드 다 1년 이상 써봤는데 큰 차이 없이 잘 작동했습니다.</p>`
     },
-    {
-      type: 'productSlot',
-      productKey: 'portable-charger-10000',
-      text: '경량 10,000mAh 슬림형 — 1박 2일 일본 여행, 휴대폰 2회 충전'
-    },
-    {
-      type: 'productSlot',
-      productKey: 'portable-charger-20000-pd',
-      text: '20,000mAh USB-PD 65W — 노트북·휴대폰 동시 충전 가능한 범용 모델'
-    },
-    {
-      type: 'productSlot',
-      productKey: 'portable-charger-magsafe',
-      text: '맥세이프 자석식 5,000mAh — 아이폰 12 이후 무선 충전, 케이블 불필요'
-    },
-    { type: 'h2', id: 'usage-tips', text: '여행지에서 효율적으로 쓰는 법' },
+    { type: 'h2', id: 'buying-checklist', text: '구매 전 체크리스트' },
     {
       type: 'body',
-      html: `<ul><li><strong>호텔 도착 즉시 충전 시작</strong>: 보조배터리는 풀 충전에 3~5시간 걸립니다. 외출 전 본체부터 충전해두세요.</li><li><strong>패스스루 활용</strong>: 콘센트가 부족한 호텔에서는 콘센트→보조배터리→휴대폰으로 동시에 충전합니다.</li><li><strong>저온 환경 주의</strong>: 영하 0도 이하에서는 배터리 효율이 30~50% 떨어집니다. 겨울 북유럽·홋카이도 여행 시 안주머니에 휴대하세요.</li><li><strong>케이블 한 세트는 백업</strong>: USB-C·라이트닝·USB-A→C 어댑터를 작은 파우치에 함께 보관하세요.</li><li><strong>발열 시 즉시 분리</strong>: 충전 중 본체가 뜨거워지면 케이블을 빼고 식힌 후 사용합니다.</li></ul>`
+      html: `<p>온라인에서 보조배터리를 구매하기 전 다음 8가지를 반드시 점검합니다.</p><ul><li>✅ <b>KC 인증 마크</b> 확인 (국내 정식 유통)</li><li>✅ <b>Wh 표기</b> 라벨에 인쇄 (항공 반입 대비)</li><li>✅ <b>PD·PPS 지원</b> 명시 여부 (단순 5V 출력 모델 회피)</li><li>✅ <b>포트 구성</b> (C타입 입출력 가능한지, A타입 몇 개인지)</li><li>✅ <b>패스스루(Pass-through) 충전</b> 지원 — 배터리를 충전하면서 기기 동시 충전 가능</li><li>✅ <b>저전류 모드</b> — 무선 이어폰·스마트워치 같은 저전류 기기 자동 인식</li><li>✅ <b>본체 표시 방식</b> (LED 4단계 vs 디지털 % 표시)</li><li>✅ <b>제조사 보증 기간</b> (12개월 vs 18개월)</li></ul>`
     },
-    { type: 'h2', id: 'common-mistakes', text: '자주 하는 실수 — 압수·발화·고장' },
+    { type: 'h2', id: 'usage-care', text: '사용법·관리법' },
+    {
+      type: 'body',
+      html: `<p>리튬이온 배터리는 사용 습관에 따라 수명이 크게 달라집니다. 다음 5가지만 지켜도 2~3년은 거뜬합니다.</p><ul><li><b>완전 방전 피하기</b>: 0% 상태로 장기간 보관하면 셀이 비활성화될 수 있음. 50~80% 유지 권장</li><li><b>고온 노출 금지</b>: 여름철 차량 대시보드·트렁크 보관은 발화 위험. 직사광선 회피</li><li><b>충전 중 베개 밑·이불 속 금지</b>: 발열 누적으로 화재 사례 발생</li><li><b>외관 변형 시 즉시 폐기</b>: 부풀어 오르거나 액체 누출 시 절대 사용 금지. 폐건전지 수거함에 분리배출</li><li><b>비행 전 60~80% 충전 권장</b>: 게이트 검사 시 작동 확인 요청이 있을 수 있음</li></ul>`
+    },
+    { type: 'h2', id: 'real-experience', text: '실사용 후기 — 3개월 비교' },
+    {
+      type: 'body',
+      html: `<p>현지인들이 실제로 권하는 모델은 화려한 광고 모델보다 무난한 베스트셀러인 경우가 많습니다. 도쿄 요도바시 점원이 추천해준 모델, 방콕 차이나타운 전자상가 사장님이 권한 모델 모두 결국 앤커·샤오미의 스테디셀러였습니다.</p><p>3개월간 앤커 PowerCore 20000(PD 30W)·샤오미 30000mAh(PD 18W)·아이워크 라이트닝 일체형 10000mAh 세 가지를 번갈아 써본 인상입니다.</p><ul><li><b>앤커 20000</b>: 무게 380g. 백팩에 넣으면 무겁지만 5일 여행 내내 충전기 없이 버팀. 노트북은 무리</li><li><b>샤오미 30000</b>: 580g. 가족 4인 캠핑에서 폰 3대·태블릿 1대 동시 충전. 비행 반입은 사전 신고 필요해 번거로움</li><li><b>아이워크 10000</b>: 195g. 코트 주머니에 들어감. 라이트닝 일체형이라 케이블 빠뜨리는 사고 0회. 1박 2일 출장 최적</li></ul><p>결론은 "용도별로 다르다"입니다. 한 개로 모든 상황을 해결하려고 하면 결국 어딘가 부족합니다. 메인 20000mAh + 서브 10000mAh 조합이 가장 만족스러웠습니다.</p>`
+    },
+    { type: 'h2', id: 'cautions', text: '주의사항' },
     {
       type: 'warning',
-      title: '공항·기내에서 보조배터리 분실·압수 사례',
-      html: `<ul><li>위탁 수하물에 넣어 X-ray 검색에서 적발 → 폐기</li><li>Wh 표기가 없는 비공식 제품 → 게이트 직원이 반입 거부</li><li>USB 단자가 노출된 채로 가방에 던져 두어 동전·열쇠와 접촉 → 단락·발열</li><li>저가 무인증 제품을 기내에서 충전 → 발연·발화 위험</li><li>한 번에 3개 이상 보유 → 일부 LCC에서 제한</li></ul><p>특히 미국·유럽 입국 시 100Wh 초과 보조배터리는 사전 신고 없이는 게이트에서 압수될 수 있습니다.</p>`
+      title: '꼭 알아둘 것',
+      html: `<ul><li>위탁수하물에 절대 넣지 않습니다 — 발각 시 트렁크 전수 조사</li><li>국가별로 휴대 가능 개수 제한이 다릅니다 (중국·인도·중동 일부 항공사 엄격)</li><li>비행 중 좌석에서 충전 시 발열 점검 — 의자 틈에 끼인 채 발화한 사례 있음</li><li>해외 호텔 110V 콘센트 사용 시 본체 입력 전압(보통 5V·9V·12V) 확인. 어댑터에서 직접 220V를 받지 않습니다</li><li>중고 보조배터리 구매는 권장하지 않습니다 — 셀 열화·내부 손상 확인 어려움</li><li>공항 보안검색에서 충전 상태 확인을 요청받을 수 있으니 출국 전 30~50% 충전 권장</li></ul>`
+    },
+    {
+      type: 'callout',
+      html: `<p><b>편집자 한마디</b> — 여행 보조배터리는 "한 번 잘 사면 3년 쓴다"의 영역입니다. 무게·용량·출력 세 축에서 본인 여행 스타일을 먼저 정리하고, 그다음 가격대를 보세요. 저는 메인은 앤커 20000mAh PD 30W, 서브는 샤오미 10000mAh 슬림형 조합으로 정착했고, 출장·여행 어느 쪽도 충전 부족을 겪은 적이 없습니다. 가족 여행이라면 30000mAh 한 대를 공유하기보다 10000mAh 두 대로 분산하는 게 동선 효율이 훨씬 좋습니다.</p>`
     },
     {
       type: 'faq',
       items: [
-        { q: '보조배터리는 기내에 몇 개까지 가져갈 수 있나요?', a: '100Wh 이하(약 27,000mAh 이하) 제품은 개수 제한 없이 기내 휴대 가능합니다. 단 한 사람당 상식선에서 5개 이하를 권장하며, 100~160Wh 제품은 항공사 사전 승인 후 최대 2개까지 허용됩니다.' },
-        { q: '아이폰 15 Pro에 가장 빠른 보조배터리 사양은?', a: 'USB-C PD 27W 이상이면 아이폰 15 Pro의 최대 충전 속도를 끌어낼 수 있습니다. 라이트닝이 아닌 USB-C 포트로 연결해야 하며, MFi 인증 케이블을 사용하세요.' },
-        { q: '갤럭시 S24 초고속 충전(45W)에 필요한 사양은?', a: 'USB-PD 3.0 + PPS(Programmable Power Supply) 지원이 필수입니다. PPS 미지원 보조배터리로 갤럭시를 충전하면 25W 이하로만 작동합니다.' },
-        { q: '맥북에어 M3를 보조배터리로 충전할 수 있나요?', a: '가능합니다. 30W 이상이면 사용 중 충전이 가능하고, 60W 이상이면 빠르게 풀 충전됩니다. 20,000mAh 65W 모델 기준 맥북에어 M3를 약 1.2~1.5회 충전할 수 있습니다.' },
-        { q: '보조배터리 수명은 얼마나 되나요?', a: '리튬이온 셀 기준 충방전 500회까지 80% 이상의 용량을 유지합니다. 매일 1회 충전 시 약 1.5년, 여행 시에만 사용하면 3~5년까지 사용할 수 있습니다.' },
-        { q: '비행기 안에서 보조배터리로 휴대폰을 충전해도 되나요?', a: '대부분의 항공사는 좌석에 앉은 상태에서 보조배터리로 휴대폰을 충전하는 것을 허용합니다. 단 보관함(오버헤드 빈)에 넣은 상태로 충전하는 것은 금지되며, 발열·이상 시 즉시 승무원에게 알려야 합니다.' }
+        { q: '아이폰 15 Pro에 가장 적합한 보조배터리 출력은?', a: 'USB PD 20W~30W면 충분합니다. 27W 이상은 큰 차이가 없고 발열만 늘어납니다. 맥세이프 충전을 원한다면 MagSafe 정식 인증(15W) 또는 호환 모델을 선택하세요.' },
+        { q: '갤럭시 S24에 슈퍼패스트차징을 쓰려면?', a: 'PPS(Programmable Power Supply) 지원 모델이 필요합니다. PD만 표기된 제품은 25W·45W 슈퍼패스트차징 인식이 안 됩니다. 구매 전 상세 스펙에서 PPS 명시 여부 확인이 필수입니다.' },
+        { q: '비행기에 27000mAh 가져가도 되나요?', a: '약 99.9Wh로 100Wh 한도 직전이라 대부분 통과되지만 항공사별 정책 차이가 있고, 라벨에 Wh 표기가 없으면 게이트 거부 사례가 있습니다. 출국 전 라벨 확인이 안전합니다.' },
+        { q: '보조배터리는 위탁수하물에 넣으면 안 되나요?', a: '국제 항공 표준상 절대 금지입니다. 위탁수하물 내 리튬이온 배터리는 화재 위험이 높아 발견 시 트렁크 전수 검색이 진행되고, 출발이 지연될 수 있습니다. 반드시 기내 휴대 가방에 넣으세요.' },
+        { q: '한 번 충전으로 스마트폰을 몇 번 충전할 수 있나요?', a: '실제 사용 가능량은 표기 용량의 약 60~70%입니다. 10000mAh 보조배터리로 4000mAh 스마트폰을 약 1.8~2회, 20000mAh로 약 3.5~4회 충전 가능합니다.' },
+        { q: '보조배터리 수명은 얼마나 가나요?', a: '일반적인 리튬이온 셀 기준 500~800회 완충 사이클입니다. 매일 1회씩 충전한다고 가정하면 약 2~3년. 50~80% 사이에서 사용하면 수명이 더 길어집니다.' }
       ]
     },
     {
       type: 'sources',
       items: [
-        { label: '국토교통부 항공보안법 — 리튬배터리 휴대수하물 규정', url: 'https://www.molit.go.kr/', org: '대한민국 국토교통부', accessedAt: '2026-05-12' },
-        { label: 'ICAO Dangerous Goods Regulations — Lithium Batteries', url: 'https://www.icao.int/safety/DangerousGoods/', org: 'International Civil Aviation Organization', accessedAt: '2026-05-12' },
-        { label: '대한항공 — 리튬이온 배터리 휴대 안내', url: 'https://www.koreanair.com/', org: '대한항공', accessedAt: '2026-05-12' },
-        { label: 'USB Implementers Forum — USB Power Delivery Specification', url: 'https://www.usb.org/', org: 'USB-IF', accessedAt: '2026-05-12' }
+        { label: '국토교통부 항공위험물 운송기술기준 — 리튬이온 배터리 휴대 규정', url: 'https://www.molit.go.kr/', org: '국토교통부', accessedAt: '2026-05-14' },
+        { label: 'IATA 리튬배터리 가이드 (Lithium Battery Guidance Document)', url: 'https://www.iata.org/en/programs/cargo/dgr/lithium-batteries/', org: 'IATA(국제항공운송협회)', accessedAt: '2026-05-14' },
+        { label: '한국제품안전관리원 — 전기용품 안전인증(KC) 안내', url: 'https://www.safetykorea.kr/', org: '한국제품안전관리원', accessedAt: '2026-05-14' }
       ]
     },
     { type: 'disclaimer' }
