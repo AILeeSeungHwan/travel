@@ -92,6 +92,16 @@ const guides = [
     summary: '우즈베키스탄 비자·항공·5박 7일 코스 한 번에 정리.',
     ymylLevel: 'C', tags: ['우즈베키스탄','중앙아시아','비자','사마르칸트'],
     publishedAt: '2026-05-13', updatedAt: '2026-05-13',
+  },
+  {
+    slug: 'danang-travel-guide-2026',
+    title: '다낭 2026년 여행 가이드 — 항공·호텔 가성비 공략과 현지 노하우',
+    description: '2026년 한국인 인기 1순위로 떠오른 다낭, 항공권·호텔 시세부터 건기 시즌 활용, 현지인이 알려주는 숨은 팁까지 한 번에 정리한 실속 가이드입니다.',
+    category: 'guide',
+    publishedAt: '2026-05-14',
+    updatedAt: '2026-05-14',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 
