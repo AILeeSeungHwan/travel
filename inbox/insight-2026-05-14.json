@@ -1,0 +1,2977 @@
+{
+  "date": "2026-05-14",
+  "generatedAt": "2026-05-14T21:30:07.078Z",
+  "overall": {
+    "summary": {
+      "total": 1210,
+      "human": 812,
+      "bots": 398,
+      "search": 416,
+      "searchRate": 34,
+      "uniqueSessions": 912,
+      "mobilePct": 47
+    },
+    "aiNarrative": "7개 활성 사이트에서 총 1210건(실사용자 812건)의 페이지뷰가 발생했습니다. car가 60%를 점유하며 네트워크 전체를 주도하고 있습니다. 검색유입이 34%로 아직 낮습니다 — 키워드 타겟팅을 집중해야 합니다.\n\n가장 주목할 페이지는 \"/policies/first-home-support/\"로 daum에서만 16건의 검색유입이 집중됐습니다. \"생애최초 주택구입 취득세 면제\" 키워드는 구매·결정 단계에 근접한 하이 인텐트 독자를 끌어모으고 있어, 이 페이지의 구조와 패턴을 다른 포스팅에도 적용하면 추가 성장이 기대됩니다.\n\n오늘 가장 시급한 기회는 갭 키워드 11개입니다. 특히 \"생애최초 주택구입 취득세 면제\"(9회)는 유입이 발생하고 있지만 전용 포스팅이 없어 독자가 그대로 이탈하고 있습니다. 빠르게 포스팅을 발행하면 경쟁 없이 검색유입을 확보할 수 있는 최적의 타이밍입니다.",
+    "keyFindings": [
+      {
+        "icon": "🏆",
+        "title": "car 독주 (60%)",
+        "detail": "전체 PV의 60% 점유. 검색유입 28% — 키워드 확보 시 추가 성장 여력 있음"
+      },
+      {
+        "icon": "🔥",
+        "title": "\"/policies/first-home-support\" 집중 유입",
+        "detail": "daum 검색 16건 — 키워드: \"생애최초 주택구입 취득세 면제\""
+      },
+      {
+        "icon": "🎯",
+        "title": "콘텐츠 갭 11개 발견",
+        "detail": "\"생애최초 주택구입 취득세 면제\"(9회) 등 유입 있지만 포스팅 없음 — 즉시 작성 시 무경쟁 유입 확보"
+      },
+      {
+        "icon": "📉",
+        "title": "검색유입 34% — 개선 필요",
+        "detail": "검색 비중이 낮아 SEO 타겟 포스팅 강화가 필요합니다"
+      },
+      {
+        "icon": "⚠️",
+        "title": "car 다음 집중 (141건)",
+        "detail": "네이버 50건 · 구글 6건 — 다음 편중. 네이버 RSS·웹마스터 재점검 권장"
+      },
+      {
+        "icon": "🚀",
+        "title": "전날 대비 급상승 5건",
+        "detail": "\"/policies/public-rental/\" +7건 · \"자동차보험 사고 후 보험료 Q&A 7가지 — \" +5건"
+      },
+      {
+        "icon": "✨",
+        "title": "새롭게 상위 등장 14건",
+        "detail": "\"다이렉트 자동차보험 7개사 비교 2026 — \" (6건, car) · \"2026 하이브리드·전기차 취득세 감면 2년 \" (6건, car)"
+      }
+    ],
+    "alerts": [
+      {
+        "type": "opportunity",
+        "message": "\"생애최초 주택구입 취득세 면제\" (9회, policy) — 전용 포스팅 없음. 즉시 발행 시 경쟁 없는 검색유입 확보 가능"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"국민임대주택 입주자격\" (6회, policy) — 전용 포스팅 없음. 즉시 발행 시 경쟁 없는 검색유입 확보 가능"
+      },
+      {
+        "type": "warning",
+        "message": "card 검색유입 17% 저조 — 검색 타겟 포스팅 집중 필요"
+      },
+      {
+        "type": "action",
+        "message": "\"/policies/first-home-support/\" 인기 지속 — 관련 후속 포스팅으로 독자 재방문 유도 권장"
+      },
+      {
+        "type": "action",
+        "message": "policy (23%) 트래픽 상승 — 집중 포스팅으로 모멘텀 유지 권장"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"다이렉트 자동차보험 7개사 비교 2026 — 삼성·현대·DB·K\" 등 10개 페이지가 이틀 이상 연속 신규 상위 등장 — 클러스터 포스팅으로 모멘텀 선점 권장"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"생애최초 주택구입 취득세 면제\" 등 갭 키워드가 3일 연속 감지 — 빠른 발행으로 무경쟁 유입 선점 가능"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"/policies/public-rental/\" 전날 대비 +7건 급상승 (policy) — 관련 후속 포스팅으로 모멘텀 극대화 권장"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"자동차보험 사고 후 보험료 Q&A 7가지 — 할증 기준·자비처리\" 전날 대비 +5건 급상승 (car) — 관련 후속 포스팅으로 모멘텀 극대화 권장"
+      },
+      {
+        "type": "opportunity",
+        "message": "\"다이렉트 자동차보험 7개사 비교 2026 — 삼성·현대·DB·K\" 신규 상위 등장 (car, 6건) — 관련 키워드 포스팅으로 클러스터 구축 기회"
+      }
+    ],
+    "topPagesBySite": [
+      {
+        "siteId": "car",
+        "icon": "🚗",
+        "domain": "car.ambitstock.com",
+        "slug": "zeekr-7x-korea-consumer-checklist-2026",
+        "title": "지커 7X 한국 출시 — 스펙·가격은 매력적이지만, 구매 전 반드시 확인할 3가지",
+        "search_views": 10,
+        "views": 12,
+        "top_keyword": "지커7x출시가격",
+        "sources": {
+          "daum": 10,
+          "direct": 1,
+          "internal": 1
+        }
+      },
+      {
+        "siteId": "policy",
+        "icon": "📋",
+        "domain": "policy.ambitstock.com",
+        "slug": "/policies/first-home-support/",
+        "title": "/policies/first-home-support/",
+        "search_views": 16,
+        "views": 23,
+        "top_keyword": "생애최초 주택구입 취득세 면제",
+        "sources": {
+          "direct": 7,
+          "daum": 16
+        }
+      },
+      {
+        "siteId": "card",
+        "icon": "💳",
+        "domain": "card.ambitstock.com",
+        "slug": "/guides/baemin-delivery-credit-card-2026/",
+        "title": "/guides/baemin-delivery-credit-card-2026/",
+        "search_views": 2,
+        "views": 2,
+        "top_keyword": null,
+        "sources": {
+          "naver": 2
+        }
+      },
+      {
+        "siteId": "sports",
+        "icon": "⚽",
+        "domain": "sports.ambitstock.com",
+        "slug": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+        "title": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+        "search_views": 3,
+        "views": 6,
+        "top_keyword": null,
+        "sources": {
+          "naver": 1,
+          "other": 1,
+          "google": 2,
+          "direct": 2
+        }
+      },
+      {
+        "siteId": "tech",
+        "icon": "💻",
+        "domain": "tech.ambitstock.com",
+        "slug": "vibe-coding-explained-2026-complete-guide",
+        "title": "vibe-coding-explained-2026-complete-guide",
+        "search_views": 2,
+        "views": 6,
+        "top_keyword": "바이브코딩이란",
+        "sources": {
+          "daum": 2,
+          "direct": 4
+        }
+      },
+      {
+        "siteId": "property",
+        "icon": "🏠",
+        "domain": "property.ambitstock.com",
+        "slug": "/listings/goyang-changneung-lh-newhome-b1-2026/",
+        "title": "/listings/goyang-changneung-lh-newhome-b1-2026/",
+        "search_views": 6,
+        "views": 8,
+        "top_keyword": null,
+        "sources": {
+          "naver": 6,
+          "direct": 2
+        }
+      },
+      {
+        "siteId": "finance",
+        "icon": "💰",
+        "domain": "financemoa.ambitstock.com",
+        "slug": "savings-account",
+        "title": "savings-account",
+        "search_views": 0,
+        "views": 1,
+        "top_keyword": null,
+        "sources": {
+          "direct": 1
+        }
+      }
+    ],
+    "allRising": [
+      {
+        "slug": "/policies/public-rental/",
+        "title": "/policies/public-rental/",
+        "search_views": 14,
+        "prev_search_views": 7,
+        "growth": 7,
+        "top_keywords": [
+          {
+            "keyword": "국민임대주택 입주자격",
+            "count": 6
+          },
+          {
+            "keyword": "국민임대 재계약 소득초과",
+            "count": 3
+          },
+          {
+            "keyword": "국민임대 신청시 소득은 언제것으로",
+            "count": 1
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "car-insurance-accident-premium-qa-7-2026",
+        "title": "자동차보험 사고 후 보험료 Q&A 7가지 — 할증 기준·자비처리 손익분기점·보험사 변경까지",
+        "search_views": 9,
+        "prev_search_views": 4,
+        "growth": 5,
+        "top_keywords": [
+          {
+            "keyword": "자동차보험 할증기준",
+            "count": 2
+          },
+          {
+            "keyword": "자동차보험 사고",
+            "count": 1
+          },
+          {
+            "keyword": "사고후 보험료 할증",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "license-plate-types-guide-2026",
+        "title": "자동차 번호판 종류·색상별 의미 총정리",
+        "search_views": 6,
+        "prev_search_views": 3,
+        "growth": 3,
+        "top_keywords": [
+          {
+            "keyword": "자동차 번호판 종류",
+            "count": 2
+          },
+          {
+            "keyword": "초록번호판 보험",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "/policies/utility-subsidy/",
+        "title": "/policies/utility-subsidy/",
+        "search_views": 8,
+        "prev_search_views": 5,
+        "growth": 3,
+        "top_keywords": [
+          {
+            "keyword": "수도요금 감면신청",
+            "count": 1
+          },
+          {
+            "keyword": "수도요금 감면대상",
+            "count": 1
+          },
+          {
+            "keyword": "전기요금 감면대상",
+            "count": 1
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+        "title": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+        "search_views": 3,
+        "prev_search_views": 1,
+        "growth": 2,
+        "top_keywords": [],
+        "siteId": "sports"
+      }
+    ],
+    "allNewInTop": [
+      {
+        "slug": "car-insurance-direct-compare-7-companies-2026",
+        "title": "다이렉트 자동차보험 7개사 비교 2026 — 삼성·현대·DB·KB·한화·메리츠·캐롯, 보험료·보상·특약 총정리",
+        "search_views": 6,
+        "top_keywords": [
+          {
+            "keyword": "삼성 다이렉트 자동차보험",
+            "count": 2
+          },
+          {
+            "keyword": "메리츠 다이렉트자동차보험",
+            "count": 1
+          },
+          {
+            "keyword": "메리츠 자동차보험 긴급출동",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "ev-hybrid-acquisition-tax-reduction-extension-2026",
+        "title": "2026 하이브리드·전기차 취득세 감면 2년 연장 — 다자녀 추가 감면 신설, 차종별 절감액 비교",
+        "search_views": 6,
+        "top_keywords": [
+          {
+            "keyword": "전기차 취득세 감면",
+            "count": 5
+          },
+          {
+            "keyword": "하이브리드 차량 취득세 감면",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "car-inspection-changes-ev-2026",
+        "title": "2026 자동차 정기검사 변경사항 총정리 — 전기차 검사항목 추가·과태료 기준·검사 주기",
+        "search_views": 5,
+        "top_keywords": [
+          {
+            "keyword": "전기차 검사기간",
+            "count": 3
+          },
+          {
+            "keyword": "자동차 정기검사 항목",
+            "count": 1
+          },
+          {
+            "keyword": "전기 자동차 정기검사",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "/policies/dementia-care/",
+        "title": "/policies/dementia-care/",
+        "search_views": 5,
+        "top_keywords": [
+          {
+            "keyword": "치매안심센터",
+            "count": 3
+          },
+          {
+            "keyword": "치매 돌봄 서비스",
+            "count": 2
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "vugera-vg811-dashcam-review-2026",
+        "title": "뷰게라 VG-811 블랙박스 상세 리뷰 — 2026 최신형 QHD, 슬림 디자인·내구성 실사용 분석",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "vg811",
+            "count": 2
+          },
+          {
+            "keyword": "뷰게라vg811",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "car-tax-reform-price-based-2026",
+        "title": "자동차세 개편 — 배기량에서 차량 가격 기준으로, 내 차 세금은 얼마나 달라지나",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "자동차세 개편",
+            "count": 2
+          },
+          {
+            "keyword": "g80 전기차 세금",
+            "count": 1
+          },
+          {
+            "keyword": "자동차세배기량기준",
+            "count": 1
+          }
+        ],
+        "siteId": "car"
+      },
+      {
+        "slug": "/policies/permanent-rental-housing/",
+        "title": "/policies/permanent-rental-housing/",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "영구임대주택 입주자격",
+            "count": 3
+          },
+          {
+            "keyword": "기초생활 수급자동차조건",
+            "count": 1
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "/policies/national-pension-credit/",
+        "title": "/policies/national-pension-credit/",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "국민연금 출산크레딧",
+            "count": 2
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "/policies/youth-allowance/",
+        "title": "/policies/youth-allowance/",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "서울시 청년수당",
+            "count": 3
+          },
+          {
+            "keyword": "2026서울시 청년수당 2차",
+            "count": 1
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "/policies/public-private-rental/",
+        "title": "/policies/public-private-rental/",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "공공지원 민간임대주택 자격",
+            "count": 3
+          },
+          {
+            "keyword": "민간임대주택 신청조건",
+            "count": 1
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "/policies/commute-support/",
+        "title": "/policies/commute-support/",
+        "search_views": 4,
+        "top_keywords": [
+          {
+            "keyword": "청년 교통비 지원",
+            "count": 2
+          }
+        ],
+        "siteId": "policy"
+      },
+      {
+        "slug": "/listings/gh-newlywed-2026-suwon/",
+        "title": "/listings/gh-newlywed-2026-suwon/",
+        "search_views": 3,
+        "top_keywords": [],
+        "siteId": "property"
+      },
+      {
+        "slug": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+        "title": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+        "search_views": 2,
+        "top_keywords": [],
+        "siteId": "sports"
+      },
+      {
+        "slug": "여성-골퍼-골프-드라이버-순위-TOP-7",
+        "title": "여성-골퍼-골프-드라이버-순위-TOP-7",
+        "search_views": 2,
+        "top_keywords": [],
+        "siteId": "sports"
+      }
+    ]
+  },
+  "bySite": [
+    {
+      "siteId": "car",
+      "summary": {
+        "total": 723,
+        "human": 339,
+        "bots": 384,
+        "search": 201,
+        "searchRate": 28,
+        "uniqueSessions": 538,
+        "mobilePct": 46
+      },
+      "topPages": [
+        {
+          "slug": "zeekr-7x-korea-consumer-checklist-2026",
+          "title": "지커 7X 한국 출시 — 스펙·가격은 매력적이지만, 구매 전 반드시 확인할 3가지",
+          "views": 12,
+          "search_views": 10,
+          "top_keywords": [
+            {
+              "keyword": "지커7x출시가격",
+              "count": 5
+            },
+            {
+              "keyword": "지커7x출시 가격",
+              "count": 4
+            }
+          ],
+          "sources": {
+            "daum": 10,
+            "direct": 1,
+            "internal": 1
+          }
+        },
+        {
+          "slug": "car-insurance-accident-premium-qa-7-2026",
+          "title": "자동차보험 사고 후 보험료 Q&A 7가지 — 할증 기준·자비처리 손익분기점·보험사 변경까지",
+          "views": 10,
+          "search_views": 9,
+          "top_keywords": [
+            {
+              "keyword": "자동차보험 할증기준",
+              "count": 2
+            },
+            {
+              "keyword": "자동차보험 사고",
+              "count": 1
+            },
+            {
+              "keyword": "사고후 보험료 할증",
+              "count": 1
+            },
+            {
+              "keyword": "최소할증1점이란",
+              "count": 1
+            },
+            {
+              "keyword": "자동차보험 사고 할증기준",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 9,
+            "direct": 1
+          }
+        },
+        {
+          "slug": "uninsured-vehicle-injury-coverage-2026",
+          "title": "무보험차 상해 특약이란? 가입 필요성과 보장 범위 총정리",
+          "views": 13,
+          "search_views": 7,
+          "top_keywords": [
+            {
+              "keyword": "무보험차 상해 보상범위",
+              "count": 4
+            },
+            {
+              "keyword": "무보험 상해 실손보험",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 7,
+            "direct": 6
+          }
+        },
+        {
+          "slug": "license-plate-types-guide-2026",
+          "title": "자동차 번호판 종류·색상별 의미 총정리",
+          "views": 11,
+          "search_views": 6,
+          "top_keywords": [
+            {
+              "keyword": "자동차 번호판 종류",
+              "count": 2
+            },
+            {
+              "keyword": "초록번호판 보험",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "direct": 5,
+            "daum": 5,
+            "naver": 1
+          }
+        },
+        {
+          "slug": "car-insurance-direct-compare-7-companies-2026",
+          "title": "다이렉트 자동차보험 7개사 비교 2026 — 삼성·현대·DB·KB·한화·메리츠·캐롯, 보험료·보상·특약 총정리",
+          "views": 8,
+          "search_views": 6,
+          "top_keywords": [
+            {
+              "keyword": "삼성 다이렉트 자동차보험",
+              "count": 2
+            },
+            {
+              "keyword": "메리츠 다이렉트자동차보험",
+              "count": 1
+            },
+            {
+              "keyword": "메리츠 자동차보험 긴급출동",
+              "count": 1
+            },
+            {
+              "keyword": "캐롯손해보험  bmw 블랙박스 가격",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "direct": 2,
+            "daum": 6
+          }
+        },
+        {
+          "slug": "ev-hybrid-acquisition-tax-reduction-extension-2026",
+          "title": "2026 하이브리드·전기차 취득세 감면 2년 연장 — 다자녀 추가 감면 신설, 차종별 절감액 비교",
+          "views": 9,
+          "search_views": 6,
+          "top_keywords": [
+            {
+              "keyword": "전기차 취득세 감면",
+              "count": 5
+            },
+            {
+              "keyword": "하이브리드 차량 취득세 감면",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 6,
+            "other": 1,
+            "direct": 2
+          }
+        },
+        {
+          "slug": "bmw-x5-price-options-2026",
+          "title": "BMW X5 가격·옵션 2026 | SUV 총정리",
+          "views": 7,
+          "search_views": 5,
+          "top_keywords": [
+            {
+              "keyword": "bmw x5 가격",
+              "count": 2
+            },
+            {
+              "keyword": "비엠더블유 x5가격",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 5,
+            "internal": 1,
+            "direct": 1
+          }
+        },
+        {
+          "slug": "car-inspection-changes-ev-2026",
+          "title": "2026 자동차 정기검사 변경사항 총정리 — 전기차 검사항목 추가·과태료 기준·검사 주기",
+          "views": 7,
+          "search_views": 5,
+          "top_keywords": [
+            {
+              "keyword": "전기차 검사기간",
+              "count": 3
+            },
+            {
+              "keyword": "자동차 정기검사 항목",
+              "count": 1
+            },
+            {
+              "keyword": "전기 자동차 정기검사",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 5,
+            "direct": 2
+          }
+        },
+        {
+          "slug": "vugera-vg811-dashcam-review-2026",
+          "title": "뷰게라 VG-811 블랙박스 상세 리뷰 — 2026 최신형 QHD, 슬림 디자인·내구성 실사용 분석",
+          "views": 7,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "vg811",
+              "count": 2
+            },
+            {
+              "keyword": "뷰게라vg811",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "direct": 3,
+            "daum": 3,
+            "naver": 1
+          }
+        },
+        {
+          "slug": "car-tax-reform-price-based-2026",
+          "title": "자동차세 개편 — 배기량에서 차량 가격 기준으로, 내 차 세금은 얼마나 달라지나",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "자동차세 개편",
+              "count": 2
+            },
+            {
+              "keyword": "g80 전기차 세금",
+              "count": 1
+            },
+            {
+              "keyword": "자동차세배기량기준",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "지커7x출시가격",
+          "count": 5,
+          "source": "daum",
+          "pages": [
+            "zeekr-7x-korea-consumer-checklist-2026"
+          ]
+        },
+        {
+          "keyword": "전기차 취득세 감면",
+          "count": 5,
+          "source": "daum",
+          "pages": [
+            "ev-hybrid-acquisition-tax-reduction-extension-2026"
+          ]
+        },
+        {
+          "keyword": "지커7x출시 가격",
+          "count": 4,
+          "source": "daum",
+          "pages": [
+            "zeekr-7x-korea-consumer-checklist-2026"
+          ]
+        },
+        {
+          "keyword": "무보험차 상해 보상범위",
+          "count": 4,
+          "source": "daum",
+          "pages": [
+            "uninsured-vehicle-injury-coverage-2026"
+          ]
+        },
+        {
+          "keyword": "전기차 검사기간",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "car-inspection-changes-ev-2026"
+          ]
+        },
+        {
+          "keyword": "자동차보험 할증기준",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "car-insurance-accident-premium-qa-7-2026",
+            "car-insurance-discount-surcharge-calc"
+          ]
+        },
+        {
+          "keyword": "자동차세 개편",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "car-tax-reform-price-based-2026"
+          ]
+        },
+        {
+          "keyword": "전기차 보험료",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "ev-insurance-cost-compare-2026"
+          ]
+        },
+        {
+          "keyword": "VG811",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "vugera-vg811-dashcam-review-2026"
+          ]
+        },
+        {
+          "keyword": "7인승 suv 추천",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "7-seater-suv-recommend-compare-2026"
+          ]
+        },
+        {
+          "keyword": "bmw x5 가격",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "bmw-x5-price-options-2026"
+          ]
+        },
+        {
+          "keyword": "자기차량손해 가입금액대비 수리비",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "own-vehicle-damage-coverage-2026"
+          ]
+        },
+        {
+          "keyword": "카카오페이 자동차보험 비교",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "car-insurance-comparison-site-guide-2026",
+            "tools/insurance-calculator"
+          ]
+        },
+        {
+          "keyword": "삼성 다이렉트 자동차보험",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "car-insurance-direct-compare-7-companies-2026"
+          ]
+        },
+        {
+          "keyword": "자동차 번호판 종류",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "license-plate-types-guide-2026"
+          ]
+        },
+        {
+          "keyword": "bmw x5 vs 제네시스 g80",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "genesis-vs-bmw-brand-compare",
+            "genesis-gv80-vs-bmw-x5-2026"
+          ]
+        },
+        {
+          "keyword": "블랙박스 기능",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "ai-dashcam-vs-regular-compare-2026"
+          ]
+        },
+        {
+          "keyword": "볼보 전기차 ex90 어디에서 만드나",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "volvo-ex90-korea-launch-price-safety-2026"
+          ]
+        },
+        {
+          "keyword": "가정용전기차 충전기",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "ev-home-charger-installation-guide-2026"
+          ]
+        },
+        {
+          "keyword": "nx es 차이",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "lexus-es-vs-nx-compare"
+          ]
+        }
+      ],
+      "contentGaps": [],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 499,
+          "pct": 69
+        },
+        {
+          "source": "daum",
+          "count": 141,
+          "pct": 20
+        },
+        {
+          "source": "naver",
+          "count": 50,
+          "pct": 7
+        },
+        {
+          "source": "internal",
+          "count": 19,
+          "pct": 3
+        },
+        {
+          "source": "google",
+          "count": 6,
+          "pct": 1
+        },
+        {
+          "source": "bing",
+          "count": 4,
+          "pct": 1
+        },
+        {
+          "source": "other",
+          "count": 4,
+          "pct": 1
+        }
+      ],
+      "strategy": [
+        "검색유입 28% 저조 — 검색 타겟 포스팅 필요",
+        "최다 유입: \"지커 7X 한국 출시 — 스펙·가격은 매력적이지만, 구매 전 반\" (검색 10건)",
+        "핵심 키워드: \"지커7x출시가격\" (5회, daum)"
+      ],
+      "trend": {
+        "rising": [
+          {
+            "slug": "car-insurance-accident-premium-qa-7-2026",
+            "title": "자동차보험 사고 후 보험료 Q&A 7가지 — 할증 기준·자비처리 손익분기점·보험사 변경까지",
+            "search_views": 9,
+            "prev_search_views": 4,
+            "growth": 5,
+            "top_keywords": [
+              {
+                "keyword": "자동차보험 할증기준",
+                "count": 2
+              },
+              {
+                "keyword": "자동차보험 사고",
+                "count": 1
+              },
+              {
+                "keyword": "사고후 보험료 할증",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "license-plate-types-guide-2026",
+            "title": "자동차 번호판 종류·색상별 의미 총정리",
+            "search_views": 6,
+            "prev_search_views": 3,
+            "growth": 3,
+            "top_keywords": [
+              {
+                "keyword": "자동차 번호판 종류",
+                "count": 2
+              },
+              {
+                "keyword": "초록번호판 보험",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "newInTop": [
+          {
+            "slug": "car-insurance-direct-compare-7-companies-2026",
+            "title": "다이렉트 자동차보험 7개사 비교 2026 — 삼성·현대·DB·KB·한화·메리츠·캐롯, 보험료·보상·특약 총정리",
+            "search_views": 6,
+            "top_keywords": [
+              {
+                "keyword": "삼성 다이렉트 자동차보험",
+                "count": 2
+              },
+              {
+                "keyword": "메리츠 다이렉트자동차보험",
+                "count": 1
+              },
+              {
+                "keyword": "메리츠 자동차보험 긴급출동",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "ev-hybrid-acquisition-tax-reduction-extension-2026",
+            "title": "2026 하이브리드·전기차 취득세 감면 2년 연장 — 다자녀 추가 감면 신설, 차종별 절감액 비교",
+            "search_views": 6,
+            "top_keywords": [
+              {
+                "keyword": "전기차 취득세 감면",
+                "count": 5
+              },
+              {
+                "keyword": "하이브리드 차량 취득세 감면",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "car-inspection-changes-ev-2026",
+            "title": "2026 자동차 정기검사 변경사항 총정리 — 전기차 검사항목 추가·과태료 기준·검사 주기",
+            "search_views": 5,
+            "top_keywords": [
+              {
+                "keyword": "전기차 검사기간",
+                "count": 3
+              },
+              {
+                "keyword": "자동차 정기검사 항목",
+                "count": 1
+              },
+              {
+                "keyword": "전기 자동차 정기검사",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "vugera-vg811-dashcam-review-2026",
+            "title": "뷰게라 VG-811 블랙박스 상세 리뷰 — 2026 최신형 QHD, 슬림 디자인·내구성 실사용 분석",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "vg811",
+                "count": 2
+              },
+              {
+                "keyword": "뷰게라vg811",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "car-tax-reform-price-based-2026",
+            "title": "자동차세 개편 — 배기량에서 차량 가격 기준으로, 내 차 세금은 얼마나 달라지나",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "자동차세 개편",
+                "count": 2
+              },
+              {
+                "keyword": "g80 전기차 세금",
+                "count": 1
+              },
+              {
+                "keyword": "자동차세배기량기준",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "tech",
+      "summary": {
+        "total": 46,
+        "human": 32,
+        "bots": 14,
+        "search": 10,
+        "searchRate": 22,
+        "uniqueSessions": 36,
+        "mobilePct": 41
+      },
+      "topPages": [
+        {
+          "slug": "vibe-coding-explained-2026-complete-guide",
+          "title": "vibe-coding-explained-2026-complete-guide",
+          "views": 6,
+          "search_views": 2,
+          "top_keywords": [
+            {
+              "keyword": "바이브코딩이란",
+              "count": 2
+            }
+          ],
+          "sources": {
+            "daum": 2,
+            "direct": 4
+          }
+        },
+        {
+          "slug": "claude-code-automation-limits-resume",
+          "title": "claude-code-automation-limits-resume",
+          "views": 2,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1,
+            "naver": 1
+          }
+        },
+        {
+          "slug": "chatgpt-vs-gemini-2026-comparison",
+          "title": "chatgpt-vs-gemini-2026-comparison",
+          "views": 7,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1,
+            "direct": 6
+          }
+        },
+        {
+          "slug": "ollama-local-llm-setup-guide",
+          "title": "ollama-local-llm-setup-guide",
+          "views": 2,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1,
+            "bing": 1
+          }
+        },
+        {
+          "slug": "gemini-3-flash-developer-guide",
+          "title": "gemini-3-flash-developer-guide",
+          "views": 2,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1,
+            "bing": 1
+          }
+        },
+        {
+          "slug": "claude-code-guide-18-context-optimization",
+          "title": "claude-code-guide-18-context-optimization",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "bing": 1
+          }
+        },
+        {
+          "slug": "github-repository-intelligence-ai-codebase-understanding",
+          "title": "github-repository-intelligence-ai-codebase-understanding",
+          "views": 2,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "bing": 1,
+            "direct": 1
+          }
+        },
+        {
+          "slug": "ai-hallucination-prevention-strategies",
+          "title": "ai-hallucination-prevention-strategies",
+          "views": 2,
+          "search_views": 1,
+          "top_keywords": [
+            {
+              "keyword": "ai 할루시네이션",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 1,
+            "direct": 1
+          }
+        },
+        {
+          "slug": "cloudflare-workers-practical-guide",
+          "title": "cloudflare-workers-practical-guide",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "bing": 1
+          }
+        },
+        {
+          "slug": "cursor-composer-2-ai-coding-model",
+          "title": "cursor-composer-2-ai-coding-model",
+          "views": 1,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1
+          }
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "바이브코딩이란",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "vibe-coding-explained-2026-complete-guide"
+          ]
+        },
+        {
+          "keyword": "ai 할루시네이션",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "ai-hallucination-prevention-strategies"
+          ]
+        }
+      ],
+      "contentGaps": [
+        {
+          "keyword": "바이브코딩이란",
+          "count": 2,
+          "source": "daum"
+        }
+      ],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 36,
+          "pct": 78
+        },
+        {
+          "source": "bing",
+          "count": 5,
+          "pct": 11
+        },
+        {
+          "source": "daum",
+          "count": 3,
+          "pct": 7
+        },
+        {
+          "source": "naver",
+          "count": 2,
+          "pct": 4
+        }
+      ],
+      "strategy": [
+        "검색유입 22% 저조 — 검색 타겟 포스팅 필요",
+        "최다 유입: \"vibe-coding-explained-2026-complete\" (검색 2건)",
+        "핵심 키워드: \"바이브코딩이란\" (2회, bing)",
+        "갭 키워드 1개 발견 — \"바이브코딩이란\" 등 즉시 포스팅 가능"
+      ],
+      "trend": {
+        "rising": [],
+        "newInTop": []
+      }
+    },
+    {
+      "siteId": "sports",
+      "summary": {
+        "total": 62,
+        "human": 62,
+        "bots": 0,
+        "search": 23,
+        "searchRate": 37,
+        "uniqueSessions": 57,
+        "mobilePct": 47
+      },
+      "topPages": [
+        {
+          "slug": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+          "title": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+          "views": 6,
+          "search_views": 3,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1,
+            "other": 1,
+            "google": 2,
+            "direct": 2
+          }
+        },
+        {
+          "slug": "2025년-남자-골프-아이언-추천-TOP5-–-중상급자-인기-순위",
+          "title": "2025년-남자-골프-아이언-추천-TOP5-–-중상급자-인기-순위",
+          "views": 3,
+          "search_views": 3,
+          "top_keywords": [],
+          "sources": {
+            "naver": 3
+          }
+        },
+        {
+          "slug": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+          "title": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+          "views": 2,
+          "search_views": 2,
+          "top_keywords": [],
+          "sources": {
+            "bing": 1,
+            "naver": 1
+          }
+        },
+        {
+          "slug": "여성-골퍼-골프-드라이버-순위-TOP-7",
+          "title": "여성-골퍼-골프-드라이버-순위-TOP-7",
+          "views": 2,
+          "search_views": 2,
+          "top_keywords": [],
+          "sources": {
+            "bing": 2
+          }
+        },
+        {
+          "slug": "hiking-seoraksan-courses-guide",
+          "title": "hiking-seoraksan-courses-guide",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "golf-fullset-premium-vs-budget",
+          "title": "golf-fullset-premium-vs-budget",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "2025-남자-골프채-추천-TOP5-–-프로가-선택한-드라이버·아이언-조합은",
+          "title": "2025-남자-골프채-추천-TOP5-–-프로가-선택한-드라이버·아이언-조합은",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "hiking-boots-replacement-vs-resoling",
+          "title": "hiking-boots-replacement-vs-resoling",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "골프-초보-필수-아이템-10가지-이것만-있으면-필드-준비-끝",
+          "title": "골프-초보-필수-아이템-10가지-이것만-있으면-필드-준비-끝",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "hiking-headlamp-top5-2025",
+          "title": "hiking-headlamp-top5-2025",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        }
+      ],
+      "topKeywords": [],
+      "contentGaps": [],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 36,
+          "pct": 58
+        },
+        {
+          "source": "naver",
+          "count": 15,
+          "pct": 24
+        },
+        {
+          "source": "bing",
+          "count": 5,
+          "pct": 8
+        },
+        {
+          "source": "other",
+          "count": 3,
+          "pct": 5
+        },
+        {
+          "source": "google",
+          "count": 3,
+          "pct": 5
+        }
+      ],
+      "strategy": [
+        "검색유입 37% — 검색 트래픽 확대 여지 있음",
+        "최다 유입: \"타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼\" (검색 3건)"
+      ],
+      "trend": {
+        "rising": [
+          {
+            "slug": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+            "title": "타이틀리스트-TSR3-드라이버-리뷰-가격-헤드-후기-상급자-골퍼들의-선택",
+            "search_views": 3,
+            "prev_search_views": 1,
+            "growth": 2,
+            "top_keywords": []
+          }
+        ],
+        "newInTop": [
+          {
+            "slug": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+            "title": "2025-남자-아이언-추천-순위-TOP-5｜미즈노·핑·테일러메이드·캘러웨이·타이틀리스트-비교",
+            "search_views": 2,
+            "top_keywords": []
+          },
+          {
+            "slug": "여성-골퍼-골프-드라이버-순위-TOP-7",
+            "title": "여성-골퍼-골프-드라이버-순위-TOP-7",
+            "search_views": 2,
+            "top_keywords": []
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "policy",
+      "summary": {
+        "total": 274,
+        "human": 274,
+        "bots": 0,
+        "search": 157,
+        "searchRate": 57,
+        "uniqueSessions": 224,
+        "mobilePct": 49
+      },
+      "topPages": [
+        {
+          "slug": "/policies/first-home-support/",
+          "title": "/policies/first-home-support/",
+          "views": 23,
+          "search_views": 16,
+          "top_keywords": [
+            {
+              "keyword": "생애최초 주택구입 취득세 면제",
+              "count": 8
+            },
+            {
+              "keyword": "생애최초 주택구입 취득세 면제 조건",
+              "count": 1
+            },
+            {
+              "keyword": "생애최초 주택 구입 취득세 감면 신청서",
+              "count": 1
+            },
+            {
+              "keyword": "생애최초 주택구입 보금자리",
+              "count": 1
+            },
+            {
+              "keyword": "주택구입시 필요서류",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "direct": 7,
+            "daum": 16
+          }
+        },
+        {
+          "slug": "/policies/public-rental/",
+          "title": "/policies/public-rental/",
+          "views": 14,
+          "search_views": 14,
+          "top_keywords": [
+            {
+              "keyword": "국민임대주택 입주자격",
+              "count": 6
+            },
+            {
+              "keyword": "국민임대 재계약 소득초과",
+              "count": 3
+            },
+            {
+              "keyword": "국민임대 신청시 소득은 언제것으로",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 14
+          }
+        },
+        {
+          "slug": "/policies/utility-subsidy/",
+          "title": "/policies/utility-subsidy/",
+          "views": 8,
+          "search_views": 8,
+          "top_keywords": [
+            {
+              "keyword": "수도요금 감면신청",
+              "count": 1
+            },
+            {
+              "keyword": "수도요금 감면대상",
+              "count": 1
+            },
+            {
+              "keyword": "전기요금 감면대상",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 8
+          }
+        },
+        {
+          "slug": "/posts/electricity-rate-reform-2026-guide/",
+          "title": "/posts/electricity-rate-reform-2026-guide/",
+          "views": 7,
+          "search_views": 7,
+          "top_keywords": [],
+          "sources": {
+            "naver": 7
+          }
+        },
+        {
+          "slug": "/policies/dementia-care/",
+          "title": "/policies/dementia-care/",
+          "views": 6,
+          "search_views": 5,
+          "top_keywords": [
+            {
+              "keyword": "치매안심센터",
+              "count": 3
+            },
+            {
+              "keyword": "치매 돌봄 서비스",
+              "count": 2
+            }
+          ],
+          "sources": {
+            "daum": 5,
+            "twitter": 1
+          }
+        },
+        {
+          "slug": "/policies/permanent-rental-housing/",
+          "title": "/policies/permanent-rental-housing/",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "영구임대주택 입주자격",
+              "count": 3
+            },
+            {
+              "keyword": "기초생활 수급자동차조건",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        },
+        {
+          "slug": "/policies/national-pension-credit/",
+          "title": "/policies/national-pension-credit/",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "국민연금 출산크레딧",
+              "count": 2
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        },
+        {
+          "slug": "/policies/youth-allowance/",
+          "title": "/policies/youth-allowance/",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "서울시 청년수당",
+              "count": 3
+            },
+            {
+              "keyword": "2026서울시 청년수당 2차",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        },
+        {
+          "slug": "/policies/public-private-rental/",
+          "title": "/policies/public-private-rental/",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "공공지원 민간임대주택 자격",
+              "count": 3
+            },
+            {
+              "keyword": "민간임대주택 신청조건",
+              "count": 1
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        },
+        {
+          "slug": "/policies/commute-support/",
+          "title": "/policies/commute-support/",
+          "views": 4,
+          "search_views": 4,
+          "top_keywords": [
+            {
+              "keyword": "청년 교통비 지원",
+              "count": 2
+            }
+          ],
+          "sources": {
+            "daum": 4
+          }
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "생애최초 주택구입 취득세 면제",
+          "count": 9,
+          "source": "daum",
+          "pages": [
+            "/policies/first-home-support/",
+            "/posts/first-time-homebuyer-support-2026/"
+          ]
+        },
+        {
+          "keyword": "국민임대주택 입주자격",
+          "count": 6,
+          "source": "daum",
+          "pages": [
+            "/policies/public-rental/"
+          ]
+        },
+        {
+          "keyword": "국민임대 재계약 소득초과",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/public-rental/"
+          ]
+        },
+        {
+          "keyword": "영구임대주택 입주자격",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/permanent-rental-housing/"
+          ]
+        },
+        {
+          "keyword": "r&d 자금",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/tech-startup-growth/"
+          ]
+        },
+        {
+          "keyword": "공공지원 민간임대주택 자격",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/public-private-rental/"
+          ]
+        },
+        {
+          "keyword": "차상위 1종 2종",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/medical-aid/"
+          ]
+        },
+        {
+          "keyword": "서울시 청년수당",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/youth-allowance/"
+          ]
+        },
+        {
+          "keyword": "치매안심센터",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/dementia-care/"
+          ]
+        },
+        {
+          "keyword": "지역인재 국가장학금",
+          "count": 3,
+          "source": "daum",
+          "pages": [
+            "/policies/regional-talent-scholarship/",
+            "/posts/national-scholarship-2026-guide/"
+          ]
+        },
+        {
+          "keyword": "국민연금 출산크레딧",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/national-pension-credit/"
+          ]
+        },
+        {
+          "keyword": "출퇴근 산재 요양보험신청서",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/industrial-accident-insurance/",
+            "/go/"
+          ]
+        },
+        {
+          "keyword": "청년 주택드림 청약통장",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/youth-housing-dream-savings/"
+          ]
+        },
+        {
+          "keyword": "국민행복카드 상용기간",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/pregnancy-medical/"
+          ]
+        },
+        {
+          "keyword": "장애인 고용장려금 지급기준",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/disabled-employment/",
+            "/policies/youth-employment-subsidy/"
+          ]
+        },
+        {
+          "keyword": "한국주택금융가입신청",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/reverse-mortgage/"
+          ]
+        },
+        {
+          "keyword": "청년 교통비 지원",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/commute-support/"
+          ]
+        },
+        {
+          "keyword": "치매 돌봄 서비스",
+          "count": 2,
+          "source": "daum",
+          "pages": [
+            "/policies/dementia-care/"
+          ]
+        },
+        {
+          "keyword": "전세보증보험 가입후 임대인 변경시",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "/policies/jeonse-guarantee/"
+          ]
+        },
+        {
+          "keyword": "국민임대 신청시 소득은 언제것으로",
+          "count": 1,
+          "source": "daum",
+          "pages": [
+            "/policies/public-rental/"
+          ]
+        }
+      ],
+      "contentGaps": [
+        {
+          "keyword": "생애최초 주택구입 취득세 면제",
+          "count": 9,
+          "source": "daum"
+        },
+        {
+          "keyword": "국민임대주택 입주자격",
+          "count": 6,
+          "source": "daum"
+        },
+        {
+          "keyword": "국민임대 재계약 소득초과",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "영구임대주택 입주자격",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "r&d 자금",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "공공지원 민간임대주택 자격",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "차상위 1종 2종",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "서울시 청년수당",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "치매안심센터",
+          "count": 3,
+          "source": "daum"
+        },
+        {
+          "keyword": "지역인재 국가장학금",
+          "count": 3,
+          "source": "daum"
+        }
+      ],
+      "bySource": [
+        {
+          "source": "daum",
+          "count": 113,
+          "pct": 41
+        },
+        {
+          "source": "direct",
+          "count": 95,
+          "pct": 35
+        },
+        {
+          "source": "naver",
+          "count": 29,
+          "pct": 11
+        },
+        {
+          "source": "twitter",
+          "count": 15,
+          "pct": 5
+        },
+        {
+          "source": "bing",
+          "count": 13,
+          "pct": 5
+        },
+        {
+          "source": "internal",
+          "count": 6,
+          "pct": 2
+        },
+        {
+          "source": "other",
+          "count": 1,
+          "pct": 0
+        },
+        {
+          "source": "google",
+          "count": 1,
+          "pct": 0
+        },
+        {
+          "source": "yahoo",
+          "count": 1,
+          "pct": 0
+        }
+      ],
+      "strategy": [
+        "검색유입 57% — 검색 트래픽 확대 여지 있음",
+        "최다 유입: \"/policies/first-home-support/\" (검색 16건)",
+        "핵심 키워드: \"생애최초 주택구입 취득세 면제\" (9회, daum)",
+        "갭 키워드 10개 발견 — \"생애최초 주택구입 취득세 면제\" 등 즉시 포스팅 가능"
+      ],
+      "trend": {
+        "rising": [
+          {
+            "slug": "/policies/public-rental/",
+            "title": "/policies/public-rental/",
+            "search_views": 14,
+            "prev_search_views": 7,
+            "growth": 7,
+            "top_keywords": [
+              {
+                "keyword": "국민임대주택 입주자격",
+                "count": 6
+              },
+              {
+                "keyword": "국민임대 재계약 소득초과",
+                "count": 3
+              },
+              {
+                "keyword": "국민임대 신청시 소득은 언제것으로",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "/policies/utility-subsidy/",
+            "title": "/policies/utility-subsidy/",
+            "search_views": 8,
+            "prev_search_views": 5,
+            "growth": 3,
+            "top_keywords": [
+              {
+                "keyword": "수도요금 감면신청",
+                "count": 1
+              },
+              {
+                "keyword": "수도요금 감면대상",
+                "count": 1
+              },
+              {
+                "keyword": "전기요금 감면대상",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "newInTop": [
+          {
+            "slug": "/policies/dementia-care/",
+            "title": "/policies/dementia-care/",
+            "search_views": 5,
+            "top_keywords": [
+              {
+                "keyword": "치매안심센터",
+                "count": 3
+              },
+              {
+                "keyword": "치매 돌봄 서비스",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "slug": "/policies/permanent-rental-housing/",
+            "title": "/policies/permanent-rental-housing/",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "영구임대주택 입주자격",
+                "count": 3
+              },
+              {
+                "keyword": "기초생활 수급자동차조건",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "/policies/national-pension-credit/",
+            "title": "/policies/national-pension-credit/",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "국민연금 출산크레딧",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "slug": "/policies/youth-allowance/",
+            "title": "/policies/youth-allowance/",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "서울시 청년수당",
+                "count": 3
+              },
+              {
+                "keyword": "2026서울시 청년수당 2차",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "/policies/public-private-rental/",
+            "title": "/policies/public-private-rental/",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "공공지원 민간임대주택 자격",
+                "count": 3
+              },
+              {
+                "keyword": "민간임대주택 신청조건",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "slug": "/policies/commute-support/",
+            "title": "/policies/commute-support/",
+            "search_views": 4,
+            "top_keywords": [
+              {
+                "keyword": "청년 교통비 지원",
+                "count": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "card",
+      "summary": {
+        "total": 69,
+        "human": 69,
+        "bots": 0,
+        "search": 12,
+        "searchRate": 17,
+        "uniqueSessions": 44,
+        "mobilePct": 43
+      },
+      "topPages": [
+        {
+          "slug": "/guides/baemin-delivery-credit-card-2026/",
+          "title": "/guides/baemin-delivery-credit-card-2026/",
+          "views": 2,
+          "search_views": 2,
+          "top_keywords": [],
+          "sources": {
+            "naver": 2
+          }
+        },
+        {
+          "slug": "/situations/airport-lounge/",
+          "title": "/situations/airport-lounge/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/guides/coupang-eats-credit-card-2026/",
+          "title": "/guides/coupang-eats-credit-card-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/guides/interest-free-installment-credit-card-2026/",
+          "title": "/guides/interest-free-installment-credit-card-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/guides/coupang-rocket-credit-card-2026/",
+          "title": "/guides/coupang-rocket-credit-card-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/situations/telecom-discount/",
+          "title": "/situations/telecom-discount/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "/reviews/hana-kakaopay-travelog-check-review-2026/",
+          "title": "/reviews/hana-kakaopay-travelog-check-review-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/issuers/",
+          "title": "/issuers/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/guides/gym-fitness-credit-card-2026/",
+          "title": "/guides/gym-fitness-credit-card-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1
+          }
+        },
+        {
+          "slug": "/guides/office-worker-credit-card-2026/",
+          "title": "/guides/office-worker-credit-card-2026/",
+          "views": 3,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "google": 1,
+            "direct": 1,
+            "other": 1
+          }
+        }
+      ],
+      "topKeywords": [],
+      "contentGaps": [],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 39,
+          "pct": 57
+        },
+        {
+          "source": "other",
+          "count": 13,
+          "pct": 19
+        },
+        {
+          "source": "google",
+          "count": 9,
+          "pct": 13
+        },
+        {
+          "source": "internal",
+          "count": 5,
+          "pct": 7
+        },
+        {
+          "source": "naver",
+          "count": 3,
+          "pct": 4
+        }
+      ],
+      "strategy": [
+        "검색유입 17% 저조 — 검색 타겟 포스팅 필요",
+        "최다 유입: \"/guides/baemin-delivery-credit-card\" (검색 2건)"
+      ],
+      "trend": {
+        "rising": [],
+        "newInTop": []
+      }
+    },
+    {
+      "siteId": "property",
+      "summary": {
+        "total": 35,
+        "human": 35,
+        "bots": 0,
+        "search": 13,
+        "searchRate": 37,
+        "uniqueSessions": 20,
+        "mobilePct": 60
+      },
+      "topPages": [
+        {
+          "slug": "/listings/goyang-changneung-lh-newhome-b1-2026/",
+          "title": "/listings/goyang-changneung-lh-newhome-b1-2026/",
+          "views": 8,
+          "search_views": 6,
+          "top_keywords": [],
+          "sources": {
+            "naver": 6,
+            "direct": 2
+          }
+        },
+        {
+          "slug": "/listings/gh-newlywed-2026-suwon/",
+          "title": "/listings/gh-newlywed-2026-suwon/",
+          "views": 3,
+          "search_views": 3,
+          "top_keywords": [],
+          "sources": {
+            "naver": 3
+          }
+        },
+        {
+          "slug": "/trends/2026-04-loan-dsr-regulation/",
+          "title": "/trends/2026-04-loan-dsr-regulation/",
+          "views": 3,
+          "search_views": 2,
+          "top_keywords": [],
+          "sources": {
+            "bing": 2,
+            "other": 1
+          }
+        },
+        {
+          "slug": "/listings/lh-3new-changreung-a2-2026/",
+          "title": "/listings/lh-3new-changreung-a2-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "/listings/baeksa-village-nowon-2026/",
+          "title": "/listings/baeksa-village-nowon-2026/",
+          "views": 1,
+          "search_views": 1,
+          "top_keywords": [],
+          "sources": {
+            "naver": 1
+          }
+        },
+        {
+          "slug": "/trends/2026-04-26-trend-2-3rd-newtown-presale-schedule/",
+          "title": "/trends/2026-04-26-trend-2-3rd-newtown-presale-schedule/",
+          "views": 1,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1
+          }
+        },
+        {
+          "slug": "/",
+          "title": "/",
+          "views": 6,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "internal": 2,
+            "direct": 4
+          }
+        },
+        {
+          "slug": "/areas/wirye/apt/",
+          "title": "/areas/wirye/apt/",
+          "views": 1,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1
+          }
+        },
+        {
+          "slug": "/areas/wirye/apt/wirye-gamil-prugio/",
+          "title": "/areas/wirye/apt/wirye-gamil-prugio/",
+          "views": 1,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1
+          }
+        },
+        {
+          "slug": "/areas/wirye/",
+          "title": "/areas/wirye/",
+          "views": 3,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 3
+          }
+        }
+      ],
+      "topKeywords": [],
+      "contentGaps": [],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 15,
+          "pct": 43
+        },
+        {
+          "source": "naver",
+          "count": 11,
+          "pct": 31
+        },
+        {
+          "source": "internal",
+          "count": 6,
+          "pct": 17
+        },
+        {
+          "source": "bing",
+          "count": 2,
+          "pct": 6
+        },
+        {
+          "source": "other",
+          "count": 1,
+          "pct": 3
+        }
+      ],
+      "strategy": [
+        "검색유입 37% — 검색 트래픽 확대 여지 있음",
+        "최다 유입: \"/listings/goyang-changneung-lh-newh\" (검색 6건)"
+      ],
+      "trend": {
+        "rising": [],
+        "newInTop": [
+          {
+            "slug": "/listings/gh-newlywed-2026-suwon/",
+            "title": "/listings/gh-newlywed-2026-suwon/",
+            "search_views": 3,
+            "top_keywords": []
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "finance",
+      "summary": {
+        "total": 1,
+        "human": 1,
+        "bots": 0,
+        "search": 0,
+        "searchRate": 0,
+        "uniqueSessions": 1,
+        "mobilePct": 0
+      },
+      "topPages": [
+        {
+          "slug": "savings-account",
+          "title": "savings-account",
+          "views": 1,
+          "search_views": 0,
+          "top_keywords": [],
+          "sources": {
+            "direct": 1
+          }
+        }
+      ],
+      "topKeywords": [],
+      "contentGaps": [],
+      "bySource": [
+        {
+          "source": "direct",
+          "count": 1,
+          "pct": 100
+        }
+      ],
+      "strategy": [
+        "검색유입 0% 저조 — 검색 타겟 포스팅 필요",
+        "최다 유입: \"savings-account\" (검색 0건)"
+      ],
+      "trend": {
+        "rising": [],
+        "newInTop": []
+      }
+    }
+  ],
+  "contentRecommendations": [],
+  "siteRecommendations": {
+    "car": {
+      "recommendations": [
+        {
+          "priority": "P2",
+          "type": "rising",
+          "keyword": "자동차보험 할증기준",
+          "count": 9,
+          "source": "-",
+          "contentHint": "\"자동차보험 할증기준\" 심화 가이드 (급상승 키워드 편승)",
+          "reason": "\"자동차보험 사고 후 보험료 Q&A 7가지 — 할증 기준\" 전날 대비 +5건 급상승 — 관련 키워드 선점 기회"
+        },
+        {
+          "priority": "P2",
+          "type": "rising",
+          "keyword": "자동차 번호판 종류",
+          "count": 6,
+          "source": "-",
+          "contentHint": "\"자동차 번호판 종류\" 심화 가이드 (급상승 키워드 편승)",
+          "reason": "\"자동차 번호판 종류·색상별 의미 총정리\" 전날 대비 +3건 급상승 — 관련 키워드 선점 기회"
+        },
+        {
+          "priority": "P3",
+          "type": "expansion",
+          "keyword": "지커7x출시가격",
+          "count": 5,
+          "source": "daum",
+          "contentHint": "\"지커7x출시가격\" 관련 비교·가이드 콘텐츠",
+          "reason": "고유입 키워드 \"지커7x출시가격\" 5회 — 관련 각도 확장 포스팅"
+        }
+      ]
+    },
+    "tech": {
+      "recommendations": [
+        {
+          "priority": "P1",
+          "type": "gap",
+          "keyword": "바이브코딩이란",
+          "count": 2,
+          "source": "daum",
+          "contentHint": "\"바이브코딩이란\" 완전 가이드: 조건·비교·추천 총정리",
+          "reason": "갭 키워드: \"바이브코딩이란\" 2회 유입 중 전용 포스팅 없음 — 즉시 선점 기회"
+        },
+        {
+          "priority": "P3",
+          "type": "expansion",
+          "keyword": "ai 할루시네이션",
+          "count": 1,
+          "source": "daum",
+          "contentHint": "\"ai 할루시네이션\" 관련 비교·가이드 콘텐츠",
+          "reason": "고유입 키워드 \"ai 할루시네이션\" 1회 — 관련 각도 확장 포스팅"
+        }
+      ]
+    },
+    "sports": {
+      "recommendations": []
+    },
+    "policy": {
+      "recommendations": [
+        {
+          "priority": "P1",
+          "type": "gap",
+          "keyword": "생애최초 주택구입 취득세 면제",
+          "count": 9,
+          "source": "daum",
+          "contentHint": "\"생애최초 주택구입 취득세 면제\" 완전 가이드: 조건·비교·추천 총정리",
+          "reason": "갭 키워드: \"생애최초 주택구입 취득세 면제\" 9회 유입 중 전용 포스팅 없음 — 즉시 선점 기회"
+        },
+        {
+          "priority": "P1",
+          "type": "gap",
+          "keyword": "국민임대주택 입주자격",
+          "count": 6,
+          "source": "daum",
+          "contentHint": "\"국민임대주택 입주자격\" 완전 가이드: 조건·비교·추천 총정리",
+          "reason": "갭 키워드: \"국민임대주택 입주자격\" 6회 유입 중 전용 포스팅 없음 — 즉시 선점 기회"
+        },
+        {
+          "priority": "P1",
+          "type": "gap",
+          "keyword": "국민임대 재계약 소득초과",
+          "count": 3,
+          "source": "daum",
+          "contentHint": "\"국민임대 재계약 소득초과\" 완전 가이드: 조건·비교·추천 총정리",
+          "reason": "갭 키워드: \"국민임대 재계약 소득초과\" 3회 유입 중 전용 포스팅 없음 — 즉시 선점 기회"
+        }
+      ]
+    },
+    "card": {
+      "recommendations": []
+    },
+    "property": {
+      "recommendations": []
+    },
+    "finance": {
+      "recommendations": []
+    }
+  },
+  "categorySignals": [
+    {
+      "triggerKeyword": "지커7x출시가격",
+      "brand": "Zeekr",
+      "segment": "중국 전기 SUV",
+      "signal": "\"지커7x출시가격\" 검색 감지 → Zeekr 중국 전기 SUV 구매 수요 활성화 신호",
+      "contentOpportunity": [
+        "BYD 씰 가격·옵션·유지비 총정리 2026",
+        "BYD 아토3 가격·옵션·유지비 총정리 2026",
+        "Zeekr vs 경쟁사(아이오닉5·EV6) 실구매 비교"
+      ],
+      "reasoning": "\"지커7x출시가격\" 한 모델에 집중하지 말 것. 이 검색은 중국 전기 SUV 구매를 고려 중인 독자가 시장을 탐색하는 신호다. BYD 씰·BYD 아토3 등 관련 라인업과 아이오닉5·EV6 경쟁사 비교 콘텐츠가 동일 독자를 더 넓게 포착한다."
+    },
+    {
+      "triggerKeyword": "bmw x5 가격",
+      "brand": "BMW",
+      "segment": "프리미엄 SUV",
+      "signal": "\"bmw x5 가격\" 검색 감지 → BMW 프리미엄 SUV 구매 수요 활성화 신호",
+      "contentOpportunity": [
+        "BMW X3 가격·옵션·유지비 총정리 2026",
+        "BMW X7 가격·옵션·유지비 총정리 2026",
+        "BMW vs 경쟁사(벤츠 GLE·아우디 Q7) 실구매 비교"
+      ],
+      "reasoning": "\"bmw x5 가격\" 한 모델에 집중하지 말 것. 이 검색은 프리미엄 SUV 구매를 고려 중인 독자가 시장을 탐색하는 신호다. BMW X3·BMW X7 등 관련 라인업과 벤츠 GLE·아우디 Q7 경쟁사 비교 콘텐츠가 동일 독자를 더 넓게 포착한다."
+    }
+  ],
+  "gitActivity": {
+    "targetDate": "2026-05-14",
+    "totalCommits": 108,
+    "totalManual": 95,
+    "mainFocusSite": "travel",
+    "mainFocusPct": 36,
+    "dayLabel": "집중 개발일",
+    "sites": [
+      {
+        "siteId": "travel",
+        "commitCount": 34,
+        "manualCount": 34,
+        "autoCount": 0,
+        "featCount": 2,
+        "contentCount": 0,
+        "fixCount": 3,
+        "focus": "mixed",
+        "manualCommits": [
+          "feat: 씬 콘텐츠 일괄 재작성 (addons 15·situations 11·tools 1)",
+          "auto: 2026-05-15 01:26 작업 완료",
+          "auto: 2026-05-15 01:23 작업 완료",
+          "auto: 2026-05-15 01:12 작업 완료",
+          "auto: 2026-05-15 01:12 작업 완료",
+          "auto: 2026-05-15 01:03 작업 완료",
+          "auto: 2026-05-15 00:59 작업 완료",
+          "auto: 2026-05-15 00:57 작업 완료",
+          "auto: 2026-05-15 00:54 작업 완료",
+          "auto: 2026-05-15 00:51 작업 완료",
+          "auto: 2026-05-15 00:45 작업 완료",
+          "auto: 2026-05-15 00:44 작업 완료",
+          "auto: 2026-05-15 00:29 작업 완료",
+          "auto: 2026-05-15 00:25 작업 완료",
+          "auto: 2026-05-15 00:16 작업 완료",
+          "auto: 2026-05-15 00:09 작업 완료",
+          "auto: 2026-05-15 00:04 작업 완료",
+          "auto: 2026-05-14 23:58 작업 완료",
+          "auto: 2026-05-14 23:54 작업 완료",
+          "auto: 2026-05-14 23:51 작업 완료",
+          "auto: 2026-05-14 23:48 작업 완료",
+          "auto: 2026-05-14 23:45 작업 완료",
+          "auto: 2026-05-14 23:41 작업 완료",
+          "fix(dup): trend-20260510-2 푸꾸옥 중복 → 301 통합 + guides.js 제거",
+          "auto: 2026-05-14 22:49 작업 완료",
+          "fix(analytics): pageview API — 테이블명·컬럼 수정, session_hash·device·site 추가",
+          "fix: 최근 업데이트 호텔명 표시 + 트렌드 포스트 제목·자동생성 개선",
+          "feat(eeat): Day 1 신뢰 신호 강화 — Person 스키마·편집자 신원·썸네일 자동화",
+          "auto(evening): 2026-05-14 [peninsula-hong-kong]",
+          "auto: 2026-05-14 18:04 작업 완료",
+          "auto: 2026-05-14 12:05 작업 완료",
+          "auto: 2026-05-14 12:02 작업 완료",
+          "auto: 2026-05-14 07:07 작업 완료",
+          "auto: 2026-05-14 07:02 작업 완료"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "씬 콘텐츠 일괄 재작성 (addons 15·situations 11·tools 1), eeat): Day 1 신뢰 신호 강화 기능을 개발했습니다. dup): trend-20260510-2 푸꾸옥 중복 → 301 통합 + guides.js 제거, analytics): pageview API, 최근 업데이트 호텔명 표시 + 트렌드 포스트 제목·자동생성 개선 수정이 있었습니다. 2026-05-15 01:26 작업 완료, 2026-05-15 01:23 작업 완료 등 29건의 작업을 추가로 진행했습니다."
+      },
+      {
+        "siteId": "movie",
+        "commitCount": 18,
+        "manualCount": 16,
+        "autoCount": 2,
+        "featCount": 1,
+        "contentCount": 6,
+        "fixCount": 1,
+        "focus": "mixed",
+        "manualCommits": [
+          "[feat]: 이미지 크롤러에 KMDB·KOFIC 통합 — TMDB→KMDB→배우 fallback 3단계 // 질문 의도: 사용자가 발급한 한국 공공 API 키 활용 — KMDB(U9Q83K2WV0BK3R2Z2W18 한국영상자료원)·KOFIC(949eb2cdae5096ced36024b7c5f4008d 영화진흥위원회). 검증 결과 KOFIC은 박스오피스·영화정보·영화인 등 메타데이터만 제공하고 이미지 필드 없음(사용자 캡처대로) → 이미지 수급에는 직접 활용 불가, 박스오피스/개봉일 정확성 검증 보조용으로만 통합. KMDB는 file.koreafilm.or.kr/thm/*/tn_*.jpg 썸네일이 213x303(35KB)로 작아 본문 메인용엔 부족, TMDB(780x1170 포스터·1280x720 스틸)가 한국 작품도 한국어 포스터 가중치로 잘 커버하므로 TMDB 1순위 유지. 통합 순서: (1)TMDB 작품 검색 (2)부족분 KMDB 보강(특히 옛 한국 영화) (3)그래도 부족하면 --actors 인자의 배우 TMDB person profile fallback. 차단 도메인 그대로 유지(tistory·blog.naver·brunch 등). 테스트 3종 통과 — 기리고 TMDB 3장·미존재 작품→송강호 프로필 fallback·기생충 TMDB 3장. API 키는 환경변수 override 가능(TMDB_API_KEY/KMDB_API_KEY/KOFIC_API_KEY).",
+          "[content]: 기리고 포스트 이미지 TMDB 공식 자료로 전면 교체 + 통합 이미지 크롤러 신설 // 질문 의도: post669 4473×4473 정사각 합성 이미지(블로그 OG 카드)·1080×1080 PNG 스틸 등 비공식 이미지 문제 해결 — TMDB API에서 기리고(id 285838) 한국어 공식 포스터(780×1170)·공식 백드롭 스틸 3장(1280×720) 다운로드. 캡션 \"ⓒ 네이버 영화\" → \"ⓒ 넷플릭스\"로 정정. still3 추가해 본문 이미지 3→4장. 부수: 향후 모든 포스트 이미지 수급에 사용할 scripts/fetch_official_images.py 신설 — (1) TMDB 작품 검색 우선(공식 자료만 호스팅, 한국어 포스터 가중치), (2) 작품 미발견 또는 부족 시 --actors 인자로 받은 출연진 TMDB person profile 사진 fallback, (3) 블로그·뉴스·SNS 합성 이미지 도메인 8종 차단(tistory·blog.naver·daum cafe·brunch·velog·yonhap·chosun·hankyung 등) + 30KB 미만 로고 거름. 추후 신규 포스팅·기존 포스트 이미지 교체 시 crawl_movie_images.py 대신 이 스크립트 사용 권장.",
+          "[content]: 신카이 포스트 이미지 정정 — 썸네일 SVG 재제작·별의목소리/언어의정원 재크롤링·필모그래피 SVG 삭제 // 질문 의도: post40 이미지 4가지 보완 — (1) post40_thumb.svg가 다른 포스트에서 잘못 복사된 \"전쟁 영화\" 텍스트 SVG라 신카이 마코토 테마(보라/푸른 우주, 혜성 궤적, 지평선 실루엣)로 새로 제작 (2) 별의 목소리 포스터는 510x510 50KB라 작아서 drama mode로 재검색 → 1080x1081 PNG 1.9MB 정상 포스터 확보 (3) 언어의 정원 e_still1이 세로형 600x1067로 어색해 영어 제목 \"Garden of Words\" 쿼리로 재크롤링 → 1920x1075 와이드 스틸컷 + 512x512 정사각 포스터 2장 확보, 본문에 poster+still 흐름으로 배치 (4) 스즈메 섹션 끝에 붙어있던 post40_img1.svg \"20년간의 필모그래피 정리\" 텍스트 SVG가 조잡해서 image 섹션 + 파일 모두 삭제. 본문 이미지 14장 → 14장 유지(SVG 1 + 영화 13).",
+          "[content]: 신카이 마코토 포스트 이미지 보강 — 영화 8편 포스터·스틸컷 12장 추가 // 질문 의도: shinkai-makoto-movies-complete-guide(id 40) 추천 콘텐츠 이미지 부족 보완 — 각 h2 섹션에 등장하는 영화별로 네이버에서 포스터·스틸컷 직접 크롤링해 본문 흐름에 삽입. 별의 목소리(2002)·구름의 저편 약속의 장소(2004)·초속 5센티미터(2007 poster+still)·별을 쫓는 아이(2011)·언어의 정원(2013 still)·너의 이름은(2016 poster+still)·날씨의 아이(2019 poster+still)·스즈메의 문단속(2022 poster+still) 총 12장. body→image 흐름으로 영화 설명 직후 시각자료가 따라오도록 재배치. 광고는 본문 중반·후반 2개+말미 1개로 3개 유지(규칙 준수). a/d 포스터는 1차 크롤링이 160×160 썸네일로 잡혀 재검색으로 510×510·800×801 정상 해상도 교체.",
+          "[seo]: output:'export' 정적 전환 + post669 이미지 재크롤링 // 질문 의도: Vercel ISR Read Units 발생 원인 제거(옵션1) — Next.js getStaticProps 페이지 3138개 전체를 정적 HTML로 빌드해 ISR 데이터 레이어 자체를 미사용 → Read Units ~100% 절감. next.config.js의 redirects(845개)·rewrites·headers는 scripts/generate-vercel-config.js로 vercel.json에 자동 생성하여 Vercel CDN이 직접 처리. API 라우트 6종(sitemap·rss·indexnow·pageview·trending·analytics) 일괄 제거 — sitemap/rss는 public/ 정적 파일, indexnow는 car 프로젝트 launchd가 06:30 자동 제출, pageview/trending/analytics는 클라이언트 Supabase anon key 직접 호출로 전환(lib/supabaseClient.js 신설). PageTracker는 SHA-256 Web Crypto API 기반 session_hash, adminLee의 IndexNow UI 제거, searchAnalytics는 public/insight/*.json 정적 fetch로 변경. 부수: post669(기리고) poster.jpg가 16x16 Windows ICO로 잘못 저장돼 있어 네이버 재크롤링하여 4473x4473 정상 JPEG로 교체.",
+          "[auto-posting]: 1편 자동 생성 — 2026-05-14",
+          "[content]: TOP추천형 포스트 847 — 5월 둘째 주 한국 OTT·극장 화제작 TOP 7 // 질문 의도: 2026-05-14 TOP추천형 포스팅 1편 — 멋진 신세계(SBS·넷플릭스 비영어 1위 시청률 6.9%)·21세기 대군부인(디즈니+ 73개국 1위 5월 16일 종영 D-2)·데빌 메이 크라이 시즌2(넷플릭스 5월 12일 공개·시즌1 RT 95%)·원더풀스(박은빈·차은우 5월 15일 D-1)·취사병 전설이 되다(박지훈 tvN·티빙 5월 11일 첫방 12부작)·악마는 프라다 2(박스오피스 1위 16일·124만)·모탈 컴뱃 2(칼 어번 청불 IMAX) OTT 5편+극장 2편 통합 큐레이션, 7편 비교표·작품별 추천 이유·취향별 정주행 가이드, 네이버 크롤링 이미지 7장+SVG 썸네일 1장",
+          "[auto-trend]: 1편 자동 생성 — 2026-05-14",
+          "[auto-posting]: 1편 자동 생성 — 2026-05-14",
+          "[content]: 시리즈가이드형 포스트 846 — 미션 임파서블 시청 순서 8편 정주행 가이드 // 질문 의도: 2026-05-14 시리즈가이드형 포스팅 1편 — 미션 임파서블 1~8편 시청 순서, 폴아웃 RT 98%·데드 레코닝 96%·파이널 레코닝 88% 평점, 한국 OTT(쿠팡플레이·웨이브·넷플릭스) 시청 위치, 7편+8편 한 영화 구조, 최소 시청 4편(1편·고스트 프로토콜·폴아웃·데드 레코닝), 5월 23일 한국 개봉 D-9 정주행 일정 가이드",
+          "[fix]: 제목 영어 제거 + post800 이미지 복구 + RULE·자동화 규칙 업데이트",
+          "[content+insight]: 인사이트 분석 + 트렌드 관람평 포스트 1편 — 2026-05-14 // 질문 의도: 2026-05-13 인사이트(성난사람들2 결말 검색 1위·멋진 신세계 해외반응 우위·네이버 SEO 34%) AI 분석 완성 + 원더풀스 박은빈·차은우 넷플릭스 5월 15일 글로벌 공개 D-1 관람평 1편(우영우 17.5% 신화 유인식·박은빈 재결합과 차은우 130억 탈세 변수)",
+          "[auto-posting]: 1편 자동 생성 — 2026-05-14",
+          "[content]: 비교형 포스트 844 — 미션 임파서블 vs 군체 5월 한국 박스오피스 빅매치 // 질문 의도: 2026-05-14 비교형 포스팅 1편 — 칸 영화제 78회 미션 임파서블 5월 14일 월드 프리미어 + 79회 군체 5월 16일 미드나잇 스크리닝 동시 칸 진출 + 한국 5월 21일(군체)·5월 23일(미션) 단 이틀 차 빅매치 비교",
+          "[rules]: 관람평 제목 금지어 규칙 제거 + 중복 포스팅 금지 규칙 추가",
+          "[content+insight]: 인사이트 분석 + 트렌드 포스트 3편 — 2026-05-14"
+        ],
+        "autoCommits": [
+          "[rules]: MOVIE_SITE_REBUILD_PROMPT.md 마스터 가이드 추가 + 자동 포스팅 봇 참조 박음 // 질문 의도: R의 필름공장 OTT 허브 중심 본질 전환 마스터 프롬프트 저장 — 저자 R 페르소나(EEAT 12사이트 분산 전략), Pillar 4종(OTT 허브·군집 키워드·OTT 가격할인·작품 시리즈), 신규 페이지 URL 설계(/ott/[플랫폼]/·/overseas-reaction/·/audience-review/·/now-playing/·/upcoming-release/·/ending-explained/·/price/*·/discount/*·/imax/[영화명]/), 17개 자동 검증 체크리스트, Supabase works/work_posts 스키마, 중복 콘텐츠 80% 유사도 거절, 제목 한국어 우선 변환 규칙, H2 13패턴·Intro 5패턴 카탈로그, Day 1~10 단계 진행 추적 표 포함. CLAUDE.md 최상단·CLAUDE-AUTO.md 최상단·auto-post.sh Claude Code 호출 프롬프트에 마스터 참조 박아 자동 포스팅 봇이 이 문서를 인지하도록 강제. Day 2-8(TMDB·KOFIC API 연동)은 직전 세션 fetch_official_images.py로 ✅ 완료, 나머지 17단계는 사용자 합의 하에 단계별 진행. 기존 805편 URL·slug 절대 보호 원칙 문서 전체에 명시.",
+          "[rules]: 자동 포스팅·MD 전체에 fetch_official_images.py 표준 박음 + crawl_movie_images.py deprecated 잠금 // 질문 의도: 자동 포스팅 파이프라인을 포함해 모든 MD 규칙을 이번에 정한 공식 API 기반 이미지 수급으로 통일 — CLAUDE.md §8(권장수량/금지/alt-caption 전면 재작성), CLAUDE-AUTO.md 「이미지」절, SKILL.md §5(본문 이미지)·§7(체크리스트)·§워크플로 5단계, RULE.md §5(이미지 소스/추천·비교 글/금지/alt-caption), POST_TEMPLATE.md §이미지규칙+삽입예시 모두 TMDB→KMDB→배우 fallback 3단계 명령어로 교체. auto-post.sh의 Claude Code 호출 프롬프트(STEP 4)에 「이미지 수급 CRITICAL」절 추가 — 자동 포스팅 봇이 작품마다 fetch_official_images.py를 반드시 호출하도록 명시, TMDB·KMDB·배우 fallback 모두 실패 시 해당 작품 글에서 제외 지시, caption ⓒ 넷플릭스/디즈니+/쿠팡플레이/티빙/배급사/TMDB 표기 강제. scripts/crawl_movie_images.py 첫 줄에 deprecated 경고 + 즉시 종료 가드 추가(원본 로직은 보존하되 호출 불가) → 자동화·수동 실수 모두 차단. ~/.claude/CLAUDE.md §4-1과 Project/CLAUDE.md §5-2에도 영화 도메인 표준 박아 신규 사이트 오픈 시 동일 정책 자동 승계."
+        ],
+        "commitNarrative": "이미지 크롤러에 KMDB·KOFIC 통합 기능을 개발했습니다. 제목 영어 제거 + post800 이미지 복구 + RULE·자동화 규칙 업데이트 문제를 수정했습니다. 콘텐츠 6편을 발행했습니다. 'export' 정적 전환 + post669 이미지 재크롤링, 1편 자동 생성 등 8건의 작업을 추가로 진행했습니다. 자동 포스팅 2건이 생성됐습니다.",
+        "publishedPosts": [
+          {
+            "title": "5월 둘째 주 한국 OTT·극장 화제작 TOP 7 — 멋진 신세계부터 모탈 컴뱃 2까지",
+            "url": "https://movie.ambitstock.com/korea-hot-pick-top7-may-week2-2026-netflix-disney-box-office/"
+          },
+          {
+            "title": "미션 임파서블 시청 순서 — 8편 정주행 가이드, 파이널 레코닝 5월 23일 D-9 입문 코스",
+            "url": "https://movie.ambitstock.com/mission-impossible-watch-order-8-films-guide-final-reckoning-2026/"
+          },
+          {
+            "title": "원더풀스 관람평 — 박은빈·차은우 D-1, 17.5% 우영우 신화·130억 탈세 변수",
+            "url": "https://movie.ambitstock.com/wonderfuls-review-park-eunbin-cha-eunwoo-netflix-may15-d1-2026/"
+          },
+          {
+            "title": "미션 임파서블 파이널 레코닝 vs 군체 — 5월 한국 박스오피스 빅매치 비교",
+            "url": "https://movie.ambitstock.com/mission-impossible-vs-gunche-cannes-may2026-korea-boxoffice-comparison/"
+          },
+          {
+            "title": "성난사람들 시즌1 vs 시즌2 비교 — 5가지 기준으로 본 어느 쪽이 더 잘 만들었나",
+            "url": "https://movie.ambitstock.com/beef-season1-vs-season2-compare-five-criteria-rating-cast-2026/"
+          },
+          {
+            "title": "모탈 컴뱃 2 관람평 — 칼 어번 쟈니 케이지 합류와 IMAX 화면비 변화, 청불 격투의 완성도",
+            "url": "https://movie.ambitstock.com/mortal-kombat-2-review-karl-urban-johnny-cage-imax-korea-may2026/"
+          },
+          {
+            "title": "악마는 프라다를 입는다 2 관람평 — 메릴 스트립·앤 해서웨이 20년 만의 재회, 한국 1위 흥행",
+            "url": "https://movie.ambitstock.com/devil-wears-prada-2-review-meryl-streep-anne-hathaway-korea-may2026/"
+          }
+        ]
+      },
+      {
+        "siteId": "car",
+        "commitCount": 17,
+        "manualCount": 11,
+        "autoCount": 6,
+        "featCount": 5,
+        "contentCount": 4,
+        "fixCount": 1,
+        "focus": "mixed",
+        "manualCommits": [
+          "[fix]: 인사이트 PV 1000 고정 버그 — Supabase 페이지네이션 한도 수정",
+          "[ui]: 토픽 페이지 2열 카드 그리드 + 썸네일 (클릭률 개선)",
+          "[feat]: Phase 5 — 차종 페이지 공통 SEO 콘텐츠 블록 적용 (180대 일괄)",
+          "[feat]: Phase 4 — 11개 도구 페이지 SEO 콘텐츠 강화",
+          "[content]: Phase 3 — 자동차보험 supporting 5개 신규 (713~717)",
+          "[feat]: Phase 6 — 자동화 품질 게이트 (키워드 사전 + 점수 검증 시스템)",
+          "[feat]: Phase 1+2 — 규칙 인프라 통합 (14개 체크리스트·H2 13패턴·Intro 5패턴) + 스키마 보강",
+          "[content]: 정규 A급 포스팅 712 — 자동차 배터리 완전 Q&A 2026",
+          "[content]: 정규 A급 포스팅 710 — 국산 경차 5년 총소유비용 완전 계산 2026",
+          "[feat]: 이승환 저자 시스템 구축 — Person 스키마, 저자 카드, /author/lee-seunghwan/ 페이지",
+          "[content]: 정규 A급 포스팅 708 — 자동차보험 갱신 체크리스트 2026"
+        ],
+        "autoCommits": [
+          "[auto]: regular 자동 포스팅 — 2026-05-14 20:10",
+          "[auto]: regular 자동 포스팅 — 2026-05-14 14:39",
+          "[auto]: trend 자동 포스팅 — 2026-05-14 12:06",
+          "[auto]: regular 자동 포스팅 — 2026-05-14 12:06",
+          "[auto]: regular 자동 포스팅 — 2026-05-14 09:37",
+          "[auto]: trend 자동 포스팅 — 2026-05-14 07:04"
+        ],
+        "commitNarrative": "Phase 5, Phase 4 등 5건의 기능을 개발했습니다. 인사이트 PV 1000 고정 버그 문제를 수정했습니다. 콘텐츠 4편을 발행했습니다. 토픽 페이지 2열 카드 그리드 + 썸네일 (클릭률 개선) 작업을 진행했습니다. 자동 포스팅 6건이 생성됐습니다.",
+        "publishedPosts": [
+          {
+            "title": "다이렉트 vs 설계사 자동차보험 깊이 비교 2026 — 8~15% 차이의 진짜 원인",
+            "url": "https://car.ambitstock.com/direct-vs-agent-car-insurance-2026/"
+          },
+          {
+            "title": "DB·삼성·현대해상·KB·메리츠 5사 자동차보험 종합 비교 2026 — 14% 격차의 정체",
+            "url": "https://car.ambitstock.com/5-insurance-companies-compare-2026/"
+          },
+          {
+            "title": "마일리지·블랙박스·자녀할인 3대 특약 깊이 분석 2026 — 평균 22% 절감과 함정 정리",
+            "url": "https://car.ambitstock.com/car-insurance-3-riders-deep-analysis-2026/"
+          },
+          {
+            "title": "자동차 사고 발생부터 보상 완료까지 단계별 흐름 2026 — 평균 21일 처리 과정 완전 정리",
+            "url": "https://car.ambitstock.com/car-accident-to-payout-flow-2026/"
+          },
+          {
+            "title": "자기부담금 선택 기준 2026 — 20·30·50만원 보험료 차이와 손익 분기점 계산",
+            "url": "https://car.ambitstock.com/car-deductible-selection-guide-2026/"
+          },
+          {
+            "title": "자동차 배터리 완전 Q&A 2026 — 방전 대처·점프 스타트·교체 비용·예방법 6가지 질문에 답하다",
+            "url": "https://car.ambitstock.com/car-battery-qa-2026/"
+          },
+          {
+            "title": "카니발 vs 스타리아 vs 팰리세이드 7인승 비교 2026 — 가격·연비·공간·AWD 상황별 선택 분기",
+            "url": "https://car.ambitstock.com/carnival-starria-palisade-7seater-compare-2026/"
+          },
+          {
+            "title": "국산 경차 5년 총소유비용 완전 계산 2026 — 모닝·레이·캐스퍼 항목별 분해와 중형 세단 비교",
+            "url": "https://car.ambitstock.com/compact-car-5year-total-cost-2026/"
+          },
+          {
+            "title": "BMW X5 vs 벤츠 GLE vs 아우디 Q7 실구매가 비교 2026 — 프리미엄 SUV 3파전 완전 분석",
+            "url": "https://car.ambitstock.com/bmw-x5-vs-benz-gle-audi-q7-premium-suv-compare-2026/"
+          },
+          {
+            "title": "자동차보험 갱신 체크리스트 2026 — 만기 1개월 전·2주 전·당일 20가지 필수 확인",
+            "url": "https://car.ambitstock.com/car-insurance-renewal-checklist-2026/"
+          }
+        ]
+      },
+      {
+        "siteId": "policy",
+        "commitCount": 8,
+        "manualCount": 8,
+        "autoCount": 0,
+        "featCount": 0,
+        "contentCount": 5,
+        "fixCount": 0,
+        "focus": "content",
+        "manualCommits": [
+          "[style]: 포스트 이미지 일괄 업데이트 — img2·img3 추가 + thumb 재생성 (post33~183)",
+          "[content]: 생애최초 취득세 감면 완벽 가이드 포스팅 + 정책 페이지 CTA 버튼 + 자동화 opus 전환",
+          "[content]: 정규+D타입 포스팅 fallback commit — 2026-05-14 18시",
+          "[content]: 트렌드+BC타입 포스팅 fallback commit — 2026-05-14 12시",
+          "[content]: E타입 시리즈 fallback commit — 2026-05-14 09시",
+          "[content]: 복지·생활 시리즈 포스팅 1편 (2026-05-14) — 2026 생활 지원금 완전 정복 1편 — 기초생활수급·긴급복지·근로장려금 자격 총정리",
+          "[data]: 정책 fallback commit — 2026-05-14 07시",
+          "[data+content]: 정책 5개 + A타입 포스팅 (2026-05-14 07시) — 복지멤버십, 은둔·고립 청년 지원, 자립준비청년 자립지원, 재직자 직무능력 향상 훈련, 도시재생 청년임대주택 / 긴급복지지원 신청방법 2026 완벽 가이드"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "콘텐츠 5편을 발행했습니다. 포스트 이미지 일괄 업데이트, 정책 fallback commit 등 3건의 작업을 추가로 진행했습니다.",
+        "publishedPosts": [
+          {
+            "title": "2026 생활 지원금 완전 정복 1편 — 기초생활수급·긴급복지·근로장려금 자격 총정리",
+            "url": "https://policy.ambitstock.com/posts/living-support-series-1-eligibility-2026/"
+          },
+          {
+            "title": "긴급복지지원 신청방법 2026 완벽 가이드 — 자격·신청방법·금액 총정리",
+            "url": "https://policy.ambitstock.com/posts/emergency-welfare-support-2026-guide/"
+          }
+        ]
+      },
+      {
+        "siteId": "tech",
+        "commitCount": 7,
+        "manualCount": 7,
+        "autoCount": 0,
+        "featCount": 1,
+        "contentCount": 6,
+        "fixCount": 0,
+        "focus": "content",
+        "manualCommits": [
+          "[content]: 1인칭 어조 자연화 — 필자→제가/저는 (23회 교체)",
+          "[content]: 한국 개발자 가이드 7편 어조 정비 + 리뉴얼 규칙 코드화",
+          "[content]: Claude Code 시리즈 상위 5편 FAQ 섹션 소급 추가",
+          "[content]: 한국 개발자 가이드 5편 신규 발행 — Pillar 3 + Supporting 4편",
+          "[content]: Pillar 포스트 — 클로드 코드 한국 환경 가이드",
+          "[content]: Pillar 포스트 — 커서 vs 클로드 코드 한국 개발자 선택 가이드",
+          "[feat]: tech 사이트 본질 전환 Day 1 — About 리라이팅 + 발행 기준 강화"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "tech 사이트 본질 전환 Day 1 기능을 개발했습니다. 콘텐츠 6편을 발행했습니다.",
+        "publishedPosts": [
+          {
+            "title": "챗지피티 vs 클로드 — 한국어 작업 성능 비교",
+            "url": "https://tech.ambitstock.com/chatgpt-vs-claude-korean-developer-guide/"
+          },
+          {
+            "title": "1인 개발자가 클로드 코드로 50일에 12개 사이트 만든 흐름",
+            "url": "https://tech.ambitstock.com/1-developer-12-sites-50-days-claude-code/"
+          },
+          {
+            "title": "한국 1인 개발자 AI 도구 스택 2026 — 무엇을 결제하고 무엇을 무료로 쓸까",
+            "url": "https://tech.ambitstock.com/korean-developer-ai-tool-stack-2026/"
+          },
+          {
+            "title": "클로드 코드 무료 플랜 한계와 맥스 전환 타이밍 — 언제 결제해야 할까",
+            "url": "https://tech.ambitstock.com/claude-code-free-vs-max-plan-upgrade-timing/"
+          },
+          {
+            "title": "한국어 프롬프트 작성법 — 클로드·챗지피티에서 원하는 결과를 받는 방법",
+            "url": "https://tech.ambitstock.com/korean-prompt-writing-guide-claude-chatgpt/"
+          },
+          {
+            "title": "클로드 코드 한국 환경 가이드 — 결제·부가가치세·프록시·한국어 사용법",
+            "url": "https://tech.ambitstock.com/claude-code-korean-environment-guide/"
+          },
+          {
+            "title": "커서 vs 클로드 코드 — 한국 개발자 선택 가이드",
+            "url": "https://tech.ambitstock.com/cursor-vs-claude-code-korean-developer-guide/"
+          }
+        ]
+      },
+      {
+        "siteId": "card",
+        "commitCount": 5,
+        "manualCount": 5,
+        "autoCount": 0,
+        "featCount": 0,
+        "contentCount": 0,
+        "fixCount": 1,
+        "focus": "mixed",
+        "manualCommits": [
+          "신뢰 회복 — 확정정보아님 배너 긍정 프레이밍 + 카드사 홈 fallback",
+          "카드별 실혜택 수치 보강 — 검증 시드 인프라 + 신한 Mr.Life 첫 검증",
+          "/go 라우트 카드 단위 확장 + 후기 상세·썸네일 디테일 보강",
+          "후기 페이지 진정성 대수술 — 외부 사용자 후기 인용 제거, 에디터 리뷰로 전환",
+          "fix(reviews): Product 구조화 데이터에 aggregateRating 추가 (GSC 제품 스니펫 에러)"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "reviews): Product 구조화 데이터에 aggregateRating 추가 (GSC 제품 스니펫 에러) 문제를 수정했습니다. 신뢰 회복, 카드별 실혜택 수치 보강 등 4건의 작업을 추가로 진행했습니다."
+      },
+      {
+        "siteId": "finance",
+        "commitCount": 8,
+        "manualCount": 5,
+        "autoCount": 3,
+        "featCount": 3,
+        "contentCount": 2,
+        "fixCount": 0,
+        "focus": "feature_dev",
+        "manualCommits": [
+          "content: 클러스터 페이지 19개 심층 콘텐츠 강화 (3000자+) + PageTracker 추가",
+          "feat: 썸네일 시스템 + 메인 페이지 클러스터 + OG 이미지 연동",
+          "content: savings-rate-2026 클러스터 콘텐츠 보강",
+          "feat: save-post daily 엔티티 + build-prompt 5대 템플릿·운영자노트 패턴 추가",
+          "feat: 데일리 경제 허브 + 6대 클러스터 필러 페이지 + 자동화 인프라 구축"
+        ],
+        "autoCommits": [
+          "auto: evening 자동 포스팅 2026-05-14 (3편)",
+          "auto: noon 자동 포스팅 2026-05-14 (7편)",
+          "auto: morning 자동 포스팅 2026-05-14 (5편)"
+        ],
+        "commitNarrative": "썸네일 시스템 + 메인 페이지 클러스터 + OG 이미지 연동, save-post daily 엔티티 + build-prompt 5대 템플릿·운영자노트 패턴 추가, 데일리 경제 허브 + 6대 클러스터 필러 페이지 + 자동화 인프라 구축 기능을 개발했습니다. 콘텐츠 2편을 발행했습니다. 자동 포스팅 3건이 생성됐습니다."
+      },
+      {
+        "siteId": "property",
+        "commitCount": 4,
+        "manualCount": 4,
+        "autoCount": 0,
+        "featCount": 0,
+        "contentCount": 0,
+        "fixCount": 1,
+        "focus": "mixed",
+        "manualCommits": [
+          "auto: 저녁 허브 데이터 갱신 + 포스팅 2026-05-14 — trends+3 topics+1",
+          "fix(map): circleMarker 전환 + 로딩 placeholder race 해결 / feat: 남한산성·복정역 도착지 추가",
+          "auto: 아침 업데이트 2026-05-14",
+          "auto: 낮 정규 포스팅 2026-05-14 — trends+6 topics+1"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "map): circleMarker 전환 + 로딩 placeholder race 해결 / feat: 남한산성·복정역 도착지 추가 문제를 수정했습니다. 저녁 허브 데이터 갱신 + 포스팅 2026-05-14, 아침 업데이트 2026-05-14 등 3건의 작업을 추가로 진행했습니다.",
+        "publishedPosts": [
+          {
+            "title": "2026년 청약통장 활용 전략 — 납입 횟수·금액·전환 시점 핵심 정리",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-hub-1-cheongyak-account-strategy/"
+          },
+          {
+            "title": "한국부동산원 주간 아파트 동향 해석 가이드 — 변동률·상승전환 권역 핵심 정리",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-hub-2-reb-weekly-apartment-trend/"
+          },
+          {
+            "title": "2026년 주택담보대출 LTV·DTI·DSR 핵심 정리 — 한도 계산과 규제 변화 가이드",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-hub-3-ltv-dsr-mortgage-guide/"
+          },
+          {
+            "title": "역모기지 확대와 시니어 주거안정 — 2026년 5월 주택연금 가입자 12만 돌파 의미",
+            "url": "https://property.ambitstock.com/trends/2026-05-13-trend-1-reverse-mortgage-expansion/"
+          },
+          {
+            "title": "2026년 하반기 주택공급 로드맵 발표 — 수도권 27만 가구 윤곽과 입지별 온도차",
+            "url": "https://property.ambitstock.com/trends/2026-05-13-trend-2-housing-supply-roadmap/"
+          },
+          {
+            "title": "프롭테크 AI 시세지도 서비스 본격화 — 2026년 5월 주요 플랫폼 정확도·기능 비교",
+            "url": "https://property.ambitstock.com/trends/2026-05-13-trend-3-proptech-aimap-services/"
+          },
+          {
+            "title": "부동산 상속세 완전 가이드 — 공제 한도·세율·절세 전략 총정리",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-regular-1-real-estate-inheritance-tax/"
+          },
+          {
+            "title": "주택담보대출 갈아타기 완전 가이드 — 대환대출 한도·금리·중도상환수수료 총정리",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-regular-2-mortgage-refinancing-guide/"
+          },
+          {
+            "title": "분양가상한제 완전 가이드 — 적용 지역·실거주 의무·전매제한 총정리",
+            "url": "https://property.ambitstock.com/trends/2026-05-14-regular-3-price-ceiling-housing-guide/"
+          }
+        ]
+      },
+      {
+        "siteId": "health",
+        "commitCount": 2,
+        "manualCount": 2,
+        "autoCount": 0,
+        "featCount": 1,
+        "contentCount": 0,
+        "fixCount": 1,
+        "focus": "feature_dev",
+        "manualCommits": [
+          "fix: 모바일 개요 overflow + finance 도메인 표기 정정",
+          "feat: searchAnalytics 모바일 레이아웃 대응"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "searchAnalytics 모바일 레이아웃 대응 기능을 개발했습니다. 모바일 개요 overflow + finance 도메인 표기 정정 문제를 수정했습니다."
+      },
+      {
+        "siteId": "insurance",
+        "commitCount": 2,
+        "manualCount": 2,
+        "autoCount": 0,
+        "featCount": 1,
+        "contentCount": 1,
+        "fixCount": 0,
+        "focus": "feature_dev",
+        "manualCommits": [
+          "[content]: Phase 2 — 카테고리 4개 + 경험 기반 가이드 2개 + ExperienceBox 컴포넌트",
+          "[feat]: E-E-A-T 강화 — 저자 프로필·byline·About 재작성"
+        ],
+        "autoCommits": [],
+        "commitNarrative": "E-E-A-T 강화 기능을 개발했습니다. Phase 2 콘텐츠를 발행했습니다."
+      },
+      {
+        "siteId": "sports",
+        "commitCount": 3,
+        "manualCount": 1,
+        "autoCount": 2,
+        "featCount": 1,
+        "contentCount": 2,
+        "fixCount": 0,
+        "focus": "feature_dev",
+        "manualCommits": [
+          "[feat][monetization]: 등산 준비물 포스트 CTA + 카테고리 대표 링크 시스템"
+        ],
+        "autoCommits": [
+          "content: 트렌드 자동 포스팅 2개 2026-05-14",
+          "content: 트렌드 자동 포스팅 2개 (골프 웨지, 등산 레인자켓)"
+        ],
+        "commitNarrative": "[feat][monetization]: 등산 준비물 포스트 CTA + 카테고리 대표 링크 시스템 기능을 개발했습니다. 자동 포스팅 2건이 생성됐습니다.",
+        "publishedPosts": [
+          {
+            "title": "겨울 골프 방한 장갑·의류 완벽 가이드 — 기능성 보온 용품 TOP5 비교",
+            "url": "https://sports.ambitstock.com/golf-winter-cold-gear-guide-2026/"
+          },
+          {
+            "title": "골프 웨지 선택의 핵심 — 로프트·바운스·그라인드 완벽 비교와 3본 세팅 가이드",
+            "url": "https://sports.ambitstock.com/golf-wedge-loft-bounce-guide/"
+          },
+          {
+            "title": "등산용 레인자켓 완벽 선택 가이드 — 방수·투습·무게 3가지 요소와 모델별 비교",
+            "url": "https://sports.ambitstock.com/hiking-rain-jacket-waterproof-top5/"
+          }
+        ]
+      }
+    ],
+    "networkNarrative": "오늘은 11개 사이트가 활동했습니다. finance·health·insurance·sports 사이트에서 기능 개발이 진행됐습니다. travel·movie·car·policy·tech·card·property 사이트에서 콘텐츠 발행이 이뤄졌습니다.\n\n총 95건의 수동 커밋으로 집중 개발일이었습니다. travel에 가장 많은 작업(36%)이 집중됐습니다."
+  }
+}
