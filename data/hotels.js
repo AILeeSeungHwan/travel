@@ -425,6 +425,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H017',
+    slug: 'capella-singapore',
+    countrySlug: 'sg',
+    regionSlug: 'singapore',
+    hotelName: '카펠라 싱가포르',
+    hotelNameEn: 'Capella Singapore',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.9,
+    priceRange: 'SGD 600~2,000/박',
+    amenities: ["야외수영장","스파","다이닝","풀빌라","역사적 건물"],
+    address: '1 The Knolls, Sentosa Island, Singapore 098297',
+    lat: 1.251,
+    lng: 103.832,
+    iso2: 'SG',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["카펠라","싱가포르","센토사","5성"],
+    publishedAt: '2026-05-14',
+    updatedAt: '2026-05-14',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
