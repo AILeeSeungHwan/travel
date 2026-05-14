@@ -453,6 +453,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_024',
+    slug: 'peninsula-hong-kong',
+    countrySlug: 'hk',
+    regionSlug: 'hongkong',
+    hotelName: '더 페닌슐라 홍콩',
+    hotelNameEn: 'The Peninsula Hong Kong',
+    hotelClass: '5성',
+    hotelType: '럭셔리 헤리티지',
+    starRating: 5,
+    guestRating: 4.8,
+    priceRange: '60~200만 원/박',
+    amenities: ["수영장","스파","헬리패드","파인다이닝","빅토리아하버뷰"],
+    address: 'Salisbury Rd, Tsim Sha Tsui, Kowloon, Hong Kong',
+    lat: 22.2952,
+    lng: 114.1722,
+    iso2: 'HK',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["페닌슐라","홍콩","하버뷰","전설"],
+    publishedAt: '2026-05-14',
+    updatedAt: '2026-05-14',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

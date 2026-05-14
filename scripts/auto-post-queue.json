@@ -4555,8 +4555,8 @@
           "전설"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "done",
+      "generatedAt": "2026-05-14T09:04:53.092Z"
     },
     {
       "id": "h_new_025",
@@ -4606,8 +4606,10 @@
           "5성"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-14T09:29:25.636Z"
     },
     {
       "id": "h_new_026",
@@ -4657,8 +4659,10 @@
           "하와이"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-14T09:46:34.735Z"
     },
     {
       "id": "h_new_027",
