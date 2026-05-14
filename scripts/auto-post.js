@@ -477,35 +477,83 @@ ${(images.gallery || []).map((g, i) => `  ${i+1}. url="${g.url}" caption="${g.ca
   return { content, mainImageUrl: images?.main || null }
 }
 
+// ─── 트렌드 포스트 meta 파싱 ──────────────────────────────────
+function parseTrendMeta(content, fallbackIndex) {
+  // module.exports = { meta: {...}, sections: [...] } 형식에서 meta 추출
+  const fallbackSlug = `travel-trend-${TODAY.replace(/-/g, '').slice(0, 8)}-${fallbackIndex + 1}`
+  const fallbackTitle = `여행 트렌드 ${fallbackIndex + 1} (${TODAY})`
+  try {
+    const mod = { exports: {} }
+    // eslint-disable-next-line no-new-func
+    const fn = new Function('module', 'exports', content)
+    fn(mod, mod.exports)
+    const m = mod.exports?.meta || mod.exports?.default?.meta
+    if (m?.slug && m?.title) {
+      // slug: 영문·숫자·하이픈만, 소문자, 최대 60자
+      const slug = m.slug.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || fallbackSlug
+      return { slug, title: m.title, description: m.description || '' }
+    }
+  } catch (_) {}
+  return { slug: fallbackSlug, title: fallbackTitle, description: '' }
+}
+
+// ─── 슬러그 중복 체크 ─────────────────────────────────────────
+function ensureUniqueSlug(baseSlug, existingSlugs) {
+  if (!existingSlugs.has(baseSlug)) return baseSlug
+  // 중복이면 날짜 접미사 추가
+  const suffix = TODAY.slice(5).replace('-', '')  // MMDD
+  const candidate = `${baseSlug}-${suffix}`
+  if (!existingSlugs.has(candidate)) return candidate
+  return `${candidate}-${Date.now().toString(36)}`
+}
+
 // ─── 트렌드 포스트 생성 (WebSearch) ───────────────────────────
 async function generateTrendPost(index) {
   const topicPrompts = [
-    '지금 한국에서 가장 인기 있는 해외여행 프로모션이나 항공·호텔 특가 이벤트를 검색하라. 결과를 바탕으로 여행자들이 실제 활용할 수 있는 정보를 담은 포스팅 1개를 작성하라.',
-    '지금 트렌딩 중인 한국발 인기 해외여행지 또는 여행 트렌드(해외 호텔 오픈, 항공 신규노선, 여행 특집 이벤트 등)를 검색하라. 그것에 대한 여행 정보 포스팅 1개를 작성하라.',
+    '지금 한국에서 가장 인기 있는 해외여행 목적지나 항공·호텔 특가 이벤트를 WebSearch로 검색하라.',
+    '지금 트렌딩 중인 한국발 인기 해외여행지 또는 여행 트렌드(신규 항공노선, 여행 프로모션, 뜨는 여행지)를 WebSearch로 검색하라.',
   ]
 
-  const searchQuery = `아래 주제로 최신 정보를 WebSearch로 먼저 검색한 후, 검색 결과를 바탕으로 포스팅을 작성하라.
+  const existingSlugs = new Set(
+    (() => { try { return require('../data/guides').map(g => g?.slug).filter(Boolean) } catch (_) { return [] } })()
+  )
 
-검색 주제: ${topicPrompts[index % 2]}
+  const searchQuery = `${topicPrompts[index % 2]}
 
-포스팅 작성 조건:
-- Entity: guide
-- 슬러그: trend-${TODAY.replace(/-/g, '')}-${index + 1}
-- 오늘 날짜 기준 실제 이벤트/프로모션 정보 포함
-- intro 섹션에 핵심 정보 요약
-- 최소 6개 H2 섹션
-- 실제 여행사/항공사 이름은 사용 가능 (특정 가격 단정 금지, "약" 사용)
-- accessedAt: ${TODAY}
+검색 결과를 바탕으로 여행 정보 포스팅 1개를 작성하라.
 
-WebSearch 검색 후 반드시 module.exports = { sections: [...] } 형식으로만 출력하라.`
+★ 출력 형식 (정확히 이 형식, 다른 텍스트 없음):
+module.exports = {
+  meta: {
+    slug: 'SEO-영문-slug-예시-uzbekistan-travel-guide',
+    title: '한국어 SEO 제목 — 검색된 실제 주제로',
+    description: '150자 이내 한국어 요약'
+  },
+  sections: [...]
+}
+
+★ slug 규칙:
+- 검색된 핵심 주제(국가명·도시명·항공사·트렌드키워드) 기반
+- 영문 소문자 + 하이픈만 사용 (날짜·trend-숫자 형식 절대 금지)
+- 예: uzbekistan-travel-2026, japan-low-cost-airline-guide, bali-honeymoon-resort
+
+★ 포스팅 조건:
+- 최소 8개 H2, 4000자 이상 한국어 본문
+- 실제 검색된 정보 기반 (단정 표현·가격 확정 금지, "약" 사용)
+- sources 섹션에 접근 날짜 ${TODAY} 명시`
+
+  const content = runClaude(searchQuery, { useWebSearch: true })
+  const { slug: rawSlug, title, description } = parseTrendMeta(content, index)
+  const slug = ensureUniqueSlug(rawSlug, existingSlugs)
 
   return {
-    slug: `trend-${TODAY.replace(/-/g, '')}-${index + 1}`,
+    slug,
     entity: 'guide',
-    content: runClaude(searchQuery, { useWebSearch: true }),
+    content,
     meta: {
-      slug: `trend-${TODAY.replace(/-/g, '')}-${index + 1}`,
-      title: `오늘의 여행 트렌드 ${index + 1} (${TODAY})`,
+      slug,
+      title,
+      description,
       category: 'guide',
       publishedAt: TODAY,
       updatedAt: TODAY,
@@ -552,8 +600,9 @@ async function runMorning() {
       validatePost(content, slug)
       savePost(entity, slug, content)
       appendToDataFile(entity, meta)
+      await generatePostThumbnail({ slug, entity, title: meta.title }, null)
       generated.push(slug)
-      log(`  ✅ 트렌드 완료: ${slug}`)
+      log(`  ✅ 트렌드 완료: ${slug} / "${meta.title}"`)
       await new Promise(r => setTimeout(r, 2000))
     } catch (e) {
       log(`  ❌ 트렌드 오류 ${i + 1}: ${e.message}`)

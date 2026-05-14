@@ -50,7 +50,7 @@ export function ListCard({ post }) {
           color:meta.color, background:meta.bg, flexShrink:0
         }}>{meta.label}</span>
         <div style={{ flex:1, minWidth:0 }}>
-          <div style={{ fontSize:14, fontWeight:600, color:'#0F172A', marginBottom:4 }}>{post.title || post.name}</div>
+          <div style={{ fontSize:14, fontWeight:600, color:'#0F172A', marginBottom:4 }}>{post.title || post.name || post.hotelName || post.spotName || post.regionName || post.countryName}</div>
           <div style={{ fontSize:12, color:'#64748b', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
             {post.description || post.summary}
           </div>

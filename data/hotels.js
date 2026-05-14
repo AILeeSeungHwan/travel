@@ -338,9 +338,9 @@ const hotels = [
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '리츠칼튼 오사카 호텔 완벽 가이드 — 일본 5성 럭셔리의 정점',
+    description: '오사카 우메다에 위치한 리츠칼튼 오사카의 객실, 다이닝, 스파 시설과 공항 이동 방법, 주변 관광지를 정리합니다.',
+    summary: '오사카 5성 럭셔리 — 우메다 중심가 위치, 스파·다이닝 완비.'
   },
   {
     id: 'H_NEW_021',
@@ -366,9 +366,9 @@ const hotels = [
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '포시즌스 리조트 발리 앳 사얀 완벽 가이드 — 우붓 정글 속 5성 풀빌라',
+    description: '발리 우붓 아융강 계곡에 위치한 포시즌스 사얀의 빌라 타입, 인피니티풀, 스파, 공항 셔틀 정보를 담았습니다.',
+    summary: '우붓 정글 속 인피니티풀·빌라 — 포시즌스 사얀 완벽 정리.'
   },
   {
     id: 'H_NEW_022',
@@ -394,9 +394,9 @@ const hotels = [
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '마리나 베이 샌즈 완벽 가이드 — 싱가포르 랜드마크 5성 리조트',
+    description: '싱가포르 마리나 베이 샌즈의 루프탑 인피니티풀, 카지노, 쇼핑몰, 공항 이동 방법과 예약 팁을 한 번에 정리합니다.',
+    summary: '싱가포르 루프탑 인피니티풀의 상징 — 마리나 베이 샌즈 총정리.'
   },
   {
     id: 'H_NEW_023',
@@ -422,9 +422,9 @@ const hotels = [
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '풀러턴 호텔 싱가포르 완벽 가이드 — 클래식 5성의 재발견',
+    description: '1928년 건립된 싱가포르 마리나 베이 앞 풀러턴 호텔의 헤리티지 객실, 다이닝, 위치 접근성을 정리합니다.',
+    summary: '싱가포르 헤리티지 5성 — 마리나 베이 전망 클래식 럭셔리.'
   },
   {
     id: 'H017',
@@ -450,9 +450,9 @@ const hotels = [
     publishedAt: '2026-05-14',
     updatedAt: '2026-05-14',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '카펠라 싱가포르 완벽 가이드 — 센토사 섬 5성 리조트의 모든 것',
+    description: '센토사 섬에 위치한 카펠라 싱가포르의 풀빌라, 스파, 다이닝, 시내 이동 방법과 최저가 예약 팁을 담았습니다.',
+    summary: '센토사 섬 프라이빗 빌라 리조트 — 카펠라 싱가포르 총정리.'
   },
   {
     id: 'H_NEW_024',
@@ -478,9 +478,9 @@ const hotels = [
     publishedAt: '2026-05-14',
     updatedAt: '2026-05-14',
     gallery: [],
-    title: '',
-    description: '',
-    summary: ''
+    title: '더 페닌슐라 홍콩 완벽 가이드 — 100년 역사 침사추이 5성 아이콘',
+    description: '홍콩 침사추이 빅토리아 항 전망의 더 페닌슐라 홍콩의 객실, 애프터눈 티, 헬기 이동, 예약 팁을 정리합니다.',
+    summary: '홍콩 100년 럭셔리의 상징 — 빅토리아 항 전망 페닌슐라.'
   }
 ]
 
