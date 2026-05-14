@@ -70,6 +70,16 @@ const situations = [
     publishedAt: '2026-05-12',
     updatedAt: '2026-05-12',
     ymylLevel: 'C'
+  },
+  {
+    id: 'SI012',
+    slug: 'group-travel',
+    title: '단체 여행 가이드',
+    description: '10인 이상 단체 여행 완전 가이드',
+    tags: ["단체여행","그룹","패키지"],
+    publishedAt: '2026-05-14',
+    updatedAt: '2026-05-14',
+    ymylLevel: 'C'
   }
 ]
 
