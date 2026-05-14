@@ -129,6 +129,19 @@ const regions = [
     tags: ["부산","해운대","광안리"],
     publishedAt: '2026-05-11',
     updatedAt: '2026-05-11'
+  },
+  {
+    id: 'R021',
+    slug: 'id-ubud',
+    countrySlug: 'id',
+    regionName: '발리 우붓',
+    regionNameEn: 'Ubud, Bali',
+    regionType: 'region',
+    lat: -8.507,
+    lng: 115.262,
+    tags: ["우붓","발리","라이스테라스"],
+    publishedAt: '2026-05-14',
+    updatedAt: '2026-05-14'
   }
 ]
 
