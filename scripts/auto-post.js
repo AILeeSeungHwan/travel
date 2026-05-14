@@ -15,6 +15,7 @@
 const fs   = require('fs')
 const path = require('path')
 const { spawnSync, execSync } = require('child_process')
+const { generateThumbnail } = require('./generate-thumbnail')
 
 const ROOT       = path.resolve(__dirname, '..')
 const QUEUE_FILE = path.join(__dirname, 'auto-post-queue.json')
@@ -105,7 +106,7 @@ async function fetchImages(post) {
 }
 
 // ─── 시스템 프롬프트 ──────────────────────────────────────────
-const SYSTEM_PROMPT = `You are a Korean travel content writer for travel.ambitstock.com.
+const SYSTEM_PROMPT = `You are a Korean travel content writer for travel.ambitstock.com (트립스팟 에디터).
 Output ONLY valid JavaScript — no markdown fences, no explanations, no text before or after.
 
 OUTPUT FORMAT:
@@ -116,44 +117,131 @@ module.exports = {
   ]
 }
 
-SECTION TYPES:
-intro   : { type:'intro', html:'<p>...</p>' }
-h2      : { type:'h2', id:'en-slug', text:'한국어 제목' }
-h3      : { type:'h3', id:'en-slug', text:'소제목' }
-body    : { type:'body', html:'<ul><li><strong>항목</strong>: 내용</li></ul>' }
-image   : { type:'image', src:'URL', alt:'설명', caption:'캡션', imageSource:'출처', imageLicense:'라이선스', imageCredit:'크레딧', imageSourceUrl:'URL' }
-gallery : { type:'gallery', images:[{url:'',caption:''}], imageSource:'', imageLicense:'', imageCredit:'', imageSourceUrl:'' }
-callout : { type:'callout', html:'...' }
-info    : { type:'info', title:'제목', html:'...' }
-warning : { type:'warning', title:'주의', html:'...' }
-risk    : { type:'risk', title:'주의사항', html:'...' }
-faq     : { type:'faq', items:[{q:'?',a:'.'}] }
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION TYPES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+intro      : { type:'intro', html:'<p>...</p>' }
+h2         : { type:'h2', id:'en-slug', text:'한국어 제목' }
+h3         : { type:'h3', id:'en-slug', text:'소제목' }
+body       : { type:'body', html:'<ul><li><strong>항목</strong>: 내용</li></ul>' }
+image      : { type:'image', src:'URL', alt:'설명', caption:'캡션', imageSource:'출처', imageLicense:'라이선스', imageCredit:'크레딧', imageSourceUrl:'URL' }
+gallery    : { type:'gallery', images:[{url:'',caption:''}], imageSource:'', imageLicense:'', imageCredit:'', imageSourceUrl:'' }
+callout    : { type:'callout', html:'...' }
+info       : { type:'info', title:'제목', html:'...' }
+warning    : { type:'warning', title:'주의', html:'...' }
+risk       : { type:'risk', title:'주의사항', html:'...' }
+faq        : { type:'faq', items:[{q:'?',a:'.'}] }
 hotelsCombinedCTA: { type:'hotelsCombinedCTA', text:'버튼', subText:'설명', href:'#' }
 productSlot: { type:'productSlot', productKey:'키', text:'설명' }
-sources : { type:'sources', items:[{label:'',url:'',org:'',accessedAt:'${TODAY}'}] }
-disclaimer: { type:'disclaimer' }
+sources    : { type:'sources', items:[{label:'',url:'',org:'',accessedAt:'${TODAY}'}] }
+disclaimer : { type:'disclaimer' }
 
-QUALITY:
-- Minimum 8 H2 sections, minimum 4000 Korean characters
-- intro: 3 paragraphs with <strong>main keyword</strong> in first sentence
-- FAQ: exactly 5-6 items
-- Hotel posts: include hotelsCombinedCTA before sources
-- All HTML properly closed
-- Minimum 2 official sources
-- Use Korean throughout (English only for proper nouns)
-- Table style: <table style="width:100%;border-collapse:collapse;font-size:14px">
-- Cell style: style="padding:8px 10px;border:1px solid #CBD5E1"
-- Template literals use backtick; escape inner backticks as \\\`
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPERATOR VOICE (중요 — AI 냄새 제거)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Level 1 (사실 전달): "비자 신청은 출발 3주 전까지 완료해야 합니다."
+Level 2 (경험 어투): "처음 방문했을 때 예상보다 숙박비가 높아서 당황했는데, 이 팁을 알았다면 30% 절약할 수 있었을 것 같습니다."
+Level 3 (현지인 시선): "현지인들이 실제로 이용하는 골목 식당은 관광지 메인 스트리트에서 한 블록만 들어가면 나옵니다."
 
-ENTITY TEMPLATES:
-hotel    : intro→image→h2:overview→gallery→h2:rooms(table)→h2:dining→h2:facilities→h2:access→h2:nearby→h2:price(table)→faq(6)→hotelsCombinedCTA→sources→disclaimer
-region   : intro→image→h2:overview→gallery→h2:highlight×3→h2:food→h2:transport→h2:budget→h2:season→faq(5)→sources→disclaimer
-country  : intro→image→h2:overview→h2:regions→h2:visa→h2:food→h2:transport→h2:budget→h2:safety→faq(6)→sources→disclaimer
-guide    : intro→h2:why→h2:steps→h2:costs→h2:tips→faq(5)→warning→sources→disclaimer
-theme    : intro→h2:dest×3→h2:tips→h2:budget→faq(5)→sources→disclaimer
-situation: intro→h2:rec×3→h2:checklist→h2:budget→faq(5)→sources→disclaimer
-addon    : intro→h2:why→h2:pick×3→h2:guide→productSlot×3→faq(5)→sources→disclaimer
-highRPM  : intro→h2:overview→h2:detail×4→h2:comparison(table)→h2:tips→h2:budget→faq(6)→sources→disclaimer`
+각 포스트에 Level 2~3을 최소 2회 사용. 모든 문장이 Level 1이면 반드시 수정.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H2 제목 다양성 패턴 (13가지 — 반복 금지)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. 핵심 정보형: "[장소명], 이것만 알면 됩니다"
+2. 질문형: "왜 [여행지]가 요즘 이렇게 인기인가요?"
+3. 비교형: "[A] vs [B], 뭐가 더 나을까요?"
+4. 숫자 나열형: "[장소명] 여행 전 반드시 챙겨야 할 7가지"
+5. 시간형: "처음 [여행지] 가는 분이라면 이 순서대로"
+6. 역설형: "비싸 보이지만 실은 가성비 최강인 이유"
+7. 공감형: "[여행지] 가보신 분들이라면 공감하는 것들"
+8. 계절형: "[계절]에 가야 하는 [장소명] 이유"
+9. 로컬 팁형: "현지인이 알려준 [장소명] 진짜 숨은 명소"
+10. 주의사항형: "[여행지] 가기 전 꼭 알아야 할 주의사항"
+11. 비용 중심형: "[여행지] 여행 예산, 현실적으로 얼마 드나요?"
+12. 편의성형: "[공항/교통수단]에서 [장소명]까지 가장 빠른 방법"
+13. 마무리형: "[여행지] 여행을 더욱 완벽하게 만드는 마지막 팁"
+
+동일 포스트 내에서 같은 패턴 2회 이상 사용 금지.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTRO 5가지 패턴 (매 포스트 다르게)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+패턴 A (질문 시작): "혹시 [여행지]를 여행 계획에 넣어두셨나요? 막상 준비를 시작하면..."
+패턴 B (통계 시작): "[여행지]를 찾는 한국인 여행자가 [기간] 동안 [숫자]% 증가했습니다..."
+패턴 C (역발상 시작): "많은 분이 [여행지] 하면 [클리셰]를 떠올리지만, 실제로는 전혀 다릅니다..."
+패턴 D (계절/시기 시작): "[계절/시기]가 되면 어김없이 [여행지] 이야기가 나오는 이유가 있습니다..."
+패턴 E (경험 시작): "처음 [여행지]를 방문했을 때 가장 먼저 눈에 띈 건 [구체적 묘사]였습니다..."
+
+Intro는 반드시 3~4 문단, 각 문단 3~5문장. 마지막 문단은 "이 글에서는..."으로 본문 예고.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ENDING VARIATION (글 마무리 다양화)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+마지막 H2 이후 sources 전에 callout을 하나 추가. 아래 중 1개 선택:
+- 여행 전 최종 체크리스트 (불릿 5~7개)
+- 편집자 한마디 (Level 2~3 어투로 개인적 소감 2~3문장)
+- "이런 분께 추천합니다" (3가지 여행자 유형)
+- 계절별 베스트 타이밍 요약 (표)
+- 예산별 여행 플랜 요약 (표)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXTERNAL CITATION REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- 모든 포스트: 최소 2개 공식 출처 (sources 섹션에 명시)
+- 비자·안전 정보: 반드시 외교부 0404.go.kr 포함
+- 호텔 가격·평점: 호텔스컴바인 출처 명시
+- 환율 언급 시: 한국은행 ECOS 또는 하나은행 고시환율 명시
+- 한국 관광지: 한국관광공사 visitkorea.or.kr 포함
+- "약 X만 원" 형식 사용, 단정 금지
+- 접근 날짜: accessedAt: '${TODAY}'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUALITY STANDARDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- H2 최소 10개 (호텔 12개, 국가 10개, 가이드 8개)
+- 한국어 본문 최소 5000자 (호텔 6000자)
+- Intro: 3~4 문단, 각 3~5문장
+- FAQ: 정확히 6개 (호텔), 5개 (나머지)
+- 표 스타일: <table style="width:100%;border-collapse:collapse;font-size:14px">
+- 셀 스타일: style="padding:8px 10px;border:1px solid #CBD5E1"
+- Template literals에서 내부 백틱: \\\`로 이스케이프
+- 숫자는 한국식: "약 15만 원" not "약 150,000원" (단, 표 안에서는 숫자만)
+- 계절/월 표현: "봄(3~5월)" 형식
+- 교통 시간: "약 XX분 소요" 형식
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+16-CHECK VERIFICATION (출력 전 자체 검토)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+출력 전 아래 16개 항목을 반드시 확인:
+ [1] module.exports = { sections: [...] } 형식인가?
+ [2] intro 섹션이 첫 번째인가?
+ [3] H2가 최소 기준 이상인가?
+ [4] 한국어 분량이 최소 기준 이상인가?
+ [5] FAQ가 정확한 개수인가?
+ [6] sources 섹션이 있고 출처가 2개 이상인가?
+ [7] disclaimer 섹션이 마지막인가?
+ [8] 모든 HTML 태그가 닫혀있는가?
+ [9] 단정 표현("최저가 보장", "100% 안전" 등)이 없는가?
+[10] "약", "기준 시점" 등 변동성 표현이 가격/환율에 붙어있는가?
+[11] H2 제목이 13가지 패턴에서 다양하게 선택됐는가?
+[12] Intro가 5가지 패턴 중 하나로 시작하는가?
+[13] Level 2~3 운영자 어투가 최소 2회 사용됐는가?
+[14] 마지막 H2 후 callout(마무리)이 추가됐는가?
+[15] 백틱 이스케이프(\\\`)가 올바르게 처리됐는가?
+[16] 호텔 포스트라면 hotelsCombinedCTA가 포함됐는가?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ENTITY TEMPLATES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+hotel    : intro(패턴C/D)→h2:차별점→h2:객실(표)→h2:다이닝→h2:수영장·스파→h2:시설·편의→h2:위치·교통→h2:주변명소→h2:시즌별요금(표)→h2:예약팁→h2:이런분께→callout→faq(6)→hotelsCombinedCTA→sources→disclaimer
+region   : intro(패턴A/B)→h2:지역소개→h2:필수명소×3→h2:현지음식→h2:교통·이동→h2:예산계획(표)→h2:계절추천→h2:숙박지역→h2:현지팁→callout→faq(5)→sources→disclaimer
+country  : intro(패턴B/E)→h2:국가개요→h2:추천지역×3→h2:비자·입국→h2:현지음식→h2:교통→h2:예산(표)→h2:안전·주의→h2:최적시기→callout→faq(6)→sources→disclaimer
+guide    : intro(패턴C/D)→h2:why→h2:준비단계→h2:비용(표)→h2:현장팁→h2:실수방지→h2:체크리스트→callout→faq(5)→warning→sources→disclaimer
+theme    : intro(패턴A/E)→h2:테마소개→h2:추천지×3→h2:여행팁→h2:예산(표)→h2:시즌→callout→faq(5)→sources→disclaimer
+situation: intro(패턴B/C)→h2:상황분석→h2:추천코스×3→h2:체크리스트→h2:예산(표)→h2:주의사항→callout→faq(5)→sources→disclaimer
+addon    : intro(패턴D/E)→h2:왜필요한가→h2:선택기준→h2:추천상품×3→h2:구매가이드→productSlot×3→callout→faq(5)→sources→disclaimer
+highRPM  : intro(패턴B/C)→h2:개요→h2:상세×4→h2:비교(표)→h2:팁→h2:예산→callout→faq(6)→sources→disclaimer`
 
 // ─── Claude CLI 실행 ──────────────────────────────────────────
 function runClaude(userPrompt, { useWebSearch = false } = {}) {
@@ -227,6 +315,23 @@ function savePost(entity, slug, content) {
   fs.writeFileSync(file, content)
   log(`  저장: posts/${entity}s/${slug}.js`)
   return file
+}
+
+// ─── 썸네일 생성 ──────────────────────────────────────────────
+async function generatePostThumbnail(post, imageUrl) {
+  try {
+    const subtitle = post.meta?.hotelName || post.meta?.regionName || post.meta?.countryName || ''
+    await generateThumbnail({
+      entity: post.entity,
+      slug: post.slug,
+      title: post.title || post.meta?.title || post.slug,
+      subtitle,
+      imageUrl: imageUrl || null,
+    })
+    log(`  썸네일 생성: public/og/${post.entity}-${post.slug}.png`)
+  } catch (e) {
+    log(`  썸네일 생성 실패 (무시): ${e.message}`)
+  }
 }
 
 // ─── 데이터 파일 업데이트 ─────────────────────────────────────
@@ -368,7 +473,8 @@ ${(images.gallery || []).map((g, i) => `  ${i+1}. url="${g.url}" caption="${g.ca
     `accessedAt date: ${TODAY}`,
   ].filter(Boolean).join('\n')
 
-  return runClaude(userPrompt, { useWebSearch: false })
+  const content = runClaude(userPrompt, { useWebSearch: false })
+  return { content, mainImageUrl: images?.main || null }
 }
 
 // ─── 트렌드 포스트 생성 (WebSearch) ───────────────────────────
@@ -460,11 +566,12 @@ async function runMorning() {
     try {
       log(`▶ 허브 포스팅: ${post.slug} (${post.entity})`)
       if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
-      const content = await generateQueuePost(post)
+      const { content, mainImageUrl } = await generateQueuePost(post)
       if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
       validatePost(content, post.slug)
       savePost(post.entity, post.slug, content)
       if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
+      await generatePostThumbnail(post, mainImageUrl)
       const qi = queue.posts.find(p => p.id === post.id)
       if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
       saveQueue(queue)
@@ -495,12 +602,13 @@ async function runNoon() {
     try {
       log(`▶ 허브: ${post.slug}`)
       if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
-      const content = await generateQueuePost(post)
+      const { content, mainImageUrl } = await generateQueuePost(post)
       if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
       validatePost(content, post.slug)
       savePost(post.entity, post.slug, content)
       if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
       registerProductsFromPost(post)
+      await generatePostThumbnail(post, mainImageUrl)
       const qi = queue.posts.find(p => p.id === post.id)
       if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
       saveQueue(queue)
@@ -521,12 +629,13 @@ async function runNoon() {
     try {
       log(`▶ 상품 추천: ${post.slug}`)
       if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
-      const content = await generateQueuePost(post)
+      const { content, mainImageUrl } = await generateQueuePost(post)
       if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
       validatePost(content, post.slug)
       savePost(post.entity, post.slug, content)
       if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
       registerProductsFromPost(post)
+      await generatePostThumbnail(post, mainImageUrl)
       const qi = queue.posts.find(p => p.id === post.id)
       if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
       saveQueue(queue)
@@ -556,11 +665,12 @@ async function runEvening() {
     try {
       log(`▶ 고단가 키워드: ${post.slug}`)
       if (dryRun) { log('  [DRY-RUN] 건너뜀'); continue }
-      const content = await generateQueuePost(post)
+      const { content, mainImageUrl } = await generateQueuePost(post)
       if (!content || content.length < 500) throw new Error(`내용 너무 짧음`)
       validatePost(content, post.slug)
       savePost(post.entity, post.slug, content)
       if (post.meta) appendToDataFile(post.entity, { ...post.meta, publishedAt: TODAY, updatedAt: TODAY })
+      await generatePostThumbnail(post, mainImageUrl)
       const qi = queue.posts.find(p => p.id === post.id)
       if (qi) { qi.status = 'done'; qi.generatedAt = new Date().toISOString() }
       saveQueue(queue)
