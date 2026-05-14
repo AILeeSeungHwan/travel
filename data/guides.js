@@ -62,14 +62,6 @@ const guides = [
     ymylLevel: 'C', tags: ['푸꾸옥','베트남','2026','직항'],
     publishedAt: '2026-05-09', updatedAt: '2026-05-09' },
   {
-    id: 'G012', slug: 'trend-20260510-2', category: 'guide',
-    title: '푸꾸옥 2026 신규 항공 노선·리조트 총정리 — 최신 여행 정보',
-    description: '2026년 신규 개통된 푸꾸옥 직항 노선, 대형 리조트 최신 정보, OTA 특가 활용법을 정리합니다.',
-    summary: '2026 푸꾸옥 신규 항공 노선과 리조트 최신 정보.',
-    ymylLevel: 'C', tags: ['푸꾸옥','베트남','항공','리조트'],
-    publishedAt: '2026-05-10', updatedAt: '2026-05-10',
-  },
-  {
     id: 'G013', slug: 'trend-20260511-1', category: 'guide',
     title: '2026년 5월 해외여행 특가 총정리 — 항공·호텔 프로모션 한눈에',
     description: '2026년 5월 진행 중인 국적 항공사 5사 특가, 트립닷컴·야놀자·모두투어 OTA 쿠폰, 호텔 프로모션을 한 번에 정리합니다.',

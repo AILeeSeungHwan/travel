@@ -20,6 +20,12 @@ const nextConfig = {
   async rewrites() {
     return [{ source: '/:path*.md', destination: '/404/' }]
   },
+  async redirects() {
+    return [
+      // 중복 트렌드 포스트 통합 (301)
+      { source: '/guides/trend-20260510-2/', destination: '/guides/trend-20260509-2/', permanent: true },
+    ]
+  },
 }
 
 module.exports = nextConfig

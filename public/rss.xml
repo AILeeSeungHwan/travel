@@ -6,7 +6,7 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://travel.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 14 May 2026 13:47:32 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 14:30:13 GMT</lastBuildDate>
     <image>
       <url>https://travel.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
@@ -197,14 +197,6 @@
       <description><![CDATA[발리·다낭·푸껫·몰디브 풀빌라 TOP 10. 가격대별·시즌별 최적 풀빌라 추천.]]></description>
     </item>
     <item>
-      <title><![CDATA[푸꾸옥 2026 신규 항공 노선·리조트 총정리 — 최신 여행 정보]]></title>
-      <link>https://travel.ambitstock.com/guides/trend-20260510-2/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/guides/trend-20260510-2/</guid>
-      <pubDate>Sat, 09 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[가이드]]></category>
-      <description><![CDATA[2026년 신규 개통된 푸꾸옥 직항 노선, 대형 리조트 최신 정보, OTA 특가 활용법을 정리합니다.]]></description>
-    </item>
-    <item>
       <title><![CDATA[부산 해수욕장 호텔 비교 — 해운대·광안리·기장 가격대별 추천]]></title>
       <link>https://travel.ambitstock.com/compare/busan-beach-hotels/</link>
       <guid isPermaLink="true">https://travel.ambitstock.com/compare/busan-beach-hotels/</guid>
@@ -251,6 +243,14 @@
       <pubDate>Fri, 08 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[호텔]]></category>
       <description><![CDATA[광진구 아차산 한강변 리조트형 5성호텔 워커힐. 한강 파노라마, 아쿠아월드, 외국인 카지노, 아차산 트레킹 직결 가이드.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[파라다이스 호텔 부산 완전 가이드 — 해운대 5성 오션뷰]]></title>
+      <link>https://travel.ambitstock.com/hotels/paradise-busan/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/paradise-busan/</guid>
+      <pubDate>Fri, 08 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[해운대해수욕장 정면 5성호텔 파라다이스 부산. 전 객실 오션뷰, 루프탑 야외수영장, 외국인 카지노와 예약 꿀팁.]]></description>
     </item>
   </channel>
 </rss>
