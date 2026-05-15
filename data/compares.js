@@ -78,6 +78,15 @@ const compares = [
     tags: ["도쿄","오사카","일본","비교"],
     publishedAt: '2026-05-13',
     updatedAt: '2026-05-13'
+  },
+  {
+    id: 'C010',
+    slug: 'phuket-hotels',
+    title: '푸껫 해변별 호텔 비교',
+    description: '푸껫 해변별 5성 호텔 완전 비교',
+    tags: ["푸껫","호텔비교","태국"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15'
   }
 ]
 
