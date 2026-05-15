@@ -80,6 +80,16 @@ const situations = [
     publishedAt: '2026-05-14',
     updatedAt: '2026-05-14',
     ymylLevel: 'C'
+  },
+  {
+    id: 'SI013',
+    slug: 'europe-first',
+    title: '유럽 첫 여행 가이드',
+    description: '유럽 첫 여행을 위한 완전 가이드',
+    tags: ["유럽","첫여행","배낭여행"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    ymylLevel: 'C'
   }
 ]
 
