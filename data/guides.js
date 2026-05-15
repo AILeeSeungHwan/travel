@@ -102,6 +102,16 @@ const guides = [
     updatedAt: '2026-05-14',
     ymylLevel: 'B',
     id: ''
+  },
+  {
+    slug: 'china-visa-free-travel-2026',
+    title: '2026 중국 무비자 여행 — 한국인 입국 절차·추천 도시·예산 총정리',
+    description: '무비자 정책 확대로 한국인 방문객이 크게 늘어난 2026년 중국 여행. 입국 조건, 체류 기간, 추천 도시, 예산과 주의사항을 한 번에 정리했습니다.',
+    category: 'guide',
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 
