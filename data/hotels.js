@@ -481,6 +481,34 @@ const hotels = [
     title: '더 페닌슐라 홍콩 완벽 가이드 — 100년 역사 침사추이 5성 아이콘',
     description: '홍콩 침사추이 빅토리아 항 전망의 더 페닌슐라 홍콩의 객실, 애프터눈 티, 헬기 이동, 예약 팁을 정리합니다.',
     summary: '홍콩 100년 럭셔리의 상징 — 빅토리아 항 전망 페닌슐라.'
+  },
+  {
+    id: 'H_NEW_027',
+    slug: 'four-seasons-maui-wailea',
+    countrySlug: 'us',
+    regionSlug: 'honolulu',
+    hotelName: '포시즌스 리조트 마우이',
+    hotelNameEn: 'Four Seasons Resort Maui at Wailea',
+    hotelClass: '5성',
+    hotelType: '비치 리조트',
+    starRating: 5,
+    guestRating: 4.8,
+    priceRange: '80~300만 원/박',
+    amenities: ["비치","수영장","스파","스노클링","파인다이닝"],
+    address: '3900 Wailea Alanui Dr, Kihei, HI 96753, USA',
+    lat: 20.6879,
+    lng: -156.4411,
+    iso2: 'US',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["포시즌스","마우이","와일레아","하와이"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
