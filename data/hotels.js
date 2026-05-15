@@ -509,6 +509,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_028',
+    slug: 'hotel-eden-rome',
+    countrySlug: 'it',
+    regionSlug: 'rome',
+    hotelName: '호텔 에덴 로마',
+    hotelNameEn: 'Hotel Eden Rome',
+    hotelClass: '5성',
+    hotelType: '럭셔리',
+    starRating: 5,
+    guestRating: 4.7,
+    priceRange: '60~200만 원/박',
+    amenities: ["루프탑바","스파","피트니스","파인다이닝","시티뷰"],
+    address: 'Via Ludovisi 49, 00187 Roma, Italy',
+    lat: 41.9077,
+    lng: 12.4848,
+    iso2: 'IT',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["호텔에덴","로마","힐뷰","5성"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
