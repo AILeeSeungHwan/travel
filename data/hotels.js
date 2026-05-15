@@ -537,6 +537,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_029',
+    slug: 'le-bristol-paris',
+    countrySlug: 'fr',
+    regionSlug: 'paris',
+    hotelName: '르 브리스톨 파리',
+    hotelNameEn: 'Le Bristol Paris',
+    hotelClass: '5성',
+    hotelType: '팔라스',
+    starRating: 5,
+    guestRating: 4.8,
+    priceRange: '100~400만 원/박',
+    amenities: ["수영장","스파","미슐랭다이닝","피트니스","컨시어지"],
+    address: '112 Rue du Faubourg Saint-Honoré, 75008 Paris, France',
+    lat: 48.8734,
+    lng: 2.3128,
+    iso2: 'FR',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["르브리스톨","파리","팔라스","미슐랭"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

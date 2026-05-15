@@ -4,8 +4,48 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-14T23:25:52.500Z</updated>
+  <updated>2026-05-15T09:11:40.504Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/four-seasons-maui-wailea/" />
+    <id>https://travel.ambitstock.com/hotels/four-seasons-maui-wailea/</id>
+    <updated>2026-05-14T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/hotel-eden-rome/" />
+    <id>https://travel.ambitstock.com/hotels/hotel-eden-rome/</id>
+    <updated>2026-05-14T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/le-bristol-paris/" />
+    <id>https://travel.ambitstock.com/hotels/le-bristol-paris/</id>
+    <updated>2026-05-14T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[유럽 첫 여행 가이드]]></title>
+    <link href="https://travel.ambitstock.com/situations/europe-first/" />
+    <id>https://travel.ambitstock.com/situations/europe-first/</id>
+    <updated>2026-05-14T15:00:00.000Z</updated>
+    <category term="상황별" />
+    <summary><![CDATA[유럽 첫 여행을 위한 완전 가이드]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[푸껫 해변별 호텔 비교]]></title>
+    <link href="https://travel.ambitstock.com/compare/phuket-hotels/" />
+    <id>https://travel.ambitstock.com/compare/phuket-hotels/</id>
+    <updated>2026-05-14T15:00:00.000Z</updated>
+    <category term="비교" />
+    <summary><![CDATA[푸껫 해변별 5성 호텔 완전 비교]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[undefined]]></title>
     <link href="https://travel.ambitstock.com/countries/id/regions/id-ubud/" />
@@ -205,45 +245,5 @@
     <updated>2026-05-09T15:00:00.000Z</updated>
     <category term="테마" />
     <summary><![CDATA[발리·다낭·푸껫·몰디브 풀빌라 TOP 10. 가격대별·시즌별 최적 풀빌라 추천.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[부산 해수욕장 호텔 비교 — 해운대·광안리·기장 가격대별 추천]]></title>
-    <link href="https://travel.ambitstock.com/compare/busan-beach-hotels/" />
-    <id>https://travel.ambitstock.com/compare/busan-beach-hotels/</id>
-    <updated>2026-05-09T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[부산 해수욕장별 최고 호텔 비교. 해운대·광안리·기장 권역 4개 가격대 호텔 추천과 시즌별 예약 전략.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[신혼여행 준비물 체크리스트]]></title>
-    <link href="https://travel.ambitstock.com/addons/honeymoon-travel-pack/" />
-    <id>https://travel.ambitstock.com/addons/honeymoon-travel-pack/</id>
-    <updated>2026-05-09T15:00:00.000Z</updated>
-    <category term="여행용품" />
-    <summary><![CDATA[]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[해외 골프투어 장비 가이드]]></title>
-    <link href="https://travel.ambitstock.com/addons/golf-tour-gear-guide/" />
-    <id>https://travel.ambitstock.com/addons/golf-tour-gear-guide/</id>
-    <updated>2026-05-09T15:00:00.000Z</updated>
-    <category term="여행용품" />
-    <summary><![CDATA[]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[여행용 여권 지갑 추천]]></title>
-    <link href="https://travel.ambitstock.com/addons/travel-wallet/" />
-    <id>https://travel.ambitstock.com/addons/travel-wallet/</id>
-    <updated>2026-05-09T15:00:00.000Z</updated>
-    <category term="여행용품" />
-    <summary><![CDATA[여권 지갑 선택 가이드]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[JW 메리어트 서울 완전 가이드 — 강남 5성·스파·다이닝]]></title>
-    <link href="https://travel.ambitstock.com/hotels/jw-marriott-seoul/" />
-    <id>https://travel.ambitstock.com/hotels/jw-marriott-seoul/</id>
-    <updated>2026-05-08T15:00:00.000Z</updated>
-    <category term="호텔" />
-    <summary><![CDATA[강남 도곡역 직결 5성호텔 JW 메리어트 서울. 스파 바이 JW, 8개 다이닝, Marriott Bonvoy 혜택과 객실 타입·예약 꿀팁.]]></summary>
   </entry>
 </feed>
