@@ -3892,8 +3892,10 @@
           "5성"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-16T03:05:07.753Z"
     },
     {
       "id": "h_new_012",
