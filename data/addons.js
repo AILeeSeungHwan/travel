@@ -100,6 +100,15 @@ const addons = [
     tags: ["보조배터리","여행용품","비행기"],
     publishedAt: '2026-05-12',
     updatedAt: '2026-05-12'
+  },
+  {
+    id: 'AD011',
+    slug: 'best-luggage-2026',
+    title: '2026 여행용 캐리어 추천',
+    description: '기내용부터 대형까지 캐리어 완전 가이드',
+    tags: ["캐리어","여행용품","쿠팡"],
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16'
   }
 ]
 
