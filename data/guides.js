@@ -112,6 +112,16 @@ const guides = [
     updatedAt: '2026-05-15',
     ymylLevel: 'B',
     id: ''
+  },
+  {
+    slug: 'central-asia-uzbekistan-travel-2026',
+    title: '2026 중앙아시아 여행 완전정복 — 우즈베키스탄·카자흐스탄 가성비 럭셔리 가이드',
+    description: '숙박 검색량이 1년 새 225% 늘어난 중앙아시아. 무비자 입국, 낮은 물가, 실크로드 도시까지 — 2026년 우즈베키스탄·카자흐스탄을 중심으로 항공·예산·일정·안전을 현실적으로 정리했습니다.',
+    category: 'guide',
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 
