@@ -109,6 +109,15 @@ const addons = [
     tags: ["캐리어","여행용품","쿠팡"],
     publishedAt: '2026-05-16',
     updatedAt: '2026-05-16'
+  },
+  {
+    id: 'AD012',
+    slug: 'noise-canceling',
+    title: '노이즈캔슬링 헤드폰 추천',
+    description: '장거리 비행 필수 노이즈캔슬링 헤드폰',
+    tags: ["헤드폰","여행용품","비행"],
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16'
   }
 ]
 

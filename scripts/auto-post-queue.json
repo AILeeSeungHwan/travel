@@ -621,7 +621,8 @@
           "비행"
         ]
       },
-      "status": "pending"
+      "status": "done",
+      "generatedAt": "2026-05-16T09:09:33.116Z"
     },
     {
       "id": "a007",
