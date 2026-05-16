@@ -280,7 +280,9 @@
           "힐링"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_wellness-spa_1778922253831.js:1\nI don't have write permission for that path yet. Per the task spec, here is the complete validated module:\n  ^^^\n\nSyntaxError: Unexpected identifier 'don'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
+      "errorAt": "2026-05-16T09:04:13.911Z"
     },
     {
       "id": "c003",
