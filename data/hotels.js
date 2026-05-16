@@ -565,6 +565,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H013',
+    slug: 'park-hyatt-tokyo',
+    countrySlug: 'jp',
+    regionSlug: 'tokyo',
+    hotelName: '파크하얏트 도쿄',
+    hotelNameEn: 'Park Hyatt Tokyo',
+    hotelClass: '5성',
+    hotelType: '시티',
+    starRating: 5,
+    guestRating: 4.8,
+    priceRange: 'JPY 100,000~300,000/박 (약 90~270만 원)',
+    amenities: ["야외수영장","스파","피트니스","뉴욕 바","도시 파노라마"],
+    address: '3-7-1-2 Nishi-Shinjuku, Shinjuku, Tokyo 163-1055',
+    lat: 35.685,
+    lng: 139.69,
+    iso2: 'JP',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["파크하얏트","도쿄","신주쿠","5성"],
+    publishedAt: '2026-05-15',
+    updatedAt: '2026-05-15',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
