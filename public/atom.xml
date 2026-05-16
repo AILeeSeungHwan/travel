@@ -4,7 +4,7 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-16T01:20:23.541Z</updated>
+  <updated>2026-05-16T03:58:28.307Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
   <entry>
     <title><![CDATA[센소지(아사쿠사) — 도쿄 최고(古) 사찰 가미나리몬·나카미세 가이드]]></title>
@@ -192,6 +192,14 @@
   </entry>
   <entry>
     <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/park-hyatt-tokyo-guide/" />
+    <id>https://travel.ambitstock.com/hotels/park-hyatt-tokyo-guide/</id>
+    <updated>2026-05-15T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
     <link href="https://travel.ambitstock.com/hotels/four-seasons-maui-wailea/" />
     <id>https://travel.ambitstock.com/hotels/four-seasons-maui-wailea/</id>
     <updated>2026-05-14T15:00:00.000Z</updated>
@@ -237,13 +245,5 @@
     <updated>2026-05-14T15:00:00.000Z</updated>
     <category term="상황별" />
     <summary><![CDATA[유럽 첫 여행을 위한 완전 가이드]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[푸껫 해변별 호텔 비교]]></title>
-    <link href="https://travel.ambitstock.com/compare/phuket-hotels/" />
-    <id>https://travel.ambitstock.com/compare/phuket-hotels/</id>
-    <updated>2026-05-14T15:00:00.000Z</updated>
-    <category term="비교" />
-    <summary><![CDATA[푸껫 해변별 5성 호텔 완전 비교]]></summary>
   </entry>
 </feed>

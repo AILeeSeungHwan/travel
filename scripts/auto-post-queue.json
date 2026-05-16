@@ -67,10 +67,7 @@
       "imageSource": "unsplash",
       "imageQuery": "japan airport travel passport",
       "meta": null,
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-07T23:32:40.343Z"
+      "status": "pending"
     },
     {
       "id": "c001",
@@ -151,10 +148,7 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-08T03:05:09.655Z"
+      "status": "pending"
     },
     {
       "id": "b002",
@@ -181,10 +175,7 @@
           "비교"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-08T03:10:11.891Z"
+      "status": "pending"
     },
     {
       "id": "c002",
@@ -289,10 +280,7 @@
           "힐링"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_wellness-spa_1778231268195.js:127\n          a: '마사지 초보자에게는 스웨디시 마사지를 권장합니다. 부드러운 압력으로 전신을 이완시키는 기초 마사지로, 대부분의 스파에서 제공됩니다. 근육통이 심하다면 딥 티슈로 시작할 수 있지만, 첫 방문 시에는 시술 강도를 '미디엄' 수준으로 요청하고 테라피스트에게 불편한 부위를 사전에 충분히 설명하세요.'\n                                                                                                                                    ^^^\n\nSyntaxError: Unexpected identifier '미디엄'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
-      "errorAt": "2026-05-08T09:07:48.278Z"
+      "status": "pending"
     },
     {
       "id": "c003",
@@ -319,10 +307,7 @@
           "쿠팡"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-08T09:12:50.138Z"
+      "status": "pending"
     },
     {
       "id": "a004",
@@ -633,10 +618,7 @@
           "비행"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-09T09:11:20.874Z"
+      "status": "pending"
     },
     {
       "id": "a007",
@@ -1208,10 +1190,7 @@
           "풀빌라"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_four-seasons-bali_1778490137644.js:103\n          a: '두 리조트는 콘셉트가 다릅니다. 짐바란은 바다·일몰·공항 접근성이 강점이고, 사양(Sayan)은 우붓 정글·아융강·문화 체험이 강점입니다. 첫 발리 여행이라면 짐바란, 두 번째 이후 깊이 있는 휴양을 원한다면 사양 또는 두 곳을 나눠 묵는 'Two Resort Stay' 패키지가 인기입니다.',\n                                                                                                                                                     ^^^\n\nSyntaxError: Unexpected identifier 'Two'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
-      "errorAt": "2026-05-11T09:02:17.735Z"
+      "status": "pending"
     },
     {
       "id": "b012",
@@ -3204,10 +3183,7 @@
           "필수품"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-08T03:15:13.900Z"
+      "status": "pending"
     },
     {
       "id": "na002",
@@ -3892,10 +3868,7 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-16T03:05:07.753Z"
+      "status": "pending"
     },
     {
       "id": "h_new_012",
@@ -3945,8 +3918,8 @@
           "영화촬영지"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "done",
+      "generatedAt": "2026-05-16T03:08:06.332Z"
     },
     {
       "id": "h_new_013",
@@ -4608,10 +4581,7 @@
           "5성"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-14T09:29:25.636Z"
+      "status": "pending"
     },
     {
       "id": "h_new_026",
@@ -4661,10 +4631,7 @@
           "하와이"
         ]
       },
-      "status": "error",
-      "generatedAt": null,
-      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
-      "errorAt": "2026-05-14T09:46:34.735Z"
+      "status": "pending"
     },
     {
       "id": "h_new_027",
@@ -5047,6 +5014,270 @@
       },
       "status": "done",
       "generatedAt": "2026-05-08T00:00:00.000Z"
+    },
+    {
+      "id": "na005",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "family-travel-kit",
+      "title": "가족 해외여행 용품 체크리스트 — 캐리어·구급킷·목베개",
+      "keywords": [
+        "가족 해외여행 준비물",
+        "가족여행 용품",
+        "아이와 해외여행"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "family travel airport luggage",
+      "products": [
+        {
+          "productKey": "travel-luggage",
+          "productName": "여행용 캐리어",
+          "category": "luggage"
+        },
+        {
+          "productKey": "travel-medical-kit",
+          "productName": "휴대용 구급킷",
+          "category": "health"
+        },
+        {
+          "productKey": "neck-pillow",
+          "productName": "목베개",
+          "category": "comfort"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 travel-luggage, travel-medical-kit, neck-pillow 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "family-travel-kit",
+        "title": "가족 해외여행 용품 체크리스트",
+        "category": "addon",
+        "tags": [
+          "가족 해외여행 준비물",
+          "가족여행 용품",
+          "아이와 해외여행"
+        ]
+      },
+      "status": "pending"
+    },
+    {
+      "id": "na006",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "winter-travel-gear",
+      "title": "겨울 해외여행 방한·여행용품 추천 가이드",
+      "keywords": [
+        "겨울 해외여행 준비물",
+        "방한용품",
+        "겨울여행 용품"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "winter travel snow luggage",
+      "products": [
+        {
+          "productKey": "travel-luggage",
+          "productName": "여행용 캐리어",
+          "category": "luggage"
+        },
+        {
+          "productKey": "compression-bag",
+          "productName": "압축팩",
+          "category": "packing"
+        },
+        {
+          "productKey": "portable-charger",
+          "productName": "보조배터리",
+          "category": "electronics"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 travel-luggage, compression-bag, portable-charger 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "winter-travel-gear",
+        "title": "겨울 해외여행 방한·여행용품 추천 가이드",
+        "category": "addon",
+        "tags": [
+          "겨울 해외여행 준비물",
+          "방한용품",
+          "겨울여행 용품"
+        ]
+      },
+      "status": "pending"
+    },
+    {
+      "id": "na007",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "carry-on-organizer-kit",
+      "title": "기내 수납 정리템 추천 — 파우치·압축팩·정리 가이드",
+      "keywords": [
+        "기내 수납",
+        "여행 정리템",
+        "캐리어 정리"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "carry on packing organizer",
+      "products": [
+        {
+          "productKey": "compression-bag",
+          "productName": "압축팩",
+          "category": "packing"
+        },
+        {
+          "productKey": "cosmetic-case",
+          "productName": "화장품 파우치",
+          "category": "beauty"
+        },
+        {
+          "productKey": "travel-wallet",
+          "productName": "여행 지갑",
+          "category": "accessory"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 compression-bag, cosmetic-case, travel-wallet 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "carry-on-organizer-kit",
+        "title": "기내 수납 정리템 추천",
+        "category": "addon",
+        "tags": [
+          "기내 수납",
+          "여행 정리템",
+          "캐리어 정리"
+        ]
+      },
+      "status": "pending"
+    },
+    {
+      "id": "na008",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "travel-tech-gadgets",
+      "title": "여행 IT 가젯 추천 — 어댑터·보조배터리·정리템",
+      "keywords": [
+        "여행 가젯",
+        "여행 전자기기",
+        "해외여행 어댑터"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "travel tech gadgets electronics",
+      "products": [
+        {
+          "productKey": "travel-adapter",
+          "productName": "해외여행 어댑터",
+          "category": "electronics"
+        },
+        {
+          "productKey": "travel-power-bank",
+          "productName": "보조배터리",
+          "category": "electronics"
+        },
+        {
+          "productKey": "portable-charger",
+          "productName": "휴대용 충전기",
+          "category": "electronics"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 travel-adapter, travel-power-bank, portable-charger 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "travel-tech-gadgets",
+        "title": "여행 IT 가젯 추천",
+        "category": "addon",
+        "tags": [
+          "여행 가젯",
+          "여행 전자기기",
+          "해외여행 어댑터"
+        ]
+      },
+      "status": "pending"
+    },
+    {
+      "id": "na009",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "kids-flight-survival-kit",
+      "title": "아이와 장거리 비행 생존템 — 목베개·아이마스크·정리템",
+      "keywords": [
+        "아이와 비행기",
+        "장거리 비행 준비물",
+        "유아 기내용품"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "kids airplane travel comfort",
+      "products": [
+        {
+          "productKey": "neck-pillow",
+          "productName": "목베개",
+          "category": "comfort"
+        },
+        {
+          "productKey": "eye-mask-earplug",
+          "productName": "수면안대 귀마개",
+          "category": "comfort"
+        },
+        {
+          "productKey": "cosmetic-case",
+          "productName": "용품 파우치",
+          "category": "beauty"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 neck-pillow, eye-mask-earplug, cosmetic-case 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "kids-flight-survival-kit",
+        "title": "아이와 장거리 비행 생존템",
+        "category": "addon",
+        "tags": [
+          "아이와 비행기",
+          "장거리 비행 준비물",
+          "유아 기내용품"
+        ]
+      },
+      "status": "pending"
+    },
+    {
+      "id": "na010",
+      "slot": "noon-addon",
+      "priority": 2,
+      "entity": "addon",
+      "slug": "workation-gear-kit",
+      "title": "워케이션 장비 가이드 — 캐리어·충전·정리 세트",
+      "keywords": [
+        "워케이션 준비물",
+        "디지털 노마드 장비",
+        "장기 여행 용품"
+      ],
+      "imageSource": "unsplash",
+      "imageQuery": "workation laptop travel desk",
+      "products": [
+        {
+          "productKey": "travel-luggage",
+          "productName": "여행용 캐리어",
+          "category": "luggage"
+        },
+        {
+          "productKey": "travel-power-bank",
+          "productName": "보조배터리",
+          "category": "electronics"
+        },
+        {
+          "productKey": "travel-wallet",
+          "productName": "여행 지갑",
+          "category": "accessory"
+        }
+      ],
+      "extraInstructions": "addon 엔티티. productSlot 섹션 3개 포함. productKey는 travel-luggage, travel-power-bank, travel-wallet 사용. Coupang URL은 // TODO: 쿠팡 파트너스 링크 등록 주석 포함. 단정 표현 금지.",
+      "meta": {
+        "slug": "workation-gear-kit",
+        "title": "워케이션 장비 가이드",
+        "category": "addon",
+        "tags": [
+          "워케이션 준비물",
+          "디지털 노마드 장비",
+          "장기 여행 용품"
+        ]
+      },
+      "status": "pending"
     }
   ]
 }
