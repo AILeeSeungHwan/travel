@@ -118,6 +118,16 @@ const addons = [
     tags: ["헤드폰","여행용품","비행"],
     publishedAt: '2026-05-16',
     updatedAt: '2026-05-16'
+  },
+  {
+    slug: 'family-travel-kit',
+    title: '가족 해외여행 용품 체크리스트',
+    category: 'addon',
+    tags: ["가족 해외여행 준비물","가족여행 용품","아이와 해외여행"],
+    publishedAt: '2026-05-17',
+    updatedAt: '2026-05-17',
+    id: '',
+    description: ''
   }
 ]
 
