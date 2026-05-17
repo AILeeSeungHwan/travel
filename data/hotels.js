@@ -621,6 +621,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H015',
+    slug: 'four-seasons-bali',
+    countrySlug: 'id',
+    regionSlug: 'bali',
+    hotelName: '포시즌스 리조트 발리 앳 짐바란 베이',
+    hotelNameEn: 'Four Seasons Resort Bali at Jimbaran Bay',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.9,
+    priceRange: 'USD 600~2,000/박',
+    amenities: ["프라이빗 풀빌라","스파","프라이빗 비치","다이닝","버틀러"],
+    address: 'Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361',
+    lat: -8.789,
+    lng: 115.155,
+    iso2: 'ID',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["포시즌스","발리","짐바란","5성","풀빌라"],
+    publishedAt: '2026-05-17',
+    updatedAt: '2026-05-17',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
