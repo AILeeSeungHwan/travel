@@ -3190,7 +3190,9 @@
           "필수품"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "/Users/lee/Desktop/Project/travel/travel/_tmp_summer-travel-essentials_1778987369317.js:1\n以下이 `posts/addons/summer-travel-essentials.js` 파일 내용입니다. (파일 쓰기 권한이 거부되어 코드로 출력합니다.)\n                                               ^^\n\nSyntaxError: Unexpected identifier '파일'\n    at wrapSafe (node:internal/modules/cjs/loader:1742:18)\n    at checkSyntax (node:internal/main/check_syntax:76:3)\n\nNode.js v25.6.1\n",
+      "errorAt": "2026-05-17T03:09:29.409Z"
     },
     {
       "id": "na002",
