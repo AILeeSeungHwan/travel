@@ -4591,7 +4591,8 @@
           "5성"
         ]
       },
-      "status": "pending"
+      "status": "done",
+      "generatedAt": "2026-05-17T09:05:35.670Z"
     },
     {
       "id": "h_new_026",

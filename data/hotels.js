@@ -649,6 +649,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_025',
+    slug: 'mandarin-oriental-hong-kong',
+    countrySlug: 'hk',
+    regionSlug: 'hongkong',
+    hotelName: '만다린 오리엔탈 홍콩',
+    hotelNameEn: 'Mandarin Oriental Hong Kong',
+    hotelClass: '5성',
+    hotelType: '럭셔리',
+    starRating: 5,
+    guestRating: 4.7,
+    priceRange: '50~180만 원/박',
+    amenities: ["수영장","스파","피트니스","파인다이닝","하버뷰"],
+    address: '5 Connaught Road Central, Hong Kong',
+    lat: 22.2833,
+    lng: 114.1597,
+    iso2: 'HK',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["만다린오리엔탈","홍콩","하버뷰","5성"],
+    publishedAt: '2026-05-17',
+    updatedAt: '2026-05-17',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
