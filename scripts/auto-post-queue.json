@@ -177,7 +177,8 @@
           "비교"
         ]
       },
-      "status": "pending"
+      "status": "done",
+      "generatedAt": "2026-05-17T03:05:09.417Z"
     },
     {
       "id": "c002",

@@ -87,6 +87,15 @@ const compares = [
     tags: ["푸껫","호텔비교","태국"],
     publishedAt: '2026-05-15',
     updatedAt: '2026-05-15'
+  },
+  {
+    id: 'C006',
+    slug: 'seoul-5star-compare',
+    title: '서울 5성 호텔 비교',
+    description: '서울 대표 5성 호텔 4곳 비교',
+    tags: ["서울","5성","비교"],
+    publishedAt: '2026-05-17',
+    updatedAt: '2026-05-17'
   }
 ]
 
