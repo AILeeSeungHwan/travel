@@ -122,6 +122,16 @@ const guides = [
     updatedAt: '2026-05-16',
     ymylLevel: 'B',
     id: ''
+  },
+  {
+    slug: 'uzbekistan-central-asia-travel-2026',
+    title: '우즈베키스탄 중앙아시아 여행 가이드 2026 — 실크로드 도시·비자·예산 총정리',
+    description: '2026년 한국인 사이에서 중앙아시아 숙박 검색량이 급등했습니다. 우즈베키스탄을 중심으로 실크로드 도시, 무비자 입국, 현실 예산, 안전 정보를 한 번에 정리했습니다.',
+    category: 'guide',
+    publishedAt: '2026-05-17',
+    updatedAt: '2026-05-17',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 
