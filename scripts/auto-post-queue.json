@@ -67,7 +67,8 @@
       "imageSource": "unsplash",
       "imageQuery": "japan airport travel passport",
       "meta": null,
-      "status": "pending"
+      "status": "done",
+      "generatedAt": "2026-05-16T22:09:36.568Z"
     },
     {
       "id": "c001",
