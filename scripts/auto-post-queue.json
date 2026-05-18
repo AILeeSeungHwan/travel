@@ -1007,8 +1007,8 @@
       "imageSource": "unsplash",
       "imageQuery": "japan shinkansen train travel",
       "meta": null,
-      "status": "pending",
-      "generatedAt": null
+      "status": "done",
+      "generatedAt": "2026-05-17T22:10:08.290Z"
     },
     {
       "id": "c010",
@@ -3878,7 +3878,9 @@
           "5성"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-18T03:03:02.275Z"
     },
     {
       "id": "h_new_012",
@@ -3979,8 +3981,10 @@
           "5성"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-18T03:05:57.904Z"
     },
     {
       "id": "h_new_014",
@@ -5113,7 +5117,9 @@
           "겨울여행 용품"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-18T03:09:06.306Z"
     },
     {
       "id": "na007",
@@ -5157,7 +5163,9 @@
           "캐리어 정리"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-18T03:12:09.768Z"
     },
     {
       "id": "na008",

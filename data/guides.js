@@ -132,6 +132,23 @@ const guides = [
     updatedAt: '2026-05-17',
     ymylLevel: 'B',
     id: ''
+  },
+  {
+    id: 'G017',
+    slug: 'japan-travel-prep',
+    guideType: 'preparation',
+    targetCountrySlug: 'jp',
+    category: 'guide',
+    title: '일본 여행 준비 가이드 — 교통·결제·앱·예산 출국 전 체크리스트',
+    description: 'JR패스 vs IC카드, Visit Japan Web, 환전·결제, 필수 앱 세팅과 현실 예산까지 — 일본 여행 첫날 역 개찰구에서 헤매지 않도록 출국 전 준비 순서를 정리했습니다.',
+    summary: '교통·결제·앱·예산을 출국 전 순서대로 준비하는 일본 여행 체크리스트.',
+    publishedAt: '2026-05-18',
+    updatedAt: '2026-05-18',
+    ymylLevel: 'B',
+    tags: ['일본여행준비', 'JR패스', 'VisitJapanWeb', '여행체크리스트'],
+    sources: [
+      { label: '일본정부관광국(JNTO)', url: 'https://www.japan.travel/ko/kr/', org: 'JNTO' },
+    ],
   }
 ]
 
