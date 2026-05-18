@@ -4646,7 +4646,9 @@
           "하와이"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-18T09:05:08.011Z"
     },
     {
       "id": "h_new_027",
