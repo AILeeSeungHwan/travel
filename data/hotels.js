@@ -677,6 +677,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_030',
+    slug: 'burj-al-arab-dubai',
+    countrySlug: 'ae',
+    regionSlug: 'dubai',
+    hotelName: '버즈 알 아랍',
+    hotelNameEn: 'Burj Al Arab Jumeirah',
+    hotelClass: '5성',
+    hotelType: '울트라 럭셔리',
+    starRating: 5,
+    guestRating: 4.8,
+    priceRange: '200~1000만 원/박',
+    amenities: ["전용비치","수영장","스파","헬기이착륙장","버틀러서비스"],
+    address: 'Jumeirah Street, Dubai, UAE',
+    lat: 25.1412,
+    lng: 55.1853,
+    iso2: 'AE',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["버즈알아랍","두바이","7성","아이콘"],
+    publishedAt: '2026-05-18',
+    updatedAt: '2026-05-18',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
