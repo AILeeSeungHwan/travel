@@ -149,6 +149,16 @@ const guides = [
     sources: [
       { label: '일본정부관광국(JNTO)', url: 'https://www.japan.travel/ko/kr/', org: 'JNTO' },
     ],
+  },
+  {
+    slug: 'danang-vietnam-travel-guide-2026',
+    title: '베트남 다낭 여행 가이드 2026 — 효도·가족여행 1순위로 떠오른 이유와 예산·시기 총정리',
+    description: '2026년 한국인 해외여행 3위 베트남, 그중에서도 다낭이 효도·가족여행지로 인기입니다. 건기 시기, 필수 명소, 현실 예산, 숙박 지역, 현지 팁까지 정리했습니다.',
+    category: 'guide',
+    publishedAt: '2026-05-18',
+    updatedAt: '2026-05-18',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 
