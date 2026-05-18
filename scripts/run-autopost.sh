@@ -17,6 +17,14 @@ if [ -f "$ROOT/.env.local" ]; then
   done < "$ROOT/.env.local"
 fi
 
+# ── 오늘의 인사이트 추천 로드 (car_site의 daily-insight.js가 배포) ──
+if [ -x /Users/lee/bin/insight-hint.sh ]; then
+  export INSIGHT_HINT="$(/Users/lee/bin/insight-hint.sh travel 2>/dev/null || echo '')"
+  if [ -n "$INSIGHT_HINT" ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 인사이트 추천 로드 완료 (INSIGHT_HINT env)"
+  fi
+fi
+
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] 자동 포스팅 시작: slot=$SLOT count=$COUNT"
 
 exec "$NODE_BIN" "$ROOT/scripts/auto-post.js" --slot "$SLOT" --count "$COUNT"

@@ -249,7 +249,14 @@ function runClaude(userPrompt, { useWebSearch = false } = {}) {
     throw new Error(`Claude CLI 없음: ${CLAUDE_BIN}`)
   }
 
-  const fullPrompt = SYSTEM_PROMPT + '\n\n---\n\n' + userPrompt
+  // ── 오늘의 인사이트 추천을 환경변수로 받아 프롬프트 앞에 합침 ──
+  // run-autopost.sh가 /Users/lee/bin/insight-hint.sh travel 결과를 INSIGHT_HINT로 export.
+  const insightHint = (process.env.INSIGHT_HINT || '').trim()
+  const insightBlock = insightHint
+    ? insightHint + '\n\n★ 위 인사이트 추천이 있으면 trip-type(가이드/테마/상황별/애드온/HighRPM) 결정 시 추천 키워드와 가장 맞는 패턴을 우선 선택하세요.\n★ 추천 keyword를 본문 제목·H2·destination 선정에 자연스럽게 반영.\n\n---\n\n'
+    : ''
+
+  const fullPrompt = SYSTEM_PROMPT + '\n\n---\n\n' + insightBlock + userPrompt
 
   const flags = [
     '--print',
