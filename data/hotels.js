@@ -705,6 +705,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H021',
+    slug: 'sun-aqua-maldives',
+    countrySlug: 'mv',
+    regionSlug: 'maldives',
+    hotelName: '선 아쿠아 빌루 리프',
+    hotelNameEn: 'Sun Aqua Vilu Reef',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.6,
+    priceRange: 'USD 400~1,500/박',
+    amenities: ["오버워터 빌라","프라이빗 수영장","스파","올인클루시브","스노클링"],
+    address: 'Vilu Reef, Dhaalu Atoll, Maldives',
+    lat: 2.836,
+    lng: 72.827,
+    iso2: 'MV',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["몰디브","오버워터","5성","올인클루시브"],
+    publishedAt: '2026-05-18',
+    updatedAt: '2026-05-18',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

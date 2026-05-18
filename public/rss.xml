@@ -6,12 +6,28 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://travel.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 18 May 2026 07:36:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 09:10:55 GMT</lastBuildDate>
     <image>
       <url>https://travel.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
       <link>https://travel.ambitstock.com/</link>
     </image>
+    <item>
+      <title><![CDATA[]]></title>
+      <link>https://travel.ambitstock.com/hotels/burj-al-arab-dubai/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/burj-al-arab-dubai/</guid>
+      <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title><![CDATA[]]></title>
+      <link>https://travel.ambitstock.com/hotels/sun-aqua-maldives/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/sun-aqua-maldives/</guid>
+      <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[]]></description>
+    </item>
     <item>
       <title><![CDATA[일본 여행 준비 가이드 — 교통·결제·앱·예산 출국 전 체크리스트]]></title>
       <link>https://travel.ambitstock.com/guides/japan-travel-prep/</link>
@@ -235,22 +251,6 @@
       <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[스팟]]></category>
       <description><![CDATA[남산 정상 N서울타워. 케이블카·순환버스 접근, 전망대 입장, 야경 베스트 타임과 사랑의 자물쇠·남산공원 산책 코스 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[동대문 DDP — 자하 하디드 건축·전시·LED 장미·야시장 가이드]]></title>
-      <link>https://travel.ambitstock.com/countries/kr/regions/seoul/spots/ddp/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/countries/kr/regions/seoul/spots/ddp/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[스팟]]></category>
-      <description><![CDATA[자하 하디드 설계의 동대문 디자인 플라자(DDP). 전시·디자인숍, LED 장미 정원, 야간 조명과 동대문 쇼핑·야시장 연계 동선 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[]]></title>
-      <link>https://travel.ambitstock.com/hotels/park-hyatt-tokyo-guide/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/park-hyatt-tokyo-guide/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[호텔]]></category>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>
