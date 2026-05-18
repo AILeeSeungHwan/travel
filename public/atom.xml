@@ -4,8 +4,24 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-18T09:10:55.374Z</updated>
+  <updated>2026-05-18T12:05:09.862Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[아랍에미리트 여행 — 두바이·아부다비 가이드]]></title>
+    <link href="https://travel.ambitstock.com/countries/ae/" />
+    <id>https://travel.ambitstock.com/countries/ae/</id>
+    <updated>2026-05-17T15:00:00.000Z</updated>
+    <category term="국가" />
+    <summary><![CDATA[90일 무비자. 두바이 도심·쇼핑·사막 투어, 아부다비 문화 명소 등 아랍에미리트 핵심 추천과 복장·문화 에티켓을 정리합니다.]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[몰디브 여행 — 리조트·허니문 가이드]]></title>
+    <link href="https://travel.ambitstock.com/countries/mv/" />
+    <id>https://travel.ambitstock.com/countries/mv/</id>
+    <updated>2026-05-17T15:00:00.000Z</updated>
+    <category term="국가" />
+    <summary><![CDATA[도착 무비자 30일. 워터빌라 리조트, 허니문, 스노클링·다이빙 등 몰디브 핵심 추천과 리조트 선택·이동(스피드보트·수상비행기) 가이드를 정리합니다.]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[]]></title>
     <link href="https://travel.ambitstock.com/hotels/burj-al-arab-dubai/" />
@@ -229,21 +245,5 @@
     <updated>2026-05-15T15:00:00.000Z</updated>
     <category term="스팟" />
     <summary><![CDATA[경복궁과 창덕궁 사이 북촌한옥마을. 북촌 8경 포토존, 관람 허용 시간, 거주민 배려 에티켓과 삼청동·인사동 연계 코스 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[명동 — 서울 쇼핑·길거리 음식·환전·면세 동선 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/kr/regions/seoul/spots/myeongdong/" />
-    <id>https://travel.ambitstock.com/countries/kr/regions/seoul/spots/myeongdong/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[서울 대표 쇼핑가 명동. 화장품·패션 쇼핑, 길거리 음식, 환전·택스리펀드 팁과 명동성당·남산 케이블카 연계 동선 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[N서울타워 — 케이블카·전망대·야경·사랑의 자물쇠 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/kr/regions/seoul/spots/namsan-tower/" />
-    <id>https://travel.ambitstock.com/countries/kr/regions/seoul/spots/namsan-tower/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[남산 정상 N서울타워. 케이블카·순환버스 접근, 전망대 입장, 야경 베스트 타임과 사랑의 자물쇠·남산공원 산책 코스 가이드.]]></summary>
   </entry>
 </feed>

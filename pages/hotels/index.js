@@ -6,7 +6,7 @@ import countries from '../../data/countries'
 export async function getStaticProps() {
   const items = hotels.map(h => ({
     ...h,
-    countryName: (countries.find(c => c.slug === h.countrySlug) || {}).countryName,
+    countryName: (countries.find(c => c.slug === h.countrySlug) || {}).countryName ?? null,
   }))
   return { props: { items } }
 }
