@@ -142,6 +142,19 @@ const regions = [
     tags: ["우붓","발리","라이스테라스"],
     publishedAt: '2026-05-14',
     updatedAt: '2026-05-14'
+  },
+  {
+    id: 'R022',
+    slug: 'jp-kyoto',
+    countrySlug: 'jp',
+    regionName: '교토',
+    regionNameEn: 'Kyoto',
+    regionType: 'city',
+    lat: 35.011,
+    lng: 135.768,
+    tags: ["교토","기온","아라시야마"],
+    publishedAt: '2026-05-18',
+    updatedAt: '2026-05-18'
   }
 ]
 
