@@ -20,6 +20,7 @@ const { generateThumbnail } = require('./generate-thumbnail')
 const ROOT       = path.resolve(__dirname, '..')
 const QUEUE_FILE = path.join(__dirname, 'auto-post-queue.json')
 const LOG_FILE   = path.join(ROOT, 'logs', 'autopost.log')
+const LOCK_FILE  = '/tmp/tripspot-autopost.lock'
 const CLAUDE_BIN = '/opt/homebrew/bin/claude'
 const TODAY      = new Date().toISOString().slice(0, 10)
 
@@ -757,10 +758,17 @@ async function main() {
     process.exit(1)
   }
 
-  if (slotArg === 'morning') await runMorning()
-  else if (slotArg === 'noon')    await runNoon()
-  else if (slotArg === 'evening') await runEvening()
-  else log(`알 수 없는 슬롯: ${slotArg}`)
+  // Stop 훅이 포스트마다 커밋·푸시하지 않도록 락 — 자동화 실행 동안만 존재.
+  // evening 슬롯의 gitPush()는 내부 execSync라 훅과 무관하게 1회 실행됨.
+  try { fs.writeFileSync(LOCK_FILE, String(process.pid)) } catch (_) {}
+  try {
+    if (slotArg === 'morning') await runMorning()
+    else if (slotArg === 'noon')    await runNoon()
+    else if (slotArg === 'evening') await runEvening()
+    else log(`알 수 없는 슬롯: ${slotArg}`)
+  } finally {
+    try { fs.unlinkSync(LOCK_FILE) } catch (_) {}
+  }
 }
 
 main().catch(e => {

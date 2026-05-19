@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd /Users/lee/Desktop/Project/travel/travel && git add -A && git diff --cached --quiet || git commit -m \"auto: $(date '+%Y-%m-%d %H:%M') 작업 완료\" && git push 2>&1 || true"
+            "command": "[ -f /tmp/tripspot-autopost.lock ] && exit 0; cd /Users/lee/Desktop/Project/travel/travel && git add -A && git diff --cached --quiet || git commit -m \"auto: $(date '+%Y-%m-%d %H:%M') 작업 완료\" && git push 2>&1 || true"
           }
         ]
       }
