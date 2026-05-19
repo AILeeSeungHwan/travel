@@ -6,7 +6,7 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://travel.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 18 May 2026 12:05:30 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 02:56:27 GMT</lastBuildDate>
     <image>
       <url>https://travel.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
@@ -27,6 +27,14 @@
       <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[국가]]></category>
       <description><![CDATA[도착 무비자 30일. 워터빌라 리조트, 허니문, 스노클링·다이빙 등 몰디브 핵심 추천과 리조트 선택·이동(스피드보트·수상비행기) 가이드를 정리합니다.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[undefined]]></title>
+      <link>https://travel.ambitstock.com/countries/jp/regions/jp-kyoto/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/countries/jp/regions/jp-kyoto/</guid>
+      <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[지역]]></category>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title><![CDATA[]]></title>
@@ -51,6 +59,14 @@
       <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[가이드]]></category>
       <description><![CDATA[JR패스 vs IC카드, Visit Japan Web, 환전·결제, 필수 앱 세팅과 현실 예산까지 — 일본 여행 첫날 역 개찰구에서 헤매지 않도록 출국 전 준비 순서를 정리했습니다.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[베트남 다낭 여행 가이드 2026 — 효도·가족여행 1순위로 떠오른 이유와 예산·시기 총정리]]></title>
+      <link>https://travel.ambitstock.com/guides/danang-vietnam-travel-guide-2026/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/guides/danang-vietnam-travel-guide-2026/</guid>
+      <pubDate>Sun, 17 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[가이드]]></category>
+      <description><![CDATA[2026년 한국인 해외여행 3위 베트남, 그중에서도 다낭이 효도·가족여행지로 인기입니다. 건기 시기, 필수 명소, 현실 예산, 숙박 지역, 현지 팁까지 정리했습니다.]]></description>
     </item>
     <item>
       <title><![CDATA[]]></title>
@@ -235,22 +251,6 @@
       <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[스팟]]></category>
       <description><![CDATA[배낭여행자의 성지 카오산로드. 야시장·길거리 음식, 루프탑·바 분위기, 안전 수칙과 주변 왕궁·왓 포 연계 동선 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[경복궁 — 수문장 교대식·한복 무료입장·관람 동선 가이드]]></title>
-      <link>https://travel.ambitstock.com/countries/kr/regions/seoul/spots/gyeongbokgung/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/countries/kr/regions/seoul/spots/gyeongbokgung/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[스팟]]></category>
-      <description><![CDATA[조선 제일의 법궁 경복궁. 입장료·한복 무료입장, 수문장 교대식 시간, 근정전·경회루 동선과 주변 북촌·광화문 연계 코스 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[북촌한옥마을 — 8경 포토존·관람 시간·주민 배려 가이드]]></title>
-      <link>https://travel.ambitstock.com/countries/kr/regions/seoul/spots/bukchon/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/countries/kr/regions/seoul/spots/bukchon/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[스팟]]></category>
-      <description><![CDATA[경복궁과 창덕궁 사이 북촌한옥마을. 북촌 8경 포토존, 관람 허용 시간, 거주민 배려 에티켓과 삼청동·인사동 연계 코스 가이드.]]></description>
     </item>
   </channel>
 </rss>

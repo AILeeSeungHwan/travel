@@ -18,5 +18,6 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://travel.ambitstock.com/sitemap.xml
+Sitemap: https://travel.ambitstock.com/sitemap-news.xml
 
 #DaumWebMasterTool:fb365bb0cf8b65cf86f754061025d422a023d6ab4e7e0d0ce192100f302692df:LMivkadpD0CTF0mB9L0N/g==
