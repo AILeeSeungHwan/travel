@@ -4,8 +4,24 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-19T02:56:27.931Z</updated>
+  <updated>2026-05-19T09:11:46.437Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/lux-maldives/" />
+    <id>https://travel.ambitstock.com/hotels/lux-maldives/</id>
+    <updated>2026-05-18T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[여행 IT 가젯 추천]]></title>
+    <link href="https://travel.ambitstock.com/addons/travel-tech-gadgets/" />
+    <id>https://travel.ambitstock.com/addons/travel-tech-gadgets/</id>
+    <updated>2026-05-18T15:00:00.000Z</updated>
+    <category term="여행용품" />
+    <summary><![CDATA[]]></summary>
+  </entry>
   <entry>
     <title><![CDATA[아랍에미리트 여행 — 두바이·아부다비 가이드]]></title>
     <link href="https://travel.ambitstock.com/countries/ae/" />
@@ -229,21 +245,5 @@
     <updated>2026-05-15T15:00:00.000Z</updated>
     <category term="스팟" />
     <summary><![CDATA[46m 황금 와불의 왓 포. 입장료, 와불·전각 동선, 타이 마사지 발상지 체험과 주변 왕궁 연계 도보 코스 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[짜뚜짝 주말시장 — 방콕 1.5만 점포 쇼핑·동선·흥정 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/th/regions/bangkok/spots/chatuchak/" />
-    <id>https://travel.ambitstock.com/countries/th/regions/bangkok/spots/chatuchak/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[약 1.5만 점포의 짜뚜짝 주말시장. 구역별 쇼핑 동선, 흥정·결제 팁, 더위 대비와 BTS·MRT 접근 동선 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[카오산로드 — 방콕 배낭여행 거리 야시장·바·먹거리 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/th/regions/bangkok/spots/khaosan-road/" />
-    <id>https://travel.ambitstock.com/countries/th/regions/bangkok/spots/khaosan-road/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[배낭여행자의 성지 카오산로드. 야시장·길거리 음식, 루프탑·바 분위기, 안전 수칙과 주변 왕궁·왓 포 연계 동선 가이드.]]></summary>
   </entry>
 </feed>

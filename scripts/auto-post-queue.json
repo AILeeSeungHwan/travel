@@ -1857,8 +1857,10 @@
           "오사카"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-19T09:05:06.503Z"
     },
     {
       "id": "c018",
@@ -1885,8 +1887,10 @@
           "콘센트"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "claude 종료 코드 1: ",
+      "errorAt": "2026-05-19T09:06:44.650Z"
     },
     {
       "id": "a019",
@@ -2144,8 +2148,10 @@
           "5성"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "spawnSync /opt/homebrew/bin/claude ETIMEDOUT",
+      "errorAt": "2026-05-19T09:11:46.132Z"
     },
     {
       "id": "b021",
