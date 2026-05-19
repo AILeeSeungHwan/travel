@@ -18,7 +18,8 @@
     "coupangUrl": "",
     "postSlugs": [
       "travel-adapter",
-      "summer-travel-essentials"
+      "summer-travel-essentials",
+      "travel-tech-gadgets"
     ],
     "notes": ""
   },
@@ -29,7 +30,8 @@
     "coupangUrl": "",
     "postSlugs": [
       "travel-power-bank",
-      "summer-travel-essentials"
+      "summer-travel-essentials",
+      "travel-tech-gadgets"
     ],
     "notes": ""
   },
@@ -109,6 +111,16 @@
       "travel-medical-kit",
       "golf-tour-gear-guide",
       "family-travel-kit"
+    ],
+    "notes": ""
+  },
+  {
+    "productKey": "portable-charger",
+    "productName": "휴대용 충전기",
+    "category": "electronics",
+    "coupangUrl": "",
+    "postSlugs": [
+      "travel-tech-gadgets"
     ],
     "notes": ""
   }

@@ -128,6 +128,16 @@ const addons = [
     updatedAt: '2026-05-17',
     id: '',
     description: ''
+  },
+  {
+    slug: 'travel-tech-gadgets',
+    title: '여행 IT 가젯 추천',
+    category: 'addon',
+    tags: ["여행 가젯","여행 전자기기","해외여행 어댑터"],
+    publishedAt: '2026-05-19',
+    updatedAt: '2026-05-19',
+    id: '',
+    description: ''
   }
 ]
 
