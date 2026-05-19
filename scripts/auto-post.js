@@ -643,8 +643,13 @@ async function runMorning() {
     }
   }
 
-  // morning: 파일만 생성, prebuild/push는 evening에서 일괄 처리
-  log(`=== morning 완료: ${generated.length}개 (push 없음 — evening에서 일괄) ===`)
+  // morning: 슬롯 종료 시 1회 prebuild + commit + push
+  // (포스트마다 푸시는 lock 가드로 차단, 슬롯 단위 1회 푸시 정책)
+  if (generated.length > 0) {
+    prebuild()
+    gitPush(generated)
+  }
+  log(`=== morning 완료: ${generated.length}개 — sitemap 갱신 + 1회 commit·push ===`)
   return generated
 }
 
@@ -707,8 +712,13 @@ async function runNoon() {
     }
   }
 
-  // noon: 파일만 생성, prebuild/push는 evening에서 일괄 처리
-  log(`=== noon 완료: ${generated.length}개 (push 없음 — evening에서 일괄) ===`)
+  // noon: 슬롯 종료 시 1회 prebuild + commit + push
+  // (포스트마다 푸시는 lock 가드로 차단, 슬롯 단위 1회 푸시 정책)
+  if (generated.length > 0) {
+    prebuild()
+    gitPush(generated)
+  }
+  log(`=== noon 완료: ${generated.length}개 — sitemap 갱신 + 1회 commit·push ===`)
   return generated
 }
 
