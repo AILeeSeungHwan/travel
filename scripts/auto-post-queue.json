@@ -4085,8 +4085,10 @@
           "최고급"
         ]
       },
-      "status": "pending",
-      "generatedAt": null
+      "status": "error",
+      "generatedAt": null,
+      "error": "module.exports 없음",
+      "errorAt": "2026-05-19T03:06:06.042Z"
     },
     {
       "id": "h_new_016",
