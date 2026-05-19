@@ -159,6 +159,26 @@ const guides = [
     updatedAt: '2026-05-18',
     ymylLevel: 'B',
     id: ''
+  },
+  {
+    slug: 'uzbekistan-travel-guide-2026',
+    title: '우즈베키스탄 여행 가이드 2026 — MZ세대가 중앙아시아로 향하는 이유',
+    description: '2026년 한국인 숙박 검색량 225% 급증한 중앙아시아 신흥 강자 우즈베키스탄. 비자·항공·예산·사마르칸트·부하라까지 첫 방문자를 위한 실전 가이드.',
+    category: 'guide',
+    publishedAt: '2026-05-19',
+    updatedAt: '2026-05-19',
+    ymylLevel: 'B',
+    id: ''
+  },
+  {
+    slug: 'phu-quoc-vietnam-travel-2026',
+    title: '2026 푸꾸옥 여행 가이드 — 검색 53% 급증한 베트남 휴양지 완벽 정리',
+    description: '푸꾸옥이 2026년 세계 트렌드 여행지 4위에 오른 이유, 비자·예산·계절·교통·실수 방지까지. 첫 방문자가 알아야 할 핵심 정보를 정리했습니다.',
+    category: 'guide',
+    publishedAt: '2026-05-19',
+    updatedAt: '2026-05-19',
+    ymylLevel: 'B',
+    id: ''
   }
 ]
 

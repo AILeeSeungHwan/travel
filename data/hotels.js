@@ -761,6 +761,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H016',
+    slug: 'haevichi-jeju',
+    countrySlug: 'kr',
+    regionSlug: 'jeju',
+    hotelName: '해비치 호텔&리조트 제주',
+    hotelNameEn: 'Haevichi Hotel&Resort Jeju',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.5,
+    priceRange: '25~65만 원/박',
+    amenities: ["야외수영장","스파","골프장","다이닝","성산 오션뷰"],
+    address: '제주 서귀포시 성산읍 섭지코지로 107',
+    lat: 33.432,
+    lng: 126.92,
+    iso2: 'KR',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["해비치","성산","제주","5성","골프"],
+    publishedAt: '2026-05-19',
+    updatedAt: '2026-05-19',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

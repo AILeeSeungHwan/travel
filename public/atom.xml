@@ -4,7 +4,7 @@
   <link href="https://travel.ambitstock.com/" />
   <link rel="self" type="application/atom+xml" href="https://travel.ambitstock.com/atom.xml" />
   <id>https://travel.ambitstock.com/</id>
-  <updated>2026-05-19T09:11:46.437Z</updated>
+  <updated>2026-05-19T23:24:17.424Z</updated>
   <subtitle>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</subtitle>
   <entry>
     <title><![CDATA[]]></title>
@@ -13,6 +13,30 @@
     <updated>2026-05-18T15:00:00.000Z</updated>
     <category term="호텔" />
     <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="https://travel.ambitstock.com/hotels/haevichi-jeju/" />
+    <id>https://travel.ambitstock.com/hotels/haevichi-jeju/</id>
+    <updated>2026-05-18T15:00:00.000Z</updated>
+    <category term="호텔" />
+    <summary><![CDATA[]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[우즈베키스탄 여행 가이드 2026 — MZ세대가 중앙아시아로 향하는 이유]]></title>
+    <link href="https://travel.ambitstock.com/guides/uzbekistan-travel-guide-2026/" />
+    <id>https://travel.ambitstock.com/guides/uzbekistan-travel-guide-2026/</id>
+    <updated>2026-05-18T15:00:00.000Z</updated>
+    <category term="가이드" />
+    <summary><![CDATA[2026년 한국인 숙박 검색량 225% 급증한 중앙아시아 신흥 강자 우즈베키스탄. 비자·항공·예산·사마르칸트·부하라까지 첫 방문자를 위한 실전 가이드.]]></summary>
+  </entry>
+  <entry>
+    <title><![CDATA[2026 푸꾸옥 여행 가이드 — 검색 53% 급증한 베트남 휴양지 완벽 정리]]></title>
+    <link href="https://travel.ambitstock.com/guides/phu-quoc-vietnam-travel-2026/" />
+    <id>https://travel.ambitstock.com/guides/phu-quoc-vietnam-travel-2026/</id>
+    <updated>2026-05-18T15:00:00.000Z</updated>
+    <category term="가이드" />
+    <summary><![CDATA[푸꾸옥이 2026년 세계 트렌드 여행지 4위에 오른 이유, 비자·예산·계절·교통·실수 방지까지. 첫 방문자가 알아야 할 핵심 정보를 정리했습니다.]]></summary>
   </entry>
   <entry>
     <title><![CDATA[여행 IT 가젯 추천]]></title>
@@ -221,29 +245,5 @@
     <updated>2026-05-15T15:00:00.000Z</updated>
     <category term="스팟" />
     <summary><![CDATA[다낭 5개 석회암 봉우리 오행산. 엘리베이터·계단 코스, 후옌콩 동굴 사원, 전망 포인트와 주변 논느억 비치 연계 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[방콕 왕궁·에메랄드 사원 — 입장료·복장 규정·동선 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/th/regions/bangkok/spots/grand-palace/" />
-    <id>https://travel.ambitstock.com/countries/th/regions/bangkok/spots/grand-palace/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[방콕 왕궁과 에메랄드 불상의 왓 프라깨우. 입장료, 엄격한 복장 규정, 추천 동선과 주변 왓 포·왓 아룬 연계 코스 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[왓 아룬(새벽 사원) — 방콕 강변 사원 입장·일몰 야경 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/th/regions/bangkok/spots/wat-arun/" />
-    <id>https://travel.ambitstock.com/countries/th/regions/bangkok/spots/wat-arun/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[차오프라야강 서안의 왓 아룬. 입장료, 중앙 쁘랑 관람, 강 건너 일몰·야경 촬영 포인트와 페리 이용 동선 가이드.]]></summary>
-  </entry>
-  <entry>
-    <title><![CDATA[왓 포(누운 불상) — 방콕 와불·전통 마사지 발상지 가이드]]></title>
-    <link href="https://travel.ambitstock.com/countries/th/regions/bangkok/spots/wat-pho/" />
-    <id>https://travel.ambitstock.com/countries/th/regions/bangkok/spots/wat-pho/</id>
-    <updated>2026-05-15T15:00:00.000Z</updated>
-    <category term="스팟" />
-    <summary><![CDATA[46m 황금 와불의 왓 포. 입장료, 와불·전각 동선, 타이 마사지 발상지 체험과 주변 왕궁 연계 도보 코스 가이드.]]></summary>
   </entry>
 </feed>
