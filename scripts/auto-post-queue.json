@@ -5258,7 +5258,9 @@
           "유아 기내용품"
         ]
       },
-      "status": "pending"
+      "status": "error",
+      "error": "module.exports 없음",
+      "errorAt": "2026-05-19T03:12:49.317Z"
     },
     {
       "id": "na010",
