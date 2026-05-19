@@ -733,6 +733,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_014',
+    slug: 'lux-maldives',
+    countrySlug: 'mv',
+    regionSlug: 'maldives',
+    hotelName: '더 루하누 몰디브',
+    hotelNameEn: 'LUX* Maldives',
+    hotelClass: '5성',
+    hotelType: '수상방갈로 리조트',
+    starRating: 5,
+    guestRating: 4.7,
+    priceRange: '100~300만 원/박',
+    amenities: ["수상방갈로","스파","다이빙","올인클루시브","수상스포츠"],
+    address: 'Dhidhoofinolhu Island, Lhaviyani Atoll, Maldives',
+    lat: 5.5574,
+    lng: 73.5233,
+    iso2: 'MV',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["몰디브","수상방갈로","5성","올인클루시브"],
+    publishedAt: '2026-05-19',
+    updatedAt: '2026-05-19',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
