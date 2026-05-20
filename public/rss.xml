@@ -6,7 +6,7 @@
     <description>국가·지역·스팟·호텔·여행 가이드·계산기 — 한국관광공사·외교부 출처 우선의 중립 큐레이션.</description>
     <language>ko-KR</language>
     <atom:link href="https://travel.ambitstock.com/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 20 May 2026 03:11:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 09:09:00 GMT</lastBuildDate>
     <image>
       <url>https://travel.ambitstock.com/favicon-96x96.png</url>
       <title>트립스팟</title>
@@ -19,6 +19,22 @@
       <pubDate>Tue, 19 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[호텔]]></category>
       <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title><![CDATA[]]></title>
+      <link>https://travel.ambitstock.com/hotels/haeundae-grand/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/hotels/haeundae-grand/</guid>
+      <pubDate>Tue, 19 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[호텔]]></category>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title><![CDATA[아시아 스키 리조트 베스트]]></title>
+      <link>https://travel.ambitstock.com/themes/ski-resort-asia/</link>
+      <guid isPermaLink="true">https://travel.ambitstock.com/themes/ski-resort-asia/</guid>
+      <pubDate>Tue, 19 May 2026 15:00:00 GMT</pubDate>
+      <category><![CDATA[테마]]></category>
+      <description><![CDATA[일본·한국·중국 스키 리조트 TOP 10]]></description>
     </item>
     <item>
       <title><![CDATA[워케이션 장비 가이드]]></title>
@@ -235,22 +251,6 @@
       <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
       <category><![CDATA[스팟]]></category>
       <description><![CDATA[우메다 스카이빌딩 공중정원 전망대. 입장료·운영시간, 360도 야경 베스트 타임, 지하 다키미코지 식당가 연계 코스 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[신세카이·쓰텐카쿠 — 오사카 레트로 거리·쿠시카츠 가이드]]></title>
-      <link>https://travel.ambitstock.com/countries/jp/regions/osaka/spots/shinsekai/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/countries/jp/regions/osaka/spots/shinsekai/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[스팟]]></category>
-      <description><![CDATA[쇼와 레트로 분위기의 신세카이와 상징탑 쓰텐카쿠. 전망대 입장, 쿠시카츠 명물 거리, 주변 스파월드 연계 동선 가이드.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[다낭 대성당(핑크 성당) — 위치·미사 시간·촬영 에티켓 가이드]]></title>
-      <link>https://travel.ambitstock.com/countries/vn/regions/danang/spots/danang-cathedral/</link>
-      <guid isPermaLink="true">https://travel.ambitstock.com/countries/vn/regions/danang/spots/danang-cathedral/</guid>
-      <pubDate>Fri, 15 May 2026 15:00:00 GMT</pubDate>
-      <category><![CDATA[스팟]]></category>
-      <description><![CDATA[핑크빛 외관으로 유명한 다낭 대성당. 위치·미사 시간, 내부 관람 가능 시간, 촬영 에티켓과 주변 한 시장 연계 도보 코스 가이드.]]></description>
     </item>
   </channel>
 </rss>

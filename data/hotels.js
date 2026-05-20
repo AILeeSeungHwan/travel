@@ -817,6 +817,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H027',
+    slug: 'haeundae-grand',
+    countrySlug: 'kr',
+    regionSlug: 'busan',
+    hotelName: '해운대 그랜드 호텔',
+    hotelNameEn: 'Haeundae Grand Hotel',
+    hotelClass: '5성',
+    hotelType: '리조트',
+    starRating: 5,
+    guestRating: 4.3,
+    priceRange: '18~50만 원/박',
+    amenities: ["야외수영장","스파","해운대 해변뷰","다이닝"],
+    address: '부산 해운대구 해운대해변로 320',
+    lat: 35.16,
+    lng: 129.165,
+    iso2: 'KR',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["해운대그랜드","해운대","부산","5성"],
+    publishedAt: '2026-05-20',
+    updatedAt: '2026-05-20',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 

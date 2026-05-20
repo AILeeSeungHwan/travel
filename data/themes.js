@@ -102,6 +102,20 @@ const themes = [
     category: 'theme',
     ymylLevel: 'C',
     summary: ''
+  },
+  {
+    id: 'TH017',
+    slug: 'ski-resort-asia',
+    title: '아시아 스키 리조트 베스트',
+    description: '일본·한국·중국 스키 리조트 TOP 10',
+    tags: ["스키","겨울","스포츠","일본"],
+    publishedAt: '2026-05-20',
+    updatedAt: '2026-05-20',
+    name: '아시아 스키 리조트 베스트',
+    icon: '🌍',
+    category: 'theme',
+    ymylLevel: 'C',
+    summary: ''
   }
 ]
 
