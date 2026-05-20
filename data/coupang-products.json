@@ -7,7 +7,8 @@
     "postSlugs": [
       "travel-luggage",
       "summer-travel-essentials",
-      "family-travel-kit"
+      "family-travel-kit",
+      "workation-gear-kit"
     ],
     "notes": ""
   },
@@ -31,7 +32,8 @@
     "postSlugs": [
       "travel-power-bank",
       "summer-travel-essentials",
-      "travel-tech-gadgets"
+      "travel-tech-gadgets",
+      "workation-gear-kit"
     ],
     "notes": ""
   },
@@ -121,6 +123,16 @@
     "coupangUrl": "",
     "postSlugs": [
       "travel-tech-gadgets"
+    ],
+    "notes": ""
+  },
+  {
+    "productKey": "travel-wallet",
+    "productName": "여행 지갑",
+    "category": "accessory",
+    "coupangUrl": "",
+    "postSlugs": [
+      "workation-gear-kit"
     ],
     "notes": ""
   }

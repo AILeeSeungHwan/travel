@@ -138,6 +138,16 @@ const addons = [
     updatedAt: '2026-05-19',
     id: '',
     description: ''
+  },
+  {
+    slug: 'workation-gear-kit',
+    title: '워케이션 장비 가이드',
+    category: 'addon',
+    tags: ["워케이션 준비물","디지털 노마드 장비","장기 여행 용품"],
+    publishedAt: '2026-05-20',
+    updatedAt: '2026-05-20',
+    id: '',
+    description: ''
   }
 ]
 

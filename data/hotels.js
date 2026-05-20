@@ -789,6 +789,34 @@ const hotels = [
     title: '',
     description: '',
     summary: ''
+  },
+  {
+    id: 'H_NEW_016',
+    slug: 'anantara-samui',
+    countrySlug: 'th',
+    regionSlug: 'samui',
+    hotelName: '아난타라 카마라 코 사무이 리조트',
+    hotelNameEn: 'Anantara Lawana Koh Samui Resort',
+    hotelClass: '5성',
+    hotelType: '절벽오션뷰 리조트',
+    starRating: 5,
+    guestRating: 4.6,
+    priceRange: '30~80만 원/박',
+    amenities: ["수영장","스파","오션뷰","피트니스","다이닝"],
+    address: '99/9 Moo 3, Bophut, Koh Samui, Surat Thani, Thailand',
+    lat: 9.5362,
+    lng: 100.0632,
+    iso2: 'TH',
+    hotelsCombinedDeepLink: '',
+    affiliateLinkVerified: false,
+    ymylLevel: 'B',
+    tags: ["아난타라","사무이","절벽","오션뷰"],
+    publishedAt: '2026-05-20',
+    updatedAt: '2026-05-20',
+    gallery: [],
+    title: '',
+    description: '',
+    summary: ''
   }
 ]
 
